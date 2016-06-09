@@ -1,0 +1,83 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<uom>
+	rdf:type skos:Collection ;
+	rdfs:label "Unit of Measure" ;
+	skos:definition "Unit of Measure" ;
+  dct:description "A convention for how the magnitude of a quantifiable thing is specified. \"real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the two quantities as a number\" (http://www.iso.org/sites/JCGM/VIM/JCGM_200e_FILES/MAIN_JCGM_200e/01_e.html#L_1_9) <br><br>Units of measure are not limited to physical categories. Examples of physical categories are: linear measure, area, volume, mass, velocity, time duration. Examples of non-physical categories are: currency, quality indicator, color intensity." ;
+  skos:member <uom/megawatt> ; 
+  skos:member <uom/gallons-per-minute> ; 
+  skos:member <uom/degree-celsius> ; 
+  skos:member <uom/degree> ; 
+  skos:member <uom/meter> ; 
+  skos:member <uom/feet> ; 
+  skos:member <uom/kilometer> ; 
+  skos:member <uom/darcy> ; 
+  skos:member <uom/millidarcy> ; 
+  skos:member <uom/feet-per-day> ; 
+  skos:member <uom/meters-per-sec> ; 
+  skos:member <uom/percent> ; 
+  skos:member <uom/millidarcy> ;
+.
+
+<uom/megawatt> a skos:Concept ;
+	skos:prefLabel "megaWatt" ;
+	rdfs:label "megaWatt" .
+
+<uom/gallons-per-minute> a skos:Concept ;
+	skos:prefLabel "gallons per minute" ;
+	rdfs:label "gallons per minute" .
+
+<uom/degree-celsius> a skos:Concept ;
+	skos:prefLabel "degree Celsius" ;
+	rdfs:label "degree Celsius" .
+
+<uom/degree> a skos:Concept ;
+	skos:prefLabel "degree" ;
+	dct:description "angular part of a circle" ;
+	rdfs:label "degree" .
+
+<uom/meter> a skos:Concept ;
+	skos:prefLabel "meter" ;
+	rdfs:label "meter" .
+
+<uom/feet> a skos:Concept ;
+	skos:prefLabel "feet" ;
+	rdfs:label "feet" .
+
+<uom/kilometer> a skos:Concept ;
+	skos:prefLabel "kilometer" ;
+	rdfs:label "kilometer" .
+
+<uom/darcy> a skos:Concept ;
+	skos:prefLabel "darcy" ;
+	rdfs:label "darcy" .
+
+<uom/millidarcy> a skos:Concept ;
+	skos:prefLabel "millidarcy" ;
+	dct:description "millidarcy (md) (1 darcy is 10^−12m^2); unit of measure for permeability. Dimension type is length^2" ;
+	rdfs:label "millidarcy" .
+
+<uom/feet-per-day> a skos:Concept ;
+	skos:prefLabel "feet per day" ;
+	rdfs:label "feet per day" .
+
+<uom/meters-per-sec> a skos:Concept ;
+	skos:prefLabel "meters per sec" ;
+	rdfs:label "meters per sec" .
+
+<uom/percent> a skos:Concept ;
+	skos:prefLabel "percent" ;
+	rdfs:label "percent" .
+
+<uom/millidarcy> skos:prefLabel "milliDarcy" ;
+	rdfs:label "milliDarcy" .
+ 

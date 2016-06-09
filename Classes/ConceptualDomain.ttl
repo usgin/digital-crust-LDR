@@ -1,0 +1,74 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<conceptual-domain>
+	rdf:type skos:Collection ;
+	rdfs:label "ConceptualDomain" ;
+	skos:definition "ConceptualDomain" ;
+  dct:description "No description." ;
+  skos:member <conceptual-domain/software-environments> ; 
+  skos:member <conceptual-domain/units-of-measurement> ; 
+  skos:member <conceptual-domain/magnitude-of-power> ; 
+  skos:member <conceptual-domain/degrees-of-latitude> ; 
+  skos:member <conceptual-domain/degrees-of-longitude> ; 
+  skos:member <conceptual-domain/location-on-earth> ; 
+  skos:member <conceptual-domain/agents> ; 
+  skos:member <conceptual-domain/unique-bitstream> ; 
+  skos:member <conceptual-domain/solid-material> ; 
+  skos:member <conceptual-domain/porous-material> ;
+.
+
+<conceptual-domain/software-environments> a owl:Class ;
+	skos:prefLabel "Software Environments"@en ;
+	dct:description "environments in which a software agent can operate" ;
+	rdfs:label "Software Environments"@en .
+
+<conceptual-domain/units-of-measurement> a owl:Class ;
+	skos:prefLabel "Units of Measurement"@en ;
+	dct:description "the domain of conventions for quantifying measured values." ;
+	rdfs:label "Units of Measurement"@en .
+
+<conceptual-domain/magnitude-of-power> a owl:Class ;
+	skos:prefLabel "magnitude of power"@en ;
+	dct:description "the domain of power that is possible" ;
+	rdfs:label "magnitude of power"@en .
+
+<conceptual-domain/degrees-of-latitude> a owl:Class ;
+	skos:prefLabel "Degrees of Latitude"@en ;
+	dct:description "angles measured from the equator towards the north or south pole" ;
+	rdfs:label "Degrees of Latitude"@en .
+
+<conceptual-domain/degrees-of-longitude> a owl:Class ;
+	skos:prefLabel "Degrees of Longitude"@en ;
+	dct:description "angles measured in the plane normal to the axis of rotation of the Earth, relative to some reference point" ;
+	rdfs:label "Degrees of Longitude"@en .
+
+<conceptual-domain/location-on-earth> a owl:Class ;
+	skos:prefLabel "location on Earth"@en ;
+	dct:description "a position located within the solid Earth, hydrosphere, or atmosphere" ;
+	rdfs:label "location on Earth"@en .
+
+<conceptual-domain/agents> a owl:Class ;
+	skos:prefLabel "Agents"@en ;
+	dct:description "the domain of known agents" ;
+	rdfs:label "Agents"@en .
+
+<conceptual-domain/unique-bitstream> a owl:Class ;
+	skos:prefLabel "unique bitstream"@en ;
+	dct:description "the domain of unique bitstreams for use in identifying digital objects" ;
+	rdfs:label "unique bitstream"@en .
+
+<conceptual-domain/solid-material> a owl:Class ;
+	skos:prefLabel "solid material"@en ;
+	dct:description "Kinds of solid material" ;
+	rdfs:label "solid material"@en .
+
+<conceptual-domain/porous-material> a owl:Class ;
+	skos:prefLabel "porous material"@en ;
+	dct:description "Kinds of material that contain pores (voids). The skeletal portion of the material is often called the \"matrix\" or \"frame\". The pores are typically filled with a fluid (liquid or gas). (https://en.wikipedia.org/wiki/Porous_medium)" ;
+	rdfs:label "porous material"@en .

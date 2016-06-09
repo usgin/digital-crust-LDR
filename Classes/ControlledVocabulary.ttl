@@ -1,0 +1,54 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<vocabulary>
+	rdf:type skos:Collection ;
+	rdfs:label "ControlledVocabulary" ;
+	skos:definition "ControlledVocabulary" ;
+  dct:description "No description." ;
+  skos:member <vocabulary/logic-type-categories> ; 
+  skos:member <vocabulary/domain-type-categories> ; 
+  skos:member <vocabulary/geothermal-power-plant-status-category> ; 
+  skos:member <vocabulary/units-of-measure> ; 
+  skos:member <vocabulary/geothermal-power-plant-types> ; 
+  skos:member <vocabulary/us-state-name> ; 
+  skos:member <vocabulary/us-county-names> ; 
+  skos:member <vocabulary/statistical-summary-procedures> ;
+.
+
+<vocabulary/logic-type-categories> a owl:Class ;
+	skos:prefLabel "Logic Type Categories"@en ;
+	rdfs:label "Logic Type Categories"@en .
+
+<vocabulary/domain-type-categories> a owl:Class ;
+	skos:prefLabel "Domain Type Categories"@en ;
+	rdfs:label "Domain Type Categories"@en .
+
+<vocabulary/geothermal-power-plant-status-category> a owl:Class ;
+	skos:prefLabel "Geothermal Power Plant Status Category"@en ;
+	dct:description "terms to categorize the status of a geothermal power plant facility" ;
+	rdfs:label "Geothermal Power Plant Status Category"@en .
+
+<vocabulary/units-of-measure> a owl:Class ;
+	skos:prefLabel "Units of measure"@en ;
+	rdfs:label "Units of measure"@en .
+
+<vocabulary/geothermal-power-plant-types> a owl:Class ;
+	skos:prefLabel "Geothermal Power Plant Types"@en ;
+	rdfs:label "Geothermal Power Plant Types"@en .
+
+<vocabulary/us-state-name> a owl:Class ;
+	skos:prefLabel "US state name"@en ;
+	rdfs:label "US state name"@en .
+
+<vocabulary/us-county-names> a owl:Class ;
+	skos:prefLabel "US county names"@en ;
+	rdfs:label "US county names"@en .
+
+<vocabulary/statistical-summary-procedures> a owl:Class ;
+	skos:prefLabel "Statistical summary procedures"@en ;
+	rdfs:label "Statistical summary procedures"@en .

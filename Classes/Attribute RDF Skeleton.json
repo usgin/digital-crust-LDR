@@ -1,0 +1,158 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://resources.usgin.org/uri-gin/dtr/",
+      "prefixes": [
+        {
+          "name": "dct",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "dcdtr",
+          "uri": "http://resources.usgin.org/uri-gin/dtr/ont/"
+        },
+        {
+          "name": "dc",
+          "uri": "http://purl.org/dc/elements/1.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "URI",
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/2002/07/owl#Class",
+              "curie": "owl:Class"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "curie": "skos:prefLabel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "skos:prefLabel"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dct:description"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "skos:prefLabel"
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/containerObject",
+              "curie": "dcdtr:containerObject",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:containerObject",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/dataType",
+              "curie": "dcdtr:dataType",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:dataType",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/meaning",
+              "curie": "dcdtr:meaning",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:meaning",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/nilable",
+              "curie": "dcdtr:nilable",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "valueType": "http://www.w3.org/2001/XMLSchema#boolean",
+                "columnName": "dcdtr:nilable"
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/valueDomain",
+              "curie": "dcdtr:valueDomain",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:valueDomain",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/units",
+              "curie": "dcdtr:units",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:units",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

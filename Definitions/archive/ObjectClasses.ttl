@@ -1,0 +1,370 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<object-class>
+	rdf:type skos:Collection ;
+	rdfs:label "Object Class NGDS" ;
+	skos:definition "Object Class NGDS" ;
+	skos:member <object-class/value> ;
+	skos:member <object-class/agent> ;
+	skos:member <object-class/abandoned-underground-mine-feature> ;
+	skos:member <object-class/borehole-casing> ;
+	skos:member <object-class/borehole-collar> ;
+	skos:member <object-class/borehole-intercept> ;
+	skos:member <object-class/borehole-interval> ;
+	skos:member <object-class/borehole-temperature-observation> ;
+	skos:member <object-class/event> ;
+	skos:member <object-class/geologic-contact-feature> ;
+	skos:member <object-class/geologic-fault-feature> ;
+	skos:member <object-class/geologic-reservoir-feature> ;
+	skos:member <object-class/geologic-unit-feature> ;
+	skos:member <object-class/geologic-unit-outcrop> ;
+	skos:member <object-class/geothermal-area-feature> ;
+	skos:member <object-class/geothermal-direct-use-facility> ;
+	skos:member <object-class/geothermal-power-plant-facility> ;
+	skos:member <object-class/gravity-observation> ;
+	skos:member <object-class/heat-flow-observation> ;
+	skos:member <object-class/heat-pump-facility> ;
+	skos:member <object-class/hydraulic-properties-observation> ;
+	skos:member <object-class/isopleth-feature> ;
+	skos:member <object-class/mineral-recovery-brine-experimental-data> ;
+	skos:member <object-class/mineral-recovery-brine-process-and-economics> ;
+	skos:member <object-class/physical-sample> ;
+	skos:member <object-class/powell-and-cumming-geothermometry-observation> ;
+	skos:member <object-class/power-plant-production-observation> ;
+	skos:member <object-class/radiogenic-heat-production-observation> ;
+	skos:member <object-class/resource-documentation> ;
+	skos:member <object-class/rock-chemical-composition-observation> ;
+	skos:member <object-class/seismic-event-hypocenter-observation> ;
+	skos:member <object-class/thermal-conductivity-observation> ;
+	skos:member <object-class/thermal-spring> ;
+	skos:member <object-class/volcanic-vent-feature> ;
+	skos:member <object-class/well> ;
+	skos:member <object-class/well-fluid-flux-observation> ;
+	skos:member <object-class/well-fluid-production-observation> ;
+	skos:member <object-class/well-header-feature> ;
+	skos:member <object-class/well-log-observation> ;
+	skos:member <object-class/well-test-observation> ;
+.
+
+<object-class/value> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/value> ;
+	skos:prefLabel "Value" ;
+	dct:description "an entity that represents a primitive value" ;
+	dc:source "SMR analysis" .
+
+<object-class/agent> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/agent> ;
+	skos:prefLabel "Agent" ;
+	dct:description "An entity that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity." ;
+	dc:source "https://www.w3.org/TR/prov-o/#Agent" .
+
+<object-class/abandoned-underground-mine-feature> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/abandoned-underground-mine-feature> ;
+	skos:prefLabel "abandoned underground mine feature" ;
+	rdfs:label "Abandoned Mines" ;
+	dc:source "NGDS" .
+
+<object-class/borehole-casing> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/borehole-casing> ;
+	skos:prefLabel "Borehole Casing" ;
+	dct:description "Characterization of casing pipe used for borehole engineering. " ;
+	rdfs:label "Borehole Casing" ;
+	dc:source "SMR analysis" .
+
+<object-class/borehole-collar> 
+	rdf:type skos:Concept ;
+	dc:identifier "object-class/borehole-collar" ;
+	skos:prefLabel "Borehole Collar" ;
+	dct:description "The location at which a borehole trace originates. Might be within a well, along an existing borehole trace, or in the subsurface, e.g. collared in a mine tunnel" ;
+	dc:source "SMR analysis" .
+
+<object-class/borehole-intercept> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/borehole-intercept> ;
+	skos:prefLabel "Borehole Intercept" ;
+	dct:description "A sampling feature  whose feature of interest is a site at a particular single depth in a borehole." ;
+	rdfs:label "Borehole Lithology Intercept" ;
+	dc:source "NGDS" .
+
+<object-class/borehole-interval> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/borehole-interval> ;
+	skos:prefLabel "Borehole Interval" ;
+	dct:description "A sampling feature  whose feature of interest is the interval of material penetrated by a borehole between two specified depths." ;
+	rdfs:label "Borehole Lithology Interval" ;
+	dc:source "NGDS" .
+
+<object-class/borehole-temperature-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/borehole-temperature-observation> ;
+	skos:prefLabel "Borehole Temperature Observation" ;
+	dct:description "subsurface temperature measurement made in a borehole" ;
+	rdfs:label "Borehole Temperature Observation" ;
+	dc:source "NGDS" .
+
+<object-class/event> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/event> ;
+	skos:prefLabel "Event" ;
+	dct:description "A entity that has a temporal extent or position, and an associated process or activity. " ;
+	dc:source "SMR analysis" .
+
+<object-class/geologic-contact-feature> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/geologic-contact-feature> ;
+	skos:prefLabel "Geologic Contact Feature" ;
+	dct:description "A mapped feature that represents the outcrop trace of a geologic boundary between two geologic units that is not a fault " ;
+	rdfs:label "Geologic Contact Feature" ;
+	dc:source "NGDS" .
+
+<object-class/geologic-fault-feature> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/geologic-fault-feature> ;
+	skos:prefLabel "Geologic Fault Feature" ;
+	dct:description "A mapped feature that represents the outcrop trace of a geologic fault. " ;
+	rdfs:label "Shear Displacement Structure" ;
+	dc:source "NGDS" .
+
+<object-class/geologic-reservoir-feature> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/geologic-reservoir-feature> ;
+	skos:prefLabel "Geologic Reservoir Feature" ;
+	dct:description "a subsurface body of material that contains fluids of interest that can be extracted." ;
+	rdfs:label "Geologic Reservoir" ;
+	dc:source "NGDS" .
+
+<object-class/geologic-unit-feature> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/geologic-unit-feature> ;
+	skos:prefLabel "Geologic Unit Feature" ;
+	dct:description "A body of material in the Earth whose complete and precise extent is inferred to exist (NADM GeologicUnit, Stratigraphic unit in sense of NACSN or International Stratigraphic Code), or a classifier used to characterize parts of the Earth (e.g. lithologic map unit like 'granitic rock' or 'alluvial deposit', surficial units like 'till' or 'old alluvium').  Includes both formal units (i.e. formally adopted and named in the official lexicon) and informal units (i.e. named but not promoted to the lexicon) and unnamed units (i.e. recognisable and described and delineable in the field but not otherwise formalised)." ;
+	rdfs:label "Geologic Unit" ;
+	dc:source "http://www.geosciml.org/geosciml/4.0/documentation/html/" .
+
+<object-class/geologic-unit-outcrop> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/geologic-unit-outcrop> ;
+	skos:prefLabel "Geologic Unit Outcrop" ;
+	dct:description "A mapped feature that represents the outcrop of a GeologicUnit on some map horizon." .
+
+<object-class/geothermal-area-feature> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/geothermal-area-feature> ;
+	skos:prefLabel "Geothermal Area Feature" ;
+	dct:description "A region on the surface of the Earth characterized by the presence of features manifesting geothermal activity" ;
+	rdfs:label "Geothermal Area" ;
+	dc:source "NGDS" .
+
+<object-class/geothermal-direct-use-facility> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/geothermal-direct-use-facility> ;
+	skos:prefLabel "Geothermal Direct Use Facility" ;
+	dct:description "basic description of facilities that utilize geothermal energy directly without transformation to electricity" ;
+	rdfs:label "Direct Use Facility" ;
+	dc:source "NGDS" .
+
+<object-class/geothermal-power-plant-facility> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/geothermal-power-plant-facility> ;
+	skos:prefLabel "Geothermal Power Plant Facility" ;
+	dct:description "A facility that generates electricity using geothermal energy." ;
+	rdfs:label "Geothermal Power Plant Facility" ;
+	dc:source "NGDS";
+	<essentialProperty> <def/property/feature-identifier>;
+	<essentialProperty> <def/property/feature-name>;
+	<essentialProperty> <def/property/feature-type>;
+	<essentialProperty> <def/property/location>;
+.
+
+<object-class/gravity-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/gravity-observation> ;
+	skos:prefLabel "Gravity Observation" ;
+	dct:description "A site sampling feature specifically for a gravity observation" ;
+	rdfs:label "Gravity Station" ;
+	dc:source "NGDS";
+.
+
+<object-class/heat-flow-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/heat-flow-observation> ;
+	skos:prefLabel "Heat Flow Observation" ;
+	dct:description "description of heat flow measurements" ;
+	rdfs:label "Heat Flow Observation" ;
+	dc:source "NGDS" .
+
+<object-class/heat-pump-facility> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/heat-pump-facility> ;
+	skos:prefLabel "Heat Pump Facility" ;
+	dct:description "description of heat pump facility locations" ;
+	rdfs:label "Heat Pump Facility" ;
+	dc:source "NGDS" .
+
+<object-class/hydraulic-properties-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/hydraulic-properties-observation> ;
+	skos:prefLabel "Hydraulic Properties Observation" ;
+	dct:description "A specification of the hydraulic properties of some sampling feature." ;
+	rdfs:label "Hydraulic Properties Observation" ;
+	dc:source "NGDS" .
+
+<object-class/isopleth-feature> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/isopleth-feature> ;
+	skos:prefLabel "Isopleth Feature" ;
+	dct:description "a connected sequence of points characterized by equal values for some observed property" ;
+	rdfs:label "Contour Line Feature" ;
+	dc:source "NGDS" .
+
+<object-class/mineral-recovery-brine-experimental-data> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/mineral-recovery-brine-experimental-data> ;
+	skos:prefLabel "Mineral Recovery Brine Experimental Data" ;
+	dct:description "Record of experimental parameters related to experimental recovery of products from brines.  capturing the variables to describe/evaluate REE removal and capturing the variables influencing removal and describing removal media; Essentially metadata for experimental configuration. Use to record observations of REE extraction processes and can be used to compare the efficacy of those processes." ;
+	rdfs:label "Brin Mineral Recovery Experimental Data" ;
+	dc:source "NGDS" .
+
+<object-class/mineral-recovery-brine-process-and-economics> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/mineral-recovery-brine-process-and-economics> ;
+	skos:prefLabel "Mineral Recovery Brine Process And Economics" ;
+	dct:description "Record of  parameters in the product removal (“reactor”) technique used to recover minerals from a brine, the ability of the media to be re-used, and the techno-economic and process economics. Use to record observations of REE extraction processes and can be used to compare the efficacy of those processes." ;
+	rdfs:label "Brin Mineral Recovery Experimental Data" ;
+	dc:source "NGDS" .
+
+<object-class/physical-sample> 
+	rdf:type skos:Concept ;
+	dc:identifier "object-class/physical-sample" ;
+	skos:prefLabel "Physical Sample" ;
+	dct:description "An object extracted from a larger feature with the intention of representing one or more characteristics of that feature." ;
+	rdfs:label "Physical Sample" ;
+	dc:source "NGDS" .
+
+<object-class/powell-and-cumming-geothermometry-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/powell-and-cumming-geothermometry-observation> ;
+	skos:prefLabel "Powell And Cumming Geothermometry Observation" ;
+	dct:description "Observation results requires to run Powell and Cumming geothermometry calculations for geothermal fluids" ;
+	rdfs:label "Powell And Cumming Geothermometry" ;
+	dc:source "NGDS" .
+
+<object-class/power-plant-production-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/power-plant-production-observation> ;
+	skos:prefLabel "Power Plant Production Observation" ;
+	dct:description "Observation with a result reporting the  electrical power production for a specific time interval from a power generating facility" ;
+	rdfs:label "Power Plant Production" ;
+	dc:source "NGDS" .
+
+<object-class/radiogenic-heat-production-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/radiogenic-heat-production-observation> ;
+	skos:prefLabel "Radiogenic Heat Production Observation" ;
+	dct:description "Observation with a  result reporting the heat energy production rate from a sampling feature,  typically based on analysis of ore or more individual rock samples" ;
+	rdfs:label "Radiogenic Heat Production" ;
+	dc:source "NGDS" .
+
+<object-class/resource-documentation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/resource-documentation> ;
+	skos:prefLabel "Resource Documentation" ;
+	dct:description "Collection of properties to describe and existing resource, including information for discovery, evaluation and access." ;
+	rdfs:label "Metadata" ;
+	dc:source "NGDS" .
+
+<object-class/rock-chemical-composition-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/rock-chemical-composition-observation> ;
+	skos:prefLabel "Rock Chemical Composition Observation" ;
+	dct:description "observation whose result is the concentration of one or more analytes in a sampling feature whose material composition is a solid EarthMaterial." ;
+	rdfs:label "Rock Chemistry" ;
+	dc:source "NGDS" .
+
+<object-class/seismic-event-hypocenter-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/seismic-event-hypocenter-observation> ;
+	skos:prefLabel "Seismic Event Hypocenter Observation" ;
+	dct:description "Observation with a result that is the location of the hypocenter of a seismic event" ;
+	rdfs:label "Seismic Event Hypocenter" ;
+	dc:source "NGDS" .
+
+<object-class/thermal-conductivity-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/thermal-conductivity-observation> ;
+	skos:prefLabel "Thermal Conductivity Observation" ;
+	dct:description "Observation with a result that is the thermal conductivity of a sampling feature." ;
+	rdfs:label "Thermal Conductivity Observation" ;
+	dc:source "NGDS" .
+
+<object-class/thermal-spring> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/thermal-spring> ;
+	skos:prefLabel "Thermal Spring" ;
+	dct:description "characterizing a hot spring feature" ;
+	rdfs:label "Thermal Spring" ;
+	dc:source "NGDS" .
+
+<object-class/volcanic-vent-feature> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/volcanic-vent-feature> ;
+	skos:prefLabel "Volcanic Vent Feature" ;
+	dct:description "A feature in the Earth's surface from which lava has been erupted." ;
+	rdfs:label "Volcanic Vent" ;
+	dc:source "NGDS" .
+
+<object-class/well> rdf:type skos:Concept ;
+	dc:identifier <object-class/well> ;
+	skos:prefLabel "Well" ;
+	dct:description "A facility intended to provide access to the subsurface of the Earth; might be used for extraction or injection of materials; has one or more borehole traces and a collar location" .
+
+<object-class/well-fluid-flux-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/well-fluid-flux-observation> ;
+	skos:prefLabel "Well Fluid Flux Observation" ;
+	dct:description "Observation whose result is the fluid flux into or out of a well." ;
+	rdfs:label "Fluid Flux Injection And Disposal Observation" ;
+	dc:source "NGDS" .
+
+<object-class/well-fluid-production-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/well-fluid-production-observation> ;
+	skos:prefLabel "Well Fluid Production Observation" ;
+	dct:description "Observation with a result that specifies the volume of fluid produced from a given well. A generic model is intended to allow for a variety of flows from a well including oil, gas, and water as well as steam production. " ;
+	rdfs:label "Well Fluid Production" ;
+	dc:source "NGDS" .
+
+<object-class/well-header-feature> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/well-header-feature> ;
+	skos:prefLabel "Well Header Feature" ;
+	dct:description "Feature that is the intersection of a well with a mapping horizon. In a simple well, the well header is identical with the borehole collar for a single borehole trace that constitutes the well." ;
+	rdfs:label "Well Header Observation" ;
+	dc:source "NGDS" .
+
+<object-class/well-log-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/well-log-observation> ;
+	skos:prefLabel "Well Log Observation" ;
+	dct:description "An observation with a result that is a coverage of property values at intervals along the trace of a borehole" ;
+	rdfs:label "Well Log Observation" ;
+	dc:source "NGDS" .
+
+<object-class/well-test-observation> 
+	rdf:type skos:Concept ;
+	dc:identifier <object-class/well-test-observation> ;
+	skos:prefLabel "Well Test Observation" ;
+	dct:description "Observation with a result that consists of fluid flux, pressure and temperature data; includes inforamtion charactrizing the experimental conditions" ;
+	rdfs:label "Well Test" ;
+	dc:source "NGDS" .

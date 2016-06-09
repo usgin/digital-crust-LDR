@@ -1,0 +1,570 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<implementation-element>
+  rdf:type skos:Collection ;
+  rdfs:label "Implementation Element"@en ;
+  skos:definition "This resource defines"@en ;
+  skos:member <implementation-element/objectid> ;
+  skos:member <implementation-element/facilityuri> ;
+  skos:member <implementation-element/plantname> ;
+  skos:member <implementation-element/planttype> ;
+  skos:member <implementation-element/otherid> ;
+  skos:member <implementation-element/label> ;
+  skos:member <implementation-element/owner> ;
+  skos:member <implementation-element/operator> ;
+  skos:member <implementation-element/operationaldate> ;
+  skos:member <implementation-element/status> ;
+  skos:member <implementation-element/statusdate> ;
+  skos:member <implementation-element/plss-meridians> ;
+  skos:member <implementation-element/township> ;
+  skos:member <implementation-element/range> ;
+  skos:member <implementation-element/section-> ;
+  skos:member <implementation-element/sectionpart> ;
+  skos:member <implementation-element/utm-e> ;
+  skos:member <implementation-element/utm-n> ;
+  skos:member <implementation-element/utmdatumzone> ;
+  skos:member <implementation-element/county> ;
+  skos:member <implementation-element/state> ;
+  skos:member <implementation-element/latdegree> ;
+  skos:member <implementation-element/longdegree> ;
+  skos:member <implementation-element/srs> ;
+  skos:member <implementation-element/locationuncertaintystatement> ;
+  skos:member <implementation-element/locationuncertaintycode> ;
+  skos:member <implementation-element/locationuncertaintyradius> ;
+  skos:member <implementation-element/locationkeyword> ;
+  skos:member <implementation-element/notes> ;
+  skos:member <implementation-element/useapplication> ;
+  skos:member <implementation-element/capacity-mw> ;
+  skos:member <implementation-element/facilitycontact> ;
+  skos:member <implementation-element/postaladdress> ;
+  skos:member <implementation-element/zip> ;
+  skos:member <implementation-element/phone> ;
+  skos:member <implementation-element/emailaddress> ;
+  skos:member <implementation-element/source> ;
+  skos:member <implementation-element/fluidtemperature-c> ;
+  skos:member <implementation-element/flow-gpm> ;
+  skos:member <implementation-element/relatedresource> ;
+  skos:member <implementation-element/metadatauri> ;
+  skos:member <implementation-element/updatetimestamp> ;
+  skos:member <implementation-element/shape> ;
+.
+  
+<implementation-element/objectid> 
+ 	rdf:type  skos:Concept ;
+	dc:identifier <implementation-element/objectid> ;
+	rdfs:label "OBJECTID" ;
+	dct:description "Integer record count, added by ArcGIS servers during service deployment; not required but cannot be removed when deploying from ArcGIS feature class. Not user maintained, so this element appears in XML implementation but not in the Content Model Template." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "OBJECTID" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "OBJECTID"
+.
+
+<implementation-element/facilityuri> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/facilityuri> ;
+	rdfs:label "FacilityURI" ;
+	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "FacilityURI" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "FacilityURI" 
+.
+
+<implementation-element/plantname>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/plantname> ;
+	rdfs:label "PlantName" ;
+	dct:description "Common or human-readable name by which the feature  is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "PlantName" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "PlantName" 
+.
+
+<implementation-element/planttype>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/planttype> ;
+	rdfs:label "PlantType" ;
+	dct:description "Dry Steam; Flash Steam; Binary Cycle; Single Flash; Double Flash. If Unknown or missing place \"nil:missing\"" ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "PlantType" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "PlantType" 
+.
+
+<implementation-element/otherid> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/otherid> ;
+	rdfs:label "OtherID" ;
+	dct:description "Alternative identifier(s) for the feature. 'Indicate the authority from which the OtherID is derived with a short (lower case) prefix delimited by a colon ':' If identifiers from multiple different authorities are available, delimit these identifiers with the pipe '|' character. For example, if a well were known to the Arizona Geological Survey (AZGS) by the id number 1337, the prefix would be azgs: and the identifier string would be azgs:1337. Any such prefixes used to scope identifiers should be explained in the dataset metadata." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "OtherID" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "OtherID" 
+.
+
+<implementation-element/label> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/label> ;
+	rdfs:label "Label" ;
+	dct:description "Short text string for labeling the feature on maps. Can be the same as feature name. A label may be an OtherLocationName, OtherID or the Name or some combination." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Label" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Label" 
+.
+
+<implementation-element/owner> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/owner> ;
+	rdfs:label "Owner" ;
+	dct:description "Companies, individuals, or other entities who own the property. Separate multiple with a pipe '|' character." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Owner" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Owner" 
+.
+
+<implementation-element/operator> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/operator> ;
+	rdfs:label "Operator" ;
+	dct:description "Companies, individuals, or other entities who operate the property. Separate multiple with a pipe '|' character." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Operator" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Operator" 
+.
+
+<implementation-element/operationaldate>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/operationaldate> ;
+	rdfs:label "OperationalDate" ;
+	dct:description "Date for the record (year in which the first power plant at the site began operation). Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1', (or '1/1/', or '1-1-', or 'January 1,'). All dates will be converted to yyyy-mm-ddThh:mm." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "OperationalDate" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "OperationalDate" 
+.
+
+<implementation-element/status> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/status> ;
+	rdfs:label "Status" ;
+	dct:description "Status of the feature at the time indicated in the StatusDate element. If unknown enter \"unknown\" in the field." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Status" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Status" 
+.
+
+<implementation-element/statusdate>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/statusdate> ;
+	rdfs:label "StatusDate" ;
+	dct:description "The status of the feature can change from time to time, thus it is useful to know the date on which a given status was reported. Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1', (or '1/1/', or '1-1-', or 'January 1,'). All dates will be converted to yyyy-mm-ddThh:mm." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "StatusDate" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "StatusDate" 
+.
+
+<implementation-element/plss-meridians>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/plss-meridians> ;
+	rdfs:label "PLSS_Meridians" ;
+	dct:description "List north-south baseline and east-west meridian that Townships and Ranges are referenced to." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "PLSS_Meridians" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "PLSS_Meridians" 
+.
+
+<implementation-element/township>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/township> ;
+	rdfs:label "Township" ;
+	dct:description "Township in PLSS grid, relative to reported baseline. Formatting and punctuation should be consistent for all locations referenced to the same baseline and meridian. Recommend adding leading '0's so that all number strings are the same length (typically 2 or occasionally 3 digits). Examples 01N, 112S, 001 N." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Township" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Township" 
+.
+
+<implementation-element/range>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/range> ;
+	rdfs:label "Range" ;
+	dct:description "Range in PLSS grid, relative to reported meridian. Formatting and punctuation should be consistent for all locations referenced to the same baseline meridian. See instructions on TWP field." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Range" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Range" 
+.
+
+<implementation-element/section->
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/section-> ;
+	rdfs:label "Section_" ;
+	dct:description "PLSS section number. Must be numeric or null. Some surveys include half sections indicated by a 'nn.5' designation, where n indicates a number." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Section_" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Section_" 
+.
+
+<implementation-element/sectionpart>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/sectionpart> ;
+	rdfs:label "SectionPart" ;
+	dct:description "Subdivision of a PLSS section." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "SectionPart" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "SectionPart" 
+.
+
+<implementation-element/utm-e>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/utm-e> ;
+	rdfs:label "UTM_E" ;
+	dct:description "UTM easting coordinate as decimal number." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "UTM_E" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "UTM_E" .
+
+<implementation-element/utm-n> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/utm-n> ;
+	rdfs:label "UTM_N" ;
+	dct:description "UTM northing coordinate as decimal number." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "UTM_N" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "UTM_N" .
+
+<implementation-element/utmdatumzone>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/utmdatumzone> ;
+	rdfs:label "UTMDatumZone" ;
+	dct:description "The datum and UTM zone for the reported coordinates. Datum for most locations should be NAD27 or NAD83." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "UTMDatumZone" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "UTMDatumZone" 
+.
+
+<implementation-element/county>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/county> ;
+	rdfs:label "County" ;
+	dct:description "Required. County name. If unknown or not applicable use 'missing'. If offshore, specify 'offshore' in this field." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "County" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "County" 
+.
+
+<implementation-element/state>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/state> ;
+	rdfs:label "State" ;
+	dct:description "Required. State name without abbreviations. If unknown or not applicable use 'missing'. For offshore locations, specify the governing or nearest state and list the county as 'offshore'." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "State" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "State" 
+.
+
+<implementation-element/latdegree> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/latdegree> ;
+	rdfs:label "LatDegree" ;
+	dct:description "Latitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "LatDegree" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "LatDegree" 
+.
+
+<implementation-element/longdegree> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/longdegree> ;
+	rdfs:label "LongDegree" ;
+	dct:description "Longitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "LongDegree" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "LongDegree" 
+.
+
+<implementation-element/srs>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/srs> ;
+	rdfs:label "SRS" ;
+	dct:description "The spatial reference system. It is recommended that an EPSG code be used to identify the SRS used to specify the location.  If an EPSG code is used, identify it as such with the prefix 'EPSG:' For common EPSG codes, see the Data Valid Terms tab. EPSG:4326 is the identifier for WGS84, and should be the text in this field. EPSG stands for European Petroleum Survey Group. EPSSG codes can be dereferenced by putting the code in this URL (replace 4326) http://spatialreference.org/ref/epsg/4326/." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "SRS" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "SRS" 
+.
+
+<implementation-element/locationuncertaintystatement>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/locationuncertaintystatement> ;
+	rdfs:label "LocationUncertaintyStatement" ;
+	dct:description "Information on how the original location was determined, e.g.: 1:250,000 map, gps unit, Google Earth, PLSS Conversion, Spatial Datum Conversion, e.g., NAD27 to WGS84." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "LocationUncertaintyStatement" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "LocationUncertaintyStatement" 
+.
+
+<implementation-element/locationuncertaintycode>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/locationuncertaintycode> ;
+	rdfs:label "LocationUncertaintyCode" ;
+	dct:description "A controlled vocabulary term or code value specifying the location confidence, E.g. 1 = reported, 2= surveyed, 3= GPS. If such a code list or vocabulary is used, it must be added to the 'Data Valid Terms' sheet to enumerate the possible values and their meaning." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "LocationUncertaintyCode" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "LocationUncertaintyCode" 
+.
+
+<implementation-element/locationuncertaintyradius>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/locationuncertaintyradius> ;
+	rdfs:label "LocationUncertaintyRadius" ;
+	dct:description "Radius (in meters) of circle of confidence for location. Ideally might represent some specific confidence criteria like 'radius of circle around reported location which which true location lies with 95% confidence', but such precision is rarely available." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "LocationUncertaintyRadius" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "LocationUncertaintyRadius" 
+.
+
+<implementation-element/locationkeyword>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/locationkeyword> ;
+	rdfs:label "LocationKeyword" ;
+	dct:description "Names of geographic features associated with the site that will be useful as search criteria to locate the information for this site. If identifiers from multiple different authorities are available, delimit these identifiers with the pipe character '|'." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "LocationKeyword" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "LocationKeyword" 
+.
+
+<implementation-element/notes>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/notes> ;
+	rdfs:label "Notes" ;
+	dct:description "Any additional information to be provided, including description and other data not captured by the template, details about collection method, contact information for related parties (original collector, project PI), collection platform or Launch, etc." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Notes" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Notes" 
+.
+
+<implementation-element/useapplication>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/useapplication> ;
+	rdfs:label "UseApplication" ;
+	dct:description "Statement for how heat is being used. Should come from controlled vocabulary." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "UseApplication" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "UseApplication" 
+.
+
+<implementation-element/capacity-mw>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/capacity-mw> ;
+	rdfs:label "Capacity_MW" ;
+	dct:description "Production capacity of the power plant in MW. Included as a search parameter." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Capacity_MW" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Capacity_MW" 
+.
+
+<implementation-element/facilitycontact>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/facilitycontact> ;
+	rdfs:label "FacilityContact" ;
+	dct:description "Person, organization, or position name for information about the facility." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "FacilityContact" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "FacilityContact" 
+.
+
+<implementation-element/postaladdress>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/postaladdress> ;
+	rdfs:label "PostalAddress" ;
+	dct:description "Postal address for facility. Street, City, State." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "PostalAddress" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "PostalAddress" 
+.
+
+<implementation-element/zip>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/zip> ;
+	rdfs:label "Zip" ;
+	dct:description "Zip code for facility; may be used for some geolocation information." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Zip" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Zip" 
+.
+
+<implementation-element/phone>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/phone> ;
+	rdfs:label "Phone" ;
+	dct:description "Telephone number to contact party connected with facility." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Phone" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Phone" 
+.
+
+<implementation-element/emailaddress>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/emailaddress> ;
+	rdfs:label "EMailAddress" ;
+	dct:description "E-mail address to contact party connected with facility." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "EMailAddress" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "EMailAddress" 
+.
+
+<implementation-element/source>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/source> ;
+	rdfs:label "Source" ;
+	dct:description "Mandatory. Short text explanation of source of information defining this feature or record; may be author-date type citation, well log, report, data files etc., but should include some indication of how digital data originated. If unpublished data, provide researcher name, date and research institution for proper citation. Separate multiple citations with pipe '|' character." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Source" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Source" 
+.
+
+<implementation-element/fluidtemperature-c> 
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/fluidtemperature-c> ;
+	rdfs:label "FluidTemperature_C" ;
+	dct:description "Water temperature, in decimal format. Degrees Celsius is preferred and will be reported for consistency in service implementations." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "FluidTemperature_C" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "FluidTemperature_C" 
+.
+
+<implementation-element/flow-gpm>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/flow-gpm> ;
+	rdfs:label "Flow_gpm" ;
+	dct:description "Fluid production flow rate." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Flow_gpm" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Flow_gpm" 
+.
+
+<implementation-element/relatedresource>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/relatedresource> ;
+	rdfs:label "RelatedResource" ;
+	dct:description "This may be one to many http links to resources (logs, pictures or other documents if available online. Should be an http:// address (URL)) related to the observation described in each record. Delimit multiple values with the pipe '|' character." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "RelatedResource" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "RelatedResource" 
+.
+
+<implementation-element/metadatauri>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/metadatauri> ;
+	rdfs:label "MetadataURI" ;
+	dct:description "URI identifying (and ideally dereferencing to get) a full formal metadata record for the observation report. A time series of observations may all reference the same metadata record that provides contact information and details on procedure, etc." ;
+	<cardinality> "0..1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "MetadataURI" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "MetadataURI" .
+
+<implementation-element/updatetimestamp>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/updatetimestamp> ;
+	rdfs:label "UpdateTimeStamp" ;
+	dct:description "Date of last time line of data was updated or corrected by the service provider.(Format: 2012-06-22T00:00)." ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "UpdateTimeStamp" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "UpdateTimeStamp" 
+.
+
+<implementation-element/shape>
+	rdf:type skos:Concept ;
+	dc:identifier <implementation-element/shape> ;
+	rdfs:label "Shape" ;
+	dct:description "Added by GIS for WFS service; this element appears in the xml output, but is generated during service deployment from the latitude and longitude, therefore it doesn't appear in the template" ;
+	<cardinality> "1" ;
+	dc:source "RegistryClasses/Lmb04042016" ;
+	skos:prefLabel "Shape" ;
+	skos:inScheme "usgin:RegistryClasses" ;
+	dct:title "Shape" 
+.

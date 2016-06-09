@@ -1,0 +1,189 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://resources.usgin.org/uri-gin/dtr",
+      "prefixes": [
+        {
+          "name": "dct",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "dcdtr",
+          "uri": "http://resources.usgin.org/uri-gin/dtr/ont/"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "dc",
+          "uri": "http://purl.org/dc/elements/1.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "URI",
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/2002/07/owl#Class",
+              "curie": "owl:Class"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "curie": "skos:prefLabel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "skos:prefLabel"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dct:description"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "lang": "en",
+                "columnName": "skos:prefLabel"
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/type",
+              "curie": "dcdtr:type",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:type"
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/encoding",
+              "curie": "dcdtr:encoding",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:encoding"
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/byteLength",
+              "curie": "dcdtr:byteLength",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:byteLength"
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/itemType",
+              "curie": "dcdtr:itemType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:itemType"
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/delimiter",
+              "curie": "dcdtr:delimiter",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:delimiter"
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/valueType",
+              "curie": "dcdtr:valueType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:valueType"
+              }
+            },
+            {
+              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/keyDataType",
+              "curie": "dcdtr:keyDataType",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "dcdtr:keyDataType"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#narrower",
+              "curie": "skos:narrower",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "skos:narrower",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#broader",
+              "curie": "skos:broader",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "skos:broader",
+                "rdfTypes": [],
+                "links": []
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

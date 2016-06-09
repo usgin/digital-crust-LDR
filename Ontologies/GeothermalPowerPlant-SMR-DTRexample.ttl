@@ -1,0 +1,84 @@
+@prefix version: <http://purl.org/linked-data/version#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix api:   <http://purl.org/linked-data/api/vocab#> .
+@prefix ui:    <http://purl.org/linked-data/registry-ui#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rr-entity: <http://registry.it.csiro.au/structure/entity-type/> .
+@prefix rr-org: <http://registry.it.csiro.au/structure/org/> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix dtr2:   <http://registry.it.csiro.au/ont/dtr2#> .
+@prefix rr-ui: <http://registry.it.csiro.au/structure/ui/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix reg:   <http://purl.org/linked-data/registry#> .
+@prefix bibo:  <http://purl.org/ontology/bibo/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+
+<http://registry.it.csiro.au/rda-test>
+        a                ldp:Container , reg:Register ;
+        rdfs:comment     "Evolution of by the Research Data Alliance - Data Type Registry Workgroup output 2015" ;
+        rdfs:label       "rda data type registry test items"@en ;
+        rdfs:member       ;
+        rdfs:seeAlso     <https://github.com/usgin/usginspecs/raw/gh-pages/DataTypeModelDraft.pdf> ;
+        dct:description  "A test linked data register of Data Types"@en ;
+        dct:modified     "2016-03-08T10:00:00.0Z"^^xsd:dateTime ;
+        dct:source       "Stephen M. Richard testing" ;
+        reg:owner        rr-org:usgin ;
+        owl:versionInfo  1 .
+
+
+<http://registry.it.csiro.au/rda-test/object-class/geothermal-power-plant-facility>
+        a                 dtr2:ObjectClass ;
+        rdfs:label        "Geothermal Power Plant Facility"^^xsd:string ;
+        skos:prefLabel    "Geothermal Power Plant Facility"^^xsd:string ;
+        dct:description   "Simple tabular description of  facility that generates electricity using geothermal energy."^^xsd:string ;
+        skos:definition   "Simple tabular description of  facility that generates electricity using geothermal energy."^^xsd:string ;
+        dtr2:essentialProperty       <http://registry.it.csiro.au/rda-test/property/feature-identifier>, <http://registry.it.csiro.au/rda-test/property/feature-name>, <http://registry.it.csiro.au/rda-test/property/feature-type>, <http://registry.it.csiro.au/rda-test/property/location> .
+
+<http://registry.it.csiro.au/rda-test/property/feature-identifier>
+        a                 dtr2:Property ;
+        rdfs:label        "Feature Identifier"^^xsd:string ;
+        skos:prefLabel    "Feature Identifier"^^xsd:string ;
+        dct:description   "Unique identifier for a feature; indended for machine designation of the feature."^^xsd:string ;
+        skos:definition   "Unique identifier for a feature; indended for machine designation of the feature."^^xsd:string .
+
+<http://registry.it.csiro.au/rda-test/property/feature-name>
+        a                 dtr2:Property ;
+        rdfs:label        "Feature Name"^^xsd:string ;
+        skos:prefLabel    "Feature Name"^^xsd:string ;
+        dct:description   "Text string for human designation of the feature."^^xsd:string ;
+        skos:definition   "Text string for human designation of the feature."^^xsd:string .
+
+<http://registry.it.csiro.au/rda-test/property/feature-type>
+        a                 dtr2:Property ;
+        rdfs:label        "Feature Type"^^xsd:string ;
+        skos:prefLabel    "Feature Type"^^xsd:string ;
+        dct:description   "Specification of a category to which the feature belongs."^^xsd:string ;
+        skos:definition   "Specification of a category to which the feature belongs."^^xsd:string .
+
+<http://registry.it.csiro.au/rda-test/property/location>
+        a                 dtr2:Property ;
+        rdfs:label        "Location"^^xsd:string ;
+        skos:prefLabel    "Location"^^xsd:string ;
+        dct:description   "Specification of where some thing is relative to Earth."^^xsd:string ;
+        skos:definition   "Specification of where some thing is relative to Earth."^^xsd:string .
+
+<http://registry.it.csiro.au/rda-test/data-type/geothermal-power-plant-occurrence>
+        a                 dtr2:DataType ;
+        rdfs:label        "Geothermal Power Plant Occurrence"^^xsd:string ;
+        skos:prefLabel    "Geothermal Power Plant Occurrence"^^xsd:string ;
+        dct:description   "Simple tabular description of an individual facility that generates electricity using geothermal energy."^^xsd:string ;
+        skos:definition   "Simple tabular description of an individual facility that generates electricity using geothermal energy."^^xsd:string ;
+        dtr2:meaning      <http://registry.it.csiro.au/rda-test/object-class/geothermal-power-plant-facility>
+        dtr2:expectedUse   "Information interchange using OGC Web feature service in the National Geothermal Data System"^^xsd:string ;
+        dtr2:attribute        .
+
+

@@ -1,0 +1,1001 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://10.208.3.127:32769/>
+  rdf:type skos:Collection ;
+  rdfs:label "Property"@en ;
+  skos:definition "A quality that characterizes some aspect of instances of an object class"@en ;
+  skos:member <http://10.208.3.127:32769/Access+Link> ;
+  skos:member <http://10.208.3.127:32769/Age>;
+  skos:member <http://10.208.3.127:32769/Contact+Information> ;
+  skos:member <http://10.208.3.127:32769/Agent+Identifier> ;
+  skos:member <http://10.208.3.127:32769/Analytical+Procedure+Metadata> ;
+  skos:member <http://10.208.3.127:32769/Aquifer+Productivity> ;
+  skos:member <http://10.208.3.127:32769/Area> ; 
+  skos:member <http://10.208.3.127:32769/Borehole+Casing+Extent> ;
+  skos:member <http://10.208.3.127:32769/Borehole+Casing+Thickness> ;
+  skos:member <http://10.208.3.127:32769/Borehole+Casing+Weight> ;
+  skos:member <http://10.208.3.127:32769/Borehole+Casing+Weight+UOM> ;
+  skos:member <http://10.208.3.127:32769/Borehole+Collar+Elevation> ;
+  skos:member <http://10.208.3.127:32769/Borehole+Spacing> ;
+  skos:member <http://10.208.3.127:32769/Category++Name> ;
+  skos:member <http://10.208.3.127:32769/Chemical+Character> ;
+  skos:member <http://10.208.3.127:32769/Composition> ;
+  skos:member <http://10.208.3.127:32769/Constituent+Type> ;
+  skos:member <http://10.208.3.127:32769/Contour+Identifier> ;
+  skos:member <http://10.208.3.127:32769/Coordinate> ;
+  skos:member <http://10.208.3.127:32769/Correction> ;
+  skos:member <http://10.208.3.127:32769/Count> ;
+  skos:member <http://10.208.3.127:32769/Coverage+Domain+Bound> ;
+  skos:member <http://10.208.3.127:32769/Curation+Location> ;
+  skos:member <http://10.208.3.127:32769/Customer> ;
+  skos:member <http://10.208.3.127:32769/Data+History> ;
+  skos:member <http://10.208.3.127:32769/Datum+Type> ;
+  skos:member <http://10.208.3.127:32769/Density> ;
+  skos:member <http://10.208.3.127:32769/Description> ;
+  skos:member <http://10.208.3.127:32769/Displacement> ;
+  skos:member <http://10.208.3.127:32769/Designation> ;
+  skos:member <http://10.208.3.127:32769/Displacement> ;
+  skos:member <http://10.208.3.127:32769/Documentation> ;
+  skos:member <http://10.208.3.127:32769/Drilling+Method> ;
+  skos:member <http://10.208.3.127:32769/Duration> ;
+  skos:member <http://10.208.3.127:32769/Elevation+Datum> ;
+  skos:member <http://10.208.3.127:32769/E-Mail+Address> ;
+  skos:member <http://10.208.3.127:32769/Energy> ;
+  skos:member <http://10.208.3.127:32769/Eruptive+Style+Type> ;
+  skos:member <http://10.208.3.127:32769/Event+History> ;
+  skos:member <http://10.208.3.127:32769/Event+Name> ;
+  skos:member <http://10.208.3.127:32769/Event+Type> ;
+  skos:member <http://10.208.3.127:32769/Extent> ;
+  skos:member <http://10.208.3.127:32769/Facility> ;
+  skos:member <http://10.208.3.127:32769/Facility+State> ;
+  skos:member <http://10.208.3.127:32769/Fault+Boundary> ;
+  skos:member <http://10.208.3.127:32769/Fault+Count> ;
+  skos:member <http://10.208.3.127:32769/Fault+Movement+Type> ;
+  skos:member <http://10.208.3.127:32769/Feature+Count> ;
+  skos:member <http://10.208.3.127:32769/Feature+Description> ;
+  skos:member <http://10.208.3.127:32769/Feature+Extent> ;
+  skos:member <http://10.208.3.127:32769/Feature+History> ;
+  skos:member <http://10.208.3.127:32769/Feature+Identifier> ;
+  skos:member <http://10.208.3.127:32769/Feature+Name> ;
+  skos:member <http://10.208.3.127:32769/Feature+of+Interest> ;
+  skos:member <http://10.208.3.127:32769/Feature+Shape> ;
+  skos:member <http://10.208.3.127:32769/Feature+Type> ;
+  skos:member <http://10.208.3.127:32769/Fiat+Geographic+Area> ;
+  skos:member <http://10.208.3.127:32769/Flow+Continuity> ;
+  skos:member <http://10.208.3.127:32769/Flow+Direction> ;
+  skos:member <http://10.208.3.127:32769/Flow+Velocity+Magnitude> ;
+  skos:member <http://10.208.3.127:32769/Fluid+Flux> ;
+  skos:member <http://10.208.3.127:32769/Fluid+Pressure> ;
+  skos:member <http://10.208.3.127:32769/Fluid+Quantity> ;
+  skos:member <http://10.208.3.127:32769/Functional+Characterization> ;
+  skos:member <http://10.208.3.127:32769/Geospatial+Extent> ;
+  skos:member <http://10.208.3.127:32769/Geospatial+Orientation> ;
+  skos:member <http://10.208.3.127:32769/Geospatial+Position> ;
+  skos:member <http://10.208.3.127:32769/Geothermal+Resource+Type> ;
+  skos:member <http://10.208.3.127:32769/Gravity> ;
+  skos:member <http://10.208.3.127:32769/Gravity+Observation+Correction> ;
+  skos:member <http://10.208.3.127:32769/Ground+Elevation> ;
+  skos:member <http://10.208.3.127:32769/Heat+Flow> ;
+  skos:member <http://10.208.3.127:32769/History> ;
+  skos:member <http://10.208.3.127:32769/Hydraulic+Conductivity> ;
+  skos:member <http://10.208.3.127:32769/Hydraulic+Transmissivity> ;
+  skos:member <http://10.208.3.127:32769/Hydrologic+Setting> ;
+  skos:member <http://10.208.3.127:32769/Identifier> ;
+  skos:member <http://10.208.3.127:32769/Index+Term> ;
+  skos:member <http://10.208.3.127:32769/Information> ;
+  skos:member <http://10.208.3.127:32769/Instrument+Name> ;
+  skos:member <http://10.208.3.127:32769/Lithology+Type> ;
+  skos:member <http://10.208.3.127:32769/Local+Identifier> ;
+  skos:member <http://10.208.3.127:32769/Location> ;
+  skos:member <http://10.208.3.127:32769/Location+Name> ;
+  skos:member <http://10.208.3.127:32769/Location+Uncertainty> ;
+  skos:member <http://10.208.3.127:32769/Market+Proximity> ;
+  skos:member <http://10.208.3.127:32769/Mass> ;
+  skos:member <http://10.208.3.127:32769/Material+Type> ;
+  skos:member <http://10.208.3.127:32769/Measurement+Count> ;
+  skos:member <http://10.208.3.127:32769/Name> ;
+  skos:member <http://10.208.3.127:32769/Notional+Location> ;
+  skos:member <http://10.208.3.127:32769/Observation+History> ;
+  skos:member <http://10.208.3.127:32769/Observation+Identifier> ;
+  skos:member <http://10.208.3.127:32769/Observation+Name> ;
+  skos:member <http://10.208.3.127:32769/Observation+Procedure> ;
+  skos:member <http://10.208.3.127:32769/Observation+Type> ;
+  skos:member <http://10.208.3.127:32769/Orientation> ;
+  skos:member <http://10.208.3.127:32769/Parent+Feature+Identifier> ;
+  skos:member <http://10.208.3.127:32769/Periodicity> ;
+  skos:member <http://10.208.3.127:32769/Permeability> ;
+  skos:member <http://10.208.3.127:32769/Pipe+Extent> ;
+  skos:member <http://10.208.3.127:32769/Point+Of+Contact> ;
+  skos:member <http://10.208.3.127:32769/Porosity> ;
+  skos:member <http://10.208.3.127:32769/Position+Uncertainty> ;
+  skos:member <http://10.208.3.127:32769/Power> ;
+  skos:member <http://10.208.3.127:32769/Power+Production+Capacity> ;
+  skos:member <http://10.208.3.127:32769/Precipitation+Quantity> ;
+  skos:member <http://10.208.3.127:32769/Pressure> ;
+  skos:member <http://10.208.3.127:32769/Procedure+Description> ;
+  skos:member <http://10.208.3.127:32769/Procedure+Name> ;
+  skos:member <http://10.208.3.127:32769/Procedure+Type> ;
+  skos:member <http://10.208.3.127:32769/Process+Type> ;
+  skos:member <http://10.208.3.127:32769/Provenance> ;
+  skos:member <http://10.208.3.127:32769/Publication+Date> ;
+  skos:member <http://10.208.3.127:32769/Purpose> ;
+  skos:member <http://10.208.3.127:32769/Quantifier> ;
+  skos:member <http://10.208.3.127:32769/Recharge+Extent> ;
+  skos:member <http://10.208.3.127:32769/Related+Resource> ;
+  skos:member <http://10.208.3.127:32769/Relation> ;
+  skos:member <http://10.208.3.127:32769/Representation> ;
+  skos:member <http://10.208.3.127:32769/Residence+Time> ;
+  skos:member <http://10.208.3.127:32769/Resistivity> ;
+  skos:member <http://10.208.3.127:32769/Resource+Assessment> ;
+  skos:member <http://10.208.3.127:32769/Resource+History> ;
+  skos:member <http://10.208.3.127:32769/Resource+Identifier> ;
+  skos:member <http://10.208.3.127:32769/Resource+Owner> ;
+  skos:member <http://10.208.3.127:32769/Resource+Responsible+Party> ;
+  skos:member <http://10.208.3.127:32769/Resource+State> ;
+  skos:member <http://10.208.3.127:32769/Resource+Use+Restriction> ;
+  skos:member <http://10.208.3.127:32769/Sample+Type> ;
+  skos:member <http://10.208.3.127:32769/Sampling+Feature+Identifier> ;
+  skos:member <http://10.208.3.127:32769/Sedimentary+Rock+Cement> ;
+  skos:member <http://10.208.3.127:32769/Seismic+Magnitude> ;
+  skos:member <http://10.208.3.127:32769/Shape> ;
+  skos:member <http://10.208.3.127:32769/Source+Identifier> ;
+  skos:member <http://10.208.3.127:32769/Spatial+Reference+System> ;
+  skos:member <http://10.208.3.127:32769/Specific+Heat> ;
+  skos:member <http://10.208.3.127:32769/Substance+of+Interest> ;
+  skos:member <http://10.208.3.127:32769/Telephone+Number> ;
+  skos:member <http://10.208.3.127:32769/Temperature> ;
+  skos:member <http://10.208.3.127:32769/Temperature+Gradient> ;
+  skos:member <http://10.208.3.127:32769/Thermal+Conductivity> ;
+  skos:member <http://10.208.3.127:32769/Thermal+Conductivity+Correction> ;
+  skos:member <http://10.208.3.127:32769/Thermal+Diffusivity> ;
+  skos:member <http://10.208.3.127:32769/Time+Position> ;
+  skos:member <http://10.208.3.127:32769/Uncertainty> ;
+  skos:member <http://10.208.3.127:32769/Unit+of+Measure> ;
+  skos:member <http://10.208.3.127:32769/Usage> ;
+  skos:member <http://10.208.3.127:32769/Utilization> ;
+  skos:member <http://10.208.3.127:32769/Value> ;
+  skos:member <http://10.208.3.127:32769/Variable+Type> ;
+  skos:member <http://10.208.3.127:32769/Velocity+Magnitude> ;
+  skos:member <http://10.208.3.127:32769/Vertical+Datum> ;
+  skos:member <http://10.208.3.127:32769/Vertical+Extent> ;
+  skos:member <http://10.208.3.127:32769/Vertical+Position> ;
+  skos:member <http://10.208.3.127:32769/Viscosity> ;
+  skos:member <http://10.208.3.127:32769/Volume> ;
+  skos:member <http://10.208.3.127:32769/Young+Feature+Identifier> ;
+  
+  
+
+
+
+<http://10.208.3.127:32769/Access+Link> ; a skos:Concept ;
+	rdfs:label "Access Link" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/access-link> ;
+	dct:description "URL or 'live link' that will retrieve a digital file containing a scanned image of the log file on the World Wide Web.   Multiple locations may be listed, delimited by '|'." ;
+	skos:broaderTransitive "Reference" .
+
+<http://10.208.3.127:32769/Age> ; a skos:Concept ;
+	rdfs:label "Age" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/age> ;
+	dct:description "The magnitude of the time interval since the origination of some feature" .
+
+<http://10.208.3.127:32769/Contact+Information> ; a skos:Concept ;
+	rdfs:label "Contact Information" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/contact-information> ; .
+
+<http://10.208.3.127:32769/Agent+Identifier> ; a skos:Concept ;
+	rdfs:label "Agent Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/agent-identifier> ;
+	dct:description "Unique identifier for a agent; indended for machine designation of the feature" ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Analytical+Procedure+Metadata> ; a skos:Concept ;
+	rdfs:label "Analytical Procedure Metadata" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/analytical-procedure-metadata> ;
+	dct:description "Unique identifier that identifies an analysis observation whose analyte values are the detection limits for each analyte. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature. Unique identifier for each set of samples, each analyzed using the same method, technique and using the same equipment." ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Aquifer+Productivity> ; a skos:Concept ;
+	rdfs:label "Aquifer Productivity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/aquifer-productivity> ;
+	dct:description "The volume of water an aquifer releases from or takes into storage per unit surface area of the aquifer per unit change in head. One of the physical properties that characterize the capacity of an aquifer to release groundwater (others are  Storativity (S), and specific yield (Sy)). see https://en.wikipedia.org/wiki/Specific_storage" .
+
+<http://10.208.3.127:32769/Area> ; a skos:Concept ;
+	rdfs:label "Area" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/area> ;
+	dct:description "the surface area subtended by an object viewed from a particular orientation." ;
+	skos:broaderTransitive "/property//property/location" .
+
+<http://10.208.3.127:32769/Borehole+Casing+Extent> ; a skos:Concept ;
+	rdfs:label "Borehole Casing Extent" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/borehole-casing-extent> ;
+	dct:description "An extent in the linear reference system achored to a borehole trace" ;
+	skos:broaderTransitive "/property/extent" .
+
+<http://10.208.3.127:32769/Borehole+Casing+Thickness> ; a skos:Concept ;
+	rdfs:label "Borehole Casing Thickness" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/borehole-casing-thickness> ;
+	dct:description "Thickness Casing pipe installed in the borehole. Units must be same as diameter units specified in this record. If multiple pipe thicknesses used, these should be separated by the pipe character '|'. " .
+
+<http://10.208.3.127:32769/Borehole+Casing+Weight> ; a skos:Concept ;
+	rdfs:label "Borehole Casing Weight" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/borehole-casing-weight> ;
+	dct:description "Casing pipe weight per length installed in the borehole." .
+
+<http://10.208.3.127:32769/Borehole+Casing+Weight+UOM> ; a skos:Concept ;
+	rdfs:label "Borehole Casing Weight UOM" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/borehole-casing-weight-uom> ;
+	dct:description "Units for the reported Casing Weight: kg/m OR lbs/ft." .
+
+<http://10.208.3.127:32769/Borehole+Collar+Elevation> ; a skos:Concept ;
+	rdfs:label "Borehole Collar Elevation" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/borehole-collar-elevation> ; .
+
+<http://10.208.3.127:32769/Borehole+Spacing> ; a skos:Concept ;
+	rdfs:label "Borehole Spacing" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/borehole-spacing> ;
+	dct:description "The average distance between boreholes in feet." .
+
+<http://10.208.3.127:32769/Category++Name> ; a skos:Concept ;
+	rdfs:label "Category  Name" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/category--name> ;
+	dct:description "Text string for human designation of a category" ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Chemical+Character> ; a skos:Concept ;
+	rdfs:label "Chemical Character" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/chemical-character> ;
+	dct:description "a characteristic of a substance that is obeserved during a reaction" .
+
+<http://10.208.3.127:32769/Composition> ; a skos:Concept ;
+	rdfs:label "Composition" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/composition> ;
+	dct:description "the nature of something's ingredients or constituents" .
+
+<http://10.208.3.127:32769/Constituent+Type> ; a skos:Concept ;
+	rdfs:label "Constituent Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/constituent-type> ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Contour+Identifier> ; a skos:Concept ;
+	rdfs:label "Contour Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/contour-identifier> ;
+	dct:description "Unique identifier for a contour; indended for machine designation of the feature" ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Coordinate> ; a skos:Concept ;
+	rdfs:label "Coordinate" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/coordinate> ;
+	dct:description "the distance from the origin along one of the axes in a coordinate reference system" .
+
+<http://10.208.3.127:32769/Correction> ; a skos:Concept ;
+	rdfs:label "Correction" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/correction> ;
+	skos:broaderTransitive "/property/correction" .
+
+<http://10.208.3.127:32769/Count> ; a skos:Concept ;
+	rdfs:label "Count" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/count> ;
+	dct:description "an act of determining the total number of something." .
+
+<http://10.208.3.127:32769/Coverage+Domain+Bound> ; a skos:Concept ;
+	rdfs:label "Coverage Domain Bound" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/coverage-domain-bound> ;
+	dct:description "Depth to the bottom of the interval being tested." .
+
+<http://10.208.3.127:32769/Curation+Location> ; a skos:Concept ;
+	rdfs:label "Curation Location" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/curation-location> ;
+	dct:description "Free text Name of institution, museum, or repository where the sample is currently stored." ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Customer> ; a skos:Concept ;
+	rdfs:label "Customer" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/customer> ;
+	dct:description "a person or organization that buys goods or services from a store or business." ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Data+History> ; a skos:Concept ;
+	rdfs:label "Data History" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/data-history> ;
+	dct:description "specification of the sequence of events that resulted in the current state of a data item" ;
+	skos:broaderTransitive "/property/history" .
+
+<http://10.208.3.127:32769/Datum+Type> ; a skos:Concept ;
+	rdfs:label "Datum Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/datum-type> ;
+	dct:description "Specify where value in elevation field refers to." ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Density> ; a skos:Concept ;
+	rdfs:label "Density" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/density> ;
+	dct:description "mass divided by volume" .
+
+<http://10.208.3.127:32769/Description> ; a skos:Concept ;
+	rdfs:label "Description" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/description> ;
+	dct:description "An information object that characterizes a resource. Generally understood to be text intended for humans." .
+
+<http://10.208.3.127:32769/Designation> ; a skos:Concept ;
+	rdfs:label "Designation" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/designation> ;
+	dct:description "A symbol understood by users to represent some other resource; identifier is a designation intended for machines, names and icons are intended for human users." .
+
+<http://10.208.3.127:32769/Displacement> ; a skos:Concept ;
+	rdfs:label "Displacement" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/displacement> ;
+	dct:description "the moving of something from its place or position." .
+
+<http://10.208.3.127:32769/Documentation> ; a skos:Concept ;
+	rdfs:label "Documentation" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/documentation> ; .
+
+<http://10.208.3.127:32769/Drilling+Method> ; a skos:Concept ;
+	rdfs:label "Drilling Method" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/drilling-method> ;
+	dct:description "Basic drilling technology used in the creation of the borehole. Separate multiple drilling methods with the pipe  '|' character." .
+
+<http://10.208.3.127:32769/Duration> ; a skos:Concept ;
+	rdfs:label "Duration" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/duration> ;
+	dct:description "the time during which something continues" ;
+	skos:broaderTransitive "/property/history" .
+
+<http://10.208.3.127:32769/Elevation+Datum> ; a skos:Concept ;
+	rdfs:label "Elevation Datum" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/elevation-datum> ; .
+
+<http://10.208.3.127:32769/E-Mail+Address> ; a skos:Concept ;
+	rdfs:label "E-Mail Address" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/e-mail-address> ;
+	dct:description "A URI that identifies a mailbox (message delivery endpoint) on the internet." .
+
+<http://10.208.3.127:32769/Energy> ; a skos:Concept ;
+	rdfs:label "Energy" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/energy> ;
+	dct:description "power derived from the utilization of physical or chemical resources" .
+
+<http://10.208.3.127:32769/Eruptive+Style+Type> ; a skos:Concept ;
+	rdfs:label "Eruptive Style Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/eruptive-style-type> ;
+	dct:description "Term describing eruptive style" ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Event+History> ; a skos:Concept ;
+	rdfs:label "Event History" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/event-history> ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Event+Name> ; a skos:Concept ;
+	rdfs:label "Event Name" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/event-name> ;
+	dct:description "Text string for human designation of an event" ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Event+Type> ; a skos:Concept ;
+	rdfs:label "Event Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/event-type> ;
+	dct:description "Event classification free text, according to classification scheme used by data provider. " ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Extent> ; a skos:Concept ;
+	rdfs:label "Extent" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/extent> ;
+	dct:description "the area covered by something" ;
+	skos:broaderTransitive "/property/extent" .
+
+<http://10.208.3.127:32769/Facility> ; a skos:Concept ;
+	rdfs:label "Facility" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/facility> ;
+	dct:description "Common or human-readable name by which the facility is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming " ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Facility+State> ; a skos:Concept ;
+	rdfs:label "Facility State" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/facility-state> ;
+	dct:description "Term indicating the production of the facility" .
+
+<http://10.208.3.127:32769/Fault+Boundary> ; a skos:Concept ;
+	rdfs:label "Fault Boundary" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/fault-boundary> ;
+	dct:description "vertical faults" .
+
+<http://10.208.3.127:32769/Fault+Count> ; a skos:Concept ;
+	rdfs:label "Fault Count" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/fault-count> ;
+	dct:description "Number of faults contained by field in question." .
+
+<http://10.208.3.127:32769/Fault+Movement+Type> ; a skos:Concept ;
+	rdfs:label "Fault Movement Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/fault-movement-type> ;
+	dct:description "Terms used to define the type of movement for a DisplacementValue on a ShearDisplacementStructure." ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Feature+Count> ; a skos:Concept ;
+	rdfs:label "Feature Count" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/feature-count> ;
+	dct:description "number of features" .
+
+<http://10.208.3.127:32769/Feature+Description> ; a skos:Concept ;
+	rdfs:label "Feature Description" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/feature-description> ;
+	dct:description "Free text field for any additional observations or other information regarding the feature, any special considerations with this instance (quality, lithology, locality, size, weight, etc)." ;
+	skos:broaderTransitive "/property/description" .
+
+<http://10.208.3.127:32769/Feature+Extent> ; a skos:Concept ;
+	rdfs:label "Feature Extent" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/feature-extent> ;
+	dct:description "Specification of an extended (linear, area, or volume) location with respect to the Earth" ;
+	skos:broaderTransitive "/property/extent" .
+
+<http://10.208.3.127:32769/Feature+History> ; a skos:Concept ;
+	rdfs:label "Feature History" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/feature-history> ;
+	dct:description "Description of the sequence of events leading to the current state of a feature" ;
+	skos:broaderTransitive "/property/history" .
+
+<http://10.208.3.127:32769/Feature+Identifier> ; a skos:Concept ;
+	rdfs:label "Feature Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/feature-identifier> ;
+	dct:description "Unique identifier for a feature; indended for machine designation of the feature" ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Feature+Name> ; a skos:Concept ;
+	rdfs:label "Feature Name" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/feature-name> ;
+	dct:description "Text string for human designation of the feature" ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Feature+of+Interest> ; a skos:Concept ;
+	rdfs:label "Feature of Interest" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/feature-of-interest> ; .
+
+<http://10.208.3.127:32769/Feature+Shape> ; a skos:Concept ;
+	rdfs:label "Feature Shape" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/feature-shape> ; .
+
+<http://10.208.3.127:32769/Feature+Type> ; a skos:Concept ;
+	rdfs:label "Feature Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/feature-type> ;
+	dct:description "Specification of a category to which the feature belongs" ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Fiat+Geographic+Area> ; a skos:Concept ;
+	rdfs:label "Fiat Geographic Area" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/fiat-geographic-area> ; .
+
+<http://10.208.3.127:32769/Fiat+Geographic+Position> ; a skos:Concept ;
+	rdfs:label "Fiat Geographic Position" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/fiat-geographic-position> ;
+	dct:description "An arbitrarily named point location, like a street address;" ;
+	skos:broaderTransitive "/property/location" .
+
+<http://10.208.3.127:32769/Flow+Continuity> ; a skos:Concept ;
+	rdfs:label "Flow Continuity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/flow-continuity> ;
+	dct:description "Continuity of flow terms: Perennial water source (has continuous flow all year long); Intermittent (normally ceases flowing for weeks or months each year); ephermal (flow only for hours or days following rainfall)." .
+
+<http://10.208.3.127:32769/Flow+Direction> ; a skos:Concept ;
+	rdfs:label "Flow Direction" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/flow-direction> ;
+	dct:description "Estimated direction of groundwater flow" .
+
+<http://10.208.3.127:32769/Flow+Velocity+Magnitude> ; a skos:Concept ;
+	rdfs:label "Flow Velocity Magnitude" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/flow-velocity-magnitude> ;
+	dct:description "estimated mine water velocity" .
+
+<http://10.208.3.127:32769/Fluid+Flux> ; a skos:Concept ;
+	rdfs:label "Fluid Flux" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/fluid-flux> ;
+	dct:description "the rate of flow" .
+
+<http://10.208.3.127:32769/Fluid+Pressure> ; a skos:Concept ;
+	rdfs:label "Fluid Pressure" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/fluid-pressure> ; .
+
+<http://10.208.3.127:32769/Fluid+Quantity> ; a skos:Concept ;
+	rdfs:label "Fluid Quantity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/fluid-quantity> ;
+	dct:description "Fluid measure" .
+
+<http://10.208.3.127:32769/Functional+Characterization> ; a skos:Concept ;
+	rdfs:label "Functional Characterization" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/functional-characterization> ; .
+
+<http://10.208.3.127:32769/Geospatial+Extent> ; a skos:Concept ;
+	rdfs:label "Geospatial Extent" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/geospatial-extent> ;
+	dct:description "Specification of an extended (linear, area, or volume) location with respect to the Earth" ;
+	skos:broaderTransitive "/property/extent" .
+
+<http://10.208.3.127:32769/Geospatial+Orientation> ; a skos:Concept ;
+	rdfs:label "Geospatial Orientation" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/geospatial-orientation> ;
+	dct:description "geographic location" ;
+	skos:broaderTransitive "/property//property/location" .
+
+<http://10.208.3.127:32769/Geospatial+Position> ; a skos:Concept ;
+	rdfs:label "Geospatial Position" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/geospatial-position> ;
+	dct:description "Specification of the location of a point feature with respect to Earth" ;
+	skos:broaderTransitive "/property/location" .
+
+<http://10.208.3.127:32769/Geothermal+Resource+Type> ; a skos:Concept ;
+	rdfs:label "Geothermal Resource Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/geothermal-resource-type> ;
+	dct:description "Simple characterization of the geothermal resource." ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Gravity> ; a skos:Concept ;
+	rdfs:label "Gravity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/gravity> ;
+	dct:description "the force of attraction between all masses in the universe; especially the attraction of the earth's mass for bodies near its surface" .
+
+<http://10.208.3.127:32769/Gravity+Observation+Correction> ; a skos:Concept ;
+	rdfs:label "Gravity Observation Correction" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/gravity-observation-correction> ;
+	dct:description "Correction for variation of gravity with elevation due to the mass of the material between the gravity station and the vertical datum.  " ;
+	skos:broaderTransitive "/property/correction" .
+
+<http://10.208.3.127:32769/Ground+Elevation> ; a skos:Concept ;
+	rdfs:label "Ground Elevation" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/ground-elevation> ; .
+
+<http://10.208.3.127:32769/Heat+Flow> ; a skos:Concept ;
+	rdfs:label "Heat Flow" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/heat-flow> ;
+	dct:description "the amount of heat transferred across an isothermal surface in a unit time" .
+
+<http://10.208.3.127:32769/History> ; a skos:Concept ;
+	rdfs:label "History" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/history> ;
+	dct:description "Description of the sequence of events leading to the current state of a resource" ;
+	skos:broaderTransitive "/property/history" .
+
+<http://10.208.3.127:32769/Hydraulic+Conductivity> ; a skos:Concept ;
+	rdfs:label "Hydraulic Conductivity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/hydraulic-conductivity> ;
+	dct:description "the ease with which a fluid (usually water) can move through pore spaces or fractures" .
+
+<http://10.208.3.127:32769/Hydraulic+Transmissivity> ; a skos:Concept ;
+	rdfs:label "Hydraulic Transmissivity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/hydraulic-transmissivity> ;
+	dct:description "The transmissivity is a measure of how much water can be transmitted horizontally, such as to a pumping well. Transmissivity is directly proportional to horizontal hydraulic conductivity and thickness of the transmitting layer." .
+
+<http://10.208.3.127:32769/Hydrologic+Setting> ; a skos:Concept ;
+	rdfs:label "Hydrologic Setting" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/hydrologic-setting> ; .
+
+<http://10.208.3.127:32769/Identifier> ; a skos:Concept ;
+	rdfs:label "Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/identifier> ;
+	dct:description "A designation for a resoruce intended for machine use, but typically intelligible to human users as well." ;
+	skos:broaderTransitive "Designation" .
+
+<http://10.208.3.127:32769/Index+Term> ; a skos:Concept ;
+	rdfs:label "Index Term" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/index-term> ;
+	dct:description "a term that captures the essence of the topic" .
+
+<http://10.208.3.127:32769/Information> ; a skos:Concept ;
+	rdfs:label "Information" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/information> ;
+	dct:description "a property that provides information about a resource in an unconstratained way; typically implemented as free text." ;
+	skos:broaderTransitive "/property/information" .
+
+<http://10.208.3.127:32769/Instrument+Name> ; a skos:Concept ;
+	rdfs:label "Instrument Name" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/instrument-name> ;
+	dct:description "Text string for human designation of an instrument" ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Lithology+Type> ; a skos:Concept ;
+	rdfs:label "Lithology Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/lithology-type> ;
+	dct:description "Description of the lithology of surface geology" ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Local+Identifier> ; a skos:Concept ;
+	rdfs:label "Local Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/local-identifier> ;
+	dct:description "Unique identifier for a local feature; indended for machine designation of the feature" ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Location> ; a skos:Concept ;
+	rdfs:label "Location" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/location> ;
+	dct:description "Specification of where some thing is relative to Earth" ;
+	skos:broaderTransitive "/property//property/location" .
+
+<http://10.208.3.127:32769/Location+Name> ; a skos:Concept ;
+	rdfs:label "Location Name" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/location-name> ;
+	dct:description "Specification of a location by providing a name. The name should be scoped to some gazeteer that will provide an authoritive mapping from the name to the Earth." ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Location+Uncertainty> ; a skos:Concept ;
+	rdfs:label "Location Uncertainty" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/location-uncertainty> ;
+	dct:description "positional Accuracy" .
+
+<http://10.208.3.127:32769/Market+Proximity> ; a skos:Concept ;
+	rdfs:label "Market Proximity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/market-proximity> ;
+	dct:description "specification of the distance according to some metric between a resource and intended consumers of that resources" .
+
+<http://10.208.3.127:32769/Mass> ; a skos:Concept ;
+	rdfs:label "Mass" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/mass> ; .
+
+<http://10.208.3.127:32769/Material+Type> ; a skos:Concept ;
+	rdfs:label "Material Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/material-type> ;
+	dct:description "term classifying the material type" ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Measurement+Count> ; a skos:Concept ;
+	rdfs:label "Measurement Count" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/measurement-count> ;
+	dct:description "number of measurements or samples used to determine the value" .
+
+<http://10.208.3.127:32769/Name> ; a skos:Concept ;
+	rdfs:label "Name" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/name> ;
+	dct:description "Text string for human designation of a resource" ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Notional+Location> ; a skos:Concept ;
+	rdfs:label "Notional Location" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/notional-location> ;
+	dct:description "Specification of a resource location based on a categorization of location types, e.g. tectonic setting, depositional environment, geologic province" ;
+	skos:broaderTransitive "/property//property/location" .
+
+<http://10.208.3.127:32769/Observation+History> ; a skos:Concept ;
+	rdfs:label "Observation History" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/observation-history> ;
+	dct:description "Description of the sequence of events leading to the current state of a observation" ;
+	skos:broaderTransitive "/property/history" .
+
+<http://10.208.3.127:32769/Observation+Identifier> ; a skos:Concept ;
+	rdfs:label "Observation Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/observation-identifier> ;
+	dct:description "Unique identifier for a observation; indended for machine designation of the feature" ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Observation+Name> ; a skos:Concept ;
+	rdfs:label "Observation Name" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/observation-name> ;
+	dct:description "Text string for human designation of an observation" ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Observation+Procedure> ; a skos:Concept ;
+	rdfs:label "Observation Procedure" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/observation-procedure> ;
+	dct:description "Text description of how the measurement was made" .
+
+<http://10.208.3.127:32769/Observation+Type> ; a skos:Concept ;
+	rdfs:label "Observation Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/observation-type> ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Orientation> ; a skos:Concept ;
+	rdfs:label "Orientation" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/orientation> ;
+	dct:description "describe direction of sample." ;
+	skos:broaderTransitive "/property//property/location" .
+
+<http://10.208.3.127:32769/Parent+Feature+Identifier> ; a skos:Concept ;
+	rdfs:label "Parent Feature Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/parent-feature-identifier> ;
+	dct:description "Unique identifier for a parent feature; indended for machine designation of the feature" ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Periodicity> ; a skos:Concept ;
+	rdfs:label "Periodicity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/periodicity> ;
+	dct:description "the quality or character of being periodic" ;
+	skos:broaderTransitive "/property/history" .
+
+<http://10.208.3.127:32769/Permeability> ; a skos:Concept ;
+	rdfs:label "Permeability" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/permeability> ;
+	dct:description "the state or quality of a material or membrane that causes it to allow liquids or gases to pass through it" .
+
+<http://10.208.3.127:32769/Pipe+Extent> ; a skos:Concept ;
+	rdfs:label "Pipe Extent" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/pipe-extent> ;
+	dct:description "Total length in decimal format of the Drill pipe in the hole." ;
+	skos:broaderTransitive "/property/extent" .
+
+<http://10.208.3.127:32769/Point+Of+Contact> ; a skos:Concept ;
+	rdfs:label "Point Of Contact" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/point-of-contact> ; .
+
+<http://10.208.3.127:32769/Porosity> ; a skos:Concept ;
+	rdfs:label "Porosity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/porosity> ; .
+
+<http://10.208.3.127:32769/Position+Uncertainty> ; a skos:Concept ;
+	rdfs:label "Position Uncertainty" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/position-uncertainty> ;
+	dct:description "positional accuracy" .
+
+<http://10.208.3.127:32769/Power> ; a skos:Concept ;
+	rdfs:label "Power" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/power> ; .
+
+<http://10.208.3.127:32769/Power+Production+Capacity> ; a skos:Concept ;
+	rdfs:label "Power Production Capacity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/power-production-capacity> ;
+	dct:description "Electrical power production capacity of a facility." .
+
+<http://10.208.3.127:32769/Precipitation+Quantity> ; a skos:Concept ;
+	rdfs:label "Precipitation Quantity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/precipitation-quantity> ;
+	dct:description "annual precipitation for the location of the mine identified by the FeatureURI. Precipitation from NOAA precipitation measurement network sources. Use decimal inch units. Because official precipitation measurements in the U.S. are inches, that is used here." .
+
+<http://10.208.3.127:32769/Pressure> ; a skos:Concept ;
+	rdfs:label "Pressure" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/pressure> ; .
+
+<http://10.208.3.127:32769/Procedure+Description> ; a skos:Concept ;
+	rdfs:label "Procedure Description" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/procedure-description> ;
+	dct:description "Free text for any notes pertaining to procedures" .
+
+<http://10.208.3.127:32769/Procedure+Name> ; a skos:Concept ;
+	rdfs:label "Procedure Name" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/procedure-name> ;
+	dct:description "Text string for human designation of a procedure" ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Procedure+Type> ; a skos:Concept ;
+	rdfs:label "Procedure Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/procedure-type> ;
+	dct:description "Term that specifies the method used" ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Process+Type> ; a skos:Concept ;
+	rdfs:label "Process Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/process-type> ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Provenance> ; a skos:Concept ;
+	rdfs:label "Provenance" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/provenance> ;
+	dct:description "description of the provenance of a resource" .
+
+<http://10.208.3.127:32769/Publication+Date> ; a skos:Concept ;
+	rdfs:label "Publication Date" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/publication-date> ;
+	dct:description "Date on which data for the borehole was or will be made public. Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1'. If year is unknown, enter 1900. All dates will be converted to yyyy-mm-ddThh:mm. This is intended as a searching aid." ;
+	skos:broaderTransitive "/property/history" .
+
+<http://10.208.3.127:32769/Purpose> ; a skos:Concept ;
+	rdfs:label "Purpose" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/purpose> ;
+	dct:description "the reason for which something is done" .
+
+<http://10.208.3.127:32769/Quantifier> ; a skos:Concept ;
+	rdfs:label "Quantifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/quantifier> ;
+	dct:description "an expression that indicates the scope of a term to which it is atteched" .
+
+<http://10.208.3.127:32769/Recharge+Extent> ; a skos:Concept ;
+	rdfs:label "Recharge Extent" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/recharge-extent> ;
+	dct:description "area to recharge mine void space" ;
+	skos:broaderTransitive "/property/extent" .
+
+<http://10.208.3.127:32769/Related+Resource> ; a skos:Concept ;
+	rdfs:label "Related Resource" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/related-resource> ; .
+
+<http://10.208.3.127:32769/Relation> ; a skos:Concept ;
+	rdfs:label "Relation" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/relation> ;
+	dct:description "an association to another resource. The semantics of the relation should be specified in implementations" .
+
+<http://10.208.3.127:32769/Representation> ; a skos:Concept ;
+	rdfs:label "Representation" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/representation> ; .
+
+<http://10.208.3.127:32769/Residence+Time> ; a skos:Concept ;
+	rdfs:label "Residence Time" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/residence-time> ; .
+
+<http://10.208.3.127:32769/Resistivity> ; a skos:Concept ;
+	rdfs:label "Resistivity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/resistivity> ;
+	dct:description "a measure of the resisting power of a specified material to the flow of an electric current." .
+
+<http://10.208.3.127:32769/Resource+Assessment> ; a skos:Concept ;
+	rdfs:label "Resource Assessment" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/resource-assessment> ; .
+
+<http://10.208.3.127:32769/Resource+History> ; a skos:Concept ;
+	rdfs:label "Resource History" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/resource-history> ;
+	dct:description "Description of the sequence of events leading to the current state of a resource" ;
+	skos:broaderTransitive "/property/history" .
+
+<http://10.208.3.127:32769/Resource+Identifier> ; a skos:Concept ;
+	rdfs:label "Resource Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/resource-identifier> ;
+	dct:description "Unique identifier for a resource; indended for machine designation of the feature" ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Resource+Owner> ; a skos:Concept ;
+	rdfs:label "Resource Owner" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/resource-owner> ;
+	dct:description "Companies, individuals, or other entities who own the property. Separate multiple with a pipe '|' character." ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Resource+Responsible+Party> ; a skos:Concept ;
+	rdfs:label "Resource Responsible Party" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/resource-responsible-party> ;
+	dct:description "Free text specification of party that originally registered sample; may be name or organization, with or without contact information." ;
+	skos:broaderTransitive "/property/name" .
+
+<http://10.208.3.127:32769/Resource+State> ; a skos:Concept ;
+	rdfs:label "Resource State" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/resource-state> ; .
+
+<http://10.208.3.127:32769/Resource+Use+Restriction> ; a skos:Concept ;
+	rdfs:label "Resource Use Restriction" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/resource-use-restriction> ; .
+
+<http://10.208.3.127:32769/Sample+Type> ; a skos:Concept ;
+	rdfs:label "Sample Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/sample-type> ;
+	dct:description "Term classifying the sample type" ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Sampling+Feature+Identifier> ; a skos:Concept ;
+	rdfs:label "Sampling Feature Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/sampling-feature-identifier> ;
+	dct:description "Unique identifier for a  sampling feature; indended for machine designation of the feature" ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Sedimentary+Rock+Cement> ; a skos:Concept ;
+	rdfs:label "Sedimentary Rock Cement" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/sedimentary-rock-cement> ; .
+
+<http://10.208.3.127:32769/Seismic+Magnitude> ; a skos:Concept ;
+	rdfs:label "Seismic Magnitude" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/seismic-magnitude> ;
+	dct:description "A number that characterizes the relative size of an earthquake" .
+
+<http://10.208.3.127:32769/Shape> ; a skos:Concept ;
+	rdfs:label "Shape" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/shape> ;
+	dct:description "Specification of a geometry using Earth-referenced coordinates; must have an associated spatial reference system that specifies how coordinate values are mapped to the Earth." ;
+	skos:broaderTransitive "/property//property/location" .
+
+<http://10.208.3.127:32769/Source+Identifier> ; a skos:Concept ;
+	rdfs:label "Source Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/source-identifier> ;
+	dct:description "Unique identifier for a source; indended for machine designation of the feature" ;
+	skos:broaderTransitive "/property/identifier" .
+
+<http://10.208.3.127:32769/Spatial+Reference+System> ; a skos:Concept ;
+	rdfs:label "Spatial Reference System" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/spatial-reference-system> ;
+	dct:description "defines a specific map projection" .
+
+<http://10.208.3.127:32769/Specific+Heat> ; a skos:Concept ;
+	rdfs:label "Specific Heat" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/specific-heat> ;
+	dct:description "Estimated specific heat of water at the estimated air temperature" .
+
+<http://10.208.3.127:32769/Substance+of+Interest> ; a skos:Concept ;
+	rdfs:label "Substance of Interest" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/substance-of-interest> ; .
+
+<http://10.208.3.127:32769/Telephone+Number> ; a skos:Concept ;
+	rdfs:label "Telephone Number" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/telephone-number> ;
+	dct:description "designation of a telephone network endpoint" .
+
+<http://10.208.3.127:32769/Temperature> ; a skos:Concept ;
+	rdfs:label "Temperature" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/temperature> ;
+	dct:description "the degree or intensity of heat present" .
+
+<http://10.208.3.127:32769/Temperature+Gradient> ; a skos:Concept ;
+	rdfs:label "Temperature Gradient" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/temperature-gradient> ;
+	dct:description "Gradient determined from initial temperatures" .
+
+<http://10.208.3.127:32769/Thermal+Conductivity> ; a skos:Concept ;
+	rdfs:label "Thermal Conductivity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/thermal-conductivity> ;
+	dct:description "measurement of the ability of a material to conduct heat" .
+
+<http://10.208.3.127:32769/Thermal+Conductivity+Correction> ; a skos:Concept ;
+	rdfs:label "Thermal Conductivity Correction" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/thermal-conductivity-correction> ;
+	dct:description "Correction applied to thermal conductivity for in situ conditions." ;
+	skos:broaderTransitive "/property/correction" .
+
+<http://10.208.3.127:32769/Thermal+Diffusivity> ; a skos:Concept ;
+	rdfs:label "Thermal Diffusivity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/thermal-diffusivity> ;
+	dct:description "How rapidly a material changes temperature to match the surroundings - equilibrium." .
+
+<http://10.208.3.127:32769/Time+Position> ; a skos:Concept ;
+	rdfs:label "Time Position" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/time-position> ;
+	dct:description "Numerical value for the age" ;
+	skos:broaderTransitive "/property/history" .
+
+<http://10.208.3.127:32769/Uncertainty> ; a skos:Concept ;
+	rdfs:label "Uncertainty" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/uncertainty> ; .
+
+<http://10.208.3.127:32769/Unit+of+Measure> ; a skos:Concept ;
+	rdfs:label "Unit of Measure" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/unit-of-measure> ;
+	dct:description "A quantity used as a standard of measurement" .
+
+<http://10.208.3.127:32769/Usage> ; a skos:Concept ;
+	rdfs:label "Usage" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/usage> ;
+	dct:description "Explanation of how a resource is used" .
+
+<http://10.208.3.127:32769/Utilization> ; a skos:Concept ;
+	rdfs:label "Utilization" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/utilization> ;
+	dct:description "use" .
+
+<http://10.208.3.127:32769/Value> ; a skos:Concept ;
+	rdfs:label "Value" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/value> ; .
+
+<http://10.208.3.127:32769/Variable+Type> ; a skos:Concept ;
+	rdfs:label "Variable Type" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/variable-type> ;
+	dct:description "Term classifying the variable" ;
+	skos:broaderTransitive "/property/type" .
+
+<http://10.208.3.127:32769/Velocity+Magnitude> ; a skos:Concept ;
+	rdfs:label "Velocity Magnitude" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/velocity-magnitude> ; .
+
+<http://10.208.3.127:32769/Vertical+Datum> ; a skos:Concept ;
+	rdfs:label "Vertical Datum" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/vertical-datum> ;
+	dct:description "The point of reference against which elevation measurements are made. Best practice: use mean sea level (MSL) as datum." .
+
+<http://10.208.3.127:32769/Vertical+Extent> ; a skos:Concept ;
+	rdfs:label "Vertical Extent" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/vertical-extent> ;
+	dct:description "depth of sample" ;
+	skos:broaderTransitive "/property/extent" .
+
+<http://10.208.3.127:32769/Vertical+Position> ; a skos:Concept ;
+	rdfs:label "Vertical Position" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/vertical-position> ;
+	dct:description "Depth to bottom" .
+
+<http://10.208.3.127:32769/Viscosity> ; a skos:Concept ;
+	rdfs:label "Viscosity" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/viscosity> ;
+	dct:description "The viscosity of the drilling fluid; resistance to flow." .
+
+<http://10.208.3.127:32769/Volume> ; a skos:Concept ;
+	rdfs:label "Volume" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/volume> ;
+	dct:description "the amount of void space" .
+
+<http://10.208.3.127:32769/Young+Feature+Identifier> ; a skos:Concept ;
+	rdfs:label "Young Feature Identifier" ;
+	<http://10.208.3.127:32769/URI>  <http://10.208.3.127:32769/def/property/young-feature-identifier> ;
+	dct:description "Unique identifier for younger age term for feature." .

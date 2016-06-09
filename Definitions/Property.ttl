@@ -1,0 +1,1396 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<property>
+	rdf:type skos:Collection ;
+	rdfs:label "Property" ;
+	skos:definition "Property" ;
+  dct:description "A conceptual property. A quality that characterizes some aspect of instances of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world. It is conceptual and thus has no particular associated means of representation by which the property can be communicated. A quality that inheres in an entity either permanently or over some time interval.<br><br>This is derived from ISO11179 data element concept: a concept that is an association of a property with an object class. A data element concept can be represented in the form of a data element, described independently of any particular representation. Since elementProperty is mandatory and single valued, there doesn't seem to be much gained by separating property and dataElementConcept" ;
+  skos:member <property/access-link> ; 
+  skos:member <property/administrative-position-name> ; 
+  skos:member <property/age> ; 
+  skos:member <property/agent-identifier> ; 
+  skos:member <property/agent-name> ; 
+  skos:member <property/air-permeability> ; 
+  skos:member <property/analytical-procedure-metadata> ; 
+  skos:member <property/aquifer-productivity> ; 
+  skos:member <property/area> ; 
+  skos:member <property/auto-id> ; 
+  skos:member <property/borehole-casing-extent> ; 
+  skos:member <property/borehole-casing-thickness> ; 
+  skos:member <property/borehole-casing-weight> ; 
+  skos:member <property/borehole-casing-weight-uom> ; 
+  skos:member <property/borehole-collar-elevation> ; 
+  skos:member <property/borehole-spacing> ; 
+  skos:member <property/capacity_mw> ; 
+  skos:member <property/category--name> ; 
+  skos:member <property/cementation-factor> ; 
+  skos:member <property/chemical-character> ; 
+  skos:member <property/composition> ; 
+  skos:member <property/conductivity> ; 
+  skos:member <property/constituent-type> ; 
+  skos:member <property/contact-information> ; 
+  skos:member <property/contour-identifier> ; 
+  skos:member <property/coordinate> ; 
+  skos:member <property/coordinate-location> ; 
+  skos:member <property/coordinate-reference-system> ; 
+  skos:member <property/correction> ; 
+  skos:member <property/count> ; 
+  skos:member <property/coverage-domain-bound> ; 
+  skos:member <property/curation-location> ; 
+  skos:member <property/customer> ; 
+  skos:member <property/data-history> ; 
+  skos:member <property/datum-type> ; 
+  skos:member <property/density> ; 
+  skos:member <property/description> ; 
+  skos:member <property/designation> ; 
+  skos:member <property/displacement> ; 
+  skos:member <property/documentation> ; 
+  skos:member <property/drilling-method> ; 
+  skos:member <property/duration> ; 
+  skos:member <property/elevation> ; 
+  skos:member <property/elevation-datum> ; 
+  skos:member <property/e-mail-address> ; 
+  skos:member <property/energy> ; 
+  skos:member <property/eruptive-style-type> ; 
+  skos:member <property/event-in-history> ; 
+  skos:member <property/event-name> ; 
+  skos:member <property/event-type> ; 
+  skos:member <property/extent> ; 
+  skos:member <property/facility-contact> ; 
+  skos:member <property/facility-name> ; 
+  skos:member <property/facility-operational-date> ; 
+  skos:member <property/facility-operator> ; 
+  skos:member <property/facility-status> ; 
+  skos:member <property/fault-boundary> ; 
+  skos:member <property/fault-count> ; 
+  skos:member <property/fault-movement-type> ; 
+  skos:member <property/feature-count> ; 
+  skos:member <property/feature-description> ; 
+  skos:member <property/feature-extent> ; 
+  skos:member <property/feature-history> ; 
+  skos:member <property/feature-identifier> ; 
+  skos:member <property/feature-name> ; 
+  skos:member <property/feature-of-interest> ; 
+  skos:member <property/feature-shape> ; 
+  skos:member <property/feature-type> ; 
+  skos:member <property/fiat-geographic-area> ; 
+  skos:member <property/fiat-geographic-position> ; 
+  skos:member <property/flow-continuity> ; 
+  skos:member <property/flow-direction> ; 
+  skos:member <property/flow-velocity-magnitude> ; 
+  skos:member <property/fluid-flux> ; 
+  skos:member <property/fluid-pressure> ; 
+  skos:member <property/fluid-quantity> ; 
+  skos:member <property/fluid-temperature> ; 
+  skos:member <property/functional-characterization> ; 
+  skos:member <property/geospatial-coordinate-extent> ; 
+  skos:member <property/geospatial-extent> ; 
+  skos:member <property/geospatial-orientation> ; 
+  skos:member <property/geospatial-position> ; 
+  skos:member <property/geospatial-x-coordinate> ; 
+  skos:member <property/geospatial-y-coordinate> ; 
+  skos:member <property/geothermal-resource-type> ; 
+  skos:member <property/gravity-observation-correction> ; 
+  skos:member <property/gravity-observed-value> ; 
+  skos:member <property/ground-elevation> ; 
+  skos:member <property/heat-flow> ; 
+  skos:member <property/history> ; 
+  skos:member <property/hydraulic-conductivity> ; 
+  skos:member <property/hydraulic-transmissivity> ; 
+  skos:member <property/hydrologic-setting> ; 
+  skos:member <property/identifier> ; 
+  skos:member <property/index-term> ; 
+  skos:member <property/individual-name> ; 
+  skos:member <property/information> ; 
+  skos:member <property/instrument-name> ; 
+  skos:member <property/intrinsic-permeability> ; 
+  skos:member <property/label> ; 
+  skos:member <property/latitude> ; 
+  skos:member <property/lithology-type> ; 
+  skos:member <property/local-identifier> ; 
+  skos:member <property/local-permeability> ; 
+  skos:member <property/location> ; 
+  skos:member <property/location-name> ; 
+  skos:member <property/location-uncertainty> ; 
+  skos:member <property/location-uncertainty-code> ; 
+  skos:member <property/longitude> ; 
+  skos:member <property/market-proximity> ; 
+  skos:member <property/mass> ; 
+  skos:member <property/material-type> ; 
+  skos:member <property/measurement-count> ; 
+  skos:member <property/metadata-reference> ; 
+  skos:member <property/name> ; 
+  skos:member <property/notes> ; 
+  skos:member <property/notional-location> ; 
+  skos:member <property/observation-history> ; 
+  skos:member <property/observation-identifier> ; 
+  skos:member <property/observation-name> ; 
+  skos:member <property/observation-procedure> ; 
+  skos:member <property/observation-type> ; 
+  skos:member <property/operational-date> ; 
+  skos:member <property/operator> ; 
+  skos:member <property/organization-name> ; 
+  skos:member <property/orientation> ; 
+  skos:member <property/otherid> ; 
+  skos:member <property/owner> ; 
+  skos:member <property/parent-feature-identifier> ; 
+  skos:member <property/periodicity> ; 
+  skos:member <property/permeability> ; 
+  skos:member <property/pipe-extent-> ; 
+  skos:member <property/plant-name> ; 
+  skos:member <property/plant-type> ; 
+  skos:member <property/point-of-contact> ; 
+  skos:member <property/pore-scale-permeability> ; 
+  skos:member <property/porosity> ; 
+  skos:member <property/postal-address> ; 
+  skos:member <property/power> ; 
+  skos:member <property/power-production-capacity> ; 
+  skos:member <property/precipitation-quantity> ; 
+  skos:member <property/pressure> ; 
+  skos:member <property/procedure-description> ; 
+  skos:member <property/procedure-name> ; 
+  skos:member <property/procedure-type> ; 
+  skos:member <property/process-type> ; 
+  skos:member <property/provenance> ; 
+  skos:member <property/publication-date> ; 
+  skos:member <property/purpose> ; 
+  skos:member <property/quantifier> ; 
+  skos:member <property/range-number> ; 
+  skos:member <property/recharge-extent> ; 
+  skos:member <property/reference-identifier> ; 
+  skos:member <property/related-resource> ; 
+  skos:member <property/relation> ; 
+  skos:member <property/reporting-date> ; 
+  skos:member <property/representation> ; 
+  skos:member <property/residence-time> ; 
+  skos:member <property/resistivity> ; 
+  skos:member <property/resource-assessment> ; 
+  skos:member <property/resource-history> ; 
+  skos:member <property/resource-link> ; 
+  skos:member <property/resource-owner> ; 
+  skos:member <property/resource-reference> ; 
+  skos:member <property/resource-responsible-party> ; 
+  skos:member <property/resource-state> ; 
+  skos:member <property/resource-use-restriction> ; 
+  skos:member <property/sample-type> ; 
+  skos:member <property/sampling-feature-identifier> ; 
+  skos:member <property/section-number> ; 
+  skos:member <property/section-part> ; 
+  skos:member <property/sedimentary-rock-cement> ; 
+  skos:member <property/seismic-magnitude> ; 
+  skos:member <property/self-identifier> ; 
+  skos:member <property/shape> ; 
+  skos:member <property/source-citation> ; 
+  skos:member <property/source-identifier> ; 
+  skos:member <property/spacing> ; 
+  skos:member <property/spatial-reference-system> ; 
+  skos:member <property/specific-heat> ; 
+  skos:member <property/status> ; 
+  skos:member <property/status-date> ; 
+  skos:member <property/substance-of-interest> ; 
+  skos:member <property/telephone-number> ; 
+  skos:member <property/temperature> ; 
+  skos:member <property/temperature-gradient> ; 
+  skos:member <property/thermal-conductivity> ; 
+  skos:member <property/thermal-conductivity-correction> ; 
+  skos:member <property/thermal-diffusivity> ; 
+  skos:member <property/thickness> ; 
+  skos:member <property/time-position> ; 
+  skos:member <property/township-number> ; 
+  skos:member <property/uncertainty> ; 
+  skos:member <property/unit-of-measure> ; 
+  skos:member <property/update-time-stamp> ; 
+  skos:member <property/us-cadastral-location> ; 
+  skos:member <property/usage> ; 
+  skos:member <property/use-application> ; 
+  skos:member <property/utilization> ; 
+  skos:member <property/utm-easting> ; 
+  skos:member <property/utm-northing> ; 
+  skos:member <property/value> ; 
+  skos:member <property/variable-type> ; 
+  skos:member <property/velocity-magnitude> ; 
+  skos:member <property/vertical-datum> ; 
+  skos:member <property/vertical-extent> ; 
+  skos:member <property/vertical-position> ; 
+  skos:member <property/viscosity> ; 
+  skos:member <property/voice-telephone> ; 
+  skos:member <property/volume> ; 
+  skos:member <property/weight> ; 
+  skos:member <property/x-coordinate> ; 
+  skos:member <property/y-coordinate> ; 
+  skos:member <property/younger-age> ; 
+  skos:member <property/zip-code> ;
+.
+
+
+<property/access-link> a skos:Concept ;
+	skos:prefLabel "Access Link" ;
+	dct:description "URL or 'live link' that will retrieve a digital file containing a scanned image of the log file on the World Wide Web.   Multiple locations may be listed, delimited by '|'." ;
+	skos:broader <property/reference> ;
+	rdfs:label "Access Link" .
+
+<property/administrative-position-name> a skos:Concept ;
+	skos:prefLabel "Administrative Position Name" ;
+	skos:broader <property/name> ;
+	rdfs:label "Administrative Position Name" .
+
+<property/age> a skos:Concept ;
+	skos:prefLabel "Age" ;
+	dct:description "The magnitude of the time interval since the origination of some feature or event" ;
+	skos:broader <property/duration> ;
+	rdfs:label "Age" .
+
+<property/agent-identifier> a skos:Concept ;
+	skos:prefLabel "Agent Identifier" ;
+	dct:description "Unique identifier for a agent; indended for machine designation of the feature" ;
+	skos:broader <property/identifier> ;
+	dcdtr:domainOfCarriers <agent> ;
+	rdfs:label "Agent Identifier" .
+
+<property/agent-name> a skos:Concept ;
+	skos:prefLabel "Agent Name" ;
+	skos:broader <property/name> ;
+	dcdtr:domainOfCarriers <agent> ;
+	rdfs:label "Agent Name" .
+
+<property/air-permeability> a skos:Concept ;
+	skos:prefLabel "Air permeability" ;
+	dct:description "A permeability value measured using air as the transport fluid." ;
+	skos:broader <property/permeability> ;
+	dcdtr:domainOfCarriers <http://resources.usgin.org/uri-gin/dtr/class/conceptual-domain/porous-material> ;
+	rdfs:label "Air permeability" .
+
+<property/analytical-procedure-metadata> a skos:Concept ;
+	skos:prefLabel "Analytical Procedure Metadata" ;
+	dct:description "Unique identifier that identifies an analysis observation whose analyte values are the detection limits for each analyte. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature. Unique identifier for each set of samples, each analyzed using the same method, technique and using the same equipment." ;
+	skos:broader <property/identifier> ;
+	dcdtr:domainOfCarriers <analytical+procedure> ;
+	rdfs:label "Analytical Procedure Metadata" .
+
+<property/aquifer-productivity> a skos:Concept ;
+	skos:prefLabel "Aquifer Productivity" ;
+	dct:description "The volume of water an aquifer releases from or takes into storage per unit surface area of the aquifer per unit change in head. One of the physical properties that characterize the capacity of an aquifer to release groundwater (others are  Storativity (S), and specific yield (Sy)). see https://en.wikipedia.org/wiki/Specific_storage" ;
+	dcdtr:domainOfCarriers <aquifer> ;
+	rdfs:label "Aquifer Productivity" .
+
+<property/area> a skos:Concept ;
+	skos:prefLabel "Area" ;
+	dct:description "the surface area subtended by an object viewed from a particular orientation." ;
+	skos:broader <property/location> ;
+	dcdtr:domainOfCarriers <surface> ;
+	rdfs:label "Area" .
+
+<property/auto-id> a skos:Concept ;
+	skos:prefLabel "Auto ID" ;
+	dct:description "an automatically generated identifier that is unique in some context (e.g. within a single table in a database)" ;
+	skos:broader <property/identifier> ;
+	dcdtr:domainOfCarriers <information+object> ;
+	rdfs:label "Auto ID" .
+
+<property/borehole-casing-extent> a skos:Concept ;
+	skos:prefLabel "Borehole Casing Extent" ;
+	dct:description "An extent in the linear reference system achored to a borehole trace" ;
+	skos:broader <property/extent> ;
+	dcdtr:domainOfCarriers <borehole+casing> ;
+	rdfs:label "Borehole Casing Extent" .
+
+<property/borehole-casing-thickness> a skos:Concept ;
+	skos:prefLabel "Borehole Casing Thickness" ;
+	dct:description "Thickness Casing pipe installed in the borehole. Units must be same as diameter units specified in this record. If multiple pipe thicknesses used, these should be separated by the pipe character '|'. " ;
+	skos:broader <property/thickness> ;
+	dcdtr:domainOfCarriers <borehole+casing> ;
+	rdfs:label "Borehole Casing Thickness" .
+
+<property/borehole-casing-weight> a skos:Concept ;
+	skos:prefLabel "Borehole Casing Weight" ;
+	dct:description "Casing pipe weight per length installed in the borehole." ;
+	skos:broader <property/weight> ;
+	dcdtr:domainOfCarriers <borehole+casing> ;
+	rdfs:label "Borehole Casing Weight" .
+
+<property/borehole-casing-weight-uom> a skos:Concept ;
+	skos:prefLabel "Borehole Casing Weight UOM" ;
+	dct:description "Units for the reported Casing Weight: kg/m OR lbs/ft." ;
+	dcdtr:domainOfCarriers <measurement> ;
+	rdfs:label "Borehole Casing Weight UOM" .
+
+<property/borehole-collar-elevation> a skos:Concept ;
+	skos:prefLabel "Borehole Collar Elevation" ;
+	rdfs:label "Borehole Collar Elevation" .
+
+<property/borehole-spacing> a skos:Concept ;
+	skos:prefLabel "Borehole Spacing" ;
+	dct:description "The average distance between boreholes in feet." ;
+	rdfs:label "Borehole Spacing" .
+
+<property/capacity_mw> a skos:Concept ;
+	skos:prefLabel "Capacity_MW" ;
+	skos:broader <property/power-production-capacity> ;
+	rdfs:label "Capacity_MW" .
+
+<property/category--name> a skos:Concept ;
+	skos:prefLabel "Category  Name" ;
+	dct:description "Text string for human designation of a category" ;
+	skos:broader <property/name> ;
+	rdfs:label "Category  Name" .
+
+<property/cementation-factor> a skos:Concept ;
+	skos:prefLabel "Cementation factor" ;
+	skos:altLabel "cementation exponent" ;
+	dct:description "The cementation factor, m, of Archie's equation has specific effects on electric conduction processes in porous media. It depends on the shape, type, and size of grains; the shape and size of pores and pore throats; and the size and number of dead-end pores. The dependence of m on the degree of cementation is not as strong as its dependence on the shape of grains and pores. (doi:10.1016/S0920-4105(99)00009-1).   The cementation exponent models how much the pore network increases the resistivity, as the rock itself is assumed to be non-conductive. If the pore network were to be modelled as a set of parallel capillary tubes, a cross-section area average of the rock's resistivity would yield porosity dependence equivalent to a cementation exponent of 1. However, the tortuosity of the rock increases this to a higher number than 1. This relates the cementation exponent to the permeability of the rock, increasing permeability decreases the cementation exponent. The exponent m has been observed near 1.3 for unconsolidated sands, and is believed to increase with cementation. Common values for this cementation exponent for consolidated sandstones are 1.8 < m < 2.0. In carbonate rocks, the cementation exponent shows higher variance due to strong diagenetic affinity and complex pore structures. Values between 1.7 and 4.1 have been observed. The cementation exponent is usually assumed not to be dependent on temperature.  (https://en.wikipedia.org/wiki/Archie%27s_law)" ;
+	dcdtr:domainOfCarriers <http://resources.usgin.org/uri-gin/dtr/class/conceptual-domain/porous-material> ;
+	rdfs:label "Cementation factor" .
+
+<property/chemical-character> a skos:Concept ;
+	skos:prefLabel "Chemical Character" ;
+	dct:description "a characteristic of a substance that is obeserved during a reaction" ;
+	rdfs:label "Chemical Character" .
+
+<property/composition> a skos:Concept ;
+	skos:prefLabel "Composition" ;
+	dct:description "the nature of something's ingredients or constituents" ;
+	dcdtr:domainOfCarriers <material+object> ;
+	rdfs:label "Composition" .
+
+<property/conductivity> a skos:Concept ;
+	skos:prefLabel "Conductivity" ;
+	rdfs:label "Conductivity" .
+
+<property/constituent-type> a skos:Concept ;
+	skos:prefLabel "Constituent Type" ;
+	skos:broader <property/type> ;
+	rdfs:label "Constituent Type" .
+
+<property/contact-information> a skos:Concept ;
+	skos:prefLabel "Contact Information" ;
+	dct:description "domain is union of valid telephone numbers, e-mail addresses and postal addresses" ;
+	skos:broader <property/contact-information> ;
+	dcdtr:domainOfCarriers <agent> ;
+	rdfs:label "Contact Information" .
+
+<property/contour-identifier> a skos:Concept ;
+	skos:prefLabel "Contour Identifier" ;
+	dct:description "Unique identifier for a contour; indended for machine designation of the feature" ;
+	skos:broader <property/identifier> ;
+	rdfs:label "Contour Identifier" .
+
+<property/coordinate> a skos:Concept ;
+	skos:prefLabel "Coordinate" ;
+	dct:description "the distance from the origin along one of the axes in a coordinate reference system" ;
+	rdfs:label "Coordinate" .
+
+<property/coordinate-location> a skos:Concept ;
+	skos:prefLabel "Coordinate Location" ;
+	skos:broader <property/geospatial-position> ;
+	rdfs:label "Coordinate Location" .
+
+<property/coordinate-reference-system> a skos:Concept ;
+	skos:prefLabel "Coordinate Reference System" ;
+	dct:description "a coordinate-based spatial reference system definition" ;
+	skos:broader <property/spatial-reference-system> ;
+	rdfs:label "Coordinate Reference System" .
+
+<property/correction> a skos:Concept ;
+	skos:prefLabel "Correction" ;
+	skos:broader <property/correction> ;
+	rdfs:label "Correction" .
+
+<property/count> a skos:Concept ;
+	skos:prefLabel "Count" ;
+	dct:description "an act of determining the total number of something." ;
+	rdfs:label "Count" .
+
+<property/coverage-domain-bound> a skos:Concept ;
+	skos:prefLabel "Coverage Domain Bound" ;
+	dct:description "Depth to the bottom of the interval being tested." ;
+	rdfs:label "Coverage Domain Bound" .
+
+<property/curation-location> a skos:Concept ;
+	skos:prefLabel "Curation Location" ;
+	dct:description "Free text Name of institution, museum, or repository where the sample is currently stored." ;
+	skos:broader <property/name> ;
+	rdfs:label "Curation Location" .
+
+<property/customer> a skos:Concept ;
+	skos:prefLabel "Customer" ;
+	dct:description "a person or organization that buys goods or services from a store or business." ;
+	skos:broader <property/name> ;
+	rdfs:label "Customer" .
+
+<property/data-history> a skos:Concept ;
+	skos:prefLabel "Data History" ;
+	dct:description "specification of the sequence of events that resulted in the current state of a data item" ;
+	skos:broader <property/history> ;
+	rdfs:label "Data History" .
+
+<property/datum-type> a skos:Concept ;
+	skos:prefLabel "Datum Type" ;
+	dct:description "Specify where value in elevation field refers to." ;
+	skos:broader <property/type> ;
+	rdfs:label "Datum Type" .
+
+<property/density> a skos:Concept ;
+	skos:prefLabel "Density" ;
+	dct:description "mass divided by volume" ;
+	rdfs:label "Density" .
+
+<property/description> a skos:Concept ;
+	skos:prefLabel "Description" ;
+	dct:description "An information object that characterizes a resource. Generally understood to be text intended for humans." ;
+	rdfs:label "Description" .
+
+<property/designation> a skos:Concept ;
+	skos:prefLabel "Designation" ;
+	dct:description "A symbol understood by users to represent some other resource; identifier is a designation intended for machines, names and icons are intended for human users." ;
+	rdfs:label "Designation" .
+
+<property/displacement> a skos:Concept ;
+	skos:prefLabel "Displacement" ;
+	dct:description "the moving of something from its place or position." ;
+	rdfs:label "Displacement" .
+
+<property/documentation> a skos:Concept ;
+	skos:prefLabel "Documentation" ;
+	rdfs:label "Documentation" .
+
+<property/drilling-method> a skos:Concept ;
+	skos:prefLabel "Drilling Method" ;
+	dct:description "Basic drilling technology used in the creation of the borehole. Separate multiple drilling methods with the pipe  '|' character." ;
+	rdfs:label "Drilling Method" .
+
+<property/duration> a skos:Concept ;
+	skos:prefLabel "Duration" ;
+	dct:description "the time during which something continues" ;
+	rdfs:label "Duration" .
+
+<property/elevation> a skos:Concept ;
+	skos:prefLabel "Elevation" ;
+	rdfs:label "Elevation" .
+
+<property/elevation-datum> a skos:Concept ;
+	skos:prefLabel "Elevation Datum" ;
+	rdfs:label "Elevation Datum" .
+
+<property/e-mail-address> a skos:Concept ;
+	skos:prefLabel "E-Mail Address" ;
+	dct:description "A URI that identifies a mailbox (message delivery endpoint) on the internet." ;
+	skos:broader <property/e-mail-address> ;
+	rdfs:label "E-Mail Address" .
+
+<property/energy> a skos:Concept ;
+	skos:prefLabel "Energy" ;
+	dct:description "power derived from the utilization of physical or chemical resources" ;
+	rdfs:label "Energy" .
+
+<property/eruptive-style-type> a skos:Concept ;
+	skos:prefLabel "Eruptive Style Type" ;
+	dct:description "Term describing eruptive style" ;
+	skos:broader <property/type> ;
+	rdfs:label "Eruptive Style Type" .
+
+<property/event-in-history> a skos:Concept ;
+	skos:prefLabel "Event in History" ;
+	dct:description "an event in a history" ;
+	rdfs:label "Event in History" .
+
+<property/event-name> a skos:Concept ;
+	skos:prefLabel "Event Name" ;
+	dct:description "Text string for human designation of an event" ;
+	skos:broader <property/name> ;
+	rdfs:label "Event Name" .
+
+<property/event-type> a skos:Concept ;
+	skos:prefLabel "Event Type" ;
+	dct:description "Event classification free text, according to classification scheme used by data provider. " ;
+	skos:broader <property/type> ;
+	dcdtr:domainOfCarriers <event> ;
+	rdfs:label "Event Type" .
+
+<property/extent> a skos:Concept ;
+	skos:prefLabel "Extent" ;
+	dct:description "the area covered by something" ;
+	skos:broader <property/extent> ;
+	rdfs:label "Extent" .
+
+<property/facility-contact> a skos:Concept ;
+	skos:prefLabel "Facility Contact" ;
+	skos:broader <property/point-of-contact> ;
+	rdfs:label "Facility Contact" .
+
+<property/facility-name> a skos:Concept ;
+	skos:prefLabel "Facility Name" ;
+	dct:description "Common or human-readable name by which the facility is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming " ;
+	skos:broader <property/name> ;
+	rdfs:label "Facility Name" .
+
+<property/facility-operational-date> a skos:Concept ;
+	skos:prefLabel "Facility Operational Date" ;
+	dct:description "Date on which a facility was made operational" ;
+	rdfs:label "Facility Operational Date" .
+
+<property/facility-operator> a skos:Concept ;
+	skos:prefLabel "Facility Operator" ;
+	dct:description "the party responsible for operation of a facility" ;
+	skos:broader <property/resource-responsible-party> ;
+	dcdtr:domainOfCarriers <facility> ;
+	rdfs:label "Facility Operator" .
+
+<property/facility-status> a skos:Concept ;
+	skos:prefLabel "Facility Status" ;
+	dct:description "Term indicating the production status of the facility" ;
+	rdfs:label "Facility Status" .
+
+<property/fault-boundary> a skos:Concept ;
+	skos:prefLabel "Fault Boundary" ;
+	dct:description "vertical faults" ;
+	rdfs:label "Fault Boundary" .
+
+<property/fault-count> a skos:Concept ;
+	skos:prefLabel "Fault Count" ;
+	dct:description "Number of faults contained by field in question." ;
+	rdfs:label "Fault Count" .
+
+<property/fault-movement-type> a skos:Concept ;
+	skos:prefLabel "Fault Movement Type" ;
+	dct:description "Terms used to define the type of movement for a DisplacementValue on a ShearDisplacementStructure." ;
+	skos:broader <property/type> ;
+	rdfs:label "Fault Movement Type" .
+
+<property/feature-count> a skos:Concept ;
+	skos:prefLabel "Feature Count" ;
+	dct:description "number of features" ;
+	rdfs:label "Feature Count" .
+
+<property/feature-description> a skos:Concept ;
+	skos:prefLabel "Feature Description" ;
+	dct:description "Free text field for any additional observations or other information regarding the feature, any special considerations with this instance (quality, lithology, locality, size, weight, etc)." ;
+	skos:broader <property/description> ;
+	rdfs:label "Feature Description" .
+
+<property/feature-extent> a skos:Concept ;
+	skos:prefLabel "Feature Extent" ;
+	dct:description "Specification of an extended (linear, area, or volume) location with respect to the Earth" ;
+	skos:broader <property/extent> ;
+	rdfs:label "Feature Extent" .
+
+<property/feature-history> a skos:Concept ;
+	skos:prefLabel "Feature History" ;
+	dct:description "Description of the sequence of events leading to the current state of a feature" ;
+	skos:broader <property/history> ;
+	rdfs:label "Feature History" .
+
+<property/feature-identifier> a skos:Concept ;
+	skos:prefLabel "Feature Identifier" ;
+	dct:description "Unique identifier for a feature; indended for machine designation of the feature" ;
+	skos:broader <property/identifier> ;
+	rdfs:label "Feature Identifier" .
+
+<property/feature-name> a skos:Concept ;
+	skos:prefLabel "Feature Name" ;
+	dct:description "Text string for human designation of the feature" ;
+	skos:broader <property/name> ;
+	rdfs:label "Feature Name" .
+
+<property/feature-of-interest> a skos:Concept ;
+	skos:prefLabel "Feature of Interest" ;
+	dcdtr:domainOfCarriers <observation> ;
+	rdfs:label "Feature of Interest" .
+
+<property/feature-shape> a skos:Concept ;
+	skos:prefLabel "Feature Shape" ;
+	rdfs:label "Feature Shape" .
+
+<property/feature-type> a skos:Concept ;
+	skos:prefLabel "Feature Type" ;
+	dct:description "Specification of a category to which the feature belongs" ;
+	skos:broader <property/type> ;
+	rdfs:label "Feature Type" .
+
+<property/fiat-geographic-area> a skos:Concept ;
+	skos:prefLabel "Fiat Geographic Area" ;
+	rdfs:label "Fiat Geographic Area" .
+
+<property/fiat-geographic-position> a skos:Concept ;
+	skos:prefLabel "Fiat Geographic Position" ;
+	dct:description "An arbitrarily named point location, like a street address;" ;
+	skos:broader <property/location> ;
+	rdfs:label "Fiat Geographic Position" .
+
+<property/flow-continuity> a skos:Concept ;
+	skos:prefLabel "Flow Continuity" ;
+	dct:description "Continuity of flow terms: Perennial water source (has continuous flow all year long); Intermittent (normally ceases flowing for weeks or months each year); ephermal (flow only for hours or days following rainfall)." ;
+	rdfs:label "Flow Continuity" .
+
+<property/flow-direction> a skos:Concept ;
+	skos:prefLabel "Flow Direction" ;
+	dct:description "Estimated direction of groundwater flow" ;
+	rdfs:label "Flow Direction" .
+
+<property/flow-velocity-magnitude> a skos:Concept ;
+	skos:prefLabel "Flow Velocity Magnitude" ;
+	dct:description "estimated mine water velocity" ;
+	rdfs:label "Flow Velocity Magnitude" .
+
+<property/fluid-flux> a skos:Concept ;
+	skos:prefLabel "Fluid Flux" ;
+	dct:description "the rate of flow" ;
+	rdfs:label "Fluid Flux" .
+
+<property/fluid-pressure> a skos:Concept ;
+	skos:prefLabel "Fluid Pressure" ;
+	rdfs:label "Fluid Pressure" .
+
+<property/fluid-quantity> a skos:Concept ;
+	skos:prefLabel "Fluid Quantity" ;
+	dct:description "Fluid measure" ;
+	rdfs:label "Fluid Quantity" .
+
+<property/fluid-temperature> a skos:Concept ;
+	skos:prefLabel "Fluid Temperature" ;
+	skos:broader <property/temperature> ;
+	rdfs:label "Fluid Temperature" .
+
+<property/functional-characterization> a skos:Concept ;
+	skos:prefLabel "Functional Characterization" ;
+	rdfs:label "Functional Characterization" .
+
+<property/geospatial-coordinate-extent> a skos:Concept ;
+	skos:prefLabel "Geospatial Coordinate Extent" ;
+	skos:broader <property/geospatial-extent> ;
+	rdfs:label "Geospatial Coordinate Extent" .
+
+<property/geospatial-extent> a skos:Concept ;
+	skos:prefLabel "Geospatial Extent" ;
+	dct:description "Specification of an extended (linear, area, or volume) location with respect to the Earth" ;
+	skos:broader <property/extent> ;
+	rdfs:label "Geospatial Extent" .
+
+<property/geospatial-orientation> a skos:Concept ;
+	skos:prefLabel "Geospatial Orientation" ;
+	dct:description "geographic location" ;
+	skos:broader <property/location> ;
+	rdfs:label "Geospatial Orientation" .
+
+<property/geospatial-position> a skos:Concept ;
+	skos:prefLabel "Geospatial Position" ;
+	dct:description "Specification of the location of a point feature with respect to Earth" ;
+	skos:broader <property/location> ;
+	rdfs:label "Geospatial Position" .
+
+<property/geospatial-x-coordinate> a skos:Concept ;
+	skos:prefLabel "Geospatial X-coordinate" ;
+	dct:description "coordinate value along what is generally protrayed as the horizontal axis in a map view" ;
+	rdfs:label "Geospatial X-coordinate" .
+
+<property/geospatial-y-coordinate> a skos:Concept ;
+	skos:prefLabel "Geospatial Y-coordinate" ;
+	dct:description "coordinate value along what is generally protrayed as the vertical axis in a map view" ;
+	rdfs:label "Geospatial Y-coordinate" .
+
+<property/geothermal-resource-type> a skos:Concept ;
+	skos:prefLabel "Geothermal Resource Type" ;
+	dct:description "Simple characterization of the geothermal resource." ;
+	skos:broader <property/type> ;
+	rdfs:label "Geothermal Resource Type" .
+
+<property/gravity-observation-correction> a skos:Concept ;
+	skos:prefLabel "Gravity Observation Correction" ;
+	dct:description "Correction for variation of gravity with elevation due to the mass of the material between the gravity station and the vertical datum.  " ;
+	skos:broader <property/correction> ;
+	rdfs:label "Gravity Observation Correction" .
+
+<property/gravity-observed-value> a skos:Concept ;
+	skos:prefLabel "Gravity Observed Value" ;
+	dct:description "The measured value of the attraction of the earth's mass for bodies near its surface" ;
+	rdfs:label "Gravity Observed Value" .
+
+<property/ground-elevation> a skos:Concept ;
+	skos:prefLabel "Ground Elevation" ;
+	rdfs:label "Ground Elevation" .
+
+<property/heat-flow> a skos:Concept ;
+	skos:prefLabel "Heat Flow" ;
+	dct:description "the amount of heat transferred across an isothermal surface in a unit time" ;
+	rdfs:label "Heat Flow" .
+
+<property/history> a skos:Concept ;
+	skos:prefLabel "History" ;
+	dct:description "Description of the sequence of events leading to the current state of a resource" ;
+	skos:broader <property/history> ;
+	rdfs:label "History" .
+
+<property/hydraulic-conductivity> a skos:Concept ;
+	skos:prefLabel "hydraulic conductivity" ;
+	dct:description "The proportionality constant specifically for the flow of water through a porous media; permeability is a portion of this, and is a property of the porous media only, not the fluid. Given the value of hydraulic conductivity for a subsurface system, the permeability can be calculated.  in this case, reported as meters/sec" ;
+	dcdtr:domainOfCarriers <http://resources.usgin.org/uri-gin/dtr/class/conceptual-domain/porous-material> ;
+	rdfs:label "hydraulic conductivity" .
+
+<property/hydraulic-transmissivity> a skos:Concept ;
+	skos:prefLabel "Hydraulic Transmissivity" ;
+	dct:description "The transmissivity is a measure of how much water can be transmitted horizontally, such as to a pumping well. Transmissivity is directly proportional to horizontal hydraulic conductivity and thickness of the transmitting layer." ;
+	rdfs:label "Hydraulic Transmissivity" .
+
+<property/hydrologic-setting> a skos:Concept ;
+	skos:prefLabel "Hydrologic Setting" ;
+	dct:description "a notional location within a conceptual hydrologic environment, e.g. above-below water table." ;
+	rdfs:label "Hydrologic Setting" .
+
+<property/identifier> a skos:Concept ;
+	skos:prefLabel "Identifier" ;
+	dct:description "A designation for a resoruce intended for machine use, but typically intelligible to human users as well." ;
+	skos:broader <property/designation> ;
+	rdfs:label "Identifier" .
+
+<property/index-term> a skos:Concept ;
+	skos:prefLabel "Index Term" ;
+	dct:description "a term that captures the essence of the topic" ;
+	rdfs:label "Index Term" .
+
+<property/individual-name> a skos:Concept ;
+	skos:prefLabel "Individual Name" ;
+	dct:description "The name of an individual person" ;
+	skos:broader <property/name> ;
+	rdfs:label "Individual Name" .
+
+<property/information> a skos:Concept ;
+	skos:prefLabel "Information" ;
+	dct:description "a property that provides information about a resource in an unconstratained way; typically implemented as free text." ;
+	skos:broader <property/information> ;
+	rdfs:label "Information" .
+
+<property/instrument-name> a skos:Concept ;
+	skos:prefLabel "Instrument Name" ;
+	dct:description "Text string for human designation of an instrument" ;
+	skos:broader <property/name> ;
+	rdfs:label "Instrument Name" .
+
+<property/intrinsic-permeability> a skos:Concept ;
+	skos:prefLabel "intrinsic permeability" ;
+	dct:description "Intrinsic permeability is permeability calculated an intensive property (not a spatial average of a heterogeneous block of material), i.e. a function of the material structure only (and not of the fluid) " ;
+	skos:broader <property/permeability> ;
+	dcdtr:domainOfCarriers <http://resources.usgin.org/uri-gin/dtr/class/conceptual-domain/porous-material> ;
+	rdfs:label "intrinsic permeability" .
+
+<property/label> a skos:Concept ;
+	skos:prefLabel "Label" ;
+	dct:description "A short local name for an item for use in visualizations" ;
+	skos:broader <property/feature-name> ;
+	rdfs:label "Label" .
+
+<property/latitude> a skos:Concept ;
+	skos:prefLabel "Latitude" ;
+	skos:broader <property/geospatial-y-coordinate> ;
+	rdfs:label "Latitude" .
+
+<property/lithology-type> a skos:Concept ;
+	skos:prefLabel "Lithology Type" ;
+	dct:description "Description of the lithology of surface geology" ;
+	skos:broader <property/type> ;
+	rdfs:label "Lithology Type" .
+
+<property/local-identifier> a skos:Concept ;
+	skos:prefLabel "Local Identifier" ;
+	dct:description "Unique identifier for a local feature; indended for machine designation of the feature" ;
+	skos:broader <property/identifier> ;
+	rdfs:label "Local Identifier" .
+
+<property/local-permeability> a skos:Concept ;
+	skos:prefLabel "Local permeability" ;
+	dct:description "permeabililty measured in a rock body by one of several pump tests in a well; intended to represent the rock volume in the local vicinity of the perforated part of the well bore" ;
+	skos:broader <property/permeability> ;
+	dcdtr:domainOfCarriers <http://resources.usgin.org/uri-gin/dtr/class/conceptual-domain/porous-material> ;
+	rdfs:label "Local permeability" .
+
+<property/location> a skos:Concept ;
+	skos:prefLabel "Location" ;
+	dct:description "Specification of where some thing is relative to Earth" ;
+	skos:broader <property/location> ;
+	rdfs:label "Location" .
+
+<property/location-name> a skos:Concept ;
+	skos:prefLabel "Location Name" ;
+	skos:broader <property/location> ;
+	rdfs:label "Location Name" .
+
+<property/location-uncertainty> a skos:Concept ;
+	skos:prefLabel "Location Uncertainty" ;
+	dct:description "positional Accuracy" ;
+	rdfs:label "Location Uncertainty" .
+
+<property/location-uncertainty-code> a skos:Concept ;
+	skos:prefLabel "Location Uncertainty Code" ;
+	skos:broader <property/location-uncertainty> ;
+	rdfs:label "Location Uncertainty Code" .
+
+<property/longitude> a skos:Concept ;
+	skos:prefLabel "Longitude" ;
+	skos:broader <property/geospatial-x-coordinate> ;
+	rdfs:label "Longitude" .
+
+<property/market-proximity> a skos:Concept ;
+	skos:prefLabel "Market Proximity" ;
+	dct:description "specification of the distance according to some metric between a resource and intended consumers of that resources" ;
+	rdfs:label "Market Proximity" .
+
+<property/mass> a skos:Concept ;
+	skos:prefLabel "Mass" ;
+	rdfs:label "Mass" .
+
+<property/material-type> a skos:Concept ;
+	skos:prefLabel "Material Type" ;
+	dct:description "term classifying the material type" ;
+	skos:broader <property/type> ;
+	rdfs:label "Material Type" .
+
+<property/measurement-count> a skos:Concept ;
+	skos:prefLabel "Measurement Count" ;
+	dct:description "number of measurements or samples used to determine the value" ;
+	rdfs:label "Measurement Count" .
+
+<property/metadata-reference> a skos:Concept ;
+	skos:prefLabel "Metadata Reference" ;
+	dct:description "a reference identifier that identifies a metadata information object." ;
+	skos:broader <property/identifier> ;
+	rdfs:label "Metadata Reference" .
+
+<property/name> a skos:Concept ;
+	skos:prefLabel "Name" ;
+	dct:description "Text string for human designation of a resource" ;
+	skos:broader <property/name> ;
+	rdfs:label "Name" .
+
+<property/notes> a skos:Concept ;
+	skos:prefLabel "Notes" ;
+	skos:broader <property/information> ;
+	rdfs:label "Notes" .
+
+<property/notional-location> a skos:Concept ;
+	skos:prefLabel "Notional Location" ;
+	dct:description "Specification of a resource location based on a categorization of location types, e.g. tectonic setting, depositional environment, geologic province" ;
+	skos:broader <propertydef/property/location> ;
+	rdfs:label "Notional Location" .
+
+<property/observation-history> a skos:Concept ;
+	skos:prefLabel "Observation History" ;
+	dct:description "Description of the sequence of events leading to the current state of a observation" ;
+	skos:broader <property/history> ;
+	rdfs:label "Observation History" .
+
+<property/observation-identifier> a skos:Concept ;
+	skos:prefLabel "Observation Identifier" ;
+	dct:description "Unique identifier for a observation; indended for machine designation of the feature" ;
+	skos:broader <property/identifier> ;
+	rdfs:label "Observation Identifier" .
+
+<property/observation-name> a skos:Concept ;
+	skos:prefLabel "Observation Name" ;
+	dct:description "Text string for human designation of an observation" ;
+	skos:broader <property/name> ;
+	rdfs:label "Observation Name" .
+
+<property/observation-procedure> a skos:Concept ;
+	skos:prefLabel "Observation Procedure" ;
+	dct:description "Text description of how the measurement was made" ;
+	rdfs:label "Observation Procedure" .
+
+<property/observation-type> a skos:Concept ;
+	skos:prefLabel "Observation Type" ;
+	skos:broader <property/type> ;
+	rdfs:label "Observation Type" .
+
+<property/operational-date> a skos:Concept ;
+	skos:prefLabel "Operational Date" ;
+	skos:broader <property/resource-history> ;
+	rdfs:label "Operational Date" .
+
+<property/operator> a skos:Concept ;
+	skos:prefLabel "Operator" ;
+	skos:broader <property/resource-responsible-party> ;
+	rdfs:label "Operator" .
+
+<property/organization-name> a skos:Concept ;
+	skos:prefLabel "Organization Name" ;
+	skos:broader <property/name> ;
+	rdfs:label "Organization Name" .
+
+<property/orientation> a skos:Concept ;
+	skos:prefLabel "Orientation" ;
+	dct:description "describe direction of sample." ;
+	skos:broader <property/location> ;
+	rdfs:label "Orientation" .
+
+<property/otherid> a skos:Concept ;
+	skos:prefLabel "OtherID" ;
+	skos:broader <property/feature-identifier> ;
+	rdfs:label "OtherID" .
+
+<property/owner> a skos:Concept ;
+	skos:prefLabel "Owner" ;
+	skos:broader <property/resource-owner> ;
+	rdfs:label "Owner" .
+
+<property/parent-feature-identifier> a skos:Concept ;
+	skos:prefLabel "Parent Feature Identifier" ;
+	dct:description "Unique identifier for a parent feature; indended for machine designation of the feature" ;
+	skos:broader <property/identifier> ;
+	rdfs:label "Parent Feature Identifier" .
+
+<property/periodicity> a skos:Concept ;
+	skos:prefLabel "Periodicity" ;
+	dct:description "the quality or character of being periodic" ;
+	skos:broader <property/history> ;
+	rdfs:label "Periodicity" .
+
+<property/permeability> a skos:Concept ;
+	skos:prefLabel "Permeability" ;
+	dct:description "the state or quality of a material or membrane that causes it to allow liquids or gases to pass through it" ;
+	rdfs:label "Permeability" ;
+	skos:prefLabel "permeability" ;
+	dct:description "Permeability is the property of rocks that is an indication of the ability for fluids (gas or liquid) to flow through rocks; The SI unit for permeability is m2. A practical unit for permeability is the darcy (d), or more commonly the millidarcy (md) (1 darcy \\approx10−12m2)." ;
+	dcdtr:domainOfCarriers <http://resources.usgin.org/uri-gin/dtr/class/conceptual-domain/porous-material> ;
+	rdfs:label "permeability" .
+
+<property/pipe-extent-> a skos:Concept ;
+	skos:prefLabel "Pipe Extent " ;
+	dct:description "Total length in decimal format of the Drill pipe in the hole." ;
+	skos:broader <property/extent> ;
+	rdfs:label "Pipe Extent " .
+
+<property/plant-name> a skos:Concept ;
+	skos:prefLabel "Plant Name" ;
+	skos:broader <property/feature-name> ;
+	rdfs:label "Plant Name" .
+
+<property/plant-type> a skos:Concept ;
+	skos:prefLabel "Plant Type" ;
+	skos:broader <property/feature-type> ;
+	rdfs:label "Plant Type" .
+
+<property/point-of-contact> a skos:Concept ;
+	skos:prefLabel "Point Of Contact" ;
+	dct:description "A responsible party identified as the agent to contact with respect to some resource" ;
+	rdfs:label "Point Of Contact" .
+
+<property/pore-scale-permeability> a skos:Concept ;
+	skos:prefLabel "Pore-scale permeability" ;
+	dct:description "permeability measured on a small sample; unclear how this related to intrinisic permeability." ;
+	skos:broader <property/permeability> ;
+	dcdtr:domainOfCarriers <http://resources.usgin.org/uri-gin/dtr/class/conceptual-domain/porous-material> ;
+	rdfs:label "Pore-scale permeability" .
+
+<property/porosity> a skos:Concept ;
+	skos:prefLabel "Porosity" ;
+	rdfs:label "Porosity" ;
+	skos:prefLabel "porosity" ;
+	dct:description " a measure of the void (i.e. \"empty\") spaces in a material, reported as a fraction of the volume of voids over the total volume " ;
+	dcdtr:domainOfCarriers <http://resources.usgin.org/uri-gin/dtr/class/conceptual-domain/porous-material> ;
+	rdfs:label "porosity" .
+
+<property/postal-address> a skos:Concept ;
+	skos:prefLabel "Postal Address" ;
+	skos:broader <property/fiat-geographic-position> ;
+	rdfs:label "Postal Address" .
+
+<property/power> a skos:Concept ;
+	skos:prefLabel "Power" ;
+	rdfs:label "Power" .
+
+<property/power-production-capacity> a skos:Concept ;
+	skos:prefLabel "Power Production Capacity" ;
+	dct:description "Electrical power production capacity of a facility." ;
+	rdfs:label "Power Production Capacity" .
+
+<property/precipitation-quantity> a skos:Concept ;
+	skos:prefLabel "Precipitation Quantity" ;
+	dct:description "annual precipitation for the location of the mine identified by the FeatureURI. Precipitation from NOAA precipitation measurement network sources. Use decimal inch units. Because official precipitation measurements in the U.S. are inches, that is used here." ;
+	rdfs:label "Precipitation Quantity" .
+
+<property/pressure> a skos:Concept ;
+	skos:prefLabel "Pressure" ;
+	rdfs:label "Pressure" .
+
+<property/procedure-description> a skos:Concept ;
+	skos:prefLabel "Procedure Description" ;
+	dct:description "Free text for any notes pertaining to procedures" ;
+	rdfs:label "Procedure Description" .
+
+<property/procedure-name> a skos:Concept ;
+	skos:prefLabel "Procedure Name" ;
+	dct:description "Text string for human designation of a procedure" ;
+	skos:broader <property/name> ;
+	rdfs:label "Procedure Name" .
+
+<property/procedure-type> a skos:Concept ;
+	skos:prefLabel "Procedure Type" ;
+	dct:description "Term that specifies the method used" ;
+	skos:broader <property/type> ;
+	rdfs:label "Procedure Type" .
+
+<property/process-type> a skos:Concept ;
+	skos:prefLabel "Process Type" ;
+	skos:broader <property/type> ;
+	rdfs:label "Process Type" .
+
+<property/provenance> a skos:Concept ;
+	skos:prefLabel "Provenance" ;
+	dct:description "description of the provenance of a resource" ;
+	rdfs:label "Provenance" .
+
+<property/publication-date> a skos:Concept ;
+	skos:prefLabel "Publication Date" ;
+	dct:description "Date on which data for the borehole was or will be made public. Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1'. If year is unknown, enter 1900. All dates will be converted to yyyy-mm-ddThh:mm. This is intended as a searching aid." ;
+	skos:broader <property/history> ;
+	rdfs:label "Publication Date" .
+
+<property/purpose> a skos:Concept ;
+	skos:prefLabel "Purpose" ;
+	dct:description "the reason for which something is done" ;
+	rdfs:label "Purpose" .
+
+<property/quantifier> a skos:Concept ;
+	skos:prefLabel "Quantifier" ;
+	dct:description "an expression that indicates the scope of a term to which it is atteched" ;
+	rdfs:label "Quantifier" .
+
+<property/range-number> a skos:Concept ;
+	skos:prefLabel "Range Number" ;
+	skos:broader <property/geospatial-x-coordinate> ;
+	rdfs:label "Range Number" .
+
+<property/recharge-extent> a skos:Concept ;
+	skos:prefLabel "Recharge Extent" ;
+	dct:description "area to recharge mine void space" ;
+	skos:broader <property/extent> ;
+	rdfs:label "Recharge Extent" .
+
+<property/reference-identifier> a skos:Concept ;
+	skos:prefLabel "Reference Identifier" ;
+	dct:description "an identifier that is intended to be dereferenceable to link with another information item." ;
+	skos:broader <property/identifier> ;
+	rdfs:label "Reference Identifier" .
+
+<property/related-resource> a skos:Concept ;
+	skos:prefLabel "Related Resource" ;
+	rdfs:label "Related Resource" .
+
+<property/relation> a skos:Concept ;
+	skos:prefLabel "Relation" ;
+	dct:description "an association to another resource. The semantics of the relation should be specified in implementations" ;
+	rdfs:label "Relation" .
+
+<property/reporting-date> a skos:Concept ;
+	skos:prefLabel "Reporting date" ;
+	dct:description "data on which an associated property value was assigned and was current" ;
+	rdfs:label "Reporting date" .
+
+<property/representation> a skos:Concept ;
+	skos:prefLabel "Representation" ;
+	rdfs:label "Representation" .
+
+<property/residence-time> a skos:Concept ;
+	skos:prefLabel "Residence Time" ;
+	rdfs:label "Residence Time" .
+
+<property/resistivity> a skos:Concept ;
+	skos:prefLabel "Resistivity" ;
+	dct:description "a measure of the resisting power of a specified material to the flow of an electric current." ;
+	rdfs:label "Resistivity" .
+
+<property/resource-assessment> a skos:Concept ;
+	skos:prefLabel "Resource Assessment" ;
+	rdfs:label "Resource Assessment" .
+
+<property/resource-history> a skos:Concept ;
+	skos:prefLabel "Resource History" ;
+	dct:description "Description of the sequence of events leading to the current state of a resource" ;
+	skos:broader <property/history> ;
+	rdfs:label "Resource History" .
+
+<property/resource-link> a skos:Concept ;
+	skos:prefLabel "Resource Link" ;
+	skos:broader <property/relation> ;
+	rdfs:label "Resource Link" .
+
+<property/resource-owner> a skos:Concept ;
+	skos:prefLabel "Resource Owner" ;
+	dct:description "Companies, individuals, or other entities who own the property. Separate multiple with a pipe '|' character." ;
+	skos:broader <property/name> ;
+	rdfs:label "Resource Owner" .
+
+<property/resource-reference> a skos:Concept ;
+	skos:prefLabel "Resource Reference" ;
+	dct:description "identifier for a resource; indended for machine designation of a feature" ;
+	skos:broader <property/identifier> ;
+	rdfs:label "Resource Reference" .
+
+<property/resource-responsible-party> a skos:Concept ;
+	skos:prefLabel "Resource Responsible Party" ;
+	dct:description "Free text specification of party that originally registered sample; may be name or organization, with or without contact information." ;
+	skos:broader <property/name> ;
+	rdfs:label "Resource Responsible Party" .
+
+<property/resource-state> a skos:Concept ;
+	skos:prefLabel "Resource State" ;
+	rdfs:label "Resource State" .
+
+<property/resource-use-restriction> a skos:Concept ;
+	skos:prefLabel "Resource Use Restriction" ;
+	rdfs:label "Resource Use Restriction" .
+
+<property/sample-type> a skos:Concept ;
+	skos:prefLabel "Sample Type" ;
+	dct:description "Term classifying the sample type" ;
+	skos:broader <property/type> ;
+	rdfs:label "Sample Type" .
+
+<property/sampling-feature-identifier> a skos:Concept ;
+	skos:prefLabel "Sampling Feature Identifier" ;
+	dct:description "Unique identifier for a  sampling feature; indended for machine designation of the feature" ;
+	skos:broader <property/identifier> ;
+	dcdtr:domainOfCarriers <sampling+feature> ;
+	rdfs:label "Sampling Feature Identifier" .
+
+<property/section-number> a skos:Concept ;
+	skos:prefLabel "Section Number" ;
+	skos:broader <property/location-name> ;
+	dcdtr:domainOfCarriers <US+PLSS+section> ;
+	rdfs:label "Section Number" .
+
+<property/section-part> a skos:Concept ;
+	skos:prefLabel "Section Part" ;
+	dct:description "specification of a sub region within a section area " ;
+	skos:broader <property/location-name> ;
+	dcdtr:domainOfCarriers <US+PLSS+section> ;
+	rdfs:label "Section Part" .
+
+<property/sedimentary-rock-cement> a skos:Concept ;
+	skos:prefLabel "Sedimentary Rock Cement" ;
+	dcdtr:domainOfCarriers <sedimentary+rock> ;
+	rdfs:label "Sedimentary Rock Cement" .
+
+<property/seismic-magnitude> a skos:Concept ;
+	skos:prefLabel "Seismic Magnitude" ;
+	dct:description "A number that characterizes the relative size of an earthquake" ;
+	dcdtr:domainOfCarriers <earthquake> ;
+	rdfs:label "Seismic Magnitude" .
+
+<property/self-identifier> a skos:Concept ;
+	skos:prefLabel "Self Identifier" ;
+	dct:description "a property whose value is intended to uniquely identify the containing dataObject instance, with a value assigned by the data manager" ;
+	skos:broader <property/identifier> ;
+	dcdtr:domainOfCarriers <data+object> ;
+	rdfs:label "Self Identifier" .
+
+<property/shape> a skos:Concept ;
+	skos:prefLabel "Shape" ;
+	dct:description "Specification of a geometry using Earth-referenced coordinates; must have an associated spatial reference system that specifies how coordinate values are mapped to the Earth." ;
+	skos:broader <property/location> ;
+	dcdtr:domainOfCarriers <geographic+location> ;
+	rdfs:label "Shape" .
+
+<property/source-citation> a skos:Concept ;
+	skos:prefLabel "Source Citation" ;
+	dct:description "information that uniquely identifies the source of some thing" ;
+	skos:broader <property/provenance> ;
+	rdfs:label "Source Citation" .
+
+<property/source-identifier> a skos:Concept ;
+	skos:prefLabel "Source Identifier" ;
+	dct:description "Unique identifier for a source; indended for machine designation of the feature" ;
+	skos:broader <property/resource-reference> ;
+	rdfs:label "Source Identifier" .
+
+<property/spacing> a skos:Concept ;
+	skos:prefLabel "Spacing" ;
+	dct:description "a property that specifies the distance between objects in some aggregation" ;
+	rdfs:label "Spacing" .
+
+<property/spatial-reference-system> a skos:Concept ;
+	skos:prefLabel "Spatial Reference System" ;
+	dct:description "defines a specific map projection" ;
+	rdfs:label "Spatial Reference System" .
+
+<property/specific-heat> a skos:Concept ;
+	skos:prefLabel "Specific Heat" ;
+	dct:description "Estimated specific heat of water at the estimated air temperature" ;
+	rdfs:label "Specific Heat" .
+
+<property/status> a skos:Concept ;
+	skos:prefLabel "Status" ;
+	skos:broader <property/resource-state> ;
+	rdfs:label "Status" .
+
+<property/status-date> a skos:Concept ;
+	skos:prefLabel "Status Date" ;
+	skos:broader <property/resource-history> ;
+	rdfs:label "Status Date" .
+
+<property/substance-of-interest> a skos:Concept ;
+	skos:prefLabel "Substance of Interest" ;
+	rdfs:label "Substance of Interest" .
+
+<property/telephone-number> a skos:Concept ;
+	skos:prefLabel "Telephone Number" ;
+	dct:description "designation of a telephone network endpoint" ;
+	rdfs:label "Telephone Number" .
+
+<property/temperature> a skos:Concept ;
+	skos:prefLabel "Temperature" ;
+	dct:description "the degree or intensity of heat present" ;
+	rdfs:label "Temperature" .
+
+<property/temperature-gradient> a skos:Concept ;
+	skos:prefLabel "Temperature Gradient" ;
+	dct:description "Gradient determined from initial temperatures" ;
+	rdfs:label "Temperature Gradient" .
+
+<property/thermal-conductivity> a skos:Concept ;
+	skos:prefLabel "Thermal Conductivity" ;
+	dct:description "measurement of the ability of a material to conduct heat" ;
+	rdfs:label "Thermal Conductivity" .
+
+<property/thermal-conductivity-correction> a skos:Concept ;
+	skos:prefLabel "Thermal Conductivity Correction" ;
+	dct:description "Correction applied to thermal conductivity for in situ conditions." ;
+	skos:broader <property/correction> ;
+	rdfs:label "Thermal Conductivity Correction" .
+
+<property/thermal-diffusivity> a skos:Concept ;
+	skos:prefLabel "Thermal Diffusivity" ;
+	dct:description "How rapidly a material changes temperature to match the surroundings - equilibrium." ;
+	rdfs:label "Thermal Diffusivity" .
+
+<property/thickness> a skos:Concept ;
+	skos:prefLabel "Thickness" ;
+	rdfs:label "Thickness" .
+
+<property/time-position> a skos:Concept ;
+	skos:prefLabel "Time Position" ;
+	dct:description "Numerical value for the age" ;
+	skos:broader <property/history> ;
+	rdfs:label "Time Position" .
+
+<property/township-number> a skos:Concept ;
+	skos:prefLabel "Township Number" ;
+	skos:broader <property/geospatial-y-coordinate> ;
+	rdfs:label "Township Number" .
+
+<property/uncertainty> a skos:Concept ;
+	skos:prefLabel "Uncertainty" ;
+	rdfs:label "Uncertainty" .
+
+<property/unit-of-measure> a skos:Concept ;
+	skos:prefLabel "Unit of Measure" ;
+	dct:description "A quantity used as a standard of measurement" ;
+	rdfs:label "Unit of Measure" .
+
+<property/update-time-stamp> a skos:Concept ;
+	skos:prefLabel "Update Time Stamp" ;
+	skos:broader <property/data-history> ;
+	rdfs:label "Update Time Stamp" .
+
+<property/us-cadastral-location> a skos:Concept ;
+	skos:prefLabel "US Cadastral Location" ;
+	skos:broader <property/geospatial-extent> ;
+	rdfs:label "US Cadastral Location" .
+
+<property/usage> a skos:Concept ;
+	skos:prefLabel "Usage" ;
+	dct:description "Explanation of how a resource is used" ;
+	rdfs:label "Usage" .
+
+<property/use-application> a skos:Concept ;
+	skos:prefLabel "Use Application" ;
+	skos:broader <property/utilization> ;
+	rdfs:label "Use Application" .
+
+<property/utilization> a skos:Concept ;
+	skos:prefLabel "Utilization" ;
+	dct:description "use" ;
+	rdfs:label "Utilization" .
+
+<property/utm-easting> a skos:Concept ;
+	skos:prefLabel "UTM Easting" ;
+	skos:broader <property/geospatial-x-coordinate> ;
+	rdfs:label "UTM Easting" .
+
+<property/utm-northing> a skos:Concept ;
+	skos:prefLabel "UTM Northing" ;
+	skos:broader <property/geospatial-y-coordinate> ;
+	rdfs:label "UTM Northing" .
+
+<property/value> a skos:Concept ;
+	skos:prefLabel "Value" ;
+	rdfs:label "Value" .
+
+<property/variable-type> a skos:Concept ;
+	skos:prefLabel "Variable Type" ;
+	dct:description "Term classifying the variable" ;
+	skos:broader <property/type> ;
+	rdfs:label "Variable Type" .
+
+<property/velocity-magnitude> a skos:Concept ;
+	skos:prefLabel "Velocity Magnitude" ;
+	rdfs:label "Velocity Magnitude" .
+
+<property/vertical-datum> a skos:Concept ;
+	skos:prefLabel "Vertical Datum" ;
+	dct:description "The point of reference against which elevation measurements are made. Best practice: use mean sea level (MSL) as datum." ;
+	rdfs:label "Vertical Datum" .
+
+<property/vertical-extent> a skos:Concept ;
+	skos:prefLabel "Vertical Extent" ;
+	dct:description "A region between two elevations relative to some datum" ;
+	skos:broader <property/extent> ;
+	rdfs:label "Vertical Extent" .
+
+<property/vertical-position> a skos:Concept ;
+	skos:prefLabel "Vertical Position" ;
+	dct:description "A point location that is referenced above or below some horizontal datum" ;
+	rdfs:label "Vertical Position" .
+
+<property/viscosity> a skos:Concept ;
+	skos:prefLabel "Viscosity" ;
+	dct:description "The viscosity of the drilling fluid; resistance to flow." ;
+	rdfs:label "Viscosity" .
+
+<property/voice-telephone> a skos:Concept ;
+	skos:prefLabel "Voice Telephone" ;
+	skos:broader <property/telephone-number> ;
+	rdfs:label "Voice Telephone" .
+
+<property/volume> a skos:Concept ;
+	skos:prefLabel "Volume" ;
+	dct:description "the amount of void space" ;
+	rdfs:label "Volume" .
+
+<property/weight> a skos:Concept ;
+	skos:prefLabel "Weight" ;
+	rdfs:label "Weight" .
+
+<property/x-coordinate> a skos:Concept ;
+	skos:prefLabel "X coordinate" ;
+	skos:broader <property/coordinate> ;
+	rdfs:label "X coordinate" .
+
+<property/y-coordinate> a skos:Concept ;
+	skos:prefLabel "Y Coordinate" ;
+	skos:broader <property/coordinate> ;
+	rdfs:label "Y Coordinate" .
+
+<property/younger-age> a skos:Concept ;
+	skos:prefLabel "Younger Age" ;
+	dct:description "The younger bound for the age of a feature." ;
+	rdfs:label "Younger Age" .
+
+<property/zip-code> a skos:Concept ;
+	skos:prefLabel "Zip Code" ;
+	skos:broader <property/location-name> ;
+	rdfs:label "Zip Code" .

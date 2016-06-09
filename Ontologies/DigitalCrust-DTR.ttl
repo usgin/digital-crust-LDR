@@ -1,0 +1,1453 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix reg:   <http://purl.org/linked-data/registry#> .
+
+<digitalCrust-dtr>
+  rdf:type owl:Ontology ;
+  rdfs:label "vocabulary"@en ;
+  skos:definition "This resource defines"@en ;
+  skos:member <digitalCrust-dtr/Agent> ;
+  skos:member <digitalCrust-dtr/agentInformation>;
+  skos:member <digitalCrust-dtr/agentLabel> ;
+  skos:member <digitalCrust-dtr/agentLink> ;
+  skos:member <digitalCrust-dtr/agentRoleCodespace> ;
+  skos:member <digitalCrust-dtr/agentRoleLabel> ;
+  skos:member <digitalCrust-dtr/agentRoleURI> ;
+  skos:member <digitalCrust-dtr/agentURI> ;
+  skos:member <digitalCrust-dtr/alternateTitle> ;
+  skos:member <digitalCrust-dtr/applicableMeasure> ;
+  skos:member <digitalCrust-dtr/attribution> ;
+  skos:member <digitalCrust-dtr/authority> ;
+  skos:member <digitalCrust-dtr/ArrayDimension> ;
+  skos:member <digitalCrust-dtr/ArrayVariable> ;
+  skos:member <digitalCrust-dtr/Attribute> ;
+  skos:member <digitalCrust-dtr/authority> ;
+  skos:member <digitalCrust-dtr/byteLength> ;
+  skos:member <digitalCrust-dtr/cardinality> ;
+  skos:member <digitalCrust-dtr/Citation> ;
+  skos:member <digitalCrust-dtr/citationURI> ;
+  skos:member <digitalCrust-dtr/citedAgent> ;
+  skos:member <digitalCrust-dtr/code> ;
+  skos:member <digitalCrust-dtr/codeListValue> ;
+  skos:member <digitalCrust-dtr/codespace> ;
+  skos:member <digitalCrust-dtr/conceptAxes> ;
+  skos:member <digitalCrust-dtr/Concept> ;
+  skos:member <digitalCrust-dtr/ConceptScheme> ;
+  skos:member <digitalCrust-dtr/conceptSpace> ;
+  skos:member <digitalCrust-dtr/ConceptualDomain> ;
+  skos:member <digitalCrust-dtr/conceptualValueType> ;
+  skos:member <digitalCrust-dtr/ControlledVocabulary> ;
+  skos:member <digitalCrust-dtr/constraintStatement> ;
+  skos:member <digitalCrust-dtr/contactEmail> ;
+  skos:member <digitalCrust-dtr/context> ;
+  skos:member <digitalCrust-dtr/contributor> ;
+  skos:member <digitalCrust-dtr/DataObject> ;
+  skos:member <digitalCrust-dtr/DataType> ;
+  skos:member <digitalCrust-dtr/dataType> ;
+  skos:member <digitalCrust-dtr/dataTypeName> ;
+  skos:member <digitalCrust-dtr/date> ;
+  skos:member <digitalCrust-dtr/date-event> ;
+  skos:member <digitalCrust-dtr/delimiter> ;
+  skos:member <digitalCrust-dtr/description> ;
+  skos:member <digitalCrust-dtr/designation> ;
+  skos:member <digitalCrust-dtr/dimension> ;
+  skos:member <digitalCrust-dtr/domain> ;
+  skos:member <digitalCrust-dtr/domainDataType> ;
+  skos:member <digitalCrust-dtr/domainName> ;
+  skos:member <digitalCrust-dtr/domainType> ;
+  skos:member <digitalCrust-dtr/Dictionary> ;
+  skos:member <digitalCrust-dtr/element> ;
+  skos:member <digitalCrust-dtr/elementName> ;
+  skos:member <digitalCrust-dtr/encoding> ;
+  skos:member <digitalCrust-dtr/essentialProperty> ;
+  skos:member <digitalCrust-dtr/event>  ;
+  skos:member <digitalCrust-dtr/eventName> ;
+  skos:member <digitalCrust-dtr/eventType> ;
+  skos:member <digitalCrust-dtr/Enumeration> ;
+  skos:member <digitalCrust-dtr/Event> ;
+  skos:member <digitalCrust-dtr/fullCitation> ;
+  skos:member <digitalCrust-dtr/hasMember> ;
+  skos:member <digitalCrust-dtr/identifier> ;
+  skos:member <digitalCrust-dtr/intendedUse> ;
+  skos:member <digitalCrust-dtr/itemType> ;
+  skos:member <digitalCrust-dtr/keyDataType> ;
+  skos:member <digitalCrust-dtr/label> ;
+  skos:member <digitalCrust-dtr/Link> ;
+  skos:member <digitalCrust-dtr/linkAPIDoc> ;
+  skos:member <digitalCrust-dtr/LinkedAPIDoc> ;
+  skos:member <digitalCrust-dtr/linkAPIDocType> ;
+  skos:member <digitalCrust-dtr/linkAPIDocURL> ;
+  skos:member <digitalCrust-dtr/linkContentResourceType> ;
+  skos:member <digitalCrust-dtr/linkOverlayAPI-URI> ;
+  skos:member <digitalCrust-dtr/linkOverlayAPILabel> ;
+  skos:member <digitalCrust-dtr/linkParameter> ;
+  skos:member <digitalCrust-dtr/linkParameterLabel> ;
+  skos:member <digitalCrust-dtr/linkParameterURI> ;
+  skos:member <digitalCrust-dtr/linkParameterValue> ;
+  skos:member <digitalCrust-dtr/linkProfileLabel> ;
+  skos:member <digitalCrust-dtr/linkProfileURI> ;
+  skos:member <digitalCrust-dtr/linkRelation> ;
+  skos:member <digitalCrust-dtr/linkTargetResourceType> ;
+  skos:member <digitalCrust-dtr/linkTitle> ;
+  skos:member <digitalCrust-dtr/linkTransferSize> ;
+  skos:member <digitalCrust-dtr/linkURL> ;
+  skos:member <digitalCrust-dtr/localName> ;
+  skos:member <digitalCrust-dtr/logicType> ;
+  skos:member <digitalCrust-dtr/logicalDomain> ;
+  skos:member <digitalCrust-dtr/List> ;
+  skos:member <digitalCrust-dtr/name> ;
+  skos:member <digitalCrust-dtr/maxValue> ;
+  skos:member <digitalCrust-dtr/meaning> ;
+  skos:member <digitalCrust-dtr/memberUnit> ;
+  skos:member <digitalCrust-dtr/MeasureClass> ;
+  skos:member <digitalCrust-dtr/MetaAttribute>;
+  skos:member <digitalCrust-dtr/metaAttribute> ;
+  skos:member <digitalCrust-dtr/metaAttributeKey> ;
+  skos:member <digitalCrust-dtr/metaAttributeValue> ;
+  skos:member <digitalCrust-dtr/minValue> ;		
+  skos:member <digitalCrust-dtr/name> ;
+  skos:member <digitalCrust-dtr/nilable> ;
+  skos:member <digitalCrust-dtr/ObjectClass> ;
+  skos:member <digitalCrust-dtr/onlineResource> ;
+  skos:member <digitalCrust-dtr/optionalProperty> ;
+  skos:member <digitalCrust-dtr/organizationName> ;
+  skos:member <digitalCrust-dtr/organizationURI> ;
+  skos:member <digitalCrust-dtr/Parameter> ;
+  skos:member <digitalCrust-dtr/personName> ;
+  skos:member <digitalCrust-dtr/personPosition> ;
+  skos:member <digitalCrust-dtr/personURI> ;
+  skos:member <digitalCrust-dtr/PrimitiveType> ;
+  skos:member <digitalCrust-dtr/primitiveType> ;
+  skos:member <digitalCrust-dtr/ProcessingStep> ;
+  skos:member <digitalCrust-dtr/Property> ;
+  skos:member <digitalCrust-dtr/purpose> ;
+  skos:member <digitalCrust-dtr/quantityKind> ;
+  skos:member <digitalCrust-dtr/QualifiedAttribution> ;
+  skos:member <digitalCrust-dtr/reference> ;
+  skos:member <digitalCrust-dtr/representation> ;
+  skos:member <digitalCrust-dtr/targetEnvironment> ;
+  skos:member <digitalCrust-dtr/title> ;
+  skos:member <digitalCrust-dtr/Term> ;
+  skos:member <digitalCrust-dtr/source> ;
+  skos:member <digitalCrust-dtr/UnitOfMeasure> ;
+  skos:member <digitalCrust-dtr/units> ;
+  skos:member <digitalCrust-dtr/valueDataType> ;
+  skos:member <digitalCrust-dtr/ValueDomain> ;	
+  skos:member <digitalCrust-dtr/valueFormat> ;	
+  skos:member <digitalCrust-dtr/valueType> ;
+  skos:member <digitalCrust-dtr/vocabularyName> ;
+  skos:member <digitalCrust-dtr/voicePhoneNumber> ;	
+
+.
+<digitalCrust-dtr/Agent>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Agent"^^xsd:string ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Link> ;
+      owl:onProperty <digitalCrust-dtr/agentLink> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/agentURI> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/ArrayDimension>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ArrayDimension" ;
+  rdfs:subClassOf <digitalCrust-dtr/Concept> ;
+.
+<digitalCrust-dtr/ArrayVariable>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ArrayVariable" ;
+  rdfs:subClassOf <digitalCrust-dtr/DataType> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/ArrayDimension> ;
+      owl:onProperty <digitalCrust-dtr/dimension> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Attribute> ;
+      owl:onProperty <digitalCrust-dtr/valueType> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <digitalCrust-dtr/Attribute> ;
+      owl:onProperty <digitalCrust-dtr/valueType> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <digitalCrust-dtr/ArrayDimension> ;
+      owl:onProperty <digitalCrust-dtr/dimension> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <digitalCrust-dtr/Attribute> ;
+      owl:onProperty <digitalCrust-dtr/valueType> ;
+    ] ;
+.
+<digitalCrust-dtr/Attribute>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Attribute" ;
+  rdfs:subClassOf [
+      rdf:type owl:Class ;
+      dct:description "Missing" ;
+      owl:unionOf (
+          [
+            rdf:type owl:Class ;
+            dct:description "Missing" ;
+            owl:intersectionOf (
+                [
+                  rdf:type owl:Restriction ;
+                  owl:onClass <digitalCrust-dtr/DataObject> ;
+                  owl:onProperty <digitalCrust-dtr/dataType> ;
+                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                ]
+                [
+                  rdf:type owl:Restriction ;
+                  owl:onClass <digitalCrust-dtr/PrimitiveType> ;
+                  owl:onProperty <digitalCrust-dtr/primitiveType> ;
+                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                ]
+              ) ;
+          ]
+          [
+            rdf:type owl:Restriction ;
+            owl:onClass <digitalCrust-dtr/DataType> ;
+            owl:onProperty <digitalCrust-dtr/dataType> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+          ]
+        ) ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/MetaAttribute> ;
+      owl:onProperty <digitalCrust-dtr/metaAttribute> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/UnitOfMeasure> ;
+      owl:onProperty <digitalCrust-dtr/units> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/ValueDomain> ;
+      owl:onProperty <digitalCrust-dtr/logicalDomain> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass <digitalCrust-dtr/Citation> ;
+      owl:onProperty <digitalCrust-dtr/source> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:boolean ;
+      owl:onProperty <digitalCrust-dtr/nilable> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/cardinality> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/elementName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/meaning> ;
+      owl:someValuesFrom <digitalCrust-dtr/Property> ;
+    ] ;
+.
+<digitalCrust-dtr/Citation>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Citation" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Link> ;
+      owl:onProperty <digitalCrust-dtr/onlineResource> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/QualifiedAttribution> ;
+      owl:onProperty <digitalCrust-dtr/citedAgent> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/citationURI> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/title> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/Concept>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Concept" ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Citation> ;
+      owl:onProperty <digitalCrust-dtr/source> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <digitalCrust-dtr/Citation> ;
+      owl:onProperty <digitalCrust-dtr/source> ;
+    ] ;
+.
+<digitalCrust-dtr/ConceptScheme>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ConceptScheme" ;
+  rdfs:subClassOf skos:ConceptScheme ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Citation> ;
+      owl:onProperty <digitalCrust-dtr/source> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Concept> ;
+      owl:onProperty <digitalCrust-dtr/conceptAxes> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Concept> ;
+      owl:onProperty <digitalCrust-dtr/hasMember> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/name> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/ConceptualDomain>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ConceptualDomain" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/ConceptScheme> ;
+      owl:onProperty <digitalCrust-dtr/conceptSpace> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/name> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/applicableMeasure> ;
+      owl:someValuesFrom <digitalCrust-dtr/MeasureClass> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/conceptualValueType> ;
+      owl:someValuesFrom <digitalCrust-dtr/ObjectClass> ;
+    ] ;
+.
+<digitalCrust-dtr/ControlledVocabulary>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ControlledVocabulary" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Term> ;
+      owl:onProperty <digitalCrust-dtr/codeListValue> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <digitalCrust-dtr/Citation> ;
+      owl:onProperty <digitalCrust-dtr/source> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <digitalCrust-dtr/Term> ;
+      owl:onProperty <digitalCrust-dtr/codeListValue> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/vocabularyName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/source> ;
+      owl:someValuesFrom <digitalCrust-dtr/Citation> ;
+    ] ;
+.
+<digitalCrust-dtr/DataObject>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "DataObject" ;
+  rdfs:subClassOf <digitalCrust-dtr/DataType> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/MetaAttribute> ;
+      owl:onProperty <digitalCrust-dtr/metaAttribute> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass <digitalCrust-dtr/Concept> ;
+      owl:onProperty <digitalCrust-dtr/logicType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/label> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/element> ;
+      owl:someValuesFrom <digitalCrust-dtr/Attribute> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/meaning> ;
+      owl:someValuesFrom <digitalCrust-dtr/ObjectClass> ;
+    ] ;
+.
+<digitalCrust-dtr/DataType>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "DataType" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Concept> ;
+      owl:onProperty <digitalCrust-dtr/purpose> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Concept> ;
+      owl:onProperty <digitalCrust-dtr/targetEnvironment> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/dataTypeName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/description> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/localName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/Dictionary>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Dictionary" ;
+  rdfs:subClassOf <digitalCrust-dtr/DataType> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass <digitalCrust-dtr/DataType> ;
+      owl:onProperty <digitalCrust-dtr/valueDataType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass <digitalCrust-dtr/PrimitiveType> ;
+      owl:onProperty <digitalCrust-dtr/keyDataType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/Enumeration>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Enumeration" ;
+  rdfs:subClassOf <digitalCrust-dtr/ControlledVocabulary> ;
+.
+<digitalCrust-dtr/Event>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Event" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass <digitalCrust-dtr/Concept> ;
+      owl:onProperty <digitalCrust-dtr/eventType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:dateTime ;
+      owl:onProperty <digitalCrust-dtr/date> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/Link>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Link" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/linkURL> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/linkTargetResourceType> ;
+      owl:someValuesFrom xsd:string ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/linkTitle> ;
+      owl:someValuesFrom xsd:string ;
+    ] ;
+.
+<digitalCrust-dtr/LinkedAPIDoc>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "LinkedAPIDoc" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/linkAPIDocURL> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/List>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "List" ;
+  rdfs:subClassOf <digitalCrust-dtr/DataType> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass <digitalCrust-dtr/DataType> ;
+      owl:onProperty <digitalCrust-dtr/itemType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/delimiter> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/MeasureClass>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Measurement class" ;
+  rdfs:subClassOf <digitalCrust-dtr/Concept> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/memberUnit> ;
+      owl:someValuesFrom <digitalCrust-dtr/UnitOfMeasure> ;
+    ] ;
+  skos:prefLabel "Measurement class"@en ;
+  skos:scopeNote """a set of equivalent units of measure that may be shared across multiple dimensionalities. Measure_Class allows a grouping of units of measure to be specified once, and reused by multiple dimensionalities. 
+EXAMPLE: We could define the Measure_Classes: Metric Linear Distance, Imperial Linear Distance, each associated with the appropriate Units_of_Measure; and associate them with Dimensionalities: Height, Width, and Depth to model the three spatial dimensions. (From ISO11179)
+Also allow dimensionless, and categorical
+
+UOM under metric linear distance would include cm, m, km.  It would appear that the members of a measure class would all belong to a single system of units."""@en ;
+.
+<digitalCrust-dtr/MetaAttribute>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "MetaAttribute" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/metaAttributeValue> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass <digitalCrust-dtr/Attribute> ;
+      owl:onProperty <digitalCrust-dtr/metaAttributeKey> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/ObjectClass>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ObjectClass" ;
+  rdfs:subClassOf <digitalCrust-dtr/Concept> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/essentialProperty> ;
+      owl:someValuesFrom <digitalCrust-dtr/Property> ;
+    ] ;
+  skos:scopeNote ""@en ;
+.
+<digitalCrust-dtr/Parameter>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Parameter" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/linkParameterURI> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/linkParameterLabel> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/linkParameterValue> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/PrimitiveType>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "PrimitiveType" ;
+  rdfs:subClassOf <digitalCrust-dtr/DataType> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom xsd:int ;
+      owl:onProperty <digitalCrust-dtr/byteLength> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/encoding> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/ProcessingStep>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ProcessingStep" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Citation> ;
+      owl:onProperty <digitalCrust-dtr/source> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass <digitalCrust-dtr/Event> ;
+      owl:onProperty <digitalCrust-dtr/event> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/contributor> ;
+      owl:someValuesFrom <digitalCrust-dtr/QualifiedAttribution> ;
+    ] ;
+.
+<digitalCrust-dtr/Property>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Property" ;
+  rdfs:subClassOf <digitalCrust-dtr/Concept> ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Concept> ;
+      owl:onProperty <digitalCrust-dtr/quantityKind> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/ConceptualDomain> ;
+      owl:onProperty <digitalCrust-dtr/domain> ;
+    ] ;
+  skos:prefLabel "Property"@en ;
+  skos:scopeNote """A conceptual property. A quality that characterizes some aspect of instances of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world. It is conceptual and thus has no particular associated means of representation by which the property can be communicated. A quality that inheres in an entity either permanently or over some time interval..
+
+This is derived from ISO11179 data element concept: a concept that is an association of a property with an object class. A data element concept can be represented in the form of a data element, described independently of any particular representation.  Since elementProperty is mandatory and single valued, there doesn't seem to be much gained by separating property and dataElementConcept"""@en ;
+.
+<digitalCrust-dtr/QualifiedAttribution>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "QualifiedAttribution" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/agentRoleURI> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/agentRoleLabel> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/attribution> ;
+      owl:someValuesFrom <digitalCrust-dtr/Agent> ;
+    ] ;
+.
+<digitalCrust-dtr/Term>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Term" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <digitalCrust-dtr/Concept> ;
+      owl:onProperty <digitalCrust-dtr/meaning> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/designation> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onProperty <digitalCrust-dtr/meaning> ;
+      owl:someValuesFrom <digitalCrust-dtr/Concept> ;
+    ] ;
+.
+<digitalCrust-dtr/UnitOfMeasure>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Unit of Measure" ;
+  rdfs:subClassOf <digitalCrust-dtr/Concept> ;
+  skos:prefLabel "Unit of Measure"@en ;
+  skos:scopeNote """a convention for how the magnitude of a quantifiable thing is specified. \"real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the two quantities as a number\" (http://www.iso.org/sites/JCGM/VIM/JCGM_200e_FILES/MAIN_JCGM_200e/01_e.html#L_1_9)
+
+Units of measure are not limited to physical categories. Examples of physical categories are: linear measure, area, volume, mass, velocity, time duration. Examples of non-physical categories are: currency, quality indicator, color intensity."""@en ;
+.
+<digitalCrust-dtr/ValueDomain>
+  rdf:type owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ValueDomain" ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/Concept> ;
+      owl:onProperty <digitalCrust-dtr/domainType> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:allValuesFrom <digitalCrust-dtr/ConceptualDomain> ;
+      owl:onProperty <digitalCrust-dtr/meaning> ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onClass <digitalCrust-dtr/DataType> ;
+      owl:onProperty <digitalCrust-dtr/domainDataType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <digitalCrust-dtr/identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      rdf:type owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <digitalCrust-dtr/domainName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<digitalCrust-dtr/agentInformation>
+  rdf:type owl:AnnotationProperty ;
+  rdfs:subPropertyOf skos:note ;
+  dct:description "Missing" ;
+  rdfs:label "agentInformation" ;
+.
+<digitalCrust-dtr/agentLabel>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "agentLabel" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/label> ;
+.
+<digitalCrust-dtr/agentLink>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Agent> ;
+  rdfs:label "agentLink" ;
+  rdfs:range <digitalCrust-dtr/Link> ;
+.
+<digitalCrust-dtr/agentRoleCodespace>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/QualifiedAttribution> ;
+  rdfs:label "agentRoleCodespace" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/agentRoleLabel>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/QualifiedAttribution> ;
+  rdfs:label "agentRoleLabel" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <digitalCrust-dtr/label> ;
+.
+<digitalCrust-dtr/agentRoleURI>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/QualifiedAttribution> ;
+  rdfs:label "agentRoleURI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <digitalCrust-dtr/reference> ;
+.
+<digitalCrust-dtr/agentURI>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "agentURI" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/identifier> ;
+.
+<digitalCrust-dtr/alternateTitle>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Citation> ;
+  rdfs:label "alternateTitle" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/applicableMeasure>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Link from ConceptualDomain to a measure class that may be used to qualify values in that domain"@en ;
+  rdfs:domain <digitalCrust-dtr/ConceptualDomain> ;
+  rdfs:label "applicableMeasure" ;
+  rdfs:range <digitalCrust-dtr/MeasureClass> ;
+.
+<digitalCrust-dtr/attribution>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/QualifiedAttribution> ;
+  rdfs:label "attribution" ;
+  rdfs:range <digitalCrust-dtr/Agent> ;
+.
+<digitalCrust-dtr/authority>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "authority" ;
+  rdfs:range <digitalCrust-dtr/Citation> ;
+.
+<digitalCrust-dtr/byteLength>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "byteLength" ;
+  rdfs:range xsd:int ;
+.
+<digitalCrust-dtr/cardinality>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "cardinality" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/citationURI>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "citationURI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <digitalCrust-dtr/identifier> ;
+.
+<digitalCrust-dtr/citedAgent>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Citation> ;
+  rdfs:label "citedAgent" ;
+  rdfs:range <digitalCrust-dtr/QualifiedAttribution> ;
+.
+<digitalCrust-dtr/code>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "code" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/codeListValue>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/ControlledVocabulary> ;
+  rdfs:label "codeListValue" ;
+  rdfs:range <digitalCrust-dtr/Term> ;
+.
+<digitalCrust-dtr/codespace>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "codespace" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/conceptAxes>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/ConceptScheme> ;
+  rdfs:label "conceptAxes" ;
+  rdfs:range <digitalCrust-dtr/Concept> ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+<digitalCrust-dtr/conceptSpace>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "conceptSpace" ;
+.
+<digitalCrust-dtr/conceptualValueType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/ConceptualDomain> ;
+  rdfs:label "conceptualValueType" ;
+  rdfs:range <digitalCrust-dtr/ObjectClass> ;
+.
+<digitalCrust-dtr/constraintStatement>
+  rdf:type owl:AnnotationProperty ;
+  rdfs:subPropertyOf skos:note ;
+  dct:description "Missing" ;
+  rdfs:label "constraintStatement" ;
+.
+<digitalCrust-dtr/contactEmail>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Agent> ;
+  rdfs:label "contactEmail" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/context>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "context" ;
+  owl:inverseOf <digitalCrust-dtr/hasMember> ;
+.
+<digitalCrust-dtr/contributor>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "contributor" ;
+  rdfs:range <digitalCrust-dtr/QualifiedAttribution> ;
+.
+<digitalCrust-dtr/dataType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "dataType" ;
+  rdfs:range <digitalCrust-dtr/DataType> ;
+.
+<digitalCrust-dtr/dataTypeName>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "dataTypeName" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/date>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "date" ;
+  rdfs:range xsd:dateTime ;
+.
+<digitalCrust-dtr/date-event>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "date-event" ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+.
+<digitalCrust-dtr/delimiter>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "delimiter" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/description>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "description" ;
+.
+<digitalCrust-dtr/designation>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Term> ;
+  rdfs:label "designation" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/dimension>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "dimension" ;
+.
+<digitalCrust-dtr/domain>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "domain" ;
+.
+<digitalCrust-dtr/domainDataType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "domainDataType" ;
+  rdfs:range <digitalCrust-dtr/DataType> ;
+.
+<digitalCrust-dtr/domainName>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "domainName" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/domainType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "domainType" ;
+  rdfs:range <digitalCrust-dtr/Concept> ;
+.
+<digitalCrust-dtr/element>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/DataObject> ;
+  rdfs:label "element" ;
+  rdfs:range <digitalCrust-dtr/Attribute> ;
+.
+<digitalCrust-dtr/elementName>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "elementName" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/encoding>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "encoding" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/essentialProperty>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "essentialProperty" ;
+.
+<digitalCrust-dtr/event>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "event" ;
+  rdfs:range <digitalCrust-dtr/Event> ;
+.
+<digitalCrust-dtr/eventName>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Event> ;
+  rdfs:label "eventName" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/eventType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Event> ;
+  rdfs:label "eventType" ;
+  rdfs:range <digitalCrust-dtr/Concept> ;
+.
+<digitalCrust-dtr/fullCitation>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Citation> ;
+  rdfs:label "fullCitation" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/hasMember>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "hasMember" ;
+.
+<digitalCrust-dtr/identifier>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "identifier" ;
+  rdfs:range xsd:anyURI ;
+.
+<digitalCrust-dtr/intendedUse>
+  rdf:type owl:AnnotationProperty ;
+  rdfs:subPropertyOf skos:note ;
+  dct:description "Missing" ;
+  rdfs:label "intendedUse" ;
+.
+<digitalCrust-dtr/itemType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "itemType" ;
+  rdfs:range <digitalCrust-dtr/DataType> ;
+.
+<digitalCrust-dtr/keyDataType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "keyDataType" ;
+.
+<digitalCrust-dtr/label>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "label" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/linkAPIDoc>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkAPIDoc" ;
+  rdfs:range <digitalCrust-dtr/LinkedAPIDoc> ;
+.
+<digitalCrust-dtr/linkAPIDocType>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/LinkedAPIDoc> ;
+  rdfs:label "linkAPIDocType" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/linkAPIDocURL>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/LinkedAPIDoc> ;
+  rdfs:label "linkAPIDocURL" ;
+  rdfs:range xsd:anyURI ;
+.
+<digitalCrust-dtr/linkContentResourceType>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkContentResourceType" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/linkOverlayAPI-URI>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkOverlayAPI-URI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <digitalCrust-dtr/reference> ;
+.
+<digitalCrust-dtr/linkOverlayAPILabel>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkOverlayAPILabel" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <digitalCrust-dtr/label> ;
+.
+<digitalCrust-dtr/linkParameter>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkParameter" ;
+  rdfs:range <digitalCrust-dtr/Parameter> ;
+.
+<digitalCrust-dtr/linkParameterLabel>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Parameter> ;
+  rdfs:label "linkParameterLabel" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <digitalCrust-dtr/label> ;
+.
+<digitalCrust-dtr/linkParameterURI>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Parameter> ;
+  rdfs:label "linkParameterURI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <digitalCrust-dtr/identifier> ;
+.
+<digitalCrust-dtr/linkParameterValue>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Parameter> ;
+  rdfs:label "linkParameterValue" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/linkProfileLabel>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkProfileLabel" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <digitalCrust-dtr/label> ;
+.
+<digitalCrust-dtr/linkProfileURI>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkProfileURI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <digitalCrust-dtr/reference> ;
+.
+<digitalCrust-dtr/linkRelation>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkRelation" ;
+  rdfs:range <digitalCrust-dtr/Concept> ;
+.
+<digitalCrust-dtr/linkTargetResourceType>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkTargetResourceType" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/linkTitle>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "linkTitle" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/linkTransferSize>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkTransferSize" ;
+  rdfs:range xsd:long ;
+.
+<digitalCrust-dtr/linkURL>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Link> ;
+  rdfs:label "linkURL" ;
+  rdfs:range xsd:anyURI ;
+.
+<digitalCrust-dtr/localName>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "localName" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/logicType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "logicType" ;
+  rdfs:range <digitalCrust-dtr/Concept> ;
+.
+<digitalCrust-dtr/logicalDomain>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "logicalDomain" ;
+.
+<digitalCrust-dtr/maxValue>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "maxValue" ;
+  rdfs:range xsd:decimal ;
+.
+<digitalCrust-dtr/meaning>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "meaning" ;
+.
+<digitalCrust-dtr/memberUnit>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "memberUnit" ;
+.
+<digitalCrust-dtr/metaAttribute>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "metaAttribute" ;
+.
+<digitalCrust-dtr/metaAttributeKey>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "metaAttributeKey" ;
+.
+<digitalCrust-dtr/metaAttributeValue>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/MetaAttribute> ;
+  rdfs:label "metaAttributeValue" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/minValue>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "minValue" ;
+  rdfs:range xsd:decimal ;
+.
+<digitalCrust-dtr/name>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "name" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/nilable>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Attribute> ;
+  rdfs:label "nilable" ;
+  rdfs:range xsd:boolean ;
+.
+<digitalCrust-dtr/onlineResource>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "onlineResource" ;
+.
+<digitalCrust-dtr/optionalProperty>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "optionalProperty" ;
+.
+<digitalCrust-dtr/organizationName>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Agent> ;
+  rdfs:label "organizationName" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/organizationURI>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "organizationURI" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/reference> ;
+.
+<digitalCrust-dtr/personName>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Agent> ;
+  rdfs:label "personName" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/personPosition>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Agent> ;
+  rdfs:label "personPosition" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/personURI>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "personURI" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/reference> ;
+.
+<digitalCrust-dtr/primitiveType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "primitiveType" ;
+.
+<digitalCrust-dtr/purpose>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "purpose" ;
+  rdfs:range <digitalCrust-dtr/Concept> ;
+.
+<digitalCrust-dtr/quantityKind>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "quantityKind" ;
+.
+<digitalCrust-dtr/reference>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "reference" ;
+.
+<digitalCrust-dtr/representation>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "representation" ;
+  owl:inverseOf <digitalCrust-dtr/meaning> ;
+.
+<digitalCrust-dtr/source>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "source" ;
+  rdfs:range <digitalCrust-dtr/Citation> ;
+.
+<digitalCrust-dtr/targetEnvironment>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "targetEnvironment" ;
+  rdfs:range <digitalCrust-dtr/Concept> ;
+.
+<digitalCrust-dtr/title>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "title" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/units>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "units" ;
+.
+<digitalCrust-dtr/valueDataType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "valueDataType" ;
+  rdfs:range <digitalCrust-dtr/DataType> ;
+.
+<digitalCrust-dtr/valueFormat>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "valueFormat" ;
+  rdfs:range xsd:string ;
+.
+<digitalCrust-dtr/valueType>
+  rdf:type owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "valueType" ;
+.
+<digitalCrust-dtr/vocabularyName>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "vocabularyName" ;
+  rdfs:subPropertyOf <digitalCrust-dtr/name> ;
+.
+<digitalCrust-dtr/voicePhoneNumber>
+  rdf:type owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <digitalCrust-dtr/Agent> ;
+  rdfs:label "voicePhoneNumber" ;
+  rdfs:range xsd:string ;
+.

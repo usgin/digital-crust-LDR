@@ -1,0 +1,1357 @@
+@prefix : <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#> .
+@prefix dt1: <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#20150520> a owl:Ontology ;
+	owl:versionIRI <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#20150520> ;
+	owl:imports <http://www.w3.org/2004/02/skos/core> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/description
+
+dcterms:description a owl:AnnotationProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentInformation
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentInformation> a owl:AnnotationProperty ;
+	rdfs:subPropertyOf skos:note .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#constraintStatement
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#constraintStatement> a owl:AnnotationProperty ;
+	rdfs:subPropertyOf skos:note .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#intendedUse
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#intendedUse> a owl:AnnotationProperty ;
+	rdfs:subPropertyOf skos:note .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentLink
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentLink> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#applicableMeasure
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#applicableMeasure> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#attribution
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#attribution> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#authority
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#authority> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#carrier
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#carrier> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#citedAgent
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#citedAgent> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#codeListValue
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#codeListValue> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Term> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#conceptAxes
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#conceptAxes> a owl:ObjectProperty ;
+	rdfs:subPropertyOf owl:topObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptScheme> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#conceptSpace
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#conceptSpace> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#conceptualValueType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#conceptualValueType> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptualDomain> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectClass> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#context
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#context> a owl:ObjectProperty ;
+	owl:inverseOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#hasMember> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#contributor
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#contributor> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataObject
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataObject> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectElementBinding> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataObject> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataType> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dimension
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dimension> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domain
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domain> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainDataType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainDataType> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainOfCarriers
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainOfCarriers> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Property> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectClass> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainType> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#element
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#element> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataObject> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#essentialProperty
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#essentialProperty> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#event
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#event> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Event> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#eventType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#eventType> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Event> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#hasMember
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#hasMember> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#itemType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#itemType> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#keyDataType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#keyDataType> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkAPIDoc
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkAPIDoc> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#LinkedAPIDoc> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameter
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameter> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Parameter> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkRelation
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkRelation> a owl:ObjectProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#logicType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#logicType> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#logicalDomain
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#logicalDomain> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#meaning
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#meaning> a owl:ObjectProperty ;
+	owl:inverseOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#representation> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#memberUnit
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#memberUnit> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttribute
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttribute> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaElement
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaElement> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#onlineResource
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#onlineResource> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#optionalProperty
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#optionalProperty> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#primitiveType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#primitiveType> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#purpose
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#purpose> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#quantityKind
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#quantityKind> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#representation
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#representation> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#source
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#source> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#targetEnvironment
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#targetEnvironment> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#units
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#units> a owl:ObjectProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#valueDataType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#valueDataType> a owl:ObjectProperty ;
+	rdfs:range <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#valueType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#valueType> a owl:ObjectProperty .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentLabel
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentLabel> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#label> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentRoleCodespace
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentRoleCodespace> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentRoleLabel
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentRoleLabel> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#label> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentRoleURI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentRoleURI> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#reference> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> ;
+	rdfs:range xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentURI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentURI> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#alternateTitle
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#alternateTitle> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#byteLength
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#byteLength> a owl:DatatypeProperty ;
+	rdfs:range xsd:int .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#cardinality
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#cardinality> a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#citationURI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#citationURI> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> ;
+	rdfs:range xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#code
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#code> a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#codespace
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#codespace> a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#contactEmail
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#contactEmail> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataTypeName
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataTypeName> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#date
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#date> a owl:DatatypeProperty ;
+	rdfs:range xsd:dateTime .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#date-event
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#date-event> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#delimiter
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#delimiter> a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#description
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#description> a owl:DatatypeProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#designation
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#designation> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Term> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainName
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainName> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#elementName
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#elementName> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#encoding
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#encoding> a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#eventName
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#eventName> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Event> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#fullCitation
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#fullCitation> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> a owl:DatatypeProperty ;
+	rdfs:range xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#label
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#label> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkAPIDocType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkAPIDocType> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#LinkedAPIDoc> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkAPIDocURL
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkAPIDocURL> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#LinkedAPIDoc> ;
+	rdfs:range xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkContentResourceType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkContentResourceType> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkOverlayAPI-URI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkOverlayAPI-URI> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#reference> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkOverlayAPILabel
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkOverlayAPILabel> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#label> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameterLabel
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameterLabel> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#label> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Parameter> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameterURI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameterURI> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Parameter> ;
+	rdfs:range xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameterValue
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameterValue> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Parameter> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkProfileLabel
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkProfileLabel> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#label> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkProfileURI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkProfileURI> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#reference> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkTargetResourceType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkTargetResourceType> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkTitle
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkTitle> a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkTransferSize
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkTransferSize> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range xsd:long .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkURL
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkURL> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> ;
+	rdfs:range xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#localName
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#localName> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#maxValue
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#maxValue> a owl:DatatypeProperty ;
+	rdfs:range xsd:decimal .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttributeURI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttributeURI> a owl:DatatypeProperty ;
+	rdfs:range xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttributeValue
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttributeValue> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MetaAttribute> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttributeValueURI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttributeValueURI> a owl:DatatypeProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#minValue
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#minValue> a owl:DatatypeProperty ;
+	rdfs:range xsd:decimal .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#nilable
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#nilable> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> ;
+	rdfs:range xsd:boolean .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#organizationName
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#organizationName> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#organizationURI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#organizationURI> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#reference> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#personName
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#personName> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#personPosition
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#personPosition> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#personURI
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#personURI> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#reference> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#reference
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#reference> a owl:DatatypeProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#sequence
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#sequence> a owl:DatatypeProperty .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#title
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#title> a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#valueFormat
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#valueFormat> a owl:DatatypeProperty ;
+	rdfs:range xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#vocabularyName
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#vocabularyName> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#voicePhoneNumber
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#voicePhoneNumber> a owl:DatatypeProperty ;
+	rdfs:domain <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> ;
+	rdfs:range xsd:string .
+# 
+# http://www.w3.org/2004/02/skos/core#notation
+
+skos:notation rdfs:range xsd:string .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> a owl:Class ;
+	rdfs:subClassOf _:genid1 .
+
+_:genid1 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentLink> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> rdfs:subClassOf _:genid2 .
+
+_:genid2 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentURI> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> dcterms:description "An agent is something that bears some form of responsibility for an activity taking place, for the existence of an entity, or for another agent's activity. (W3C PROV). In this view, software can also be an agent. Responsibility does not have to be 'conscious' or intentional. An agent is an identifiable entity; could be an organization, an individual who may or may not be associated with an organization, an entity identified via a role (position) relative to an organization, or an artificial entity (software, a machine)."@en ;
+	rdfs:label "Agent"^^xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ArrayDimension
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ArrayDimension> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> ;
+	dcterms:description "missing"@en ;
+	rdfs:label "Array Dimension"^^xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ArrayVariable
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ArrayVariable> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> , _:genid3 .
+
+_:genid3 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dimension> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ArrayDimension> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ArrayVariable> rdfs:subClassOf _:genid4 .
+
+_:genid4 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#valueType> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ArrayVariable> rdfs:subClassOf _:genid5 .
+
+_:genid5 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dimension> ;
+	owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ArrayDimension> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ArrayVariable> rdfs:subClassOf _:genid6 .
+
+_:genid6 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#valueType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> a owl:Class ;
+	rdfs:subClassOf _:genid7 .
+
+_:genid7 a owl:Class ;
+	owl:unionOf _:genid10 .
+
+_:genid10 a rdf:List ;
+	rdf:first _:genid11 .
+
+_:genid11 owl:intersectionOf _:genid14 .
+
+_:genid14 a rdf:List ;
+	rdf:first _:genid15 .
+
+_:genid15 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataObject> .
+
+_:genid14 rdf:rest _:genid12 .
+
+_:genid12 a rdf:List ;
+	rdf:first _:genid13 .
+
+_:genid13 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#primitiveType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#PrimitiveType> .
+
+_:genid12 rdf:rest rdf:nil .
+
+_:genid11 a owl:Class .
+
+_:genid10 rdf:rest _:genid8 .
+
+_:genid8 a rdf:List ;
+	rdf:first _:genid9 .
+
+_:genid9 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> .
+
+_:genid8 rdf:rest rdf:nil .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> rdfs:subClassOf _:genid16 .
+
+_:genid16 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#meaning> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Property> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> rdfs:subClassOf _:genid17 .
+
+_:genid17 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#logicalDomain> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ValueDomain> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> rdfs:subClassOf _:genid18 .
+
+_:genid18 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttribute> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MetaAttribute> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> rdfs:subClassOf _:genid19 .
+
+_:genid19 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#units> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#UnitOfMeasure> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> rdfs:subClassOf _:genid20 .
+
+_:genid20 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#source> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> rdfs:subClassOf _:genid21 .
+
+_:genid21 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#elementName> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> rdfs:subClassOf _:genid22 .
+
+_:genid22 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> a owl:Class ;
+	rdfs:subClassOf _:genid23 .
+
+_:genid23 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#citedAgent> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> rdfs:subClassOf _:genid24 .
+
+_:genid24 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#onlineResource> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> rdfs:subClassOf _:genid25 .
+
+_:genid25 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#citationURI> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> rdfs:subClassOf _:genid26 .
+
+_:genid26 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#title> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> a owl:Class ;
+	rdfs:subClassOf skos:Concept , _:genid27 .
+
+_:genid27 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#source> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> rdfs:subClassOf _:genid28 .
+
+_:genid28 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#source> ;
+	owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptScheme
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptScheme> a owl:Class ;
+	rdfs:subClassOf skos:ConceptScheme , _:genid29 .
+
+_:genid29 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#conceptAxes> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptScheme> rdfs:subClassOf _:genid30 .
+
+_:genid30 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#hasMember> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptScheme> rdfs:subClassOf _:genid31 .
+
+_:genid31 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#source> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptScheme> rdfs:subClassOf _:genid32 .
+
+_:genid32 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptScheme> rdfs:subClassOf _:genid33 .
+
+_:genid33 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptualDomain
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptualDomain> a owl:Class ;
+	rdfs:subClassOf _:genid34 .
+
+_:genid34 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#applicableMeasure> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MeasureClass> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptualDomain> rdfs:subClassOf _:genid35 .
+
+_:genid35 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#conceptualValueType> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectClass> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptualDomain> rdfs:subClassOf _:genid36 .
+
+_:genid36 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#conceptSpace> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptScheme> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptualDomain> rdfs:subClassOf _:genid37 .
+
+_:genid37 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptualDomain> rdfs:subClassOf _:genid38 .
+
+_:genid38 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#name> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ControlledVocabulary
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ControlledVocabulary> a owl:Class ;
+	rdfs:subClassOf _:genid39 .
+
+_:genid39 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#source> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ControlledVocabulary> rdfs:subClassOf _:genid40 .
+
+_:genid40 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#codeListValue> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Term> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ControlledVocabulary> rdfs:subClassOf _:genid41 .
+
+_:genid41 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#codeListValue> ;
+	owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Term> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ControlledVocabulary> rdfs:subClassOf _:genid42 .
+
+_:genid42 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#source> ;
+	owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ControlledVocabulary> rdfs:subClassOf _:genid43 .
+
+_:genid43 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ControlledVocabulary> rdfs:subClassOf _:genid44 .
+
+_:genid44 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#vocabularyName> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataObject
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataObject> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> , _:genid45 .
+
+_:genid45 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#element> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataObject> rdfs:subClassOf _:genid46 .
+
+_:genid46 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#meaning> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectClass> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataObject> rdfs:subClassOf _:genid47 .
+
+_:genid47 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#logicType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> a owl:Class ;
+	rdfs:subClassOf _:genid48 .
+
+_:genid48 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttribute> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MetaAttribute> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> rdfs:subClassOf _:genid49 .
+
+_:genid49 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#purpose> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> rdfs:subClassOf _:genid50 .
+
+_:genid50 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#targetEnvironment> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> rdfs:subClassOf _:genid51 .
+
+_:genid51 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataTypeName> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> rdfs:subClassOf _:genid52 .
+
+_:genid52 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#description> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> rdfs:subClassOf _:genid53 .
+
+_:genid53 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> rdfs:subClassOf _:genid54 .
+
+_:genid54 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#localName> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Dictionary
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Dictionary> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> , _:genid55 .
+
+_:genid55 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#keyDataType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#PrimitiveType> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Dictionary> rdfs:subClassOf _:genid56 .
+
+_:genid56 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#valueDataType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Enumeration
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Enumeration> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ControlledVocabulary> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Event
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Event> a owl:Class ;
+	rdfs:subClassOf _:genid57 .
+
+_:genid57 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#eventType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Event> rdfs:subClassOf _:genid58 .
+
+_:genid58 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#date> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:dateTime .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> a owl:Class ;
+	rdfs:subClassOf _:genid59 .
+
+_:genid59 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkTargetResourceType> ;
+	owl:someValuesFrom xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> rdfs:subClassOf _:genid60 .
+
+_:genid60 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkTitle> ;
+	owl:someValuesFrom xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Link> rdfs:subClassOf _:genid61 .
+
+_:genid61 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkURL> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#LinkedAPIDoc
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#LinkedAPIDoc> a owl:Class ;
+	rdfs:subClassOf _:genid62 .
+
+_:genid62 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkAPIDocURL> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#List
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#List> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> , _:genid63 .
+
+_:genid63 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#itemType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#List> rdfs:subClassOf _:genid64 .
+
+_:genid64 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#delimiter> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MeasureClass
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MeasureClass> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> , _:genid65 .
+
+_:genid65 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#memberUnit> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#UnitOfMeasure> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MeasureClass> skos:prefLabel "Measurement class"@en ;
+	skos:scopeNote """a set of equivalent units of measure that may be shared across multiple dimensionalities. Measure_Class allows a grouping of units of measure to be specified once, and reused by multiple dimensionalities. 
+EXAMPLE: We could define the Measure_Classes: Metric Linear Distance, Imperial Linear Distance, each associated with the appropriate Units_of_Measure; and associate them with Dimensionalities: Height, Width, and Depth to model the three spatial dimensions. (From ISO11179)
+Also allow dimensionless, and categorical
+
+UOM under metric linear distance would include cm, m, km.  It would appear that the members of a measure class would all belong to a single system of units."""@en .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MetaAttribute
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MetaAttribute> a owl:Class ;
+	rdfs:subClassOf _:genid66 .
+
+_:genid66 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaElement> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MetaAttribute> rdfs:subClassOf _:genid67 .
+
+_:genid67 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttributeURI> ;
+	owl:allValuesFrom xsd:anyURI .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MetaAttribute> rdfs:subClassOf _:genid68 .
+
+_:genid68 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#metaAttributeValue> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#MetaAttribute> skos:note """MetaAttributes document the DataObject or Attribute intention and usage, and contain information about properties of all instances of the DataObject or Attribute. NetCDF uses the property to assign units to Attribute, but in this model, UnitOfMeasure is called out as a first-order property (see Attribute diagram).  DataObject metaAttributes might include processing history, conventions used,  geometryType, samplingBasis etc. An Attribute might have discrete sampling scheme information.
+
+This model class is based on the NetCDF common data model 'attribute' concept on dataset and on variable, and properties on DataType and DataElement in ISO11179"""@en .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectClass
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectClass> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> , _:genid69 .
+
+_:genid69 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#essentialProperty> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Property> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectClass> skos:scopeNote ""@en .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectElementBinding
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectElementBinding> a owl:Class ;
+	rdfs:subClassOf _:genid70 .
+
+_:genid70 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#dataObject> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataObject> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectElementBinding> rdfs:subClassOf _:genid71 .
+
+_:genid71 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#element> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Attribute> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectElementBinding> rdfs:subClassOf _:genid72 .
+
+_:genid72 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#byteLength> ;
+	owl:allValuesFrom xsd:positiveInteger .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectElementBinding> rdfs:subClassOf _:genid73 .
+
+_:genid73 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#encoding> ;
+	owl:allValuesFrom xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectElementBinding> rdfs:subClassOf _:genid74 .
+
+_:genid74 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#sequence> ;
+	owl:allValuesFrom xsd:positiveInteger .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectElementBinding> rdfs:subClassOf _:genid75 .
+
+_:genid75 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#cardinality> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Parameter
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Parameter> a owl:Class ;
+	rdfs:subClassOf _:genid76 .
+
+_:genid76 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameterURI> ;
+	owl:allValuesFrom xsd:anyURI .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Parameter> rdfs:subClassOf _:genid77 .
+
+_:genid77 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameterLabel> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Parameter> rdfs:subClassOf _:genid78 .
+
+_:genid78 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#linkParameterValue> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#PrimitiveType
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#PrimitiveType> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ProcessingStep
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ProcessingStep> a owl:Class ;
+	rdfs:subClassOf _:genid79 .
+
+_:genid79 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#contributor> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ProcessingStep> rdfs:subClassOf _:genid80 .
+
+_:genid80 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#source> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Citation> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ProcessingStep> rdfs:subClassOf _:genid81 .
+
+_:genid81 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#event> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Event> .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Property
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Property> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> , _:genid82 .
+
+_:genid82 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domain> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptualDomain> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Property> rdfs:subClassOf _:genid83 .
+
+_:genid83 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainOfCarriers> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ObjectClass> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Property> rdfs:subClassOf _:genid84 .
+
+_:genid84 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#quantityKind> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Property> skos:prefLabel "Property"@en ;
+	skos:scopeNote """A conceptual property. A quality that characterizes some aspect of instances of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world. It is conceptual and thus has no particular associated means of representation by which the property can be communicated. A quality that inheres in an entity either permanently or over some time interval..
+
+This is derived from ISO11179 data element concept: a concept that is an association of a property with an object class. A data element concept can be represented in the form of a data element, described independently of any particular representation.  Since elementProperty is mandatory and single valued, there doesn't seem to be much gained by separating property and dataElementConcept"""@en .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> a owl:Class ;
+	rdfs:subClassOf _:genid85 .
+
+_:genid85 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#attribution> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Agent> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> rdfs:subClassOf _:genid86 .
+
+_:genid86 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentRoleLabel> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#QualifiedAttribution> rdfs:subClassOf _:genid87 .
+
+_:genid87 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#agentRoleURI> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Term
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Term> a owl:Class ;
+	rdfs:subClassOf _:genid88 .
+
+_:genid88 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#meaning> ;
+	owl:someValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Term> rdfs:subClassOf _:genid89 .
+
+_:genid89 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#meaning> ;
+	owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Term> rdfs:subClassOf _:genid90 .
+
+_:genid90 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#designation> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#UnitOfMeasure
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#UnitOfMeasure> a owl:Class ;
+	rdfs:subClassOf <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> ;
+	skos:prefLabel "Unit of Measure"@en ;
+	skos:scopeNote """a convention for how the magnitude of a quantifiable thing is specified. \"real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the two quantities as a number\" (http://www.iso.org/sites/JCGM/VIM/JCGM_200e_FILES/MAIN_JCGM_200e/01_e.html#L_1_9)
+
+Units of measure are not limited to physical categories. Examples of physical categories are: linear measure, area, volume, mass, velocity, time duration. Examples of non-physical categories are: currency, quality indicator, color intensity."""@en .
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ValueDomain
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ValueDomain> a owl:Class ;
+	rdfs:subClassOf _:genid91 .
+
+_:genid91 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainType> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#Concept> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ValueDomain> rdfs:subClassOf _:genid92 .
+
+_:genid92 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#meaning> ;
+	owl:allValuesFrom <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ConceptualDomain> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ValueDomain> rdfs:subClassOf _:genid93 .
+
+_:genid93 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainDataType> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onClass <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataType> .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ValueDomain> rdfs:subClassOf _:genid94 .
+
+_:genid94 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#domainName> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:string .
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#ValueDomain> rdfs:subClassOf _:genid95 .
+
+_:genid95 a owl:Restriction ;
+	owl:onProperty <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#identifier> ;
+	owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:onDataRange xsd:anyURI .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#test
+
+<http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#test> a owl:NamedIndividual , <http://resource.usgin.org/uri-gin/dtr/ontology/datatype/20160520#DataObject> .
+# 
+# Generated by the OWL API (version 4.2.1.20160306-0033) https://github.com/owlcs/owlapi

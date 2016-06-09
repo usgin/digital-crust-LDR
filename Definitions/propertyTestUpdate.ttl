@@ -1,0 +1,58 @@
+@prefix qudt:  <http://qudt.org/schema/qudt#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix ssd:   <http://www.w3.org/ns/sparql-service-description#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix spec:  <http://www.opengis.net/ont/modspec#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix dgu:   <http://reference.data.gov.uk/def/reference/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix ui:    <http://purl.org/linked-data/registry-ui#> .
+@prefix reg:   <http://purl.org/linked-data/registry#> .
+@prefix api:   <http://purl.org/linked-data/api/vocab#> .
+@prefix vivo:  <http://vivoweb.org/ontology/core#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix op:    <http://environment.data.gov.au/def/op#> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix dtr:   <http://registry.it.csiro.au/ont/dtr#> .
+@prefix npg:   <http://ns.nature.com/terms/> .
+@prefix odrs:  <http://schema.theodi.org/odrs#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix env-ui: <http://environment.data.gov.au/structure/ui/> .
+@prefix version: <http://purl.org/linked-data/version#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+@prefix bibo:  <http://purl.org/ontology/bibo/> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix vs:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+<http://resources.usgin.org/uri-gin/dtr/def/property>
+        a                      ldp:Container , skos:Collection , reg:Register ;
+        rdfs:label             "Property" ;
+        dct:description        "A conceptual property. A quality that characterizes some aspect of instances of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world. It is conceptual and thus has no particular associated means of representation by which the property can be communicated. A quality that inheres in an entity either permanently or over some time interval.<br><br>This is derived from ISO11179 data element concept: a concept that is an association of a property with an object class. A data element concept can be represented in the form of a data element, described independently of any particular representation. Since elementProperty is mandatory and single valued, there doesn't seem to be much gained by separating property and dataElementConcept" ;
+        dct:modified           "2016-06-08T23:03:55.088Z"^^xsd:dateTime ;
+        owl:versionInfo        1 ;
+        skos:definition        "Property" ;
+        ldp:hasMemberRelation  skos:member .
+
+<http://resources.usgin.org/uri-gin/dtr/def/_property>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Property" ;
+        dct:dateSubmitted  "2016-06-08T23:03:55.088Z"^^xsd:dateTime ;
+        dct:description    "A conceptual property. A quality that characterizes some aspect of instances of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world. It is conceptual and thus has no particular associated means of representation by which the property can be communicated. A quality that inheres in an entity either permanently or over some time interval.<br><br>This is derived from ISO11179 data element concept: a concept that is an association of a property with an object class. A data element concept can be represented in the form of a data element, described independently of any particular representation. Since elementProperty is mandatory and single valued, there doesn't seem to be much gained by separating property and dataElementConcept" ;
+        reg:definition     [ reg:entity         <http://resources.usgin.org/uri-gin/dtr/def/property> ;
+                             reg:entityVersion  <http://resources.usgin.org/uri-gin/dtr/def/property:1>
+                           ] ;
+        reg:itemClass      skos:Collection , reg:Register ;
+        reg:notation       "property" ;
+        reg:register       <http://resources.usgin.org/uri-gin/dtr/def> ;
+        reg:status         reg:statusSubmitted ;
+        reg:submitter      [ foaf:accountName  "admin@usgin.org" ;
+                             foaf:name         "USGIN Admin"
+                           ] ;
+        owl:versionInfo    1 .

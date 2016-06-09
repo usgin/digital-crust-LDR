@@ -1,0 +1,241 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<value-domain>
+	rdf:type skos:Collection ;
+	rdfs:label "ValueDomain" ;
+	skos:definition "ValueDomain" ;
+  dct:description "No description." ;
+  skos:member <value-domain/agent-identifiers> ; 
+  skos:member <value-domain/cementation-factors> ; 
+  skos:member <value-domain/controlled-vocabulary> ; 
+  skos:member <value-domain/degrees-of-latitude> ; 
+  skos:member <value-domain/degrees-of-longitude> ; 
+  skos:member <value-domain/era-of-geothermal-drilling> ; 
+  skos:member <value-domain/geothermal-fluid-temperature-range-c> ; 
+  skos:member <value-domain/geothermal-power-plant-status-terms-draft> ; 
+  skos:member <value-domain/geothermal-power-plant-types> ; 
+  skos:member <value-domain/http-uri> ; 
+  skos:member <value-domain/megawatts-of-power> ; 
+  skos:member <value-domain/name-string> ;
+  skos:member <value-domain/narrative-text> ; 
+  skos:member <value-domain/real-number-greater-than-0> ; 
+  skos:member <value-domain/percent-of-whole> ; 
+  skos:member <value-domain/positive-integer> ; 
+  skos:member <value-domain/software-environment-terms> ; 
+  skos:member <value-domain/string-255> ; 
+  skos:member <value-domain/unique-bitstream> ; 
+  skos:member <value-domain/units-of-measurement-terms> ; 
+  skos:member <value-domain/us-county-name> ; 
+  skos:member <value-domain/us-state-name> ; 
+  skos:member <value-domain/utm-zones> ; 
+  skos:member <value-domain/valid-plss-section-number> ; 
+  skos:member <value-domain/statistical-summary-procedures> ;
+.
+
+<value-domain/agent-identifiers> a owl:Class ;
+	skos:prefLabel "Agent Identifiers"@en ;
+	dct:description "the domain of known agents, represented identifiers from a registry" ;
+	rdfs:label "Agent Identifiers"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/uri> .
+
+<value-domain/cementation-factors> a owl:Class ;
+	skos:prefLabel "Cementation factors"@en ;
+	dct:description "This is an exponent on porosity in Archie's Law; value is >= 1, max observed reported to be 4.1  (https://en.wikipedia.org/wiki/Archie%27s_law)" ;
+	rdfs:label "Cementation factors"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/real-number> ;
+	dcdtr:minValue "1.0" ;
+	dcdtr:maxValue "4.1" .
+
+<value-domain/controlled-vocabulary> a owl:Class ;
+	skos:prefLabel "Controlled vocabulary"@en ;
+	dct:description "generic domain indicating that an unspecified controlled vocabulary is used" ;
+	rdfs:label "Controlled vocabulary"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/controlled-vocabulary> ;
+	dcdtr:domainDataTypeIdentifier <data-type/term> .
+
+<value-domain/degrees-of-latitude> a owl:Class ;
+	skos:prefLabel "Degrees of Latitude"@en ;
+	dct:description "angle from south pole to equator to north pole" ;
+	rdfs:label "Degrees of Latitude"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/real-number> ;
+	dcdtr:meaning <conceptual-domain/degrees-of-latitude> ;
+	dcdtr:minValue "-90.0" ;
+	dcdtr:maxValue "90.0" .
+
+<value-domain/degrees-of-longitude> a owl:Class ;
+	skos:prefLabel "Degrees of Longitude"@en ;
+	dct:description "allow for 0-360 West (negative) or east (positive) longitude" ;
+	rdfs:label "Degrees of Longitude"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/real-number> ;
+	dcdtr:meaning <conceptual-domain/degrees-of-longitude> ;
+	dcdtr:minValue "-360.0" ;
+	dcdtr:maxValue "360.0" .
+
+<value-domain/era-of-geothermal-drilling> a owl:Class ;
+	skos:prefLabel "Era of geothermal drilling"@en ;
+	dct:description "Calendar defined time interval starting when the first geothermal well was drilled (gues 1/1/1800 to start)" ;
+	rdfs:label "Era of geothermal drilling"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/date-range> ;
+	dcdtr:domainDataTypeIdentifier <data-type/date> ;
+	dcdtr:constraintStatement "Use ISO8601 format" ;
+	dcdtr:minValue "1/1/1800" .
+
+<value-domain/geothermal-fluid-temperature-range-c> a owl:Class ;
+	skos:prefLabel "Geothermal fluid temperature range C"@en ;
+	dct:description "the range of valid fluid temperatures in degree C for " ;
+	rdfs:label "Geothermal fluid temperature range C"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/real-number> ;
+	dcdtr:minValue "0.0" ;
+	dcdtr:maxValue "400.0" .
+
+<value-domain/geothermal-power-plant-status-terms-draft> a owl:Class ;
+	skos:prefLabel "Geothermal Power Plant Status Terms draft"@en ;
+	dct:description "A draft vocabulary of geothermal power plant status categorization terms" ;
+	rdfs:label "Geothermal Power Plant Status Terms draft"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/controlled-vocabulary> ;
+	dcdtr:domainDataTypeIdentifier <data-type/term> ;
+	dcdtr:codelist <vocabulary/geothermal-power-plant-status-category> .
+
+<value-domain/geothermal-power-plant-types> a owl:Class ;
+	skos:prefLabel "Geothermal power plant types"@en ;
+	dct:description "domain of all geothermal power plant tyes" ;
+	rdfs:label "Geothermal power plant types"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/controlled-vocabulary> ;
+	dcdtr:domainDataTypeIdentifier <data-type/term> ;
+	dcdtr:codelist <vocabulary/geothermal-power-plant-types> .
+
+<value-domain/http-uri> a owl:Class ;
+	skos:prefLabel "http URI"@en ;
+	dct:description "the domain of syntactically valid HTTP URI strings" ;
+	rdfs:label "http URI"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/string> ;
+	dcdtr:valueFormat "regex for http URI" .
+
+<value-domain/megawatts-of-power> a owl:Class ;
+	skos:prefLabel "Megawatts of power"@en ;
+	dct:description "real number, greater than 0" ;
+	rdfs:label "Megawatts of power"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/real-number> ;
+	dcdtr:minValue "0.0" .
+
+<value-domain/name-string> a owl:Class ;
+	skos:prefLabel "Name string"@en ;
+	dct:description "text strings used to designate some resource for use by humans." ;
+	rdfs:label "Name string"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/string> .
+
+<value-domain/narrative-text> a owl:Class ;
+	skos:prefLabel "Narrative text"@en ;
+	dct:description "free text narrative text. " ;
+	rdfs:label "Narrative text"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/string> .
+
+<value-domain/real-number-greater-than-0> a owl:Class ;
+	skos:prefLabel "Real number greater than 0"@en ;
+	rdfs:label "Real number greater than 0"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/real-number> ;
+	dcdtr:minValue "0.0" .
+
+<value-domain/percent-of-whole> a owl:Class ;
+	skos:prefLabel "Percent of whole"@en ;
+	dct:description "fraction between 0 and 1 multiplied by 100" ;
+	rdfs:label "Percent of whole"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/real-number> ;
+	dcdtr:minValue "0.0" ;
+	dcdtr:maxValue "100.0" .
+
+<value-domain/positive-integer> a owl:Class ;
+	skos:prefLabel "Positive integer"@en ;
+	dct:description "integers greater than zero" ;
+	rdfs:label "Positive integer"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/integer> ;
+	dcdtr:minValue "0.0" .
+
+<value-domain/software-environment-terms> a owl:Class ;
+	skos:prefLabel "Software Environment Terms"@en ;
+	dct:description "terms to specify a software environment in which a data type implementation is intended to be used" ;
+	rdfs:label "Software Environment Terms"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/controlled-vocabulary> ;
+	dcdtr:domainDataTypeIdentifier <data-type/term> .
+
+<value-domain/string-255> a owl:Class ;
+	skos:prefLabel "String 255"@en ;
+	dct:description "a string restricted to length of 255 characters" ;
+	rdfs:label "String 255"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/string> .
+
+<value-domain/unique-bitstream> a owl:Class ;
+	skos:prefLabel "Unique bitstream"@en ;
+	dct:description "the domain of unique bitstream for use in identifying digital objects" ;
+	rdfs:label "Unique bitstream"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/blob> .
+
+<value-domain/units-of-measurement-terms> a owl:Class ;
+	skos:prefLabel "Units of Measurement Terms"@en ;
+	dct:description "terms to specify the measurement units associated with a value domain" ;
+	rdfs:label "Units of Measurement Terms"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/controlled-vocabulary> ;
+	dcdtr:domainDataTypeIdentifier <data-type/term> ;
+	dcdtr:codelist <vocabulary/units-of-measure> .
+
+<value-domain/us-county-name> a owl:Class ;
+	skos:prefLabel "US County Name"@en ;
+	dct:description "valid full names of US counties" ;
+	rdfs:label "US County Name"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/controlled-vocabulary> ;
+	dcdtr:domainDataTypeIdentifier <data-type/term> ;
+	dcdtr:codelist <vocabulary/us-county-names> .
+
+<value-domain/us-state-name> a owl:Class ;
+	skos:prefLabel "US State Name"@en ;
+	dct:description "valid full names of US states" ;
+	rdfs:label "US State Name"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/controlled-vocabulary> ;
+	dcdtr:domainDataTypeIdentifier <data-type/term> ;
+	dcdtr:codelist <vocabulary/us-state-name> .
+
+<value-domain/utm-zones> a owl:Class ;
+	skos:prefLabel "UTM zones"@en ;
+	dct:description "Valid numbers for UTM zones" ;
+	rdfs:label "UTM zones"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/primitive> ;
+	dcdtr:domainDataTypeIdentifier <data-type/integer> ;
+	dcdtr:minValue "1.0" ;
+	dcdtr:maxValue "60.0" .
+
+<value-domain/valid-plss-section-number> a owl:Class ;
+	skos:prefLabel "Valid PLSS section number"@en ;
+	dct:description "Integer  or half-integer between 1 and 36, (are there any section 36.5's?)" ;
+	rdfs:label "Valid PLSS section number"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/controlled-vocabulary> ;
+	dcdtr:domainDataTypeIdentifier <data-type/term> ;
+	dcdtr:minValue "1.0" ;
+	dcdtr:maxValue "36.5" .
+
+<value-domain/statistical-summary-procedures> a owl:Class ;
+	skos:prefLabel "Statistical summary procedures"@en ;
+	dct:description "terms for procedures used to summarize a group of related measaurements, e.g. median, mean, geometric mean, mode" ;
+	rdfs:label "Statistical summary procedures"@en ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/controlled-vocabulary> ;
+	dcdtr:domainDataTypeIdentifier <data-type/term> ;
+	dcdtr:codelist <vocabulary/statistical-summary-procedures> .

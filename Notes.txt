@@ -1,0 +1,25 @@
+To create the skos:member list at the top of the ttl file:
+
+In Notepad++ copy body to a new document and apply the following Find and Replace. Then copy the result back to the original file. There will be a small amount of cleanup left to do for the skos:member list.
+
+Find what:
+
+>( a skos:Concept.*?)^<
+
+OR
+
+>( a owl:Class.*?)^<
+
+Replace with:
+
+> ; \r  skos:member <
+
+
+Turn on Regular Expression and check matches newline
+
+
+
+----------------
+
+
+For RegistryConcepts, Measure Class got fields from http://vocabulary.odm2.org/unitstype/	

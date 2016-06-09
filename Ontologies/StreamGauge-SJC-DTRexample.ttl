@@ -1,0 +1,79 @@
+@prefix spec:  <http://www.opengis.net/ont/modspec#> .
+@prefix ssd:   <http://www.w3.org/ns/sparql-service-description#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix npg:   <http://ns.nature.com/terms/> .
+@prefix dgu:   <http://reference.data.gov.uk/def/reference/> .
+@prefix odrs:  <http://schema.theodi.org/odrs#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix rr-cat: <http://registry.it.csiro.au/structure/category/> .
+@prefix vs:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix qudt:  <http://qudt.org/schema/qudt#> .
+@prefix version: <http://purl.org/linked-data/version#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix api:   <http://purl.org/linked-data/api/vocab#> .
+@prefix vivo:  <http://vivoweb.org/ontology/core#> .
+@prefix rr-org: <http://registry.it.csiro.au/structure/org/> .
+@prefix ui:    <http://purl.org/linked-data/registry-ui#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix op:    <http://environment.data.gov.au/def/op#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rr-entity: <http://registry.it.csiro.au/structure/entity-type/> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix dtr:   <http://registry.it.csiro.au/ont/dtr#> .
+@prefix rr-ui: <http://registry.it.csiro.au/structure/ui/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix reg:   <http://purl.org/linked-data/registry#> .
+@prefix bibo:  <http://purl.org/ontology/bibo/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+
+<http://registry.it.csiro.au/data-type/_6debc53338e99ff15731>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Stream Gauge"^^xsd:string ;
+        dct:dateSubmitted  "2015-08-10T10:18:52.674Z"^^xsd:dateTime ;
+        dct:description    "Information that defines stream gauge discharge at a specific location and time interval. Useful for the geosciences community."^^xsd:string ;
+        reg:definition     [ reg:entity       <http://registry.it.csiro.au/data-type/6debc53338e99ff15731> ;
+                             reg:sourceGraph  <http://registry.it.csiro.au/data-type/_6debc53338e99ff15731:1#graph>
+                           ] ;
+        reg:itemClass      dtr:DataType ;
+        reg:notation       "6debc53338e99ff15731" ;
+        reg:register       <http://registry.it.csiro.au/data-type> ;
+        reg:status         reg:statusExperimental ;
+        reg:submitter      [ foaf:accountName  "simon.cox@csiro.au" ;
+                             foaf:name         "Simon Cox"
+                           ] ;
+        owl:versionInfo    1 .
+
+<http://registry.it.csiro.au/data-type/6debc53338e99ff15731>
+        a                 dtr:DataType ;
+        rdfs:label        "Stream Gauge"^^xsd:string ;
+        dct:description   "Information that defines stream gauge discharge at a specific location and time interval. Useful for the geosciences community."^^xsd:string ;
+        dtr:expectedUse   "Used for comparing outputs of surface runoff discharge models as applied to data pertaining to a specific watershed."^^xsd:string ;
+        dtr:property      <http://registry.it.csiro.au/data-type/f0f2c4382dc8d257462> , <http://registry.it.csiro.au/data-type/4102c3ebe68bed21d644> , <http://registry.it.csiro.au/data-type/6386f4ebd23e9baace50> ;
+        dtr:provenance    [ a                dtr:Provenance ;
+                            dct:contributor  <https://www.researchgate.net/profile/Giridhar_Manepalli> , <https://www.researchgate.net/profile/Mostafa_Elag> ;
+                            dct:created      "2014-08-07T04:28:21.479Z"^^xsd:string ;
+                            dct:modified     "2014-09-08T15:28:00.733Z"^^xsd:string
+                          ] ;
+        dtr:relationship  [ a                 dtr:Relationship ;
+                            rdfs:label        "Primary Key"^^xsd:string ;
+                            dtr:relativeName  "[\"value\"]"^^xsd:string
+                          ] ;
+        dtr:representationsAndSemantics
+                [ a               dtr:Representation ;
+                  dtr:expression  "Measurement Unit"^^xsd:string ;
+                  dtr:value       "Cubic Meter per Second"^^xsd:string
+                ] ;
+        dtr:standard      [ a                          dtr:Standard ;
+                            rdfs:label                 "4375:2000"^^xsd:string ;
+                            dtr:issuer                 "ISO"^^xsd:string ;
+                            dtr:natureOfApplicability  "depends"^^xsd:string
+                          ] .

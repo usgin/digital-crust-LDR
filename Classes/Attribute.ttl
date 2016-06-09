@@ -1,0 +1,531 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<attribute>
+	rdf:type skos:Collection ;
+	rdfs:label "Attribute" ;
+	skos:definition "Attribute" ;
+  dct:description "No description." ;
+  skos:member <attribute/air-permeability-md> ; 
+  skos:member <attribute/capacity-mw> ; 
+  skos:member <attribute/cementation-factor> ; 
+  skos:member <attribute/commonly-observed-permeability-md> ; 
+  skos:member <attribute/county> ; 
+  skos:member <attribute/facility-contact-email-address> ; 
+  skos:member <attribute/facility-contact-name> ; 
+  skos:member <attribute/facility-contact-phone> ; 
+  skos:member <attribute/facility-name> ; 
+  skos:member <attribute/facility-postal-address> ; 
+  skos:member <attribute/facility-type> ; 
+  skos:member <attribute/facility-uri> ; 
+  skos:member <attribute/facility-postal-zipcode> ; 
+  skos:member <attribute/flow-gpm> ; 
+  skos:member <attribute/fluid-temperature-c> ; 
+  skos:member <attribute/geographic-position> ; 
+  skos:member <attribute/geometric-mean-permeability-md> ; 
+  skos:member <attribute/hydraulic-conductivity-ft-per-day> ; 
+  skos:member <attribute/hydraulic-conductivity-m-per-sec> ; 
+  skos:member <attribute/intrinsic-permeability-md> ; 
+  skos:member <attribute/label> ; 
+  skos:member <attribute/latitude-degrees> ; 
+  skos:member <attribute/local-permeability-md> ; 
+  skos:member <attribute/location-keyword> ; 
+  skos:member <attribute/location-uncertainty-code> ; 
+  skos:member <attribute/location-uncertainty-radius> ; 
+  skos:member <attribute/location-uncertainty-statement> ; 
+  skos:member <attribute/longitude-degree> ; 
+  skos:member <attribute/mean-intrinsic-permeability-md> ; 
+  skos:member <attribute/mean-permeability-md> ; 
+  skos:member <attribute/mean-porosity-pct> ; 
+  skos:member <attribute/median-permeability-md> ; 
+  skos:member <attribute/median-pore-scale-permeability-md> ; 
+  skos:member <attribute/median-porosity-pct> ; 
+  skos:member <attribute/metadatauri> ; 
+  skos:member <attribute/notes> ; 
+  skos:member <attribute/objectid> ; 
+  skos:member <attribute/operationaldate> ; 
+  skos:member <attribute/operator> ; 
+  skos:member <attribute/otherfeatureid> ; 
+  skos:member <attribute/owner> ; 
+  skos:member <attribute/permeability-md> ; 
+  skos:member <attribute/plss-meridians> ; 
+  skos:member <attribute/pore-scale-permeability-md> ; 
+  skos:member <attribute/porosity-percent> ; 
+  skos:member <attribute/range> ; 
+  skos:member <attribute/related-resource> ; 
+  skos:member <attribute/plss-section-number> ; 
+  skos:member <attribute/plss-section-part> ; 
+  skos:member <attribute/source> ; 
+  skos:member <attribute/srs> ; 
+  skos:member <attribute/state> ; 
+  skos:member <attribute/status> ; 
+  skos:member <attribute/statusdate> ; 
+  skos:member <attribute/township> ; 
+  skos:member <attribute/updatetimestamp> ; 
+  skos:member <attribute/useapplication> ; 
+  skos:member <attribute/utm-e> ; 
+  skos:member <attribute/utm-n> ; 
+  skos:member <attribute/utmdatumzone> ; 
+  skos:member <attribute/statistical-procedure> ;
+.
+
+<attribute/air-permeability-md> a owl:Class ;
+	skos:prefLabel "Air permeability mD"@en ;
+	dct:description "A permeability value measured using air as the transport fluid." ;
+	rdfs:label "Air permeability mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/air-permeability> .
+
+<attribute/capacity-mw> a owl:Class ;
+	skos:prefLabel "Capacity_MW"@en ;
+	dct:description "Production capacity of the power plant in MW. Included as a search parameter." ;
+	rdfs:label "Capacity_MW"@en ;
+	dcdtr:dataType <data-type/double> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/power-production-capacity> ;
+	dcdtr:valueDomain <value-domain/megawatts-of-power> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/megawatt> .
+
+<attribute/cementation-factor> a owl:Class ;
+	skos:prefLabel "Cementation factor"@en ;
+	rdfs:label "Cementation factor"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/cementation-factor> ;
+	dcdtr:valueDomain <value-domain/cementation-factors> .
+
+<attribute/commonly-observed-permeability-md> a owl:Class ;
+	skos:prefLabel "Commonly observed permeability mD"@en ;
+	dct:description "A permeability value assigned that is intended to represent a typical value, but method to support this assertion is not specified; doesn't denote whether is intrinsic/absolute or relative.  Typical assumption would be that permeability was measured using water." ;
+	rdfs:label "Commonly observed permeability mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/permeability> .
+
+<attribute/county> a owl:Class ;
+	skos:prefLabel "County"@en ;
+	dct:description "Required. County name. If unknown or not applicable use 'missing'. If offshore, specify 'offshore' in this field." ;
+	rdfs:label "County"@en ;
+	dcdtr:dataType <data-type/term> ;
+	dcdtr:meaning <http://resources.usgin.org/def/property/location-name> ;
+	dcdtr:valueDomain <value-domain/us-county-name> .
+
+<attribute/facility-contact-email-address> a owl:Class ;
+	skos:prefLabel "Facility Contact Email Address"@en ;
+	dct:description "E-mail address to contact party connected with facility." ;
+	rdfs:label "Facility Contact Email Address"@en ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/e-mail-address> .
+
+<attribute/facility-contact-name> a owl:Class ;
+	skos:prefLabel "Facility Contact Name"@en ;
+	dct:description "Person, organization, or position name for information about the facility." ;
+	rdfs:label "Facility Contact Name"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/def/property/contact-information> .
+
+<attribute/facility-contact-phone> a owl:Class ;
+	skos:prefLabel "Facility Contact Phone"@en ;
+	dct:description "Telephone number to contact party connected with facility." ;
+	rdfs:label "Facility Contact Phone"@en ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/telephone-number> .
+
+<attribute/facility-name> a owl:Class ;
+	skos:prefLabel "Facility Name"@en ;
+	dct:description "Common or human-readable name by which the feature  is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
+	rdfs:label "Facility Name"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/facility-name> ;
+	dcdtr:valueDomain <value-domain/name-string> .
+
+<attribute/facility-postal-address> a owl:Class ;
+	skos:prefLabel "Facility Postal Address"@en ;
+	dct:description "Postal address for facility. Street, City, State." ;
+	rdfs:label "Facility Postal Address"@en ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/postal-address> .
+
+<attribute/facility-type> a owl:Class ;
+	skos:prefLabel "Facility Type"@en ;
+	dct:description "Dry Steam; Flash Steam; Binary Cycle; Single Flash; Double Flash. If Unknown or missing place \"nil:missing\"" ;
+	rdfs:label "Facility Type"@en ;
+	dcdtr:dataType <data-type/term> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/feature-type> .
+
+<attribute/facility-uri> a owl:Class ;
+	skos:prefLabel "Facility URI"@en ;
+	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
+	rdfs:label "Facility URI"@en ;
+	dcdtr:dataType <data-type/uri> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/self-identifier> ;
+	dcdtr:valueDomain <value-domain/http-uri> .
+
+<attribute/facility-postal-zipcode> a owl:Class ;
+	skos:prefLabel "Facility Postal Zipcode"@en ;
+	dct:description "Zip code for facility; may be used for some geolocation information." ;
+	rdfs:label "Facility Postal Zipcode"@en ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:dataType <data-type/term> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/zip-code> .
+
+<attribute/flow-gpm> a owl:Class ;
+	skos:prefLabel "Flow gpm"@en ;
+	dct:description "Fluid production flow rate." ;
+	rdfs:label "Flow gpm"@en ;
+	dcdtr:dataType <data-type/real-number/double> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/fluid-flux> ;
+	dcdtr:valueDomain <value-domain/number-greater-than-0> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/gallons-per-minute> .
+
+<attribute/fluid-temperature-c> a owl:Class ;
+	skos:prefLabel "Fluid Temperature C"@en ;
+	dct:description "Water temperature, in decimal format. Degrees Celsius is preferred and will be reported for consistency in service implementations." ;
+	rdfs:label "Fluid Temperature C"@en ;
+	dcdtr:dataType <data-type/double> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/fluid-temperature> ;
+	dcdtr:valueDomain <value-domain/geothermal-fluid-temperature-range-c> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degrees-celsius> .
+
+<attribute/geographic-position> a owl:Class ;
+	skos:prefLabel "Geographic Position"@en ;
+	dct:description "Added by GIS for WFS service; this element appears in the xml output, but is generated during service deployment from the latitude and longitude, therefore it doesn't appear in the template" ;
+	rdfs:label "Geographic Position"@en ;
+	dcdtr:dataType <data-type/point-object> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/geospatial-position> .
+
+<attribute/geometric-mean-permeability-md> a owl:Class ;
+	skos:prefLabel "Geometric mean permeability mD"@en ;
+	dct:description "A permeability value assigned that is the geometric mean of a group of measurements on the same or related material; doesn't denote whether is intrinsic/absolute or relative.  Typical assumption would be that permeability was measured using water." ;
+	rdfs:label "Geometric mean permeability mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/permeability> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/millidarcy> .
+
+<attribute/hydraulic-conductivity-ft-per-day> a owl:Class ;
+	skos:prefLabel "Hydraulic conductivity ft/day"@en ;
+	dct:description "The proportionality constant specifically for the flow of water through a porous media; permeability is a portion of this, and is a property of the porous media only, not the fluid. Given the value of hydraulic conductivity for a subsurface system, the permeability can be calculated.  in this case, reported as feet/day" ;
+	rdfs:label "Hydraulic conductivity ft/day"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/hydraulic-conductivity> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/feet-per-day> .
+
+<attribute/hydraulic-conductivity-m-per-sec> a owl:Class ;
+	skos:prefLabel "Hydraulic conductivity m/sec"@en ;
+	dct:description "The proportionality constant specifically for the flow of water through a porous media; permeability is a portion of this, and is a property of the porous media only, not the fluid. Given the value of hydraulic conductivity for a subsurface system, the permeability can be calculated.  in this case, reported as meters/sec" ;
+	rdfs:label "Hydraulic conductivity m/sec"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/hydraulic-conductivity> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meters-per-sec> .
+
+<attribute/intrinsic-permeability-md> a owl:Class ;
+	skos:prefLabel "Intrinsic permeability mD"@en ;
+	dct:description "Intrinsic permeability is permeability calculated an intensive property (not a spatial average of a heterogeneous block of material), i.e. a function of the material structure only (and not of the fluid) " ;
+	rdfs:label "Intrinsic permeability mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/intrinsic-permeability> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/millidarcy> .
+
+<attribute/label> a owl:Class ;
+	skos:prefLabel "Label"@en ;
+	dct:description "Short text string for labeling the feature on maps. Can be the same as feature name. A label may be an OtherLocationName, OtherID or the Name or some combination." ;
+	rdfs:label "Label"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/designation> ;
+	dcdtr:valueDomain <value-domain/name-string> .
+
+<attribute/latitude-degrees> a owl:Class ;
+	skos:prefLabel "Latitude Degrees"@en ;
+	dct:description "Latitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
+	rdfs:label "Latitude Degrees"@en ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:dataType <data-type/double> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/latitude> ;
+	dcdtr:valueDomain <value-domain/degrees-of-latitude> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
+
+<attribute/local-permeability-md> a owl:Class ;
+	skos:prefLabel "Local permeability mD"@en ;
+	rdfs:label "Local permeability mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/local-permeability> .
+
+<attribute/location-keyword> a owl:Class ;
+	skos:prefLabel "Location Keyword"@en ;
+	dct:description "Names of geographic features associated with the site that will be useful as search criteria to locate the information for this site. If identifiers from multiple different authorities are available, delimit these identifiers with the pipe character '|'." ;
+	rdfs:label "Location Keyword"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/location-name> .
+
+<attribute/location-uncertainty-code> a owl:Class ;
+	skos:prefLabel "Location Uncertainty Code"@en ;
+	dct:description "A controlled vocabulary term or code value specifying the location confidence, E.g. 1 = reported, 2= surveyed, 3= GPS. If such a code list or vocabulary is used, it must be added to the 'Data Valid Terms' sheet to enumerate the possible values and their meaning." ;
+	rdfs:label "Location Uncertainty Code"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/location-uncertainty> ;
+	dcdtr:valueDomain <value-domain/controlled-vocabulary> .
+
+<attribute/location-uncertainty-radius> a owl:Class ;
+	skos:prefLabel "Location Uncertainty Radius"@en ;
+	dct:description "Radius (in meters) of circle of confidence for location. Ideally might represent some specific confidence criteria like 'radius of circle around reported location which which true location lies with 95% confidence', but such precision is rarely available." ;
+	rdfs:label "Location Uncertainty Radius"@en ;
+	dcdtr:dataType <data-type/double> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/location-uncertainty> ;
+	dcdtr:valueDomain <value-domain/number-greater-than-0> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
+
+<attribute/location-uncertainty-statement> a owl:Class ;
+	skos:prefLabel "Location Uncertainty Statement"@en ;
+	dct:description "Information on how the original location was determined, e.g.: 1:250,000 map, gps unit, Google Earth, PLSS Conversion, Spatial Datum Conversion, e.g., NAD27 to WGS84." ;
+	rdfs:label "Location Uncertainty Statement"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/location-uncertainty> ;
+	dcdtr:valueDomain <value-domain/narrative-text> .
+
+<attribute/longitude-degree> a owl:Class ;
+	skos:prefLabel "Longitude Degree"@en ;
+	dct:description "Longitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
+	rdfs:label "Longitude Degree"@en ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:dataType <data-type/double> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/longitude> ;
+	dcdtr:valueDomain <value-domain/degrees-of-longitude> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
+
+<attribute/mean-intrinsic-permeability-md> a owl:Class ;
+	skos:prefLabel "Mean intrinsic permeability_mD"@en ;
+	dct:description "Intrinsic permeability value assigned based on averaging a group of measurements on the same or related material. Intrinsic permeability is permeability that is an intensive property (not a spatial average of a heterogeneous block of material), i.e. a function of the material structure only (and not of the fluid) " ;
+	rdfs:label "Mean intrinsic permeability_mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/intrinsic-permeability> .
+
+<attribute/mean-permeability-md> a owl:Class ;
+	skos:prefLabel "mean permeability_mD"@en ;
+	dct:description "A permeability value assigned based on averaging a group of measurements on the same or related material; doesn't denote whether is intrinsic/absolute or relative.  Typical assumption would be that permeability was measured using water." ;
+	rdfs:label "mean permeability_mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/permeability> .
+
+<attribute/mean-porosity-pct> a owl:Class ;
+	skos:prefLabel "mean porosity pct"@en ;
+	rdfs:label "mean porosity pct"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/porosity> .
+
+<attribute/median-permeability-md> a owl:Class ;
+	skos:prefLabel "median permeability mD"@en ;
+	dct:description "A permeability value assigned that is the median value of a group of measurements on the same or related material; doesn't denote whether is intrinsic/absolute or relative.  Typical assumption would be that permeability was measured using water." ;
+	rdfs:label "median permeability mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/permeability> .
+
+<attribute/median-pore-scale-permeability-md> a owl:Class ;
+	skos:prefLabel "median pore-scale permeability mD"@en ;
+	rdfs:label "median pore-scale permeability mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/pore-scale-permeability> .
+
+<attribute/median-porosity-pct> a owl:Class ;
+	skos:prefLabel "median porosity pct"@en ;
+	rdfs:label "median porosity pct"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/porosity> .
+
+<attribute/metadatauri> a owl:Class ;
+	skos:prefLabel "MetadataURI"@en ;
+	dct:description "URI identifying (and ideally dereferencing to get) a full formal metadata record for the observation report. A time series of observations may all reference the same metadata record that provides contact information and details on procedure, etc." ;
+	rdfs:label "MetadataURI"@en ;
+	dcdtr:dataType <data-type/uri> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/provenance> ;
+	dcdtr:valueDomain <value-domain/http-uri> .
+
+<attribute/notes> a owl:Class ;
+	skos:prefLabel "Notes"@en ;
+	dct:description "Any additional information to be provided, including description and other data not captured by the template, details about collection method, contact information for related parties (original collector, project PI), collection platform or Launch, etc." ;
+	rdfs:label "Notes"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/information> ;
+	dcdtr:valueDomain <value-domain/narrative-text> .
+
+<attribute/objectid> a owl:Class ;
+	skos:prefLabel "OBJECTID"@en ;
+	dct:description "Integer record count, added by ArcGIS servers during service deployment; not required but cannot be removed when deploying from ArcGIS feature class. Not user maintained, so this element appears in XML implementation but not in the Content Model Template." ;
+	rdfs:label "OBJECTID"@en ;
+	dcdtr:dataType <data-type/long-integer> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/auto-id> ;
+	dcdtr:valueDomain <value-domain/positive-integer> .
+
+<attribute/operationaldate> a owl:Class ;
+	skos:prefLabel "OperationalDate"@en ;
+	dct:description "Date for the record (year in which the first power plant at the site began operation). Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1', (or '1/1/', or '1-1-', or 'January 1,'). All dates will be converted to yyyy-mm-ddThh:mm." ;
+	rdfs:label "OperationalDate"@en ;
+	dcdtr:dataType <data-type/datetime> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/facility-operational-date> ;
+	dcdtr:valueDomain <value-domain/era-of-geothermal-drilling> .
+
+<attribute/operator> a owl:Class ;
+	skos:prefLabel "Operator"@en ;
+	dct:description "Companies, individuals, or other entities who operate the property. Separate multiple with a pipe '|' character." ;
+	rdfs:label "Operator"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/facility-operator> ;
+	dcdtr:valueDomain <value-domain/name-string> .
+
+<attribute/otherfeatureid> a owl:Class ;
+	skos:prefLabel "OtherFeatureID"@en ;
+	dct:description "Alternative identifier(s) for the feature. 'Indicate the authority from which the OtherID is derived with a short (lower case) prefix delimited by a colon ':' If identifiers from multiple different authorities are available, delimit these identifiers with the pipe '|' character. For example, if a well were known to the Arizona Geological Survey (AZGS) by the id number 1337, the prefix would be azgs: and the identifier string would be azgs:1337. Any such prefixes used to scope identifiers should be explained in the dataset metadata." ;
+	rdfs:label "OtherFeatureID"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/designation> .
+
+<attribute/owner> a owl:Class ;
+	skos:prefLabel "Owner"@en ;
+	dct:description "Companies, individuals, or other entities who own the property. Separate multiple with a pipe '|' character." ;
+	rdfs:label "Owner"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/resource-owner> ;
+	dcdtr:valueDomain <value-domain/name-string> .
+
+<attribute/permeability-md> a owl:Class ;
+	skos:prefLabel "permeability md"@en ;
+	dct:description "Permeability is the property of rocks that is an indication of the ability for fluids (gas or liquid) to flow through rocks; The SI unit for permeability is m2. A practical unit for permeability is the darcy (d), or more commonly the millidarcy (md) (1 darcy \\approx10−12m2)." ;
+	rdfs:label "permeability md"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/permeability> .
+
+<attribute/plss-meridians> a owl:Class ;
+	skos:prefLabel "PLSS_Meridians"@en ;
+	dct:description "List north-south baseline and east-west meridian that Townships and Ranges are referenced to." ;
+	rdfs:label "PLSS_Meridians"@en ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/spatial-reference-system> .
+
+<attribute/pore-scale-permeability-md> a owl:Class ;
+	skos:prefLabel "pore-scale permeability mD"@en ;
+	rdfs:label "pore-scale permeability mD"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/pore-scale-permeability> .
+
+<attribute/porosity-percent> a owl:Class ;
+	skos:prefLabel "porosity percent"@en ;
+	dct:description " a measure of the void (i.e. \"empty\") spaces in a material, reported as a fraction of the volume of voids over the total volume, in percent, " ;
+	rdfs:label "porosity percent"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/porosity> ;
+	dcdtr:valueDomain <value-domain/percent-of-whole> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/percent> .
+
+<attribute/range> a owl:Class ;
+	skos:prefLabel "Range"@en ;
+	dct:description "Range in PLSS grid, relative to reported meridian. Formatting and punctuation should be consistent for all locations referenced to the same baseline meridian. See instructions on TWP field." ;
+	rdfs:label "Range"@en ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/range-number> .
+
+<attribute/related-resource> a owl:Class ;
+	skos:prefLabel "Related Resource"@en ;
+	dct:description "This may be one to many http links to resources (logs, pictures or other documents if available online. Should be an http:// address (URL)) related to the observation described in each record. Delimit multiple values with the pipe '|' character." ;
+	rdfs:label "Related Resource"@en ;
+	dcdtr:dataType <data-type/list-string-pipe> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/related-resource> .
+
+<attribute/plss-section-number> a owl:Class ;
+	skos:prefLabel "PLSS section number"@en ;
+	dct:description "PLSS section number. Must be numeric or null. Some surveys include half sections indicated by a 'nn.5' designation, where n indicates a number." ;
+	rdfs:label "PLSS section number"@en ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/section-number> ;
+	dcdtr:valueDomain <value-domain/valid-plss-section-number> .
+
+<attribute/plss-section-part> a owl:Class ;
+	skos:prefLabel "PLSS Section Part"@en ;
+	dct:description "Subdivision of a PLSS section." ;
+	rdfs:label "PLSS Section Part"@en ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/section-part> .
+
+<attribute/source> a owl:Class ;
+	skos:prefLabel "Source"@en ;
+	dct:description "Mandatory. Short text explanation of source of information defining this feature or record; may be author-date type citation, well log, report, data files etc., but should include some indication of how digital data originated. If unpublished data, provide researcher name, date and research institution for proper citation. Separate multiple citations with pipe '|' character." ;
+	rdfs:label "Source"@en ;
+	dcdtr:dataType <data-type/list-string-pipe> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/provenance> ;
+	dcdtr:valueDomain <value-domain/narrative-text> .
+
+<attribute/srs> a owl:Class ;
+	skos:prefLabel "SRS"@en ;
+	dct:description "The spatial reference system. It is recommended that an EPSG code be used to identify the SRS used to specify the location.  If an EPSG code is used, identify it as such with the prefix 'EPSG:' For common EPSG codes, see the Data Valid Terms tab. EPSG:4326 is the identifier for WGS84, and should be the text in this field. EPSG stands for European Petroleum Survey Group. EPSG codes can be dereferenced by putting the code in this URL (replace 4326) http://spatialreference.org/ref/epsg/4326/." ;
+	rdfs:label "SRS"@en ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/spatial-reference-system> .
+
+<attribute/state> a owl:Class ;
+	skos:prefLabel "State"@en ;
+	dct:description "Required. State name without abbreviations. If unknown or not applicable use 'missing'. For offshore locations, specify the governing or nearest state and list the county as 'offshore'." ;
+	rdfs:label "State"@en ;
+	dcdtr:dataType <data-type/term> ;
+	dcdtr:meaning <http://resources.usgin.org/def/property/location-name> ;
+	dcdtr:valueDomain <value-domain/us-state-name> .
+
+<attribute/status> a owl:Class ;
+	skos:prefLabel "Status"@en ;
+	dct:description "Status of the feature at the time indicated in the StatusDate element. If unknown enter \"unknown\" in the field." ;
+	rdfs:label "Status"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/facility-status> .
+
+<attribute/statusdate> a owl:Class ;
+	skos:prefLabel "StatusDate"@en ;
+	dct:description "The status of the feature can change from time to time, thus it is useful to know the date on which a given status was reported. Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1', (or '1/1/', or '1-1-', or 'January 1,'). All dates will be converted to yyyy-mm-ddThh:mm." ;
+	rdfs:label "StatusDate"@en ;
+	dcdtr:dataType <data-type/datetime> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/reporting-date> ;
+	dcdtr:valueDomain <value-domain/era-of-geothermal-drilling> .
+
+<attribute/township> a owl:Class ;
+	skos:prefLabel "Township"@en ;
+	dct:description "Township in PLSS grid, relative to reported baseline. Formatting and punctuation should be consistent for all locations referenced to the same baseline and meridian. Recommend adding leading '0's so that all number strings are the same length (typically 2 or occasionally 3 digits). Examples 01N, 112S, 001 N." ;
+	rdfs:label "Township"@en ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/township-number> .
+
+<attribute/updatetimestamp> a owl:Class ;
+	skos:prefLabel "UpdateTimeStamp"@en ;
+	dct:description "Date of last time line of data was updated or corrected by the service provider.(Format: 2012-06-22T00:00)." ;
+	rdfs:label "UpdateTimeStamp"@en ;
+	dcdtr:dataType <data-type/datetime> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/update-time-stamp> .
+
+<attribute/useapplication> a owl:Class ;
+	skos:prefLabel "UseApplication"@en ;
+	dct:description "Statement for how heat is being used. Should come from controlled vocabulary." ;
+	rdfs:label "UseApplication"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/use-application> .
+
+<attribute/utm-e> a owl:Class ;
+	skos:prefLabel "UTM_E"@en ;
+	dct:description "UTM easting coordinate as decimal number." ;
+	rdfs:label "UTM_E"@en ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:dataType <data-type/double> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/utm-easting> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
+
+<attribute/utm-n> a owl:Class ;
+	skos:prefLabel "UTM_N"@en ;
+	dct:description "UTM northing coordinate as decimal number." ;
+	rdfs:label "UTM_N"@en ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:dataType <data-type/double> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/utm-northing> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
+
+<attribute/utmdatumzone> a owl:Class ;
+	skos:prefLabel "UTMDatumZone"@en ;
+	dct:description "The datum and UTM zone for the reported coordinates. Datum for most locations should be NAD27 or NAD83." ;
+	rdfs:label "UTMDatumZone"@en ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/property/spatial-reference-system> ;
+	dcdtr:valueDomain <value-domain/utm-zones> .
+
+<attribute/statistical-procedure> a owl:Class ;
+	skos:prefLabel "Statistical procedure"@en ;
+	dct:description "term for statistical procedure used to summarize a collection of measurements" ;
+	rdfs:label "Statistical procedure"@en ;
+	dcdtr:dataType <data-type/term> .

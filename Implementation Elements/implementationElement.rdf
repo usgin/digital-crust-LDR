@@ -1,0 +1,267 @@
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix usgin: <http://usgin.org/test> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+<http://usgin.org/implementation-element/objectid> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "OBJECTID" ;
+	rdfs:comment "Integer record count, added by ArcGIS servers during service deployment; not required but cannot be removed when deploying from ArcGIS feature class. Not user maintained, so this element appears in XML implementation but not in the Content Model Template." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/facilityuri> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "FacilityURI" ;
+	rdfs:comment "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/plantname> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "PlantName" ;
+	rdfs:comment "Common or human-readable name by which the feature  is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/planttype> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "PlantType" ;
+	rdfs:comment "Dry Steam; Flash Steam; Binary Cycle; Single Flash; Double Flash. If Unknown or missing place \"nil:missing\"" ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/otherid> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "OtherID" ;
+	rdfs:comment "Alternative identifier(s) for the feature. 'Indicate the authority from which the OtherID is derived with a short (lower case) prefix delimited by a colon ':' If identifiers from multiple different authorities are available, delimit these identifiers with the pipe '|' character. For example, if a well were known to the Arizona Geological Survey (AZGS) by the id number 1337, the prefix would be azgs: and the identifier string would be azgs:1337. Any such prefixes used to scope identifiers should be explained in the dataset metadata." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/label> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Label" ;
+	rdfs:comment "Short text string for labeling the feature on maps. Can be the same as feature name. A label may be an OtherLocationName, OtherID or the Name or some combination." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/owner> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Owner" ;
+	rdfs:comment "Companies, individuals, or other entities who own the property. Separate multiple with a pipe '|' character." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/operator> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Operator" ;
+	rdfs:comment "Companies, individuals, or other entities who operate the property. Separate multiple with a pipe '|' character." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/operationaldate> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "OperationalDate" ;
+	rdfs:comment "Date for the record (year in which the first power plant at the site began operation). Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1', (or '1/1/', or '1-1-', or 'January 1,'). All dates will be converted to yyyy-mm-ddThh:mm." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/status> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Status" ;
+	rdfs:comment "Status of the feature at the time indicated in the StatusDate element. If unknown enter \"unknown\" in the field." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/statusdate> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "StatusDate" ;
+	rdfs:comment "The status of the feature can change from time to time, thus it is useful to know the date on which a given status was reported. Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1', (or '1/1/', or '1-1-', or 'January 1,'). All dates will be converted to yyyy-mm-ddThh:mm." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/plss-meridians> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "PLSS_Meridians" ;
+	rdfs:comment "List north-south baseline and east-west meridian that Townships and Ranges are referenced to." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/township> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Township" ;
+	rdfs:comment "Township in PLSS grid, relative to reported baseline. Formatting and punctuation should be consistent for all locations referenced to the same baseline and meridian. Recommend adding leading '0's so that all number strings are the same length (typically 2 or occasionally 3 digits). Examples 01N, 112S, 001 N." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/range> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Range" ;
+	rdfs:comment "Range in PLSS grid, relative to reported meridian. Formatting and punctuation should be consistent for all locations referenced to the same baseline meridian. See instructions on TWP field." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/section-> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Section_" ;
+	rdfs:comment "PLSS section number. Must be numeric or null. Some surveys include half sections indicated by a 'nn.5' designation, where n indicates a number." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/sectionpart> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "SectionPart" ;
+	rdfs:comment "Subdivision of a PLSS section." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/utm-e> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "UTM_E" ;
+	rdfs:comment "UTM easting coordinate as decimal number." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/utm-n> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "UTM_N" ;
+	rdfs:comment "UTM northing coordinate as decimal number." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/utmdatumzone> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "UTMDatumZone" ;
+	rdfs:comment "The datum and UTM zone for the reported coordinates. Datum for most locations should be NAD27 or NAD83." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/county> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "County" ;
+	rdfs:comment "Required. County name. If unknown or not applicable use 'missing'. If offshore, specify 'offshore' in this field." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/state> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "State" ;
+	rdfs:comment "Required. State name without abbreviations. If unknown or not applicable use 'missing'. For offshore locations, specify the governing or nearest state and list the county as 'offshore'." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/latdegree> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "LatDegree" ;
+	rdfs:comment "Latitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/longdegree> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "LongDegree" ;
+	rdfs:comment "Longitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/srs> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "SRS" ;
+	rdfs:comment "The spatial reference system. It is recommended that an EPSG code be used to identify the SRS used to specify the location.  If an EPSG code is used, identify it as such with the prefix 'EPSG:' For common EPSG codes, see the Data Valid Terms tab. EPSG:4326 is the identifier for WGS84, and should be the text in this field. EPSG stands for European Petroleum Survey Group. EPSSG codes can be dereferenced by putting the code in this URL (replace 4326) http://spatialreference.org/ref/epsg/4326/." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/locationuncertaintystatement> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "LocationUncertaintyStatement" ;
+	rdfs:comment "Information on how the original location was determined, e.g.: 1:250,000 map, gps unit, Google Earth, PLSS Conversion, Spatial Datum Conversion, e.g., NAD27 to WGS84." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/locationuncertaintycode> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "LocationUncertaintyCode" ;
+	rdfs:comment "A controlled vocabulary term or code value specifying the location confidence, E.g. 1 = reported, 2= surveyed, 3= GPS. If such a code list or vocabulary is used, it must be added to the 'Data Valid Terms' sheet to enumerate the possible values and their meaning." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/locationuncertaintyradius> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "LocationUncertaintyRadius" ;
+	rdfs:comment "Radius (in meters) of circle of confidence for location. Ideally might represent some specific confidence criteria like 'radius of circle around reported location which which true location lies with 95% confidence', but such precision is rarely available." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/locationkeyword> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "LocationKeyword" ;
+	rdfs:comment "Names of geographic features associated with the site that will be useful as search criteria to locate the information for this site. If identifiers from multiple different authorities are available, delimit these identifiers with the pipe character '|'." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/notes> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Notes" ;
+	rdfs:comment "Any additional information to be provided, including description and other data not captured by the template, details about collection method, contact information for related parties (original collector, project PI), collection platform or Launch, etc." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/useapplication> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "UseApplication" ;
+	rdfs:comment "Statement for how heat is being used. Should come from controlled vocabulary." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/capacity-mw> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Capacity_MW" ;
+	rdfs:comment "Production capacity of the power plant in MW. Included as a search parameter." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/facilitycontact> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "FacilityContact" ;
+	rdfs:comment "Person, organization, or position name for information about the facility." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/postaladdress> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "PostalAddress" ;
+	rdfs:comment "Postal address for facility. Street, City, State." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/zip> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Zip" ;
+	rdfs:comment "Zip code for facility; may be used for some geolocation information." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/phone> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Phone" ;
+	rdfs:comment "Telephone number to contact party connected with facility." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/emailaddress> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "EMailAddress" ;
+	rdfs:comment "E-mail address to contact party connected with facility." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/source> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Source" ;
+	rdfs:comment "Mandatory. Short text explanation of source of information defining this feature or record; may be author-date type citation, well log, report, data files etc., but should include some indication of how digital data originated. If unpublished data, provide researcher name, date and research institution for proper citation. Separate multiple citations with pipe '|' character." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/fluidtemperature-c> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "FluidTemperature_C" ;
+	rdfs:comment "Water temperature, in decimal format. Degrees Celsius is preferred and will be reported for consistency in service implementations." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/flow-gpm> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Flow_gpm" ;
+	rdfs:comment "Fluid production flow rate." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/relatedresource> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "RelatedResource" ;
+	rdfs:comment "This may be one to many http links to resources (logs, pictures or other documents if available online. Should be an http:// address (URL)) related to the observation described in each record. Delimit multiple values with the pipe '|' character." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/metadatauri> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "MetadataURI" ;
+	rdfs:comment "URI identifying (and ideally dereferencing to get) a full formal metadata record for the observation report. A time series of observations may all reference the same metadata record that provides contact information and details on procedure, etc." ;
+	<http://usgin.org/cardinality> "0..1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/updatetimestamp> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "UpdateTimeStamp" ;
+	rdfs:comment "Date of last time line of data was updated or corrected by the service provider.(Format: 2012-06-22T00:00)." ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .
+
+<http://usgin.org/implementation-element/shape> a <http://usgin.org/implementationElement> ;
+	<http://usgin.org/localName> "Shape" ;
+	rdfs:comment "Added by GIS for WFS service; this element appears in the xml output, but is generated during service deployment from the latitude and longitude, therefore it doesn't appear in the template" ;
+	<http://usgin.org/cardinality> "1" ;
+	dc:source "registryClasses.csv" .

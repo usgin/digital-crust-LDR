@@ -1,0 +1,67 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<concept>
+	rdf:type skos:Collection ;
+	rdfs:label "Concept" ;
+	skos:definition "Concept" ;
+  dct:description "No description." ;
+  skos:member <concept/table> ; 
+  skos:member <concept/data-object> ; 
+  skos:member <concept/median> ; 
+  skos:member <concept/mean> ; 
+  skos:member <concept/geometric-mean> ; 
+  skos:member <concept/mode> ; 
+  skos:member <concept/common-value> ; 
+  skos:member <concept/primitive> ; 
+  skos:member <concept/date-range> ; 
+  skos:member <concept/controlled-vocabulary> ;
+.
+
+<concept/table> a skos:Concept ;
+	skos:prefLabel "table" ;
+	rdfs:label "table" ;
+	dct:description "a data object that is a relation, a tuple consisting of a list of primitive values, with a record type defining the data type and semantics for each 'column' (position) in the tuple. " .
+
+<concept/data-object> a skos:Concept ;
+	skos:prefLabel "data object" ;
+	rdfs:label "data object" ;
+	dct:description "representation as a set of key-value pairs where the values might have any data type" .
+
+<concept/median> a skos:Concept ;
+	skos:prefLabel "median" ;
+	rdfs:label "median" .
+
+<concept/mean> a skos:Concept ;
+	skos:prefLabel "mean" ;
+	rdfs:label "mean" .
+
+<concept/geometric-mean> a skos:Concept ;
+	skos:prefLabel "geometric mean" ;
+	rdfs:label "geometric mean" .
+
+<concept/mode> a skos:Concept ;
+	skos:prefLabel "mode" ;
+	rdfs:label "mode" .
+
+<concept/common-value> a skos:Concept ;
+	skos:prefLabel "common value" ;
+	rdfs:label "common value" ;
+	dct:description "no formal statistics, an emprical assertion of a typical or expected value" .
+
+<concept/primitive> a skos:Concept ;
+	skos:prefLabel "primitive" ;
+	rdfs:label "primitive" .
+
+<concept/date-range> a skos:Concept ;
+	skos:prefLabel "date range" ;
+	rdfs:label "date range" .
+
+<concept/controlled-vocabulary> a skos:Concept ;
+	skos:prefLabel "controlled vocabulary" ;
+	rdfs:label "controlled vocabulary" .

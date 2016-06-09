@@ -1,0 +1,247 @@
+[
+  {
+    "op": "rdf-extension/save-rdf-schema",
+    "description": "Save RDF schema skeleton",
+    "schema": {
+      "baseUri": "http://resources.usgin.org/uri-gin/dtr/",
+      "prefixes": [
+        {
+          "name": "dct",
+          "uri": "http://purl.org/dc/terms/"
+        },
+        {
+          "name": "rdf",
+          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+        },
+        {
+          "name": "owl",
+          "uri": "http://www.w3.org/2002/07/owl#"
+        },
+        {
+          "name": "xsd",
+          "uri": "http://www.w3.org/2001/XMLSchema#"
+        },
+        {
+          "name": "skos",
+          "uri": "http://www.w3.org/2004/02/skos/core#"
+        },
+        {
+          "name": "odm2",
+          "uri": "http://vocabulary.odm2.org/unitstype/"
+        },
+        {
+          "name": "rdfs",
+          "uri": "http://www.w3.org/2000/01/rdf-schema#"
+        },
+        {
+          "name": "foaf",
+          "uri": "http://xmlns.com/foaf/0.1/"
+        },
+        {
+          "name": "dc",
+          "uri": "http://purl.org/dc/elements/1.1/"
+        }
+      ],
+      "rootNodes": [
+        {
+          "nodeType": "cell-as-resource",
+          "expression": "value",
+          "isRowNumberCell": false,
+          "columnName": "URI",
+          "rdfTypes": [
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#Concept",
+              "curie": "skos:Concept"
+            }
+          ],
+          "links": [
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#prefLabel",
+              "curie": "skos:prefLabel",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "skos:prefLabel"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2000/01/rdf-schema#label",
+              "curie": "rdfs:label",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "skos:prefLabel"
+              }
+            },
+            {
+              "uri": "http://purl.org/dc/terms/description",
+              "curie": "dct:description",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "skos:definition"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#definition",
+              "curie": "skos:definition",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "skos:definition"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/category",
+              "curie": "odm2:category",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:category"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#historyNote",
+              "curie": "skos:historyNote",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "skos:historyNote"
+              }
+            },
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#resource",
+              "curie": "rdf:resource",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "rdf:resource",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
+              "curie": "rdf:type",
+              "target": {
+                "nodeType": "cell-as-resource",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "rdf:resource",
+                "rdfTypes": [],
+                "links": []
+              }
+            },
+            {
+              "uri": "http://www.w3.org/2004/02/skos/core#note",
+              "curie": "skos:note",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "skos:note"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/defaultUnit",
+              "curie": "odm2:defaultUnit",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:defaultUnit"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/dimensionSymbol",
+              "curie": "odm2:dimensionSymbol",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:dimensionSymbol"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/dimensionLength",
+              "curie": "odm2:dimensionLength",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:dimensionLength"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/dimensionMass",
+              "curie": "odm2:dimensionMass",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:dimensionMass"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/dimensionTime",
+              "curie": "odm2:dimensionTime",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:dimensionTime"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/dimensionCurrent",
+              "curie": "odm2:dimensionCurrent",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:dimensionCurrent"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/dimensionTemperature",
+              "curie": "odm2:dimensionTemperature",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:dimensionTemperature"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/dimensionAmount",
+              "curie": "odm2:dimensionAmount",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:dimensionAmount"
+              }
+            },
+            {
+              "uri": "http://vocabulary.odm2.org/unitstype/dimensionLight",
+              "curie": "odm2:dimensionLight",
+              "target": {
+                "nodeType": "cell-as-literal",
+                "expression": "value",
+                "isRowNumberCell": false,
+                "columnName": "odm2:dimensionLight"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,1326 @@
+@prefix : <http://23.23.228.241:32781/ont/datatype/20160520#> .
+@prefix dt1: <http://23.23.228.241:32781/ont/datatype/20160520#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix reg:   <http://purl.org/linked-data/registry#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<http://23.23.228.241:32781/ont/datatype/20160520>
+  a owl:Ontology ;
+  rdfs:label "vocabulary"@en ;
+  skos:definition "This resource defines"@en ;
+  owl:versionIRI <http://23.23.228.241:32781/ont/datatype/20160520> ;
+	owl:imports <http://www.w3.org/2004/02/skos/core> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Agent>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Agent"^^xsd:string ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#agentLink> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#agentURI> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#ArrayDimension>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ArrayDimension" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#ArrayVariable>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ArrayVariable" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#ArrayDimension> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#dimension> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Attribute> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#valueType> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Attribute> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#valueType> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#ArrayDimension> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#dimension> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Attribute> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#valueType> ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Attribute>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Attribute" ;
+  rdfs:subClassOf [
+      a owl:Class ;
+      dct:description "Missing" ;
+      owl:unionOf (
+          [
+            a owl:Class ;
+            dct:description "Missing" ;
+            owl:intersectionOf (
+                [
+                  a owl:Restriction ;
+                  owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#DataObject> ;
+                  owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#dataType> ;
+                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                ]
+                [
+                  a owl:Restriction ;
+                  owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#PrimitiveType> ;
+                  owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#primitiveType> ;
+                  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                ]
+              ) ;
+          ]
+          [
+            a owl:Restriction ;
+            owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+            owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#dataType> ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+          ]
+        ) ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#MetaAttribute> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#metaAttribute> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#UnitOfMeasure> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#units> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#ValueDomain> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#logicalDomain> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#source> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:boolean ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#nilable> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#cardinality> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#elementName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#meaning> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Property> ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Citation>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Citation" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#onlineResource> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#QualifiedAttribution> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#citedAgent> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#citationURI> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#title> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Concept>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Concept" ;
+  rdfs:subClassOf skos:Concept ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#source> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#source> ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#ConceptScheme>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ConceptScheme" ;
+  rdfs:subClassOf skos:ConceptScheme ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#source> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#conceptAxes> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#hasMember> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#ConceptualDomain>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ConceptualDomain" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#ConceptScheme> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#conceptSpace> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#applicableMeasure> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#MeasureClass> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#conceptualValueType> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#ObjectClass> ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#ControlledVocabulary>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ControlledVocabulary" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Term> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#codeListValue> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#source> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Term> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#codeListValue> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#vocabularyName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#source> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#DataObject>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "DataObject" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#MetaAttribute> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#metaAttribute> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#logicType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#label> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#element> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Attribute> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#meaning> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#ObjectClass> ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#DataType>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "DataType" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#purpose> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#targetEnvironment> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#dataTypeName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#description> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#localName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Dictionary>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Dictionary" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#valueDataType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#PrimitiveType> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#keyDataType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Enumeration>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Enumeration" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#ControlledVocabulary> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Event>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Event" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#eventType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:dateTime ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#date> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Link>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Link" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#linkURL> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#linkTargetResourceType> ;
+      owl:someValuesFrom xsd:string ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#linkTitle> ;
+      owl:someValuesFrom xsd:string ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#LinkedAPIDoc>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "LinkedAPIDoc" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#linkAPIDocURL> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#List>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "List" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#itemType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#delimiter> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#MeasureClass>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Measurement class" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#memberUnit> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#UnitOfMeasure> ;
+    ] ;
+  skos:prefLabel "Measurement class"@en ;
+  skos:scopeNote """a set of equivalent units of measure that may be shared across multiple dimensionalities. Measure_Class allows a grouping of units of measure to be specified once, and reused by multiple dimensionalities. 
+EXAMPLE: We could define the Measure_Classes: Metric Linear Distance, Imperial Linear Distance, each associated with the appropriate Units_of_Measure; and associate them with Dimensionalities: Height, Width, and Depth to model the three spatial dimensions. (From ISO11179)
+Also allow dimensionless, and categorical
+
+UOM under metric linear distance would include cm, m, km.  It would appear that the members of a measure class would all belong to a single system of units."""@en ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#MetaAttribute>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "MetaAttribute" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#metaAttributeValue> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Attribute> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#metaAttributeKey> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#ObjectClass>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ObjectClass" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#essentialProperty> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Property> ;
+    ] ;
+  skos:scopeNote ""@en ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Parameter>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Parameter" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#linkParameterURI> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#linkParameterLabel> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#linkParameterValue> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#PrimitiveType>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "PrimitiveType" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom xsd:int ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#byteLength> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#encoding> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#ProcessingStep>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ProcessingStep" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#source> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Event> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#event> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#contributor> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#QualifiedAttribution> ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Property>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Property" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#quantityKind> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#ConceptualDomain> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#domain> ;
+    ] ;
+  skos:prefLabel "Property"@en ;
+  skos:scopeNote """A conceptual property. A quality that characterizes some aspect of instances of an object class. A property may be any feature that humans naturally use to distinguish one individual object from another. It is the human perception of a single quality of an object class in the real world. It is conceptual and thus has no particular associated means of representation by which the property can be communicated. A quality that inheres in an entity either permanently or over some time interval..
+
+This is derived from ISO11179 data element concept: a concept that is an association of a property with an object class. A data element concept can be represented in the form of a data element, described independently of any particular representation.  Since elementProperty is mandatory and single valued, there doesn't seem to be much gained by separating property and dataElementConcept"""@en ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#QualifiedAttribution>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "QualifiedAttribution" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#agentRoleURI> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#agentRoleLabel> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#attribution> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Agent> ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#Term>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Term" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#meaning> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#designation> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#meaning> ;
+      owl:someValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#UnitOfMeasure>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "Unit of Measure" ;
+  rdfs:subClassOf <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+  skos:prefLabel "Unit of Measure"@en ;
+  skos:scopeNote """a convention for how the magnitude of a quantifiable thing is specified. \"real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the two quantities as a number\" (http://www.iso.org/sites/JCGM/VIM/JCGM_200e_FILES/MAIN_JCGM_200e/01_e.html#L_1_9)
+
+Units of measure are not limited to physical categories. Examples of physical categories are: linear measure, area, volume, mass, velocity, time duration. Examples of non-physical categories are: currency, quality indicator, color intensity."""@en ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#ValueDomain>
+  a owl:Class ;
+  dct:description "Missing" ;
+  rdfs:label "ValueDomain" ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#domainType> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:allValuesFrom <http://23.23.228.241:32781/ont/datatype/20160520#ConceptualDomain> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#meaning> ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onClass <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#domainDataType> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:anyURI ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+  rdfs:subClassOf [
+      a owl:Restriction ;
+      owl:onDataRange xsd:string ;
+      owl:onProperty <http://23.23.228.241:32781/ont/datatype/20160520#domainName> ;
+      owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+    ] ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#agentInformation>
+  a owl:AnnotationProperty ;
+  rdfs:subPropertyOf skos:note ;
+  dct:description "Missing" ;
+  rdfs:label "agentInformation" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#agentLabel>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "agentLabel" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#label> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#agentLink>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Agent> ;
+  rdfs:label "agentLink" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#agentRoleCodespace>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#QualifiedAttribution> ;
+  rdfs:label "agentRoleCodespace" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#agentRoleLabel>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#QualifiedAttribution> ;
+  rdfs:label "agentRoleLabel" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#label> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#agentRoleURI>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#QualifiedAttribution> ;
+  rdfs:label "agentRoleURI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#reference> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#agentURI>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "agentURI" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#alternateTitle>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+  rdfs:label "alternateTitle" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#applicableMeasure>
+  a owl:ObjectProperty ;
+  dct:description "Link from ConceptualDomain to a measure class that may be used to qualify values in that domain"@en ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#ConceptualDomain> ;
+  rdfs:label "applicableMeasure" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#MeasureClass> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#attribution>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#QualifiedAttribution> ;
+  rdfs:label "attribution" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Agent> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#authority>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "authority" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#byteLength>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "byteLength" ;
+  rdfs:range xsd:int ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#cardinality>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "cardinality" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#citationURI>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "citationURI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#citedAgent>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+  rdfs:label "citedAgent" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#QualifiedAttribution> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#code>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "code" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#codeListValue>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#ControlledVocabulary> ;
+  rdfs:label "codeListValue" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Term> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#codespace>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "codespace" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#conceptAxes>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#ConceptScheme> ;
+  rdfs:label "conceptAxes" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#conceptSpace>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "conceptSpace" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#conceptualValueType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#ConceptualDomain> ;
+  rdfs:label "conceptualValueType" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#ObjectClass> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#constraintStatement>
+  a owl:AnnotationProperty ;
+  rdfs:subPropertyOf skos:note ;
+  dct:description "Missing" ;
+  rdfs:label "constraintStatement" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#contactEmail>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Agent> ;
+  rdfs:label "contactEmail" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#context>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "context" ;
+  owl:inverseOf <http://23.23.228.241:32781/ont/datatype/20160520#hasMember> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#contributor>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "contributor" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#QualifiedAttribution> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#dataType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "dataType" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#dataTypeName>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "dataTypeName" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#date>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "date" ;
+  rdfs:range xsd:dateTime ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#date-event>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "date-event" ;
+  rdfs:subPropertyOf owl:topDataProperty ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#delimiter>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "delimiter" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#description>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "description" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#designation>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Term> ;
+  rdfs:label "designation" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#dimension>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "dimension" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#domain>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "domain" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#domainDataType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "domainDataType" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#domainName>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "domainName" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#domainType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "domainType" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#element>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#DataObject> ;
+  rdfs:label "element" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Attribute> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#elementName>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "elementName" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#encoding>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "encoding" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#essentialProperty>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "essentialProperty" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#event>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "event" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Event> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#eventName>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Event> ;
+  rdfs:label "eventName" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#eventType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Event> ;
+  rdfs:label "eventType" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#fullCitation>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+  rdfs:label "fullCitation" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#hasMember>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "hasMember" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#identifier>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "identifier" ;
+  rdfs:range xsd:anyURI ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#intendedUse>
+  a owl:AnnotationProperty ;
+  rdfs:subPropertyOf skos:note ;
+  dct:description "Missing" ;
+  rdfs:label "intendedUse" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#itemType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "itemType" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#keyDataType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "keyDataType" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#label>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "label" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkAPIDoc>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkAPIDoc" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#LinkedAPIDoc> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkAPIDocType>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#LinkedAPIDoc> ;
+  rdfs:label "linkAPIDocType" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkAPIDocURL>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#LinkedAPIDoc> ;
+  rdfs:label "linkAPIDocURL" ;
+  rdfs:range xsd:anyURI ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkContentResourceType>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkContentResourceType" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkOverlayAPI-URI>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkOverlayAPI-URI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#reference> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkOverlayAPILabel>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkOverlayAPILabel" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#label> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkParameter>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkParameter" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Parameter> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkParameterLabel>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Parameter> ;
+  rdfs:label "linkParameterLabel" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#label> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkParameterURI>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Parameter> ;
+  rdfs:label "linkParameterURI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#identifier> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkParameterValue>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Parameter> ;
+  rdfs:label "linkParameterValue" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkProfileLabel>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkProfileLabel" ;
+  rdfs:range xsd:string ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#label> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkProfileURI>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkProfileURI" ;
+  rdfs:range xsd:anyURI ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#reference> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkRelation>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkRelation" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkTargetResourceType>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkTargetResourceType" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkTitle>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "linkTitle" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkTransferSize>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkTransferSize" ;
+  rdfs:range xsd:long ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#linkURL>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Link> ;
+  rdfs:label "linkURL" ;
+  rdfs:range xsd:anyURI ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#localName>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "localName" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#logicType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "logicType" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#logicalDomain>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "logicalDomain" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#maxValue>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "maxValue" ;
+  rdfs:range xsd:decimal ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#meaning>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "meaning" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#memberUnit>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "memberUnit" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#metaAttribute>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "metaAttribute" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#metaAttributeKey>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "metaAttributeKey" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#metaAttributeValue>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#MetaAttribute> ;
+  rdfs:label "metaAttributeValue" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#minValue>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "minValue" ;
+  rdfs:range xsd:decimal ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#name>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "name" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#nilable>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Attribute> ;
+  rdfs:label "nilable" ;
+  rdfs:range xsd:boolean ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#onlineResource>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "onlineResource" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#optionalProperty>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "optionalProperty" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#organizationName>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Agent> ;
+  rdfs:label "organizationName" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#organizationURI>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "organizationURI" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#reference> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#personName>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Agent> ;
+  rdfs:label "personName" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#personPosition>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Agent> ;
+  rdfs:label "personPosition" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#personURI>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "personURI" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#reference> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#primitiveType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "primitiveType" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#purpose>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "purpose" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#quantityKind>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "quantityKind" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#reference>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "reference" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#representation>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "representation" ;
+  owl:inverseOf <http://23.23.228.241:32781/ont/datatype/20160520#meaning> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#source>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "source" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Citation> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#targetEnvironment>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "targetEnvironment" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#Concept> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#title>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "title" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#units>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "units" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#valueDataType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "valueDataType" ;
+  rdfs:range <http://23.23.228.241:32781/ont/datatype/20160520#DataType> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#valueFormat>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "valueFormat" ;
+  rdfs:range xsd:string ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#valueType>
+  a owl:ObjectProperty ;
+  dct:description "Missing" ;
+  rdfs:label "valueType" ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#vocabularyName>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:label "vocabularyName" ;
+  rdfs:subPropertyOf <http://23.23.228.241:32781/ont/datatype/20160520#name> ;
+.
+<http://23.23.228.241:32781/ont/datatype/20160520#voicePhoneNumber>
+  a owl:DatatypeProperty ;
+  dct:description "Missing" ;
+  rdfs:domain <http://23.23.228.241:32781/ont/datatype/20160520#Agent> ;
+  rdfs:label "voicePhoneNumber" ;
+  rdfs:range xsd:string ;
+.

@@ -1,0 +1,194 @@
+@prefix spec:  <http://www.opengis.net/ont/modspec#> .
+@prefix ssd:   <http://www.w3.org/ns/sparql-service-description#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix npg:   <http://ns.nature.com/terms/> .
+@prefix dgu:   <http://reference.data.gov.uk/def/reference/> .
+@prefix odrs:  <http://schema.theodi.org/odrs#> .
+@prefix vann:  <http://purl.org/vocab/vann/> .
+@prefix rr-cat: <http://registry.it.csiro.au/structure/category/> .
+@prefix vs:    <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix qudt:  <http://qudt.org/schema/qudt#> .
+@prefix version: <http://purl.org/linked-data/version#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix api:   <http://purl.org/linked-data/api/vocab#> .
+@prefix vivo:  <http://vivoweb.org/ontology/core#> .
+@prefix rr-org: <http://registry.it.csiro.au/structure/org/> .
+@prefix ui:    <http://purl.org/linked-data/registry-ui#> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix op:    <http://environment.data.gov.au/def/op#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix rr-entity: <http://registry.it.csiro.au/structure/entity-type/> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix qb:    <http://purl.org/linked-data/cube#> .
+@prefix dtr2:   <http://registry.it.csiro.au/ont/dtr2#> .
+@prefix rr-ui: <http://registry.it.csiro.au/structure/ui/> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix reg:   <http://purl.org/linked-data/registry#> .
+@prefix bibo:  <http://purl.org/ontology/bibo/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix ldp:   <http://www.w3.org/ns/ldp#> .
+
+dtr2:relationship  a   owl:ObjectProperty ;
+        rdfs:comment  "Intent: How the properties are related to each other, e.g., grouping of properties, cardinality, etc., should be captured here."^^xsd:string ;
+        rdfs:domain   dtr2:DataType ;
+        rdfs:label    "Experimental. Likely to change soon"^^xsd:string ;
+        rdfs:range    dtr2:Relationship .
+
+dtr2:Standard  a          owl:Class ;
+        rdfs:label       "Standard"^^xsd:string ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  1 ;
+                           owl:onProperty   rdfs:label
+                         ] ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  1 ;
+                           owl:onProperty   dtr2:issuer
+                         ] .
+
+dtr2:details  a       owl:DatatypeProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( dtr2:Standard dtr2:Representation dtr2:Relationship )
+                     ] ;
+        rdfs:label   "Details"^^xsd:string .
+
+dtr2:property  a       owl:ObjectProperty ;
+        rdfs:comment  "Type dependencies used for expressing how this type is built from other types"^^xsd:string ;
+        rdfs:domain   dtr2:DataType ;
+        rdfs:label    "Properties"^^xsd:string ;
+        rdfs:range    dtr2:Property .
+
+dtr2:DataType  a          owl:Class ;
+        rdfs:label       "Data type description"^^xsd:string ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  1 ;
+                           owl:onProperty   rdfs:label
+                         ] ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  1 ;
+                           owl:onProperty   dct:description
+                         ] .
+
+dtr2:expectedUse  a   owl:DatatypeProperty ;
+        rdfs:domain  dtr2:DataType ;
+        rdfs:label   "Expected Use"^^xsd:string ;
+        rdfs:range   xsd:string .
+
+dtr2:value  a         owl:DatatypeProperty ;
+        rdfs:domain  dtr2:Representation ;
+        rdfs:label   "Value"^^xsd:string ;
+        rdfs:range   xsd:string .
+
+dtr2:provenance  a    owl:ObjectProperty ;
+        rdfs:domain  dtr2:DataType ;
+        rdfs:range   dtr2:Provenance .
+
+<http://registry.it.csiro.au/ont/_dtr>
+        a                  reg:RegisterItem ;
+        rdfs:label         "Data Type description"^^xsd:string ;
+        dct:dateAccepted   "2015-10-15T07:16:19.427Z"^^xsd:dateTime ;
+        dct:dateSubmitted  "2015-10-14T22:53:49.719Z"^^xsd:dateTime ;
+        dct:description    "A RDFS/OWL implementation of the Data Type model from the RDA Data Types Registry working group. Based on JSON Schema provided in the final report of that working group."^^xsd:string ;
+        dct:modified       "2015-10-14T23:00:50.134Z"^^xsd:dateTime ;
+        reg:definition     [ reg:entity       <http://registry.it.csiro.au/ont/dtr> ;
+                             reg:sourceGraph  <http://registry.it.csiro.au/ont/_dtr2:3#graph>
+                           ] ;
+        reg:itemClass      owl:Ontology ;
+        reg:notation       "dtr" ;
+        reg:register       <http://registry.it.csiro.au/ont> ;
+        reg:status         reg:statusExperimental ;
+        reg:submitter      [ foaf:accountName  "simon.cox@csiro.au" ;
+                             foaf:name         "Simon Cox"
+                           ] ;
+        owl:versionInfo    4 .
+
+dtr2:Property  a          owl:Class ;
+        rdfs:comment     "Type dependencies used for expressing how this type is built from other types"^^xsd:string ;
+        rdfs:label       "Property"^^xsd:string ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  1 ;
+                           owl:onProperty   rdfs:label
+                         ] .
+
+dtr2:relativeName  a  owl:DatatypeProperty ;
+        rdfs:domain  dtr2:Relationship ;
+        rdfs:label   "Relative Name"^^xsd:string ;
+        rdfs:range   xsd:string .
+
+dtr2:natureOfApplicability
+        a            owl:DatatypeProperty ;
+        rdfs:domain  dtr2:Standard ;
+        rdfs:label   "Nature of Applicability"^^xsd:string ;
+        rdfs:range   xsd:string .
+
+dtr2:Provenance  a        owl:Class ;
+        rdfs:label       "Provenance"^^xsd:string ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:maxCardinality  1 ;
+                           owl:onProperty      dct:created
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:minCardinality  0 ;
+                           owl:onProperty      dct:contributor
+                         ] ;
+        rdfs:subClassOf  [ a                   owl:Restriction ;
+                           owl:maxCardinality  1 ;
+                           owl:onProperty      dct:modified
+                         ] .
+
+dtr2:Relationship  a      owl:Class ;
+        rdfs:comment     "Intent: How the properties are related to each other, e.g., grouping of properties, cardinality, etc., should be captured here."^^xsd:string ;
+        rdfs:label       "Experimental. Likely to change soon"^^xsd:string ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  1 ;
+                           owl:onProperty   rdfs:label
+                         ] .
+
+dtr2:representationsAndSemantics
+        a            owl:ObjectProperty ;
+        rdfs:domain  [ a            owl:Class ;
+                       owl:unionOf  ( dtr2:DataType dtr2:Property )
+                     ] ;
+        rdfs:label   "Representations and Semantics"^^xsd:string ;
+        rdfs:range   dtr2:Representation .
+
+dtr2:standard  a      owl:ObjectProperty ;
+        rdfs:domain  dtr2:DataType ;
+        rdfs:label   "Applicable Standard or Recommendation"^^xsd:string ;
+        rdfs:range   dtr2:Standard .
+
+dtr2:Representation  a    owl:Class ;
+        rdfs:label       "Representation and Semantic Expression"^^xsd:string ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  1 ;
+                           owl:onProperty   dtr2:expression
+                         ] ;
+        rdfs:subClassOf  [ a                owl:Restriction ;
+                           owl:cardinality  1 ;
+                           owl:onProperty   dtr2:value
+                         ] .
+
+dtr2:expression  a    owl:DatatypeProperty ;
+        rdfs:domain  dtr2:Representation ;
+        rdfs:label   "Expression"^^xsd:string ;
+        rdfs:range   xsd:string .
+
+dtr2:issuer  a        owl:DatatypeProperty ;
+        rdfs:domain  dtr2:Standard ;
+        rdfs:label   "Issued By"^^xsd:string ;
+        rdfs:range   xsd:string .
+
+<http://registry.it.csiro.au/ont/dtr>
+        a                owl:Ontology ;
+        rdfs:comment     "A RDFS/OWL implementation of the Data Type model from the RDA Data Types Registry working group. Based on JSON Schema provided in the final report of that working group."^^xsd:string ;
+        rdfs:label       "Data Type description"^^xsd:string ;
+        dct:created      "2015-05-27"^^xsd:date ;
+        dct:creator      <http://orcid.org/0000-0002-3884-3420> , <http://people.csiro.au/C/S/Simon-Cox> ;
+        dct:description  "A RDFS/OWL implementation of the Data Type model from the RDA Data Types Registry working group. Based on JSON Schema provided in the final report of that working group."^^xsd:string ;
+        owl:imports      dc: .

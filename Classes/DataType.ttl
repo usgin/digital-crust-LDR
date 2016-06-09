@@ -1,0 +1,199 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+
+<data-type>
+	rdf:type skos:Collection ;
+	rdfs:label "DataType" ;
+	skos:definition "DataType" ;
+  dct:description "No description." ;
+  skos:member <data-type/array> ; 
+  skos:member <data-type/blob> ; 
+  skos:member <data-type/boolean> ; 
+  skos:member <data-type/data-object> ; 
+  skos:member <data-type/dictionary> ; 
+  skos:member <data-type/double> ; 
+  skos:member <data-type/float> ; 
+  skos:member <data-type/integer> ; 
+  skos:member <data-type/list> ; 
+  skos:member <data-type/list-string-pipe> ; 
+  skos:member <data-type/long-integer> ; 
+  skos:member <data-type/primitive-type> ; 
+  skos:member <data-type/real-number> ; 
+  skos:member <data-type/string> ; 
+  skos:member <data-type/datetime> ; 
+  skos:member <data-type/uri> ; 
+  skos:member <data-type/url> ; 
+  skos:member <data-type/date> ; 
+  skos:member <data-type/string-255> ; 
+  skos:member <data-type/point-object> ; 
+  skos:member <data-type/geometry> ; 
+  skos:member <data-type/point-3-d-object> ; 
+  skos:member <data-type/term> ;
+.
+
+<data-type/array> a owl:Class ;
+	skos:prefLabel "array"@en ;
+	dct:description "Base concrete subclass of abstract data type; data value represented as  a list of values associated with an index; arrays have a dimension, and each dimension might map into some conceptual or physical space (the dimension type)" ;
+	rdfs:label "array"@en ;
+	dcdtr:type "data type" ;
+	skos:broader <data-type> .
+
+<data-type/blob> a owl:Class ;
+	skos:prefLabel "blob"@en ;
+	dct:description "an opaque binary object. This is the lowest level kind of data object, essentially a bit stream that is meaningless without some context to interpret it. Physical types might specify number of bytes." ;
+	rdfs:label "blob"@en ;
+	dcdtr:type "primitive type" ;
+	skos:narrower <data-type/blob/geometry> ;
+	skos:broader <data-type/primitive-type> .
+
+<data-type/boolean> a owl:Class ;
+	skos:prefLabel "boolean"@en ;
+	dct:description "logical type, physical type might be single bit, 'true' 'false' string, '0' or '1' etc." ;
+	rdfs:label "boolean"@en ;
+	dcdtr:type "primitive type" ;
+	skos:broader <data-type/primitive-type> .
+
+<data-type/data-object> a owl:Class ;
+	skos:prefLabel "data object"@en ;
+	dct:description "Base concrete subclass of abstract data type; value consists of a structured collection of attributes each with an associated dataType, Domain, and units of measure." ;
+	rdfs:label "data object"@en ;
+	dcdtr:type "data type" ;
+	skos:broader <data-type> .
+
+<data-type/dictionary> a owl:Class ;
+	skos:prefLabel "dictionary"@en ;
+	dct:description "Base concrete subclass of abstract data type; a list of key-value pairs;" ;
+	rdfs:label "dictionary"@en ;
+	dcdtr:type "data type" ;
+	skos:broader <data-type> .
+
+<data-type/double> a owl:Class ;
+	skos:prefLabel "double"@en ;
+	rdfs:label "double"@en ;
+	dcdtr:type "real number" ;
+	skos:broader <data-type/real-number> .
+
+<data-type/float> a owl:Class ;
+	skos:prefLabel "float"@en ;
+	rdfs:label "float"@en ;
+	dcdtr:type "real number" ;
+	skos:broader <data-type/real-number> .
+
+<data-type/integer> a owl:Class ;
+	skos:prefLabel "integer"@en ;
+	dct:description "logical type; physical types might specify number of bytes, and value range" ;
+	rdfs:label "integer"@en ;
+	dcdtr:type "primitive type" ;
+	skos:narrower <data-type/long-integer> ;
+	skos:broader <data-type/primitive-type> .
+
+<data-type/list> a owl:Class ;
+	skos:prefLabel "list"@en ;
+	dct:description "Base concrete subclass of abstract data type; value consists of a list of items each with its own dataType, and a specified delimiter that separates items. " ;
+	rdfs:label "list"@en ;
+	dcdtr:type "data type" ;
+	skos:broader <data-type> .
+
+<data-type/list-string-pipe> a owl:Class ;
+	skos:prefLabel "list string pipe"@en ;
+	dct:description "a list of string values delimited with pipe ('|') characters" ;
+	rdfs:label "list string pipe"@en ;
+	dcdtr:type "list" ;
+	dcdtr:itemType "string" ;
+	dcdtr:delimiter "|" ;
+	skos:broader <data-type/list> .
+
+<data-type/long-integer> a owl:Class ;
+	skos:prefLabel "long integer"@en ;
+	rdfs:label "long integer"@en ;
+	dcdtr:type "integer" ;
+	skos:broader <data-type/integer> .
+
+<data-type/primitive-type> a owl:Class ;
+	skos:prefLabel "primitive type"@en ;
+	dct:description "Base concrete subclass of abstract data type; includes basic computer programming data types e.g. xml data types." ;
+	rdfs:label "primitive type"@en ;
+	dcdtr:type "data type" ;
+	skos:narrower <data-type/integer>, <data-type/boolean>, <data-type/real-number>, <data-type/string>, <data-type/datetime>, <data-type/date> ;
+	skos:broader <data-type> .
+
+<data-type/real-number> a owl:Class ;
+	skos:prefLabel "real number"@en ;
+	dct:description "logical type, might be decimal, float, double, lots of possible low-level encoding schemes… (big endian, small endian…)" ;
+	rdfs:label "real number"@en ;
+	dcdtr:type "primitive type" ;
+	skos:narrower <data-type/float>, <data-type/double> ;
+	skos:broader <data-type/primitive-type> .
+
+<data-type/string> a owl:Class ;
+	skos:prefLabel "string"@en ;
+	dct:description "logical type for string; physical types might specify character encoding, number of bytes, etc." ;
+	rdfs:label "string"@en ;
+	dcdtr:type "primitive type" ;
+	skos:narrower <data-type/term>, <data-type/string-255> ;
+	skos:broader <data-type/primitive-type> .
+
+<data-type/datetime> a owl:Class ;
+	skos:prefLabel "dateTime"@en ;
+	rdfs:label "dateTime"@en ;
+	dcdtr:type "primitive type" ;
+	skos:broader <data-type/primitive-type> .
+
+<data-type/uri> a owl:Class ;
+	skos:prefLabel "uri"@en ;
+	rdfs:label "uri"@en ;
+	dcdtr:type "string" ;
+	skos:broader <data-type/string> .
+
+<data-type/url> a owl:Class ;
+	skos:prefLabel "url"@en ;
+	rdfs:label "url"@en ;
+	dcdtr:type "string" ;
+	skos:broader <data-type/string> .
+
+<data-type/date> a owl:Class ;
+	skos:prefLabel "date"@en ;
+	rdfs:label "date"@en ;
+	dcdtr:type "primitive type" ;
+	skos:broader <data-type/primitive-type> .
+
+<data-type/string-255> a owl:Class ;
+	skos:prefLabel "string 255"@en ;
+	dct:description "string limited to 255 characters" ;
+	rdfs:label "string 255"@en ;
+	dcdtr:type "string" ;
+	skos:broader <data-type/string> .
+
+<data-type/point-object> a owl:Class ;
+	skos:prefLabel "point object"@en ;
+	dct:description "a geometry that encodes an X-Y point location" ;
+	rdfs:label "point object"@en ;
+	dcdtr:type "geometry" ;
+	skos:broader <data-type/geometry> .
+
+<data-type/geometry> a owl:Class ;
+	skos:prefLabel "geometry"@en ;
+	dct:description "a blob that encodes a geospatial location" ;
+	rdfs:label "geometry"@en ;
+	dcdtr:type "blob" ;
+	skos:narrower <data-type/point-object>, <data-type/point-3-d-object> ;
+	skos:broader <data-type/blob> .
+
+<data-type/point-3-d-object> a owl:Class ;
+	skos:prefLabel "point 3-D object"@en ;
+	dct:description "a geometry that encodes a point in X-Y-Z" ;
+	rdfs:label "point 3-D object"@en ;
+	dcdtr:type "geometry" ;
+	skos:broader <data-type/geometry> .
+
+<data-type/term> a owl:Class ;
+	skos:prefLabel "term"@en ;
+	dct:description "a string that is restricted to be a member of labels from a controlled vocabulary" ;
+	rdfs:label "term"@en ;
+	dcdtr:type "string" ;
+	skos:broader <data-type/string> .
