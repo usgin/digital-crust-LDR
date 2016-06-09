@@ -1,7 +1,0 @@
-- In RegistryConcepts, Property: def/property/agent-identifier references def/property/reference which doesn't exist
-- In RegistryConcepts, Property: should have a skos:narrower?
-- In RegistryConcepts, Property: domainOfCarriers column missing complete references
-- Field names from DataType Model pdf do not match what we use in the LDR, for example prefName vs prefLabel, definition vs description (prefLabel and description are both required fields in the LDR)
-- Link back from property to object class?
-
-
