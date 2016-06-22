@@ -1,0 +1,387 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+
+
+<samplingfeatureuri> a owl:Class ;
+	rdfs:label "Sampling Feature URI" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<lithologydescription> a owl:Class ;
+	rdfs:label "Lithology Description" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<formationname> a owl:Class ;
+	rdfs:label "Formation Name" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<notes> a owl:Class ;
+	rdfs:label "Notes" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<observedpropertyname> a owl:Class ;
+	rdfs:label "Observed Property Name" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<observednumericvalueminimum> a owl:Class ;
+	rdfs:label "Observed Numeric Value, minimum " ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<observednumericvaluemaximum> a owl:Class ;
+	rdfs:label "Observed Numeric Value, maximum" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<observednumericvalue> a owl:Class ;
+	rdfs:label "Observed Numeric Value" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<standarddeviation> a owl:Class ;
+	rdfs:label "Standard Deviation" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<measurementcount> a owl:Class ;
+	rdfs:label "Measurement Count" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<measurementprocedure> a owl:Class ;
+	rdfs:label "Measurement Procedure" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<source> a owl:Class ;
+	rdfs:label "Source" ;
+	dcdtr:dataObject <../data-object/cphydroobservationdata> .
+
+<objectid> a owl:Class ;
+	rdfs:label "OBJECTID" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<facilityuri> a owl:Class ;
+	rdfs:label "Facility URI" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<plantname> a owl:Class ;
+	rdfs:label "Plant Name" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<planttype> a owl:Class ;
+	rdfs:label "Plant Type" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<otherfeatureid> a owl:Class ;
+	rdfs:label "Other Feature ID" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<label> a owl:Class ;
+	rdfs:label "Label" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<owner> a owl:Class ;
+	rdfs:label "Owner" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<operator> a owl:Class ;
+	rdfs:label "Operator" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<operationaldate> a owl:Class ;
+	rdfs:label "Operational Date" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<status> a owl:Class ;
+	rdfs:label "Status" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<statusdate> a owl:Class ;
+	rdfs:label "Status Date" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<plssmeridians> a owl:Class ;
+	rdfs:label "PLSS Location" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<township> a owl:Class ;
+	rdfs:label "Total Slip" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<range> a owl:Class ;
+	rdfs:label "Radioactivity Measurement Device" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<section-> a owl:Class ;
+	rdfs:label "Standard Error Corrected HeatFlow" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<sectionpart> a owl:Class ;
+	rdfs:label "Section Part" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<utme> a owl:Class ;
+	rdfs:label "Use Application" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<utmn> a owl:Class ;
+	rdfs:label "UTM E" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<utmdatumzone> a owl:Class ;
+	rdfs:label "Use Application" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<county> a owl:Class ;
+	rdfs:label "County" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<state> a owl:Class ;
+	rdfs:label "State" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<latitudedegree> a owl:Class ;
+	rdfs:label "Latitude Correction mgal" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<longitudedegree> a owl:Class ;
+	rdfs:label "Longitude Degree" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<srs> a owl:Class ;
+	rdfs:label "SRS" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<locationuncertaintystatement> a owl:Class ;
+	rdfs:label "Location Uncertainty Statement" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<locationuncertaintycode> a owl:Class ;
+	rdfs:label "Location Uncertainty Code" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<locationuncertaintyradius> a owl:Class ;
+	rdfs:label "Location Uncertainty Radius" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<locationkeyword> a owl:Class ;
+	rdfs:label "Location Keyword" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<notes> dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<useapplication> a owl:Class ;
+	rdfs:label "Use Application" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<capacity-mw> a owl:Class ;
+	rdfs:label "Capacity MW" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<facilitycontactname> a owl:Class ;
+	rdfs:label "Event URI" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<facilitypostaladdress> a owl:Class ;
+	rdfs:label "Facility Postal Address" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<facility-ostalzipcode> a owl:Class ;
+	rdfs:label "Facility Name" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<facilitycontactphone> a owl:Class ;
+	rdfs:label "Event URI" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<facilitycontactemailaddress> a owl:Class ;
+	rdfs:label "Event URI" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<source> dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<fluidtemperature-c> a owl:Class ;
+	rdfs:label "Fluid Temperature C" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<flow-gpm> a owl:Class ;
+	rdfs:label "Flow gpm" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<relatedresource> a owl:Class ;
+	rdfs:label "Related Resource" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<metadatauri> a owl:Class ;
+	rdfs:label "MetadataURI" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<updatetimestamp> a owl:Class ;
+	rdfs:label "Update Time Stamp" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<geographicposition> a owl:Class ;
+	rdfs:label "Geographic Position" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
+<objectid> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<plant-productionstaturi> a owl:Class ;
+	rdfs:label "Plant Production Stat URI" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<plant-productionstatlabel> a owl:Class ;
+	rdfs:label "Plant Production Stat Label" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<powerplantfacilityuri> a owl:Class ;
+	rdfs:label "Power Plant Facility URI" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<plantname> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<otherfeatureid> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<notes> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<planttype> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<yearcommissioned> a owl:Class ;
+	rdfs:label "Year Commissioned" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<utme> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<utmn> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<utmdatumzone> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<postaladdress> a owl:Class ;
+	rdfs:label "Postal Address" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<county> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<state> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<latitudedegree> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<longitudedegree> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<srs> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<locationuncertaintystatement> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<reportingperiod> a owl:Class ;
+	rdfs:label "Reporting Period" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<startreportinterval> a owl:Class ;
+	rdfs:label "Start Report Interval" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<endreportinterval> a owl:Class ;
+	rdfs:label "End Report Interval" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<reportyear> a owl:Class ;
+	rdfs:label "Report Year" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<capacity-mw> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<grossproduction-mwhr> a owl:Class ;
+	rdfs:label "Gross Production Capacity" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<netproduction-mwhr> a owl:Class ;
+	rdfs:label "Net Production MWhr" ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<averageprice-c-kw-h> a owl:Class ;
+	rdfs:label "Average Price cents per kilowatt-hour." ;
+	dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<relatedresource> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<metadatauri> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<updatetimestamp> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<geographicposition> dcdtr:dataObject <../data-object/power-plant-production-result> .
+
+<otherfeatureid> dcdtr:dataObject <../data-object/wsp2321data> .
+
+<depthtopinterval-ft> a owl:Class ;
+	rdfs:label "Depth Top Interval ft" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<depthbottominterval-ft> a owl:Class ;
+	rdfs:label "Depth Bottom Interval ft" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<permeabilityintrinsic-md> a owl:Class ;
+	rdfs:label "Permeability, Intrinsic mD" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<porositymean-pct> a owl:Class ;
+	rdfs:label "porosity mean pct" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<cementationfactor> a owl:Class ;
+	rdfs:label "Cementation factor" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<resistivitywater-ohm-m> a owl:Class ;
+	rdfs:label "Water Resistivity ohm/m" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<formationfactor> a owl:Class ;
+	rdfs:label "Formation Factor" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<lithology> a owl:Class ;
+	rdfs:label "Lithology" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<formationname> dcdtr:dataObject <../data-object/wsp2321data> .
+
+<notes> dcdtr:dataObject <../data-object/wsp2321data> .
+
+<wellname> a owl:Class ;
+	rdfs:label "Well Name" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<http://resources.usgin.org/uri-gin/dtr/classclass/attribute/plsslocation> a owl:Class ;
+	rdfs:label "Zip" ;
+	dcdtr:dataObject <../data-object/wsp2321data> .
+
+<county> dcdtr:dataObject <../data-object/wsp2321data> .
+
+<source> dcdtr:dataObject <../data-object/wsp2321data> .
+
+<samplingfeatureuri> dcdtr:dataObject <../data-object/weigelobservation> .
+
+<latitude-degree> a owl:Class ;
+	rdfs:label "Latitude Correction mgal" ;
+	dcdtr:dataObject <../data-object/weigelobservation> .
+
+<longitude-degree> a owl:Class ;
+	rdfs:label "Longitude Degree" ;
+	dcdtr:dataObject <../data-object/weigelobservation> .
+
+<samplingfeaturetype> a owl:Class ;
+	rdfs:label "Sampling Feature Type" ;
+	dcdtr:dataObject <../data-object/weigelobservation> .
+
+<formationname> dcdtr:dataObject <../data-object/weigelobservation> .
+
+<lithology> dcdtr:dataObject <../data-object/weigelobservation> .
+
+<observedpropertyname> dcdtr:dataObject <../data-object/weigelobservation> .
+
+<observednumericvalue> dcdtr:dataObject <../data-object/weigelobservation> .
+
+<depthtopinterval-ft> dcdtr:dataObject <../data-object/weigelobservation> .
+
+<depthbottominterval-ft> dcdtr:dataObject <../data-object/weigelobservation> .
+
+<measurementprocedure> dcdtr:dataObject <../data-object/weigelobservation> .
+
+<source> dcdtr:dataObject <../data-object/weigelobservation> .

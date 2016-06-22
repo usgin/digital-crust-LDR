@@ -1,0 +1,25 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+
+
+<cphydroobservationdata> a owl:Class ;
+	rdfs:label "Coordinate Location" ;
+	dcdtr:element <../attribute/formationname> , <../attribute/lithologydescription> , <../attribute/measurementcount> , <../attribute/measurementprocedure> , <../attribute/notes> , <../attribute/observednumericvalue> , <../attribute/observednumericvaluemaximum> , <../attribute/observednumericvalueminimum> , <../attribute/observedpropertyname> , <../attribute/samplingfeatureuri> , <../attribute/source> , <../attribute/standarddeviation> .
+
+<geothermal-power-plant-occurrence> a owl:Class ;
+	rdfs:label "Geothermal Power Plant Occurrence" ;
+	dcdtr:element <../attribute/capacity-mw> , <../attribute/county> , <../attribute/facilitycontactname> , <../attribute/facilitycontactphone> , <../attribute/facilitycontactemailaddress> , <../attribute/facility-ostalzipcode> , <../attribute/facilitypostaladdress> , <../attribute/facilityuri> , <../attribute/flow-gpm> , <../attribute/fluidtemperature-c> , <../attribute/geographicposition> , <../attribute/label> , <../attribute/latitudedegree> , <../attribute/locationkeyword> , <../attribute/locationuncertaintycode> , <../attribute/locationuncertaintyradius> , <../attribute/locationuncertaintystatement> , <../attribute/longitudedegree> , <../attribute/metadatauri> , <../attribute/notes> , <../attribute/objectid> , <../attribute/operationaldate> , <../attribute/operator> , <../attribute/otherfeatureid> , <../attribute/owner> , <../attribute/plantname> , <../attribute/planttype> , <../attribute/plssmeridians> , <../attribute/range> , <../attribute/relatedresource> , <../attribute/sectionpart> , <../attribute/source> , <../attribute/srs> , <../attribute/section-> , <../attribute/state> , <../attribute/status> , <../attribute/statusdate> , <../attribute/township> , <../attribute/updatetimestamp> , <../attribute/utme> , <../attribute/utmdatumzone> , <../attribute/useapplication> , <../attribute/utmn> .
+
+<power-plant-production-result> a owl:Class ;
+	rdfs:label "Power Plant Production Result" ;
+	dcdtr:element <../attribute/averageprice-c-kw-h> , <../attribute/capacity-mw> , <../attribute/county> , <../attribute/endreportinterval> , <../attribute/geographicposition> , <../attribute/grossproduction-mwhr> , <../attribute/latitudedegree> , <../attribute/locationuncertaintystatement> , <../attribute/longitudedegree> , <../attribute/metadatauri> , <../attribute/netproduction-mwhr> , <../attribute/notes> , <../attribute/objectid> , <../attribute/otherfeatureid> , <../attribute/plantname> , <../attribute/plant-productionstatlabel> , <../attribute/plant-productionstaturi> , <../attribute/planttype> , <../attribute/postaladdress> , <../attribute/powerplantfacilityuri> , <../attribute/relatedresource> , <../attribute/reportingperiod> , <../attribute/reportyear> , <../attribute/srs> , <../attribute/startreportinterval> , <../attribute/state> , <../attribute/updatetimestamp> , <../attribute/utme> , <../attribute/utmdatumzone> , <../attribute/utmn> , <../attribute/yearcommissioned> .
+
+<wsp2321data> a owl:Class ;
+	rdfs:label "Quantity with units" ;
+	dcdtr:element <../attribute/cementationfactor> , <../attribute/county> , <../attribute/depthbottominterval-ft> , <../attribute/depthtopinterval-ft> , <../attribute/formationfactor> , <../attribute/formationname> , <../attribute/lithology> , <../attribute/notes> , <../attribute/otherfeatureid> , <../attribute/permeabilityintrinsic-md> , <../attribute/porositymean-pct> , <../attribute/source> , <../attribute/resistivitywater-ohm-m> , <../attribute/wellname> , <http://resources.usgin.org/uri-gin/dtr/classclass/attribute/plsslocation> .
+
+<weigelobservation> a owl:Class ;
+	rdfs:label "WeigelObservation" ;
+	dcdtr:element <../attribute/depthbottominterval-ft> , <../attribute/depthtopinterval-ft> , <../attribute/formationname> , <../attribute/latitude-degree> , <../attribute/lithology> , <../attribute/longitude-degree> , <../attribute/measurementprocedure> , <../attribute/observednumericvalue> , <../attribute/observedpropertyname> , <../attribute/samplingfeaturetype> , <../attribute/samplingfeatureuri> , <../attribute/source> .

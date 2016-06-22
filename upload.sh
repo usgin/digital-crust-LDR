@@ -1,7 +1,6 @@
 #!/bin/bash
 # This script uploads the LDR registers to http://resources.usgin.org/uri-gin/dtr/
 # Run this script with $ ./upload.sh
-
 # Force bash to ignore carriage return (\r) characters used in Windows line separators
 (set -o igncr) 2>/dev/null && set -o igncr; # this comment is needed
 
@@ -43,5 +42,11 @@ done
 # Upload Links
 
 echo Uploading Links ...
+
+echo Uploading Attribute-DataObject Links ...
+curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/Attribute-DataObject/Attribute-dataObject.ttl" $BASEURI"class/attribute?edit"
+curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/Attribute-DataObject/DataObject-element.ttl" $BASEURI"class/data-object?edit"
+
+echo Uploading ObjectClass-Property Links ...
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/ObjectClass-Property/ObjectClass-essentialProperty.ttl" $BASEURI"def/object-class?edit"
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/ObjectClass-Property/Property-domainOfCarriers.ttl" $BASEURI"def/property?edit"
