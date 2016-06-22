@@ -1,0 +1,13 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+
+
+<power-plant-production-observation> a skos:Concept ;
+	rdfs:label "Power Plant Production Observation" ;
+	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
+
+<geothermal-power-plant-facility> a skos:Concept ;
+	rdfs:label "Geothermal Power Plant Facility" ;
+	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .

@@ -8,56 +8,61 @@
 
 
 <data-object>
-	rdf:type skos:Collection ;
-	rdfs:label "DataObject" ;
-	skos:definition "DataObject" ;
-  dct:description "An information object that represents an entity of interest (ObjectClass in this model, based on ISO11179) in some domain; the representation consists of a collection of Attributes that are used to quantify properties of instances of the entity. Corresponds to 'dataType' in ISO11179, Entity in Entity-Relationship models, Object in object models, 'document' in document type noSQL databases (e.g. CouchDb, MongoDb), 'Variable' in the netCDF common data model (OGC 10-090r3).<br><br>An information object that has internal structure in which the parts can be operated on independently; a data structure." ;
-  skos:member <data-object/agent-description> ; 
-  skos:member <data-object/borehole-lithology-intercept-occurrence> ; 
-  skos:member <data-object/borehole-lithology-interval-occurrence> ; 
-  skos:member <data-object/borehole-temperature-result> ; 
-  skos:member <data-object/contact-information-description> ; 
-  skos:member <data-object/contour-line-instance> ; 
-  skos:member <data-object/coordinate-location> ; 
-  skos:member <data-object/direct-use-facility-occurrence> ; 
-  skos:member <data-object/fluid-flux-injection-and-disposal-result> ; 
-  skos:member <data-object/geologic-contact-occurrence> ; 
-  skos:member <data-object/geologic-fault-occurrence> ; 
-  skos:member <data-object/geologic-unit-outcrop-occurrence> ; 
-  skos:member <data-object/geologic-unit-portrayal-description> ; 
-  skos:member <data-object/geothermal-area-occurrence> ; 
-  skos:member <data-object/geothermal-power-plant-occurrence> ; 
-  skos:member <data-object/geothermal-reservoir> ; 
-  skos:member <data-object/gravity-result> ; 
-  skos:member <data-object/heat-flow-result> ; 
-  skos:member <data-object/heat-pump-facility-occurrence> ; 
-  skos:member <data-object/history-sequence> ; 
-  skos:member <data-object/hydraulic-properties-result> ; 
-  skos:member <data-object/metadata-instance> ; 
-  skos:member <data-object/mineral-recovery-brines-experimental-data-instance> ; 
-  skos:member <data-object/mineral-recovery-brines-process-and-economics-instance> ; 
-  skos:member <data-object/physical-sample-occurrence> ; 
-  skos:member <data-object/powell-and-cumming-geothermometry-result> ; 
-  skos:member <data-object/power-plant-production-result> ; 
-  skos:member <data-object/radiogenic-heat-production-result> ; 
-  skos:member <data-object/reference> ; 
-  skos:member <data-object/rock-chemistry-result> ; 
-  skos:member <data-object/seismic-event-hypocenter-result> ; 
-  skos:member <data-object/term> ; 
-  skos:member <data-object/thermal-conductivity-result> ; 
-  skos:member <data-object/thermal-spring-occurrence> ; 
-  skos:member <data-object/us-cadastral-location> ; 
-  skos:member <data-object/volcanic-vent-occurrence> ; 
-  skos:member <data-object/well-fluid-production-result> ; 
-  skos:member <data-object/well-header-occurrence> ; 
-  skos:member <data-object/well-log-result> ; 
-  skos:member <data-object/well-test-result> ; 
-  skos:member <data-object/concept> ; 
-  skos:member <data-object/data-object> ; 
-  skos:member <data-object/value-domain> ; 
-  skos:member <data-object/attribute> ;
+	 rdf:type skos:Collection ;
+	 rdfs:label "DataObject" ;
+	 skos:definition "DataObject" ;
+   dct:description "An information object that represents an entity of interest (ObjectClass in this model, based on ISO11179) in some domain; the representation consists of a collection of Attributes that are used to quantify properties of instances of the entity. Corresponds to 'dataType' in ISO11179, Entity in Entity-Relationship models, Object in object models, 'document' in document type noSQL databases (e.g. CouchDb, MongoDb), 'Variable' in the netCDF common data model (OGC 10-090r3).<br><br>An information object that has internal structure in which the parts can be operated on independently; a data structure." ;
+   skos:member <data-object/agent-description>; 
+   skos:member <data-object/borehole-lithology-intercept-occurrence>; 
+   skos:member <data-object/borehole-lithology-interval-occurrence>; 
+   skos:member <data-object/borehole-temperature-result>; 
+   skos:member <data-object/contact-information-description>; 
+   skos:member <data-object/contour-line-instance>; 
+   skos:member <data-object/coordinate-location>; 
+   skos:member <data-object/direct-use-facility-occurrence>; 
+   skos:member <data-object/fluid-flux-injection-and-disposal-result>; 
+   skos:member <data-object/geologic-contact-occurrence>; 
+   skos:member <data-object/geologic-fault-occurrence>; 
+   skos:member <data-object/geologic-unit-outcrop-occurrence>; 
+   skos:member <data-object/geologic-unit-portrayal-description>; 
+   skos:member <data-object/geothermal-area-occurrence>; 
+   skos:member <data-object/geothermal-power-plant-occurrence>; 
+   skos:member <data-object/geothermal-reservoir>; 
+   skos:member <data-object/gravity-result>; 
+   skos:member <data-object/heat-flow-result>; 
+   skos:member <data-object/heat-pump-facility-occurrence>; 
+   skos:member <data-object/history-sequence>; 
+   skos:member <data-object/hydraulic-properties-result>; 
+   skos:member <data-object/metadata-instance>; 
+   skos:member <data-object/mineral-recovery-brines-experimental-data-instance>; 
+   skos:member <data-object/mineral-recovery-brines-process-and-economics-instance>; 
+   skos:member <data-object/physical-sample-occurrence>; 
+   skos:member <data-object/powell-and-cumming-geothermometry-result>; 
+   skos:member <data-object/power-plant-production-result>; 
+   skos:member <data-object/radiogenic-heat-production-result>; 
+   skos:member <data-object/reference>; 
+   skos:member <data-object/rock-chemistry-result>; 
+   skos:member <data-object/seismic-event-hypocenter-result>; 
+   skos:member <data-object/term>; 
+   skos:member <data-object/thermal-conductivity-result>; 
+   skos:member <data-object/thermal-spring-occurrence>; 
+   skos:member <data-object/us-cadastral-location>; 
+   skos:member <data-object/volcanic-vent-occurrence>; 
+   skos:member <data-object/well-fluid-production-result>; 
+   skos:member <data-object/well-header-occurrence>; 
+   skos:member <data-object/well-log-result>; 
+   skos:member <data-object/well-test-result>; 
+   skos:member <data-object/concept>; 
+   skos:member <data-object/data-object>; 
+   skos:member <data-object/value-domain>; 
+   skos:member <data-object/attribute>; 
+   skos:member <data-object/wsp2321data>; 
+   skos:member <data-object/cphydroobservationdata>; 
+   skos:member <data-object/weigelobservation>; 
+   skos:member <data-object/measured-value>; 
+   skos:member <data-object/quantity-with-units>;
 .
-  
+
 <data-object/agent-description> a owl:Class ;
 	skos:prefLabel "Agent Description"@en ;
 	dct:description "a data type that represents an agent with a name property and contact information" ;
@@ -408,22 +413,69 @@
 	skos:prefLabel "Concept"@en ;
 	dct:description "data type registry data object for representing a concept; has skos properties as well as a source association to a Citation." ;
 	rdfs:label "Concept"@en ;
-	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> .
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> ;
+	skos:historyNote "data object defined in data type registry model, based on skos:Concept." .
 
 <data-object/data-object> a owl:Class ;
 	skos:prefLabel "Data Object"@en ;
 	dct:description "data type registry data object for representing a Data Object, which is a concrete subtype of Data Type" ;
 	rdfs:label "Data Object"@en ;
-	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> .
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> ;
+	skos:historyNote "data object defined in data type registry model" .
 
 <data-object/value-domain> a owl:Class ;
 	skos:prefLabel "Value Domain"@en ;
 	dct:description "data type registry data object for representing a value domain used to restrict the valid values for an Attribute" ;
 	rdfs:label "Value Domain"@en ;
-	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> .
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> ;
+	skos:historyNote "data object defined in data type registry model" .
 
 <data-object/attribute> a owl:Class ;
 	skos:prefLabel "Attribute"@en ;
 	dct:description "data type registry data object for representing an attribute, which represents the quantifier for a property in the context of a data object" ;
 	rdfs:label "Attribute"@en ;
-	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> .
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> ;
+	skos:historyNote "data object defined in data type registry model" .
+
+<data-object/wsp2321data> a owl:Class ;
+	skos:prefLabel "WSP2321Data"@en ;
+	dct:description "A hydraulic properties table extracted from USGS Water Supply paper 2321" ;
+	rdfs:label "WSP2321Data"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/hydraulic-properties-observation> ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
+	dcdtr:expectedUse "testing Digital crust Data integraton" ;
+	skos:historyNote "SM Richard transcribed data from WSP2321 to an excel spreadsheet; the columns in that table are defined in this data type" .
+
+<data-object/cphydroobservationdata> a owl:Class ;
+	skos:prefLabel "CPHydroObservationData"@en ;
+	dct:description "tabular data type defined to compile hydraulic properties for rocks in Colorado Plateau, for Digital Crust project" ;
+	rdfs:label "CPHydroObservationData"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/hydraulic-properties-observation> ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
+	dcdtr:expectedUse "testing Digital crust Data integraton" ;
+	skos:historyNote "SM Richard transcribed data from WSP2321 to an excel spreadsheet; the columns in that table are defined in this data type" .
+
+<data-object/weigelobservation> a owl:Class ;
+	skos:prefLabel "WeigelObservation"@en ;
+	dct:description "compilation of data on hydraulic conductivity properties of mesozoic formations, from USGS WRI 86-470, Weigel, 1987" ;
+	rdfs:label "WeigelObservation"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/hydraulic-properties-observation> ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
+	dcdtr:expectedUse "testing Digital crust Data integraton" .
+
+<data-object/measured-value> a owl:Class ;
+	skos:prefLabel "Measured Value"@en ;
+	dct:description "object representing a measurement result; may be expressed  single value,  an aggregate (mean, median, mode) value with some associated statisitics, categorical, count, time, or a range on any one of these. " ;
+	rdfs:label "Measured Value"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/measured-value> ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> ;
+	dcdtr:expectedUse "testing Digital crust Data integraton" ;
+	skos:historyNote "SMR Base on OGC SWE (Sensor web enablment) SWE common abstract data component." .
+
+<data-object/quantity-with-units> a owl:Class ;
+	skos:prefLabel "Quantity with units"@en ;
+	dct:description "a simple representation of a measured value that includes a single representative value and the unit of measure as a tuple" ;
+	rdfs:label "Quantity with units"@en ;
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/measured-value> ;
+	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
+	skos:historyNote "SMR to account for value and uom in separtate comlumns/fields. " .

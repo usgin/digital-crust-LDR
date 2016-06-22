@@ -5,198 +5,210 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <measure-class>
-	rdf:type skos:Collection ;
-	rdfs:label "Measure Class" ;
-	skos:definition "Measure Class" ;
-  dct:description "a set of equivalent units of measure that may be shared across multiple dimensionalities. Measure_Class allows a grouping of units of measure to be specified once, and reused by multiple dimensionalities. EXAMPLE: We could define the Measure_Classes: Metric Linear Distance, Imperial Linear Distance, each associated with the appropriate Units_of_Measure; and associate them with Dimensionalities: Height, Width, and Depth to model the three spatial dimensions. (From ISO11179) Also allow dimensionless, and categorical UOM under metric linear distance would include cm, m, km. It would appear that the members of a measure class would all belong to a single system of units." ;
-  skos:member <measure-class/absorbed-dose> ; 
-  skos:member <measure-class/absorbed-dose-rate> ; 
-  skos:member <measure-class/amount-of-information> ; 
-  skos:member <measure-class/angle> ; 
-  skos:member <measure-class/angular-acceleration> ; 
-  skos:member <measure-class/angular-mass> ; 
-  skos:member <measure-class/angular-momentum> ; 
-  skos:member <measure-class/angular-velocity-or-frequency> ; 
-  skos:member <measure-class/area> ; 
-  skos:member <measure-class/area-angle> ; 
-  skos:member <measure-class/area-per-length> ; 
-  skos:member <measure-class/area-temperature> ; 
-  skos:member <measure-class/area-thermal-expansion> ; 
-  skos:member <measure-class/area-time> ; 
-  skos:member <measure-class/area-time-temperature> ; 
-  skos:member <measure-class/biological-activity> ; 
-  skos:member <measure-class/catalytic-activity> ; 
-  skos:member <measure-class/color> ; 
-  skos:member <measure-class/concentration-count-per-count> ; 
-  skos:member <measure-class/concentration-count-per-mass> ; 
-  skos:member <measure-class/concentration-count-per-volume> ; 
-  skos:member <measure-class/concentration-or-density-mass-per-volume> ; 
-  skos:member <measure-class/concentration-percent-saturation> ; 
-  skos:member <measure-class/concentration-volume-per-volume> ; 
-  skos:member <measure-class/count> ; 
-  skos:member <measure-class/count-per-area> ; 
-  skos:member <measure-class/count-per-length> ; 
-  skos:member <measure-class/currency> ; 
-  skos:member <measure-class/data-rate> ; 
-  skos:member <measure-class/diffusivity> ; 
-  skos:member <measure-class/dimensionless> ; 
-  skos:member <measure-class/dose-equivalent> ; 
-  skos:member <measure-class/dynamic-viscosity> ; 
-  skos:member <measure-class/electrical-capacitance> ; 
-  skos:member <measure-class/electrical-charge> ; 
-  skos:member <measure-class/electrical-charge-line-density> ; 
-  skos:member <measure-class/electrical-charge-per-count> ; 
-  skos:member <measure-class/electrical-charge-per-mass> ; 
-  skos:member <measure-class/electrical-charge-volume-density> ; 
-  skos:member <measure-class/electrical-conductance> ; 
-  skos:member <measure-class/electrical-conductivity> ; 
-  skos:member <measure-class/electrical-current> ; 
-  skos:member <measure-class/electrical-current-density> ; 
-  skos:member <measure-class/electrical-current-per-angle> ; 
-  skos:member <measure-class/electrical-current-per-energy> ; 
-  skos:member <measure-class/electrical-dipole-moment> ; 
-  skos:member <measure-class/electrical-field-strength> ; 
-  skos:member <measure-class/electrical-flux> ; 
-  skos:member <measure-class/electrical-flux-density> ; 
-  skos:member <measure-class/electrical-permittivity> ; 
-  skos:member <measure-class/electrical-quadrupole-moment> ; 
-  skos:member <measure-class/electrical-resistance> ; 
-  skos:member <measure-class/electrical-resistivity> ; 
-  skos:member <measure-class/electromotive-force> ; 
-  skos:member <measure-class/energy> ; 
-  skos:member <measure-class/energy-density> ; 
-  skos:member <measure-class/energy-flux> ; 
-  skos:member <measure-class/energy-per-area> ; 
-  skos:member <measure-class/energy-per-area-electrical-charge> ; 
-  skos:member <measure-class/energy-per-square-magnetic-flux-density> ; 
-  skos:member <measure-class/fluid-permeance> ; 
-  skos:member <measure-class/fluid-resistance> ; 
-  skos:member <measure-class/fluidity> ; 
-  skos:member <measure-class/fluorescence> ; 
-  skos:member <measure-class/force> ; 
-  skos:member <measure-class/force-per-length> ; 
-  skos:member <measure-class/frequency> ; 
-  skos:member <measure-class/gravitational-attraction> ; 
-  skos:member <measure-class/heat-capacity> ; 
-  skos:member <measure-class/heat-transfer-coefficient> ; 
-  skos:member <measure-class/hyperpolarizability> ; 
-  skos:member <measure-class/illuminance> ; 
-  skos:member <measure-class/inductance> ; 
-  skos:member <measure-class/inverse-count> ; 
-  skos:member <measure-class/inverse-energy> ; 
-  skos:member <measure-class/inverse-length> ; 
-  skos:member <measure-class/inverse-length-temperature> ; 
-  skos:member <measure-class/inverse-magnetic-flux> ; 
-  skos:member <measure-class/inverse-permittivity> ; 
-  skos:member <measure-class/inverse-square-energy> ; 
-  skos:member <measure-class/inverse-time-temperature> ; 
-  skos:member <measure-class/inverse-volume> ; 
-  skos:member <measure-class/jerk> ; 
-  skos:member <measure-class/length> ; 
-  skos:member <measure-class/length-energy> ; 
-  skos:member <measure-class/length-fraction> ; 
-  skos:member <measure-class/length-integrated-mass-concentration> ; 
-  skos:member <measure-class/length-mass> ; 
-  skos:member <measure-class/length-molar-energy> ; 
-  skos:member <measure-class/length-per-magnetic-flux> ; 
-  skos:member <measure-class/length-temperature> ; 
-  skos:member <measure-class/length-temperature-time> ; 
-  skos:member <measure-class/level> ; 
-  skos:member <measure-class/linear-acceleration> ; 
-  skos:member <measure-class/linear-energy-transfer> ; 
-  skos:member <measure-class/linear-momentum> ; 
-  skos:member <measure-class/linear-thermal-expansion> ; 
-  skos:member <measure-class/linear-velocity> ; 
-  skos:member <measure-class/luminance> ; 
-  skos:member <measure-class/luminous-efficacy> ; 
-  skos:member <measure-class/luminous-energy> ; 
-  skos:member <measure-class/luminous-flux> ; 
-  skos:member <measure-class/luminous-intensity> ; 
-  skos:member <measure-class/magnetic-dipole-moment> ; 
-  skos:member <measure-class/magnetic-field-strength> ; 
-  skos:member <measure-class/magnetic-flux> ; 
-  skos:member <measure-class/magnetic-flux-density> ; 
-  skos:member <measure-class/magnetic-flux-per-length> ; 
-  skos:member <measure-class/magnetic-permeability> ; 
-  skos:member <measure-class/magnetomotive-force> ; 
-  skos:member <measure-class/mass> ; 
-  skos:member <measure-class/mass-count> ; 
-  skos:member <measure-class/mass-count-temperature> ; 
-  skos:member <measure-class/mass-flux> ; 
-  skos:member <measure-class/mass-fraction> ; 
-  skos:member <measure-class/mass-normalized-particle-loading> ; 
-  skos:member <measure-class/mass-per-area> ; 
-  skos:member <measure-class/mass-per-electrical-charge> ; 
-  skos:member <measure-class/mass-per-length> ; 
-  skos:member <measure-class/mass-per-time> ; 
-  skos:member <measure-class/mass-temperature> ; 
-  skos:member <measure-class/molar-angular-momentum> ; 
-  skos:member <measure-class/molar-conductivity> ; 
-  skos:member <measure-class/molar-energy> ; 
-  skos:member <measure-class/molar-heat-capacity> ; 
-  skos:member <measure-class/molar-mass> ; 
-  skos:member <measure-class/molar-volume> ; 
-  skos:member <measure-class/other> ; 
-  skos:member <measure-class/particle-flux> ; 
-  skos:member <measure-class/particle-loading> ; 
-  skos:member <measure-class/ph> ; 
-  skos:member <measure-class/polarizability> ; 
-  skos:member <measure-class/potential-vorticity> ; 
-  skos:member <measure-class/power> ; 
-  skos:member <measure-class/power-area> ; 
-  skos:member <measure-class/power-area-per-solid-angle> ; 
-  skos:member <measure-class/power-per-area> ; 
-  skos:member <measure-class/power-per-area-quartic-temperature> ; 
-  skos:member <measure-class/power-per-electrical-charge> ; 
-  skos:member <measure-class/pressure-or-stress> ; 
-  skos:member <measure-class/pressure-or-stress-rate> ; 
-  skos:member <measure-class/quartic-electrical-dipole-moment-per-cubic-energy> ; 
-  skos:member <measure-class/radiance> ; 
-  skos:member <measure-class/radiant-intensity> ; 
-  skos:member <measure-class/radioactivity> ; 
-  skos:member <measure-class/radioactivity-per-volume> ; 
-  skos:member <measure-class/salinity> ; 
-  skos:member <measure-class/satellite-resolution> ; 
-  skos:member <measure-class/snap> ; 
-  skos:member <measure-class/solid-angle> ; 
-  skos:member <measure-class/specific-energy> ; 
-  skos:member <measure-class/specific-heat-capacity> ; 
-  skos:member <measure-class/specific-heat-pressure> ; 
-  skos:member <measure-class/specific-heat-volume> ; 
-  skos:member <measure-class/specific-radioactivity> ; 
-  skos:member <measure-class/specific-surface-area> ; 
-  skos:member <measure-class/specific-volume> ; 
-  skos:member <measure-class/stable-isotope-delta> ; 
-  skos:member <measure-class/standard-gravitational-parameter> ; 
-  skos:member <measure-class/temperature> ; 
-  skos:member <measure-class/temperature-count> ; 
-  skos:member <measure-class/temperature-per-magnetic-flux-density> ; 
-  skos:member <measure-class/temperature-per-time> ; 
-  skos:member <measure-class/thermal-conductivity> ; 
-  skos:member <measure-class/thermal-insulance> ; 
-  skos:member <measure-class/thermal-resistance> ; 
-  skos:member <measure-class/thermal-resistivity> ; 
-  skos:member <measure-class/thrust-to-mass-ratio> ; 
-  skos:member <measure-class/time> ; 
-  skos:member <measure-class/time-squared> ; 
-  skos:member <measure-class/torque> ; 
-  skos:member <measure-class/turbidity> ; 
-  skos:member <measure-class/volume> ; 
-  skos:member <measure-class/volume-thermal-expansion> ; 
-  skos:member <measure-class/volumetric-flow-rate> ; 
-  skos:member <measure-class/volumetric-flux> ; 
-  skos:member <measure-class/volumetric-heat-capacity> ; 
-  skos:member <measure-class/volumetric-productivity> ; 
-  skos:member <measure-class/yank> ;
+ rdf:type skos:Collection ;
+ rdfs:label "Measure Class" ;
+ skos:definition "Measure Class" ;
+ dct:description "a set of equivalent units of measure that may be shared across multiple dimensionalities. Measure_Class allows a grouping of units of measure to be specified once, and reused by multiple dimensionalities. EXAMPLE: We could define the Measure_Classes: Metric Linear Distance, Imperial Linear Distance, each associated with the appropriate Units_of_Measure; and associate them with Dimensionalities: Height, Width, and Depth to model the three spatial dimensions. (From ISO11179) Also allow dimensionless, and categorical UOM under metric linear distance would include cm, m, km. It would appear that the members of a measure class would all belong to a single system of units." ;
+ skos:member <measure-class/absorbeddose>; 
+ skos:member <measure-class/absorbeddoserate>; 
+ skos:member <measure-class/amountofinformation>; 
+ skos:member <measure-class/angle>; 
+ skos:member <measure-class/angularacceleration>; 
+ skos:member <measure-class/angularmass>; 
+ skos:member <measure-class/angularmomentum>; 
+ skos:member <measure-class/angularvelocityorfrequency>; 
+ skos:member <measure-class/area>; 
+ skos:member <measure-class/areaangle>; 
+ skos:member <measure-class/areaperlength>; 
+ skos:member <measure-class/areatemperature>; 
+ skos:member <measure-class/areathermalexpansion>; 
+ skos:member <measure-class/areatime>; 
+ skos:member <measure-class/areatimetemperature>; 
+ skos:member <measure-class/biologicalactivity>; 
+ skos:member <measure-class/catalyticactivity>; 
+ skos:member <measure-class/color>; 
+ skos:member <measure-class/concentrationcountpercount>; 
+ skos:member <measure-class/concentrationcountpermass>; 
+ skos:member <measure-class/concentrationcountpervolume>; 
+ skos:member <measure-class/concentrationordensitymasspervolume>; 
+ skos:member <measure-class/concentrationpercentsaturation>; 
+ skos:member <measure-class/concentrationvolumepervolume>; 
+ skos:member <measure-class/count>; 
+ skos:member <measure-class/countperarea>; 
+ skos:member <measure-class/countperlength>; 
+ skos:member <measure-class/currency>; 
+ skos:member <measure-class/datarate>; 
+ skos:member <measure-class/diffusivity>; 
+ skos:member <measure-class/dimensionless>; 
+ skos:member <measure-class/doseequivalent>; 
+ skos:member <measure-class/dynamicviscosity>; 
+ skos:member <measure-class/electricalcapacitance>; 
+ skos:member <measure-class/electricalcharge>; 
+ skos:member <measure-class/electricalchargelinedensity>; 
+ skos:member <measure-class/electricalchargepercount>; 
+ skos:member <measure-class/electricalchargepermass>; 
+ skos:member <measure-class/electricalchargevolumedensity>; 
+ skos:member <measure-class/electricalconductance>; 
+ skos:member <measure-class/electricalconductivity>; 
+ skos:member <measure-class/electricalcurrent>; 
+ skos:member <measure-class/electricalcurrentdensity>; 
+ skos:member <measure-class/electricalcurrentperangle>; 
+ skos:member <measure-class/electricalcurrentperenergy>; 
+ skos:member <measure-class/electricaldipolemoment>; 
+ skos:member <measure-class/electricalfieldstrength>; 
+ skos:member <measure-class/electricalflux>; 
+ skos:member <measure-class/electricalfluxdensity>; 
+ skos:member <measure-class/electricalpermittivity>; 
+ skos:member <measure-class/electricalquadrupolemoment>; 
+ skos:member <measure-class/electricalresistance>; 
+ skos:member <measure-class/electricalresistivity>; 
+ skos:member <measure-class/electromotiveforce>; 
+ skos:member <measure-class/energy>; 
+ skos:member <measure-class/energydensity>; 
+ skos:member <measure-class/energyflux>; 
+ skos:member <measure-class/energyperarea>; 
+ skos:member <measure-class/energyperareaelectricalcharge>; 
+ skos:member <measure-class/energypersquaremagneticfluxdensity>; 
+ skos:member <measure-class/fluidpermeance>; 
+ skos:member <measure-class/fluidresistance>; 
+ skos:member <measure-class/fluidity>; 
+ skos:member <measure-class/fluorescence>; 
+ skos:member <measure-class/force>; 
+ skos:member <measure-class/forceperlength>; 
+ skos:member <measure-class/frequency>; 
+ skos:member <measure-class/gravitationalattraction>; 
+ skos:member <measure-class/heatcapacity>; 
+ skos:member <measure-class/heattransfercoefficient>; 
+ skos:member <measure-class/hyperpolarizability>; 
+ skos:member <measure-class/illuminance>; 
+ skos:member <measure-class/inductance>; 
+ skos:member <measure-class/inversecount>; 
+ skos:member <measure-class/inverseenergy>; 
+ skos:member <measure-class/inverselength>; 
+ skos:member <measure-class/inverselengthtemperature>; 
+ skos:member <measure-class/inversemagneticflux>; 
+ skos:member <measure-class/inversepermittivity>; 
+ skos:member <measure-class/inversesquareenergy>; 
+ skos:member <measure-class/inversetimetemperature>; 
+ skos:member <measure-class/inversevolume>; 
+ skos:member <measure-class/jerk>; 
+ skos:member <measure-class/length>; 
+ skos:member <measure-class/lengthenergy>; 
+ skos:member <measure-class/lengthfraction>; 
+ skos:member <measure-class/lengthintegratedmassconcentration>; 
+ skos:member <measure-class/lengthmass>; 
+ skos:member <measure-class/lengthmolarenergy>; 
+ skos:member <measure-class/lengthpermagneticflux>; 
+ skos:member <measure-class/lengthtemperature>; 
+ skos:member <measure-class/lengthtemperaturetime>; 
+ skos:member <measure-class/level>; 
+ skos:member <measure-class/linearacceleration>; 
+ skos:member <measure-class/linearenergytransfer>; 
+ skos:member <measure-class/linearmomentum>; 
+ skos:member <measure-class/linearthermalexpansion>; 
+ skos:member <measure-class/linearvelocity>; 
+ skos:member <measure-class/luminance>; 
+ skos:member <measure-class/luminousefficacy>; 
+ skos:member <measure-class/luminousenergy>; 
+ skos:member <measure-class/luminousflux>; 
+ skos:member <measure-class/luminousintensity>; 
+ skos:member <measure-class/magneticdipolemoment>; 
+ skos:member <measure-class/magneticfieldstrength>; 
+ skos:member <measure-class/magneticflux>; 
+ skos:member <measure-class/magneticfluxdensity>; 
+ skos:member <measure-class/magneticfluxperlength>; 
+ skos:member <measure-class/magneticpermeability>; 
+ skos:member <measure-class/magnetomotiveforce>; 
+ skos:member <measure-class/mass>; 
+ skos:member <measure-class/masscount>; 
+ skos:member <measure-class/masscounttemperature>; 
+ skos:member <measure-class/massflux>; 
+ skos:member <measure-class/massfraction>; 
+ skos:member <measure-class/massnormalizedparticleloading>; 
+ skos:member <measure-class/massperarea>; 
+ skos:member <measure-class/massperelectricalcharge>; 
+ skos:member <measure-class/massperlength>; 
+ skos:member <measure-class/masspertime>; 
+ skos:member <measure-class/masstemperature>; 
+ skos:member <measure-class/molarangularmomentum>; 
+ skos:member <measure-class/molarconductivity>; 
+ skos:member <measure-class/molarenergy>; 
+ skos:member <measure-class/molarheatcapacity>; 
+ skos:member <measure-class/molarmass>; 
+ skos:member <measure-class/molarvolume>; 
+ skos:member <measure-class/other>; 
+ skos:member <measure-class/particleflux>; 
+ skos:member <measure-class/particleloading>; 
+ skos:member <measure-class/ph>; 
+ skos:member <measure-class/polarizability>; 
+ skos:member <measure-class/potentialvorticity>; 
+ skos:member <measure-class/power>; 
+ skos:member <measure-class/powerarea>; 
+ skos:member <measure-class/powerareapersolidangle>; 
+ skos:member <measure-class/powerperarea>; 
+ skos:member <measure-class/powerperareaquartictemperature>; 
+ skos:member <measure-class/powerperelectricalcharge>; 
+ skos:member <measure-class/pressureorstress>; 
+ skos:member <measure-class/pressureorstressrate>; 
+ skos:member <measure-class/quarticelectricaldipolemomentpercubicenergy>; 
+ skos:member <measure-class/radiance>; 
+ skos:member <measure-class/radiantintensity>; 
+ skos:member <measure-class/radioactivity>; 
+ skos:member <measure-class/radioactivitypervolume>; 
+ skos:member <measure-class/salinity>; 
+ skos:member <measure-class/satelliteresolution>; 
+ skos:member <measure-class/snap>; 
+ skos:member <measure-class/solidangle>; 
+ skos:member <measure-class/specificenergy>; 
+ skos:member <measure-class/specificheatcapacity>; 
+ skos:member <measure-class/specificheatpressure>; 
+ skos:member <measure-class/specificheatvolume>; 
+ skos:member <measure-class/specificradioactivity>; 
+ skos:member <measure-class/specificsurfacearea>; 
+ skos:member <measure-class/specificvolume>; 
+ skos:member <measure-class/stableisotopedelta>; 
+ skos:member <measure-class/standardgravitationalparameter>; 
+ skos:member <measure-class/temperature>; 
+ skos:member <measure-class/temperaturecount>; 
+ skos:member <measure-class/temperaturepermagneticfluxdensity>; 
+ skos:member <measure-class/temperaturepertime>; 
+ skos:member <measure-class/thermalconductivity>; 
+ skos:member <measure-class/thermalinsulance>; 
+ skos:member <measure-class/thermalresistance>; 
+ skos:member <measure-class/thermalresistivity>; 
+ skos:member <measure-class/thrusttomassratio>; 
+ skos:member <measure-class/time>; 
+ skos:member <measure-class/timesquared>; 
+ skos:member <measure-class/torque>; 
+ skos:member <measure-class/turbidity>; 
+ skos:member <measure-class/volume>; 
+ skos:member <measure-class/volumethermalexpansion>; 
+ skos:member <measure-class/volumetricflowrate>; 
+ skos:member <measure-class/volumetricflux>; 
+ skos:member <measure-class/volumetricheatcapacity>; 
+ skos:member <measure-class/volumetricproductivity>; 
+ skos:member <measure-class/yank>;
 .
 
-<measure-class/absorbed-dose> a skos:Concept ;
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix odm2: <http://vocabulary.odm2.org/unitstype/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+<measure-class/absorbeddose> a skos:Concept ;
 	skos:prefLabel "Absorbed dose" ;
 	rdfs:label "Absorbed dose" ;
 	dct:description "Absorbed dose (also known as Total Ionizing Dose, TID) is a measure of the energy deposited in a medium by ionizing radiation. It is equal to the energy deposited per unit mass of medium, and so has the unit J/kg, which is given the special name Gray (Gy). Note that the absorbed dose is not a good indicator of the likely biological effect. 1 Gy of alpha radiation would be much more biologically damaging than 1 Gy of photon radiation for example. Appropriate weighting factors can be applied reflecting the different relative biological effects to find the equivalent dose. The risk of stoctic effects due to radiation exposure can be quantified using the effective dose, which is a weighted average of the equivalent dose to each organ depending upon its radiosensitivity. When ionising radiation is used to treat cancer, the doctor will usually prescribe the radiotherapy treatment in Gy. When risk from ionising radiation is being discussed, a related unit, the Sievert is used." ;
 	odm2:category "Radiology" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AbsorbedDose> ;
+	a <http://qudt.org/vocab/quantity#AbsorbedDose> ;
 	skos:note "Absorbed dose, does equivalent, and specific energy all have the same dimensionality." ;
 	odm2:defaultUnit "Gray (Gy)" ;
 	odm2:dimensionSymbol "L2T-2" ;
@@ -206,15 +218,17 @@
 	odm2:dimensionCurrent "-2.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:molarconductivity .
 
-<measure-class/absorbed-dose-rate> a skos:Concept ;
+<measure-class/absorbeddoserate> a skos:Concept ;
 	skos:prefLabel "Absorbed dose rate" ;
 	rdfs:label "Absorbed dose rate" ;
 	dct:description "Absorbed dose per unit time." ;
 	odm2:category "Radiology" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AbsorbedDoseRate> ;
+	a <http://qudt.org/vocab/quantity#AbsorbedDoseRate> ;
 	odm2:defaultUnit "Gray per second (Gy/s)" ;
 	odm2:dimensionSymbol "L2T-3" ;
 	odm2:dimensionLength "0.0" ;
@@ -223,15 +237,17 @@
 	odm2:dimensionCurrent "-3.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:molarenergy .
 
-<measure-class/amount-of-information> a skos:Concept ;
+<measure-class/amountofinformation> a skos:Concept ;
 	skos:prefLabel "Amount of Information" ;
 	rdfs:label "Amount of Information" ;
 	dct:description "In computing and telecommunications, a unit of information is the capacity of some standard data storage system or communication channel, used to measure the capacities of other systems and channels. In information theory, units of information are also used to measure the information contents or entropy of random variables." ;
 	odm2:category "Information" ;
 	skos:historyNote "UCUM" ;
 	rdf:resource <http://unitsofmeasure.org/ucum.html#para-48> ;
+	a <http://unitsofmeasure.org/ucum.html#para-48> ;
 	odm2:defaultUnit "Bit" ;
 	odm2:dimensionSymbol "U1" ;
 	odm2:dimensionLength "1.0" ;
@@ -240,7 +256,8 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:molarheatcapacity .
 
 <measure-class/angle> a skos:Concept ;
 	skos:prefLabel "Angle" ;
@@ -249,6 +266,7 @@
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Angle> ;
+	a <http://qudt.org/vocab/quantity#Angle> ;
 	odm2:defaultUnit "Radian (rad)" ;
 	odm2:dimensionSymbol "U1" ;
 	odm2:dimensionLength "1.0" ;
@@ -257,15 +275,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:molarmass .
 
-<measure-class/angular-acceleration> a skos:Concept ;
+<measure-class/angularacceleration> a skos:Concept ;
 	skos:prefLabel "Angular acceleration" ;
 	rdfs:label "Angular acceleration" ;
 	dct:description "Angular acceleration is the rate of change of angular velocity over time. Measurement of the change made in the rate of change of an angle that a spinning object undergoes per unit time. It is a vector quantity. Also called Rotational acceleration. In SI units, it is measured in radians per second squared (rad/s^2), and is usually denoted by the Greek letter alpha." ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AngularAcceleration> ;
+	a <http://qudt.org/vocab/quantity#AngularAcceleration> ;
 	odm2:defaultUnit "Radian per second squared (rad/s^2)" ;
 	odm2:dimensionSymbol "U1T-2" ;
 	odm2:dimensionLength "1.0" ;
@@ -274,15 +294,17 @@
 	odm2:dimensionCurrent "-2.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:molarvolume .
 
-<measure-class/angular-mass> a skos:Concept ;
+<measure-class/angularmass> a skos:Concept ;
 	skos:prefLabel "Angular mass" ;
 	rdfs:label "Angular mass" ;
 	dct:description "The units of angular mass have dimensions of mass * area. They are used to measure the moment of inertia or rotational inertia." ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#AngularMassUnit> ;
+	a <http://qudt.org/schema/qudt#AngularMassUnit> ;
 	odm2:defaultUnit "Kilogram Meter Squared (kg-m^2)" ;
 	odm2:dimensionSymbol "L2M1" ;
 	odm2:dimensionLength "0.0" ;
@@ -291,15 +313,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:other .
 
-<measure-class/angular-momentum> a skos:Concept ;
+<measure-class/angularmomentum> a skos:Concept ;
 	skos:prefLabel "Angular momentum" ;
 	rdfs:label "Angular momentum" ;
 	dct:description "Quantity of rotational motion. Linear momentum is the quantity obtained by multiplying the mass of a body by its linear velocity. Angular momentum is the quantity obtained by multiplying the moment of inertia of a body by its angular velocity. The momentum of a system of particles is given by the sum of the momenta of the individual particles which make up the system or by the product of the total mass of the system and the velocity of the center of gravity of the system. The momentum of a continuous medium is given by the integral of the velocity over the mass of the medium or by the product of the total mass of the medium and the velocity of the center of gravity of the medium. In physics, the angular momentum of an object rotating about some reference point is the measure of the extent to which the object will continue to rotate about that point unless acted upon by an external torque. In particular, if a point mass rotates about an axis, then the angular momentum with respect to a point on the axis is related to the mass of the object, the velocity and the distance of the mass to the axis. While the motion associated with linear momentum has no absolute frame of reference, the rotation associated with angular momentum is sometimes spoken of as being measured relative to the fixed stars.  The physical quantity \"action\" has the same units as angular momentum." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AngularMomentum> ;
+	a <http://qudt.org/vocab/quantity#AngularMomentum> ;
 	odm2:defaultUnit "Joule Second (J s)" ;
 	odm2:dimensionSymbol "L2M1T-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -308,15 +332,17 @@
 	odm2:dimensionCurrent "-1.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:particleflux .
 
-<measure-class/angular-velocity-or-frequency> a skos:Concept ;
+<measure-class/angularvelocityorfrequency> a skos:Concept ;
 	skos:prefLabel "Angular velocity or frequency" ;
 	rdfs:label "Angular velocity or frequency" ;
 	dct:description "The change of angle per unit time; specifically, in celestial mechanics, the change in angle of the radius vector per unit time.  Angular frequency is a scalar measure of rotation rate. It is the magnitude of the vector quantity angular velocity." ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AngularVelocity> ;
+	a <http://qudt.org/vocab/quantity#AngularVelocity> ;
 	skos:note "Angular frequency uses the same units as that of angular velocity." ;
 	odm2:defaultUnit "Radian per second (rad/s)" ;
 	odm2:dimensionSymbol "U1T-1" ;
@@ -326,7 +352,8 @@
 	odm2:dimensionCurrent "-1.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:particleloading .
 
 <measure-class/area> a skos:Concept ;
 	skos:prefLabel "Area" ;
@@ -335,6 +362,7 @@
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Area> ;
+	a <http://qudt.org/vocab/quantity#Area> ;
 	odm2:defaultUnit "Square meter (m^2)" ;
 	odm2:dimensionSymbol "L2" ;
 	odm2:dimensionLength "0.0" ;
@@ -343,14 +371,16 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:ph .
 
-<measure-class/area-angle> a skos:Concept ;
+<measure-class/areaangle> a skos:Concept ;
 	skos:prefLabel "Area angle" ;
 	rdfs:label "Area angle" ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AreaAngle> ;
+	a <http://qudt.org/vocab/quantity#AreaAngle> ;
 	odm2:defaultUnit "Square meter steradian (m^2-sr)" ;
 	odm2:dimensionSymbol "U1L2" ;
 	odm2:dimensionLength "1.0" ;
@@ -359,15 +389,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:polarizability .
 
-<measure-class/area-per-length> a skos:Concept ;
+<measure-class/areaperlength> a skos:Concept ;
 	skos:prefLabel "Area per length" ;
 	rdfs:label "Area per length" ;
 	dct:description "A type of Linear Density." ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "Aquarius" ;
 	rdf:resource <http://dbpedia.org/page/Linear_density> ;
+	a <http://dbpedia.org/page/Linear_density> ;
 	odm2:defaultUnit "meters squared per meter (m^2/m)" ;
 	odm2:dimensionSymbol "L2L-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -376,14 +408,16 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:potentialvorticity .
 
-<measure-class/area-temperature> a skos:Concept ;
+<measure-class/areatemperature> a skos:Concept ;
 	skos:prefLabel "Area temperature" ;
 	rdfs:label "Area temperature" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#AreaTemperatureUnit> ;
+	a <http://qudt.org/schema/qudt#AreaTemperatureUnit> ;
 	odm2:defaultUnit "Square meter kelvin (m^2-K)" ;
 	odm2:dimensionSymbol "L2?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -392,15 +426,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "1.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:power .
 
-<measure-class/area-thermal-expansion> a skos:Concept ;
+<measure-class/areathermalexpansion> a skos:Concept ;
 	skos:prefLabel "Area thermal expansion" ;
 	rdfs:label "Area thermal expansion" ;
 	dct:description "When the temperature of a substance changes, the energy that is stored in the intermolecular bonds between atoms changes. When the stored energy increases, so does the length of the molecular bonds. As a result, solids typically expand in response to heating and contract on cooling; this dimensional response to temperature change is expressed by its coefficient of thermal expansion. Different coefficients of thermal expansion can be defined for a substance depending on whether the expansion is measured by: * linear thermal expansion * area thermal expansion * volumetric thermal expansion These characteristics are closely related. The volumetric thermal expansion coefficient can be defined for both liquids and solids. The linear thermal expansion can only be defined for solids, and is common in engineering applications. Some substances expand when cooled, such as freezing water, so they have negative thermal expansion coefficients. [Wikipedia: https://en.wikipedia.org/wiki/Thermal_expansion]" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AreaThermalExpansion> ;
+	a <http://qudt.org/vocab/quantity#AreaThermalExpansion> ;
 	odm2:defaultUnit "Square meter per kelvin (m^2/K)" ;
 	odm2:dimensionSymbol "L2?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -409,14 +445,16 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "-1.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:powerarea .
 
-<measure-class/area-time> a skos:Concept ;
+<measure-class/areatime> a skos:Concept ;
 	skos:prefLabel "Area time" ;
 	rdfs:label "Area time" ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AreaTime> ;
+	a <http://qudt.org/vocab/quantity#AreaTime> ;
 	odm2:defaultUnit "Square meter second (m^2 s)" ;
 	odm2:dimensionSymbol "L2T1" ;
 	odm2:dimensionLength "0.0" ;
@@ -425,14 +463,16 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:powerareapersolidangle .
 
-<measure-class/area-time-temperature> a skos:Concept ;
+<measure-class/areatimetemperature> a skos:Concept ;
 	skos:prefLabel "Area time temperature" ;
 	rdfs:label "Area time temperature" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AreaTimeTemperature> ;
+	a <http://qudt.org/vocab/quantity#AreaTimeTemperature> ;
 	odm2:defaultUnit "Square Meter Second Kelvin" ;
 	odm2:dimensionSymbol "L2T1?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -441,15 +481,17 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "1.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:powerperarea .
 
-<measure-class/biological-activity> a skos:Concept ;
+<measure-class/biologicalactivity> a skos:Concept ;
 	skos:prefLabel "Biological activity" ;
 	rdfs:label "Biological activity" ;
 	dct:description "Units used mainly in chemical and biochemical laboratories." ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Biological_activity> ;
+	a <http://dbpedia.org/page/Biological_activity> ;
 	skos:note "Medical term - many specific arbitrary units based on different substances.  Do not use conversions within this unit group!" ;
 	odm2:dimensionSymbol "T-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -458,15 +500,17 @@
 	odm2:dimensionCurrent "-1.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:powerperareaquartictemperature .
 
-<measure-class/catalytic-activity> a skos:Concept ;
+<measure-class/catalyticactivity> a skos:Concept ;
 	skos:prefLabel "Catalytic activity" ;
 	rdfs:label "Catalytic activity" ;
 	dct:description "Catalytic activity is usually denoted by the symbol z and measured in mol/s, a unit which was called katal and defined the SI unit for catalytic activity since 1999. Catalytic activity is not a kind of reaction rate, but a property of the catalyst under certain conditions, in relation to a specific chemical reaction. Catalytic activity of one katal (Symbol 1 kat = 1mol/s) of a catalyst means an amount of that catalyst (substance, in Mol) that leads to a net reaction of one Mol per second of the reactants to the resulting reagents or other outcome which was intended for this chemical reaction. A catalyst may and usually will have different catalytic activity for distinct reactions. [Wikipedia: https://en.wikipedia.org/wiki/Catalysis]" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#CatalyticActivity> ;
+	a <http://qudt.org/vocab/quantity#CatalyticActivity> ;
 	skos:note "Uses units that are similar, if not identical, to particle loading.  Both have the same dimensionality." ;
 	odm2:defaultUnit "Katal (kat)" ;
 	odm2:dimensionSymbol "T-1N1" ;
@@ -476,7 +520,8 @@
 	odm2:dimensionCurrent "-1.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "1.0" .
+	odm2:dimensionLight "1.0" ;
+	dct:meaning odm2:powerperelectricalcharge .
 
 <measure-class/color> a skos:Concept ;
 	skos:prefLabel "Color" ;
@@ -493,9 +538,10 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:pressureorstress .
 
-<measure-class/concentration-count-per-count> a skos:Concept ;
+<measure-class/concentrationcountpercount> a skos:Concept ;
 	skos:prefLabel "Concentration count per count" ;
 	rdfs:label "Concentration count per count" ;
 	dct:description "The count of one substance per unit count of another substance, also known as mole fraction or numeric concentration." ;
@@ -509,15 +555,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:pressureorstressrate .
 
-<measure-class/concentration-count-per-mass> a skos:Concept ;
+<measure-class/concentrationcountpermass> a skos:Concept ;
 	skos:prefLabel "Concentration count per mass" ;
 	rdfs:label "Concentration count per mass" ;
 	dct:description "Amount of substance or a count/number of items per unit mass.  This is most often called molality or molal concentration. This contrasts with the definition of molarity which is based on a specified volume of solution. A commonly used unit for molality used in chemistry is mol/kg. A solution of concentration 1 mol/kg is also sometimes denoted as 1 molal." ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://resources.usgin.org/uri-gin/dtr/http%3A%2F%2Fqudt.org%2Fvocab%2Fquantity%23AmountOfSubstancePerUnitMass%3B+http%3A%2F%2Fdbpedia.org%2Fpage%2FMolality> ;
+	a <http://resources.usgin.org/uri-gin/dtr/http%3A%2F%2Fqudt.org%2Fvocab%2Fquantity%23AmountOfSubstancePerUnitMass%3B+http%3A%2F%2Fdbpedia.org%2Fpage%2FMolality> ;
 	odm2:defaultUnit "molal (moles per kg)" ;
 	odm2:dimensionSymbol "M-1N1" ;
 	odm2:dimensionLength "0.0" ;
@@ -526,15 +574,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "1.0" .
+	odm2:dimensionLight "1.0" ;
+	dct:meaning odm2:quarticelectricaldipolemomentpercubicenergy .
 
-<measure-class/concentration-count-per-volume> a skos:Concept ;
+<measure-class/concentrationcountpervolume> a skos:Concept ;
 	skos:prefLabel "Concentration count per volume" ;
 	rdfs:label "Concentration count per volume" ;
 	dct:description "Amount of substance or a count/number of items per unit volume. Concentration impliles the amount of one substance/item within another substance." ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AmountOfSubstancePerUnitVolume> ;
+	a <http://qudt.org/vocab/quantity#AmountOfSubstancePerUnitVolume> ;
 	skos:note "Distinct from inverse volume in that there is something specific being counted within each unit volume.  Inverse volume implies a truly dimensionless numerator." ;
 	odm2:defaultUnit "Mole per cubic meter (mol/m^3) or per cubic meter (1/m^3)" ;
 	odm2:dimensionSymbol "L-3N1" ;
@@ -544,15 +594,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "1.0" .
+	odm2:dimensionLight "1.0" ;
+	dct:meaning odm2:radiance .
 
-<measure-class/concentration-or-density-mass-per-volume> a skos:Concept ;
+<measure-class/concentrationordensitymasspervolume> a skos:Concept ;
 	skos:prefLabel "Concentration or density mass per volume" ;
 	rdfs:label "Concentration or density mass per volume" ;
 	dct:description "The mass of one substance per unit volume of another substance.  These units are commonly used in both density and concentration measurements" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Gram_per_litre> ;
+	a <http://dbpedia.org/page/Gram_per_litre> ;
 	odm2:defaultUnit "Kilogram per cubic meter (kg/m^3)" ;
 	odm2:dimensionSymbol "L-3M1" ;
 	odm2:dimensionLength "0.0" ;
@@ -561,9 +613,10 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:radiantintensity .
 
-<measure-class/concentration-percent-saturation> a skos:Concept ;
+<measure-class/concentrationpercentsaturation> a skos:Concept ;
 	skos:prefLabel "Concentration percent saturation" ;
 	rdfs:label "Concentration percent saturation" ;
 	dct:description "The amount of a substance dissolved in a solution compared with the amount dissolved in the solution at saturation concentration, expressed as a percent. " ;
@@ -575,9 +628,10 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:radioactivity .
 
-<measure-class/concentration-volume-per-volume> a skos:Concept ;
+<measure-class/concentrationvolumepervolume> a skos:Concept ;
 	skos:prefLabel "Concentration volume per volume" ;
 	rdfs:label "Concentration volume per volume" ;
 	dct:description "The volume of one substance per unit volume of another substance. This is used for volume percents or the ppm of a gas mixture." ;
@@ -591,7 +645,8 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:radioactivitypervolume .
 
 <measure-class/count> a skos:Concept ;
 	skos:prefLabel "Count" ;
@@ -600,6 +655,7 @@
 	odm2:category "Base Quantity" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#AmountOfSubstance> ;
+	a <http://qudt.org/vocab/quantity#AmountOfSubstance> ;
 	odm2:defaultUnit "Mole (mol)" ;
 	odm2:dimensionSymbol "N1" ;
 	odm2:dimensionLength "0.0" ;
@@ -608,9 +664,10 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "1.0" .
+	odm2:dimensionLight "1.0" ;
+	dct:meaning odm2:salinity .
 
-<measure-class/count-per-area> a skos:Concept ;
+<measure-class/countperarea> a skos:Concept ;
 	skos:prefLabel "Count per area" ;
 	rdfs:label "Count per area" ;
 	dct:description "The areal density of a given amount of a substance.  This unit group is also used for pixel densities (often incorrectly called resolution)." ;
@@ -624,9 +681,10 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "1.0" .
+	odm2:dimensionLight "1.0" ;
+	dct:meaning odm2:satelliteresolution .
 
-<measure-class/count-per-length> a skos:Concept ;
+<measure-class/countperlength> a skos:Concept ;
 	skos:prefLabel "Count per length" ;
 	rdfs:label "Count per length" ;
 	dct:description "The length density of a given amount of a substance.  This unit group is also used for image and TV resolutions measured in lines.  This is distinct from \"inverse length\" in that there is something specific being counted per unit length, that is, the numerator is not dimensionless." ;
@@ -640,7 +698,8 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "1.0" .
+	odm2:dimensionLight "1.0" ;
+	dct:meaning odm2:snap .
 
 <measure-class/currency> a skos:Concept ;
 	skos:prefLabel "Currency" ;
@@ -649,6 +708,7 @@
 	odm2:category "Financial" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Currency> ;
+	a <http://qudt.org/vocab/quantity#Currency> ;
 	skos:note "Conversions in this unit need access to the latest financial data." ;
 	odm2:defaultUnit "United States Dollar" ;
 	odm2:dimensionLength "0.0" ;
@@ -657,15 +717,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:solidangle .
 
-<measure-class/data-rate> a skos:Concept ;
+<measure-class/datarate> a skos:Concept ;
 	skos:prefLabel "Data rate" ;
 	rdfs:label "Data rate" ;
 	dct:description "The frequency derived from the period of time required to transmit one bit. This represents the amount of data transferred per second by a communications channel or a computing or storage device. Data rate is measured in units of bits per second (written \"b/s\" or \"bps\"), bytes per second (Bps), or baud. When applied to data rate, the multiplier prefixes \"kilo-\", \"mega-\", \"giga-\", etc. (and their abbreviations, \"k\", \"M\", \"G\", etc.) always denote powers of 1000. For example, 64 kbps is 64,000 bits per second. This contrasts with units of storage which use different prefixes to denote multiplication by powers of 1024, e.g. 1 kibibit = 1024 bits." ;
 	odm2:category "Information" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#DataRateUnit> ;
+	a <http://qudt.org/schema/qudt#DataRateUnit> ;
 	odm2:defaultUnit "Bits per Second (pbs)" ;
 	odm2:dimensionSymbol "U1T-1" ;
 	odm2:dimensionLength "1.0" ;
@@ -674,7 +736,8 @@
 	odm2:dimensionCurrent "-1.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:specificenergy .
 
 <measure-class/diffusivity> a skos:Concept ;
 	skos:prefLabel "Diffusivity" ;
@@ -691,7 +754,8 @@
 	odm2:dimensionCurrent "-1.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:specificheatcapacity .
 
 <measure-class/dimensionless> a skos:Concept ;
 	skos:prefLabel "Dimensionless" ;
@@ -700,6 +764,7 @@
 	odm2:category "Dimensionless" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#DimensionlessUnit> ;
+	a <http://qudt.org/schema/qudt#DimensionlessUnit> ;
 	odm2:defaultUnit "unitless" ;
 	odm2:dimensionSymbol "U1" ;
 	odm2:dimensionLength "1.0" ;
@@ -708,15 +773,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:specificheatpressure .
 
-<measure-class/dose-equivalent> a skos:Concept ;
+<measure-class/doseequivalent> a skos:Concept ;
 	skos:prefLabel "Dose equivalent" ;
 	rdfs:label "Dose equivalent" ;
 	dct:description "Equivalent dose or radiation dosage is a dose quantity used in radiological protection to represent the stochastic health effects (probability of cancer induction and genetic damage) of low levels of ionizing radiation on the human body. It is based on the physical quantity absorbed dose, but takes into account the biological effectiveness of the radiation, which is dependent on the radiation type and energy. [Wikipedia: https://en.wikipedia.org/wiki/Absorbed_dose]" ;
 	odm2:category "Radiology" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#DoseEquivalent> ;
+	a <http://qudt.org/vocab/quantity#DoseEquivalent> ;
 	skos:note "Absorbed dose, does equivalent, and specific energy all have the same dimensionality." ;
 	odm2:defaultUnit "Sievert (Sv)" ;
 	odm2:dimensionSymbol "L2T-2" ;
@@ -726,15 +793,17 @@
 	odm2:dimensionCurrent "-2.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:specificheatvolume .
 
-<measure-class/dynamic-viscosity> a skos:Concept ;
+<measure-class/dynamicviscosity> a skos:Concept ;
 	skos:prefLabel "Dynamic viscosity" ;
 	rdfs:label "Dynamic viscosity" ;
 	dct:description "The dynamic (shear) viscosity of a fluid expresses its resistance to shearing flows, where adjacent layers move parallel to each other with different speeds. Both the physical unit of dynamic viscosity in SI Poiseuille (Pl) and the cgs units Poise (P) come from Jean LÃ©onard Marie Poiseuille. The poiseuille, which is never used, is equivalent to the pascal-second (PaÂ·s), or (NÂ·s)/m2, or kg/(mÂ·s)." ;
 	odm2:category "Fluid Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Dynamicviscosity> ;
+	a <http://qudt.org/vocab/quantity#Dynamicviscosity> ;
 	skos:note "Also https://en.wikipedia.org/wiki/Viscosity#Dynamic_viscosity_.CE.BC" ;
 	odm2:defaultUnit "Pascal second (Pa-s)" ;
 	odm2:dimensionSymbol "L-1M1T-1" ;
@@ -744,15 +813,17 @@
 	odm2:dimensionCurrent "-1.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:specificradioactivity .
 
-<measure-class/electrical-capacitance> a skos:Concept ;
+<measure-class/electricalcapacitance> a skos:Concept ;
 	skos:prefLabel "Electrical capacitance" ;
 	rdfs:label "Electrical capacitance" ;
 	dct:description "Capacitance is the ability of a body to store an electrical charge." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Capacitance> ;
+	a <http://qudt.org/vocab/quantity#Capacitance> ;
 	odm2:defaultUnit "Farad (F)" ;
 	odm2:dimensionSymbol "L-2M-1T4I2" ;
 	odm2:dimensionLength "0.0" ;
@@ -761,15 +832,17 @@
 	odm2:dimensionCurrent "4.0" ;
 	odm2:dimensionTemperature "2.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:specificsurfacearea .
 
-<measure-class/electrical-charge> a skos:Concept ;
+<measure-class/electricalcharge> a skos:Concept ;
 	skos:prefLabel "Electrical charge" ;
 	rdfs:label "Electrical charge" ;
 	dct:description "Electric charge is the physical property of matter that causes it to experience a force when placed in an electromagnetic field. The SI derived unit of electric charge is the coulomb (C), although in electrical engineering it is also common to use the ampere-hour (Ah), and in chemistry it is common to use the elementary charge (e) as a unit. The symbol Q is often used to denote charge. [Wikipedia: https://en.wikipedia.org/wiki/Electric_charge]" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#ElectricCharge> ;
+	a <http://qudt.org/vocab/quantity#ElectricCharge> ;
 	odm2:defaultUnit "Coulomb (C)" ;
 	odm2:dimensionSymbol "T1I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -778,15 +851,17 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:specificvolume .
 
-<measure-class/electrical-charge-line-density> a skos:Concept ;
+<measure-class/electricalchargelinedensity> a skos:Concept ;
 	skos:prefLabel "Electrical charge line density" ;
 	rdfs:label "Electrical charge line density" ;
 	dct:description "The linear charge density is the amount of electric charge in a line. It is measured in coulombs per metre (C/m). Since there are positive as well as negative charges, the charge density can take on negative values. [Wikipedia]" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Electricalchargelinedensity> ;
+	a <http://qudt.org/vocab/quantity#Electricalchargelinedensity> ;
 	odm2:defaultUnit "Coulomb per meter (C/m)" ;
 	odm2:dimensionSymbol "L-1T1I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -795,15 +870,17 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:stableisotopedelta .
 
-<measure-class/electrical-charge-per-count> a skos:Concept ;
+<measure-class/electricalchargepercount> a skos:Concept ;
 	skos:prefLabel "Electrical charge per count" ;
 	rdfs:label "Electrical charge per count" ;
 	dct:description "The amount of electrical charge within a given count of something." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Electricalchargepercount> ;
+	a <http://qudt.org/vocab/quantity#Electricalchargepercount> ;
 	odm2:defaultUnit "Coulomb per mole (C/mol)" ;
 	odm2:dimensionSymbol "T1I1N-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -812,15 +889,17 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "-1.0" .
+	odm2:dimensionLight "-1.0" ;
+	dct:meaning odm2:standardgravitationalparameter .
 
-<measure-class/electrical-charge-per-mass> a skos:Concept ;
+<measure-class/electricalchargepermass> a skos:Concept ;
 	skos:prefLabel "Electrical charge per mass" ;
 	rdfs:label "Electrical charge per mass" ;
 	dct:description "Unit group for radiation exposure and gyromagnetic ratios" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Electricalchargepermass> ;
+	a <http://qudt.org/vocab/quantity#Electricalchargepermass> ;
 	odm2:defaultUnit "Coulomb per kilogram (C/kg)" ;
 	odm2:dimensionSymbol "M-1T1I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -829,15 +908,17 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:temperature .
 
-<measure-class/electrical-charge-volume-density> a skos:Concept ;
+<measure-class/electricalchargevolumedensity> a skos:Concept ;
 	skos:prefLabel "Electrical charge volume density" ;
 	rdfs:label "Electrical charge volume density" ;
 	dct:description "In electromagnetism, charge density is a measure of electric charge per unit volume of space, in one, two or three dimensions. More specifically: the linear, surface, or volume charge density is the amount of electric charge per unit length, surface area, or volume, respectively. The respective SI units are CÂ·m?1, CÂ·m?2 or CÂ·m?3." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Electricalchargevolumedensity> ;
+	a <http://qudt.org/vocab/quantity#Electricalchargevolumedensity> ;
 	skos:note "Also https://en.wikipedia.org/wiki/Charge_density" ;
 	odm2:defaultUnit "Coulomb per cubic meter (C/m^3)" ;
 	odm2:dimensionSymbol "L-3T1I1" ;
@@ -847,15 +928,17 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:temperaturecount .
 
-<measure-class/electrical-conductance> a skos:Concept ;
+<measure-class/electricalconductance> a skos:Concept ;
 	skos:prefLabel "Electrical conductance" ;
 	rdfs:label "Electrical conductance" ;
 	dct:description "Conductance is the reciprocal of resistance and is different from conductivitiy (specific conductance).  Conductance is the ease with which an electric current passes through a conductor.  The SI unit of electrical resistance is the ohm (?), while electrical conductance is measured in siemens (S).  [Wikipedia: https://en.wikipedia.org/wiki/Electrical_resistance_and_conductance]" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#ConductanceUnit> ;
+	a <http://qudt.org/schema/qudt#ConductanceUnit> ;
 	odm2:defaultUnit "Siemens (S)" ;
 	odm2:dimensionSymbol "L-2M-1T3I2" ;
 	odm2:dimensionLength "0.0" ;
@@ -864,15 +947,17 @@
 	odm2:dimensionCurrent "3.0" ;
 	odm2:dimensionTemperature "2.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:temperaturepermagneticfluxdensity .
 
-<measure-class/electrical-conductivity> a skos:Concept ;
+<measure-class/electricalconductivity> a skos:Concept ;
 	skos:prefLabel "Electrical conductivity" ;
 	rdfs:label "Electrical conductivity" ;
 	dct:description "Electrical conductivity or specific conductance is the reciprocal of electrical resistivity, and measures a material's ability to conduct an electric current. It is commonly represented by the Greek letter ? (sigma), but ? (kappa) (especially in electrical engineering) or ? (gamma) are also occasionally used. Its SI unit is siemens per metre (S/m) and CGSE unit is reciprocal second (s?1).  [Wikipedia: https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity]" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Electrical_resistivity_and_conductivity> ;
+	a <http://dbpedia.org/page/Electrical_resistivity_and_conductivity> ;
 	odm2:defaultUnit "microsiemens per centimeter (ÂµS/cm)" ;
 	odm2:dimensionSymbol "L-3M-1T3I2" ;
 	odm2:dimensionLength "0.0" ;
@@ -881,15 +966,17 @@
 	odm2:dimensionCurrent "3.0" ;
 	odm2:dimensionTemperature "2.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:temperaturepertime .
 
-<measure-class/electrical-current> a skos:Concept ;
+<measure-class/electricalcurrent> a skos:Concept ;
 	skos:prefLabel "Electrical current" ;
 	rdfs:label "Electrical current" ;
 	dct:description "An electric current is a flow of electric charge. In electric circuits this charge is often carried by moving electrons in a wire. It can also be carried by ions in an electrolyte, or by both ions and electrons such as in a plasma.  The SI unit for measuring an electric current is the ampere, which is the flow of electric charge across a surface at the rate of one coulomb per second. [Wikipedia: https://en.wikipedia.org/wiki/Electric_current]" ;
 	odm2:category "Base Quantity" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#ElectricCurrent> ;
+	a <http://qudt.org/vocab/quantity#ElectricCurrent> ;
 	odm2:defaultUnit "ampere (A) = Coulombs per second" ;
 	odm2:dimensionSymbol "I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -898,15 +985,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:thermalconductivity .
 
-<measure-class/electrical-current-density> a skos:Concept ;
+<measure-class/electricalcurrentdensity> a skos:Concept ;
 	skos:prefLabel "Electrical current density" ;
 	rdfs:label "Electrical current density" ;
 	dct:description "Electric current density is a measure of the density of flow of electric charge; it is the electric current per unit area of cross section. Electric current density is a vector-valued quantity." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Electricalcurrentdensity> ;
+	a <http://qudt.org/vocab/quantity#Electricalcurrentdensity> ;
 	odm2:defaultUnit "Ampere per square meter (A/m^2)" ;
 	odm2:dimensionSymbol "L-2I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -915,14 +1004,16 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:thermalinsulance .
 
-<measure-class/electrical-current-per-angle> a skos:Concept ;
+<measure-class/electricalcurrentperangle> a skos:Concept ;
 	skos:prefLabel "Electrical current per angle" ;
 	rdfs:label "Electrical current per angle" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Electricalcurrentperangle> ;
+	a <http://qudt.org/vocab/quantity#Electricalcurrentperangle> ;
 	odm2:defaultUnit "Ampere per radian (A/rad)" ;
 	odm2:dimensionSymbol "U-1I1" ;
 	odm2:dimensionLength "-1.0" ;
@@ -931,14 +1022,16 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:thermalresistance .
 
-<measure-class/electrical-current-per-energy> a skos:Concept ;
+<measure-class/electricalcurrentperenergy> a skos:Concept ;
 	skos:prefLabel "Electrical current per energy" ;
 	rdfs:label "Electrical current per energy" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Electricalcurrentperunitenergy> ;
+	a <http://qudt.org/vocab/quantity#Electricalcurrentperunitenergy> ;
 	skos:note "Has identical dimensionality to Inverse Magnetic Flux" ;
 	odm2:defaultUnit "Ampere per Joule (A/J)" ;
 	odm2:dimensionSymbol "L-2M-1T2I1" ;
@@ -948,15 +1041,17 @@
 	odm2:dimensionCurrent "2.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:thermalresistivity .
 
-<measure-class/electrical-dipole-moment> a skos:Concept ;
+<measure-class/electricaldipolemoment> a skos:Concept ;
 	skos:prefLabel "Electrical dipole moment" ;
 	rdfs:label "Electrical dipole moment" ;
 	dct:description "In physics, the electric dipole moment is a measure of the separation of positive and negative electrical charges in a system of electric charges, that is, a measure of the charge system's overall polarity. The SI units are Coulomb-meter (C m). [Wikipedia: https://en.wikipedia.org/wiki/Electric_dipole_moment]" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#ElectricDipoleMoment> ;
+	a <http://qudt.org/vocab/quantity#ElectricDipoleMoment> ;
 	odm2:defaultUnit "Coulomb meter (C-m)" ;
 	odm2:dimensionSymbol "L1T1I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -965,15 +1060,17 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:thrusttomassratio .
 
-<measure-class/electrical-field-strength> a skos:Concept ;
+<measure-class/electricalfieldstrength> a skos:Concept ;
 	skos:prefLabel "Electrical field strength" ;
 	rdfs:label "Electrical field strength" ;
 	dct:description "The strength of the electric field at a given point is defined as the force that would be exerted on a positive test charge of +1 coulomb placed at that point; the direction of the field is given by the direction of that force. Electric fields contain electrical energy with energy density proportional to the square of the field intensity. The electric field is to charge as gravitational acceleration is to mass and force density is to volume." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#ElectricFieldStrengthUnit> ;
+	a <http://qudt.org/schema/qudt#ElectricFieldStrengthUnit> ;
 	odm2:defaultUnit "Volt per Meter (V/m) or Newton per coulomb (N/C)" ;
 	odm2:dimensionSymbol "L1M1T-3I-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -982,15 +1079,17 @@
 	odm2:dimensionCurrent "-3.0" ;
 	odm2:dimensionTemperature "-1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:time .
 
-<measure-class/electrical-flux> a skos:Concept ;
+<measure-class/electricalflux> a skos:Concept ;
 	skos:prefLabel "Electrical flux" ;
 	rdfs:label "Electrical flux" ;
 	dct:description "The Electric Flux through an area is defined as the electric field multiplied by the area of the surface projected in a plane perpendicular to the field. Electric Flux is a scalar-valued quantity." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#ElectricFlux> ;
+	a <http://qudt.org/vocab/quantity#ElectricFlux> ;
 	odm2:defaultUnit "Volt Meter (Vm)" ;
 	odm2:dimensionSymbol "L3M1T-3I-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -999,15 +1098,17 @@
 	odm2:dimensionCurrent "-3.0" ;
 	odm2:dimensionTemperature "-1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:timesquared .
 
-<measure-class/electrical-flux-density> a skos:Concept ;
+<measure-class/electricalfluxdensity> a skos:Concept ;
 	skos:prefLabel "Electrical flux density" ;
 	rdfs:label "Electrical flux density" ;
 	dct:description "In physics, the electric flux density (or electric displacement field), denoted by D, is a vector field that appears in Maxwell's equations. It accounts for the effects of free and bound charge within materials. \"D\" stands for \"displacement\", as in the related concept of displacement current in dielectrics. In free space, the electric displacement field is equivalent to flux density, a concept that lends understanding to Gauss's law." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#ElectricFluxDensityUnit> ;
+	a <http://qudt.org/schema/qudt#ElectricFluxDensityUnit> ;
 	odm2:defaultUnit "Coulomb per Square Meter (C/m^2)" ;
 	odm2:dimensionSymbol "L-2T1I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1016,15 +1117,17 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:torque .
 
-<measure-class/electrical-permittivity> a skos:Concept ;
+<measure-class/electricalpermittivity> a skos:Concept ;
 	skos:prefLabel "Electrical permittivity" ;
 	rdfs:label "Electrical permittivity" ;
 	dct:description "In electromagnetism, absolute permittivity is the measure of the resistance that is encountered when forming an electric field in a medium. In other words, permittivity is a measure of how an electric field affects, and is affected by, a dielectric medium. The permittivity of a medium describes how much electric field (more correctly, flux) is 'generated' per unit charge in that medium. More electric flux exists in a medium with a low permittivity (per unit charge) because of polarization effects. Permittivity is directly related to electric susceptibility, which is a measure of how easily a dielectric polarizes in response to an electric field. Thus, permittivity relates to a material's ability to resist an electric field and \"permit\" is a misnomer.  In SI units, permittivity ? is measured in farads per meter (F/m)" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Permittivity> ;
+	a <http://qudt.org/vocab/quantity#Permittivity> ;
 	odm2:defaultUnit "Farad per meter (F/m)" ;
 	odm2:dimensionSymbol "L-3M-1T4I2" ;
 	odm2:dimensionLength "0.0" ;
@@ -1033,15 +1136,17 @@
 	odm2:dimensionCurrent "4.0" ;
 	odm2:dimensionTemperature "2.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:turbidity .
 
-<measure-class/electrical-quadrupole-moment> a skos:Concept ;
+<measure-class/electricalquadrupolemoment> a skos:Concept ;
 	skos:prefLabel "Electrical quadrupole moment" ;
 	rdfs:label "Electrical quadrupole moment" ;
 	dct:description "The Electric Quadrupole Moment is a quantity which describes the effective shape of the ellipsoid of nuclear charge distribution. A non-zero quadrupole moment Q indicates that the charge distribution is not spherically symmetric. By convention, the value of Q is taken to be positive if the ellipsoid is prolate and negative if it is oblate. In general, the electric quadrupole moment is tensor-valued." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#ElectricQuadrupoleMoment> ;
+	a <http://qudt.org/vocab/quantity#ElectricQuadrupoleMoment> ;
 	skos:note "<http://dbpedia.org/resource/Quadrupole>" ;
 	odm2:defaultUnit "Coulomb square meter (C-m^2)" ;
 	odm2:dimensionSymbol "L2T1I1" ;
@@ -1051,15 +1156,17 @@
 	odm2:dimensionCurrent "1.0" ;
 	odm2:dimensionTemperature "1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:volume .
 
-<measure-class/electrical-resistance> a skos:Concept ;
+<measure-class/electricalresistance> a skos:Concept ;
 	skos:prefLabel "Electrical resistance" ;
 	rdfs:label "Electrical resistance" ;
 	dct:description "Electrical resistance is a ratio of the degree to which an object opposes an electric current through it, measured in ohms. Its reciprocal quantity is electrical conductance measured in siemens." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Electrical_resistance_and_conductance> ;
+	a <http://dbpedia.org/page/Electrical_resistance_and_conductance> ;
 	odm2:defaultUnit "Ohm (Ohm)" ;
 	odm2:dimensionSymbol "L2M1T-3I-2" ;
 	odm2:dimensionLength "0.0" ;
@@ -1068,15 +1175,17 @@
 	odm2:dimensionCurrent "-3.0" ;
 	odm2:dimensionTemperature "-2.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:volumethermalexpansion .
 
-<measure-class/electrical-resistivity> a skos:Concept ;
+<measure-class/electricalresistivity> a skos:Concept ;
 	skos:prefLabel "Electrical resistivity" ;
 	rdfs:label "Electrical resistivity" ;
 	dct:description "Electrical resistivity (also known as resistivity, specific electrical resistance, or volume resistivity) is an intrinsic property that quantifies how strongly a given material opposes the flow of electric current. A low resistivity indicates a material that readily allows the movement of electric charge. Resistivity is commonly represented by the Greek letter ? (rho). The SI unit of electrical resistivity is the ohm?metre (??m)[1][2][3] although other units like ohm?centimetre (??cm) are also in use. [Wikipedia: https://en.wikipedia.org/wiki/Electrical_resistivity_and_conductivity]" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Electrical_resistivity_and_conductivity> ;
+	a <http://dbpedia.org/page/Electrical_resistivity_and_conductivity> ;
 	odm2:defaultUnit "Ohm metres (Ohm m)" ;
 	odm2:dimensionSymbol "L3M1I-2" ;
 	odm2:dimensionLength "0.0" ;
@@ -1085,15 +1194,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "-2.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:volumetricflowrate .
 
-<measure-class/electromotive-force> a skos:Concept ;
+<measure-class/electromotiveforce> a skos:Concept ;
 	skos:prefLabel "Electromotive force" ;
 	rdfs:label "Electromotive force" ;
 	dct:description "In physics, electromotive force, or most commonly emf (seldom capitalized), voltage, or (occasionally) electromotance is \"that which tends to cause current (actual electrons and ions) to flow.\". More formally, emf is the external work expended per unit of charge to produce an electric potential difference across two open-circuited terminals.[2][3] The electric potential difference is created by separating positive and negative charges, thereby generating an electric field.[4][5] The created electrical potential difference drives current flow if a circuit is attached to the source of emf. When current flows, however, the voltage across the terminals of the source of emf is no longer the open-circuit value, due to voltage drops inside the device due to its internal resistance. [Wikipedia: https://en.wikipedia.org/wiki/Electromotive_force]" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Electromotiveforce> ;
+	a <http://qudt.org/vocab/quantity#Electromotiveforce> ;
 	odm2:defaultUnit "Volt (V) = Joule per coulomb" ;
 	odm2:dimensionSymbol "L2M1T-3I-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1102,7 +1213,8 @@
 	odm2:dimensionCurrent "-3.0" ;
 	odm2:dimensionTemperature "-1.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:volumetricflux .
 
 <measure-class/energy> a skos:Concept ;
 	skos:prefLabel "Energy" ;
@@ -1111,6 +1223,7 @@
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#EnergyAndWorkUnit> ;
+	a <http://qudt.org/schema/qudt#EnergyAndWorkUnit> ;
 	skos:note "Has the same dimensionality as torque" ;
 	odm2:defaultUnit "Joule (J)" ;
 	odm2:dimensionSymbol "L2M1T-2" ;
@@ -1120,15 +1233,17 @@
 	odm2:dimensionCurrent "-2.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:volumetricheatcapacity .
 
-<measure-class/energy-density> a skos:Concept ;
+<measure-class/energydensity> a skos:Concept ;
 	skos:prefLabel "Energy density" ;
 	rdfs:label "Energy density" ;
 	dct:description "Energy density is the amount of energy stored in a given system or region of space per unit volume or mass, though the latter is more accurately termed specific energy." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Energydensity> ;
+	a <http://qudt.org/vocab/quantity#Energydensity> ;
 	skos:note "Has identical dimensionality to pressure or stress" ;
 	odm2:defaultUnit "Joule per cubic meter (J/m^3)" ;
 	odm2:dimensionSymbol "L-1M1T-2" ;
@@ -1138,9 +1253,10 @@
 	odm2:dimensionCurrent "-2.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:volumetricproductivity .
 
-<measure-class/energy-flux> a skos:Concept ;
+<measure-class/energyflux> a skos:Concept ;
 	skos:prefLabel "Energy flux" ;
 	rdfs:label "Energy flux" ;
 	dct:description "Energy flux is the rate of transfer of energy through a surface. The quantity is defined in two different ways, depending on the context.  In the first context, it is the rate of energy transfer per unit area (SI units: WÂ·m?2 = JÂ·m?2Â·s?1). This is a vector quantity, its components being determined in terms of the normal (perpendicular) direction to the surface of measurement. This is sometimes called energy flux density, to distinguish it from the second definition. Radiative flux, heat flux, and sound energy flux are specific cases of energy flux density. In the second context, it is the total rate of energy transfer (SI units: W = JÂ·s?1). This is sometimes informally called energy current." ;
@@ -1152,15 +1268,17 @@
 	odm2:dimensionCurrent "0.0" ;
 	odm2:dimensionTemperature "0.0" ;
 	odm2:dimensionAmount "0.0" ;
-	odm2:dimensionLight "0.0" .
+	odm2:dimensionLight "0.0" ;
+	dct:meaning odm2:yank .
 
-<measure-class/energy-per-area> a skos:Concept ;
+<measure-class/energyperarea> a skos:Concept ;
 	skos:prefLabel "Energy per area" ;
 	rdfs:label "Energy per area" ;
 	dct:description "Energy per area density is the amount of energy stored in a given system or region of space per unit area.  Has the same dimensionality as force per unit length." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Energyperarea> ;
+	a <http://qudt.org/vocab/quantity#Energyperarea> ;
 	odm2:defaultUnit "Joule per square meter (J/m^2)" ;
 	odm2:dimensionSymbol "M1T-2" ;
 	odm2:dimensionLength "0.0" ;
@@ -1171,12 +1289,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/energy-per-area-electrical-charge> a skos:Concept ;
+<measure-class/energyperareaelectricalcharge> a skos:Concept ;
 	skos:prefLabel "Energy per area electrical charge" ;
 	rdfs:label "Energy per area electrical charge" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#EnergyPerAreaElectricCharge> ;
+	a <http://qudt.org/vocab/quantity#EnergyPerAreaElectricCharge> ;
 	skos:note "Magnetic current density?" ;
 	odm2:defaultUnit "Volt per Square Meter" ;
 	odm2:dimensionSymbol "M1T-3I-1" ;
@@ -1188,12 +1307,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/energy-per-square-magnetic-flux-density> a skos:Concept ;
+<measure-class/energypersquaremagneticfluxdensity> a skos:Concept ;
 	skos:prefLabel "Energy per square magnetic flux density" ;
 	rdfs:label "Energy per square magnetic flux density" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#EnergyPerSquareMagneticFluxDensity> ;
+	a <http://qudt.org/vocab/quantity#EnergyPerSquareMagneticFluxDensity> ;
 	odm2:defaultUnit "Joule per Square Tesla (J/T^2)" ;
 	odm2:dimensionSymbol "L2M-1T2I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1204,7 +1324,7 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/fluid-permeance> a skos:Concept ;
+<measure-class/fluidpermeance> a skos:Concept ;
 	skos:prefLabel "Fluid permeance" ;
 	rdfs:label "Fluid permeance" ;
 	dct:description "Permeance is closely related to permeability, but it refers to the extent of penetration of a specific object with given thickness by a liquid or a gas.  It is the degee to which a materal or membrane transmits another substance.  Units of permeance are volumetric output per unit membrane area per unit trans-membrane pressure. Permeance is also referred to as pressure-normalized flux." ;
@@ -1220,13 +1340,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/fluid-resistance> a skos:Concept ;
+<measure-class/fluidresistance> a skos:Concept ;
 	skos:prefLabel "Fluid resistance" ;
 	rdfs:label "Fluid resistance" ;
 	dct:description "In fluid dynamics, drag (sometimes called air resistance, a type of friction, or fluid resistance, another type of friction or fluid friction) refers to forces acting opposite to the relative motion of any object moving with respect to a surrounding fluid. [Wikipedia: https://en.wikipedia.org/wiki/Drag_%28physics%29]" ;
 	odm2:category "Fluid Mechanics" ;
 	skos:historyNote "UCUM" ;
 	rdf:resource <http://unitsofmeasure.org/ucum.html#para-44> ;
+	a <http://unitsofmeasure.org/ucum.html#para-44> ;
 	odm2:defaultUnit "Pascal seconds per cubic metre (PaÂ·s/mÂ³)" ;
 	odm2:dimensionSymbol "L-4M1T-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1244,6 +1365,7 @@
 	odm2:category "Fluid Mechanics" ;
 	skos:historyNote "UDUnits" ;
 	rdf:resource <ftp://ftp.unidata.ucar.edu/pub/udunits/> ;
+	a <ftp://ftp.unidata.ucar.edu/pub/udunits/> ;
 	odm2:defaultUnit "Per Pascal Second (1/PaÂ·s)" ;
 	odm2:dimensionSymbol "L1M-1T1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1278,6 +1400,7 @@
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Force> ;
+	a <http://qudt.org/vocab/quantity#Force> ;
 	odm2:defaultUnit "Newton (N)" ;
 	odm2:dimensionSymbol "L1M1T-2" ;
 	odm2:dimensionLength "0.0" ;
@@ -1288,13 +1411,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/force-per-length> a skos:Concept ;
+<measure-class/forceperlength> a skos:Concept ;
 	skos:prefLabel "Force per length" ;
 	rdfs:label "Force per length" ;
 	dct:description "The amount of force applied per unit length.  Frequenty used for surface tension." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Forceperlength> ;
+	a <http://qudt.org/vocab/quantity#Forceperlength> ;
 	skos:note "Has the same dimensionality as energy per area." ;
 	odm2:defaultUnit "Newton per meter (N/m)" ;
 	odm2:dimensionSymbol "M1T-2" ;
@@ -1313,6 +1437,7 @@
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Frequency> ;
+	a <http://qudt.org/vocab/quantity#Frequency> ;
 	odm2:defaultUnit "Hertz (Hz) or Inverse second time (s^-1)" ;
 	odm2:dimensionSymbol "T-1 or N1T-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1323,13 +1448,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/gravitational-attraction> a skos:Concept ;
+<measure-class/gravitationalattraction> a skos:Concept ;
 	skos:prefLabel "Gravitational attraction" ;
 	rdfs:label "Gravitational attraction" ;
 	dct:description "Gravity or gravitation is a natural phenomenon by which all things attract one another including stars, planets, galaxies and even light and sub-atomic particles. Gravity is responsible for the formation of the universe (e.g. creating spheres of hydrogen, igniting them under pressure to form stars and grouping them in to galaxies). Without gravity, the universe would be without thermal energy and composed only of equally spaced particles. On Earth, gravity gives weight to physical objects and causes the tides. Gravity has an infinite range, and it cannot be absorbed, transformed, or shielded against. [Wikipedia: https://en.wikipedia.org/wiki/Gravity]" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Gravitationalattraction> ;
+	a <http://qudt.org/vocab/quantity#Gravitationalattraction> ;
 	odm2:defaultUnit "Cubic meter per kilogram second squared (m^3/(kg-s^2))" ;
 	odm2:dimensionSymbol "L3M-1T-2" ;
 	odm2:dimensionLength "0.0" ;
@@ -1340,13 +1466,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/heat-capacity> a skos:Concept ;
+<measure-class/heatcapacity> a skos:Concept ;
 	skos:prefLabel "Heat capacity" ;
 	rdfs:label "Heat capacity" ;
 	dct:description "Heat capacity, or thermal capacity, is a measurable physical quantity equal to the ratio of the heat added to (or removed from) an object to the resulting temperature change. The SI unit of heat capacity is joule per kelvin and the dimensional form is L2MT?2??1. [Wikipedia: https://en.wikipedia.org/wiki/Heat_capacity]" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Heatcapacity> ;
+	a <http://qudt.org/vocab/quantity#Heatcapacity> ;
 	odm2:defaultUnit "Joule per kelvin (J/K)" ;
 	odm2:dimensionSymbol "L2M1T-2?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1357,13 +1484,14 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/heat-transfer-coefficient> a skos:Concept ;
+<measure-class/heattransfercoefficient> a skos:Concept ;
 	skos:prefLabel "Heat transfer Coefficient" ;
 	rdfs:label "Heat transfer Coefficient" ;
 	dct:description "The heat transfer coefficient or film coefficient, in thermodynamics and in mechanics is the proportionality coefficient between the heat flux and the thermodynamic driving force for the flow of heat (i.e., the temperature difference, ?T)" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#CoefficientOfHeatTransfer> ;
+	a <http://qudt.org/vocab/quantity#CoefficientOfHeatTransfer> ;
 	odm2:defaultUnit "Watt per square meter kelvin (W/(m^2-K))" ;
 	odm2:dimensionSymbol "M1T-3?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1381,6 +1509,7 @@
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#CubicElectricDipoleMomentPerSquareEnergy> ;
+	a <http://qudt.org/vocab/quantity#CubicElectricDipoleMomentPerSquareEnergy> ;
 	skos:note "http://dbpedia.org/page/Hyperpolarizability" ;
 	odm2:defaultUnit "Cubic Coulomb Cubic Meter Per Square Joule (C3-m3/J2)" ;
 	odm2:dimensionSymbol "L-1M-2T7I3" ;
@@ -1399,6 +1528,7 @@
 	odm2:category "Photometry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Illuminance> ;
+	a <http://qudt.org/vocab/quantity#Illuminance> ;
 	odm2:defaultUnit "Lux (lx); Lumen per square meter (lm/m^2)" ;
 	odm2:dimensionSymbol "U1L-2J1" ;
 	odm2:dimensionLength "1.0" ;
@@ -1416,6 +1546,7 @@
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inductance> ;
+	a <http://qudt.org/vocab/quantity#Inductance> ;
 	odm2:defaultUnit "Henry (H)" ;
 	odm2:dimensionSymbol "L2M1T-2I-2" ;
 	odm2:dimensionLength "0.0" ;
@@ -1426,12 +1557,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/inverse-count> a skos:Concept ;
+<measure-class/inversecount> a skos:Concept ;
 	skos:prefLabel "Inverse count" ;
 	rdfs:label "Inverse count" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inversecount> ;
+	a <http://qudt.org/vocab/quantity#Inversecount> ;
 	odm2:defaultUnit "Per mole (mol^(-1))" ;
 	odm2:dimensionSymbol "N-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1442,12 +1574,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "-1.0" .
 
-<measure-class/inverse-energy> a skos:Concept ;
+<measure-class/inverseenergy> a skos:Concept ;
 	skos:prefLabel "Inverse energy" ;
 	rdfs:label "Inverse energy" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inverseenergy> ;
+	a <http://qudt.org/vocab/quantity#Inverseenergy> ;
 	odm2:defaultUnit "per Joule" ;
 	odm2:dimensionSymbol "L-2M-1T2" ;
 	odm2:dimensionLength "0.0" ;
@@ -1458,13 +1591,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/inverse-length> a skos:Concept ;
+<measure-class/inverselength> a skos:Concept ;
 	skos:prefLabel "Inverse length" ;
 	rdfs:label "Inverse length" ;
 	dct:description "The inverse of length - frequently used for absorption or attenuation coefficients and wave numbers.  This can also be used to for extrinsic curvature where the unit 'diopter' is used." ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inverselength> ;
+	a <http://qudt.org/vocab/quantity#Inverselength> ;
 	skos:note "This should not be used for linear densities, but only for quantities with a truly dimensionless numerator. For linear densities, use \"Count per length\"" ;
 	odm2:defaultUnit "per meter" ;
 	odm2:dimensionSymbol "L-1" ;
@@ -1476,12 +1610,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/inverse-length-temperature> a skos:Concept ;
+<measure-class/inverselengthtemperature> a skos:Concept ;
 	skos:prefLabel "Inverse length temperature" ;
 	rdfs:label "Inverse length temperature" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inverselengthtemperature> ;
+	a <http://qudt.org/vocab/quantity#Inverselengthtemperature> ;
 	odm2:defaultUnit "per meter Kelvin" ;
 	odm2:dimensionSymbol "L-1?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1492,12 +1627,13 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/inverse-magnetic-flux> a skos:Concept ;
+<measure-class/inversemagneticflux> a skos:Concept ;
 	skos:prefLabel "Inverse magnetic flux" ;
 	rdfs:label "Inverse magnetic flux" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inversemagneticflux> ;
+	a <http://qudt.org/vocab/quantity#Inversemagneticflux> ;
 	skos:note "Has identical dimensionality to electric current per unit energy" ;
 	odm2:defaultUnit "Hertz per Volt (Hz/V)" ;
 	odm2:dimensionSymbol "L-2M-1T2I1" ;
@@ -1509,12 +1645,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/inverse-permittivity> a skos:Concept ;
+<measure-class/inversepermittivity> a skos:Concept ;
 	skos:prefLabel "Inverse permittivity" ;
 	rdfs:label "Inverse permittivity" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inversepermittivity> ;
+	a <http://qudt.org/vocab/quantity#Inversepermittivity> ;
 	odm2:defaultUnit "Meter per farad (m/F)" ;
 	odm2:dimensionSymbol "L3M1T-4I-2" ;
 	odm2:dimensionLength "0.0" ;
@@ -1525,12 +1662,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/inverse-square-energy> a skos:Concept ;
+<measure-class/inversesquareenergy> a skos:Concept ;
 	skos:prefLabel "Inverse square energy" ;
 	rdfs:label "Inverse square energy" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inversesquareenergy> ;
+	a <http://qudt.org/vocab/quantity#Inversesquareenergy> ;
 	odm2:defaultUnit "per square Joule (J-2)" ;
 	odm2:dimensionSymbol "L-4M-2T4" ;
 	odm2:dimensionLength "0.0" ;
@@ -1541,12 +1679,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/inverse-time-temperature> a skos:Concept ;
+<measure-class/inversetimetemperature> a skos:Concept ;
 	skos:prefLabel "Inverse time temperature" ;
 	rdfs:label "Inverse time temperature" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inversetimetemperature> ;
+	a <http://qudt.org/vocab/quantity#Inversetimetemperature> ;
 	odm2:defaultUnit "Hertz per Kelvin (Hz/K)" ;
 	odm2:dimensionSymbol "T-1?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1557,12 +1696,13 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/inverse-volume> a skos:Concept ;
+<measure-class/inversevolume> a skos:Concept ;
 	skos:prefLabel "Inverse volume" ;
 	rdfs:label "Inverse volume" ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Inversevolume> ;
+	a <http://qudt.org/vocab/quantity#Inversevolume> ;
 	skos:note "This should only be used for quantities with a truly dimensionless numerator. For other concentrations and densities, use \"Concentration count per volume.\"" ;
 	odm2:defaultUnit "per cubic meter" ;
 	odm2:dimensionSymbol "L-3" ;
@@ -1597,6 +1737,7 @@
 	odm2:category "Base Quantity" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Length> ;
+	a <http://qudt.org/vocab/quantity#Length> ;
 	odm2:defaultUnit "meter (m)" ;
 	odm2:dimensionSymbol "L1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1607,12 +1748,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/length-energy> a skos:Concept ;
+<measure-class/lengthenergy> a skos:Concept ;
 	skos:prefLabel "Length energy" ;
 	rdfs:label "Length energy" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://resources.usgin.org/uri-gin/dtr/http%3A%2F%2Fqudt.org%2Fvocab%2Fquantity%23Lengthenergy%3B+http%3A%2F%2Fqudt.org%2Fvocab%2Fquantity%23ThermalEnergyLength> ;
+	a <http://resources.usgin.org/uri-gin/dtr/http%3A%2F%2Fqudt.org%2Fvocab%2Fquantity%23Lengthenergy%3B+http%3A%2F%2Fqudt.org%2Fvocab%2Fquantity%23ThermalEnergyLength> ;
 	skos:note "redundant with thermalEnergyLength" ;
 	odm2:defaultUnit "Joule meter" ;
 	odm2:dimensionSymbol "L3M1T-2" ;
@@ -1624,7 +1766,7 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/length-fraction> a skos:Concept ;
+<measure-class/lengthfraction> a skos:Concept ;
 	skos:prefLabel "Length fraction" ;
 	rdfs:label "Length fraction" ;
 	dct:description "The ratio or two lengths, often used to measure slope or scale." ;
@@ -1640,13 +1782,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/length-integrated-mass-concentration> a skos:Concept ;
+<measure-class/lengthintegratedmassconcentration> a skos:Concept ;
 	skos:prefLabel "Length integrated mass concentration" ;
 	rdfs:label "Length integrated mass concentration" ;
 	dct:description "A mass concentration per unit length.  These units can be used to measure concentration inputs of a chemical along the length of a waterway." ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "CUAHSI" ;
 	rdf:resource <http://his.cuahsi.org/mastercvreg/edit_cv11.aspx?tbl=Units&id=1125579048> ;
+	a <http://his.cuahsi.org/mastercvreg/edit_cv11.aspx?tbl=Units&id=1125579048> ;
 	skos:note "Has same dimensionality as mass per unit area" ;
 	odm2:defaultUnit "kilograms per meter cubed per meter" ;
 	odm2:dimensionSymbol "L-2M1" ;
@@ -1658,12 +1801,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/length-mass> a skos:Concept ;
+<measure-class/lengthmass> a skos:Concept ;
 	skos:prefLabel "Length mass" ;
 	rdfs:label "Length mass" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Lengthmass> ;
+	a <http://qudt.org/vocab/quantity#Lengthmass> ;
 	odm2:defaultUnit "Meter kilogram (m-kg)" ;
 	odm2:dimensionSymbol "L1M1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1674,12 +1818,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/length-molar-energy> a skos:Concept ;
+<measure-class/lengthmolarenergy> a skos:Concept ;
 	skos:prefLabel "Length molar energy" ;
 	rdfs:label "Length molar energy" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Lengthmolarenergy> ;
+	a <http://qudt.org/vocab/quantity#Lengthmolarenergy> ;
 	odm2:defaultUnit "Joule meter per mole" ;
 	odm2:dimensionSymbol "L3M1T-2N-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1690,12 +1835,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "-1.0" .
 
-<measure-class/length-per-magnetic-flux> a skos:Concept ;
+<measure-class/lengthpermagneticflux> a skos:Concept ;
 	skos:prefLabel "Length per magnetic flux" ;
 	rdfs:label "Length per magnetic flux" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Lengthperunitmagneticflux> ;
+	a <http://qudt.org/vocab/quantity#Lengthperunitmagneticflux> ;
 	odm2:defaultUnit "per Tesla Meter" ;
 	odm2:dimensionSymbol "L-1M-1T2I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1706,12 +1852,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/length-temperature> a skos:Concept ;
+<measure-class/lengthtemperature> a skos:Concept ;
 	skos:prefLabel "Length temperature" ;
 	rdfs:label "Length temperature" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#LengthTemperatureUnit> ;
+	a <http://qudt.org/schema/qudt#LengthTemperatureUnit> ;
 	odm2:defaultUnit "Meter kelvin (m-K)" ;
 	odm2:dimensionSymbol "L1?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1722,12 +1869,13 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/length-temperature-time> a skos:Concept ;
+<measure-class/lengthtemperaturetime> a skos:Concept ;
 	skos:prefLabel "Length temperature time" ;
 	rdfs:label "Length temperature time" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Lengthtemperaturetime> ;
+	a <http://qudt.org/vocab/quantity#Lengthtemperaturetime> ;
 	odm2:defaultUnit "Meter Second Kelvin" ;
 	odm2:dimensionSymbol "L1T1?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1745,6 +1893,7 @@
 	odm2:category "Dimensionless Ratio" ;
 	skos:historyNote "UCUM" ;
 	rdf:resource <http://unitsofmeasure.org/ucum.html#para-46> ;
+	a <http://unitsofmeasure.org/ucum.html#para-46> ;
 	skos:note "\"Psuedo Units\" defined from a log ratio" ;
 	odm2:defaultUnit "Decibel (Db)" ;
 	odm2:dimensionLength "0.0" ;
@@ -1755,13 +1904,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/linear-acceleration> a skos:Concept ;
+<measure-class/linearacceleration> a skos:Concept ;
 	skos:prefLabel "Linear acceleration" ;
 	rdfs:label "Linear acceleration" ;
 	dct:description "Linear acceleration, in physics, is the rate at which the velocity of an object changes over time. Velocity and acceleration are vector quantities, with magnitude and direction that add according to the parallelogram law. The SI unit for acceleration is the metre per second squared (m/s2)." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Linearacceleration> ;
+	a <http://qudt.org/vocab/quantity#Linearacceleration> ;
 	skos:note "Same dimensionality as Thrust to mass ratio" ;
 	odm2:defaultUnit "Meter per second squared (m/s^2)" ;
 	odm2:dimensionSymbol "L1T-2" ;
@@ -1773,13 +1923,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/linear-energy-transfer> a skos:Concept ;
+<measure-class/linearenergytransfer> a skos:Concept ;
 	skos:prefLabel "Linear energy transfer" ;
 	rdfs:label "Linear energy transfer" ;
 	dct:description "Linear energy transfer (LET) is a term used in dosimetry. It describes the action of radiation upon matter. It is identical to the retarding force acting on a charged ionizing particle travelling through the matter.  It describes how much energy an ionising particle transfers to the material transversed per unit distance. By definition, LET is a positive quantity. LET depends on the nature of the radiation as well as on the material traversed. [Wikipedia: https://en.wikipedia.org/wiki/Linear_energy_transfer]" ;
 	odm2:category "Atomic Physics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#LinearEnergyTransfer> ;
+	a <http://qudt.org/vocab/quantity#LinearEnergyTransfer> ;
 	skos:note "Has identical dimensionality to force, but is generally expressed differently. https://en.wikipedia.org/wiki/Linear_energy_transfer" ;
 	odm2:defaultUnit "Joules per meter (J/m)" ;
 	odm2:dimensionSymbol "L1M1T-2" ;
@@ -1791,13 +1942,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/linear-momentum> a skos:Concept ;
+<measure-class/linearmomentum> a skos:Concept ;
 	skos:prefLabel "Linear momentum" ;
 	rdfs:label "Linear momentum" ;
 	dct:description "In classical mechanics, linear momentum or translational momentum (pl. momenta; SI unit kg m/s, or equivalently, N s) is the product of the mass and velocity of an object." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Linearmomentum> ;
+	a <http://qudt.org/vocab/quantity#Linearmomentum> ;
 	odm2:defaultUnit "Kilogram Meter Per Second (kg-m/s)" ;
 	odm2:dimensionSymbol "L1M1T-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1808,13 +1960,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/linear-thermal-expansion> a skos:Concept ;
+<measure-class/linearthermalexpansion> a skos:Concept ;
 	skos:prefLabel "Linear thermal expansion" ;
 	rdfs:label "Linear thermal expansion" ;
 	dct:description "When the temperature of a substance changes, the energy that is stored in the intermolecular bonds between atoms changes. When the stored energy increases, so does the length of the molecular bonds. As a result, solids typically expand in response to heating and contract on cooling; this dimensional response to temperature change is expressed by its coefficient of thermal expansion. Different coefficients of thermal expansion can be defined for a substance depending on whether the expansion is measured by: * linear thermal expansion * area thermal expansion * volumetric thermal expansion These characteristics are closely related. The volumetric thermal expansion coefficient can be defined for both liquids and solids. The linear thermal expansion can only be defined for solids, and is common in engineering applications. Some substances expand when cooled, such as freezing water, so they have negative thermal expansion coefficients. [Wikipedia: https://en.wikipedia.org/wiki/Thermal_expansion]" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Linearthermalexpansion> ;
+	a <http://qudt.org/vocab/quantity#Linearthermalexpansion> ;
 	odm2:defaultUnit "Meter per kelvin (m/K)" ;
 	odm2:dimensionSymbol "L1?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1825,13 +1978,14 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/linear-velocity> a skos:Concept ;
+<measure-class/linearvelocity> a skos:Concept ;
 	skos:prefLabel "Linear velocity" ;
 	rdfs:label "Linear velocity" ;
 	dct:description "Velocity is the rate of change of the position of an object, equivalent to a specification of its speed and direction of motion.Velocity is an important concept in kinematics, the branch of classical mechanics which describes the motion of bodies.Velocity is a vector physical quantity; both magnitude and direction are required to define it. The scalar absolute value (magnitude) of velocity is called \"speed\", a quantity that is measured in metres per second (m/s or mÂ·s?1) in the SI (metric) system." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Linearvelocity> ;
+	a <http://qudt.org/vocab/quantity#Linearvelocity> ;
 	skos:note "This has the same dimensionality as volumetric flux, but is expressed differently." ;
 	odm2:defaultUnit "Meter per second (m/s)" ;
 	odm2:dimensionSymbol "L1T-1" ;
@@ -1850,6 +2004,7 @@
 	odm2:category "Photometry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Luminance> ;
+	a <http://qudt.org/vocab/quantity#Luminance> ;
 	odm2:defaultUnit "Candela per square meter (cd/m^2)" ;
 	odm2:dimensionSymbol "L-2J1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1860,13 +2015,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/luminous-efficacy> a skos:Concept ;
+<measure-class/luminousefficacy> a skos:Concept ;
 	skos:prefLabel "Luminous efficacy" ;
 	rdfs:label "Luminous efficacy" ;
 	dct:description "Luminous Efficacy is the ratio of luminous flux (in lumens) to power (usually measured in watts). Depending on context, the power can be either the radiant flux of the source's output, or it can be the total electric power consumed by the source." ;
 	odm2:category "Photometry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#LuminousEfficacyUnit> ;
+	a <http://qudt.org/schema/qudt#LuminousEfficacyUnit> ;
 	odm2:defaultUnit "Lumen per Watt" ;
 	odm2:dimensionSymbol "U1L-2M-1T3J1" ;
 	odm2:dimensionLength "1.0" ;
@@ -1877,13 +2033,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/luminous-energy> a skos:Concept ;
+<measure-class/luminousenergy> a skos:Concept ;
 	skos:prefLabel "Luminous Energy" ;
 	rdfs:label "Luminous Energy" ;
 	dct:description "In photometry, luminous energy is the perceived energy of light. This is sometimes called the quantity of light. Luminous energy is not the same as radiant energy, the corresponding objective physical quantity. This is because the human eye can only see light in the visible spectrum and has different sensitivities to light of different wavelengths within the spectrum. When adapted for bright conditions (photopic vision), the eye is most sensitive to light at a wavelength of 555Â nm. Light with a given amount of radiant energy will have more luminous energy if the wavelength is 555Â nm than if the wavelength is longer or shorter. Light whose wavelength is well outside the visible spectrum has a luminous energy of zero, regardless of the amount of radiant energy present." ;
 	odm2:category "Photometry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#LuminousEnergyUnit> ;
+	a <http://qudt.org/schema/qudt#LuminousEnergyUnit> ;
 	odm2:defaultUnit "Lumen Second (lm s)" ;
 	odm2:dimensionSymbol "U1T1J1" ;
 	odm2:dimensionLength "1.0" ;
@@ -1894,13 +2051,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/luminous-flux> a skos:Concept ;
+<measure-class/luminousflux> a skos:Concept ;
 	skos:prefLabel "Luminous flux" ;
 	rdfs:label "Luminous flux" ;
 	dct:description "Luminous Flux or Luminous Power is the measure of the perceived power of light. It differs from radiant flux, the measure of the total power of light emitted, in that luminous flux is adjusted to reflect the varying sensitivity of the human eye to different wavelengths of light." ;
 	odm2:category "Photometry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Luminousflux> ;
+	a <http://qudt.org/vocab/quantity#Luminousflux> ;
 	odm2:defaultUnit "Lumen (lm)" ;
 	odm2:dimensionSymbol "U1J1" ;
 	odm2:dimensionLength "1.0" ;
@@ -1911,13 +2069,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/luminous-intensity> a skos:Concept ;
+<measure-class/luminousintensity> a skos:Concept ;
 	skos:prefLabel "Luminous intensity" ;
 	rdfs:label "Luminous intensity" ;
 	dct:description "Luminous Intensity is a measure of the wavelength-weighted power emitted by a light source in a particular direction per unit solid angle. The weighting is determined by the luminosity function, a standardized model of the sensitivity of the human eye to different wavelengths." ;
 	odm2:category "Base Quantity" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Luminousintensity> ;
+	a <http://qudt.org/vocab/quantity#Luminousintensity> ;
 	odm2:defaultUnit "Candela (cd)" ;
 	odm2:dimensionSymbol "J1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1928,13 +2087,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/magnetic-dipole-moment> a skos:Concept ;
+<measure-class/magneticdipolemoment> a skos:Concept ;
 	skos:prefLabel "Magnetic dipole moment" ;
 	rdfs:label "Magnetic dipole moment" ;
 	dct:description "The magnetic moment of a system is a measure of the magnitude and the direction of its magnetism. Magnetic moment usually refers to its Magnetic Dipole Moment, and quantifies the contribution of the system's internal magnetism to the external dipolar magnetic field produced by the system (that is, the component of the external magnetic field that is inversely proportional to the cube of the distance to the observer). The Magnetic Dipole Moment is a vector-valued quantity." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Magneticdipolemoment> ;
+	a <http://qudt.org/vocab/quantity#Magneticdipolemoment> ;
 	odm2:defaultUnit "Joule per Tesla (J/T)" ;
 	odm2:dimensionSymbol "L2I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1945,13 +2105,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/magnetic-field-strength> a skos:Concept ;
+<measure-class/magneticfieldstrength> a skos:Concept ;
 	skos:prefLabel "Magnetic field strength" ;
 	rdfs:label "Magnetic field strength" ;
 	dct:description "The magnetic field strength, H (also called magnetic field intensity, magnetizing field, or magnetic field), characterizes how the true Magnetic Field B influences the organization of magnetic dipoles in a given medium." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#MagneticFieldStrengthUnit> ;
+	a <http://qudt.org/schema/qudt#MagneticFieldStrengthUnit> ;
 	odm2:defaultUnit "Ampere Turn per Meter (At/m) or Ampere per meter (A/m)" ;
 	odm2:dimensionSymbol "L-1I1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1962,13 +2123,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/magnetic-flux> a skos:Concept ;
+<measure-class/magneticflux> a skos:Concept ;
 	skos:prefLabel "Magnetic flux" ;
 	rdfs:label "Magnetic flux" ;
 	dct:description "Magnetic Flux is the product of the average magnetic field times the perpendicular area that it penetrates." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Magneticflux> ;
+	a <http://qudt.org/vocab/quantity#Magneticflux> ;
 	odm2:defaultUnit "Weber (Wb)" ;
 	odm2:dimensionSymbol "L2M1T-2I-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1979,13 +2141,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/magnetic-flux-density> a skos:Concept ;
+<measure-class/magneticfluxdensity> a skos:Concept ;
 	skos:prefLabel "Magnetic flux density" ;
 	rdfs:label "Magnetic flux density" ;
 	dct:description "The Magnetic flux density, B (also called magnetic induction or magnetic field), is a fundamental field in electrodynamics which characterizes the magnetic force exerted by electric currents. It is closely related to the auxillary magnetic field H." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#MagneticFluxDensityUnit> ;
+	a <http://qudt.org/schema/qudt#MagneticFluxDensityUnit> ;
 	odm2:defaultUnit "Tesla (T)" ;
 	odm2:dimensionSymbol "M1T-2I-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -1996,13 +2159,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/magnetic-flux-per-length> a skos:Concept ;
+<measure-class/magneticfluxperlength> a skos:Concept ;
 	skos:prefLabel "Magnetic flux per length" ;
 	rdfs:label "Magnetic flux per length" ;
 	dct:description "Magnetic Flux Per Unit Length" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Magneticfluxperunitlength> ;
+	a <http://qudt.org/vocab/quantity#Magneticfluxperunitlength> ;
 	odm2:defaultUnit "Tesla Meter" ;
 	odm2:dimensionSymbol "L1M1T-2I-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2013,13 +2177,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/magnetic-permeability> a skos:Concept ;
+<measure-class/magneticpermeability> a skos:Concept ;
 	skos:prefLabel "Magnetic permeability" ;
 	rdfs:label "Magnetic permeability" ;
 	dct:description "Permeability is the degree of magnetization of a material that responds linearly to an applied magnetic field. In general permeability is a tensor-valued quantity." ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#PermeabilityUnit> ;
+	a <http://qudt.org/schema/qudt#PermeabilityUnit> ;
 	odm2:defaultUnit "Henry per meter (H/m)" ;
 	odm2:dimensionSymbol "L1M1T-2I-2" ;
 	odm2:dimensionLength "0.0" ;
@@ -2030,13 +2195,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/magnetomotive-force> a skos:Concept ;
+<measure-class/magnetomotiveforce> a skos:Concept ;
 	skos:prefLabel "Magnetomotive force" ;
 	rdfs:label "Magnetomotive force" ;
 	dct:description "Magnetomotive force is any physical cause that produces magnetic flux. In other words, it is a field of magnetism (measured in tesla) that has area (measured in square meters), so that (Tesla)(Area)= Flux. It is analogous to electromotive force or voltage in electricity. MMF usually describes electric wire coils in a way so scientists can measure or predict the actual force a wire coil can generate. [Wikipedia: https://en.wikipedia.org/wiki/Magnetomotive_force]" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#MagnetomotiveForceUnit> ;
+	a <http://qudt.org/schema/qudt#MagnetomotiveForceUnit> ;
 	odm2:defaultUnit "Ampere Turn (At)" ;
 	odm2:dimensionSymbol "U1I1" ;
 	odm2:dimensionLength "1.0" ;
@@ -2054,6 +2220,7 @@
 	odm2:category "Base Quantity" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Mass> ;
+	a <http://qudt.org/vocab/quantity#Mass> ;
 	odm2:defaultUnit "kilogram (kg)" ;
 	odm2:dimensionSymbol "M1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2064,12 +2231,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/mass-count> a skos:Concept ;
+<measure-class/masscount> a skos:Concept ;
 	skos:prefLabel "Mass count" ;
 	rdfs:label "Mass count" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#MassAmountOfSubstance> ;
+	a <http://qudt.org/vocab/quantity#MassAmountOfSubstance> ;
 	odm2:defaultUnit "kilogram mole (kg*mol)" ;
 	odm2:dimensionSymbol "M1N1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2080,12 +2248,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "1.0" .
 
-<measure-class/mass-count-temperature> a skos:Concept ;
+<measure-class/masscounttemperature> a skos:Concept ;
 	skos:prefLabel "Mass count temperature" ;
 	rdfs:label "Mass count temperature" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#MassAmountOfSubstanceTemperature> ;
+	a <http://qudt.org/vocab/quantity#MassAmountOfSubstanceTemperature> ;
 	odm2:defaultUnit "Kilogram mole Kelvin (kg*mol*K)" ;
 	odm2:dimensionSymbol "M1?1N1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2096,7 +2265,7 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "1.0" .
 
-<measure-class/mass-flux> a skos:Concept ;
+<measure-class/massflux> a skos:Concept ;
 	skos:prefLabel "Mass flux" ;
 	rdfs:label "Mass flux" ;
 	dct:description "In physics and engineering, mass flux is the rate of mass flow per unit area, perfectly overlapping with the momentum density, the momentum per unit volume. The common symbols are j, J, q, Q, ?, or ? (Greek lower or capital Phi), sometimes with subscript m to indicate mass is the flowing quantity. Its SI units are kg s?1 m?2. Mass flux can also refer to an alternate form of flux in Fick's law that includes the molecular mass, or in Darcy's law that includes the mass density.  [Wikipedia: https://en.wikipedia.org/wiki/Mass_flux]" ;
@@ -2112,13 +2281,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/mass-fraction> a skos:Concept ;
+<measure-class/massfraction> a skos:Concept ;
 	skos:prefLabel "Mass fraction" ;
 	rdfs:label "Mass fraction" ;
 	dct:description "In chemistry, the mass fraction is the ratio of one substance with mass to the mass of the total mixture , defined asThe sum of all the mass fractions is equal to 1:Mass fraction can also be expressed, with a denominator of 100, as percentage by weight (wt%). It is one way of expressing the composition of a mixture in a dimensionless size; mole fraction (percentage by moles, mol%) and volume fraction (percentage by volume, vol%) are others. For elemental analysis, mass fraction (or \"mass percent composition\") can also refer to the ratio of the mass of one element to the total mass of a compound. It can be calculated for any compound using its empirical formula. or its chemical formula" ;
 	odm2:category "Dimensionless Ratio" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Mass_fraction_(chemistry)> ;
+	a <http://dbpedia.org/page/Mass_fraction_(chemistry)> ;
 	odm2:defaultUnit "g/kg" ;
 	odm2:dimensionSymbol "M1M-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2129,7 +2299,7 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/mass-normalized-particle-loading> a skos:Concept ;
+<measure-class/massnormalizedparticleloading> a skos:Concept ;
 	skos:prefLabel "Mass normalized particle loading" ;
 	rdfs:label "Mass normalized particle loading" ;
 	dct:description "The number of particles or organisms per unit time per unit mass." ;
@@ -2145,12 +2315,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "1.0" .
 
-<measure-class/mass-per-area> a skos:Concept ;
+<measure-class/massperarea> a skos:Concept ;
 	skos:prefLabel "Mass per area" ;
 	rdfs:label "Mass per area" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Massperarea> ;
+	a <http://qudt.org/vocab/quantity#Massperarea> ;
 	skos:note "Has same dimensionality as length integrated mass concentration" ;
 	odm2:defaultUnit "Kilogram per square meter (kg/m^2)" ;
 	odm2:dimensionSymbol "L-2M1" ;
@@ -2162,12 +2333,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/mass-per-electrical-charge> a skos:Concept ;
+<measure-class/massperelectricalcharge> a skos:Concept ;
 	skos:prefLabel "Mass per electrical charge" ;
 	rdfs:label "Mass per electrical charge" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#MassPerElectricCharge> ;
+	a <http://qudt.org/vocab/quantity#MassPerElectricCharge> ;
 	odm2:defaultUnit "Tesla Second (T s)" ;
 	odm2:dimensionSymbol "M1T-1I-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2178,12 +2350,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/mass-per-length> a skos:Concept ;
+<measure-class/massperlength> a skos:Concept ;
 	skos:prefLabel "Mass per length" ;
 	rdfs:label "Mass per length" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Massperlength> ;
+	a <http://qudt.org/vocab/quantity#Massperlength> ;
 	odm2:defaultUnit "Kilogram per meter (kg/m)" ;
 	odm2:dimensionSymbol "L-1M1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2194,13 +2367,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/mass-per-time> a skos:Concept ;
+<measure-class/masspertime> a skos:Concept ;
 	skos:prefLabel "Mass per time" ;
 	rdfs:label "Mass per time" ;
 	dct:description "In physics and engineering, mass flow rate is the mass of a substance which passes per unit of time. [Wikipedia: https://en.wikipedia.org/wiki/Mass_flow_rate]" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Masspertime> ;
+	a <http://qudt.org/vocab/quantity#Masspertime> ;
 	skos:note "Also known as loading." ;
 	odm2:defaultUnit "Kilogram per second (kg/s)" ;
 	odm2:dimensionSymbol "M1T-1" ;
@@ -2212,12 +2386,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/mass-temperature> a skos:Concept ;
+<measure-class/masstemperature> a skos:Concept ;
 	skos:prefLabel "Mass temperature" ;
 	rdfs:label "Mass temperature" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Masstemperature> ;
+	a <http://qudt.org/vocab/quantity#Masstemperature> ;
 	odm2:defaultUnit "Kilogram kelvin (kg-K)" ;
 	odm2:dimensionSymbol "M1?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2228,13 +2403,14 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/molar-angular-momentum> a skos:Concept ;
+<measure-class/molarangularmomentum> a skos:Concept ;
 	skos:prefLabel "Molar angular momentum" ;
 	rdfs:label "Molar angular momentum" ;
 	dct:description "The angular momentum per mole of substance.  Used for measuring electron orbitals." ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#MolarAngularMomentum> ;
+	a <http://qudt.org/vocab/quantity#MolarAngularMomentum> ;
 	odm2:defaultUnit "Joule Second per Mole" ;
 	odm2:dimensionSymbol "L2M1T-1N-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2245,7 +2421,7 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "-1.0" .
 
-<measure-class/molar-conductivity> a skos:Concept ;
+<measure-class/molarconductivity> a skos:Concept ;
 	skos:prefLabel "Molar conductivity" ;
 	rdfs:label "Molar conductivity" ;
 	dct:description "Molar conductivity is defined as the conductivity of an electrolyte solution divided by the molar concentration of the electrolyte, and so measures the efficiency with which a given electrolyte conducts electricity in solution. Its units are siemens per meter per molarity, or siemens meter-squared per mole. The usual symbol is a capital lambda, ?, or ?m. Or Molar conductivity of a solution at a given concentration is the conductance of the volume (V) of the solution containing one mole of electrolyte kept between two electrodes with area of cross section (A) and at a distance of unit length. [Wikipedia: https://en.wikipedia.org/wiki/Molar_conductivity]" ;
@@ -2261,13 +2437,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "-1.0" .
 
-<measure-class/molar-energy> a skos:Concept ;
+<measure-class/molarenergy> a skos:Concept ;
 	skos:prefLabel "Molar energy" ;
 	rdfs:label "Molar energy" ;
 	dct:description "The amount of energy per mole of substance" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#MolarEnergyUnit> ;
+	a <http://qudt.org/schema/qudt#MolarEnergyUnit> ;
 	odm2:defaultUnit "Joule per mole (J/mol)" ;
 	odm2:dimensionSymbol "L2M1T-2N-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2278,13 +2455,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "-1.0" .
 
-<measure-class/molar-heat-capacity> a skos:Concept ;
+<measure-class/molarheatcapacity> a skos:Concept ;
 	skos:prefLabel "Molar heat capacity" ;
 	rdfs:label "Molar heat capacity" ;
 	dct:description "The molar heat capacity is the heat capacity per unit amount of a pure substance. [Wikipedia: https://en.wikipedia.org/wiki/Heat_capacity]" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#MolarHeatCapacityUnit> ;
+	a <http://qudt.org/schema/qudt#MolarHeatCapacityUnit> ;
 	odm2:defaultUnit "Joule per mole kelvin (J/(mol-K))" ;
 	odm2:dimensionSymbol "L2M1T-2?-1N-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2295,13 +2473,14 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "-1.0" .
 
-<measure-class/molar-mass> a skos:Concept ;
+<measure-class/molarmass> a skos:Concept ;
 	skos:prefLabel "Molar mass" ;
 	rdfs:label "Molar mass" ;
 	dct:description "In chemistry, the molar mass M is a physical property defined as the mass of a given substance (chemical element or chemical compound) divided by its amount of substance.  The base SI unit for molar mass is kg/mol. However, for historical reasons, molar masses are almost always expressed in g/mol. [Wikipedia: https://en.wikipedia.org/wiki/Molar_mass]" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#MolarMass> ;
+	a <http://qudt.org/vocab/quantity#MolarMass> ;
 	skos:note "<http://dbpedia.org/resource/Molar_mass>" ;
 	odm2:defaultUnit "kilogram per mol (kg/mol)" ;
 	odm2:dimensionSymbol "M1N-1" ;
@@ -2313,13 +2492,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "-1.0" .
 
-<measure-class/molar-volume> a skos:Concept ;
+<measure-class/molarvolume> a skos:Concept ;
 	skos:prefLabel "Molar volume" ;
 	rdfs:label "Molar volume" ;
 	dct:description "The molar volume, symbol Vm, is the volume occupied by one mole of a substance (chemical element or chemical compound) at a given temperature and pressure. It is equal to the molar mass (M) divided by the mass density (?). [Wikipedia: https://en.wikipedia.org/wiki/Molar_volume]" ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "New for ODM2" ;
 	rdf:resource <http://dbpedia.org/page/Molar_volume> ;
+	a <http://dbpedia.org/page/Molar_volume> ;
 	odm2:defaultUnit "cubic meters per mol (m^3/mol)" ;
 	odm2:dimensionSymbol "L3N-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2345,7 +2525,7 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/particle-flux> a skos:Concept ;
+<measure-class/particleflux> a skos:Concept ;
 	skos:prefLabel "Particle flux" ;
 	rdfs:label "Particle flux" ;
 	dct:description "The number of particles, organisms, or moles of substance going through a specific area in a given amount of time." ;
@@ -2361,7 +2541,7 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "1.0" .
 
-<measure-class/particle-loading> a skos:Concept ;
+<measure-class/particleloading> a skos:Concept ;
 	skos:prefLabel "Particle loading" ;
 	rdfs:label "Particle loading" ;
 	dct:description "The number of particles, organisms, or moles of substance appearing in a given amount of time." ;
@@ -2385,6 +2565,7 @@
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT-WQ" ;
 	rdf:resource <http://environment.data.gov.au/def/unit/pH> ;
+	a <http://environment.data.gov.au/def/unit/pH> ;
 	odm2:defaultUnit "pH" ;
 	odm2:dimensionSymbol "U1" ;
 	odm2:dimensionLength "1.0" ;
@@ -2402,6 +2583,7 @@
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Polarizability> ;
+	a <http://qudt.org/vocab/quantity#Polarizability> ;
 	skos:note "<http://dbpedia.org/resource/Polarizability>" ;
 	odm2:defaultUnit "Square Coulomb Meter per Joule" ;
 	odm2:dimensionSymbol "M-1T4I2" ;
@@ -2413,13 +2595,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/potential-vorticity> a skos:Concept ;
+<measure-class/potentialvorticity> a skos:Concept ;
 	skos:prefLabel "Potential vorticity" ;
 	rdfs:label "Potential vorticity" ;
 	dct:description "Potential vorticity (PV) is a quantity which is proportional to the dot product of vorticity and stratification that, following a parcel of air or water, can only be changed by diabatic or frictional processes. It is a useful concept for understanding the generation of vorticity in cyclogenesis (the birth and development of a cyclone), especially along the polar front, and in analyzing flow in the ocean. [Wikipedia: https://en.wikipedia.org/wiki/Potential_vorticity]" ;
 	odm2:category "Fluid Mechanics" ;
 	skos:historyNote "UDUnits" ;
 	rdf:resource <http://dbpedia.org/page/Potential_vorticity> ;
+	a <http://dbpedia.org/page/Potential_vorticity> ;
 	odm2:defaultUnit "Meter squared Kelvin per kilogram per second" ;
 	odm2:dimensionSymbol "L2M-1T-1?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2437,6 +2620,7 @@
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Power> ;
+	a <http://qudt.org/vocab/quantity#Power> ;
 	odm2:defaultUnit "Watt (W)" ;
 	odm2:dimensionSymbol "L2M1T-3" ;
 	odm2:dimensionLength "0.0" ;
@@ -2447,12 +2631,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/power-area> a skos:Concept ;
+<measure-class/powerarea> a skos:Concept ;
 	skos:prefLabel "Power area" ;
 	rdfs:label "Power area" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#PowerArea> ;
+	a <http://qudt.org/vocab/quantity#PowerArea> ;
 	odm2:defaultUnit "Watt Square Meter" ;
 	odm2:dimensionSymbol "L4M1T-3" ;
 	odm2:dimensionLength "0.0" ;
@@ -2463,12 +2648,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/power-area-per-solid-angle> a skos:Concept ;
+<measure-class/powerareapersolidangle> a skos:Concept ;
 	skos:prefLabel "Power area per solid angle" ;
 	rdfs:label "Power area per solid angle" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#PowerAreaPerSolidAngle> ;
+	a <http://qudt.org/vocab/quantity#PowerAreaPerSolidAngle> ;
 	odm2:defaultUnit "Watt Square Meter per Steradian" ;
 	odm2:dimensionSymbol "U-1L4M1T-3" ;
 	odm2:dimensionLength "1.0" ;
@@ -2479,13 +2665,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/power-per-area> a skos:Concept ;
+<measure-class/powerperarea> a skos:Concept ;
 	skos:prefLabel "Power per area" ;
 	rdfs:label "Power per area" ;
 	dct:description "A general term for heat flow rate per unit area, power per unit area, irradiance, radient emmitance, and radiosity.  All these terms are sometimes referred to as \"intensity.\"" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Powerperarea> ;
+	a <http://qudt.org/vocab/quantity#Powerperarea> ;
 	odm2:defaultUnit "Watt per square meter (W/m^2)" ;
 	odm2:dimensionSymbol "M1T-3" ;
 	odm2:dimensionLength "0.0" ;
@@ -2496,13 +2683,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/power-per-area-quartic-temperature> a skos:Concept ;
+<measure-class/powerperareaquartictemperature> a skos:Concept ;
 	skos:prefLabel "Power per area quartic temperature" ;
 	rdfs:label "Power per area quartic temperature" ;
 	dct:description "The units of the Stefan-Boltzmann constant.  The Stefanâ€“Boltzmann law states that the total energy radiated per unit surface area of a black body across all wavelengths per unit time (also known as the black-body radiant exitance or emissive power), j*, is directly proportional to the fourth power of the black body's thermodynamic temperature.  The constant of proportionality ?, called the Stefanâ€“Boltzmann constant or Stefan's constant, derives from other known constants of nature. The value of the constant is5.670373 x 10^8 Wm^-2K^-4.  [Wikipedia: https://en.wikipedia.org/wiki/Stefan%E2%80%93Boltzmann_constant]" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#PowerPerAreaQuarticTemperature> ;
+	a <http://qudt.org/vocab/quantity#PowerPerAreaQuarticTemperature> ;
 	odm2:defaultUnit "Watt per Square Meter Quartic Kelvin" ;
 	odm2:dimensionSymbol "M1T-3?-4" ;
 	odm2:dimensionLength "0.0" ;
@@ -2513,12 +2701,13 @@
 	odm2:dimensionAmount "-4.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/power-per-electrical-charge> a skos:Concept ;
+<measure-class/powerperelectricalcharge> a skos:Concept ;
 	skos:prefLabel "Power per electrical charge" ;
 	rdfs:label "Power per electrical charge" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#PowerPerElectricCharge> ;
+	a <http://qudt.org/vocab/quantity#PowerPerElectricCharge> ;
 	odm2:defaultUnit "Volt per Second" ;
 	odm2:dimensionSymbol "L2M1T-4I-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2529,13 +2718,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/pressure-or-stress> a skos:Concept ;
+<measure-class/pressureorstress> a skos:Concept ;
 	skos:prefLabel "Pressure or stress" ;
 	rdfs:label "Pressure or stress" ;
 	dct:description "Pressure is an effect which occurs when a force is applied on a surface. Pressure is the amount of force acting on a unit area. Pressure is distinct from stress, as the former is the ratio of the component of force normal to a surface to the surface area. Stress is a tensor that relates the vector force to the vector area." ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Pressureorstress> ;
+	a <http://qudt.org/vocab/quantity#Pressureorstress> ;
 	skos:note "Has identical dimensionality to energy density" ;
 	odm2:defaultUnit "Pascal (Pa)" ;
 	odm2:dimensionSymbol "L-1M1T-2" ;
@@ -2547,12 +2737,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/pressure-or-stress-rate> a skos:Concept ;
+<measure-class/pressureorstressrate> a skos:Concept ;
 	skos:prefLabel "Pressure or stress rate" ;
 	rdfs:label "Pressure or stress rate" ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#PressureOrStressRateUnit> ;
+	a <http://qudt.org/schema/qudt#PressureOrStressRateUnit> ;
 	odm2:defaultUnit "Pascal per second (Pa/s)" ;
 	odm2:dimensionSymbol "L-1M1T-3" ;
 	odm2:dimensionLength "0.0" ;
@@ -2563,12 +2754,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/quartic-electrical-dipole-moment-per-cubic-energy> a skos:Concept ;
+<measure-class/quarticelectricaldipolemomentpercubicenergy> a skos:Concept ;
 	skos:prefLabel "Quartic electrical dipole moment per cubic energy" ;
 	rdfs:label "Quartic electrical dipole moment per cubic energy" ;
 	odm2:category "Electricity and Magnetism" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#QuarticElectricDipoleMomentPerCubicEnergy> ;
+	a <http://qudt.org/vocab/quantity#QuarticElectricDipoleMomentPerCubicEnergy> ;
 	odm2:defaultUnit "Quartic Coulomb Meter per Cubic Joule (C^4 m^4 J^-3)" ;
 	odm2:dimensionSymbol "L-2M-3T10I4" ;
 	odm2:dimensionLength "0.0" ;
@@ -2586,6 +2778,7 @@
 	odm2:category "Radiology" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#RadianceUnit> ;
+	a <http://qudt.org/schema/qudt#RadianceUnit> ;
 	odm2:defaultUnit "Watt per square meter steradian (W/(m^2-sr))" ;
 	odm2:dimensionSymbol "U-1M1T-3" ;
 	odm2:dimensionLength "-1.0" ;
@@ -2596,13 +2789,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/radiant-intensity> a skos:Concept ;
+<measure-class/radiantintensity> a skos:Concept ;
 	skos:prefLabel "Radiant Intensity" ;
 	rdfs:label "Radiant Intensity" ;
 	dct:description "Radiant flux emitted, reflected, transmitted or received, per unit solid angle. This is a directional quantity. [Wikipedia: https://en.wikipedia.org/wiki/Radiant_intensity]" ;
 	odm2:category "Radiology" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#RadiantIntensityUnit> ;
+	a <http://qudt.org/schema/qudt#RadiantIntensityUnit> ;
 	odm2:defaultUnit "Watt per steradian (W/sr)" ;
 	odm2:dimensionSymbol "U-1L2M1T-3" ;
 	odm2:dimensionLength "-1.0" ;
@@ -2620,6 +2814,7 @@
 	odm2:category "Quantum Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Activity> ;
+	a <http://qudt.org/vocab/quantity#Activity> ;
 	odm2:defaultUnit "Becquerel (Bq)" ;
 	odm2:dimensionSymbol "T-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2630,7 +2825,7 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/radioactivity-per-volume> a skos:Concept ;
+<measure-class/radioactivitypervolume> a skos:Concept ;
 	skos:prefLabel "Radioactivity per volume" ;
 	rdfs:label "Radioactivity per volume" ;
 	dct:description "The amount of radioactivity per unit volume" ;
@@ -2653,6 +2848,7 @@
 	odm2:category "Chemistry" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Salinity> ;
+	a <http://dbpedia.org/page/Salinity> ;
 	odm2:defaultUnit "Practical salinity units (PSU)" ;
 	odm2:dimensionSymbol "U1" ;
 	odm2:dimensionLength "1.0" ;
@@ -2663,7 +2859,7 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/satellite-resolution> a skos:Concept ;
+<measure-class/satelliteresolution> a skos:Concept ;
 	skos:prefLabel "Satellite resolution" ;
 	rdfs:label "Satellite resolution" ;
 	dct:description "In remote sensing, a satellite's resolution is defined as the size on the earth of the smallest individual component or dot (called a pixel) from which the image is constituted.  This is also reffered to as the ground sample distance." ;
@@ -2695,13 +2891,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/solid-angle> a skos:Concept ;
+<measure-class/solidangle> a skos:Concept ;
 	skos:prefLabel "Solid angle" ;
 	rdfs:label "Solid angle" ;
 	dct:description "The solid angle subtended by a surface S is defined as the surface area of a unit sphere covered by the surface S's projection onto the sphere. A solid angle is related to the surface of a sphere in the same way an ordinary angle is related to the circumference of a circle. Since the total surface area of the unit sphere is 4*pi, the measure of solid angle will always be between 0 and 4*pi." ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Solidangle> ;
+	a <http://qudt.org/vocab/quantity#Solidangle> ;
 	odm2:defaultUnit "Steradian (sr)" ;
 	odm2:dimensionSymbol "U1" ;
 	odm2:dimensionLength "1.0" ;
@@ -2712,13 +2909,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/specific-energy> a skos:Concept ;
+<measure-class/specificenergy> a skos:Concept ;
 	skos:prefLabel "Specific energy" ;
 	rdfs:label "Specific energy" ;
 	dct:description "Specific energy is energy per unit mass. (It is also sometimes called \"energy density,\" though \"energy density\" more precisely means energy per unit volume.) The SI unit for specific energy is the joule per kilogram (J/kg). Other units still in use in some contexts are the kilocalorie per gram (Cal/g or kcal/g), mostly in food-related topics, watt hours per kilogram in the field of batteries, and the Imperial unit BTU per pound (BTU/lb), in some engineering and applied technical fields." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Specificenergy> ;
+	a <http://qudt.org/vocab/quantity#Specificenergy> ;
 	skos:note "Absorbed dose, does equivalent, and specific energy all have the same dimensionality." ;
 	odm2:defaultUnit "Joule per kilogram (J/kg); Gray (Gy); Sievert (Sv)" ;
 	odm2:dimensionSymbol "L2T-2" ;
@@ -2730,13 +2928,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/specific-heat-capacity> a skos:Concept ;
+<measure-class/specificheatcapacity> a skos:Concept ;
 	skos:prefLabel "Specific heat capacity" ;
 	rdfs:label "Specific heat capacity" ;
 	dct:description "The specific heat capacity, often simply called specific heat, is the heat capacity per unit mass of a material.  It is the amount of heat needed to raise the temperature of a certain mass 1 degree Celsius." ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Specificheatcapacity> ;
+	a <http://qudt.org/vocab/quantity#Specificheatcapacity> ;
 	odm2:defaultUnit "Joule per kilogram kelvin (J/(kg-K))" ;
 	odm2:dimensionSymbol "L2T-2?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2747,13 +2946,14 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/specific-heat-pressure> a skos:Concept ;
+<measure-class/specificheatpressure> a skos:Concept ;
 	skos:prefLabel "Specific heat pressure" ;
 	rdfs:label "Specific heat pressure" ;
 	dct:description "Specific heat at a constant pressure." ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Specificheatpressure> ;
+	a <http://qudt.org/vocab/quantity#Specificheatpressure> ;
 	odm2:defaultUnit "Joule per kilogram kelvin per pascal (J/(km-K-Pa))" ;
 	odm2:dimensionSymbol "L3M-1?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2764,13 +2964,14 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/specific-heat-volume> a skos:Concept ;
+<measure-class/specificheatvolume> a skos:Concept ;
 	skos:prefLabel "Specific heat volume" ;
 	rdfs:label "Specific heat volume" ;
 	dct:description "Specific heat per constant volume." ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Specificheatvolume> ;
+	a <http://qudt.org/vocab/quantity#Specificheatvolume> ;
 	odm2:defaultUnit "Joule per kilogram kelvin per cubic meter (J/(kg-K-m^3))" ;
 	odm2:dimensionSymbol "L-1T-2?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2781,13 +2982,14 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/specific-radioactivity> a skos:Concept ;
+<measure-class/specificradioactivity> a skos:Concept ;
 	skos:prefLabel "Specific radioactivity" ;
 	rdfs:label "Specific radioactivity" ;
 	dct:description "Specific activity is the activity per mass quantity of a radionuclide and is a physical property of that radionuclide. [Wikipedia: https://en.wikipedia.org/wiki/Specific_activity]" ;
 	odm2:category "Quantum Mechanics" ;
 	skos:historyNote "CUAHSI" ;
 	rdf:resource <http://dbpedia.org/page/Specific_activity> ;
+	a <http://dbpedia.org/page/Specific_activity> ;
 	odm2:defaultUnit "Becquerels per gram (Bq/g)" ;
 	odm2:dimensionSymbol "M-1T-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2798,13 +3000,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/specific-surface-area> a skos:Concept ;
+<measure-class/specificsurfacearea> a skos:Concept ;
 	skos:prefLabel "Specific surface area" ;
 	rdfs:label "Specific surface area" ;
 	dct:description "Specific surface area \"SSA\" is a property of solids which is the total surface area of a material per unit of mass. It is a derived scientific value that can be used to determine the type and properties of a material (e.g. soil, snow). It is defined by surface area divided by mass (with units of mÂ²/kg)." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Specific_surface_area> ;
+	a <http://dbpedia.org/page/Specific_surface_area> ;
 	odm2:defaultUnit "Meters squared per kilogram (mÂ²/kg)" ;
 	odm2:dimensionSymbol "L2M-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2815,13 +3018,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/specific-volume> a skos:Concept ;
+<measure-class/specificvolume> a skos:Concept ;
 	skos:prefLabel "Specific volume" ;
 	rdfs:label "Specific volume" ;
 	dct:description "Specific volume (?) is the volume occupied by a unit of mass of a material. It is equal to the inverse of density." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Specificvolume> ;
+	a <http://qudt.org/vocab/quantity#Specificvolume> ;
 	odm2:defaultUnit "meter cubed per kg" ;
 	odm2:dimensionSymbol "L3M-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2832,13 +3036,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/stable-isotope-delta> a skos:Concept ;
+<measure-class/stableisotopedelta> a skos:Concept ;
 	skos:prefLabel "Stable isotope delta" ;
 	rdfs:label "Stable isotope delta" ;
 	dct:description "For stable isotopes, isotope ratios are typically reported using the delta (?) notation where ? represents the ratio of heavy isotope to light isotope in the sample over the same ratio of a standard reference material, reported using units of in \"per mil\" (â€°, parts per thousand) and reported relative to the specific standard reference material." ;
 	odm2:category "Chemistry" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <https://en.wikipedia.org/wiki/Isotope_geochemistry#Stable_isotope_geochemistry> ;
+	a <https://en.wikipedia.org/wiki/Isotope_geochemistry#Stable_isotope_geochemistry> ;
 	odm2:defaultUnit "Per Mille (â€°; per mil) relative to a standard reference material" ;
 	odm2:dimensionSymbol "U1" ;
 	odm2:dimensionLength "1.0" ;
@@ -2849,13 +3054,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/standard-gravitational-parameter> a skos:Concept ;
+<measure-class/standardgravitationalparameter> a skos:Concept ;
 	skos:prefLabel "Standard gravitational parameter" ;
 	rdfs:label "Standard gravitational parameter" ;
 	dct:description "In celestial mechanics, the standard gravitational parameter ? of a celestial body is the product of the gravitational constant G and the mass M of the body. [Wikipedia: https://en.wikipedia.org/wiki/Standard_gravitational_parameter]" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#StandardGravitationalParameter> ;
+	a <http://qudt.org/vocab/quantity#StandardGravitationalParameter> ;
 	skos:note "<http://dbpedia.org/resource/Standard_gravitational_parameter>" ;
 	odm2:defaultUnit "Cubic Meter per Second Squared" ;
 	odm2:dimensionSymbol "L3T-2" ;
@@ -2874,6 +3080,7 @@
 	odm2:category "Base Quantity" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#ThermodynamicTemperature> ;
+	a <http://qudt.org/vocab/quantity#ThermodynamicTemperature> ;
 	odm2:defaultUnit "Kelvin (K)" ;
 	odm2:dimensionSymbol "?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2884,12 +3091,13 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/temperature-count> a skos:Concept ;
+<measure-class/temperaturecount> a skos:Concept ;
 	skos:prefLabel "Temperature count" ;
 	rdfs:label "Temperature count" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/schema/qudt#AmountOfSubstanceTemperatureUnit> ;
+	a <http://qudt.org/schema/qudt#AmountOfSubstanceTemperatureUnit> ;
 	odm2:defaultUnit "Mole kelvin (mol-K)" ;
 	odm2:dimensionSymbol "?1N1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2900,12 +3108,13 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "1.0" .
 
-<measure-class/temperature-per-magnetic-flux-density> a skos:Concept ;
+<measure-class/temperaturepermagneticfluxdensity> a skos:Concept ;
 	skos:prefLabel "Temperature per magnetic flux density" ;
 	rdfs:label "Temperature per magnetic flux density" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#TemperaturePerMagneticFluxDensity> ;
+	a <http://qudt.org/vocab/quantity#TemperaturePerMagneticFluxDensity> ;
 	odm2:defaultUnit "Kelvin per Tesla" ;
 	odm2:dimensionSymbol "M-1T2I1?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2916,12 +3125,13 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/temperature-per-time> a skos:Concept ;
+<measure-class/temperaturepertime> a skos:Concept ;
 	skos:prefLabel "Temperature per time" ;
 	rdfs:label "Temperature per time" ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#TemperaturePerTime> ;
+	a <http://qudt.org/vocab/quantity#TemperaturePerTime> ;
 	odm2:defaultUnit "Kelvin per second (K/s)" ;
 	odm2:dimensionSymbol "T-1?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2932,13 +3142,14 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/thermal-conductivity> a skos:Concept ;
+<measure-class/thermalconductivity> a skos:Concept ;
 	skos:prefLabel "Thermal conductivity" ;
 	rdfs:label "Thermal conductivity" ;
 	dct:description "In physics, thermal conductivity (often denoted k, ?, or ?) is the property of a material to conduct heat. Thermal conductivity of materials is temperature dependent. The reciprocal of thermal conductivity is called thermal resistivity." ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Thermalconductivity> ;
+	a <http://qudt.org/vocab/quantity#Thermalconductivity> ;
 	odm2:defaultUnit "Watt per meter kelvin (W/(m*K))" ;
 	odm2:dimensionSymbol "L1M1T-3?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2949,13 +3160,14 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/thermal-insulance> a skos:Concept ;
+<measure-class/thermalinsulance> a skos:Concept ;
 	skos:prefLabel "Thermal insulance" ;
 	rdfs:label "Thermal insulance" ;
 	dct:description "The inverse of the heat transfer coefficient." ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Thermalinsulance> ;
+	a <http://qudt.org/vocab/quantity#Thermalinsulance> ;
 	odm2:defaultUnit "Square meter Kelvin per watt (K(m^2)/W)" ;
 	odm2:dimensionSymbol "M-1T3?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2966,13 +3178,14 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/thermal-resistance> a skos:Concept ;
+<measure-class/thermalresistance> a skos:Concept ;
 	skos:prefLabel "Thermal resistance" ;
 	rdfs:label "Thermal resistance" ;
 	dct:description "Thermal resistance is a heat property and a measurement of a temperature difference by which an object or material resists a heat flow. Thermal resistance is the reciprocal of thermal conductance. (Absolute) thermal resistance R in K/W is a property of a particular component. For example, a characteristic of a heat sink. Specific thermal resistance or specific thermal resistivity R? in (KÂ·m)/W is a material constant." ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Thermal_resistance> ;
+	a <http://dbpedia.org/page/Thermal_resistance> ;
 	odm2:defaultUnit "Kelvin per watt (K/W)" ;
 	odm2:dimensionSymbol "L-2M-1T3?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -2983,13 +3196,14 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/thermal-resistivity> a skos:Concept ;
+<measure-class/thermalresistivity> a skos:Concept ;
 	skos:prefLabel "Thermal resistivity" ;
 	rdfs:label "Thermal resistivity" ;
 	dct:description "The reciprocal of thermal conductivity is thermal resistivity, measured in kelvin-metres per watt (K*m/W). Also called Specific Thermal Resistance." ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Thermalresistivity> ;
+	a <http://qudt.org/vocab/quantity#Thermalresistivity> ;
 	odm2:defaultUnit "Meter Kelvin per watt (K-m/W)" ;
 	odm2:dimensionSymbol "L-1M-1T3?1" ;
 	odm2:dimensionLength "0.0" ;
@@ -3000,13 +3214,14 @@
 	odm2:dimensionAmount "1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/thrust-to-mass-ratio> a skos:Concept ;
+<measure-class/thrusttomassratio> a skos:Concept ;
 	skos:prefLabel "Thrust to mass ratio" ;
 	rdfs:label "Thrust to mass ratio" ;
 	dct:description "Thrust-to-weight ratio is a dimensionless ratio of thrust to weight of a rocket, jet engine, propeller engine, or a vehicle propelled by such an engine that indicates the performance of the engine or vehicle. [Wikipedia: https://en.wikipedia.org/wiki/Thrust-to-weight_ratio]" ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#ThrustToMassRatio> ;
+	a <http://qudt.org/vocab/quantity#ThrustToMassRatio> ;
 	skos:note "Same dimensionality as linear accelleration" ;
 	odm2:defaultUnit "Newton per kilogram (N/kg)" ;
 	odm2:dimensionSymbol "L1T-2" ;
@@ -3025,6 +3240,7 @@
 	odm2:category "Base Quantity" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Time> ;
+	a <http://qudt.org/vocab/quantity#Time> ;
 	odm2:defaultUnit "second (s)" ;
 	odm2:dimensionSymbol "T1" ;
 	odm2:dimensionLength "0.0" ;
@@ -3035,12 +3251,13 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/time-squared> a skos:Concept ;
+<measure-class/timesquared> a skos:Concept ;
 	skos:prefLabel "Time squared" ;
 	rdfs:label "Time squared" ;
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Timesquared> ;
+	a <http://qudt.org/vocab/quantity#Timesquared> ;
 	odm2:defaultUnit "Second time squared (s^2)" ;
 	odm2:dimensionSymbol "T2" ;
 	odm2:dimensionLength "0.0" ;
@@ -3058,6 +3275,7 @@
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Torque> ;
+	a <http://qudt.org/vocab/quantity#Torque> ;
 	skos:note "Has the same dimensionality as energy/work" ;
 	odm2:defaultUnit "Newton meter (N-m)" ;
 	odm2:dimensionSymbol "L2M1T-2" ;
@@ -3076,6 +3294,7 @@
 	odm2:category "Chemistry" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Turbidity> ;
+	a <http://qudt.org/vocab/quantity#Turbidity> ;
 	odm2:defaultUnit "Nephelometric Turbidity Units (NTU)" ;
 	odm2:dimensionSymbol "U1" ;
 	odm2:dimensionLength "1.0" ;
@@ -3092,6 +3311,7 @@
 	odm2:category "Space and Time" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#LiquidVolume> ;
+	a <http://qudt.org/vocab/quantity#LiquidVolume> ;
 	skos:note "This includes dry, liquid, and gas volumes." ;
 	odm2:defaultUnit "Cubic Meter (m^3)" ;
 	odm2:dimensionSymbol "L3" ;
@@ -3103,13 +3323,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/volume-thermal-expansion> a skos:Concept ;
+<measure-class/volumethermalexpansion> a skos:Concept ;
 	skos:prefLabel "Volume thermal expansion" ;
 	rdfs:label "Volume thermal expansion" ;
 	dct:description "When the temperature of a substance changes, the energy that is stored in the intermolecular bonds between atoms changes. When the stored energy increases, so does the length of the molecular bonds. As a result, solids typically expand in response to heating and contract on cooling; this dimensional response to temperature change is expressed by its coefficient of thermal expansion. Different coefficients of thermal expansion can be defined for a substance depending on whether the expansion is measured by: * linear thermal expansion * area thermal expansion * volumetric thermal expansion These characteristics are closely related. The volumetric thermal expansion coefficient can be defined for both liquids and solids. The linear thermal expansion can only be defined for solids, and is common in engineering applications. Some substances expand when cooled, such as freezing water, so they have negative thermal expansion coefficients." ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Volumethermalexpansion> ;
+	a <http://qudt.org/vocab/quantity#Volumethermalexpansion> ;
 	odm2:defaultUnit "Cubic meter per kelvin (m^3/K)" ;
 	odm2:dimensionSymbol "L3?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -3120,13 +3341,14 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/volumetric-flow-rate> a skos:Concept ;
+<measure-class/volumetricflowrate> a skos:Concept ;
 	skos:prefLabel "Volumetric flow rate" ;
 	rdfs:label "Volumetric flow rate" ;
 	dct:description "Volume Per Unit Time, or Volumetric flow rate, is the volume of fluid that passes through a given surface per unit of time (as opposed to a unit surface)." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Volumepertime> ;
+	a <http://qudt.org/vocab/quantity#Volumepertime> ;
 	odm2:defaultUnit "Cubic meter per second (m^3/s)" ;
 	odm2:dimensionSymbol "L3T-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -3137,13 +3359,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/volumetric-flux> a skos:Concept ;
+<measure-class/volumetricflux> a skos:Concept ;
 	skos:prefLabel "Volumetric flux" ;
 	rdfs:label "Volumetric flux" ;
 	dct:description "In fluid dynamics, the volumetric flux is the rate of volume flow across a unit area (m3Â·s?1Â·m?2). Volumetric flux = liters/(second*area). The density of a particular property in a fluid's volume, multiplied with the volumetric flux of the fluid, thus defines the advective flux of that property.  The volumetric flux through a porous medium is often modelled using Darcy's law. Volumetric flux is not to be confused with volumetric flow rate, which is the volume of fluid that passes through a given surface per unit of time (as opposed to a unit surface).  [Wikipedia: https://en.wikipedia.org/wiki/Volumetric_flux] Also used for hydraulic conductivity." ;
 	odm2:category "Mechanics" ;
 	skos:historyNote "Wikipedia" ;
 	rdf:resource <http://dbpedia.org/page/Volumetric_flux> ;
+	a <http://dbpedia.org/page/Volumetric_flux> ;
 	skos:note "Has identical dimensionality to linear velocity, but is expressed differently." ;
 	odm2:defaultUnit "meters cubed per second per meter squared (m^3/s*m^2)" ;
 	odm2:dimensionSymbol "L1T-1" ;
@@ -3155,13 +3378,14 @@
 	odm2:dimensionAmount "0.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/volumetric-heat-capacity> a skos:Concept ;
+<measure-class/volumetricheatcapacity> a skos:Concept ;
 	skos:prefLabel "Volumetric heat capacity" ;
 	rdfs:label "Volumetric heat capacity" ;
 	dct:description "Volumetric heat capacity (VHC), also termed volume-specific heat capacity, describes the ability of a given volume of a substance to store internal energy while undergoing a given temperature change, but without undergoing a phase transition. It is different from specific heat capacity in that the VHC is a 'per unit volume' measure of the relationship between thermal energy and temperature of a material, while the specific heat is a 'per unit mass' measure (or occasionally per molar quantity of the material)." ;
 	odm2:category "Thermodynamics" ;
 	skos:historyNote "QUDT" ;
 	rdf:resource <http://qudt.org/vocab/quantity#Volumetricheatcapacity> ;
+	a <http://qudt.org/vocab/quantity#Volumetricheatcapacity> ;
 	odm2:defaultUnit "Joule per cubic meter kelvin (J/(m^3 K))" ;
 	odm2:dimensionSymbol "L-1M1T-2?-1" ;
 	odm2:dimensionLength "0.0" ;
@@ -3172,7 +3396,7 @@
 	odm2:dimensionAmount "-1.0" ;
 	odm2:dimensionLight "0.0" .
 
-<measure-class/volumetric-productivity> a skos:Concept ;
+<measure-class/volumetricproductivity> a skos:Concept ;
 	skos:prefLabel "Volumetric productivity" ;
 	rdfs:label "Volumetric productivity" ;
 	dct:description "In ecology, productivity or production refers to the rate of generation of biomass in an ecosystem. It is usually expressed in units of mass per unit surface (or volume) per unit time, for instance grams per square metre per day (g m?2 d?1). The mass unit may relate to dry matter or to the mass of carbon generated. Productivity of autotrophs such as plants is called primary productivity, while that of heterotrophs such as animals is called secondary productivity. [Wikipedia: https://en.wikipedia.org/wiki/Productivity_%28ecology%29]" ;

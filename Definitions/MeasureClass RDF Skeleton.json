@@ -82,7 +82,7 @@
                 "nodeType": "cell-as-literal",
                 "expression": "value",
                 "isRowNumberCell": false,
-                "columnName": "skos:definition"
+                "columnName": "dct:description"
               }
             },
             {
