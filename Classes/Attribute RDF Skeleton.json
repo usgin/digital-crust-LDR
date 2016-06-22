@@ -104,18 +104,6 @@
               }
             },
             {
-              "uri": "http://resources.usgin.org/uri-gin/dtr/ont/meaning",
-              "curie": "dcdtr:meaning",
-              "target": {
-                "nodeType": "cell-as-resource",
-                "expression": "value",
-                "isRowNumberCell": false,
-                "columnName": "dcdtr:meaning",
-                "rdfTypes": [],
-                "links": []
-              }
-            },
-            {
               "uri": "http://resources.usgin.org/uri-gin/dtr/ont/nilable",
               "curie": "dcdtr:nilable",
               "target": {
