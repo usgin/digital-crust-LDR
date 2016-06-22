@@ -1,0 +1,176 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+
+
+<agent-description> a owl:Class ;
+	rdfs:label "Agent Description" ;
+	dcdtr:meaning <../../def/object-class/agent> .
+
+<borehole-lithology-intercept-occurrence> a owl:Class ;
+	rdfs:label "Borehole Lithology Intercept Occurrence" ;
+	dcdtr:meaning <../../def/object-class/borehole-intercept> .
+
+<borehole-lithology-interval-occurrence> a owl:Class ;
+	rdfs:label "Borehole Lithology Interval Occurrence" ;
+	dcdtr:meaning <../../def/object-class/borehole-interval> .
+
+<borehole-temperature-result> a owl:Class ;
+	rdfs:label "Borehole Temperature Result" ;
+	dcdtr:meaning <../../def/object-class/borehole-temperature-observation> .
+
+<contour-line-instance> a owl:Class ;
+	rdfs:label "Contour Line Instance" ;
+	dcdtr:meaning <../../def/object-class/isopleth-feature> .
+
+<coordinate-location> a owl:Class ;
+	rdfs:label "Coordinate Location" ;
+	dcdtr:meaning <../../def/object-class/location> .
+
+<cphydroobservationdata> a owl:Class ;
+	rdfs:label "Coordinate Location" ;
+	dcdtr:meaning <../../def/object-class/hydraulic-properties-observation> .
+
+<direct-use-facility-occurrence> a owl:Class ;
+	rdfs:label "Direct Use Facility Occurrence" ;
+	dcdtr:meaning <../../def/object-class/geothermal-direct-use-facility> .
+
+<fluid-flux-injection-and-disposal-result> a owl:Class ;
+	rdfs:label "Fluid Flux Injection and Disposal Result" ;
+	dcdtr:meaning <../../def/object-class/well-fluid-flux-observation> .
+
+<geologic-contact-occurrence> a owl:Class ;
+	rdfs:label "Geologic Contact Occurrence" ;
+	dcdtr:meaning <../../def/object-class/geologic-contact-feature> .
+
+<geologic-fault-occurrence> a owl:Class ;
+	rdfs:label "Geologic Fault Occurrence" ;
+	dcdtr:meaning <../../def/object-class/geologic-fault-feature> .
+
+<geologic-unit-outcrop-occurrence> a owl:Class ;
+	rdfs:label "Geologic Unit Outcrop Occurrence" ;
+	dcdtr:meaning <../../def/object-class/geologic-unit-outcrop> .
+
+<geologic-unit-portrayal-description> a owl:Class ;
+	rdfs:label "Geologic Unit Portrayal Description" ;
+	dcdtr:meaning <../../def/object-class/geologic-unit-feature> .
+
+<geothermal-area-occurrence> a owl:Class ;
+	rdfs:label "Geothermal Area Occurrence" ;
+	dcdtr:meaning <../../def/object-class/geothermal-area-feature> .
+
+<geothermal-power-plant-occurrence> a owl:Class ;
+	rdfs:label "Geothermal Power Plant Occurrence" ;
+	dcdtr:meaning <../../def/object-class/geothermal-power-plant-facility> .
+
+<geothermal-reservoir> a owl:Class ;
+	rdfs:label "Geothermal Reservoir" ;
+	dcdtr:meaning <../../def/object-class/geologic-reservoir-feature> .
+
+<gravity-result> a owl:Class ;
+	rdfs:label "Gravity Result" ;
+	dcdtr:meaning <../../def/object-class/gravity-observation> .
+
+<heat-flow-result> a owl:Class ;
+	rdfs:label "Heat Flow Result" ;
+	dcdtr:meaning <../../def/object-class/heat-flow-observation> .
+
+<heat-pump-facility-occurrence> a owl:Class ;
+	rdfs:label "Heat Pump Facility Occurrence" ;
+	dcdtr:meaning <../../def/object-class/heat-pump-facility> .
+
+<hydraulic-properties-result> a owl:Class ;
+	rdfs:label "Hydraulic Properties Result" ;
+	dcdtr:meaning <../../def/object-class/hydraulic-properties-observation> .
+
+<measured-value> a owl:Class ;
+	rdfs:label "Hydraulic Properties Result" ;
+	dcdtr:meaning <../../def/object-class/measured-value> .
+
+<metadata-instance> a owl:Class ;
+	rdfs:label "Metadata Instance" ;
+	dcdtr:meaning <../../def/object-class/resource-description> .
+
+<mineral-recovery-brines-experimental-data-instance> a owl:Class ;
+	rdfs:label "Mineral Recovery Brines Experimental Data Instance" ;
+	dcdtr:meaning <../../def/object-class/mineral-recovery-brine-experimental-data> .
+
+<mineral-recovery-brines-process-and-economics-instance> a owl:Class ;
+	rdfs:label "Mineral Recovery Brines Process and Economics Instance" ;
+	dcdtr:meaning <../../def/object-class/mineral-recovery-brine-process-and-economics> .
+
+<physical-sample-occurrence> a owl:Class ;
+	rdfs:label "Physical Sample Occurrence" ;
+	dcdtr:meaning <../../def/object-class/physical-sample> .
+
+<powell-and-cumming-geothermometry-result> a owl:Class ;
+	rdfs:label "Powell and Cumming Geothermometry Result" ;
+	dcdtr:meaning <../../def/object-class/powell-and-cumming-geothermometry-observation> .
+
+<power-plant-production-result> a owl:Class ;
+	rdfs:label "Power Plant Production Result" ;
+	dcdtr:meaning <../../def/object-class/power-plant-production-observation> .
+
+<quantity-with-units> a owl:Class ;
+	rdfs:label "Power Plant Production Result" ;
+	dcdtr:meaning <../../def/object-class/measured-value> .
+
+<well-fluid-production-result> a owl:Class ;
+	rdfs:label "Quantity with units" ;
+	dcdtr:meaning <../../def/object-class/well-fluid-production-observation> .
+
+<well-header-occurrence> a owl:Class ;
+	rdfs:label "Quantity with units" ;
+	dcdtr:meaning <../../def/object-class/well-header-feature> .
+
+<well-log-result> a owl:Class ;
+	rdfs:label "Quantity with units" ;
+	dcdtr:meaning <../../def/object-class/well-log-observation> .
+
+<well-test-result> a owl:Class ;
+	rdfs:label "Quantity with units" ;
+	dcdtr:meaning <../../def/object-class/well-test-observation> .
+
+<wsp2321data> a owl:Class ;
+	rdfs:label "Quantity with units" ;
+	dcdtr:meaning <../../def/object-class/hydraulic-properties-observation> .
+
+<radiogenic-heat-production-result> a owl:Class ;
+	rdfs:label "Radiogenic Heat Production Result" ;
+	dcdtr:meaning <../../def/object-class/radiogenic-heat-production-observation> .
+
+<reference> a owl:Class ;
+	rdfs:label "reference" ;
+	dcdtr:meaning <../../def/object-class/value> .
+
+<rock-chemistry-result> a owl:Class ;
+	rdfs:label "Rock Chemistry Result" ;
+	dcdtr:meaning <../../def/object-class/rock-chemical-composition-observation> .
+
+<seismic-event-hypocenter-result> a owl:Class ;
+	rdfs:label "Seismic Event Hypocenter Result" ;
+	dcdtr:meaning <../../def/object-class/seismic-event-hypocenter-observation> .
+
+<term> a owl:Class ;
+	rdfs:label "term" ;
+	dcdtr:meaning <../../def/object-class/value> .
+
+<thermal-conductivity-result> a owl:Class ;
+	rdfs:label "Thermal Conductivity Result" ;
+	dcdtr:meaning <../../def/object-class/thermal-conductivity-observation> .
+
+<thermal-spring-occurrence> a owl:Class ;
+	rdfs:label "Thermal Spring Occurrence" ;
+	dcdtr:meaning <../../def/object-class/thermal-spring> .
+
+<us-cadastral-location> a owl:Class ;
+	rdfs:label "US Cadastral Location" ;
+	dcdtr:meaning <../../def/object-class/location> .
+
+<volcanic-vent-occurrence> a owl:Class ;
+	rdfs:label "Volcanic Vent Occurrence" ;
+	dcdtr:meaning <../../def/object-class/volcanic-vent-feature> .
+
+<weigelobservation> a owl:Class ;
+	rdfs:label "WeigelObservation" ;
+	dcdtr:meaning <../../def/object-class/hydraulic-properties-observation> .

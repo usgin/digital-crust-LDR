@@ -1,0 +1,152 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+
+
+<agent> a skos:Concept ;
+	rdfs:label "Agent" ;
+	dcdtr:representation <../../class/data-object/agent-description> .
+
+<borehole-intercept> a skos:Concept ;
+	rdfs:label "Borehole Intercept" ;
+	dcdtr:representation <../../class/data-object/borehole-lithology-intercept-occurrence> .
+
+<borehole-interval> a skos:Concept ;
+	rdfs:label "Borehole Interval" ;
+	dcdtr:representation <../../class/data-object/borehole-lithology-interval-occurrence> .
+
+<borehole-temperature-observation> a skos:Concept ;
+	rdfs:label "Borehole Temperature Observation" ;
+	dcdtr:representation <../../class/data-object/borehole-temperature-result> .
+
+<geologic-contact-feature> a skos:Concept ;
+	rdfs:label "Geologic Contact Feature" ;
+	dcdtr:representation <../../class/data-object/geologic-contact-occurrence> .
+
+<geologic-fault-feature> a skos:Concept ;
+	rdfs:label "Geologic Fault Feature" ;
+	dcdtr:representation <../../class/data-object/geologic-fault-occurrence> .
+
+<geologic-reservoir-feature> a skos:Concept ;
+	rdfs:label "Geologic Reservoir Feature" ;
+	dcdtr:representation <../../class/data-object/geothermal-reservoir> .
+
+<geologic-unit-feature> a skos:Concept ;
+	rdfs:label "Geologic Unit Feature" ;
+	dcdtr:representation <../../class/data-object/geologic-unit-portrayal-description> .
+
+<geologic-unit-outcrop> a skos:Concept ;
+	rdfs:label "Geologic Unit Outcrop" ;
+	dcdtr:representation <../../class/data-object/geologic-unit-outcrop-occurrence> .
+
+<geothermal-area-feature> a skos:Concept ;
+	rdfs:label "Geothermal Area Feature" ;
+	dcdtr:representation <../../class/data-object/geothermal-area-occurrence> .
+
+<geothermal-direct-use-facility> a skos:Concept ;
+	rdfs:label "Geothermal Direct Use Facility" ;
+	dcdtr:representation <../../class/data-object/direct-use-facility-occurrence> .
+
+<geothermal-power-plant-facility> a skos:Concept ;
+	rdfs:label "Geothermal Power Plant Facility" ;
+	dcdtr:representation <../../class/data-object/geothermal-power-plant-occurrence> .
+
+<gravity-observation> a skos:Concept ;
+	rdfs:label "Gravity Observation" ;
+	dcdtr:representation <../../class/data-object/gravity-result> .
+
+<heat-flow-observation> a skos:Concept ;
+	rdfs:label "Heat Flow Observation" ;
+	dcdtr:representation <../../class/data-object/heat-flow-result> .
+
+<heat-pump-facility> a skos:Concept ;
+	rdfs:label "Heat Pump Facility" ;
+	dcdtr:representation <../../class/data-object/heat-pump-facility-occurrence> .
+
+<hydraulic-properties-observation> a skos:Concept ;
+	rdfs:label "Hydraulic Properties Observation" ;
+	dcdtr:representation <../../class/data-object/hydraulic-properties-result> , <../../class/data-object/wsp2321data> , <../../class/data-object/cphydroobservationdata> , <../../class/data-object/weigelobservation> .
+
+<isopleth-feature> a skos:Concept ;
+	rdfs:label "Isopleth Feature" ;
+	dcdtr:representation <../../class/data-object/contour-line-instance> .
+
+<location> a skos:Concept ;
+	rdfs:label "Isopleth Feature" ;
+	dcdtr:representation <../../class/data-object/coordinate-location> , <../../class/data-object/us-cadastral-location> .
+
+<measured-value> a skos:Concept ;
+	rdfs:label "Measured Value" ;
+	dcdtr:representation <../../class/data-object/measured-value> , <../../class/data-object/quantity-with-units> .
+
+<mineral-recovery-brine-experimental-data> a skos:Concept ;
+	rdfs:label "Mineral Recovery Brine Experimental Data" ;
+	dcdtr:representation <../../class/data-object/mineral-recovery-brines-experimental-data-instance> .
+
+<mineral-recovery-brine-process-and-economics> a skos:Concept ;
+	rdfs:label "Mineral Recovery Brine Process And Economics" ;
+	dcdtr:representation <../../class/data-object/mineral-recovery-brines-process-and-economics-instance> .
+
+<physical-sample> a skos:Concept ;
+	rdfs:label "Physical Sample" ;
+	dcdtr:representation <../../class/data-object/physical-sample-occurrence> .
+
+<powell-and-cumming-geothermometry-observation> a skos:Concept ;
+	rdfs:label "Powell And Cumming Geothermometry Observation" ;
+	dcdtr:representation <../../class/data-object/powell-and-cumming-geothermometry-result> .
+
+<power-plant-production-observation> a skos:Concept ;
+	rdfs:label "Power Plant Production Observation" ;
+	dcdtr:representation <../../class/data-object/power-plant-production-result> .
+
+<resource-description> a skos:Concept ;
+	rdfs:label "Radiogenic Heat Production Observation" ;
+	dcdtr:representation <../../class/data-object/metadata-instance> .
+
+<radiogenic-heat-production-observation> a skos:Concept ;
+	rdfs:label "Radiogenic Heat Production Observation" ;
+	dcdtr:representation <../../class/data-object/radiogenic-heat-production-result> .
+
+<rock-chemical-composition-observation> a skos:Concept ;
+	rdfs:label "Rock Chemical Composition Observation" ;
+	dcdtr:representation <../../class/data-object/rock-chemistry-result> .
+
+<seismic-event-hypocenter-observation> a skos:Concept ;
+	rdfs:label "Seismic Event Hypocenter Observation" ;
+	dcdtr:representation <../../class/data-object/seismic-event-hypocenter-result> .
+
+<thermal-conductivity-observation> a skos:Concept ;
+	rdfs:label "Thermal Conductivity Observation" ;
+	dcdtr:representation <../../class/data-object/thermal-conductivity-result> .
+
+<thermal-spring> a skos:Concept ;
+	rdfs:label "Thermal Spring" ;
+	dcdtr:representation <../../class/data-object/thermal-spring-occurrence> .
+
+<value> a skos:Concept ;
+	rdfs:label "Value" ;
+	dcdtr:representation <../../class/data-object/reference> , <../../class/data-object/term> .
+
+<volcanic-vent-feature> a skos:Concept ;
+	rdfs:label "Volcanic Vent Feature" ;
+	dcdtr:representation <../../class/data-object/volcanic-vent-occurrence> .
+
+<well-fluid-flux-observation> a skos:Concept ;
+	rdfs:label "Well Fluid Flux Observation" ;
+	dcdtr:representation <../../class/data-object/fluid-flux-injection-and-disposal-result> .
+
+<well-fluid-production-observation> a skos:Concept ;
+	rdfs:label "Well Fluid Production Observation" ;
+	dcdtr:representation <../../class/data-object/well-fluid-production-result> .
+
+<well-header-feature> a skos:Concept ;
+	rdfs:label "Well Header Feature" ;
+	dcdtr:representation <../../class/data-object/well-header-occurrence> .
+
+<well-log-observation> a skos:Concept ;
+	rdfs:label "Well Log Observation" ;
+	dcdtr:representation <../../class/data-object/well-log-result> .
+
+<well-test-observation> a skos:Concept ;
+	rdfs:label "Well Test Observation" ;
+	dcdtr:representation <../../class/data-object/well-test-result> .

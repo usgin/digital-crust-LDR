@@ -47,6 +47,10 @@ echo Uploading Attribute-DataObject Links ...
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/Attribute-DataObject/Attribute-dataObject.ttl" $BASEURI"class/attribute?edit"
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/Attribute-DataObject/DataObject-element.ttl" $BASEURI"class/data-object?edit"
 
+echo Uploading DataObject-ObjectClass Links ...
+curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/DataObject-ObjectClass/DataObject-meaning.ttl" $BASEURI"class/data-object?edit"
+curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/DataObject-ObjectClass/ObjectClass-representation.ttl" $BASEURI"def/object-class?edit"
+
 echo Uploading ObjectClass-Property Links ...
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/ObjectClass-Property/ObjectClass-essentialProperty.ttl" $BASEURI"def/object-class?edit"
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/ObjectClass-Property/Property-domainOfCarriers.ttl" $BASEURI"def/property?edit"
