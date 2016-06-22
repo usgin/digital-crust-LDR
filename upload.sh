@@ -8,7 +8,7 @@
 BASEURI="http://23.23.228.241:32781/" &&
 echo Set BaseURI as $BASEURI
 echo Loging In ...
-curl -b cookie-jar -c cookie-jar -d "userid=admin@usgin.org&password=AdmIn123" $BASEURI"system/security/apilogin" &&
+curl -b cookie-jar -c cookie-jar -d "userid=XXXXXX&password=XXXXXX" $BASEURI"system/security/apilogin" &&
 
 
 # Delete Current Registers
