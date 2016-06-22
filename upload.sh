@@ -7,7 +7,7 @@
 BASEURI="http://23.23.228.241:32781/" &&
 echo Set BaseURI as $BASEURI
 echo Loging In ...
-curl -b cookie-jar -c cookie-jar -d "userid=XXXXXX&password=XXXXXX" $BASEURI"system/security/apilogin" &&
+curl -b cookie-jar -c cookie-jar -d "userid=xxxxxx&password=xxxxxx" $BASEURI"system/security/apilogin" &&
 
 
 # Delete Current Registers
@@ -46,6 +46,10 @@ echo Uploading Links ...
 echo Uploading Attribute-DataObject Links ...
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/Attribute-DataObject/Attribute-dataObject.ttl" $BASEURI"class/attribute?edit"
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/Attribute-DataObject/DataObject-element.ttl" $BASEURI"class/data-object?edit"
+
+echo Uploading Attribute-Property Links ...
+curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/Attribute-Property/Attribute-meaning.ttl" $BASEURI"class/attribute?edit"
+curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/Attribute-Property/Property-representation.ttl" $BASEURI"def/property?edit"
 
 echo Uploading DataObject-ObjectClass Links ...
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/DataObject-ObjectClass/DataObject-meaning.ttl" $BASEURI"class/data-object?edit"

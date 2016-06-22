@@ -1,0 +1,2808 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
+
+
+<abovebelowwatertable> a owl:Class ;
+	rdfs:label "Above Below Water Table" ;
+	dcdtr:meaning <../../def/property/hydrologic-setting> .
+
+<accessconstraint> a owl:Class ;
+	rdfs:label "Access Constraint" ;
+	dcdtr:meaning <../../def/property/resource-use-restriction> .
+
+<additionalsources> a owl:Class ;
+	rdfs:label "Additional Sources" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<ageassignmentbasis> a owl:Class ;
+	rdfs:label "Age Assignment Basis" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<agesource> a owl:Class ;
+	rdfs:label "Age Source" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<ageuncertainty-ma> a owl:Class ;
+	rdfs:label "Age Uncertainty Ma" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<aggregationtype> a owl:Class ;
+	rdfs:label "Aggregation Type" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<analysisdate> a owl:Class ;
+	rdfs:label "Analysis Date" ;
+	dcdtr:meaning <../../def/property/observation-history> .
+
+<analysisdatetime> a owl:Class ;
+	rdfs:label "Analysis Date Time" ;
+	dcdtr:meaning <../../def/property/observation-history> .
+
+<analysisname> a owl:Class ;
+	rdfs:label "Analysis Name" ;
+	dcdtr:meaning <../../def/property/observation-name> .
+
+<analysistype> a owl:Class ;
+	rdfs:label "Analysis Type" ;
+	dcdtr:meaning <../../def/property/observation-type> .
+
+<analysisuri> a owl:Class ;
+	rdfs:label "Analysis URI" ;
+	dcdtr:meaning <../../def/property/observation-identifier> .
+
+<analyte> a owl:Class ;
+	rdfs:label "Analyte" ;
+	dcdtr:meaning <../../def/property/constituent-type> .
+
+<analyticalprocedure> a owl:Class ;
+	rdfs:label "Analytical Procedure" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<apino> a owl:Class ;
+	rdfs:label "API No" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<area-m2> a owl:Class ;
+	rdfs:label "Area m2" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<averagedepthreservoir> a owl:Class ;
+	rdfs:label "Average Depth Reservoir" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<averagefieldwidegradient-degcm> a owl:Class ;
+	rdfs:label "Average Field Wide Gradient degCm" ;
+	dcdtr:meaning <../../def/property/temperature-gradient> .
+
+<averagefieldwidepressure-mpa> a owl:Class ;
+	rdfs:label "Average Field Wide Pressure Mpa" ;
+	dcdtr:meaning <../../def/property/fluid-pressure> .
+
+<averagemonthlywaterproduction-bbl> a owl:Class ;
+	rdfs:label "Average Monthly Water Production bbl" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<averagenettargetrockthickness-m> a owl:Class ;
+	rdfs:label "Average Net Target Rock Thickness m" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<averagenettargetrockthicknessmethodology> a owl:Class ;
+	rdfs:label "Average Net Target Rock Thickness Methodology" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<averagenettargetrockthicknessuncertainty> a owl:Class ;
+	rdfs:label "Average Net Target Rock Thickness Uncertainty" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<averageperforatedthickness-m> a owl:Class ;
+	rdfs:label "Average Perforated Thickness m" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<averageprice-c-kw-h> a owl:Class ;
+	rdfs:label "Average Price cents per kilowatt-hour." ;
+	dcdtr:meaning <../../def/property/price> .
+
+<averagereservoirdepth-m> a owl:Class ;
+	rdfs:label "Average Reservoir Depth m" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<averagereservoirdepthmethodology> a owl:Class ;
+	rdfs:label "Average Reservoir Depth Methodology" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<averagereservoirdepthuncertainty> a owl:Class ;
+	rdfs:label "Average Reservoir Depth Uncertainty" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<averagesurfacetemperature-degc> a owl:Class ;
+	rdfs:label "Average Surface Temperature degC" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<averagesurfacetemperaturesource> a owl:Class ;
+	rdfs:label "Average SurfaceTemperature Source" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<averagetemperaturegeofluid> a owl:Class ;
+	rdfs:label "Average Temperature Geofluid" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<averagethermalconductivity> a owl:Class ;
+	rdfs:label "Average Thermal Conductivity" ;
+	dcdtr:meaning <../../def/property/thermal-conductivity> .
+
+<avethicknessminedeposit-m> a owl:Class ;
+	rdfs:label "Average Thickness Mine Deposit m" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<averechargerategrndwtrvol-m3yr> a owl:Class ;
+	rdfs:label "Average Volumetric Groundwater Recharge Rate  m^3/yr" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<basestationname> a owl:Class ;
+	rdfs:label "Base Station Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<bht> a owl:Class ;
+	rdfs:label "BHT" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<bhtcorrectedvalue> a owl:Class ;
+	rdfs:label "BHT Corrected Value" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<bhtcorrectiontype> a owl:Class ;
+	rdfs:label "BHT Correction Type" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<bitdiametercollar> a owl:Class ;
+	rdfs:label "Bit Diameter at Collar" ;
+	dcdtr:meaning <../../def/property/feature-extent> .
+
+<bitdiametertd> a owl:Class ;
+	rdfs:label "Bit Diameter at TD" ;
+	dcdtr:meaning <../../def/property/feature-extent> .
+
+<blockvolume-m3> a owl:Class ;
+	rdfs:label "Block Volume m3" ;
+	dcdtr:meaning <../../def/property/volume> .
+
+<bhintercepturi> a owl:Class ;
+	rdfs:label "Borehole Intercept URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<bhintervaluri> a owl:Class ;
+	rdfs:label "Borehole Interval URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<boreholename> a owl:Class ;
+	rdfs:label "Borehole Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<bottomloggedinterval-ft> a owl:Class ;
+	rdfs:label "Bottom Logged Interval ft" ;
+	dcdtr:meaning <../../def/property/coverage-domain-bound> .
+
+<bouguercorrection-mgal> a owl:Class ;
+	rdfs:label "Bouguer Correction mgal" ;
+	dcdtr:meaning <../../def/property/gravity-observation-correction> .
+
+<bulkmixingformula> a owl:Class ;
+	rdfs:label "Bulk Mixing Formula" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<capacity-mw> a owl:Class ;
+	rdfs:label "Capacity MW" ;
+	dcdtr:meaning <../../def/property/power-production-capacity> .
+
+<capacityprocedure> a owl:Class ;
+	rdfs:label "Capacity Procedure" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<capacityunits> a owl:Class ;
+	rdfs:label "Capacity Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<casingbottomdepthdriller> a owl:Class ;
+	rdfs:label "Casing Bottom Depth Driller" ;
+	dcdtr:meaning <../../def/property/borehole-casing-extent> .
+
+<casingdepth-ft> a owl:Class ;
+	rdfs:label "Casing Depth ft" ;
+	dcdtr:meaning <../../def/property/borehole-casing-extent> .
+
+<casingdiameter-in> a owl:Class ;
+	rdfs:label "Casing Diameter in" ;
+	dcdtr:meaning <../../def/property/borehole-casing-extent> .
+
+<casinglogger> a owl:Class ;
+	rdfs:label "Casing Logger" ;
+	dcdtr:meaning <../../def/property/borehole-casing-extent> .
+
+<casingpipediameter> a owl:Class ;
+	rdfs:label "Casing Pipe Diameter" ;
+	dcdtr:meaning <../../def/property/borehole-casing-extent> .
+
+<casingthickness> a owl:Class ;
+	rdfs:label "Casing Thickness" ;
+	dcdtr:meaning <../../def/property/borehole-casing-thickness> .
+
+<casingtopdepth> a owl:Class ;
+	rdfs:label "Casing Top Depth" ;
+	dcdtr:meaning <../../def/property/borehole-casing-extent> .
+
+<casingtype> a owl:Class ;
+	rdfs:label "Casing Type" ;
+	dcdtr:meaning <../../def/property/material-type> .
+
+<casingweight> a owl:Class ;
+	rdfs:label "Casing Weight" ;
+	dcdtr:meaning <../../def/property/borehole-casing-weight> .
+
+<casingweightunits> a owl:Class ;
+	rdfs:label "Casing Weight Units" ;
+	dcdtr:meaning <../../def/property/borehole-casing-weight-uom> .
+
+<catalogsourcecode> a owl:Class ;
+	rdfs:label "Catalog Source Code" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<cementationfactor> a owl:Class ;
+	rdfs:label "Cementation factor" ;
+	dcdtr:meaning <../../def/property/cementation-factor> .
+
+<cementationmineralogy> a owl:Class ;
+	rdfs:label "Cementation Mineralogy" ;
+	dcdtr:meaning <../../def/property/sedimentary-rock-cement> .
+
+<circulationduration> a owl:Class ;
+	rdfs:label "Circulation Duration" ;
+	dcdtr:meaning <../../def/property/duration> .
+
+<citation> a owl:Class ;
+	rdfs:label "Citation" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<classification> a owl:Class ;
+	rdfs:label "Classification" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<collectionactivityname> a owl:Class ;
+	rdfs:label "Collection Activity Name" ;
+	dcdtr:meaning <../../def/property/event-name> .
+
+<collectionactivityuri> a owl:Class ;
+	rdfs:label "Collection Activity URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<collectionmethod> a owl:Class ;
+	rdfs:label "Collection Method" ;
+	dcdtr:meaning <../../def/property/procedure-name> .
+
+<collectionpurpose> a owl:Class ;
+	rdfs:label "Collection Purpose" ;
+	dcdtr:meaning <../../def/property/purpose> .
+
+<commodityofinterest> a owl:Class ;
+	rdfs:label "Commodity Of Interest" ;
+	dcdtr:meaning <../../def/property/substance-of-interest> .
+
+<completebouguervalue-mgal> a owl:Class ;
+	rdfs:label "Complete Bouguer Value mgal" ;
+	dcdtr:meaning <../../def/property/acceleration-of-gravity> .
+
+<conductivitymeasureduri> a owl:Class ;
+	rdfs:label "Conductivity Measured URI" ;
+	dcdtr:meaning <../../def/property/observation-identifier> .
+
+<conductivitynumsamples> a owl:Class ;
+	rdfs:label "Conductivity Num Samples" ;
+	dcdtr:meaning <../../def/property/measurement-count> .
+
+<conductivitysampletype> a owl:Class ;
+	rdfs:label "Conductivity Sample Type" ;
+	dcdtr:meaning <../../def/property/sample-type> .
+
+<contactemailaddress> a owl:Class ;
+	rdfs:label "Contact Email Address" ;
+	dcdtr:meaning <../../def/property/e-mail-address> .
+
+<contact> a owl:Class ;
+	rdfs:label "Contact Information Text" ;
+	dcdtr:meaning <../../def/property/contact-information> .
+
+<contactintervalbottom> a owl:Class ;
+	rdfs:label "Contact Interval Bottom" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<contactintervaltop> a owl:Class ;
+	rdfs:label "Contact Interval Top" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<contactname> a owl:Class ;
+	rdfs:label "Contact Name" ;
+	dcdtr:meaning <../../def/property/contact-information> .
+
+<contactphone> a owl:Class ;
+	rdfs:label "Contact Phone" ;
+	dcdtr:meaning <../../def/property/telephone-number> .
+
+<contourtype> a owl:Class ;
+	rdfs:label "contourType" ;
+	dcdtr:meaning <../../def/property/variable-type> .
+
+<contourtype-uri> a owl:Class ;
+	rdfs:label "contour Type uri" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<contoururi> a owl:Class ;
+	rdfs:label "contour URI" ;
+	dcdtr:meaning <../../def/property/contour-identifier> .
+
+<contourvalue> a owl:Class ;
+	rdfs:label "contour Value" ;
+	dcdtr:meaning <../../def/property/value> .
+
+<correctedtemperature> a owl:Class ;
+	rdfs:label "Corrected Temperature" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<correctiondescription> a owl:Class ;
+	rdfs:label "Correction Description" ;
+	dcdtr:meaning <../../def/property/procedure-description> .
+
+<correctiontc> a owl:Class ;
+	rdfs:label "Correction TC" ;
+	dcdtr:meaning <../../def/property/thermal-conductivity-correction> .
+
+<correctiontype> a owl:Class ;
+	rdfs:label "Correction Type" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<county> a owl:Class ;
+	rdfs:label "County" ;
+	dcdtr:meaning <../../def/property/location-name> .
+
+<crosssectionarea-m2> a owl:Class ;
+	rdfs:label "Cross Section Area m2" ;
+	dcdtr:meaning <../../def/property/recharge-extent> .
+
+<crosssectionareaprocedure> a owl:Class ;
+	rdfs:label "Cross Section Area Procedure" ;
+	dcdtr:meaning <../../def/property/procedure-description> .
+
+<curatoruri> a owl:Class ;
+	rdfs:label "Curator URI" ;
+	dcdtr:meaning <../../def/property/agent-identifier> .
+
+<currentcurationlocation> a owl:Class ;
+	rdfs:label "Current Curation Location" ;
+	dcdtr:meaning <../../def/property/curation-location> .
+
+<dataentrysource> a owl:Class ;
+	rdfs:label "Data Entry Source" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<datecollected> a owl:Class ;
+	rdfs:label "Date Collected" ;
+	dcdtr:meaning <../../def/property/resource-history> .
+
+<dateinstalled> a owl:Class ;
+	rdfs:label "Date Installed" ;
+	dcdtr:meaning <../../def/property/resource-history> .
+
+<datemostrecentevent> a owl:Class ;
+	rdfs:label "Date Most Recent Event" ;
+	dcdtr:meaning <../../def/property/feature-history> .
+
+<datetimelogrun> a owl:Class ;
+	rdfs:label "Date Time Log Run" ;
+	dcdtr:meaning <../../def/property/resource-history> .
+
+<datumelevation> a owl:Class ;
+	rdfs:label "Datum Elevation" ;
+	dcdtr:meaning <../../def/property/vertical-datum> .
+
+<datumelevation-m> a owl:Class ;
+	rdfs:label "Datum Elevation meters" ;
+	dcdtr:meaning <../../def/property/vertical-datum> .
+
+<density> a owl:Class ;
+	rdfs:label "Density" ;
+	dcdtr:meaning <../../def/property/density> .
+
+<depth> a owl:Class ;
+	rdfs:label "Depth" ;
+	dcdtr:meaning <../../def/property/feature-extent> .
+
+<depthbottominterval> a owl:Class ;
+	rdfs:label "Depth" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<depthbottominterval-ft> a owl:Class ;
+	rdfs:label "Depth Bottom Interval ft" ;
+	dcdtr:meaning <../../def/property/coverage-domain-bound> .
+
+<depthbottomopenzone> a owl:Class ;
+	rdfs:label "Depth Bottom Open Zone" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<depth-ft> a owl:Class ;
+	rdfs:label "Depth Determination Method" ;
+	dcdtr:meaning <../../def/property/feature-extent> .
+
+<depthdeterminationmethod> a owl:Class ;
+	rdfs:label "Depth Determination Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<depthofmeasurement> a owl:Class ;
+	rdfs:label "Depth Of Measurement" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<depthofmine-km> a owl:Class ;
+	rdfs:label "Depth Of Mine km" ;
+	dcdtr:meaning <../../def/property/feature-extent> .
+
+<depthreferencepoint> a owl:Class ;
+	rdfs:label "Depth Reference Point" ;
+	dcdtr:meaning <../../def/property/datum-type> .
+
+<depthtobottom-m> a owl:Class ;
+	rdfs:label "Depth To Bottom m" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<depthtopinterval> a owl:Class ;
+	rdfs:label "Depth Top Interval" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<depthtopinterval-ft> a owl:Class ;
+	rdfs:label "Depth Top Interval ft" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<depthtopopenzone> a owl:Class ;
+	rdfs:label "Depth Top Open Zone" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<depthtotop-m> a owl:Class ;
+	rdfs:label "Depth To Top m" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<depthtowater-ft> a owl:Class ;
+	rdfs:label "Depth To Water ft" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<depthuncertainty> a owl:Class ;
+	rdfs:label "Depth Uncertainty" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<depthunits> a owl:Class ;
+	rdfs:label "Depth Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<description> a owl:Class ;
+	rdfs:label "Description" ;
+	dcdtr:meaning <../../def/property/feature-description> .
+
+<detectionlimituri> a owl:Class ;
+	rdfs:label "Detection Limit URI" ;
+	dcdtr:meaning <../../def/property/analytical-procedure-metadata> .
+
+<developmentarea> a owl:Class ;
+	rdfs:label "Development Area" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<diameterunits> a owl:Class ;
+	rdfs:label "Diameter Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<dipdirection> a owl:Class ;
+	rdfs:label "Dip Direction" ;
+	dcdtr:meaning <../../def/property/geospatial-orientation> .
+
+<discharge> a owl:Class ;
+	rdfs:label "Discharge" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<dischargethickness-m> a owl:Class ;
+	rdfs:label "Discharge Thickness m" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<dischargeunits> a owl:Class ;
+	rdfs:label "Discharge Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<displacement> a owl:Class ;
+	rdfs:label "Displacement" ;
+	dcdtr:meaning <../../def/property/area> .
+
+<displayname> a owl:Class ;
+	rdfs:label "Display Name" ;
+	dcdtr:meaning <../../def/property/name> .
+
+<dominantformationname> a owl:Class ;
+	rdfs:label "Dominant Formation Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<drilleddepth-ft> a owl:Class ;
+	rdfs:label "Drilled Depth ft" ;
+	dcdtr:meaning <../../def/property/feature-extent> .
+
+<driller> a owl:Class ;
+	rdfs:label "Driller" ;
+	dcdtr:meaning <../../def/property/resource-responsible-party> .
+
+<drillertotaldepth> a owl:Class ;
+	rdfs:label "Driller Total Depth" ;
+	dcdtr:meaning <../../def/property/feature-extent> .
+
+<drillertotaldepth-ft> a owl:Class ;
+	rdfs:label "Driller Total Depth ft" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<drillingfluid> a owl:Class ;
+	rdfs:label "Drilling Fluid" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<drillingmethod> a owl:Class ;
+	rdfs:label "Drilling Method" ;
+	dcdtr:meaning <../../def/property/drilling-method> .
+
+<drillpipeinternaldiameter-in> a owl:Class ;
+	rdfs:label "Drill Pipe Internal Diameter in" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<drillpipelength> a owl:Class ;
+	rdfs:label "Drill Pipe Length" ;
+	dcdtr:meaning <../../def/property/pipe-extent-> .
+
+<drive> a owl:Class ;
+	rdfs:label "Drive" ;
+	dcdtr:meaning <../../def/property/process-type> .
+
+<drysampleconductivity> a owl:Class ;
+	rdfs:label "Dry Sample Conductivity" ;
+	dcdtr:meaning <../../def/property/thermal-conductivity> .
+
+<durationdays> a owl:Class ;
+	rdfs:label "Duration Days" ;
+	dcdtr:meaning <../../def/property/duration> .
+
+<effectivecrosssectionarea-m2> a owl:Class ;
+	rdfs:label "Effective Cross Section Area m2" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<effectiveporosity> a owl:Class ;
+	rdfs:label "Effective Porosity" ;
+	dcdtr:meaning <../../def/property/porosity> .
+
+<effectivevolume-m3> a owl:Class ;
+	rdfs:label "Effective Volume m3" ;
+	dcdtr:meaning <../../def/property/volume> .
+
+<elevation> a owl:Class ;
+	rdfs:label "Elevation" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<elevationbottomopenzone-msl> a owl:Class ;
+	rdfs:label "Elevation" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<elevationdatum> a owl:Class ;
+	rdfs:label "Elevation" ;
+	dcdtr:meaning <../../def/property/vertical-datum> .
+
+<elevationdatum-m> a owl:Class ;
+	rdfs:label "Elevation Datum meters" ;
+	dcdtr:meaning <../../def/property/vertical-datum> .
+
+<elevation-ft-msl> a owl:Class ;
+	rdfs:label "Elevation DF" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<elevationdf> a owl:Class ;
+	rdfs:label "Elevation DF" ;
+	dcdtr:meaning <../../def/property/borehole-collar-elevation> .
+
+<elevationgl> a owl:Class ;
+	rdfs:label "Elevation GL" ;
+	dcdtr:meaning <../../def/property/borehole-collar-elevation> .
+
+<elevationgl-ft> a owl:Class ;
+	rdfs:label "Elevation  Ground Level feet" ;
+	dcdtr:meaning <../../def/property/borehole-collar-elevation> .
+
+<elevationgl-m> a owl:Class ;
+	rdfs:label "Elevation Ground Level meters" ;
+	dcdtr:meaning <../../def/property/borehole-collar-elevation> .
+
+<elevation-m> a owl:Class ;
+	rdfs:label "Elevation KB" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<elevationkb> a owl:Class ;
+	rdfs:label "Elevation KB" ;
+	dcdtr:meaning <../../def/property/borehole-collar-elevation> .
+
+<elevationtopopenzone-msl> a owl:Class ;
+	rdfs:label "Elevation Top Open Zone msl" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<elevationtype> a owl:Class ;
+	rdfs:label "Elevation Type" ;
+	dcdtr:meaning <../../def/property/datum-type> .
+
+<elevationunits> a owl:Class ;
+	rdfs:label "Elevation Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<elevationuom> a owl:Class ;
+	rdfs:label "Elevation Units of Measure" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<emailaddress> a owl:Class ;
+	rdfs:label "Email Address" ;
+	dcdtr:meaning <../../def/property/e-mail-address> .
+
+<endeddrillingdate> a owl:Class ;
+	rdfs:label "Ended Drilling Date" ;
+	dcdtr:meaning <../../def/property/feature-history> .
+
+<endedminingdate> a owl:Class ;
+	rdfs:label "Ended Mining Date" ;
+	dcdtr:meaning <../../def/property/feature-history> .
+
+<endreportinterval> a owl:Class ;
+	rdfs:label "End Report Interval" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<energyuse> a owl:Class ;
+	rdfs:label "Energy Use" ;
+	dcdtr:meaning <../../def/property/energy> .
+
+<energyuseprocedure> a owl:Class ;
+	rdfs:label "Energy Use Procedure" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<energyuseunits> a owl:Class ;
+	rdfs:label "Energy Use Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<eqlog-measurementdate> a owl:Class ;
+	rdfs:label "Eq Log Measurement Date" ;
+	dcdtr:meaning <../../def/property/feature-history> .
+
+<eqlogtemperaturebottom> a owl:Class ;
+	rdfs:label "Eq Log Measurement Date" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<eqlogtemperaturemax> a owl:Class ;
+	rdfs:label "Eq Log Temperature Max" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<eqlog-totaldepth> a owl:Class ;
+	rdfs:label "Eq Log Temperature Top" ;
+	dcdtr:meaning <../../def/property/vertical-extent> .
+
+<eqlogtemperaturetop> a owl:Class ;
+	rdfs:label "Eq Log Temperature Top" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<equilibriumpressure> a owl:Class ;
+	rdfs:label "Equilibrium Pressure" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<equilibriumpressuremethod> a owl:Class ;
+	rdfs:label "Equilibrium Pressure Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<estairtemp-c> a owl:Class ;
+	rdfs:label "Est Air Temp Centigrade" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<estimatedreservoirvolume> a owl:Class ;
+	rdfs:label "Estimated Reservoir Volume" ;
+	dcdtr:meaning <../../def/property/volume> .
+
+<estminewtrtemp-c> a owl:Class ;
+	rdfs:label "Est Mine Water Temperature Centigrade" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<eventname> a owl:Class ;
+	rdfs:label "Event Name" ;
+	dcdtr:meaning <../../def/property/event-name> .
+
+<eventtype> a owl:Class ;
+	rdfs:label "Event Type" ;
+	dcdtr:meaning <../../def/property/event-type> .
+
+<eventtypeterm> a owl:Class ;
+	rdfs:label "Event Type Term" ;
+	dcdtr:meaning <../../def/property/event-type> .
+
+<eventuri> a owl:Class ;
+	rdfs:label "Event URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<facilityname> a owl:Class ;
+	rdfs:label "Facility Name" ;
+	dcdtr:meaning <../../def/property/facility-name> .
+
+<facilityowner> a owl:Class ;
+	rdfs:label "Facility Owner" ;
+	dcdtr:meaning <../../def/property/resource-owner> .
+
+<facilitypostaladdress> a owl:Class ;
+	rdfs:label "Facility Postal Address" ;
+	dcdtr:meaning <../../def/property/postal-address> .
+
+<facilitypostalzipcode> a owl:Class ;
+	rdfs:label "Facility Postal Zipcode" ;
+	dcdtr:meaning <../../def/property/zip-code> .
+
+<facilitystatus> a owl:Class ;
+	rdfs:label "Facility Status" ;
+	dcdtr:meaning <../../def/property/resource-state> .
+
+<facilitytype> a owl:Class ;
+	rdfs:label "Facility Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<facilityuri> a owl:Class ;
+	rdfs:label "Facility URI" ;
+	dcdtr:meaning <../../def/property/self-identifier> .
+
+<faultcount> a owl:Class ;
+	rdfs:label "Fault Count" ;
+	dcdtr:meaning <../../def/property/fault-count> .
+
+<faulted> a owl:Class ;
+	rdfs:label "Faulted" ;
+	dcdtr:meaning <../../def/property/fault-boundary> .
+
+<faulthydrauliccharacter> a owl:Class ;
+	rdfs:label "Fault Hydraulic Character" ;
+	dcdtr:meaning <../../def/property/hydraulic-conductivity> .
+
+<faulttype> a owl:Class ;
+	rdfs:label "Fault Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<featureofinteresturi> a owl:Class ;
+	rdfs:label "Feature Of Interest URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<featuretype> a owl:Class ;
+	rdfs:label "Feature Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<featureuri> a owl:Class ;
+	rdfs:label "Feature URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<field> a owl:Class ;
+	rdfs:label "Field" ;
+	dcdtr:meaning <../../def/property/fiat-geographic-area> .
+
+<fieldname> a owl:Class ;
+	rdfs:label "Field Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<firstproductiondate> a owl:Class ;
+	rdfs:label "First Production Date" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<flow> a owl:Class ;
+	rdfs:label "Flow" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<flowcontinuity> a owl:Class ;
+	rdfs:label "Flow Continuity" ;
+	dcdtr:meaning <../../def/property/flow-continuity> .
+
+<flowgpm> a owl:Class ;
+	rdfs:label "Flow gpm" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<flowhistory> a owl:Class ;
+	rdfs:label "Flow History" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<flowmeasurementdatetime> a owl:Class ;
+	rdfs:label "Flow Measurement Date Time" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<flowmeasurementprocedure> a owl:Class ;
+	rdfs:label "Flow Measurement Procedure" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<flowpressuremax> a owl:Class ;
+	rdfs:label "Flow Pressure Max" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<flowpressuremethod> a owl:Class ;
+	rdfs:label "Flow Pressure Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<flowpressuremin> a owl:Class ;
+	rdfs:label "Flow Pressure Min" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<flowtype> a owl:Class ;
+	rdfs:label "FlowType" ;
+	dcdtr:meaning <../../def/property/eruptive-style-type> .
+
+<flowunits> a owl:Class ;
+	rdfs:label "Flow Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<fluidlevel> a owl:Class ;
+	rdfs:label "Fluid Level" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<fluidloss> a owl:Class ;
+	rdfs:label "Fluid Loss" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<fluidtemperature-c> a owl:Class ;
+	rdfs:label "Fluid Temperature C" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<fluidtemperaturec> a owl:Class ;
+	rdfs:label "Fluid Temperature C" ;
+	dcdtr:meaning <../../def/property/fluid-temperature> .
+
+<fluidtype> a owl:Class ;
+	rdfs:label "Fluid Type" ;
+	dcdtr:meaning <../../def/property/material-type> .
+
+<fluidvolume> a owl:Class ;
+	rdfs:label "Fluid Volume" ;
+	dcdtr:meaning <../../def/property/volume> .
+
+<fluidvolumeunits> a owl:Class ;
+	rdfs:label "Fluid Volume Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<formationfactor> a owl:Class ;
+	rdfs:label "Formation Factor" ;
+	dcdtr:meaning <../../def/property/pore-geometry-characteristics> .
+
+<formationname> a owl:Class ;
+	rdfs:label "Formation Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<formationtd> a owl:Class ;
+	rdfs:label "Formation TD" ;
+	dcdtr:meaning <../../def/property/feature-of-interest> .
+
+<formationtemperature> a owl:Class ;
+	rdfs:label "Formation Temperature" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<freeaircorrection-mgal> a owl:Class ;
+	rdfs:label "Free Air Correction mgal" ;
+	dcdtr:meaning <../../def/property/correction> .
+
+<fullname> a owl:Class ;
+	rdfs:label "Full Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<function> a owl:Class ;
+	rdfs:label "Function" ;
+	dcdtr:meaning <../../def/property/functional-characterization> .
+
+<genericsymbolizer> a owl:Class ;
+	rdfs:label "Generic Symbolizer" ;
+	dcdtr:meaning <../../def/property/representation> .
+
+<geographicposition> a owl:Class ;
+	rdfs:label "Geographic Position" ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
+<geologicage> a owl:Class ;
+	rdfs:label "Geologic Age" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<geologicformation> a owl:Class ;
+	rdfs:label "Geologic Formation" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<geologicformationname> a owl:Class ;
+	rdfs:label "Geologic Formation Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<geologicformationtype> a owl:Class ;
+	rdfs:label "Geologic Formation Type" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<geologicformationuri> a owl:Class ;
+	rdfs:label "Geologic Formation URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<geologichistory> a owl:Class ;
+	rdfs:label "Geologic History" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<geologicsetting> a owl:Class ;
+	rdfs:label "Geologic Setting" ;
+	dcdtr:meaning <../../def/property/notional-location> .
+
+<geologicunit> a owl:Class ;
+	rdfs:label "Geologic Unit" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<geologicunitname> a owl:Class ;
+	rdfs:label "Geologic Unit Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<geothermalareauri> a owl:Class ;
+	rdfs:label "Geothermal Area URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<geothermtempcharacterization> a owl:Class ;
+	rdfs:label "Geotherm Temp Characterization" ;
+	dcdtr:meaning <../../def/property/geothermal-resource-type> .
+
+<gradientunits> a owl:Class ;
+	rdfs:label "Gradient Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<grossproduction-mwhr> a owl:Class ;
+	rdfs:label "Gross Production Capacity" ;
+	dcdtr:meaning <../../def/property/power-production-capacity> .
+
+<grossproductioncapacity> a owl:Class ;
+	rdfs:label "Gross Production Capacity" ;
+	dcdtr:meaning <../../def/property/power-production-capacity> .
+
+<groundwaterflowdirection> a owl:Class ;
+	rdfs:label "Groundwater Flow Direction" ;
+	dcdtr:meaning <../../def/property/flow-direction> .
+
+<gtepicenterquality> a owl:Class ;
+	rdfs:label "GTE picenter Quality" ;
+	dcdtr:meaning <../../def/property/location-uncertainty> .
+
+<gtqualitysupportdata> a owl:Class ;
+	rdfs:label "GT Quality Support Data" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<gwdischargedistance-m> a owl:Class ;
+	rdfs:label "GW Discharge Distance m" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<headeruri> a owl:Class ;
+	rdfs:label "Header URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<heatapplication> a owl:Class ;
+	rdfs:label "Heat Application" ;
+	dcdtr:meaning <../../def/property/usage> .
+
+<heatexchangesystem> a owl:Class ;
+	rdfs:label "Heat Exchange System" ;
+	dcdtr:meaning <../../def/property/material-type> .
+
+<heatflowtype> a owl:Class ;
+	rdfs:label "Heat Flow Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<heatflowunits> a owl:Class ;
+	rdfs:label "Heat Flow Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<heatgeneration> a owl:Class ;
+	rdfs:label "Heat Generation" ;
+	dcdtr:meaning <../../def/property/heat-production> .
+
+<heatgenerationunits> a owl:Class ;
+	rdfs:label "Heat Generation Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<capacity> a owl:Class ;
+	rdfs:label "Heat production capacity" ;
+	dcdtr:meaning <../../def/property/heat-production> .
+
+<heatproduction-mwm3> a owl:Class ;
+	rdfs:label "Heat Production mW/m3" ;
+	dcdtr:meaning <../../def/property/heat-production> .
+
+<heatproductionuncertainty> a owl:Class ;
+	rdfs:label "Heat Production Uncertainty" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<hf-qualitystatisticsmethod> a owl:Class ;
+	rdfs:label "HF Quality Statistics Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<hg-numbersamples> a owl:Class ;
+	rdfs:label "HG NumberSamples" ;
+	dcdtr:meaning <../../def/property/measurement-count> .
+
+<holediameter-in> a owl:Class ;
+	rdfs:label "Hole Diameter in" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<horizontalconductivity-ft-day> a owl:Class ;
+	rdfs:label "Horizontal Conductivity ft day" ;
+	dcdtr:meaning <../../def/property/hydraulic-conductivity> .
+
+<hucode> a owl:Class ;
+	rdfs:label "HU Code" ;
+	dcdtr:meaning <../../def/property/fiat-geographic-area> .
+
+<hvac-specs> a owl:Class ;
+	rdfs:label "HVAC specifications" ;
+	dcdtr:meaning <../../def/property/information> .
+
+<hydraulicconductivityft-day> a owl:Class ;
+	rdfs:label "Hydraulic conductivity ft/day" ;
+	dcdtr:meaning <../../def/property/hydraulic-conductivity> .
+
+<hydraulicconductivitym-sec> a owl:Class ;
+	rdfs:label "Hydraulic conductivity m/sec" ;
+	dcdtr:meaning <../../def/property/hydraulic-conductivity> .
+
+<hydronarrative> a owl:Class ;
+	rdfs:label "Hydro Narrative" ;
+	dcdtr:meaning <../../def/property/information> .
+
+<hydrostaticpressure> a owl:Class ;
+	rdfs:label "Hydrostatic Pressure" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<hydrostaticpressuremethod> a owl:Class ;
+	rdfs:label "Hydrostatic Pressure Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<hypocenteruri> a owl:Class ;
+	rdfs:label "Hypocenter URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<informationsource> a owl:Class ;
+	rdfs:label "Information Source" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<injectionordisposal> a owl:Class ;
+	rdfs:label "Injection Or Disposal" ;
+	dcdtr:meaning <../../def/property/purpose> .
+
+<instrument> a owl:Class ;
+	rdfs:label "Instrument" ;
+	dcdtr:meaning <../../def/property/instrument-name> .
+
+<interceptdepth> a owl:Class ;
+	rdfs:label "Intercept Depth" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<interceptname> a owl:Class ;
+	rdfs:label "Intercept Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<intercepttype> a owl:Class ;
+	rdfs:label "Intercept Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<intervalbottomdepth> a owl:Class ;
+	rdfs:label "Interval Bottom Depth" ;
+	dcdtr:meaning <../../def/property/coverage-domain-bound> .
+
+<intervalcorrectedgradient> a owl:Class ;
+	rdfs:label "Interval Corrected Gradient" ;
+	dcdtr:meaning <../../def/property/temperature-gradient> .
+
+<intervalcorrectedgradientmethod> a owl:Class ;
+	rdfs:label "Interval Corrected Gradient Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<intervalcorrectedheatflow> a owl:Class ;
+	rdfs:label "Interval Corrected Heat Flow" ;
+	dcdtr:meaning <../../def/property/heat-flow> .
+
+<intervalenddatetime> a owl:Class ;
+	rdfs:label "Interval End Date Time" ;
+	dcdtr:meaning <../../def/property/feature-history> .
+
+<intervalhf-qualitycode> a owl:Class ;
+	rdfs:label "Interval HF Quality Code" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<intervalname> a owl:Class ;
+	rdfs:label "Interval Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<intervals> a owl:Class ;
+	rdfs:label "Intervals" ;
+	dcdtr:meaning <../../def/property/measurement-count> .
+
+<intervalsincemovement> a owl:Class ;
+	rdfs:label "Interval Since Movement" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<intervalstartdatetime> a owl:Class ;
+	rdfs:label "Interval Start Date Time" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<intervalthermalconductivity> a owl:Class ;
+	rdfs:label "Interval Thermal Conductivity" ;
+	dcdtr:meaning <../../def/property/thermal-conductivity> .
+
+<intervaltopdepth> a owl:Class ;
+	rdfs:label "Interval Top Depth" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<intervaltype> a owl:Class ;
+	rdfs:label "Interval Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<intervaluncorrectedgradient> a owl:Class ;
+	rdfs:label "Interval Uncorrected Gradient" ;
+	dcdtr:meaning <../../def/property/temperature-gradient> .
+
+<intervaluncorrectedheatflow> a owl:Class ;
+	rdfs:label "Interval Uncorrected Heat Flow" ;
+	dcdtr:meaning <../../def/property/heat-flow> .
+
+<isolinerangemax> a owl:Class ;
+	rdfs:label "Isoline Range Max" ;
+	dcdtr:meaning <Table+for+now> .
+
+<isolinerangemin> a owl:Class ;
+	rdfs:label "Isoline Range Min" ;
+	dcdtr:meaning <Table+for+now> .
+
+<isolinetypeandunits> a owl:Class ;
+	rdfs:label "Isoline Type And Units" ;
+	dcdtr:meaning <../../def/property/variable-type> .
+
+<isostaticcorrection-mgal> a owl:Class ;
+	rdfs:label "Isostatic Correction mgal" ;
+	dcdtr:meaning <../../def/property/correction> .
+
+<keywords> a owl:Class ;
+	rdfs:label "Keywords" ;
+	dcdtr:meaning <../../def/property/index-term> .
+
+<label> a owl:Class ;
+	rdfs:label "Label" ;
+	dcdtr:meaning <../../def/property/designation> .
+
+<laboratorycontact> a owl:Class ;
+	rdfs:label "Laboratory Contact" ;
+	dcdtr:meaning <../../def/property/contact-information> .
+
+<laboratoryuri> a owl:Class ;
+	rdfs:label "Laboratory URI" ;
+	dcdtr:meaning <../../def/property/observation-identifier> .
+
+<landleaseowner> a owl:Class ;
+	rdfs:label "Land Lease Owner" ;
+	dcdtr:meaning <../../def/property/resource-owner> .
+
+<landowner> a owl:Class ;
+	rdfs:label "Land Owner" ;
+	dcdtr:meaning <../../def/property/resource-owner> .
+
+<lasfileurl> a owl:Class ;
+	rdfs:label "LASFileURL" ;
+	dcdtr:meaning <../../def/property/access-link> .
+
+<lastproductiondate> a owl:Class ;
+	rdfs:label "Last Production Date" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<latcentroid> a owl:Class ;
+	rdfs:label "Lat Centroid" ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
+<latdegreewgs84> a owl:Class ;
+	rdfs:label "Lat Degree WGS84" ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
+<latitudecorrection-mgal> a owl:Class ;
+	rdfs:label "Latitude Correction mgal" ;
+	dcdtr:meaning <../../def/property/correction> .
+
+<latitudedegrees> a owl:Class ;
+	rdfs:label "Latitude Degrees" ;
+	dcdtr:meaning <../../def/property/latitude> .
+
+<leasename> a owl:Class ;
+	rdfs:label "Lease Name" ;
+	dcdtr:meaning <../../def/property/fiat-geographic-area> .
+
+<leaseno> a owl:Class ;
+	rdfs:label "Lease No" ;
+	dcdtr:meaning <../../def/property/local-identifier> .
+
+<leaseowner> a owl:Class ;
+	rdfs:label "Lease Owner" ;
+	dcdtr:meaning <../../def/property/resource-owner> .
+
+<length-m> a owl:Class ;
+	rdfs:label "Length m" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<lengthunits> a owl:Class ;
+	rdfs:label "Length Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<lithology> a owl:Class ;
+	rdfs:label "Lithology" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<lithologydescription> a owl:Class ;
+	rdfs:label "Lithology Description" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<lithologyinformation> a owl:Class ;
+	rdfs:label "Lithology Information" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<lithologyterm> a owl:Class ;
+	rdfs:label "Lithology Term" ;
+	dcdtr:meaning <../../def/property/lithology-type> .
+
+<lithologyterms> a owl:Class ;
+	rdfs:label "Lithology Terms" ;
+	dcdtr:meaning <../../def/property/lithology-type> .
+
+<loadfactor> a owl:Class ;
+	rdfs:label "Load Factor" ;
+	dcdtr:meaning <../../def/property/energy> .
+
+<localityterms> a owl:Class ;
+	rdfs:label "Locality Terms" ;
+	dcdtr:meaning <../../def/property/location> .
+
+<locationdescription> a owl:Class ;
+	rdfs:label "Location Description" ;
+	dcdtr:meaning <../../def/property/location> .
+
+<locationkeyword> a owl:Class ;
+	rdfs:label "Location Keyword" ;
+	dcdtr:meaning <../../def/property/location-name> .
+
+<locationname> a owl:Class ;
+	rdfs:label "Location Name" ;
+	dcdtr:meaning <../../def/property/location> .
+
+<locationuncertaintycode> a owl:Class ;
+	rdfs:label "Location Uncertainty Code" ;
+	dcdtr:meaning <../../def/property/location-uncertainty> .
+
+<locationuncertaintyradius> a owl:Class ;
+	rdfs:label "Location Uncertainty Radius" ;
+	dcdtr:meaning <../../def/property/location-uncertainty> .
+
+<locationuncertaintystatement> a owl:Class ;
+	rdfs:label "Location Uncertainty Statement" ;
+	dcdtr:meaning <../../def/property/location-uncertainty> .
+
+<logtypename> a owl:Class ;
+	rdfs:label "Log Type Name" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<logtypeterm> a owl:Class ;
+	rdfs:label "Log Type Term" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<loguri> a owl:Class ;
+	rdfs:label "Log URI" ;
+	dcdtr:meaning <../../def/property/identifier> .
+
+<longcentroid> a owl:Class ;
+	rdfs:label "Long Centroid" ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
+<longdegreewgs84> a owl:Class ;
+	rdfs:label "Long Degree WGS84" ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
+<longitudedegree> a owl:Class ;
+	rdfs:label "Longitude Degree" ;
+	dcdtr:meaning <../../def/property/longitude> .
+
+<magnitude> a owl:Class ;
+	rdfs:label "Magnitude" ;
+	dcdtr:meaning <../../def/property/seismic-magnitude> .
+
+<magnitudetype> a owl:Class ;
+	rdfs:label "Magnitude Type" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<majorfields> a owl:Class ;
+	rdfs:label "Major Fields" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<maplabel> a owl:Class ;
+	rdfs:label "Map Label" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<materialclass> a owl:Class ;
+	rdfs:label "Material Class" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<materialcomposition> a owl:Class ;
+	rdfs:label "Material Composition" ;
+	dcdtr:meaning <../../def/property/lithology-type> .
+
+<maxhf-kjyr> a owl:Class ;
+	rdfs:label "Maximum Heat Flux kJ/yr" ;
+	dcdtr:meaning <../../def/property/heat-flux> .
+
+<maximummonthlywaterproduction-bbl> a owl:Class ;
+	rdfs:label "Maximum Monthly Water Production bbl" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<maximumrecordedtemperature> a owl:Class ;
+	rdfs:label "Maximum Recorded Temperature" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<maxminerechargevol2-m3yr> a owl:Class ;
+	rdfs:label "Max Mine Recharge Vol2 m3yr" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<maxminerechargevolgrndwtr1-m3yr> a owl:Class ;
+	rdfs:label "Max Mine Recharge VolGrndwtr1 m3yr" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<maxminewtrvel1-myr> a owl:Class ;
+	rdfs:label "Max Mine WtrVel1 myr" ;
+	dcdtr:meaning <../../def/property/flow-velocity-magnitude> .
+
+<maxminewtrvel2-myr> a owl:Class ;
+	rdfs:label "Max Mine WtrVel2 myr" ;
+	dcdtr:meaning <../../def/property/flow-velocity-magnitude> .
+
+<maxrechargearea-km2> a owl:Class ;
+	rdfs:label "Max Recharge Area km2" ;
+	dcdtr:meaning <../../def/property/recharge-extent> .
+
+<maxresidencetime1-yr> a owl:Class ;
+	rdfs:label "Max Residence Time 1 year" ;
+	dcdtr:meaning <../../def/property/residence-time> .
+
+<maxresidencetime2-yr> a owl:Class ;
+	rdfs:label "Max Residence Time 2 year" ;
+	dcdtr:meaning <../../def/property/residence-time> .
+
+<meanannualprecip-in> a owl:Class ;
+	rdfs:label "Mean Annual Precipitation Inchs" ;
+	dcdtr:meaning <../../def/property/precipitation-quantity> .
+
+<meancapacity-mw> a owl:Class ;
+	rdfs:label "Mean Capacity MW" ;
+	dcdtr:meaning <../../def/property/power-production-capacity> .
+
+<meanreservoirtemp> a owl:Class ;
+	rdfs:label "Mean Reservoir Temperature" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<measuredtemperature> a owl:Class ;
+	rdfs:label "Measured Temperature" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<measurementcount> a owl:Class ;
+	rdfs:label "Measurement Count" ;
+	dcdtr:meaning <../../def/property/measurement-count> .
+
+<measurementdatetime> a owl:Class ;
+	rdfs:label "Measurement datetime" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<measurementdevice> a owl:Class ;
+	rdfs:label "Measurement Device" ;
+	dcdtr:meaning <../../def/property/instrument-name> .
+
+<measurementdirection> a owl:Class ;
+	rdfs:label "Measurement Direction" ;
+	dcdtr:meaning <../../def/property/orientation> .
+
+<measurementduration> a owl:Class ;
+	rdfs:label "Measurement Duration" ;
+	dcdtr:meaning <../../def/property/observation-history> .
+
+<measurementformation> a owl:Class ;
+	rdfs:label "Measurement Formation" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<measurementmethod> a owl:Class ;
+	rdfs:label "Measurement Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<measurementnotes> a owl:Class ;
+	rdfs:label "Measurement Notes" ;
+	dcdtr:meaning <../../def/property/information> .
+
+<measurementpressure> a owl:Class ;
+	rdfs:label "Measurement Pressure" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<measurementpressureunits> a owl:Class ;
+	rdfs:label "Measurement Pressure Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<measurementprocedure> a owl:Class ;
+	rdfs:label "Measurement Procedure" ;
+	dcdtr:meaning <../../def/property/procedure-description> .
+
+<measurementrun> a owl:Class ;
+	rdfs:label "Measurement Run" ;
+	dcdtr:meaning <../../def/property/local-identifier> .
+
+<measurementsource> a owl:Class ;
+	rdfs:label "Measurement Source" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<measurementunits> a owl:Class ;
+	rdfs:label "Measurement Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<metadata-uri> a owl:Class ;
+	rdfs:label "MetadataURI" ;
+	dcdtr:meaning <../../def/property/metadata-reference> .
+
+<metadatauri> a owl:Class ;
+	rdfs:label "MetadataURI" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<methodology> a owl:Class ;
+	rdfs:label "Methodology" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<mine-city-distance-km> a owl:Class ;
+	rdfs:label "Mine-City Distance km" ;
+	dcdtr:meaning <../../def/property/market-proximity> .
+
+<minedepositarea-m2> a owl:Class ;
+	rdfs:label "Mine Deposit Area m2" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<minename> a owl:Class ;
+	rdfs:label "Mine Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<mineoropeningtype> a owl:Class ;
+	rdfs:label "Mine Or Opening Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<mineralowner> a owl:Class ;
+	rdfs:label "Mineral Owner" ;
+	dcdtr:meaning <../../def/property/resource-owner> .
+
+<minestartdate> a owl:Class ;
+	rdfs:label "Mine Start Date" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<minevolume-m3> a owl:Class ;
+	rdfs:label "Mine Volume m3" ;
+	dcdtr:meaning <../../def/property/volume> .
+
+<minhf-kjyr> a owl:Class ;
+	rdfs:label "Minimum Heat Flux kJ/yr" ;
+	dcdtr:meaning <../../def/property/heat-flux> .
+
+<minimummonthlywaterproduction-bbl> a owl:Class ;
+	rdfs:label "Minimum Monthly Water Production bbl" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<minminerechargegrndwtrvol1-m3yr> a owl:Class ;
+	rdfs:label "Min Mine Recharge GrndwtrVol1 m3yr" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<minminerechargevol2-m3yr> a owl:Class ;
+	rdfs:label "Min Mine Recharge Vol2 m3yr" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<minminewtrvel1-myr> a owl:Class ;
+	rdfs:label "Min Mine WtrVel1 myr" ;
+	dcdtr:meaning <../../def/property/flow-velocity-magnitude> .
+
+<minminewtrvel2-myr> a owl:Class ;
+	rdfs:label "Min Mine WtrVel2 myr" ;
+	dcdtr:meaning <../../def/property/flow-velocity-magnitude> .
+
+<minrechargearea-km2> a owl:Class ;
+	rdfs:label "Min Recharge Area km2" ;
+	dcdtr:meaning <../../def/property/recharge-extent> .
+
+<minresidencetime1-yr> a owl:Class ;
+	rdfs:label "Min Residence Time 1 year" ;
+	dcdtr:meaning <../../def/property/residence-time> .
+
+<minresidencetime2-yr> a owl:Class ;
+	rdfs:label "Min Residence Time 2 year" ;
+	dcdtr:meaning <../../def/property/residence-time> .
+
+<monthlyproduction-bbl> a owl:Class ;
+	rdfs:label "Monthly Production bbl" ;
+	dcdtr:meaning <../../def/property/fluid-flux> .
+
+<movementsense> a owl:Class ;
+	rdfs:label "Movement Sense" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<movementtype> a owl:Class ;
+	rdfs:label "Movement Type" ;
+	dcdtr:meaning <../../def/property/fault-movement-type> .
+
+<resistivitymud> a owl:Class ;
+	rdfs:label "Mud Resistivity" ;
+	dcdtr:meaning <../../def/property/resistivity> .
+
+<name> a owl:Class ;
+	rdfs:label "Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<netproductioncapacity-mw> a owl:Class ;
+	rdfs:label "Net Production Capacity MW" ;
+	dcdtr:meaning <../../def/property/power-production-capacity> .
+
+<netproductionmwhr> a owl:Class ;
+	rdfs:label "Net Production MWhr" ;
+	dcdtr:meaning <../../def/property/energy> .
+
+<notes> a owl:Class ;
+	rdfs:label "Notes" ;
+	dcdtr:meaning <../../def/property/information> .
+
+<numberinjectionwells> a owl:Class ;
+	rdfs:label "Number Injection Wells" ;
+	dcdtr:meaning <../../def/property/count> .
+
+<numberoftrenches> a owl:Class ;
+	rdfs:label "Number Of Trenches" ;
+	dcdtr:meaning <../../def/property/feature-count> .
+
+<numberofwells> a owl:Class ;
+	rdfs:label "Number Of Wells" ;
+	dcdtr:meaning <../../def/property/count> .
+
+<numberoperatingplants> a owl:Class ;
+	rdfs:label "Number Operating Plants" ;
+	dcdtr:meaning <../../def/property/feature-count> .
+
+<numberproductionwells> a owl:Class ;
+	rdfs:label "Number Production Wells" ;
+	dcdtr:meaning <../../def/property/count> .
+
+<objectid> a owl:Class ;
+	rdfs:label "OBJECTID" ;
+	dcdtr:meaning <../../def/property/auto-id> .
+
+<observationdate> a owl:Class ;
+	rdfs:label "Observation Date" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<observationlabel> a owl:Class ;
+	rdfs:label "Observation Label" ;
+	dcdtr:meaning <../../def/property/name> .
+
+<observationmethod> a owl:Class ;
+	rdfs:label "Observation Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<observationname> a owl:Class ;
+	rdfs:label "Observation Name" ;
+	dcdtr:meaning <../../def/property/observation-name> .
+
+<observationuri> a owl:Class ;
+	rdfs:label "Observation URI" ;
+	dcdtr:meaning <../../def/property/observation-identifier> .
+
+<observedgravity-mgal> a owl:Class ;
+	rdfs:label "Observed Gravity mgal" ;
+	dcdtr:meaning <../../def/property/acceleration-of-gravity> .
+
+<observednumericvalue> a owl:Class ;
+	rdfs:label "Observed Numeric Value" ;
+	dcdtr:meaning <../../def/property/value> .
+
+<observednumericvaluemaximum> a owl:Class ;
+	rdfs:label "Observed Numeric Value, maximum" ;
+	dcdtr:meaning <../../def/property/value> .
+
+<observednumericvalueminimum> a owl:Class ;
+	rdfs:label "Observed Numeric Value, minimum " ;
+	dcdtr:meaning <../../def/property/value> .
+
+<observedpropertyname> a owl:Class ;
+	rdfs:label "Observed Property Name" ;
+	dcdtr:meaning <../../def/property/observed-property> .
+
+<observer> a owl:Class ;
+	rdfs:label "Observer" ;
+	dcdtr:meaning <../../def/property/agent-identifier> .
+
+<olderageuri> a owl:Class ;
+	rdfs:label "Older Age URI" ;
+	dcdtr:meaning <../../def/property/older-age> .
+
+<oldestage> a owl:Class ;
+	rdfs:label "Oldest Age" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<oldestradiometricage-ma> a owl:Class ;
+	rdfs:label "Oldest Radiometric Age Ma" ;
+	dcdtr:meaning <../../def/property/time-position> .
+
+<operationaldate> a owl:Class ;
+	rdfs:label "Operational Date" ;
+	dcdtr:meaning <../../def/property/facility-operational-date> .
+
+<operator> a owl:Class ;
+	rdfs:label "Operator" ;
+	dcdtr:meaning <../../def/property/facility-operator> .
+
+<origindatetime> a owl:Class ;
+	rdfs:label "Origin datetime" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<otheranalysisid> a owl:Class ;
+	rdfs:label "Other Analysis ID" ;
+	dcdtr:meaning <../../def/property/observation-identifier> .
+
+<otheranalyticaldata> a owl:Class ;
+	rdfs:label "Other Analytical Data" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<otherdistribution> a owl:Class ;
+	rdfs:label "Other Distribution" ;
+	dcdtr:meaning <../../def/property/relation> .
+
+<otherfeatureid> a owl:Class ;
+	rdfs:label "Other Feature ID" ;
+	dcdtr:meaning <../../def/property/designation> .
+
+<otherformationname> a owl:Class ;
+	rdfs:label "Other Formation Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<otheridentifier> a owl:Class ;
+	rdfs:label "Other Identifier" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<otherlithologyname> a owl:Class ;
+	rdfs:label "Other Lithology Name" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<otherlocationinformation> a owl:Class ;
+	rdfs:label "Other Location Information" ;
+	dcdtr:meaning <../../def/property/location> .
+
+<otherlocationname> a owl:Class ;
+	rdfs:label "Other Location Name" ;
+	dcdtr:meaning <../../def/property/location> .
+
+<otherlogid> a owl:Class ;
+	rdfs:label "Other Log ID" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<othername> a owl:Class ;
+	rdfs:label "Other Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<othersiteid> a owl:Class ;
+	rdfs:label "Other Site ID" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<otherspecimenid> a owl:Class ;
+	rdfs:label "Other Specimen ID" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<overburdenthickness-m> a owl:Class ;
+	rdfs:label "Overburden Thickness m" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<owner> a owl:Class ;
+	rdfs:label "Owner" ;
+	dcdtr:meaning <../../def/property/resource-owner> .
+
+<owners> a owl:Class ;
+	rdfs:label "Owners" ;
+	dcdtr:meaning <../../def/property/resource-owner> .
+
+<papercopylocation> a owl:Class ;
+	rdfs:label "Paper Copy Location" ;
+	dcdtr:meaning <../../def/property/curation-location> .
+
+<parcel> a owl:Class ;
+	rdfs:label "Parcel" ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
+<parentfeatureuri> a owl:Class ;
+	rdfs:label "Parent Feature URI" ;
+	dcdtr:meaning <../../def/property/parent-feature-identifier> .
+
+<parentsampleuri> a owl:Class ;
+	rdfs:label "Parent Sample URI" ;
+	dcdtr:meaning <../../def/property/parent-feature-identifier> .
+
+<parentspecimenuri> a owl:Class ;
+	rdfs:label "Parent Specimen URI" ;
+	dcdtr:meaning <../../def/property/parent-feature-identifier> .
+
+<parentwelluri> a owl:Class ;
+	rdfs:label "Parent Well URI" ;
+	dcdtr:meaning <../../def/property/parent-feature-identifier> .
+
+<percenttargetrock> a owl:Class ;
+	rdfs:label "Percent Target Rock" ;
+	dcdtr:meaning <../../def/property/composition> .
+
+<permeabilityair-md> a owl:Class ;
+	rdfs:label "Permeability, air mD" ;
+	dcdtr:meaning <../../def/property/air-permeability> .
+
+<permeabilityaverage-m2> a owl:Class ;
+	rdfs:label "Permeability, air mD" ;
+	dcdtr:meaning <../../def/property/permeability> .
+
+<permeabilitycommonlyobserved-md> a owl:Class ;
+	rdfs:label "Permeability, Commonly observed mD" ;
+	dcdtr:meaning <../../def/property/permeability> .
+
+<permeabilitygeometricmean-md> a owl:Class ;
+	rdfs:label "Permeability, Geometric mean  mD" ;
+	dcdtr:meaning <../../def/property/permeability> .
+
+<permeabilityintrinsic-md> a owl:Class ;
+	rdfs:label "Permeability, Intrinsic mD" ;
+	dcdtr:meaning <../../def/property/intrinsic-permeability> .
+
+<permeabilitylocal-md> a owl:Class ;
+	rdfs:label "Permeability, Local mD" ;
+	dcdtr:meaning <../../def/property/local-permeability> .
+
+<permeabilitymean-md> a owl:Class ;
+	rdfs:label "Permeability, Mean intrinsic mD" ;
+	dcdtr:meaning <../../def/property/permeability> .
+
+<permeabilitymeanintrinsic-md> a owl:Class ;
+	rdfs:label "Permeability, Mean intrinsic mD" ;
+	dcdtr:meaning <../../def/property/intrinsic-permeability> .
+
+<permeabilitymedian-md> a owl:Class ;
+	rdfs:label "Permeability, median mD" ;
+	dcdtr:meaning <../../def/property/permeability> .
+
+<permeabilitymedianporescale-md> a owl:Class ;
+	rdfs:label "Permeability, median pore-scale mD" ;
+	dcdtr:meaning <../../def/property/pore-scale-permeability> .
+
+<permeabilityporescale-md> a owl:Class ;
+	rdfs:label "Permeability, pore-scale mD" ;
+	dcdtr:meaning <../../def/property/pore-scale-permeability> .
+
+<permeabilityaveragemethod> a owl:Class ;
+	rdfs:label "Permeability Average Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<permeabilityaverageuncertainty> a owl:Class ;
+	rdfs:label "Permeability Average Uncertainty" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<permeability-md> a owl:Class ;
+	rdfs:label "Permeability Max m2" ;
+	dcdtr:meaning <../../def/property/permeability> .
+
+<permeabilitymax-m2> a owl:Class ;
+	rdfs:label "Permeability Max m2" ;
+	dcdtr:meaning <../../def/property/permeability> .
+
+<permeabilitymin-m2> a owl:Class ;
+	rdfs:label "Permeability Min m2" ;
+	dcdtr:meaning <../../def/property/permeability> .
+
+<permit> a owl:Class ;
+	rdfs:label "Permit" ;
+	dcdtr:meaning <../../def/property/related-resource> .
+
+<ph> a owl:Class ;
+	rdfs:label "pH" ;
+	dcdtr:meaning <../../def/property/chemical-character> .
+
+<phone> a owl:Class ;
+	rdfs:label "Phone" ;
+	dcdtr:meaning <../../def/property/telephone-number> .
+
+<pipediameter-in> a owl:Class ;
+	rdfs:label "Pipe Diameter in" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<pipematerial> a owl:Class ;
+	rdfs:label "Pipe Material" ;
+	dcdtr:meaning <../../def/property/material-type> .
+
+<pipetotallength-ft> a owl:Class ;
+	rdfs:label "Pipe Total Length ft" ;
+	dcdtr:meaning <../../def/property/pipe-extent-> .
+
+<plantname> a owl:Class ;
+	rdfs:label "Plant Name" ;
+	dcdtr:meaning <../../def/property/plant-name> .
+
+<plantproductionstatlabel> a owl:Class ;
+	rdfs:label "Plant Production Stat Label" ;
+	dcdtr:meaning <../../def/property/name> .
+
+<plantproductionstaturi> a owl:Class ;
+	rdfs:label "Plant Production Stat URI" ;
+	dcdtr:meaning <../../def/property/self-identifier> .
+
+<planttype> a owl:Class ;
+	rdfs:label "Plant Type" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<plss-meridians> a owl:Class ;
+	rdfs:label "PLSS Location" ;
+	dcdtr:meaning <../../def/property/spatial-reference-system> .
+
+<plsslocation> a owl:Class ;
+	rdfs:label "PLSS Location" ;
+	dcdtr:meaning <../../def/property/location> .
+
+<plssrange> a owl:Class ;
+	rdfs:label "PLSS Range" ;
+	dcdtr:meaning <../../def/property/range-number> .
+
+<plsssectionnumber> a owl:Class ;
+	rdfs:label "PLSS section number" ;
+	dcdtr:meaning <../../def/property/section-number> .
+
+<plsssectionpart> a owl:Class ;
+	rdfs:label "PLSS Section Part" ;
+	dcdtr:meaning <../../def/property/section-part> .
+
+<plsstownship> a owl:Class ;
+	rdfs:label "PLSS Township" ;
+	dcdtr:meaning <../../def/property/township-number> .
+
+<porosityaverage-pct> a owl:Class ;
+	rdfs:label "Porosity Average Method" ;
+	dcdtr:meaning <../../def/property/porosity> .
+
+<porosityaveragemethod> a owl:Class ;
+	rdfs:label "Porosity Average Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<porosityaverageuncertainty> a owl:Class ;
+	rdfs:label "Porosity Average Uncertainty" ;
+	dcdtr:meaning <../../def/property/porosity> .
+
+<porositymax-pct> a owl:Class ;
+	rdfs:label "Porosity Max pct" ;
+	dcdtr:meaning <../../def/property/porosity> .
+
+<porositymean-pct> a owl:Class ;
+	rdfs:label "porosity mean pct" ;
+	dcdtr:meaning <../../def/property/porosity> .
+
+<porositymedian-pct> a owl:Class ;
+	rdfs:label "porosity median pct" ;
+	dcdtr:meaning <../../def/property/porosity> .
+
+<porositymin-pct> a owl:Class ;
+	rdfs:label "Porosity Min pct" ;
+	dcdtr:meaning <../../def/property/porosity> .
+
+<porositypercent> a owl:Class ;
+	rdfs:label "porosity percent" ;
+	dcdtr:meaning <../../def/property/porosity> .
+
+<positionaccuracy> a owl:Class ;
+	rdfs:label "Position Accuracy" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<positionaccuracymeters> a owl:Class ;
+	rdfs:label "Position Accuracy Meters" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<positionalaccuracy> a owl:Class ;
+	rdfs:label "Positional Accuracy" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<postaladdress> a owl:Class ;
+	rdfs:label "Postal Address" ;
+	dcdtr:meaning <../../def/property/postal-address> .
+
+<powerplantfacilityuri> a owl:Class ;
+	rdfs:label "Power Plant Facility URI" ;
+	dcdtr:meaning <../../def/property/self-identifier> .
+
+<powerpurchasers> a owl:Class ;
+	rdfs:label "Power Purchasers" ;
+	dcdtr:meaning <../../def/property/customer> .
+
+<preferredpressure> a owl:Class ;
+	rdfs:label "Preferred Pressure" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<pressurefinalshutin> a owl:Class ;
+	rdfs:label "Preferred Pressure" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<pressureinitialshutin> a owl:Class ;
+	rdfs:label "Preferred Pressure" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<pressure-psi> a owl:Class ;
+	rdfs:label "Pressure psi" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<units-pressure> a owl:Class ;
+	rdfs:label "Pressure units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<proceduresummary> a owl:Class ;
+	rdfs:label "Procedure Summary" ;
+	dcdtr:meaning <../../def/property/procedure-description> .
+
+<producingfeature> a owl:Class ;
+	rdfs:label "Producing Feature" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<producinginterval> a owl:Class ;
+	rdfs:label "Producing Interval " ;
+	dcdtr:meaning <../../def/property/feature-name> , <../../def/property/feature-of-interest> .
+
+<productionreportdate> a owl:Class ;
+	rdfs:label "Production Report Date" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<production> a owl:Class ;
+	rdfs:label "Production status" ;
+	dcdtr:meaning <../../def/property/facility-status> .
+
+<publicationsource> a owl:Class ;
+	rdfs:label "Publication Source" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<qualifier> a owl:Class ;
+	rdfs:label "qualifier" ;
+	dcdtr:meaning <../../def/property/information> .
+
+<radioactivitymeasurementdevice> a owl:Class ;
+	rdfs:label "Radioactivity Measurement Device" ;
+	dcdtr:meaning <../../def/property/instrument-name> .
+
+<rank> a owl:Class ;
+	rdfs:label "Rank" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<rechargeprocedure1> a owl:Class ;
+	rdfs:label "Recharge Procedure 1" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<rechargeprocedure2> a owl:Class ;
+	rdfs:label "Recharge Procedure 2" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<recordname> a owl:Class ;
+	rdfs:label "Record Name" ;
+	dcdtr:meaning <../../def/property/observation-name> .
+
+<recurrenceinterval> a owl:Class ;
+	rdfs:label "Recurrence Interval" ;
+	dcdtr:meaning <../../def/property/periodicity> .
+
+<registrant> a owl:Class ;
+	rdfs:label "Registrant" ;
+	dcdtr:meaning <../../def/property/resource-responsible-party> .
+
+<registranturi> a owl:Class ;
+	rdfs:label "Registrant URI" ;
+	dcdtr:meaning <../../def/property/agent-identifier> .
+
+<relatedfault> a owl:Class ;
+	rdfs:label "Related Fault" ;
+	dcdtr:meaning <../../def/property/relation> .
+
+<relatedfaulturi> a owl:Class ;
+	rdfs:label "Related Fault URI" ;
+	dcdtr:meaning <../../def/property/relation> .
+
+<relatedfeature> a owl:Class ;
+	rdfs:label "Related Feature" ;
+	dcdtr:meaning <../../def/property/relation> .
+
+<relatedheatflowintervalsuri> a owl:Class ;
+	rdfs:label "Related Heat Flow Intervals URI" ;
+	dcdtr:meaning <../../def/property/relation> .
+
+<relatedresource> a owl:Class ;
+	rdfs:label "Related Resource" ;
+	dcdtr:meaning <../../def/property/related-resource> .
+
+<relatedresources> a owl:Class ;
+	rdfs:label "Related Resources" ;
+	dcdtr:meaning <../../def/property/relation> .
+
+<relatedsampleuri> a owl:Class ;
+	rdfs:label "Related Sample URI" ;
+	dcdtr:meaning <../../def/property/relation> .
+
+<relatedwaterchemistry> a owl:Class ;
+	rdfs:label "Related Water Chemistry" ;
+	dcdtr:meaning <../../def/property/relation> .
+
+<releasedate> a owl:Class ;
+	rdfs:label "Release Date" ;
+	dcdtr:meaning <../../def/property/publication-date> .
+
+<remarks> a owl:Class ;
+	rdfs:label "Remarks" ;
+	dcdtr:meaning <../../def/property/information> .
+
+<reportingperiod> a owl:Class ;
+	rdfs:label "Reporting Period" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<reportyear> a owl:Class ;
+	rdfs:label "Report Year" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<representativeageuri> a owl:Class ;
+	rdfs:label "Representative Age URI" ;
+	dcdtr:meaning <../../def/property/age> .
+
+<representativelithologyuri> a owl:Class ;
+	rdfs:label "Representative Lithology URI" ;
+	dcdtr:meaning <../../def/property/lithology-type> .
+
+<reservoirfavorability> a owl:Class ;
+	rdfs:label "Reservoir Favorability" ;
+	dcdtr:meaning <../../def/property/resource-assessment> .
+
+<reservoirfavorabilitymethodology> a owl:Class ;
+	rdfs:label "Reservoir Favorability Methodology" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<reservoirfavorabilityuncertainty> a owl:Class ;
+	rdfs:label "Reservoir Favorability Uncertainty" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<reservoirname> a owl:Class ;
+	rdfs:label "Reservoir Name " ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<reservoiruri> a owl:Class ;
+	rdfs:label "Reservoir URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<resourcetype> a owl:Class ;
+	rdfs:label "Resource Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<result> a owl:Class ;
+	rdfs:label "Result" ;
+	dcdtr:meaning <../../def/property/quantifier> .
+
+<rockname> a owl:Class ;
+	rdfs:label "Rock Name" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<rocktype> a owl:Class ;
+	rdfs:label "Rock Type" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<salinity> a owl:Class ;
+	rdfs:label "Salinity" ;
+	dcdtr:meaning <../../def/property/chemical-character> .
+
+<samplecollectiondate> a owl:Class ;
+	rdfs:label "Sample Collection Date" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<samplecollectionmethod> a owl:Class ;
+	rdfs:label "Sample Collection Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<samplecureduration> a owl:Class ;
+	rdfs:label "Sample Cure Duration" ;
+	dcdtr:meaning <../../def/property/observation-history> .
+
+<sampledensity> a owl:Class ;
+	rdfs:label "Sample Density" ;
+	dcdtr:meaning <../../def/property/density> .
+
+<sampledensity-g-cc> a owl:Class ;
+	rdfs:label "Sample Density g-cc" ;
+	dcdtr:meaning <../../def/property/density> .
+
+<sampledensityunits> a owl:Class ;
+	rdfs:label "Sample Density Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<sampledepth> a owl:Class ;
+	rdfs:label "Sample Depth" ;
+	dcdtr:meaning <../../def/property/vertical-extent> .
+
+<sampledepth-m> a owl:Class ;
+	rdfs:label "Sample Depth meters" ;
+	dcdtr:meaning <../../def/property/vertical-extent> .
+
+<sampledfeatureagelabel> a owl:Class ;
+	rdfs:label "Sampled Feature Age Label" ;
+	dcdtr:meaning <../../def/property/name> .
+
+<sampledfeaturemaxage-ma> a owl:Class ;
+	rdfs:label "Sampled Feature Max Age Ma" ;
+	dcdtr:meaning <../../def/property/time-position> .
+
+<sampledfeatureminage-ma> a owl:Class ;
+	rdfs:label "Sampled Feature Min Age Ma" ;
+	dcdtr:meaning <../../def/property/time-position> .
+
+<sampledgeologicunit> a owl:Class ;
+	rdfs:label "Sampled Geologic Unit" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<sampledgeologicunitage> a owl:Class ;
+	rdfs:label "Sampled Geologic Unit Age" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<sampledimensionsheight> a owl:Class ;
+	rdfs:label "Sample Dimensions Height" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<sampledimensionslength> a owl:Class ;
+	rdfs:label "Sample Dimensions Length" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<sampledimensionsunits> a owl:Class ;
+	rdfs:label "Sample Dimensions Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<sampledimensionswidth> a owl:Class ;
+	rdfs:label "Sample Dimensions Width" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<samplemass-kg> a owl:Class ;
+	rdfs:label "Sample Mass kg" ;
+	dcdtr:meaning <../../def/property/mass> .
+
+<samplemeasurementdate> a owl:Class ;
+	rdfs:label "Sample Measurement Date" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<sampleshape> a owl:Class ;
+	rdfs:label "Sample Shape" ;
+	dcdtr:meaning <../../def/property/shape> .
+
+<sampletemperature> a owl:Class ;
+	rdfs:label "Sample Temperature" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<sampletemperatureunits> a owl:Class ;
+	rdfs:label "Sample Temperature Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<sampletype> a owl:Class ;
+	rdfs:label "Sample Type" ;
+	dcdtr:meaning <../../def/property/material-type> .
+
+<samplingfeaturename> a owl:Class ;
+	rdfs:label "Sampling Feature Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<samplingfeaturetype> a owl:Class ;
+	rdfs:label "Sampling Feature Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<samplingfeatureuri> a owl:Class ;
+	rdfs:label "Sampling Feature URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<saturatedsampleconductivity> a owl:Class ;
+	rdfs:label "Saturated Sample Conductivity" ;
+	dcdtr:meaning <../../def/property/thermal-conductivity> .
+
+<saturationfluid> a owl:Class ;
+	rdfs:label "Saturation Fluid" ;
+	dcdtr:meaning <../../def/property/material-type> .
+
+<scannedfileurl> a owl:Class ;
+	rdfs:label "ScannedFileURL" ;
+	dcdtr:meaning <../../def/property/access-link> .
+
+<sectionpart> a owl:Class ;
+	rdfs:label "Section Part" ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
+<se-uncorrectedgradient> a owl:Class ;
+	rdfs:label "Seisometer Network" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<se-uncorrectedheatflow> a owl:Class ;
+	rdfs:label "Seisometer Network" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<seisometernetwork> a owl:Class ;
+	rdfs:label "Seisometer Network" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<shape> a owl:Class ;
+	rdfs:label "Shape" ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
+<shape-area> a owl:Class ;
+	rdfs:label "Shape Area" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<shape-length> a owl:Class ;
+	rdfs:label "Shape Length" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<shutinpressuremethod> a owl:Class ;
+	rdfs:label "Shut In Pressure Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<siteheatflow> a owl:Class ;
+	rdfs:label "Site Heat Flow" ;
+	dcdtr:meaning <../../def/property/heat-flow> .
+
+<sitelocationname> a owl:Class ;
+	rdfs:label "Site Location Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<sitelocationuri> a owl:Class ;
+	rdfs:label "Site Location URI" ;
+	dcdtr:meaning <../../def/property/observation-identifier> .
+
+<sitename> a owl:Class ;
+	rdfs:label "Site Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<sitevaluemethod> a owl:Class ;
+	rdfs:label "Site Value Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<slipaccumulationinterval> a owl:Class ;
+	rdfs:label "Slip Accumulation Interval" ;
+	dcdtr:meaning <../../def/property/duration> .
+
+<sliprate> a owl:Class ;
+	rdfs:label "Slip Rate" ;
+	dcdtr:meaning <../../def/property/velocity-magnitude> .
+
+<source> a owl:Class ;
+	rdfs:label "Source" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<sourcecitation> a owl:Class ;
+	rdfs:label "Source Citation" ;
+	dcdtr:meaning <../../def/property/provenance> .
+
+<sourcecitationuri> a owl:Class ;
+	rdfs:label "Source Citation URI" ;
+	dcdtr:meaning <../../def/property/source-identifier> .
+
+<sourceuri> a owl:Class ;
+	rdfs:label "Source URI" ;
+	dcdtr:meaning <../../def/property/source-identifier> .
+
+<spacingavg-ft> a owl:Class ;
+	rdfs:label "Spacing Avg ft" ;
+	dcdtr:meaning <../../def/property/borehole-spacing> .
+
+<specificationuri> a owl:Class ;
+	rdfs:label "Spacing Avg ft" ;
+	dcdtr:meaning <../../def/property/description> .
+
+<specification-uri> a owl:Class ;
+	rdfs:label "specification  uri" ;
+	dcdtr:meaning <../../def/property/description> .
+
+<specificheat> a owl:Class ;
+	rdfs:label "Specific Heat" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<specificheat-kjkgc> a owl:Class ;
+	rdfs:label "Specific Heat kJkgC" ;
+	dcdtr:meaning <../../def/property/specific-heat> .
+
+<specificheatunits> a owl:Class ;
+	rdfs:label "Specific Heat Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<specificstorage> a owl:Class ;
+	rdfs:label "Specific Storage" ;
+	dcdtr:meaning <../../def/property/aquifer-productivity> .
+
+<specificyield-percent> a owl:Class ;
+	rdfs:label "SpecificYield percent" ;
+	dcdtr:meaning <../../def/property/aquifer-productivity> .
+
+<specimencollectiondate> a owl:Class ;
+	rdfs:label "Specimen Collection Date" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<specimencollectionmethod> a owl:Class ;
+	rdfs:label "Specimen Collection Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<specimencollector> a owl:Class ;
+	rdfs:label "Specimen Collector" ;
+	dcdtr:meaning <../../def/property/resource-responsible-party> .
+
+<specimencollectoruri> a owl:Class ;
+	rdfs:label "Specimen Collector URI" ;
+	dcdtr:meaning <../../def/property/agent-identifier> .
+
+<specimencuration> a owl:Class ;
+	rdfs:label "Specimen Curation" ;
+	dcdtr:meaning <../../def/property/information> .
+
+<specimendescription> a owl:Class ;
+	rdfs:label "Specimen Description" ;
+	dcdtr:meaning <../../def/property/feature-description> .
+
+<specimenid> a owl:Class ;
+	rdfs:label "Specimen ID" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<specimenlabel> a owl:Class ;
+	rdfs:label "Specimen Label" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<specimenmass-kg> a owl:Class ;
+	rdfs:label "Specimen Mass kg" ;
+	dcdtr:meaning <../../def/property/mass> .
+
+<specimentype> a owl:Class ;
+	rdfs:label "SpecimenType" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<specimenuri> a owl:Class ;
+	rdfs:label "Specimen URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<springname> a owl:Class ;
+	rdfs:label "Spring Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<spuddate> a owl:Class ;
+	rdfs:label "Spud Date" ;
+	dcdtr:meaning <../../def/property/feature-history> .
+
+<srs> a owl:Class ;
+	rdfs:label "SRS" ;
+	dcdtr:meaning <../../def/property/spatial-reference-system> .
+
+<standarddeviation> a owl:Class ;
+	rdfs:label "Standard Deviation" ;
+	dcdtr:meaning <../../def/property/value> .
+
+<se-conductivity> a owl:Class ;
+	rdfs:label "Standard Error Conductivity" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<se-correctedgradient> a owl:Class ;
+	rdfs:label "Standard Error Corrected Gradient" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<se-correctedheatflow> a owl:Class ;
+	rdfs:label "Standard Error Corrected HeatFlow" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<section-> a owl:Class ;
+	rdfs:label "Standard Error Corrected HeatFlow" ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
+<standardmagnitudeerror> a owl:Class ;
+	rdfs:label "Standard Magnitude Error" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<startreportinterval> a owl:Class ;
+	rdfs:label "Start Report Interval" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<state> a owl:Class ;
+	rdfs:label "State" ;
+	dcdtr:meaning <../../def/property/location-name> .
+
+<stationidentifier> a owl:Class ;
+	rdfs:label "Station Identifier" ;
+	dcdtr:meaning <../../def/property/sampling-feature-identifier> .
+
+<stationname> a owl:Class ;
+	rdfs:label "Station Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<statisticalprocedure> a owl:Class ;
+	rdfs:label "Statistical procedure" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<status> a owl:Class ;
+	rdfs:label "Status" ;
+	dcdtr:meaning <../../def/property/facility-status> .
+
+<statusdate> a owl:Class ;
+	rdfs:label "Status Date" ;
+	dcdtr:meaning <../../def/property/reporting-date> .
+
+<stimulation> a owl:Class ;
+	rdfs:label "Stimulation" ;
+	dcdtr:meaning <../../def/property/process-type> .
+
+<unitsstorage> a owl:Class ;
+	rdfs:label "Storage units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<surfacetemperature> a owl:Class ;
+	rdfs:label "Surface Temperature" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<symbol> a owl:Class ;
+	rdfs:label "Symbol" ;
+	dcdtr:meaning <../../def/property/representation> .
+
+<systemtype> a owl:Class ;
+	rdfs:label "System Type" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<targetfeatureuri> a owl:Class ;
+	rdfs:label "Target Feature URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<targetformation> a owl:Class ;
+	rdfs:label "Target Formation" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<targetrockname> a owl:Class ;
+	rdfs:label "Target Rock Name" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<targetrockvolume-m3> a owl:Class ;
+	rdfs:label "Target Rock Volume m3" ;
+	dcdtr:meaning <../../def/property/composition> .
+
+<tectonicprovince> a owl:Class ;
+	rdfs:label "Tectonic Province" ;
+	dcdtr:meaning <../../def/property/category--name> .
+
+<temperature> a owl:Class ;
+	rdfs:label "Temperature" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<temperaturecorrection> a owl:Class ;
+	rdfs:label "Temperature" ;
+	dcdtr:meaning <../../def/property/correction> .
+
+<temperature-f> a owl:Class ;
+	rdfs:label "Temperature Fahrenheit" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<temperatureflowing> a owl:Class ;
+	rdfs:label "Temperature Flowing" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<temperaturemax-c> a owl:Class ;
+	rdfs:label "Temperature Max C" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<temperaturemeasuretype> a owl:Class ;
+	rdfs:label "Temperature Measure Type" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<temperaturemin-c> a owl:Class ;
+	rdfs:label "Temperature Min C" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<temperatureunits> a owl:Class ;
+	rdfs:label "Temperature Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<tempmeasurementdatetime> a owl:Class ;
+	rdfs:label "Temp Measurement Date Time" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<tempmeasurementprocedure> a owl:Class ;
+	rdfs:label "Temp Measurement Procedure" ;
+	dcdtr:meaning <../../def/property/procedure-description> .
+
+<terraincorrection-mgal> a owl:Class ;
+	rdfs:label "Terrain Correction mgal" ;
+	dcdtr:meaning <../../def/property/correction> .
+
+<testdatetime> a owl:Class ;
+	rdfs:label "Test date time" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<testfluid> a owl:Class ;
+	rdfs:label "Test Fluid" ;
+	dcdtr:meaning <../../def/property/material-type> .
+
+<testname> a owl:Class ;
+	rdfs:label "Test Name" ;
+	dcdtr:meaning <../../def/property/observation-name> .
+
+<testnumber> a owl:Class ;
+	rdfs:label "Test Number" ;
+	dcdtr:meaning <../../def/property/local-identifier> .
+
+<testoperator> a owl:Class ;
+	rdfs:label "Test Operator" ;
+	dcdtr:meaning <../../def/property/resource-responsible-party> .
+
+<testtype> a owl:Class ;
+	rdfs:label "Test Type" ;
+	dcdtr:meaning <../../def/property/procedure-type> .
+
+<testtypedescription> a owl:Class ;
+	rdfs:label "Test Type Description" ;
+	dcdtr:meaning <../../def/property/procedure-description> .
+
+<thermalconductivityunits> a owl:Class ;
+	rdfs:label "Thermal Conductivity Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<units-temperature> a owl:Class ;
+	rdfs:label "Thermal Conductivity Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<unitstc> a owl:Class ;
+	rdfs:label "Thermal Conductivity Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<thermaldiffusivity> a owl:Class ;
+	rdfs:label "Thermal Diffusivity" ;
+	dcdtr:meaning <../../def/property/thermal-diffusivity> .
+
+<unitsthermaldiffusivity> a owl:Class ;
+	rdfs:label "Thermal Diffusivity units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<thermalspringuri> a owl:Class ;
+	rdfs:label "Thermal Spring URI" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
+<timefinalshutin-min> a owl:Class ;
+	rdfs:label "Time Final Shut In min" ;
+	dcdtr:meaning <../../def/property/duration> .
+
+<timeinitialshutin-min> a owl:Class ;
+	rdfs:label "Time Initial Shut In min" ;
+	dcdtr:meaning <../../def/property/duration> .
+
+<timesincecirculation> a owl:Class ;
+	rdfs:label "Time Since Circulation " ;
+	dcdtr:meaning <../../def/property/duration> .
+
+<toploggedinterval-ft> a owl:Class ;
+	rdfs:label "Top Logged Interval ft" ;
+	dcdtr:meaning <../../def/property/coverage-domain-bound> .
+
+<totalmineheat-kj> a owl:Class ;
+	rdfs:label "Total Mine Heat kJ" ;
+	dcdtr:meaning <../../def/property/energy> .
+
+<totalslip> a owl:Class ;
+	rdfs:label "Total Slip" ;
+	dcdtr:meaning <../../def/property/displacement> .
+
+<transmissivity> a owl:Class ;
+	rdfs:label "Transmissivity" ;
+	dcdtr:meaning <../../def/property/hydraulic-transmissivity> .
+
+<transmissivity-units> a owl:Class ;
+	rdfs:label "Transmissivity units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<trap> a owl:Class ;
+	rdfs:label "Trap" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<trueverticaldepth> a owl:Class ;
+	rdfs:label "True Vertical Depth" ;
+	dcdtr:meaning <../../def/property/feature-extent> .
+
+<uncertainty> a owl:Class ;
+	rdfs:label "uncertainty" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<uncertaintydensity> a owl:Class ;
+	rdfs:label "uncertainty" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<uncertainty-mgal> a owl:Class ;
+	rdfs:label "Uncertainty mgal" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<uncertaintyspecificheat> a owl:Class ;
+	rdfs:label "Uncertainty Specific Heat" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<uncertaintytc> a owl:Class ;
+	rdfs:label "Uncertainty Thermal Conductivity" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<uncertaintythermaldiffusivity> a owl:Class ;
+	rdfs:label "Uncertainty Thermal Diffusivity" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<units> a owl:Class ;
+	rdfs:label "Units Of Measure" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<unitsofmeasure> a owl:Class ;
+	rdfs:label "Units Of Measure" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<unitspermeability> a owl:Class ;
+	rdfs:label "Units Of Measure" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<unitsporosity> a owl:Class ;
+	rdfs:label "Units Of Measure" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<updatedate> a owl:Class ;
+	rdfs:label "Update Date" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<updatetimestamp> a owl:Class ;
+	rdfs:label "Update Time Stamp" ;
+	dcdtr:meaning <../../def/property/update-time-stamp> .
+
+<useapplication> a owl:Class ;
+	rdfs:label "Use Application" ;
+	dcdtr:meaning <../../def/property/use-application> .
+
+<utmdatumzone> a owl:Class ;
+	rdfs:label "Use Application" ;
+	dcdtr:meaning <../../def/property/spatial-reference-system> .
+
+<utm-e> a owl:Class ;
+	rdfs:label "UTM E" ;
+	dcdtr:meaning <../../def/property/utm-easting> .
+
+<utm-n> a owl:Class ;
+	rdfs:label "UTM N" ;
+	dcdtr:meaning <../../def/property/utm-northing> .
+
+<utmzone> a owl:Class ;
+	rdfs:label "UTM Zone" ;
+	dcdtr:meaning <../../def/property/spatial-reference-system> .
+
+<ventelevation> a owl:Class ;
+	rdfs:label "Vent Elevation" ;
+	dcdtr:meaning <../../def/property/vertical-extent> .
+
+<verticalconductivity-ft-day> a owl:Class ;
+	rdfs:label "Vertical Conductivity ft day" ;
+	dcdtr:meaning <../../def/property/hydraulic-conductivity> .
+
+<verticaldatum> a owl:Class ;
+	rdfs:label "Vertical Datum" ;
+	dcdtr:meaning <../../def/property/vertical-datum> .
+
+<verticalextentmax-m> a owl:Class ;
+	rdfs:label "Vertical Extent Max m" ;
+	dcdtr:meaning <../../def/property/vertical-extent> .
+
+<verticalextentmin-m> a owl:Class ;
+	rdfs:label "Vertical Extent Min m" ;
+	dcdtr:meaning <../../def/property/vertical-extent> .
+
+<verticalunits> a owl:Class ;
+	rdfs:label "Vertical Units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<viscosity> a owl:Class ;
+	rdfs:label "Viscosity" ;
+	dcdtr:meaning <../../def/property/viscosity> .
+
+<volcanicgroup> a owl:Class ;
+	rdfs:label "Volcanic Group" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<volcventname> a owl:Class ;
+	rdfs:label "Volc Vent Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<waterdensity-kgm3> a owl:Class ;
+	rdfs:label "Water Density  kgm3" ;
+	dcdtr:meaning <../../def/property/density> .
+
+<waterdensity-mgl> a owl:Class ;
+	rdfs:label "Water Density  mgL" ;
+	dcdtr:meaning <../../def/property/density> .
+
+<waterinjection-bbl> a owl:Class ;
+	rdfs:label "Water Injection bbl" ;
+	dcdtr:meaning <../../def/property/fluid-quantity> .
+
+<watermass-kg> a owl:Class ;
+	rdfs:label "Water Mass kg" ;
+	dcdtr:meaning <../../def/property/fluid-quantity> .
+
+<resistivitywater-ohm-m> a owl:Class ;
+	rdfs:label "Water Resistivity ohm/m" ;
+	dcdtr:meaning <../../def/property/resistivity> .
+
+<watersaturation-pct> a owl:Class ;
+	rdfs:label "Water Saturation pct" ;
+	dcdtr:meaning <../../def/property/composition> .
+
+<watershedname> a owl:Class ;
+	rdfs:label "Watershed Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<watertabletemperature> a owl:Class ;
+	rdfs:label "Water Table Temperature" ;
+	dcdtr:meaning <../../def/property/temperature> .
+
+<watertabletop> a owl:Class ;
+	rdfs:label "Water Table Top" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
+
+<watertds-mgl> a owl:Class ;
+	rdfs:label "Water TDS mgl" ;
+	dcdtr:meaning <../../def/property/chemical-character> .
+
+<wellborename> a owl:Class ;
+	rdfs:label "WellBore Name " ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<wellboreshape> a owl:Class ;
+	rdfs:label "Well Bore Shape" ;
+	dcdtr:meaning <../../def/property/feature-shape> .
+
+<wellboreuri> a owl:Class ;
+	rdfs:label "WellBore URI" ;
+	dcdtr:meaning <../../def/property/sampling-feature-identifier> .
+
+<wellcount> a owl:Class ;
+	rdfs:label "Well Count" ;
+	dcdtr:meaning <../../def/property/count> .
+
+<welldrilldate> a owl:Class ;
+	rdfs:label "Well Drill Date" ;
+	dcdtr:meaning <../../def/property/resource-history> .
+
+<welldrilldatetype> a owl:Class ;
+	rdfs:label "Well Drill Date Type" ;
+	dcdtr:meaning <../../def/property/event-type> .
+
+<wellheaderuri> a owl:Class ;
+	rdfs:label "Well Header URI" ;
+	dcdtr:meaning <../../def/property/sampling-feature-identifier> .
+
+<wellname> a owl:Class ;
+	rdfs:label "Well Name" ;
+	dcdtr:meaning <../../def/property/feature-name> .
+
+<welltype> a owl:Class ;
+	rdfs:label "Well Type" ;
+	dcdtr:meaning <../../def/property/feature-type> .
+
+<width-m> a owl:Class ;
+	rdfs:label "Width m" ;
+	dcdtr:meaning <../../def/property/extent> .
+
+<yearcommissioned> a owl:Class ;
+	rdfs:label "Year Commissioned" ;
+	dcdtr:meaning <../../def/property/event-in-history> .
+
+<yearsinproduction> a owl:Class ;
+	rdfs:label "Years In Production" ;
+	dcdtr:meaning <../../def/property/history> .
+
+<youngerageuri> a owl:Class ;
+	rdfs:label "Younger Age URI" ;
+	dcdtr:meaning <../../def/property/younger-age> .
+
+<youngestage> a owl:Class ;
+	rdfs:label "Youngest Age" ;
+	dcdtr:meaning <../../def/property/younger-age> .
+
+<youngestradiometricage-ma> a owl:Class ;
+	rdfs:label "Youngest Radiometric Age Ma" ;
+	dcdtr:meaning <../../def/property/younger-age> .
+
+<zip> a owl:Class ;
+	rdfs:label "Zip" ;
+	dcdtr:meaning <../../def/property/fiat-geographic-area> .
