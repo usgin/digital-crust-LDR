@@ -67,13 +67,11 @@
 	skos:prefLabel "Agent Description"@en ;
 	dct:description "a data type that represents an agent with a name property and contact information" ;
 	rdfs:label "Agent Description"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/agent> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> .
 
 <data-object/borehole-lithology-intercept-occurrence> a owl:Class ;
 	skos:prefLabel "Borehole Lithology Intercept Occurrence"@en ;
 	rdfs:label "Borehole Lithology Intercept Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/borehole-intercept> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -82,7 +80,6 @@
 <data-object/borehole-lithology-interval-occurrence> a owl:Class ;
 	skos:prefLabel "Borehole Lithology Interval Occurrence"@en ;
 	rdfs:label "Borehole Lithology Interval Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/borehole-interval> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -91,7 +88,6 @@
 <data-object/borehole-temperature-result> a owl:Class ;
 	skos:prefLabel "Borehole Temperature Result"@en ;
 	rdfs:label "Borehole Temperature Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/borehole-temperature-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -106,7 +102,6 @@
 <data-object/contour-line-instance> a owl:Class ;
 	skos:prefLabel "Contour Line Instance"@en ;
 	rdfs:label "Contour Line Instance"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/isopleth-feature> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -116,14 +111,12 @@
 	skos:prefLabel "Coordinate Location"@en ;
 	dct:description "geospatial location reported relative to a 2-D grid projected on the Earth Surface; necessarily includes two orthogonal aces and a coordinate reference system reference" ;
 	rdfs:label "Coordinate Location"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/location> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "property value for coordinate location poistion--latitude, longigude, UTM N and E, 'ere" .
 
 <data-object/direct-use-facility-occurrence> a owl:Class ;
 	skos:prefLabel "Direct Use Facility Occurrence"@en ;
 	rdfs:label "Direct Use Facility Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/geothermal-direct-use-facility> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -132,7 +125,6 @@
 <data-object/fluid-flux-injection-and-disposal-result> a owl:Class ;
 	skos:prefLabel "Fluid Flux Injection and Disposal Result"@en ;
 	rdfs:label "Fluid Flux Injection and Disposal Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/well-fluid-flux-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -141,7 +133,6 @@
 <data-object/geologic-contact-occurrence> a owl:Class ;
 	skos:prefLabel "Geologic Contact Occurrence"@en ;
 	rdfs:label "Geologic Contact Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/geologic-contact-feature> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -150,7 +141,6 @@
 <data-object/geologic-fault-occurrence> a owl:Class ;
 	skos:prefLabel "Geologic Fault Occurrence"@en ;
 	rdfs:label "Geologic Fault Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/geologic-fault-feature> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -159,7 +149,6 @@
 <data-object/geologic-unit-outcrop-occurrence> a owl:Class ;
 	skos:prefLabel "Geologic Unit Outcrop Occurrence"@en ;
 	rdfs:label "Geologic Unit Outcrop Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/geologic-unit-outcrop> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "representation of geographically located descriptions of outcrop to map scale units of rock--including lithologic composition, age, internal structure (bedding, foliation etc.) and genesis.  Denormalizes data and concatenates complex property values from GeoSciML GeologicUnit feature model into human-readable, labels and returns single, representative values from controlled vocabularies for multi-valued properties; for use to generating thematic maps, or portrayals, of the data. It is separate to, but harmonized with, GeoSciML and conforms to the level 0 of the Simple Features Profile for GML (link)." ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -168,14 +157,12 @@
 <data-object/geologic-unit-portrayal-description> a owl:Class ;
 	skos:prefLabel "Geologic Unit Portrayal Description"@en ;
 	rdfs:label "Geologic Unit Portrayal Description"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/geologic-unit-feature> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "Denormalizes data and concatenates complex property values from GeoSciML GeologicUnit feature model into human-readable, labels and returns single, representative values from controlled vocabularies for multi-valued properties; for use to generating thematic maps, or portrayals, of the data. It is separate to, but harmonized with, GeoSciML" .
 
 <data-object/geothermal-area-occurrence> a owl:Class ;
 	skos:prefLabel "Geothermal Area Occurrence"@en ;
 	rdfs:label "Geothermal Area Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/geothermal-area-feature> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -185,7 +172,6 @@
 	skos:prefLabel "Geothermal Power Plant Occurrence"@en ;
 	dct:description "Simple tabular description of  facility that generates electricity using geothermal energy." ;
 	rdfs:label "Geothermal Power Plant Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/geothermal-power-plant-facility> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -194,7 +180,6 @@
 <data-object/geothermal-reservoir> a owl:Class ;
 	skos:prefLabel "Geothermal Reservoir"@en ;
 	rdfs:label "Geothermal Reservoir"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/geologic-reservoir-feature> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "representation of information about geothermal reserviors in the Gulf Coast area, and for resevoir description in the context of the DOE Play Fairway Analysis projects" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -203,7 +188,6 @@
 <data-object/gravity-result> a owl:Class ;
 	skos:prefLabel "Gravity Result"@en ;
 	rdfs:label "Gravity Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/gravity-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -212,7 +196,6 @@
 <data-object/heat-flow-result> a owl:Class ;
 	skos:prefLabel "Heat Flow Result"@en ;
 	rdfs:label "Heat Flow Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/heat-flow-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -221,7 +204,6 @@
 <data-object/heat-pump-facility-occurrence> a owl:Class ;
 	skos:prefLabel "Heat Pump Facility Occurrence"@en ;
 	rdfs:label "Heat Pump Facility Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/heat-pump-facility> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -236,7 +218,6 @@
 <data-object/hydraulic-properties-result> a owl:Class ;
 	skos:prefLabel "Hydraulic Properties Result"@en ;
 	rdfs:label "Hydraulic Properties Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/hydraulic-properties-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -245,7 +226,6 @@
 <data-object/metadata-instance> a owl:Class ;
 	skos:prefLabel "Metadata Instance"@en ;
 	rdfs:label "Metadata Instance"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/resource-description> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -254,7 +234,6 @@
 <data-object/mineral-recovery-brines-experimental-data-instance> a owl:Class ;
 	skos:prefLabel "Mineral Recovery Brines Experimental Data Instance"@en ;
 	rdfs:label "Mineral Recovery Brines Experimental Data Instance"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/mineral-recovery-brine-experimental-data> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System. capturing the variables to describe/evaluate REE removal and capturing the variables influencing removal and describing removal media;  Use to record observations of REE extraction processes and can be used to compare the efficacy of those processes." ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -263,7 +242,6 @@
 <data-object/mineral-recovery-brines-process-and-economics-instance> a owl:Class ;
 	skos:prefLabel "Mineral Recovery Brines Process and Economics Instance"@en ;
 	rdfs:label "Mineral Recovery Brines Process and Economics Instance"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/mineral-recovery-brine-process-and-economics> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System. capturing the variables to describe/evaluate REE removal and capturing the variables influencing removal and describing removal media;  Use to record observations of REE extraction processes and can be used to compare the efficacy of those processes." ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -272,7 +250,6 @@
 <data-object/physical-sample-occurrence> a owl:Class ;
 	skos:prefLabel "Physical Sample Occurrence"@en ;
 	rdfs:label "Physical Sample Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/physical-sample> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -281,7 +258,6 @@
 <data-object/powell-and-cumming-geothermometry-result> a owl:Class ;
 	skos:prefLabel "Powell and Cumming Geothermometry Result"@en ;
 	rdfs:label "Powell and Cumming Geothermometry Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/powell-and-cumming-geothermometry-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -290,7 +266,6 @@
 <data-object/power-plant-production-result> a owl:Class ;
 	skos:prefLabel "Power Plant Production Result"@en ;
 	rdfs:label "Power Plant Production Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/power-plant-production-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -299,7 +274,6 @@
 <data-object/radiogenic-heat-production-result> a owl:Class ;
 	skos:prefLabel "Radiogenic Heat Production Result"@en ;
 	rdfs:label "Radiogenic Heat Production Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/radiogenic-heat-production-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -309,14 +283,12 @@
 	skos:prefLabel "reference"@en ;
 	dct:description "A link or foreign key to another data instance. The structure of the reference object SHALL be specified by the schemaURI value." ;
 	rdfs:label "reference"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/value> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> ;
 	dcdtr:expectedUse "(required)" .
 
 <data-object/rock-chemistry-result> a owl:Class ;
 	skos:prefLabel "Rock Chemistry Result"@en ;
 	rdfs:label "Rock Chemistry Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/rock-chemical-composition-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -325,7 +297,6 @@
 <data-object/seismic-event-hypocenter-result> a owl:Class ;
 	skos:prefLabel "Seismic Event Hypocenter Result"@en ;
 	rdfs:label "Seismic Event Hypocenter Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/seismic-event-hypocenter-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -335,13 +306,11 @@
 	skos:prefLabel "term"@en ;
 	dct:description "a concept from a controlled vocabulary" ;
 	rdfs:label "term"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/value> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> .
 
 <data-object/thermal-conductivity-result> a owl:Class ;
 	skos:prefLabel "Thermal Conductivity Result"@en ;
 	rdfs:label "Thermal Conductivity Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/thermal-conductivity-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -350,7 +319,6 @@
 <data-object/thermal-spring-occurrence> a owl:Class ;
 	skos:prefLabel "Thermal Spring Occurrence"@en ;
 	rdfs:label "Thermal Spring Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/thermal-spring> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -360,14 +328,12 @@
 	skos:prefLabel "US Cadastral Location"@en ;
 	dct:description "representation of a location specified using the Public Land Survey System in the United States" ;
 	rdfs:label "US Cadastral Location"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/location> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "component data type for use in constructing more complex datatypes. Only useful in the context of a representation of a resource that has a geospatial location." .
 
 <data-object/volcanic-vent-occurrence> a owl:Class ;
 	skos:prefLabel "Volcanic Vent Occurrence"@en ;
 	rdfs:label "Volcanic Vent Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/volcanic-vent-feature> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -376,7 +342,6 @@
 <data-object/well-fluid-production-result> a owl:Class ;
 	skos:prefLabel "Well Fluid Production Result"@en ;
 	rdfs:label "Well Fluid Production Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/well-fluid-production-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -385,7 +350,6 @@
 <data-object/well-header-occurrence> a owl:Class ;
 	skos:prefLabel "Well Header Occurrence"@en ;
 	rdfs:label "Well Header Occurrence"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/well-header-feature> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -394,7 +358,6 @@
 <data-object/well-log-result> a owl:Class ;
 	skos:prefLabel "Well Log Result"@en ;
 	rdfs:label "Well Log Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/well-log-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System" ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -403,7 +366,6 @@
 <data-object/well-test-result> a owl:Class ;
 	skos:prefLabel "Well Test Result"@en ;
 	rdfs:label "Well Test Result"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/well-test-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "information interchange using OGC Web feature service in the National Geothermal Data System. schema used for the interchange of well test observation results by the AASG geothermal data project for the National Geothermal Data System. The HeaderURI for a particular borehole (well for simple wells) is the cross-referencing link (foreign key) used to associate the header record, well logs, temperature measurements, and other information from a particular borehole." ;
 	dcdtr:metaAttribute "[{\"SRS\":\"EPSG:4326\"}]" ;
@@ -441,7 +403,6 @@
 	skos:prefLabel "WSP2321Data"@en ;
 	dct:description "A hydraulic properties table extracted from USGS Water Supply paper 2321" ;
 	rdfs:label "WSP2321Data"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/hydraulic-properties-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "testing Digital crust Data integraton" ;
 	skos:historyNote "SM Richard transcribed data from WSP2321 to an excel spreadsheet; the columns in that table are defined in this data type" .
@@ -450,7 +411,6 @@
 	skos:prefLabel "CPHydroObservationData"@en ;
 	dct:description "tabular data type defined to compile hydraulic properties for rocks in Colorado Plateau, for Digital Crust project" ;
 	rdfs:label "CPHydroObservationData"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/hydraulic-properties-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "testing Digital crust Data integraton" ;
 	skos:historyNote "SM Richard transcribed data from WSP2321 to an excel spreadsheet; the columns in that table are defined in this data type" .
@@ -459,7 +419,6 @@
 	skos:prefLabel "WeigelObservation"@en ;
 	dct:description "compilation of data on hydraulic conductivity properties of mesozoic formations, from USGS WRI 86-470, Weigel, 1987" ;
 	rdfs:label "WeigelObservation"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/hydraulic-properties-observation> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	dcdtr:expectedUse "testing Digital crust Data integraton" .
 
@@ -467,7 +426,6 @@
 	skos:prefLabel "Measured Value"@en ;
 	dct:description "object representing a measurement result; may be expressed  single value,  an aggregate (mean, median, mode) value with some associated statisitics, categorical, count, time, or a range on any one of these. " ;
 	rdfs:label "Measured Value"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/measured-value> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/data-object> ;
 	dcdtr:expectedUse "testing Digital crust Data integraton" ;
 	skos:historyNote "SMR Base on OGC SWE (Sensor web enablment) SWE common abstract data component." .
@@ -476,6 +434,5 @@
 	skos:prefLabel "Quantity with units"@en ;
 	dct:description "a simple representation of a measured value that includes a single representative value and the unit of measure as a tuple" ;
 	rdfs:label "Quantity with units"@en ;
-	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/def/object-class/measured-value> ;
 	dcdtr:logicType <http://resources.usgin.org/uri-gin/dtr/def/concept/table> ;
 	skos:historyNote "SMR to account for value and uom in separtate comlumns/fields. " .
