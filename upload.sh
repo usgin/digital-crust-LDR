@@ -18,8 +18,8 @@ curl -b cookie-jar -c cookie-jar -X POST $BASEURI"class?real_delete"
 
 # Create New Root Registers
 
-curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Definitions/Def.ttl" $BASEURI" "
-curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "classes/Class.ttl" $BASEURI" "
+curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Definitions/Def.ttl" $BASEURI"?status=experimental"
+curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "classes/Class.ttl" $BASEURI"?status=experimental"
 
 
 # Upload New Registers
@@ -28,20 +28,18 @@ DEFINITIONS=( Concept MeasureClass ObjectClass Property UnitOfMeasure )
 for ITEM in "${DEFINITIONS[@]}"
 do
   echo Uploading $ITEM ...
-  curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Definitions/"$ITEM".ttl" $BASEURI"def?batch-managed"
+  curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Definitions/"$ITEM".ttl" $BASEURI"def?batch-managed&status=experimental"
 done
 
 CLASSES=( Attribute ConceptualDomain ControlledVocabulary DataObject DataType ValueDomain )
 for ITEM in "${CLASSES[@]}"
 do
   echo Uploading $ITEM ...
-  curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Classes/"$ITEM".ttl" $BASEURI"class?batch-managed"
+  curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Classes/"$ITEM".ttl" $BASEURI"class?batch-managed&status=experimental"
 done
 
 
 # Upload Links
-
-echo Uploading Links ...
 
 echo Uploading Attribute-DataObject Links ...
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/Attribute-DataObject/Attribute-dataObject.ttl" $BASEURI"class/attribute?edit"
@@ -58,3 +56,9 @@ curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Link
 echo Uploading ObjectClass-Property Links ...
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/ObjectClass-Property/ObjectClass-essentialProperty.ttl" $BASEURI"def/object-class?edit"
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Links/ObjectClass-Property/Property-domainOfCarriers.ttl" $BASEURI"def/property?edit"
+
+# Update the status of the items in the registers modified when adding links
+curl -b cookie-jar -c cookie-jar -X POST $BASEURI"class/attribute?update&status=experimental"
+curl -b cookie-jar -c cookie-jar -X POST $BASEURI"class/data-object?update&status=experimental"
+curl -b cookie-jar -c cookie-jar -X POST $BASEURI"def/object-class?update&status=experimental"
+curl -b cookie-jar -c cookie-jar -X POST $BASEURI"def/property?update&status=experimental"
