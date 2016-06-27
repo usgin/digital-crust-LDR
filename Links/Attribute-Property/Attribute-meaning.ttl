@@ -1145,11 +1145,11 @@
 
 <isolinerangemax> a owl:Class ;
 	rdfs:label "Isoline Range Max" ;
-	dcdtr:meaning <Table+for+now> .
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/Table+for+now> .
 
 <isolinerangemin> a owl:Class ;
 	rdfs:label "Isoline Range Min" ;
-	dcdtr:meaning <Table+for+now> .
+	dcdtr:meaning <http://resources.usgin.org/uri-gin/dtr/Table+for+now> .
 
 <isolinetypeandunits> a owl:Class ;
 	rdfs:label "Isoline Type And Units" ;
@@ -1204,6 +1204,10 @@
 	dcdtr:meaning <../../def/property/correction> .
 
 <latitudedegrees> a owl:Class ;
+	rdfs:label "Latitude Degrees" ;
+	dcdtr:meaning <../../def/property/latitude> .
+
+<latdegree> a owl:Class ;
 	rdfs:label "Latitude Degrees" ;
 	dcdtr:meaning <../../def/property/latitude> .
 
@@ -1300,6 +1304,10 @@
 	dcdtr:meaning <../../def/property/geospatial-position> .
 
 <longitudedegree> a owl:Class ;
+	rdfs:label "Longitude Degree" ;
+	dcdtr:meaning <../../def/property/longitude> .
+
+<longdegree> a owl:Class ;
 	rdfs:label "Longitude Degree" ;
 	dcdtr:meaning <../../def/property/longitude> .
 
@@ -1659,6 +1667,10 @@
 	rdfs:label "Other Formation Name" ;
 	dcdtr:meaning <../../def/property/feature-name> .
 
+<otherid> a owl:Class ;
+	rdfs:label "Other ID" ;
+	dcdtr:meaning <../../def/property/feature-identifier> .
+
 <otheridentifier> a owl:Class ;
 	rdfs:label "Other Identifier" ;
 	dcdtr:meaning <../../def/property/feature-identifier> .
@@ -1732,12 +1744,16 @@
 	dcdtr:meaning <../../def/property/composition> .
 
 <permeabilityair-md> a owl:Class ;
-	rdfs:label "Permeability, air mD" ;
+	rdfs:label "Percent Target Rock" ;
 	dcdtr:meaning <../../def/property/air-permeability> .
 
 <permeabilityaverage-m2> a owl:Class ;
-	rdfs:label "Permeability, air mD" ;
+	rdfs:label "Percent Target Rock" ;
 	dcdtr:meaning <../../def/property/permeability> .
+
+<permeabilityaveragemethod> a owl:Class ;
+	rdfs:label "Percent Target Rock" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
 
 <permeabilitycommonlyobserved-md> a owl:Class ;
 	rdfs:label "Permeability, Commonly observed mD" ;
@@ -1756,12 +1772,8 @@
 	dcdtr:meaning <../../def/property/local-permeability> .
 
 <permeabilitymean-md> a owl:Class ;
-	rdfs:label "Permeability, Mean intrinsic mD" ;
+	rdfs:label "Permeability, mean mD" ;
 	dcdtr:meaning <../../def/property/permeability> .
-
-<permeabilitymeanintrinsic-md> a owl:Class ;
-	rdfs:label "Permeability, Mean intrinsic mD" ;
-	dcdtr:meaning <../../def/property/intrinsic-permeability> .
 
 <permeabilitymedian-md> a owl:Class ;
 	rdfs:label "Permeability, median mD" ;
@@ -1775,10 +1787,6 @@
 	rdfs:label "Permeability, pore-scale mD" ;
 	dcdtr:meaning <../../def/property/pore-scale-permeability> .
 
-<permeabilityaveragemethod> a owl:Class ;
-	rdfs:label "Permeability Average Method" ;
-	dcdtr:meaning <../../def/property/observation-procedure> .
-
 <permeabilityaverageuncertainty> a owl:Class ;
 	rdfs:label "Permeability Average Uncertainty" ;
 	dcdtr:meaning <../../def/property/uncertainty> .
@@ -1791,9 +1799,17 @@
 	rdfs:label "Permeability Max m2" ;
 	dcdtr:meaning <../../def/property/permeability> .
 
+<permeabilitymeanintrinsic-md> a owl:Class ;
+	rdfs:label "Permeability Max m2" ;
+	dcdtr:meaning <../../def/property/intrinsic-permeability> .
+
 <permeabilitymin-m2> a owl:Class ;
 	rdfs:label "Permeability Min m2" ;
 	dcdtr:meaning <../../def/property/permeability> .
+
+<unitspermeability> a owl:Class ;
+	rdfs:label "Permeability units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
 
 <permit> a owl:Class ;
 	rdfs:label "Permit" ;
@@ -1835,13 +1851,13 @@
 	rdfs:label "Plant Type" ;
 	dcdtr:meaning <../../def/property/procedure-type> .
 
-<plss-meridians> a owl:Class ;
-	rdfs:label "PLSS Location" ;
-	dcdtr:meaning <../../def/property/spatial-reference-system> .
-
 <plsslocation> a owl:Class ;
-	rdfs:label "PLSS Location" ;
+	rdfs:label "Plant Type" ;
 	dcdtr:meaning <../../def/property/location> .
+
+<plss-meridians> a owl:Class ;
+	rdfs:label "PLSS Meridians" ;
+	dcdtr:meaning <../../def/property/spatial-reference-system> .
 
 <plssrange> a owl:Class ;
 	rdfs:label "PLSS Range" ;
@@ -1859,13 +1875,13 @@
 	rdfs:label "PLSS Township" ;
 	dcdtr:meaning <../../def/property/township-number> .
 
-<porosityaverage-pct> a owl:Class ;
-	rdfs:label "Porosity Average Method" ;
-	dcdtr:meaning <../../def/property/porosity> .
-
 <porosityaveragemethod> a owl:Class ;
-	rdfs:label "Porosity Average Method" ;
+	rdfs:label "PLSS Township" ;
 	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<porosityaverage-pct> a owl:Class ;
+	rdfs:label "Porosity Average pct" ;
+	dcdtr:meaning <../../def/property/porosity> .
 
 <porosityaverageuncertainty> a owl:Class ;
 	rdfs:label "Porosity Average Uncertainty" ;
@@ -1890,6 +1906,14 @@
 <porositypercent> a owl:Class ;
 	rdfs:label "porosity percent" ;
 	dcdtr:meaning <../../def/property/porosity> .
+
+<units-pressure> a owl:Class ;
+	rdfs:label "Porosity units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
+
+<unitsporosity> a owl:Class ;
+	rdfs:label "Porosity units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
 
 <positionaccuracy> a owl:Class ;
 	rdfs:label "Position Accuracy" ;
@@ -1920,20 +1944,16 @@
 	dcdtr:meaning <../../def/property/pressure> .
 
 <pressurefinalshutin> a owl:Class ;
-	rdfs:label "Preferred Pressure" ;
-	dcdtr:meaning <../../def/property/pressure> .
-
-<pressureinitialshutin> a owl:Class ;
-	rdfs:label "Preferred Pressure" ;
+	rdfs:label "Pressure Final Shut In" ;
 	dcdtr:meaning <../../def/property/pressure> .
 
 <pressure-psi> a owl:Class ;
-	rdfs:label "Pressure psi" ;
+	rdfs:label "Pressure Initial Shut In" ;
 	dcdtr:meaning <../../def/property/pressure> .
 
-<units-pressure> a owl:Class ;
-	rdfs:label "Pressure units" ;
-	dcdtr:meaning <../../def/property/unit-of-measure> .
+<pressureinitialshutin> a owl:Class ;
+	rdfs:label "Pressure Initial Shut In" ;
+	dcdtr:meaning <../../def/property/pressure> .
 
 <proceduresummary> a owl:Class ;
 	rdfs:label "Procedure Summary" ;
@@ -2078,6 +2098,10 @@
 <result> a owl:Class ;
 	rdfs:label "Result" ;
 	dcdtr:meaning <../../def/property/quantifier> .
+
+<rge> a owl:Class ;
+	rdfs:label "RGE" ;
+	dcdtr:meaning <../../def/property/range-number> .
 
 <rockname> a owl:Class ;
 	rdfs:label "Rock Name" ;
@@ -2599,16 +2623,20 @@
 	rdfs:label "True Vertical Depth" ;
 	dcdtr:meaning <../../def/property/feature-extent> .
 
+<twp> a owl:Class ;
+	rdfs:label "TWP" ;
+	dcdtr:meaning <../../def/property/township-number> .
+
 <uncertainty> a owl:Class ;
 	rdfs:label "uncertainty" ;
 	dcdtr:meaning <../../def/property/uncertainty> .
 
-<uncertaintydensity> a owl:Class ;
-	rdfs:label "uncertainty" ;
+<uncertainty-mgal> a owl:Class ;
+	rdfs:label "UncertaintyDensity" ;
 	dcdtr:meaning <../../def/property/uncertainty> .
 
-<uncertainty-mgal> a owl:Class ;
-	rdfs:label "Uncertainty mgal" ;
+<uncertaintydensity> a owl:Class ;
+	rdfs:label "UncertaintyDensity" ;
 	dcdtr:meaning <../../def/property/uncertainty> .
 
 <uncertaintyspecificheat> a owl:Class ;
@@ -2631,14 +2659,6 @@
 	rdfs:label "Units Of Measure" ;
 	dcdtr:meaning <../../def/property/unit-of-measure> .
 
-<unitspermeability> a owl:Class ;
-	rdfs:label "Units Of Measure" ;
-	dcdtr:meaning <../../def/property/unit-of-measure> .
-
-<unitsporosity> a owl:Class ;
-	rdfs:label "Units Of Measure" ;
-	dcdtr:meaning <../../def/property/unit-of-measure> .
-
 <updatedate> a owl:Class ;
 	rdfs:label "Update Date" ;
 	dcdtr:meaning <../../def/property/history> .
@@ -2655,13 +2675,13 @@
 	rdfs:label "Use Application" ;
 	dcdtr:meaning <../../def/property/spatial-reference-system> .
 
+<utm-n> a owl:Class ;
+	rdfs:label "UTM Datum Zone" ;
+	dcdtr:meaning <../../def/property/utm-northing> .
+
 <utm-e> a owl:Class ;
 	rdfs:label "UTM E" ;
 	dcdtr:meaning <../../def/property/utm-easting> .
-
-<utm-n> a owl:Class ;
-	rdfs:label "UTM N" ;
-	dcdtr:meaning <../../def/property/utm-northing> .
 
 <utmzone> a owl:Class ;
 	rdfs:label "UTM Zone" ;

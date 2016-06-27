@@ -309,6 +309,7 @@
      skos:member <attribute/lasfileurl>; 
      skos:member <attribute/lastproductiondate>; 
      skos:member <attribute/latcentroid>; 
+     skos:member <attribute/latdegree>; 
      skos:member <attribute/latdegreewgs84>; 
      skos:member <attribute/latitudecorrection-mgal>; 
      skos:member <attribute/latitudedegrees>; 
@@ -334,6 +335,7 @@
      skos:member <attribute/logtypeterm>; 
      skos:member <attribute/loguri>; 
      skos:member <attribute/longcentroid>; 
+     skos:member <attribute/longdegree>; 
      skos:member <attribute/longdegreewgs84>; 
      skos:member <attribute/longitudedegree>; 
      skos:member <attribute/magnitude>; 
@@ -424,6 +426,7 @@
      skos:member <attribute/otherdistribution>; 
      skos:member <attribute/otherfeatureid>; 
      skos:member <attribute/otherformationname>; 
+     skos:member <attribute/otherid>; 
      skos:member <attribute/otheridentifier>; 
      skos:member <attribute/otherlithologyname>; 
      skos:member <attribute/otherlocationinformation>; 
@@ -442,8 +445,8 @@
      skos:member <attribute/parentspecimenuri>; 
      skos:member <attribute/parentwelluri>; 
      skos:member <attribute/percenttargetrock>; 
-     skos:member <attribute/permeabilityair-md>; 
      skos:member <attribute/permeability-md>; 
+     skos:member <attribute/permeabilityair-md>; 
      skos:member <attribute/permeabilityaverage-m2>; 
      skos:member <attribute/permeabilityaveragemethod>; 
      skos:member <attribute/permeabilityaverageuncertainty>; 
@@ -530,6 +533,7 @@
      skos:member <attribute/resistivitywater-ohm-m>; 
      skos:member <attribute/resourcetype>; 
      skos:member <attribute/result>; 
+     skos:member <attribute/rge>; 
      skos:member <attribute/rockname>; 
      skos:member <attribute/rocktype>; 
      skos:member <attribute/salinity>; 
@@ -656,6 +660,7 @@
      skos:member <attribute/transmissivity-units>; 
      skos:member <attribute/trap>; 
      skos:member <attribute/trueverticaldepth>; 
+     skos:member <attribute/twp>; 
      skos:member <attribute/uncertainty>; 
      skos:member <attribute/uncertainty-mgal>; 
      skos:member <attribute/uncertaintydensity>; 
@@ -713,6 +718,7 @@
      skos:member <attribute/youngestradiometricage-ma>; 
      skos:member <attribute/zip>;
  .
+
 
 <attribute/abovebelowwatertable> a owl:Class ;
 	skos:prefLabel "Above Below Water Table"@en ;
@@ -777,7 +783,7 @@
 	dct:description "Other human-intelligible labels for analysis such as secondary name or common name, other spellings. Indicate the authority from which the OtherName is derived with a short (lower case) prefix delimited by a colon ':' If identifiers from multiple different authorities are available, delimit these identifiers with the pipe character '|'. For example, if a well were known to the Arizona Geological Survey (AZGS) by the id number 1337, the identifier string would be azgs:1337. Any such prefixes used to scope identifiers should be explained in the dataset metadata. (If there are multiple analyses performed on a single sample, each analysis would correspond to a new line of data in the template.) May be a concatenation of analysis type, feature name, and specimen label. This element is specific, not generic; i.e., do not use generic terms such as \"Analyte Analysis\"." ;
 	rdfs:label "Analysis Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/analysistype> a owl:Class ;
 	skos:prefLabel "Analysis Type"@en ;
@@ -791,7 +797,7 @@
 	dct:description "A unique identifier for a discrete analysis of a specimen taken from a feature. The feature from which the specimen was taken will be identified by its own URI." ;
 	rdfs:label "Analysis URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/analyte> a owl:Class ;
 	skos:prefLabel "Analyte"@en ;
@@ -914,14 +920,14 @@
 	skos:prefLabel "Average Temperature Geofluid"@en ;
 	dct:description "Average temperature of the fluids in the geothermal field. Use the same units as defined in TemperatureUnits field." ;
 	rdfs:label "Average Temperature Geofluid"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/averagethermalconductivity> a owl:Class ;
 	skos:prefLabel "Average Thermal Conductivity"@en ;
 	dct:description "Determined Thermal Conductivity for sample/formation of rock material.  Units need to be specifed in another field." ;
 	rdfs:label "Average Thermal Conductivity"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/averechargerategrndwtrvol-m3yr> a owl:Class ;
@@ -942,34 +948,34 @@
 	dct:description "Name of base station used as calibration for measurement." ;
 	rdfs:label "Base Station Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/bhintercepturi> a owl:Class ;
 	skos:prefLabel "Borehole Intercept URI"@en ;
 	dct:description "Unique identifier that specifies the  borehole intercept. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Borehole Intercept URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/bhintervaluri> a owl:Class ;
 	skos:prefLabel "Borehole Interval URI"@en ;
 	dct:description "Unique identifier that specifies the  borehole interval. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature" ;
 	rdfs:label "Borehole Interval URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/bht> a owl:Class ;
 	skos:prefLabel "BHT"@en ;
 	dct:description "Bottom Hole Temperature or Maximum Temperature from drilling log header of oil/gas well or well with only the log header available. Report temperatures in either degrees Fahrenheit or Celsius. Use same units throughout this document." ;
 	rdfs:label "BHT"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/bhtcorrectedvalue> a owl:Class ;
 	skos:prefLabel "BHT Corrected Value"@en ;
 	dct:description "Bottom Hole Temperature value corrected for drilling fluid influence on measurement. Estimate of an in situ value." ;
 	rdfs:label "BHT Corrected Value"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/bhtcorrectiontype> a owl:Class ;
@@ -982,7 +988,7 @@
 	skos:prefLabel "Bit Diameter at Collar"@en ;
 	dct:description "Bit diameter at the origin of the borehole, reported in decimal format." ;
 	rdfs:label "Bit Diameter at Collar"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/positive+decimal+number> .
 
@@ -990,7 +996,7 @@
 	skos:prefLabel "Bit Diameter at TD"@en ;
 	dct:description "Bit diameter at the bottom of the borehole, reported in decimal format." ;
 	rdfs:label "Bit Diameter at TD"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/positive+decimal+number> .
 
@@ -1006,7 +1012,7 @@
 	dct:description "Human-intelligible name by which the borehole identified by the HeaderURI is known. Convention for wellName is: Name = Operator + Well No. + Lease Owner. A well may consist of multiple boreholes (wellbores). If these are distinguished by different records in this table, they should have the same well names, but distinct BoreholeNames, and at least one identifier (APINo or OtherID) that is unique to the borehole. Conditional obligation - If the HeaderURI identifies a borehole which is one of several within a well, then a BoreholeName is mandatory. Each borehole should have a unique BoreholeName. Separate multiple BoreholeNames with the pipe character '|'." ;
 	rdfs:label "Borehole Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/bottomloggedinterval-ft> a owl:Class ;
 	skos:prefLabel "Bottom Logged Interval ft"@en ;
@@ -1040,7 +1046,7 @@
 	dct:description "Production capacity of the power plant in MW. Included as a search parameter." ;
 	rdfs:label "Capacity MW"@en ;
 	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <class/value-domain/megawatts-of-power> ;
+	dcdtr:valueDomain <value-domain/megawatts-of-power> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/megawatt> .
 
 <attribute/capacityprocedure> a owl:Class ;
@@ -1085,21 +1091,21 @@
 	skos:prefLabel "Casing Pipe Diameter"@en ;
 	dct:description "Internal (ID) or external diameter (ED) should be noted. Units must be same as those used to report bit diameter (Diameter units column). Note that if there are different casing types over different intervals in the well bore, these should be noted in tuples delimited by the pipe character '|' as follows: {top-bottom1, diameter1, xD1 | top-bottom2, diameter2, xD2}." ;
 	rdfs:label "Casing Pipe Diameter"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/casingthickness> a owl:Class ;
 	skos:prefLabel "Casing Thickness"@en ;
 	dct:description "Thickness Casing pipe installed in the borehole. Units must be same as diameter units specified in this record. If multiple pipe thicknesses used, these should be separated by the pipe character '|'. " ;
 	rdfs:label "Casing Thickness"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/term> .
 
 <attribute/casingtopdepth> a owl:Class ;
 	skos:prefLabel "Casing Top Depth"@en ;
 	dct:description "Top of cased interval of the borehole." ;
 	rdfs:label "Casing Top Depth"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/casingtype> a owl:Class ;
@@ -1112,14 +1118,14 @@
 	skos:prefLabel "Casing Weight"@en ;
 	dct:description "Casing pipe weight per length installed in the borehole." ;
 	rdfs:label "Casing Weight"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/casingweightunits> a owl:Class ;
 	skos:prefLabel "Casing Weight Units"@en ;
 	dct:description "Units for the reported Casing Weight: kg/m OR lbs/ft." ;
 	rdfs:label "Casing Weight Units"@en ;
-	dcdtr:containerObject <class/data-object/quantity-with-units> ;
+	dcdtr:containerObject <data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/term> .
 
 <attribute/catalogsourcecode> a owl:Class ;
@@ -1131,7 +1137,7 @@
 <attribute/cementationfactor> a owl:Class ;
 	skos:prefLabel "Cementation factor"@en ;
 	rdfs:label "Cementation factor"@en ;
-	dcdtr:valueDomain <class/value-domain/cementation-factors> .
+	dcdtr:valueDomain <value-domain/cementation-factors> .
 
 <attribute/cementationmineralogy> a owl:Class ;
 	skos:prefLabel "Cementation Mineralogy"@en ;
@@ -1163,14 +1169,14 @@
 	dct:description "Free text name that should uniquely identify the collection activity (cruise, project, etc.) for human readers." ;
 	rdfs:label "Collection Activity Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/collectionactivityuri> a owl:Class ;
 	skos:prefLabel "Collection Activity URI"@en ;
 	dct:description "Identifier for cruise, project, program that is context for sample collection activity. Ideally should dereference to some standard representation(s) of the activity." ;
 	rdfs:label "Collection Activity URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/collectionmethod> a owl:Class ;
 	skos:prefLabel "Collection Method"@en ;
@@ -1203,7 +1209,7 @@
 	dct:description "Related information on Conductivity template; give link information. Unique identifier for this observation. This is the identifier (Uniform Resource Identifier) that will be used to cross-reference data, samples, and other observations to the observation represented by this record. Best practice is to define an http URI that will dereference to a normative description of the observation. USGIN URI's may be redirected to any URL using the http://resources.usgin.org redirector; contact the USGIN development team at AZGS for instructions." ;
 	rdfs:label "Conductivity Measured URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/conductivitynumsamples> a owl:Class ;
 	skos:prefLabel "Conductivity Num Samples"@en ;
@@ -1222,13 +1228,13 @@
 	dct:description "information indicating how to contact a responsible party associated with some resource, represented as a single property. The value is represented as a text blob with name(s), address(es), etc." ;
 	rdfs:label "Contact Information Text"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/contactemailaddress> a owl:Class ;
 	skos:prefLabel "Contact Email Address"@en ;
 	dct:description "E-mail address to contact party connected with facility." ;
 	rdfs:label "Contact Email Address"@en ;
-	dcdtr:containerObject <class/data-object/contact-information-description> ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/contactintervalbottom> a owl:Class ;
@@ -1247,15 +1253,15 @@
 	skos:prefLabel "Contact Name"@en ;
 	dct:description "Person, organization, or position name for information about the facility." ;
 	rdfs:label "Contact Name"@en ;
-	dcdtr:containerObject <class/data-object/contact-information-description> ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/contactphone> a owl:Class ;
 	skos:prefLabel "Contact Phone"@en ;
 	dct:description "Telephone number to contact party connected with facility." ;
 	rdfs:label "Contact Phone"@en ;
-	dcdtr:containerObject <class/data-object/contact-information-description> ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/contourtype> a owl:Class ;
@@ -1269,14 +1275,14 @@
 	dct:description "Unique identifier referring to a controlled concept from a vocabulary defining the Contact types. Mandatory property - if no value is provided then a URI referring to a controlled concept explaining why the value is nil must be provided." ;
 	rdfs:label "contour Type uri"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/contoururi> a owl:Class ;
 	skos:prefLabel "contour URI"@en ;
 	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "contour URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/contourvalue> a owl:Class ;
 	skos:prefLabel "contour Value"@en ;
@@ -1313,7 +1319,7 @@
 	dct:description "Required. County name. If unknown or not applicable use 'missing'. If offshore, specify 'offshore' in this field." ;
 	rdfs:label "County"@en ;
 	dcdtr:dataType <data-type/term> ;
-	dcdtr:valueDomain <class/value-domain/us-county-name> .
+	dcdtr:valueDomain <value-domain/us-county-name> .
 
 <attribute/crosssectionarea-m2> a owl:Class ;
 	skos:prefLabel "Cross Section Area m2"@en ;
@@ -1332,7 +1338,7 @@
 	dct:description "Identifier for the party that currently has stewardship of the specimen. Ideally an http URI that will dereference to a standard CI_ResponsibleParty type representation of the party." ;
 	rdfs:label "Curator URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/currentcurationlocation> a owl:Class ;
 	skos:prefLabel "Current Curation Location"@en ;
@@ -1509,7 +1515,7 @@
 	dct:description "Unique identifier that identifies an analysis observation whose analyte values are the detection limits for each analyte. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature. Unique identifier for each set of samples, each analyzed using the same method, technique and using the same equipment." ;
 	rdfs:label "Detection Limit URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/developmentarea> a owl:Class ;
 	skos:prefLabel "Development Area"@en ;
@@ -1559,14 +1565,14 @@
 	dct:description "The label for portraying the feature identified by the HeaderURI on a map. A label may be the APINo (preferred), an OtherID or the WellName." ;
 	rdfs:label "Display Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/dominantformationname> a owl:Class ;
 	skos:prefLabel "Dominant Formation Name"@en ;
 	dct:description "Name of geologic formation with the largest thickness in area of interest." ;
 	rdfs:label "Dominant Formation Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/drilleddepth-ft> a owl:Class ;
 	skos:prefLabel "Drilled Depth ft"@en ;
@@ -1873,7 +1879,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the feature is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Event Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/eventtype> a owl:Class ;
 	skos:prefLabel "Event Type"@en ;
@@ -1892,14 +1898,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier that specifies the feature represented (seismic event hypocenter). Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature  to other information related to this feature." ;
 	rdfs:label "Event URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/facilityname> a owl:Class ;
 	skos:prefLabel "Facility Name"@en ;
 	dct:description "Common or human-readable name by which the feature  is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Facility Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/facilityowner> a owl:Class ;
 	skos:prefLabel "Facility Owner"@en ;
@@ -1911,14 +1917,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Facility Postal Address"@en ;
 	dct:description "Postal address for facility. Street, City, State." ;
 	rdfs:label "Facility Postal Address"@en ;
-	dcdtr:containerObject <class/data-object/contact-information-description> ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/facilitypostalzipcode> a owl:Class ;
 	skos:prefLabel "Facility Postal Zipcode"@en ;
 	dct:description "Zip code for facility; may be used for some geolocation information." ;
 	rdfs:label "Facility Postal Zipcode"@en ;
-	dcdtr:containerObject <class/data-object/contact-information-description> ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/term> .
 
 <attribute/facilitystatus> a owl:Class ;
@@ -1938,7 +1944,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Facility URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/faultcount> a owl:Class ;
 	skos:prefLabel "Fault Count"@en ;
@@ -1969,7 +1975,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Feature Of Interest URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/featuretype> a owl:Class ;
 	skos:prefLabel "Feature Type"@en ;
@@ -1982,7 +1988,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Feature URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/field> a owl:Class ;
 	skos:prefLabel "Field"@en ;
@@ -1996,7 +2002,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Name of the Geothermal Area. If multiple names are or have been used for the field, separate values with a '|' character." ;
 	rdfs:label "Field Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/firstproductiondate> a owl:Class ;
 	skos:prefLabel "First Production Date"@en ;
@@ -2022,7 +2028,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Fluid production flow rate." ;
 	rdfs:label "Flow gpm"@en ;
 	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <class/value-domain/number-greater-than-0> ;
+	dcdtr:valueDomain <value-domain/number-greater-than-0> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/gallons-per-minute> .
 
 <attribute/flowhistory> a owl:Class ;
@@ -2098,7 +2104,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Water temperature, in decimal format. Degrees Celsius is preferred and will be reported for consistency in service implementations." ;
 	rdfs:label "Fluid Temperature C"@en ;
 	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <class/value-domain/geothermal-fluid-temperature-range-c> ;
+	dcdtr:valueDomain <value-domain/geothermal-fluid-temperature-range-c> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degrees-celsius> .
 
 <attribute/fluidtype> a owl:Class ;
@@ -2131,7 +2137,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Name of geologic unit for interval section or BHT value of well or geologic unit at the bottom of the mine. Include hierarchy of names if the unit is part of a higher-rank geologic unit, e.g. Group name/Formation name, or Formation/Member, or Group/ Formation. Spell out unit names in full." ;
 	rdfs:label "Formation Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/formationtd> a owl:Class ;
 	skos:prefLabel "Formation TD"@en ;
@@ -2157,7 +2163,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Hierarchical path name for the described shear displacement structure feature, from largest to most specific. E.g. Pinto Mountain fault zone/Morongo Valley fault. Use slash '/' as the hierarchical delimiter." ;
 	rdfs:label "Full Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/function> a owl:Class ;
 	skos:prefLabel "Function"@en ;
@@ -2195,7 +2201,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Name of geologic unit that was sampled. Include hierarchy of names if the unit is part of a higher-rank geologic unit, e.g. Group name/Formation name, or Formation/Member, or Group/ Formation. Spell out unit names in full." ;
 	rdfs:label "Geologic Formation Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/geologicformationtype> a owl:Class ;
 	skos:prefLabel "Geologic Formation Type"@en ;
@@ -2208,7 +2214,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier for the geologic formation of this record." ;
 	rdfs:label "Geologic Formation URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/geologichistory> a owl:Class ;
 	skos:prefLabel "Geologic History"@en ;
@@ -2233,14 +2239,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Name of geologic unit that was sampled. Include hierarchy of names if the unit is part of a higher-rank geologic unit, e.g. groupName/Formation name, or Formation/Member, or Group/ Formation/ Member/ Flow. Spell out unit names in full." ;
 	rdfs:label "Geologic Unit Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/geothermalareauri> a owl:Class ;
 	skos:prefLabel "Geothermal Area URI"@en ;
 	dct:description "Unique identifier that specifies the feature (Geothermal Area). Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Geothermal Area URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/geothermtempcharacterization> a owl:Class ;
 	skos:prefLabel "Geotherm Temp Characterization"@en ;
@@ -2303,7 +2309,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier for the borehole indicated by this record. This identifier should identify the physical well, based on the API number if available. Otherwise, the URI should incorporate one of the OtherID values. If the API number indicates multiple instances of reentry, recompletion, sidetrack, etc., each instance is to have its own HeaderURI.  For example, the API number 42-501-20130-0300 indicates a well (42-501-20130) with three sidetracks, for a total of four total boreholes (-0000,-0100, -0200,-0300), each of which should have its own database record and HeaderURI.This is the identifier (Uniform Resource Identifier) that will be used to cross-reference data, samples, and other observations to the observation represented by this record. Best practice is to define an http URI that will dereference to a normative description of the observation. USGIN URI's may be redirected to any URL using the http://resources.usgin.org redirector; contact the USGIN development team at AZGS for instructions." ;
 	rdfs:label "Header URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/heatapplication> a owl:Class ;
 	skos:prefLabel "Heat Application"@en ;
@@ -2425,7 +2431,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature  to other information related to this feature. For hypocenter observation, data originator should provide hypocenter-specific identifiers; these may have additional prefix strings (e.g. http://resources.usgin.org/uri-gin/…) added to enable dereferencing of http URIs or to ensure global uniqueness." ;
 	rdfs:label "Hypocenter URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/informationsource> a owl:Class ;
 	skos:prefLabel "Information Source"@en ;
@@ -2457,7 +2463,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the intercept is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Intercept Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/intercepttype> a owl:Class ;
 	skos:prefLabel "Intercept Type"@en ;
@@ -2507,7 +2513,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the interval is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Interval Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/intervals> a owl:Class ;
 	skos:prefLabel "Intervals"@en ;
@@ -2593,7 +2599,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Short text string for labeling the feature on maps. Can be the same as feature name. A label may be an OtherLocationName, OtherID or the Name or some combination." ;
 	rdfs:label "Label"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/laboratorycontact> a owl:Class ;
 	skos:prefLabel "Laboratory Contact"@en ;
@@ -2606,7 +2612,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier (if available) for the laboratory where the analysis was performed." ;
 	rdfs:label "Laboratory URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/landleaseowner> a owl:Class ;
 	skos:prefLabel "Land Lease Owner"@en ;
@@ -2640,12 +2646,21 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Lat Centroid"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
+<attribute/latdegree> a owl:Class ;
+	skos:prefLabel "Latitude Degrees"@en ;
+	dct:description "Latitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
+	rdfs:label "Latitude Degrees"@en ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:dataType <data-type/real-number> ;
+	dcdtr:valueDomain <value-domain/degrees-of-latitude> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
+
 <attribute/latdegreewgs84> a owl:Class ;
 	skos:prefLabel "Lat Degree WGS84"@en ;
 	dct:description "Latitude coordinate for the surface location of the feature using WGS1984; (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
 	rdfs:label "Lat Degree WGS84"@en ;
 	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <class/value-domain/degrees-of-latitude> .
+	dcdtr:valueDomain <value-domain/degrees-of-latitude> .
 
 <attribute/latitudecorrection-mgal> a owl:Class ;
 	skos:prefLabel "Latitude Correction mgal"@en ;
@@ -2657,9 +2672,9 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Latitude Degrees"@en ;
 	dct:description "Latitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
 	rdfs:label "Latitude Degrees"@en ;
-	dcdtr:containerObject <class/data-object/coordinate-location> ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <class/value-domain/degrees-of-latitude> ;
+	dcdtr:valueDomain <value-domain/degrees-of-latitude> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
 
 <attribute/leasename> a owl:Class ;
@@ -2667,7 +2682,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Name or number of the lease of the borehole. Formatting and punctuation are not proscribed, but should be consistent within a dataset." ;
 	rdfs:label "Lease Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/leaseno> a owl:Class ;
 	skos:prefLabel "Lease No"@en ;
@@ -2752,21 +2767,21 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Names of geographic features associated with the site that will be useful as search criteria to locate the information for this site. If identifiers from multiple different authorities are available, delimit these identifiers with the pipe character '|'." ;
 	rdfs:label "Location Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/locationuncertaintycode> a owl:Class ;
 	skos:prefLabel "Location Uncertainty Code"@en ;
 	dct:description "A controlled vocabulary term or code value specifying the location confidence, E.g. 1 = reported, 2= surveyed, 3= GPS. If such a code list or vocabulary is used, it must be added to the 'Data Valid Terms' sheet to enumerate the possible values and their meaning." ;
 	rdfs:label "Location Uncertainty Code"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/controlled-vocabulary> .
+	dcdtr:valueDomain <value-domain/controlled-vocabulary> .
 
 <attribute/locationuncertaintyradius> a owl:Class ;
 	skos:prefLabel "Location Uncertainty Radius"@en ;
 	dct:description "Radius (in meters) of circle of confidence for location. Ideally might represent some specific confidence criteria like 'radius of circle around reported location which which true location lies with 95% confidence', but such precision is rarely available." ;
 	rdfs:label "Location Uncertainty Radius"@en ;
 	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <class/value-domain/number-greater-than-0> ;
+	dcdtr:valueDomain <value-domain/number-greater-than-0> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
 
 <attribute/locationuncertaintystatement> a owl:Class ;
@@ -2774,14 +2789,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Information on how the original location was determined, e.g.: 1:250,000 map, gps unit, Google Earth, PLSS Conversion, Spatial Datum Conversion, e.g., NAD27 to WGS84." ;
 	rdfs:label "Location Uncertainty Statement"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/narrative-text> .
+	dcdtr:valueDomain <value-domain/narrative-text> .
 
 <attribute/logtypename> a owl:Class ;
 	skos:prefLabel "Log Type Name"@en ;
 	dct:description "Free text name for the type of log, using whatever terminology is used by the data provider. See AASG Data Log Type Codes tab for suggested terms." ;
 	rdfs:label "Log Type Name"@en ;
 	dcdtr:dataType <data-type/term> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/logtypeterm> a owl:Class ;
 	skos:prefLabel "Log Type Term"@en ;
@@ -2795,7 +2810,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier for the well log. This is the  Uniform Resource Identifier that will be used to cross-reference data, samples, and other observations to the observation represented by this record. Best practice is to define an http URI that will dereference to a normative description of the observation. USGIN URI's may be redirected to any URL using the http://resources.usgin.org redirector; contact the USGIN development team at AZGS for instructions. (See http://lab.usgin.org/node/315)." ;
 	rdfs:label "Log URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/longcentroid> a owl:Class ;
 	skos:prefLabel "Long Centroid"@en ;
@@ -2803,20 +2818,29 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Long Centroid"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
+<attribute/longdegree> a owl:Class ;
+	skos:prefLabel "Longitude Degree"@en ;
+	dct:description "Longitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
+	rdfs:label "Longitude Degree"@en ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:dataType <data-type/real-number> ;
+	dcdtr:valueDomain <value-domain/degrees-of-longitude> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
+
 <attribute/longdegreewgs84> a owl:Class ;
 	skos:prefLabel "Long Degree WGS84"@en ;
 	dct:description "Longitude coordinate for the surface location of the feature (use center point for areas); using WGS1984; values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
 	rdfs:label "Long Degree WGS84"@en ;
 	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <class/value-domain/degrees-of-longitude> .
+	dcdtr:valueDomain <value-domain/degrees-of-longitude> .
 
 <attribute/longitudedegree> a owl:Class ;
 	skos:prefLabel "Longitude Degree"@en ;
 	dct:description "Longitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
 	rdfs:label "Longitude Degree"@en ;
-	dcdtr:containerObject <class/data-object/coordinate-location> ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <class/value-domain/degrees-of-longitude> ;
+	dcdtr:valueDomain <value-domain/degrees-of-longitude> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
 
 <attribute/magnitude> a owl:Class ;
@@ -3029,14 +3053,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "URI identifying (and ideally dereferencing to get) a full formal metadata record for the observation report. A time series of observations may all reference the same metadata record that provides contact information and details on procedure, etc." ;
 	rdfs:label "metadata uri"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/metadatauri> a owl:Class ;
 	skos:prefLabel "MetadataURI"@en ;
 	dct:description "URI identifying (and ideally dereferencing to get) a full formal metadata record for the observation report. A time series of observations may all reference the same metadata record that provides contact information and details on procedure, etc." ;
 	rdfs:label "MetadataURI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/methodology> a owl:Class ;
 	skos:prefLabel "Methodology"@en ;
@@ -3060,7 +3084,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Mine Name"@en ;
 	rdfs:label "Mine Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/mineoropeningtype> a owl:Class ;
 	skos:prefLabel "Mine Or Opening Type"@en ;
@@ -3165,7 +3189,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the feature is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/netproductioncapacity-mw> a owl:Class ;
 	skos:prefLabel "Net Production Capacity MW"@en ;
@@ -3184,7 +3208,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Any additional information to be provided, including description and other data not captured by the template, details about collection method, contact information for related parties (original collector, project PI), collection platform or Launch, etc." ;
 	rdfs:label "Notes"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/narrative-text> .
+	dcdtr:valueDomain <value-domain/narrative-text> .
 
 <attribute/numberinjectionwells> a owl:Class ;
 	skos:prefLabel "Number Injection Wells"@en ;
@@ -3221,7 +3245,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Integer record count, added by ArcGIS servers during service deployment; not required but cannot be removed when deploying from ArcGIS feature class. Not user maintained, so this element appears in XML implementation but not in the Content Model Template." ;
 	rdfs:label "OBJECTID"@en ;
 	dcdtr:dataType <data-type/long-integer> ;
-	dcdtr:valueDomain <class/value-domain/positive-integer> .
+	dcdtr:valueDomain <value-domain/positive-integer> .
 
 <attribute/observationdate> a owl:Class ;
 	skos:prefLabel "Observation Date"@en ;
@@ -3247,14 +3271,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the observation is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Observation Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/observationuri> a owl:Class ;
 	skos:prefLabel "Observation URI"@en ;
 	dct:description "Unique identifier for this observation. This is the identifier (Uniform Resource Identifier) that will be used to cross-reference data, samples, and other observations to the feature observation represented by this record. Best practice is to define an http URI that will dereference to a normative description of the observation. USGIN URI's may be redirected to any URL using the http://resources.usgin.org redirector; contact the USGIN development team at AZGS for instructions.  " ;
 	rdfs:label "Observation URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/observedgravity-mgal> a owl:Class ;
 	skos:prefLabel "Observed Gravity mgal"@en ;
@@ -3266,20 +3290,20 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Observed Numeric Value"@en ;
 	dct:description "An observed numeric value. Data type is a real number." ;
 	rdfs:label "Observed Numeric Value"@en ;
-	dcdtr:containerObject <class/data-object/measured-value> .
+	dcdtr:containerObject <data-object/measured-value> .
 
 <attribute/observednumericvaluemaximum> a owl:Class ;
 	skos:prefLabel "Observed Numeric Value, maximum"@en ;
 	dct:description "The maximum value for a range of observed or expected values, expressed as a real number" ;
 	rdfs:label "Observed Numeric Value, maximum"@en ;
-	dcdtr:containerObject <class/data-object/measured-value> ;
+	dcdtr:containerObject <data-object/measured-value> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/observednumericvalueminimum> a owl:Class ;
 	skos:prefLabel "Observed Numeric Value, minimum "@en ;
 	dct:description "The minimum value for a range of observed or expected values, expressed as a real number" ;
 	rdfs:label "Observed Numeric Value, minimum "@en ;
-	dcdtr:containerObject <class/data-object/measured-value> ;
+	dcdtr:containerObject <data-object/measured-value> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/observedpropertyname> a owl:Class ;
@@ -3287,7 +3311,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "the name of a property that an observation result quantifies; used for generic observation data objects" ;
 	rdfs:label "Observed Property Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/observer> a owl:Class ;
 	skos:prefLabel "Observer"@en ;
@@ -3300,7 +3324,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier for older age term for feature." ;
 	rdfs:label "Older Age URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/oldestage> a owl:Class ;
 	skos:prefLabel "Oldest Age"@en ;
@@ -3319,14 +3343,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Date for the record (year in which the first power plant at the site began operation). Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1', (or '1/1/', or '1-1-', or 'January 1,'). All dates will be converted to yyyy-mm-ddThh:mm." ;
 	rdfs:label "Operational Date"@en ;
 	dcdtr:dataType <data-type/datetime> ;
-	dcdtr:valueDomain <class/value-domain/era-of-geothermal-drilling> .
+	dcdtr:valueDomain <value-domain/era-of-geothermal-drilling> .
 
 <attribute/operator> a owl:Class ;
 	skos:prefLabel "Operator"@en ;
 	dct:description "Companies, individuals, or other entities who operate the property. Separate multiple with a pipe '|' character." ;
 	rdfs:label "Operator"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/origindatetime> a owl:Class ;
 	skos:prefLabel "Origin datetime"@en ;
@@ -3364,7 +3388,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Other named geologic units that are of interest to the study; separate names with pipe ('|') character." ;
 	rdfs:label "Other Formation Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
+
+<attribute/otherid> a owl:Class ;
+	skos:prefLabel "Other ID"@en ;
+	dct:description "Alternative identifier(s) for the feature. Indicate the authority from which the OtherID is derived with a short (lower case) prefix delimited by a colon ':' If identifiers from multiple different authorities are available, delimit these identifiers with the pipe '|' character. For example, if a well were known to the Arizona Geological Survey (AZGS) by the id number 1337, the prefix would be azgs: and the identifier string would be azgs:1337. Any such prefixes used to scope identifiers should be explained in the dataset metadata." ;
+	rdfs:label "Other ID"@en ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/literal> .
 
 <attribute/otheridentifier> a owl:Class ;
 	skos:prefLabel "Other Identifier"@en ;
@@ -3377,7 +3408,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Other rock types that are constituents of the reservoir; separate names with pipe ('|') character." ;
 	rdfs:label "Other Lithology Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/otherlocationinformation> a owl:Class ;
 	skos:prefLabel "Other Location Information"@en ;
@@ -3390,7 +3421,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Names of geographic features associated with the site that will be useful as search criteria to locate the information for this site. If identifiers from multiple different authorities are available, delimit these identifiers with the pipe character '|'." ;
 	rdfs:label "Other Location Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/otherlogid> a owl:Class ;
 	skos:prefLabel "Other Log ID"@en ;
@@ -3404,7 +3435,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Other human-intelligible labels for feature such as secondary name or common name, other spellings. Indicate the authority from which the OtherName is derived with a short (lower case) prefix delimited by a colon ':' If identifiers from multiple different authorities are available, delimit these identifiers with the pipe character '|'. For example, if a well were known to the Arizona Geological Survey (AZGS) by the id number 1337, the identifier string would be azgs:1337. Any such prefixes used to scope identifiers should be explained in the dataset metadata." ;
 	rdfs:label "Other Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/othersiteid> a owl:Class ;
 	skos:prefLabel "Other Site ID"@en ;
@@ -3429,7 +3460,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Companies, individuals, or other entities who own the property. Separate multiple with a pipe '|' character." ;
 	rdfs:label "Owner"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/owners> a owl:Class ;
 	skos:prefLabel "Owners"@en ;
@@ -3457,28 +3488,28 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Identifier for a larger shear displacement structure which the named feature is a part of." ;
 	rdfs:label "Parent Feature URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/parentsampleuri> a owl:Class ;
 	skos:prefLabel "Parent Sample URI"@en ;
 	dct:description "Identifier for a sample from which this specimen was sub-sampled; e.g. if a piece from a registered core is registered as a separate sample, this would be the identifier for the core." ;
 	rdfs:label "Parent Sample URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/parentspecimenuri> a owl:Class ;
 	skos:prefLabel "Parent Specimen URI"@en ;
 	dct:description "identifer for a specimen from which this specimen was sub-sampled. E.g. if a piece from a registered core is registered as a separate sample, this would be the identifier for the core." ;
 	rdfs:label "Parent Specimen URI"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/parentwelluri> a owl:Class ;
 	skos:prefLabel "Parent Well URI"@en ;
 	dct:description "The unique identifier for the well that contains the wellbore identified by WellBoreURI.   If the WellBoreURI identifies one of several wellbores within a well, this element is mandatory. Best practice is to define an http URI that will dereference to a normative description of the well. " ;
 	rdfs:label "Parent Well URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/percenttargetrock> a owl:Class ;
 	skos:prefLabel "Percent Target Rock"@en ;
@@ -3486,15 +3517,15 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Percent Target Rock"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
-<attribute/permeabilityair-md> a owl:Class ;
-	skos:prefLabel "Permeability, air mD"@en ;
-	dct:description "A permeability value measured using air as the transport fluid." ;
-	rdfs:label "Permeability, air mD"@en .
-
 <attribute/permeability-md> a owl:Class ;
 	skos:prefLabel "Permeability md"@en ;
 	dct:description "Permeability is the property of rocks that is an indication of the ability for fluids (gas or liquid) to flow through rocks; The SI unit for permeability is m2. A practical unit for permeability is the darcy (d), or more commonly the millidarcy (md) (1 darcy \\approx10−12m2)." ;
 	rdfs:label "Permeability md"@en .
+
+<attribute/permeabilityair-md> a owl:Class ;
+	skos:prefLabel "Permeability, air mD"@en ;
+	dct:description "A permeability value measured using air as the transport fluid." ;
+	rdfs:label "Permeability, air mD"@en .
 
 <attribute/permeabilityaverage-m2> a owl:Class ;
 	skos:prefLabel "Permeability Average m2"@en ;
@@ -3613,7 +3644,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which a resource  is known to its user community." ;
 	rdfs:label "Plant Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/plantproductionstatlabel> a owl:Class ;
 	skos:prefLabel "Plant Production Stat Label"@en ;
@@ -3626,7 +3657,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier for this observation. This is the identifier (Uniform Resource Identifier) that will be used to cross-reference data, samples, and other observations to the observation represented by this record. Best practice is to define an http URI that will dereference to a normative description of the observation. USGIN URI's may be redirected to any URL using the http://resources.usgin.org redirector; contact the USGIN development team at AZGS for instructions.  " ;
 	rdfs:label "Plant Production Stat URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/planttype> a owl:Class ;
 	skos:prefLabel "Plant Type"@en ;
@@ -3638,7 +3669,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "PLSS Meridians"@en ;
 	dct:description "List north-south baseline and east-west meridian that Townships and Ranges are referenced to." ;
 	rdfs:label "PLSS Meridians"@en ;
-	dcdtr:containerObject <class/data-object/us-cadastral-location> ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/plsslocation> a owl:Class ;
@@ -3651,7 +3682,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "PLSS Range"@en ;
 	dct:description "Range in PLSS grid, relative to reported meridian. Formatting and punctuation should be consistent for all locations referenced to the same baseline meridian. See instructions on TWP field." ;
 	rdfs:label "PLSS Range"@en ;
-	dcdtr:containerObject <class/data-object/us-cadastral-location> ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/Integers+and+half+integers> .
 
@@ -3659,22 +3690,22 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "PLSS section number"@en ;
 	dct:description "PLSS section number. Must be numeric or null. Some surveys include half sections indicated by a 'nn.5' designation, where n indicates a number." ;
 	rdfs:label "PLSS section number"@en ;
-	dcdtr:containerObject <class/data-object/us-cadastral-location> ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/valid-plss-section-number> .
+	dcdtr:valueDomain <value-domain/valid-plss-section-number> .
 
 <attribute/plsssectionpart> a owl:Class ;
 	skos:prefLabel "PLSS Section Part"@en ;
 	dct:description "Subdivision of a PLSS section." ;
 	rdfs:label "PLSS Section Part"@en ;
-	dcdtr:containerObject <class/data-object/us-cadastral-location> ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/plsstownship> a owl:Class ;
 	skos:prefLabel "PLSS Township"@en ;
 	dct:description "Township in PLSS grid, relative to reported baseline. Formatting and punctuation should be consistent for all locations referenced to the same baseline and meridian. Recommend adding leading '0's so that all number strings are the same length (typically 2 or occasionally 3 digits). Examples 01N, 112S, 001 N." ;
 	rdfs:label "PLSS Township"@en ;
-	dcdtr:containerObject <class/data-object/us-cadastral-location> ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/Integers+and+half+integers> .
 
@@ -3720,7 +3751,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "porosity percent"@en ;
 	dct:description " a measure of the void (i.e. \"empty\") spaces in a material, reported as a fraction of the volume of voids over the total volume, in percent, " ;
 	rdfs:label "porosity percent"@en ;
-	dcdtr:valueDomain <class/value-domain/percent-of-whole> ;
+	dcdtr:valueDomain <value-domain/percent-of-whole> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/percent> .
 
 <attribute/positionaccuracy> a owl:Class ;
@@ -3745,7 +3776,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Postal Address"@en ;
 	dct:description "designation of a physical mail delivery end point (maibox)" ;
 	rdfs:label "Postal Address"@en ;
-	dcdtr:containerObject <class/data-object/contact-information-description> ;
+	dcdtr:containerObject <data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/powerplantfacilityuri> a owl:Class ;
@@ -3753,7 +3784,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Power Plant Facility URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/powerpurchasers> a owl:Class ;
 	skos:prefLabel "Power Purchasers"@en ;
@@ -3861,7 +3892,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name for the record. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Record Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/recurrenceinterval> a owl:Class ;
 	skos:prefLabel "Recurrence Interval"@en ;
@@ -3880,7 +3911,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Identifier for the party that originally registered the sample to create sampleURI." ;
 	rdfs:label "Registrant URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/relatedfault> a owl:Class ;
 	skos:prefLabel "Related Fault"@en ;
@@ -3893,7 +3924,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Identifier for related fault. Ideally an http URI that will derference to provide information about the fault." ;
 	rdfs:label "Related Fault URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/relatedfeature> a owl:Class ;
 	skos:prefLabel "Related Feature"@en ;
@@ -3906,7 +3937,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "If Heat Flow value is based on multiple intervals, observationURIs are listed here. Unique identifier for this observation. This is the identifier (Uniform Resource Identifier) that will be used to cross-reference data, samples, and other observations to the observation represented by this record. Best practice is to define an http URI that will dereference to a normative description of the observation. USGIN URI's may be redirected to any URL using the http://resources.usgin.org redirector; contact the USGIN development team at AZGS for instructions.  " ;
 	rdfs:label "Related Heat Flow Intervals URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/relatedresource> a owl:Class ;
 	skos:prefLabel "Related Resource"@en ;
@@ -3926,7 +3957,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "If the thermal conductivity value is based on an average of several samples, multiple observationURIs are listed here, delimited by pipe '|' characters. Recommend use of http URI that will dereference to give representation of sample." ;
 	rdfs:label "Related Sample URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/relatedwaterchemistry> a owl:Class ;
 	skos:prefLabel "Related Water Chemistry"@en ;
@@ -3964,14 +3995,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier for a named time era that best characterizes the age of the interval. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Representative Age URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/representativelithologyuri> a owl:Class ;
 	skos:prefLabel "Representative Lithology URI"@en ;
 	dct:description "Unique identifier that specifies a category in a lithology generalization scheme. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Representative Lithology URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/reservoirfavorability> a owl:Class ;
 	skos:prefLabel "Reservoir Favorability"@en ;
@@ -3996,14 +4027,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the feature (Reservoir) is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Reservoir Name "@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/reservoiruri> a owl:Class ;
 	skos:prefLabel "Reservoir URI"@en ;
 	dct:description "Unique identifier that specifies the feature represented (geologic reservoir). Each geologic reservoir should have a unique identifier. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Reservoir URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/resistivitymud> a owl:Class ;
 	skos:prefLabel "Mud Resistivity"@en ;
@@ -4028,12 +4059,19 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Result"@en ;
 	dcdtr:dataType <data-type/string> .
 
+<attribute/rge> a owl:Class ;
+	skos:prefLabel "RGE"@en ;
+	dct:description "Range in PLSS grid, relative to reported meridian. Formatting and punctuation should be consistent for all locations referenced to the same baseline meridian. See instructions on TWP field." ;
+	rdfs:label "RGE"@en ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> .
+
 <attribute/rockname> a owl:Class ;
 	skos:prefLabel "Rock Name"@en ;
 	dct:description "Free text name for lithology category of sample, e.g. biotite-hornblende granite, lithofeldspathic sandstone, calcareous arkose, biotite schist." ;
 	rdfs:label "Rock Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/rocktype> a owl:Class ;
 	skos:prefLabel "Rock Type"@en ;
@@ -4194,7 +4232,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the feature is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Sampling Feature Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/samplingfeaturetype> a owl:Class ;
 	skos:prefLabel "Sampling Feature Type"@en ;
@@ -4207,7 +4245,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique Identifier for the particular site (station) or well where the sample(s) came from. For wells, this might be the HeaderURI or API number used in other metadata files. If unavailable, state 'missing'. SamplingFeature is a concept that represents the feature that accesses the part of the Earth from which the sample came, e.g. outcrop, borehole, dredge haul." ;
 	rdfs:label "Sampling Feature URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/saturatedsampleconductivity> a owl:Class ;
 	skos:prefLabel "Saturated Sample Conductivity"@en ;
@@ -4312,21 +4350,21 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the feature is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Site Location Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/sitelocationuri> a owl:Class ;
 	skos:prefLabel "Site Location URI"@en ;
 	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Site Location URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/sitename> a owl:Class ;
 	skos:prefLabel "Site Name"@en ;
 	dct:description "Common or human-readable name by which the feature is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Site Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/sitevaluemethod> a owl:Class ;
 	skos:prefLabel "Site Value Method"@en ;
@@ -4351,7 +4389,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Mandatory. Short text explanation of source of information defining this feature or record; may be author-date type citation, well log, report, data files etc., but should include some indication of how digital data originated. If unpublished data, provide researcher name, date and research institution for proper citation. Separate multiple citations with pipe '|' character." ;
 	rdfs:label "Source"@en ;
 	dcdtr:dataType <data-type/list-string-pipe> ;
-	dcdtr:valueDomain <class/value-domain/narrative-text> .
+	dcdtr:valueDomain <value-domain/narrative-text> .
 
 <attribute/sourcecitation> a owl:Class ;
 	skos:prefLabel "Source Citation"@en ;
@@ -4364,14 +4402,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Identifier, DOI or other URI, for the cited source. Ideally an http URI that may be dereferenced to produce a representation of the original source document." ;
 	rdfs:label "Source Citation URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/sourceuri> a owl:Class ;
 	skos:prefLabel "Source URI"@en ;
 	dct:description "Identifier, DOI or other URI, for the cited source. Ideally an http URI that may be dereferenced to produce a representation of the original source document." ;
 	rdfs:label "Source URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/spacingavg-ft> a owl:Class ;
 	skos:prefLabel "Spacing Avg ft"@en ;
@@ -4385,14 +4423,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "specification  uri"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/specificationuri> a owl:Class ;
 	skos:prefLabel "Specification URI"@en ;
 	dct:description "Ideally an http URI that dereferences to a full complex feature representation. If the FeatureURI is an http URI that can be dereferenced to one or more representations, this URI is redundant. For example, the URI could refer to a GeoSciML Contact feature that describes the instance in detail. If no value is provided then a URI for a nil reason concept  should be provided from list on the OGC_nilValues tab." ;
 	rdfs:label "Specification URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/specificheat> a owl:Class ;
 	skos:prefLabel "Specific Heat"@en ;
@@ -4448,7 +4486,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier for party that originally collected specimen. Ideally an http URI that will dereference to some standard representation like CI_ResponsibleParty (ISO19115)." ;
 	rdfs:label "Specimen Collector URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/specimencuration> a owl:Class ;
 	skos:prefLabel "Specimen Curation"@en ;
@@ -4491,14 +4529,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier for sample; should include protocol prefix with known meaning, delimited by a ':' (colon), e.g. igsn:24623570 or http://resources.usgin.org/uri-gin/AZGS/sample/24623570." ;
 	rdfs:label "Specimen URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/springname> a owl:Class ;
 	skos:prefLabel "Spring Name"@en ;
 	dct:description "Common or human-readable name by which the feature is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Spring Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/spuddate> a owl:Class ;
 	skos:prefLabel "Spud Date"@en ;
@@ -4511,14 +4549,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "SRS"@en ;
 	dct:description "The spatial reference system. It is recommended that an EPSG code be used to identify the SRS used to specify the location.  If an EPSG code is used, identify it as such with the prefix 'EPSG:' For common EPSG codes, see the Data Valid Terms tab. EPSG:4326 is the identifier for WGS84, and should be the text in this field. EPSG stands for European Petroleum Survey Group. EPSG codes can be dereferenced by putting the code in this URL (replace 4326) http://spatialreference.org/ref/epsg/4326/." ;
 	rdfs:label "SRS"@en ;
-	dcdtr:containerObject <class/data-object/coordinate-location> ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/standarddeviation> a owl:Class ;
 	skos:prefLabel "Standard Deviation"@en ;
 	dct:description "a measure that is used to quantify the amount of variation or dispersion of a set of data values,  the square root of the variance of a random variable, statistical population, data set, or probability distribution" ;
 	rdfs:label "Standard Deviation"@en ;
-	dcdtr:containerObject <class/data-object/measured-value> ;
+	dcdtr:containerObject <data-object/measured-value> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/standardmagnitudeerror> a owl:Class ;
@@ -4538,7 +4576,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Required. State name without abbreviations. If unknown or not applicable use 'missing'. For offshore locations, specify the governing or nearest state and list the county as 'offshore'." ;
 	rdfs:label "State"@en ;
 	dcdtr:dataType <data-type/term> ;
-	dcdtr:valueDomain <class/value-domain/us-state-name> .
+	dcdtr:valueDomain <value-domain/us-state-name> .
 
 <attribute/stationidentifier> a owl:Class ;
 	skos:prefLabel "Station Identifier"@en ;
@@ -4551,14 +4589,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the feature is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset. The station plays the role of 'sampling feature' for the gravity observation." ;
 	rdfs:label "Station Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/statisticalprocedure> a owl:Class ;
 	skos:prefLabel "Statistical procedure"@en ;
 	dct:description "term for statistical procedure used to summarize a collection of measurements" ;
 	rdfs:label "Statistical procedure"@en ;
 	dcdtr:dataType <data-type/term> ;
-	dcdtr:valueDomain <class/value-domain/statistical-summary-procedures> .
+	dcdtr:valueDomain <value-domain/statistical-summary-procedures> .
 
 <attribute/status> a owl:Class ;
 	skos:prefLabel "Status"@en ;
@@ -4571,7 +4609,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "The status of the feature can change from time to time, thus it is useful to know the date on which a given status was reported. Day, month and year must be specified; Excel will display using ISO 8601 date and time (yyyy-mm-ddT:hh:mm) format. If only the year is known, enter month and day as 'Jan. 1', (or '1/1/', or '1-1-', or 'January 1,'). All dates will be converted to yyyy-mm-ddThh:mm." ;
 	rdfs:label "Status Date"@en ;
 	dcdtr:dataType <data-type/datetime> ;
-	dcdtr:valueDomain <class/value-domain/era-of-geothermal-drilling> .
+	dcdtr:valueDomain <value-domain/era-of-geothermal-drilling> .
 
 <attribute/stimulation> a owl:Class ;
 	skos:prefLabel "Stimulation"@en ;
@@ -4602,7 +4640,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier that specifies the feature targeted by this test: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the test to other information related to this feature." ;
 	rdfs:label "Target Feature URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/targetformation> a owl:Class ;
 	skos:prefLabel "Target Formation"@en ;
@@ -4615,7 +4653,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Rock type of interest in reservoir. Use CGI lithology terms (see SimpleLithology2012 tab).  " ;
 	rdfs:label "Target Rock Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/targetrockvolume-m3> a owl:Class ;
 	skos:prefLabel "Target Rock Volume m3"@en ;
@@ -4714,7 +4752,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "The human-intelligible well test name using \"well name (or a given test name) -test number- run number\" used in providing a unique ObservationURI. Multiple test and/or runs  would each have a unique name." ;
 	rdfs:label "Test Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/testnumber> a owl:Class ;
 	skos:prefLabel "Test Number"@en ;
@@ -4758,7 +4796,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
 	rdfs:label "Thermal Spring URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/timefinalshutin-min> a owl:Class ;
 	skos:prefLabel "Time Final Shut In min"@en ;
@@ -4824,6 +4862,13 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "True Vertical Depth"@en ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/decimal+number> .
+
+<attribute/twp> a owl:Class ;
+	skos:prefLabel "TWP"@en ;
+	dct:description "Township in PLSS grid, relative to reported baseline. Formatting and punctuation should be consistent for all locations referenced to the same baseline and meridian. Recommend adding leading '0's so that all number strings are the same length (typically 2 or occasionally 3 digits). Examples 01N, 112S, 001N." ;
+	rdfs:label "TWP"@en ;
+	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> .
 
 <attribute/uncertainty> a owl:Class ;
 	skos:prefLabel "uncertainty"@en ;
@@ -4937,7 +4982,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "UTM E"@en ;
 	dct:description "UTM easting coordinate as decimal number." ;
 	rdfs:label "UTM E"@en ;
-	dcdtr:containerObject <class/data-object/coordinate-location> ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
 
@@ -4945,7 +4990,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "UTM N"@en ;
 	dct:description "UTM northing coordinate as decimal number." ;
 	rdfs:label "UTM N"@en ;
-	dcdtr:containerObject <class/data-object/coordinate-location> ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
 
@@ -4953,16 +4998,16 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "UTM Datum Zone"@en ;
 	dct:description "The datum and UTM zone for the reported coordinates. Datum for most locations should be NAD27 or NAD83." ;
 	rdfs:label "UTM Datum Zone"@en ;
-	dcdtr:containerObject <class/data-object/coordinate-location> ;
+	dcdtr:containerObject <data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/utm-zones> .
+	dcdtr:valueDomain <value-domain/utm-zones> .
 
 <attribute/utmzone> a owl:Class ;
 	skos:prefLabel "UTM Zone"@en ;
 	dct:description "The datum and UTM zone for the reported coordinates. Datum for most locations should be NAD27 or NAD83." ;
 	rdfs:label "UTM Zone"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/utm-zones> .
+	dcdtr:valueDomain <value-domain/utm-zones> .
 
 <attribute/ventelevation> a owl:Class ;
 	skos:prefLabel "Vent Elevation"@en ;
@@ -5018,7 +5063,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name by which the feature is known. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset." ;
 	rdfs:label "Volc Vent Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/waterdensity-kgm3> a owl:Class ;
 	skos:prefLabel "Water Density  kgm3"@en ;
@@ -5057,7 +5102,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Name of the watershed located above, or in communication with, mine workings. Delimit multiple watershed names with the pipe character '|'." ;
 	rdfs:label "Watershed Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/watertabletemperature> a owl:Class ;
 	skos:prefLabel "Water Table Temperature"@en ;
@@ -5082,7 +5127,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Common or human-readable name for well bore from which the well log was obtained. Recommend using only web-safe characters (a-z A-Z 0-9 _-.) in the name. Be consistent in the naming convention used within any given dataset. Suggested convention for wellName is: Name = Operator + Well No. + Lease (Mineral) Owner." ;
 	rdfs:label "WellBore Name "@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/wellboreshape> a owl:Class ;
 	skos:prefLabel "Well Bore Shape"@en ;
@@ -5096,7 +5141,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Unique identifier for the well bore from which the log observation was obtained. Best practice is to use an http URI that will dereference to a normative description of the well bore. Note that the terms borehole and wellbore (PPDM usage) are often used interchangeably in USGIN - AASG geothermal data documentation. If no URI is available for well, use http://www.opengis.net/def/nil/OGC/0/missing." ;
 	rdfs:label "WellBore URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/wellcount> a owl:Class ;
 	skos:prefLabel "Well Count"@en ;
@@ -5124,14 +5169,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 If the API number indicates multiple instances of reentry, recompletion, sidetrack, etc., each instance is to have its own HeaderURI.  For example, the API number 42-501-20130-0300 indicates a well (42-501-20130) with three sidetracks, for a total of four total boreholes (-0000,-0100, -0200,-0300), each of which should have its own database record and HeaderURI.""" ;
 	rdfs:label "Well Header URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/wellname> a owl:Class ;
 	skos:prefLabel "Well Name"@en ;
 	dct:description "Human-intelligible name by which the feature  is known. Convention for wellName is: Name = Operator + Well No. + Lease Owner. A well may consist of multiple boreholes (wellbores). If these are distinguished by different records in this table, they should have the same well names, but distinct BoreholeNames, and at least one identifier (APINo or OtherID) that is unique to the borehole." ;
 	rdfs:label "Well Name"@en ;
 	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <class/value-domain/name-string> .
+	dcdtr:valueDomain <value-domain/name-string> .
 
 <attribute/welltype> a owl:Class ;
 	skos:prefLabel "Well Type"@en ;
@@ -5163,7 +5208,7 @@ If the API number indicates multiple instances of reentry, recompletion, sidetra
 	dct:description "Unique identifier for younger age term for feature." ;
 	rdfs:label "Younger Age URI"@en ;
 	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <class/value-domain/http-uri> .
+	dcdtr:valueDomain <value-domain/http-uri> .
 
 <attribute/youngestage> a owl:Class ;
 	skos:prefLabel "Youngest Age"@en ;
