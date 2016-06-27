@@ -12,14 +12,21 @@ curl -b cookie-jar -c cookie-jar -d "userid=xxxxxx&password=xxxxxx" $BASEURI"sys
 
 # Delete Current Registers
 
+curl -b cookie-jar -c cookie-jar -X POST $BASEURI"ont?real_delete"
 curl -b cookie-jar -c cookie-jar -X POST $BASEURI"def?real_delete"
 curl -b cookie-jar -c cookie-jar -X POST $BASEURI"class?real_delete"
 
 
 # Create New Root Registers
 
+curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Ontologies/Ontologies.ttl" $BASEURI"?status=experimental"
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "Definitions/Def.ttl" $BASEURI"?status=experimental"
 curl -b cookie-jar -c cookie-jar -X POST -H "Content-Type: text/turtle" -T "classes/Class.ttl" $BASEURI"?status=experimental"
+
+
+#Upload Ontologies
+echo Uploading Ontologies ...
+curl -b cookie-jar -c cookie-jar -X PUT -H "Content-Type: text/turtle" -T "Ontologies/datatype.ttl" $BASEURI"ont/datatype?graph&status=experimental"
 
 
 # Upload New Registers
