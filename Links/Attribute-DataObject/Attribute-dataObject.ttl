@@ -97,7 +97,7 @@
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <plssmeridians> a owl:Class ;
-	rdfs:label "Plant Type" ;
+	rdfs:label "PLSS Location" ;
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <township> a owl:Class ;
@@ -109,7 +109,7 @@
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <section-> a owl:Class ;
-	rdfs:label "Standard Error Corrected HeatFlow" ;
+	rdfs:label "Section " ;
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <sectionpart> a owl:Class ;
@@ -117,15 +117,15 @@
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <utme> a owl:Class ;
-	rdfs:label "Use Application" ;
-	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
-
-<utmn> a owl:Class ;
 	rdfs:label "UTM Datum Zone" ;
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
+<utmn> a owl:Class ;
+	rdfs:label "UTM E" ;
+	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
+
 <utmdatumzone> a owl:Class ;
-	rdfs:label "Use Application" ;
+	rdfs:label "UTM Datum Zone" ;
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <county> a owl:Class ;
@@ -197,7 +197,7 @@
 <source> dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <fluidtemperature-c> a owl:Class ;
-	rdfs:label "Fluid Temperature C" ;
+	rdfs:label "Fluid Temperature Centigrade" ;
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <flow-gpm> a owl:Class ;
@@ -287,7 +287,7 @@
 <capacity-mw> dcdtr:dataObject <../data-object/power-plant-production-result> .
 
 <grossproduction-mwhr> a owl:Class ;
-	rdfs:label "Gross Production Capacity" ;
+	rdfs:label "Gross Production MWhr" ;
 	dcdtr:dataObject <../data-object/power-plant-production-result> .
 
 <netproduction-mwhr> a owl:Class ;
@@ -342,6 +342,170 @@
 
 <source> dcdtr:dataObject <../data-object/weigelobservation> .
 
+<objectid> dcdtr:dataObject <../data-object/well-log-result> .
+
+<loguri> a owl:Class ;
+	rdfs:label "Log URI" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<otherlogid> a owl:Class ;
+	rdfs:label "Other Log ID" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<displayname> a owl:Class ;
+	rdfs:label "Display Name" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<notes> dcdtr:dataObject <../data-object/well-log-result> .
+
+<logtypeterm> a owl:Class ;
+	rdfs:label "Log Type Term" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<logtypename> a owl:Class ;
+	rdfs:label "Log Type Name" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<wellboreuri> a owl:Class ;
+	rdfs:label "WellBore URI" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<wellborename> a owl:Class ;
+	rdfs:label "WellBore Name " ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<apino> a owl:Class ;
+	rdfs:label "API No" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<parentwelluri> a owl:Class ;
+	rdfs:label "Parent Well URI" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<keywords> a owl:Class ;
+	rdfs:label "Keywords" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<spuddate> a owl:Class ;
+	rdfs:label "Spud Date" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<welltype> a owl:Class ;
+	rdfs:label "Well Type" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<status> dcdtr:dataObject <../data-object/well-log-result> .
+
+<commodityofinterest> a owl:Class ;
+	rdfs:label "Commodity Of Interest" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<statusdate> dcdtr:dataObject <../data-object/well-log-result> .
+
+<function> a owl:Class ;
+	rdfs:label "Function" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<production> a owl:Class ;
+	rdfs:label "Production status" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<producinginterval> a owl:Class ;
+	rdfs:label "Producing Interval " ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<county> dcdtr:dataObject <../data-object/well-log-result> .
+
+<state> dcdtr:dataObject <../data-object/well-log-result> .
+
+<field> a owl:Class ;
+	rdfs:label "Field" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<otherlocationname> a owl:Class ;
+	rdfs:label "Other Location Name" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<plss-meridians> a owl:Class ;
+	rdfs:label "PLSS Meridians" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<twp> a owl:Class ;
+	rdfs:label "TWP" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<rge> a owl:Class ;
+	rdfs:label "RGE" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<section-> dcdtr:dataObject <../data-object/well-log-result> .
+
+<sectionpart> dcdtr:dataObject <../data-object/well-log-result> .
+
+<parcel> a owl:Class ;
+	rdfs:label "Parcel" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<latdegree> a owl:Class ;
+	rdfs:label "Latitude Degrees" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<longdegree> a owl:Class ;
+	rdfs:label "Longitude Degree" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<srs> dcdtr:dataObject <../data-object/well-log-result> .
+
+<locationuncertaintystatement> dcdtr:dataObject <../data-object/well-log-result> .
+
+<drillertotaldepth-ft> a owl:Class ;
+	rdfs:label "Driller Total Depth ft" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<wellboreshape> a owl:Class ;
+	rdfs:label "Well Bore Shape" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<elevationgl-ft> a owl:Class ;
+	rdfs:label "Elevation  Ground Level feet" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<toploggedinterval-ft> a owl:Class ;
+	rdfs:label "Top Logged Interval ft" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<bottomloggedinterval-ft> a owl:Class ;
+	rdfs:label "Bottom Logged Interval ft" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<datetimelogrun> a owl:Class ;
+	rdfs:label "Date Time Log Run" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<papercopylocation> a owl:Class ;
+	rdfs:label "Paper Copy Location" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<scannedfileurl> a owl:Class ;
+	rdfs:label "ScannedFileURL" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<lasfileurl> a owl:Class ;
+	rdfs:label "LASFileURL" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<otherdistribution> a owl:Class ;
+	rdfs:label "Other Distribution" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
+<relatedresource> dcdtr:dataObject <../data-object/well-log-result> .
+
+<source> dcdtr:dataObject <../data-object/well-log-result> .
+
+<shape> a owl:Class ;
+	rdfs:label "Shape" ;
+	dcdtr:dataObject <../data-object/well-log-result> .
+
 <objectid> dcdtr:dataObject <../data-object/well-test-result> .
 
 <observationuri> a owl:Class ;
@@ -356,9 +520,7 @@
 	rdfs:label "Well Name" ;
 	dcdtr:dataObject <../data-object/well-test-result> .
 
-<apino> a owl:Class ;
-	rdfs:label "API No" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<apino> dcdtr:dataObject <../data-object/well-test-result> .
 
 <label> dcdtr:dataObject <../data-object/well-test-result> .
 
@@ -390,51 +552,37 @@
 	rdfs:label "Test Number" ;
 	dcdtr:dataObject <../data-object/well-test-result> .
 
-<field> a owl:Class ;
-	rdfs:label "Field" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<field> dcdtr:dataObject <../data-object/well-test-result> .
 
 <county> dcdtr:dataObject <../data-object/well-test-result> .
 
 <state> dcdtr:dataObject <../data-object/well-test-result> .
 
-<plss-meridians> a owl:Class ;
-	rdfs:label "PLSS Meridians" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<plss-meridians> dcdtr:dataObject <../data-object/well-test-result> .
 
-<twp> a owl:Class ;
-	rdfs:label "TWP" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<twp> dcdtr:dataObject <../data-object/well-test-result> .
 
-<rge> a owl:Class ;
-	rdfs:label "RGE" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<rge> dcdtr:dataObject <../data-object/well-test-result> .
 
 <section-> dcdtr:dataObject <../data-object/well-test-result> .
 
 <sectionpart> dcdtr:dataObject <../data-object/well-test-result> .
 
-<parcel> a owl:Class ;
-	rdfs:label "Parcel" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<parcel> dcdtr:dataObject <../data-object/well-test-result> .
 
 <utm-e> a owl:Class ;
 	rdfs:label "UTM E" ;
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <utm-n> a owl:Class ;
-	rdfs:label "UTM Datum Zone" ;
+	rdfs:label "UTM N" ;
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <utmdatumzone> dcdtr:dataObject <../data-object/well-test-result> .
 
-<latdegree> a owl:Class ;
-	rdfs:label "Latitude Degrees" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<latdegree> dcdtr:dataObject <../data-object/well-test-result> .
 
-<longdegree> a owl:Class ;
-	rdfs:label "Longitude Degree" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<longdegree> dcdtr:dataObject <../data-object/well-test-result> .
 
 <srs> dcdtr:dataObject <../data-object/well-test-result> .
 
@@ -461,7 +609,7 @@
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <elevationbottomopenzone-msl> a owl:Class ;
-	rdfs:label "Elevation" ;
+	rdfs:label "Elevation Bottom Open Zone msl" ;
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <unitsofmeasure> a owl:Class ;
@@ -517,7 +665,7 @@
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <units-pressure> a owl:Class ;
-	rdfs:label "Porosity units" ;
+	rdfs:label "Pressure units" ;
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <hydrostaticpressure> a owl:Class ;
@@ -557,7 +705,7 @@
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <temperaturecorrection> a owl:Class ;
-	rdfs:label "Temperature" ;
+	rdfs:label "Temperature Correction" ;
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <temperatureflowing> a owl:Class ;
@@ -565,7 +713,7 @@
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <units-temperature> a owl:Class ;
-	rdfs:label "Thermal Conductivity Units" ;
+	rdfs:label "Temperature units" ;
 	dcdtr:dataObject <../data-object/well-test-result> .
 
 <relatedresource> dcdtr:dataObject <../data-object/well-test-result> .
@@ -574,9 +722,7 @@
 
 <notes> dcdtr:dataObject <../data-object/well-test-result> .
 
-<shape> a owl:Class ;
-	rdfs:label "Shape" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<shape> dcdtr:dataObject <../data-object/well-test-result> .
 
 <otherfeatureid> dcdtr:dataObject <../data-object/wsp2321data> .
 

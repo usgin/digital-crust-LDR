@@ -4,10 +4,18 @@
 @prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
 
 
+<geothermal-power-plant-facility> a skos:Concept ;
+	rdfs:label "Geothermal Power Plant Facility" ;
+	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
+
 <power-plant-production-observation> a skos:Concept ;
 	rdfs:label "Power Plant Production Observation" ;
 	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
 
-<geothermal-power-plant-facility> a skos:Concept ;
-	rdfs:label "Geothermal Power Plant Facility" ;
+<well-log-observation> a skos:Concept ;
+	rdfs:label "Well Log Observation" ;
+	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
+
+<well-test-observation> a skos:Concept ;
+	rdfs:label "Well Test Observation" ;
 	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
