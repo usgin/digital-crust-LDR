@@ -12,6 +12,10 @@
 	rdfs:label "Power Plant Production Observation" ;
 	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
 
+<well-header-feature> a skos:Concept ;
+	rdfs:label "Well Header Feature" ;
+	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
+
 <well-log-observation> a skos:Concept ;
 	rdfs:label "Well Log Observation" ;
 	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
