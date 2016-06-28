@@ -342,25 +342,139 @@
 
 <source> dcdtr:dataObject <../data-object/weigelobservation> .
 
-<objectid> dcdtr:dataObject <../data-object/well-header-occurrence> .
+<objectid> dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<observationuri> a owl:Class ;
+	rdfs:label "Observation URI" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<recordname> a owl:Class ;
+	rdfs:label "Record Name" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<notes> dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<operator> dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<producingfeature> a owl:Class ;
+	rdfs:label "Producing Feature" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
 <headeruri> a owl:Class ;
 	rdfs:label "Header URI" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
 <wellname> a owl:Class ;
 	rdfs:label "Well Name" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
 <apino> a owl:Class ;
 	rdfs:label "API No" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
-
-<label> dcdtr:dataObject <../data-object/well-header-occurrence> .
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
 <otherid> a owl:Class ;
 	rdfs:label "Other ID" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<county> dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<state> dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<field> a owl:Class ;
+	rdfs:label "Field" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<otherlocationname> a owl:Class ;
+	rdfs:label "Other Location Name" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<latdegree> a owl:Class ;
+	rdfs:label "Latitude Degrees" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<longdegree> a owl:Class ;
+	rdfs:label "Longitude Degree" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<srs> dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<locationuncertaintystatement> dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<intervalstartdatetime> a owl:Class ;
+	rdfs:label "Interval Start Date Time" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<intervalenddatetime> a owl:Class ;
+	rdfs:label "Interval End Date Time" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<durationdays> a owl:Class ;
+	rdfs:label "Duration Days" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<permit> a owl:Class ;
+	rdfs:label "Permit" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<fluidtype> a owl:Class ;
+	rdfs:label "Fluid Type" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<fluidvolume> a owl:Class ;
+	rdfs:label "Fluid Volume" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<fluidvolumeunits> a owl:Class ;
+	rdfs:label "Fluid Volume Units" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<temperature-f> a owl:Class ;
+	rdfs:label "Temperature Fahrenheit" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<pressure-psi> a owl:Class ;
+	rdfs:label "Pressure psi" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<aggregationtype> a owl:Class ;
+	rdfs:label "Aggregation Type" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<measurementmethod> a owl:Class ;
+	rdfs:label "Measurement Method" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<contactintervaltop> a owl:Class ;
+	rdfs:label "Contact Interval Top" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<contactintervalbottom> a owl:Class ;
+	rdfs:label "Contact Interval Bottom" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<source> dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<metadatauri> dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<relatedresources> a owl:Class ;
+	rdfs:label "Related Resources" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<shape> a owl:Class ;
+	rdfs:label "Shape" ;
+	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+
+<objectid> dcdtr:dataObject <../data-object/well-header-occurrence> .
+
+<headeruri> dcdtr:dataObject <../data-object/well-header-occurrence> .
+
+<wellname> dcdtr:dataObject <../data-object/well-header-occurrence> .
+
+<apino> dcdtr:dataObject <../data-object/well-header-occurrence> .
+
+<label> dcdtr:dataObject <../data-object/well-header-occurrence> .
+
+<otherid> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
 <othername> a owl:Class ;
 	rdfs:label "Other Name" ;
@@ -432,13 +546,9 @@
 
 <state> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<field> a owl:Class ;
-	rdfs:label "Field" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<field> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<otherlocationname> a owl:Class ;
-	rdfs:label "Other Location Name" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<otherlocationname> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
 <plss-meridians> a owl:Class ;
 	rdfs:label "PLSS Meridians" ;
@@ -470,13 +580,9 @@
 
 <utmdatumzone> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<latdegree> a owl:Class ;
-	rdfs:label "Latitude Degrees" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<latdegree> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<longdegree> a owl:Class ;
-	rdfs:label "Longitude Degree" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<longdegree> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
 <srs> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
@@ -570,9 +676,7 @@
 	rdfs:label "Information Source" ;
 	dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<shape> a owl:Class ;
-	rdfs:label "Shape" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<shape> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
 <objectid> dcdtr:dataObject <../data-object/well-log-result> .
 
@@ -704,9 +808,7 @@
 
 <objectid> dcdtr:dataObject <../data-object/well-test-result> .
 
-<observationuri> a owl:Class ;
-	rdfs:label "Observation URI" ;
-	dcdtr:dataObject <../data-object/well-test-result> .
+<observationuri> dcdtr:dataObject <../data-object/well-test-result> .
 
 <wellheaderuri> a owl:Class ;
 	rdfs:label "Well Header URI" ;
