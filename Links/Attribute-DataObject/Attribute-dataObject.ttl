@@ -306,6 +306,122 @@
 
 <geographicposition> dcdtr:dataObject <../data-object/power-plant-production-result> .
 
+<objectid> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<featureuri> a owl:Class ;
+	rdfs:label "Feature URI" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<volcventname> a owl:Class ;
+	rdfs:label "Volc Vent Name" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<label> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<maplabel> a owl:Class ;
+	rdfs:label "Map Label" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<description> a owl:Class ;
+	rdfs:label "Description" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<featuretype> a owl:Class ;
+	rdfs:label "Feature Type" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<volcanicgroup> a owl:Class ;
+	rdfs:label "Volcanic Group" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<utm-e> a owl:Class ;
+	rdfs:label "UTM E" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<utm-n> a owl:Class ;
+	rdfs:label "UTM N" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<utmdatumzone> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<latdegree> a owl:Class ;
+	rdfs:label "Latitude Degrees" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<longdegree> a owl:Class ;
+	rdfs:label "Longitude Degree" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<srs> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<locationuncertaintystatement> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<county> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<state> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<locationkeyword> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<ventelevation> a owl:Class ;
+	rdfs:label "Vent Elevation" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<elevationuom> a owl:Class ;
+	rdfs:label "Elevation Units of Measure" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<relatedfeature> a owl:Class ;
+	rdfs:label "Related Feature" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<geologichistory> a owl:Class ;
+	rdfs:label "Geologic History" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<youngestage> a owl:Class ;
+	rdfs:label "Youngest Age" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<oldestage> a owl:Class ;
+	rdfs:label "Oldest Age" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<youngestradiometricage-ma> a owl:Class ;
+	rdfs:label "Youngest Radiometric Age Ma" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<oldestradiometricage-ma> a owl:Class ;
+	rdfs:label "Oldest Radiometric Age Ma" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<ageuncertainty-ma> a owl:Class ;
+	rdfs:label "Age Uncertainty Ma" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<agesource> a owl:Class ;
+	rdfs:label "Age Source" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<geologicunit> a owl:Class ;
+	rdfs:label "Geologic Unit" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<materialcomposition> a owl:Class ;
+	rdfs:label "Material Composition" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<flowtype> a owl:Class ;
+	rdfs:label "FlowType" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<notes> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<source> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
+<shape> a owl:Class ;
+	rdfs:label "Shape" ;
+	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+
 <samplingfeatureuri> dcdtr:dataObject <../data-object/weigelobservation> .
 
 <latitude-degree> a owl:Class ;
@@ -388,13 +504,9 @@
 	rdfs:label "Other Location Name" ;
 	dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
-<latdegree> a owl:Class ;
-	rdfs:label "Latitude Degrees" ;
-	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+<latdegree> dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
-<longdegree> a owl:Class ;
-	rdfs:label "Longitude Degree" ;
-	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+<longdegree> dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
 <srs> dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
@@ -460,9 +572,7 @@
 	rdfs:label "Related Resources" ;
 	dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
-<shape> a owl:Class ;
-	rdfs:label "Shape" ;
-	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+<shape> dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
 <objectid> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
@@ -570,13 +680,9 @@
 	rdfs:label "Parcel" ;
 	dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<utm-e> a owl:Class ;
-	rdfs:label "UTM E" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<utm-e> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<utm-n> a owl:Class ;
-	rdfs:label "UTM N" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<utm-n> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
 <utmdatumzone> dcdtr:dataObject <../data-object/well-header-occurrence> .
 

@@ -12,6 +12,10 @@
 	rdfs:label "Power Plant Production Observation" ;
 	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
 
+<volcanic-vent-feature> a skos:Concept ;
+	rdfs:label "Volcanic Vent Feature" ;
+	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
+
 <well-fluid-production-observation> a skos:Concept ;
 	rdfs:label "Well Fluid Production Observation" ;
 	dcdtr:essentialProperty <../property/feature-identifier> , <../property/feature-name> , <../property/feature-type> , <../property/location> .
