@@ -101,11 +101,11 @@
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <township> a owl:Class ;
-	rdfs:label "Total Slip" ;
+	rdfs:label "Township" ;
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <range> a owl:Class ;
-	rdfs:label "Radioactivity Measurement Device" ;
+	rdfs:label "Range" ;
 	dcdtr:dataObject <../data-object/geothermal-power-plant-occurrence> .
 
 <section-> a owl:Class ;
@@ -306,6 +306,152 @@
 
 <geographicposition> dcdtr:dataObject <../data-object/power-plant-production-result> .
 
+<objectid> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<thermalspringuri> a owl:Class ;
+	rdfs:label "Thermal Spring URI" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<springname> a owl:Class ;
+	rdfs:label "Spring Name" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<label> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<othername> a owl:Class ;
+	rdfs:label "Other Name" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<otheridentifier> a owl:Class ;
+	rdfs:label "Other Identifier" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<description> a owl:Class ;
+	rdfs:label "Description" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<source> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<sourceuri> a owl:Class ;
+	rdfs:label "Source URI" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<featuretype> a owl:Class ;
+	rdfs:label "Feature Type" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<landleaseowner> a owl:Class ;
+	rdfs:label "Land Lease Owner" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<otherlocationname> a owl:Class ;
+	rdfs:label "Other Location Name" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<county> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<state> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<plss-meridians> a owl:Class ;
+	rdfs:label "PLSS Meridians" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<township> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<range> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<section-> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<sectionpart> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<parcel> a owl:Class ;
+	rdfs:label "Parcel" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<utm-e> a owl:Class ;
+	rdfs:label "UTM E" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<utm-n> a owl:Class ;
+	rdfs:label "UTM N" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<utmdatumzone> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<latdegree> a owl:Class ;
+	rdfs:label "Latitude Degrees" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<longdegree> a owl:Class ;
+	rdfs:label "Longitude Degree" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<srs> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<locationuncertaintystatement> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<temperature> a owl:Class ;
+	rdfs:label "Temperature" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<temperatureunits> a owl:Class ;
+	rdfs:label "Temperature Units" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<tempmeasurementprocedure> a owl:Class ;
+	rdfs:label "Temp Measurement Procedure" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<tempmeasurementdatetime> a owl:Class ;
+	rdfs:label "Temp Measurement Date Time" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<flow> a owl:Class ;
+	rdfs:label "Flow" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<flowunits> a owl:Class ;
+	rdfs:label "Flow Units" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<flowmeasurementprocedure> a owl:Class ;
+	rdfs:label "Flow Measurement Procedure" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<flowmeasurementdatetime> a owl:Class ;
+	rdfs:label "Flow Measurement Date Time" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<measurementsource> a owl:Class ;
+	rdfs:label "Measurement Source" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<flowcontinuity> a owl:Class ;
+	rdfs:label "Flow Continuity" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<classification> a owl:Class ;
+	rdfs:label "Classification" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<relatedwaterchemistry> a owl:Class ;
+	rdfs:label "Related Water Chemistry" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<relatedresources> a owl:Class ;
+	rdfs:label "Related Resources" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<remarks> a owl:Class ;
+	rdfs:label "Remarks" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<notes> dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
+<shape> a owl:Class ;
+	rdfs:label "Shape" ;
+	dcdtr:dataObject <../data-object/thermal-spring-occurrence> .
+
 <objectid> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
 <featureuri> a owl:Class ;
@@ -322,35 +468,23 @@
 	rdfs:label "Map Label" ;
 	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
-<description> a owl:Class ;
-	rdfs:label "Description" ;
-	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+<description> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
-<featuretype> a owl:Class ;
-	rdfs:label "Feature Type" ;
-	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+<featuretype> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
 <volcanicgroup> a owl:Class ;
 	rdfs:label "Volcanic Group" ;
 	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
-<utm-e> a owl:Class ;
-	rdfs:label "UTM E" ;
-	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+<utm-e> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
-<utm-n> a owl:Class ;
-	rdfs:label "UTM N" ;
-	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+<utm-n> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
 <utmdatumzone> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
-<latdegree> a owl:Class ;
-	rdfs:label "Latitude Degrees" ;
-	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+<latdegree> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
-<longdegree> a owl:Class ;
-	rdfs:label "Longitude Degree" ;
-	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+<longdegree> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
 <srs> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
@@ -418,9 +552,7 @@
 
 <source> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
-<shape> a owl:Class ;
-	rdfs:label "Shape" ;
-	dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
+<shape> dcdtr:dataObject <../data-object/volcanic-vent-occurrence> .
 
 <samplingfeatureuri> dcdtr:dataObject <../data-object/weigelobservation> .
 
@@ -500,9 +632,7 @@
 	rdfs:label "Field" ;
 	dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
-<otherlocationname> a owl:Class ;
-	rdfs:label "Other Location Name" ;
-	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+<otherlocationname> dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
 <latdegree> dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
@@ -568,9 +698,7 @@
 
 <metadatauri> dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
-<relatedresources> a owl:Class ;
-	rdfs:label "Related Resources" ;
-	dcdtr:dataObject <../data-object/well-fluid-production-result> .
+<relatedresources> dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
 <shape> dcdtr:dataObject <../data-object/well-fluid-production-result> .
 
@@ -586,9 +714,7 @@
 
 <otherid> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<othername> a owl:Class ;
-	rdfs:label "Other Name" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<othername> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
 <boreholename> a owl:Class ;
 	rdfs:label "Borehole Name" ;
@@ -660,9 +786,7 @@
 
 <otherlocationname> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<plss-meridians> a owl:Class ;
-	rdfs:label "PLSS Meridians" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<plss-meridians> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
 <twp> a owl:Class ;
 	rdfs:label "TWP" ;
@@ -676,9 +800,7 @@
 
 <sectionpart> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
-<parcel> a owl:Class ;
-	rdfs:label "Parcel" ;
-	dcdtr:dataObject <../data-object/well-header-occurrence> .
+<parcel> dcdtr:dataObject <../data-object/well-header-occurrence> .
 
 <utm-e> dcdtr:dataObject <../data-object/well-header-occurrence> .
 

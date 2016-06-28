@@ -6,16 +6,16 @@
 
 <feature-identifier> a skos:Concept ;
 	rdfs:label "Feature Identifier" ;
-	dcdtr:domainOfCarriers <../object-class/power-plant-production-observation> , <../object-class/geothermal-power-plant-facility> , <../object-class/well-test-observation> , <../object-class/well-log-observation> , <../object-class/well-header-feature> , <../object-class/well-fluid-production-observation> , <../object-class/volcanic-vent-feature> .
+	dcdtr:domainOfCarriers <../object-class/power-plant-production-observation> , <../object-class/geothermal-power-plant-facility> , <../object-class/well-test-observation> , <../object-class/well-log-observation> , <../object-class/well-header-feature> , <../object-class/well-fluid-production-observation> , <../object-class/volcanic-vent-feature> , <../object-class/thermal-spring> .
 
 <feature-name> a skos:Concept ;
 	rdfs:label "Feature Name" ;
-	dcdtr:domainOfCarriers <../object-class/power-plant-production-observation> , <../object-class/geothermal-power-plant-facility> , <../object-class/well-test-observation> , <../object-class/well-log-observation> , <../object-class/well-header-feature> , <../object-class/well-fluid-production-observation> , <../object-class/volcanic-vent-feature> .
+	dcdtr:domainOfCarriers <../object-class/power-plant-production-observation> , <../object-class/geothermal-power-plant-facility> , <../object-class/well-test-observation> , <../object-class/well-log-observation> , <../object-class/well-header-feature> , <../object-class/well-fluid-production-observation> , <../object-class/volcanic-vent-feature> , <../object-class/thermal-spring> .
 
 <feature-type> a skos:Concept ;
 	rdfs:label "Feature Type" ;
-	dcdtr:domainOfCarriers <../object-class/power-plant-production-observation> , <../object-class/geothermal-power-plant-facility> , <../object-class/well-test-observation> , <../object-class/well-log-observation> , <../object-class/well-header-feature> , <../object-class/well-fluid-production-observation> , <../object-class/volcanic-vent-feature> .
+	dcdtr:domainOfCarriers <../object-class/power-plant-production-observation> , <../object-class/geothermal-power-plant-facility> , <../object-class/well-test-observation> , <../object-class/well-log-observation> , <../object-class/well-header-feature> , <../object-class/well-fluid-production-observation> , <../object-class/volcanic-vent-feature> , <../object-class/thermal-spring> .
 
 <location> a skos:Concept ;
 	rdfs:label "Location" ;
-	dcdtr:domainOfCarriers <../object-class/power-plant-production-observation> , <../object-class/geothermal-power-plant-facility> , <../object-class/well-test-observation> , <../object-class/well-log-observation> , <../object-class/well-header-feature> , <../object-class/well-fluid-production-observation> , <../object-class/volcanic-vent-feature> .
+	dcdtr:domainOfCarriers <../object-class/power-plant-production-observation> , <../object-class/geothermal-power-plant-facility> , <../object-class/well-test-observation> , <../object-class/well-log-observation> , <../object-class/well-header-feature> , <../object-class/well-fluid-production-observation> , <../object-class/volcanic-vent-feature> , <../object-class/thermal-spring> .

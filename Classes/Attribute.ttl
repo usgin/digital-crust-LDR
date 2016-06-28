@@ -6,720 +6,9 @@
 @prefix dcdtr: <http://resources.usgin.org/uri-gin/dtr/ont/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
-<attribute>
-     rdf:type skos:Collection ;
-     rdfs:label "Attribute" ;
-     skos:definition "Attribute" ;
-     dct:description "No description." ;
-     skos:member <attribute/abovebelowwatertable>; 
-     skos:member <attribute/accessconstraint>; 
-     skos:member <attribute/additionalsources>; 
-     skos:member <attribute/ageassignmentbasis>; 
-     skos:member <attribute/agesource>; 
-     skos:member <attribute/ageuncertainty-ma>; 
-     skos:member <attribute/aggregationtype>; 
-     skos:member <attribute/analysisdate>; 
-     skos:member <attribute/analysisdatetime>; 
-     skos:member <attribute/analysisname>; 
-     skos:member <attribute/analysistype>; 
-     skos:member <attribute/analysisuri>; 
-     skos:member <attribute/analyte>; 
-     skos:member <attribute/analyticalprocedure>; 
-     skos:member <attribute/apino>; 
-     skos:member <attribute/area-m2>; 
-     skos:member <attribute/averagedepthreservoir>; 
-     skos:member <attribute/averagefieldwidegradient-degcm>; 
-     skos:member <attribute/averagefieldwidepressure-mpa>; 
-     skos:member <attribute/averagemonthlywaterproduction-bbl>; 
-     skos:member <attribute/averagenettargetrockthickness-m>; 
-     skos:member <attribute/averagenettargetrockthicknessmethodology>; 
-     skos:member <attribute/averagenettargetrockthicknessuncertainty>; 
-     skos:member <attribute/averageperforatedthickness-m>; 
-     skos:member <attribute/averageprice-c-kw-h>; 
-     skos:member <attribute/averagereservoirdepth-m>; 
-     skos:member <attribute/averagereservoirdepthmethodology>; 
-     skos:member <attribute/averagereservoirdepthuncertainty>; 
-     skos:member <attribute/averagesurfacetemperature-degc>; 
-     skos:member <attribute/averagesurfacetemperaturesource>; 
-     skos:member <attribute/averagetemperaturegeofluid>; 
-     skos:member <attribute/averagethermalconductivity>; 
-     skos:member <attribute/averechargerategrndwtrvol-m3yr>; 
-     skos:member <attribute/avethicknessminedeposit-m>; 
-     skos:member <attribute/basestationname>; 
-     skos:member <attribute/bhintercepturi>; 
-     skos:member <attribute/bhintervaluri>; 
-     skos:member <attribute/bht>; 
-     skos:member <attribute/bhtcorrectedvalue>; 
-     skos:member <attribute/bhtcorrectiontype>; 
-     skos:member <attribute/bitdiametercollar>; 
-     skos:member <attribute/bitdiametertd>; 
-     skos:member <attribute/blockvolume-m3>; 
-     skos:member <attribute/boreholename>; 
-     skos:member <attribute/bottomloggedinterval-ft>; 
-     skos:member <attribute/bouguercorrection-mgal>; 
-     skos:member <attribute/bulkmixingformula>; 
-     skos:member <attribute/capacity>; 
-     skos:member <attribute/capacity-mw>; 
-     skos:member <attribute/capacityprocedure>; 
-     skos:member <attribute/capacityunits>; 
-     skos:member <attribute/casingbottomdepthdriller>; 
-     skos:member <attribute/casingdepth-ft>; 
-     skos:member <attribute/casingdiameter-in>; 
-     skos:member <attribute/casinglogger>; 
-     skos:member <attribute/casingpipediameter>; 
-     skos:member <attribute/casingthickness>; 
-     skos:member <attribute/casingtopdepth>; 
-     skos:member <attribute/casingtype>; 
-     skos:member <attribute/casingweight>; 
-     skos:member <attribute/casingweightunits>; 
-     skos:member <attribute/catalogsourcecode>; 
-     skos:member <attribute/cementationfactor>; 
-     skos:member <attribute/cementationmineralogy>; 
-     skos:member <attribute/circulationduration>; 
-     skos:member <attribute/citation>; 
-     skos:member <attribute/classification>; 
-     skos:member <attribute/collectionactivityname>; 
-     skos:member <attribute/collectionactivityuri>; 
-     skos:member <attribute/collectionmethod>; 
-     skos:member <attribute/collectionpurpose>; 
-     skos:member <attribute/commodityofinterest>; 
-     skos:member <attribute/completebouguervalue-mgal>; 
-     skos:member <attribute/conductivitymeasureduri>; 
-     skos:member <attribute/conductivitynumsamples>; 
-     skos:member <attribute/conductivitysampletype>; 
-     skos:member <attribute/contact>; 
-     skos:member <attribute/contactemailaddress>; 
-     skos:member <attribute/contactintervalbottom>; 
-     skos:member <attribute/contactintervaltop>; 
-     skos:member <attribute/contactname>; 
-     skos:member <attribute/contactphone>; 
-     skos:member <attribute/contourtype>; 
-     skos:member <attribute/contourtype-uri>; 
-     skos:member <attribute/contoururi>; 
-     skos:member <attribute/contourvalue>; 
-     skos:member <attribute/correctedtemperature>; 
-     skos:member <attribute/correctiondescription>; 
-     skos:member <attribute/correctiontc>; 
-     skos:member <attribute/correctiontype>; 
-     skos:member <attribute/county>; 
-     skos:member <attribute/crosssectionarea-m2>; 
-     skos:member <attribute/crosssectionareaprocedure>; 
-     skos:member <attribute/curatoruri>; 
-     skos:member <attribute/currentcurationlocation>; 
-     skos:member <attribute/dataentrysource>; 
-     skos:member <attribute/datecollected>; 
-     skos:member <attribute/dateinstalled>; 
-     skos:member <attribute/datemostrecentevent>; 
-     skos:member <attribute/datetimelogrun>; 
-     skos:member <attribute/datumelevation>; 
-     skos:member <attribute/datumelevation-m>; 
-     skos:member <attribute/density>; 
-     skos:member <attribute/depth>; 
-     skos:member <attribute/depth-ft>; 
-     skos:member <attribute/depthbottominterval>; 
-     skos:member <attribute/depthbottominterval-ft>; 
-     skos:member <attribute/depthbottomopenzone>; 
-     skos:member <attribute/depthdeterminationmethod>; 
-     skos:member <attribute/depthofmeasurement>; 
-     skos:member <attribute/depthofmine-km>; 
-     skos:member <attribute/depthreferencepoint>; 
-     skos:member <attribute/depthtobottom-m>; 
-     skos:member <attribute/depthtopinterval>; 
-     skos:member <attribute/depthtopinterval-ft>; 
-     skos:member <attribute/depthtopopenzone>; 
-     skos:member <attribute/depthtotop-m>; 
-     skos:member <attribute/depthtowater-ft>; 
-     skos:member <attribute/depthuncertainty>; 
-     skos:member <attribute/depthunits>; 
-     skos:member <attribute/description>; 
-     skos:member <attribute/detectionlimituri>; 
-     skos:member <attribute/developmentarea>; 
-     skos:member <attribute/diameterunits>; 
-     skos:member <attribute/dipdirection>; 
-     skos:member <attribute/discharge>; 
-     skos:member <attribute/dischargethickness-m>; 
-     skos:member <attribute/dischargeunits>; 
-     skos:member <attribute/displacement>; 
-     skos:member <attribute/displayname>; 
-     skos:member <attribute/dominantformationname>; 
-     skos:member <attribute/drilleddepth-ft>; 
-     skos:member <attribute/driller>; 
-     skos:member <attribute/drillertotaldepth>; 
-     skos:member <attribute/drillertotaldepth-ft>; 
-     skos:member <attribute/drillingfluid>; 
-     skos:member <attribute/drillingmethod>; 
-     skos:member <attribute/drillpipeinternaldiameter-in>; 
-     skos:member <attribute/drillpipelength>; 
-     skos:member <attribute/drive>; 
-     skos:member <attribute/drysampleconductivity>; 
-     skos:member <attribute/durationdays>; 
-     skos:member <attribute/effectivecrosssectionarea-m2>; 
-     skos:member <attribute/effectiveporosity>; 
-     skos:member <attribute/effectivevolume-m3>; 
-     skos:member <attribute/elevation>; 
-     skos:member <attribute/elevation-ft-msl>; 
-     skos:member <attribute/elevation-m>; 
-     skos:member <attribute/elevationbottomopenzone-msl>; 
-     skos:member <attribute/elevationdatum>; 
-     skos:member <attribute/elevationdatum-m>; 
-     skos:member <attribute/elevationdf>; 
-     skos:member <attribute/elevationgl>; 
-     skos:member <attribute/elevationgl-ft>; 
-     skos:member <attribute/elevationgl-m>; 
-     skos:member <attribute/elevationkb>; 
-     skos:member <attribute/elevationtopopenzone-msl>; 
-     skos:member <attribute/elevationtype>; 
-     skos:member <attribute/elevationunits>; 
-     skos:member <attribute/elevationuom>; 
-     skos:member <attribute/emailaddress>; 
-     skos:member <attribute/endeddrillingdate>; 
-     skos:member <attribute/endedminingdate>; 
-     skos:member <attribute/endreportinterval>; 
-     skos:member <attribute/energyuse>; 
-     skos:member <attribute/energyuseprocedure>; 
-     skos:member <attribute/energyuseunits>; 
-     skos:member <attribute/eqlog-measurementdate>; 
-     skos:member <attribute/eqlog-totaldepth>; 
-     skos:member <attribute/eqlogtemperaturebottom>; 
-     skos:member <attribute/eqlogtemperaturemax>; 
-     skos:member <attribute/eqlogtemperaturetop>; 
-     skos:member <attribute/equilibriumpressure>; 
-     skos:member <attribute/equilibriumpressuremethod>; 
-     skos:member <attribute/estairtemp-c>; 
-     skos:member <attribute/estimatedreservoirvolume>; 
-     skos:member <attribute/estminewtrtemp-c>; 
-     skos:member <attribute/eventname>; 
-     skos:member <attribute/eventtype>; 
-     skos:member <attribute/eventtypeterm>; 
-     skos:member <attribute/eventuri>; 
-     skos:member <attribute/facilityname>; 
-     skos:member <attribute/facilityowner>; 
-     skos:member <attribute/facilitypostaladdress>; 
-     skos:member <attribute/facilitypostalzipcode>; 
-     skos:member <attribute/facilitystatus>; 
-     skos:member <attribute/facilitytype>; 
-     skos:member <attribute/facilityuri>; 
-     skos:member <attribute/faultcount>; 
-     skos:member <attribute/faulted>; 
-     skos:member <attribute/faulthydrauliccharacter>; 
-     skos:member <attribute/faulttype>; 
-     skos:member <attribute/featureofinteresturi>; 
-     skos:member <attribute/featuretype>; 
-     skos:member <attribute/featureuri>; 
-     skos:member <attribute/field>; 
-     skos:member <attribute/fieldname>; 
-     skos:member <attribute/firstproductiondate>; 
-     skos:member <attribute/flow>; 
-     skos:member <attribute/flowcontinuity>; 
-     skos:member <attribute/flowgpm>; 
-     skos:member <attribute/flowhistory>; 
-     skos:member <attribute/flowmeasurementdatetime>; 
-     skos:member <attribute/flowmeasurementprocedure>; 
-     skos:member <attribute/flowpressuremax>; 
-     skos:member <attribute/flowpressuremethod>; 
-     skos:member <attribute/flowpressuremin>; 
-     skos:member <attribute/flowtype>; 
-     skos:member <attribute/flowunits>; 
-     skos:member <attribute/fluidlevel>; 
-     skos:member <attribute/fluidloss>; 
-     skos:member <attribute/fluidtemperature-c>; 
-     skos:member <attribute/fluidtemperaturec>; 
-     skos:member <attribute/fluidtype>; 
-     skos:member <attribute/fluidvolume>; 
-     skos:member <attribute/fluidvolumeunits>; 
-     skos:member <attribute/formationfactor>; 
-     skos:member <attribute/formationname>; 
-     skos:member <attribute/formationtd>; 
-     skos:member <attribute/formationtemperature>; 
-     skos:member <attribute/freeaircorrection-mgal>; 
-     skos:member <attribute/fullname>; 
-     skos:member <attribute/function>; 
-     skos:member <attribute/genericsymbolizer>; 
-     skos:member <attribute/geographicposition>; 
-     skos:member <attribute/geologicage>; 
-     skos:member <attribute/geologicformation>; 
-     skos:member <attribute/geologicformationname>; 
-     skos:member <attribute/geologicformationtype>; 
-     skos:member <attribute/geologicformationuri>; 
-     skos:member <attribute/geologichistory>; 
-     skos:member <attribute/geologicsetting>; 
-     skos:member <attribute/geologicunit>; 
-     skos:member <attribute/geologicunitname>; 
-     skos:member <attribute/geothermalareauri>; 
-     skos:member <attribute/geothermtempcharacterization>; 
-     skos:member <attribute/gradientunits>; 
-     skos:member <attribute/grossproduction-mwhr>; 
-     skos:member <attribute/grossproductioncapacity>; 
-     skos:member <attribute/groundwaterflowdirection>; 
-     skos:member <attribute/gtepicenterquality>; 
-     skos:member <attribute/gtqualitysupportdata>; 
-     skos:member <attribute/gwdischargedistance-m>; 
-     skos:member <attribute/headeruri>; 
-     skos:member <attribute/heatapplication>; 
-     skos:member <attribute/heatexchangesystem>; 
-     skos:member <attribute/heatflowtype>; 
-     skos:member <attribute/heatflowunits>; 
-     skos:member <attribute/heatgeneration>; 
-     skos:member <attribute/heatgenerationunits>; 
-     skos:member <attribute/heatproduction-mwm3>; 
-     skos:member <attribute/heatproductionuncertainty>; 
-     skos:member <attribute/hf-qualitystatisticsmethod>; 
-     skos:member <attribute/hg-numbersamples>; 
-     skos:member <attribute/holediameter-in>; 
-     skos:member <attribute/horizontalconductivity-ft-day>; 
-     skos:member <attribute/hucode>; 
-     skos:member <attribute/hvac-specs>; 
-     skos:member <attribute/hydraulicconductivityft-day>; 
-     skos:member <attribute/hydraulicconductivitym-sec>; 
-     skos:member <attribute/hydronarrative>; 
-     skos:member <attribute/hydrostaticpressure>; 
-     skos:member <attribute/hydrostaticpressuremethod>; 
-     skos:member <attribute/hypocenteruri>; 
-     skos:member <attribute/informationsource>; 
-     skos:member <attribute/injectionordisposal>; 
-     skos:member <attribute/instrument>; 
-     skos:member <attribute/interceptdepth>; 
-     skos:member <attribute/interceptname>; 
-     skos:member <attribute/intercepttype>; 
-     skos:member <attribute/intervalbottomdepth>; 
-     skos:member <attribute/intervalcorrectedgradient>; 
-     skos:member <attribute/intervalcorrectedgradientmethod>; 
-     skos:member <attribute/intervalcorrectedheatflow>; 
-     skos:member <attribute/intervalenddatetime>; 
-     skos:member <attribute/intervalhf-qualitycode>; 
-     skos:member <attribute/intervalname>; 
-     skos:member <attribute/intervals>; 
-     skos:member <attribute/intervalsincemovement>; 
-     skos:member <attribute/intervalstartdatetime>; 
-     skos:member <attribute/intervalthermalconductivity>; 
-     skos:member <attribute/intervaltopdepth>; 
-     skos:member <attribute/intervaltype>; 
-     skos:member <attribute/intervaluncorrectedgradient>; 
-     skos:member <attribute/intervaluncorrectedheatflow>; 
-     skos:member <attribute/isolinerangemax>; 
-     skos:member <attribute/isolinerangemin>; 
-     skos:member <attribute/isolinetypeandunits>; 
-     skos:member <attribute/isostaticcorrection-mgal>; 
-     skos:member <attribute/keywords>; 
-     skos:member <attribute/label>; 
-     skos:member <attribute/laboratorycontact>; 
-     skos:member <attribute/laboratoryuri>; 
-     skos:member <attribute/landleaseowner>; 
-     skos:member <attribute/landowner>; 
-     skos:member <attribute/lasfileurl>; 
-     skos:member <attribute/lastproductiondate>; 
-     skos:member <attribute/latcentroid>; 
-     skos:member <attribute/latdegree>; 
-     skos:member <attribute/latdegreewgs84>; 
-     skos:member <attribute/latitudecorrection-mgal>; 
-     skos:member <attribute/latitudedegrees>; 
-     skos:member <attribute/leasename>; 
-     skos:member <attribute/leaseno>; 
-     skos:member <attribute/leaseowner>; 
-     skos:member <attribute/length-m>; 
-     skos:member <attribute/lengthunits>; 
-     skos:member <attribute/lithology>; 
-     skos:member <attribute/lithologydescription>; 
-     skos:member <attribute/lithologyinformation>; 
-     skos:member <attribute/lithologyterm>; 
-     skos:member <attribute/lithologyterms>; 
-     skos:member <attribute/loadfactor>; 
-     skos:member <attribute/localityterms>; 
-     skos:member <attribute/locationdescription>; 
-     skos:member <attribute/locationkeyword>; 
-     skos:member <attribute/locationname>; 
-     skos:member <attribute/locationuncertaintycode>; 
-     skos:member <attribute/locationuncertaintyradius>; 
-     skos:member <attribute/locationuncertaintystatement>; 
-     skos:member <attribute/logtypename>; 
-     skos:member <attribute/logtypeterm>; 
-     skos:member <attribute/loguri>; 
-     skos:member <attribute/longcentroid>; 
-     skos:member <attribute/longdegree>; 
-     skos:member <attribute/longdegreewgs84>; 
-     skos:member <attribute/longitudedegree>; 
-     skos:member <attribute/magnitude>; 
-     skos:member <attribute/magnitudetype>; 
-     skos:member <attribute/majorfields>; 
-     skos:member <attribute/maplabel>; 
-     skos:member <attribute/materialclass>; 
-     skos:member <attribute/materialcomposition>; 
-     skos:member <attribute/maxhf-kjyr>; 
-     skos:member <attribute/maximummonthlywaterproduction-bbl>; 
-     skos:member <attribute/maximumrecordedtemperature>; 
-     skos:member <attribute/maxminerechargevol2-m3yr>; 
-     skos:member <attribute/maxminerechargevolgrndwtr1-m3yr>; 
-     skos:member <attribute/maxminewtrvel1-myr>; 
-     skos:member <attribute/maxminewtrvel2-myr>; 
-     skos:member <attribute/maxrechargearea-km2>; 
-     skos:member <attribute/maxresidencetime1-yr>; 
-     skos:member <attribute/maxresidencetime2-yr>; 
-     skos:member <attribute/meanannualprecip-in>; 
-     skos:member <attribute/meancapacity-mw>; 
-     skos:member <attribute/meanreservoirtemp>; 
-     skos:member <attribute/measuredtemperature>; 
-     skos:member <attribute/measurementcount>; 
-     skos:member <attribute/measurementdatetime>; 
-     skos:member <attribute/measurementdevice>; 
-     skos:member <attribute/measurementdirection>; 
-     skos:member <attribute/measurementduration>; 
-     skos:member <attribute/measurementformation>; 
-     skos:member <attribute/measurementmethod>; 
-     skos:member <attribute/measurementnotes>; 
-     skos:member <attribute/measurementpressure>; 
-     skos:member <attribute/measurementpressureunits>; 
-     skos:member <attribute/measurementprocedure>; 
-     skos:member <attribute/measurementrun>; 
-     skos:member <attribute/measurementsource>; 
-     skos:member <attribute/measurementunits>; 
-     skos:member <attribute/metadata-uri>; 
-     skos:member <attribute/metadatauri>; 
-     skos:member <attribute/methodology>; 
-     skos:member <attribute/mine-city-distance-km>; 
-     skos:member <attribute/minedepositarea-m2>; 
-     skos:member <attribute/minename>; 
-     skos:member <attribute/mineoropeningtype>; 
-     skos:member <attribute/mineralowner>; 
-     skos:member <attribute/minestartdate>; 
-     skos:member <attribute/minevolume-m3>; 
-     skos:member <attribute/minhf-kjyr>; 
-     skos:member <attribute/minimummonthlywaterproduction-bbl>; 
-     skos:member <attribute/minminerechargegrndwtrvol1-m3yr>; 
-     skos:member <attribute/minminerechargevol2-m3yr>; 
-     skos:member <attribute/minminewtrvel1-myr>; 
-     skos:member <attribute/minminewtrvel2-myr>; 
-     skos:member <attribute/minrechargearea-km2>; 
-     skos:member <attribute/minresidencetime1-yr>; 
-     skos:member <attribute/minresidencetime2-yr>; 
-     skos:member <attribute/monthlyproduction-bbl>; 
-     skos:member <attribute/movementsense>; 
-     skos:member <attribute/movementtype>; 
-     skos:member <attribute/name>; 
-     skos:member <attribute/netproductioncapacity-mw>; 
-     skos:member <attribute/netproductionmwhr>; 
-     skos:member <attribute/notes>; 
-     skos:member <attribute/numberinjectionwells>; 
-     skos:member <attribute/numberoftrenches>; 
-     skos:member <attribute/numberofwells>; 
-     skos:member <attribute/numberoperatingplants>; 
-     skos:member <attribute/numberproductionwells>; 
-     skos:member <attribute/objectid>; 
-     skos:member <attribute/observationdate>; 
-     skos:member <attribute/observationlabel>; 
-     skos:member <attribute/observationmethod>; 
-     skos:member <attribute/observationname>; 
-     skos:member <attribute/observationuri>; 
-     skos:member <attribute/observedgravity-mgal>; 
-     skos:member <attribute/observednumericvalue>; 
-     skos:member <attribute/observednumericvaluemaximum>; 
-     skos:member <attribute/observednumericvalueminimum>; 
-     skos:member <attribute/observedpropertyname>; 
-     skos:member <attribute/observer>; 
-     skos:member <attribute/olderageuri>; 
-     skos:member <attribute/oldestage>; 
-     skos:member <attribute/oldestradiometricage-ma>; 
-     skos:member <attribute/operationaldate>; 
-     skos:member <attribute/operator>; 
-     skos:member <attribute/origindatetime>; 
-     skos:member <attribute/otheranalysisid>; 
-     skos:member <attribute/otheranalyticaldata>; 
-     skos:member <attribute/otherdistribution>; 
-     skos:member <attribute/otherfeatureid>; 
-     skos:member <attribute/otherformationname>; 
-     skos:member <attribute/otherid>; 
-     skos:member <attribute/otheridentifier>; 
-     skos:member <attribute/otherlithologyname>; 
-     skos:member <attribute/otherlocationinformation>; 
-     skos:member <attribute/otherlocationname>; 
-     skos:member <attribute/otherlogid>; 
-     skos:member <attribute/othername>; 
-     skos:member <attribute/othersiteid>; 
-     skos:member <attribute/otherspecimenid>; 
-     skos:member <attribute/overburdenthickness-m>; 
-     skos:member <attribute/owner>; 
-     skos:member <attribute/owners>; 
-     skos:member <attribute/papercopylocation>; 
-     skos:member <attribute/parcel>; 
-     skos:member <attribute/parentfeatureuri>; 
-     skos:member <attribute/parentsampleuri>; 
-     skos:member <attribute/parentspecimenuri>; 
-     skos:member <attribute/parentwelluri>; 
-     skos:member <attribute/percenttargetrock>; 
-     skos:member <attribute/permeability-md>; 
-     skos:member <attribute/permeabilityair-md>; 
-     skos:member <attribute/permeabilityaverage-m2>; 
-     skos:member <attribute/permeabilityaveragemethod>; 
-     skos:member <attribute/permeabilityaverageuncertainty>; 
-     skos:member <attribute/permeabilitycommonlyobserved-md>; 
-     skos:member <attribute/permeabilitygeometricmean-md>; 
-     skos:member <attribute/permeabilityintrinsic-md>; 
-     skos:member <attribute/permeabilitylocal-md>; 
-     skos:member <attribute/permeabilitymax-m2>; 
-     skos:member <attribute/permeabilitymean-md>; 
-     skos:member <attribute/permeabilitymeanintrinsic-md>; 
-     skos:member <attribute/permeabilitymedian-md>; 
-     skos:member <attribute/permeabilitymedianporescale-md>; 
-     skos:member <attribute/permeabilitymin-m2>; 
-     skos:member <attribute/permeabilityporescale-md>; 
-     skos:member <attribute/permit>; 
-     skos:member <attribute/ph>; 
-     skos:member <attribute/phone>; 
-     skos:member <attribute/pipediameter-in>; 
-     skos:member <attribute/pipematerial>; 
-     skos:member <attribute/pipetotallength-ft>; 
-     skos:member <attribute/plantname>; 
-     skos:member <attribute/plantproductionstatlabel>; 
-     skos:member <attribute/plantproductionstaturi>; 
-     skos:member <attribute/planttype>; 
-     skos:member <attribute/plss-meridians>; 
-     skos:member <attribute/plsslocation>; 
-     skos:member <attribute/plssrange>; 
-     skos:member <attribute/plsssectionnumber>; 
-     skos:member <attribute/plsssectionpart>; 
-     skos:member <attribute/plsstownship>; 
-     skos:member <attribute/porosityaverage-pct>; 
-     skos:member <attribute/porosityaveragemethod>; 
-     skos:member <attribute/porosityaverageuncertainty>; 
-     skos:member <attribute/porositymax-pct>; 
-     skos:member <attribute/porositymean-pct>; 
-     skos:member <attribute/porositymedian-pct>; 
-     skos:member <attribute/porositymin-pct>; 
-     skos:member <attribute/porositypercent>; 
-     skos:member <attribute/positionaccuracy>; 
-     skos:member <attribute/positionaccuracymeters>; 
-     skos:member <attribute/positionalaccuracy>; 
-     skos:member <attribute/postaladdress>; 
-     skos:member <attribute/powerplantfacilityuri>; 
-     skos:member <attribute/powerpurchasers>; 
-     skos:member <attribute/preferredpressure>; 
-     skos:member <attribute/pressure-psi>; 
-     skos:member <attribute/pressurefinalshutin>; 
-     skos:member <attribute/pressureinitialshutin>; 
-     skos:member <attribute/proceduresummary>; 
-     skos:member <attribute/producingfeature>; 
-     skos:member <attribute/producinginterval>; 
-     skos:member <attribute/production>; 
-     skos:member <attribute/productionreportdate>; 
-     skos:member <attribute/publicationsource>; 
-     skos:member <attribute/qualifier>; 
-     skos:member <attribute/radioactivitymeasurementdevice>; 
-     skos:member <attribute/rank>; 
-     skos:member <attribute/rechargeprocedure1>; 
-     skos:member <attribute/rechargeprocedure2>; 
-     skos:member <attribute/recordname>; 
-     skos:member <attribute/recurrenceinterval>; 
-     skos:member <attribute/registrant>; 
-     skos:member <attribute/registranturi>; 
-     skos:member <attribute/relatedfault>; 
-     skos:member <attribute/relatedfaulturi>; 
-     skos:member <attribute/relatedfeature>; 
-     skos:member <attribute/relatedheatflowintervalsuri>; 
-     skos:member <attribute/relatedresource>; 
-     skos:member <attribute/relatedresources>; 
-     skos:member <attribute/relatedsampleuri>; 
-     skos:member <attribute/relatedwaterchemistry>; 
-     skos:member <attribute/releasedate>; 
-     skos:member <attribute/remarks>; 
-     skos:member <attribute/reportingperiod>; 
-     skos:member <attribute/reportyear>; 
-     skos:member <attribute/representativeageuri>; 
-     skos:member <attribute/representativelithologyuri>; 
-     skos:member <attribute/reservoirfavorability>; 
-     skos:member <attribute/reservoirfavorabilitymethodology>; 
-     skos:member <attribute/reservoirfavorabilityuncertainty>; 
-     skos:member <attribute/reservoirname>; 
-     skos:member <attribute/reservoiruri>; 
-     skos:member <attribute/resistivitymud>; 
-     skos:member <attribute/resistivitywater-ohm-m>; 
-     skos:member <attribute/resourcetype>; 
-     skos:member <attribute/result>; 
-     skos:member <attribute/rge>; 
-     skos:member <attribute/rockname>; 
-     skos:member <attribute/rocktype>; 
-     skos:member <attribute/salinity>; 
-     skos:member <attribute/samplecollectiondate>; 
-     skos:member <attribute/samplecollectionmethod>; 
-     skos:member <attribute/samplecureduration>; 
-     skos:member <attribute/sampledensity>; 
-     skos:member <attribute/sampledensity-g-cc>; 
-     skos:member <attribute/sampledensityunits>; 
-     skos:member <attribute/sampledepth>; 
-     skos:member <attribute/sampledepth-m>; 
-     skos:member <attribute/sampledfeatureagelabel>; 
-     skos:member <attribute/sampledfeaturemaxage-ma>; 
-     skos:member <attribute/sampledfeatureminage-ma>; 
-     skos:member <attribute/sampledgeologicunit>; 
-     skos:member <attribute/sampledgeologicunitage>; 
-     skos:member <attribute/sampledimensionsheight>; 
-     skos:member <attribute/sampledimensionslength>; 
-     skos:member <attribute/sampledimensionsunits>; 
-     skos:member <attribute/sampledimensionswidth>; 
-     skos:member <attribute/samplemass-kg>; 
-     skos:member <attribute/samplemeasurementdate>; 
-     skos:member <attribute/sampleshape>; 
-     skos:member <attribute/sampletemperature>; 
-     skos:member <attribute/sampletemperatureunits>; 
-     skos:member <attribute/sampletype>; 
-     skos:member <attribute/samplingfeaturename>; 
-     skos:member <attribute/samplingfeaturetype>; 
-     skos:member <attribute/samplingfeatureuri>; 
-     skos:member <attribute/saturatedsampleconductivity>; 
-     skos:member <attribute/saturationfluid>; 
-     skos:member <attribute/scannedfileurl>; 
-     skos:member <attribute/se-conductivity>; 
-     skos:member <attribute/se-correctedgradient>; 
-     skos:member <attribute/se-correctedheatflow>; 
-     skos:member <attribute/se-uncorrectedgradient>; 
-     skos:member <attribute/se-uncorrectedheatflow>; 
-     skos:member <attribute/section->; 
-     skos:member <attribute/sectionpart>; 
-     skos:member <attribute/seisometernetwork>; 
-     skos:member <attribute/shape>; 
-     skos:member <attribute/shape-area>; 
-     skos:member <attribute/shape-length>; 
-     skos:member <attribute/shutinpressuremethod>; 
-     skos:member <attribute/siteheatflow>; 
-     skos:member <attribute/sitelocationname>; 
-     skos:member <attribute/sitelocationuri>; 
-     skos:member <attribute/sitename>; 
-     skos:member <attribute/sitevaluemethod>; 
-     skos:member <attribute/slipaccumulationinterval>; 
-     skos:member <attribute/sliprate>; 
-     skos:member <attribute/source>; 
-     skos:member <attribute/sourcecitation>; 
-     skos:member <attribute/sourcecitationuri>; 
-     skos:member <attribute/sourceuri>; 
-     skos:member <attribute/spacingavg-ft>; 
-     skos:member <attribute/specification-uri>; 
-     skos:member <attribute/specificationuri>; 
-     skos:member <attribute/specificheat>; 
-     skos:member <attribute/specificheat-kjkgc>; 
-     skos:member <attribute/specificheatunits>; 
-     skos:member <attribute/specificstorage>; 
-     skos:member <attribute/specificyield-percent>; 
-     skos:member <attribute/specimencollectiondate>; 
-     skos:member <attribute/specimencollectionmethod>; 
-     skos:member <attribute/specimencollector>; 
-     skos:member <attribute/specimencollectoruri>; 
-     skos:member <attribute/specimencuration>; 
-     skos:member <attribute/specimendescription>; 
-     skos:member <attribute/specimenid>; 
-     skos:member <attribute/specimenlabel>; 
-     skos:member <attribute/specimenmass-kg>; 
-     skos:member <attribute/specimentype>; 
-     skos:member <attribute/specimenuri>; 
-     skos:member <attribute/springname>; 
-     skos:member <attribute/spuddate>; 
-     skos:member <attribute/srs>; 
-     skos:member <attribute/standarddeviation>; 
-     skos:member <attribute/standardmagnitudeerror>; 
-     skos:member <attribute/startreportinterval>; 
-     skos:member <attribute/state>; 
-     skos:member <attribute/stationidentifier>; 
-     skos:member <attribute/stationname>; 
-     skos:member <attribute/statisticalprocedure>; 
-     skos:member <attribute/status>; 
-     skos:member <attribute/statusdate>; 
-     skos:member <attribute/stimulation>; 
-     skos:member <attribute/surfacetemperature>; 
-     skos:member <attribute/symbol>; 
-     skos:member <attribute/systemtype>; 
-     skos:member <attribute/targetfeatureuri>; 
-     skos:member <attribute/targetformation>; 
-     skos:member <attribute/targetrockname>; 
-     skos:member <attribute/targetrockvolume-m3>; 
-     skos:member <attribute/tectonicprovince>; 
-     skos:member <attribute/temperature>; 
-     skos:member <attribute/temperature-f>; 
-     skos:member <attribute/temperaturecorrection>; 
-     skos:member <attribute/temperatureflowing>; 
-     skos:member <attribute/temperaturemax-c>; 
-     skos:member <attribute/temperaturemeasuretype>; 
-     skos:member <attribute/temperaturemin-c>; 
-     skos:member <attribute/temperatureunits>; 
-     skos:member <attribute/tempmeasurementdatetime>; 
-     skos:member <attribute/tempmeasurementprocedure>; 
-     skos:member <attribute/terraincorrection-mgal>; 
-     skos:member <attribute/testdatetime>; 
-     skos:member <attribute/testfluid>; 
-     skos:member <attribute/testname>; 
-     skos:member <attribute/testnumber>; 
-     skos:member <attribute/testoperator>; 
-     skos:member <attribute/testtype>; 
-     skos:member <attribute/testtypedescription>; 
-     skos:member <attribute/thermalconductivityunits>; 
-     skos:member <attribute/thermaldiffusivity>; 
-     skos:member <attribute/thermalspringuri>; 
-     skos:member <attribute/timefinalshutin-min>; 
-     skos:member <attribute/timeinitialshutin-min>; 
-     skos:member <attribute/timesincecirculation>; 
-     skos:member <attribute/toploggedinterval-ft>; 
-     skos:member <attribute/totalmineheat-kj>; 
-     skos:member <attribute/totalslip>; 
-     skos:member <attribute/transmissivity>; 
-     skos:member <attribute/transmissivity-units>; 
-     skos:member <attribute/trap>; 
-     skos:member <attribute/trueverticaldepth>; 
-     skos:member <attribute/twp>; 
-     skos:member <attribute/uncertainty>; 
-     skos:member <attribute/uncertainty-mgal>; 
-     skos:member <attribute/uncertaintydensity>; 
-     skos:member <attribute/uncertaintyspecificheat>; 
-     skos:member <attribute/uncertaintytc>; 
-     skos:member <attribute/uncertaintythermaldiffusivity>; 
-     skos:member <attribute/units>; 
-     skos:member <attribute/units-pressure>; 
-     skos:member <attribute/units-temperature>; 
-     skos:member <attribute/unitsofmeasure>; 
-     skos:member <attribute/unitspermeability>; 
-     skos:member <attribute/unitsporosity>; 
-     skos:member <attribute/unitsstorage>; 
-     skos:member <attribute/unitstc>; 
-     skos:member <attribute/unitsthermaldiffusivity>; 
-     skos:member <attribute/updatedate>; 
-     skos:member <attribute/updatetimestamp>; 
-     skos:member <attribute/useapplication>; 
-     skos:member <attribute/utm-e>; 
-     skos:member <attribute/utm-n>; 
-     skos:member <attribute/utmdatumzone>; 
-     skos:member <attribute/utmzone>; 
-     skos:member <attribute/ventelevation>; 
-     skos:member <attribute/verticalconductivity-ft-day>; 
-     skos:member <attribute/verticaldatum>; 
-     skos:member <attribute/verticalextentmax-m>; 
-     skos:member <attribute/verticalextentmin-m>; 
-     skos:member <attribute/verticalunits>; 
-     skos:member <attribute/viscosity>; 
-     skos:member <attribute/volcanicgroup>; 
-     skos:member <attribute/volcventname>; 
-     skos:member <attribute/waterdensity-kgm3>; 
-     skos:member <attribute/waterdensity-mgl>; 
-     skos:member <attribute/waterinjection-bbl>; 
-     skos:member <attribute/watermass-kg>; 
-     skos:member <attribute/watersaturation-pct>; 
-     skos:member <attribute/watershedname>; 
-     skos:member <attribute/watertabletemperature>; 
-     skos:member <attribute/watertabletop>; 
-     skos:member <attribute/watertds-mgl>; 
-     skos:member <attribute/wellborename>; 
-     skos:member <attribute/wellboreshape>; 
-     skos:member <attribute/wellboreuri>; 
-     skos:member <attribute/wellcount>; 
-     skos:member <attribute/welldrilldate>; 
-     skos:member <attribute/welldrilldatetype>; 
-     skos:member <attribute/wellheaderuri>; 
-     skos:member <attribute/wellname>; 
-     skos:member <attribute/welltype>; 
-     skos:member <attribute/width-m>; 
-     skos:member <attribute/yearcommissioned>; 
-     skos:member <attribute/yearsinproduction>; 
-     skos:member <attribute/youngerageuri>; 
-     skos:member <attribute/youngestage>; 
-     skos:member <attribute/youngestradiometricage-ma>; 
-     skos:member <attribute/zip>;
- .
 
-
+ skos:member <attribute/abovebelowwatertable>;  skos:member <attribute/accessconstraint>;  skos:member <attribute/additionalsources>;  skos:member <attribute/ageassignmentbasis>;  skos:member <attribute/agesource>;  skos:member <attribute/ageuncertainty-ma>;  skos:member <attribute/aggregationtype>;  skos:member <attribute/analysisdate>;  skos:member <attribute/analysisdatetime>;  skos:member <attribute/analysisname>;  skos:member <attribute/analysistype>;  skos:member <attribute/analysisuri>;  skos:member <attribute/analyte>;  skos:member <attribute/analyticalprocedure>;  skos:member <attribute/apino>;  skos:member <attribute/area-m2>;  skos:member <attribute/averagedepthreservoir>;  skos:member <attribute/averagefieldwidegradient-degcm>;  skos:member <attribute/averagefieldwidepressure-mpa>;  skos:member <attribute/averagemonthlywaterproduction-bbl>;  skos:member <attribute/averagenettargetrockthickness-m>;  skos:member <attribute/averagenettargetrockthicknessmethodology>;  skos:member <attribute/averagenettargetrockthicknessuncertainty>;  skos:member <attribute/averageperforatedthickness-m>;  skos:member <attribute/averageprice-c-kw-h>;  skos:member <attribute/averagereservoirdepth-m>;  skos:member <attribute/averagereservoirdepthmethodology>;  skos:member <attribute/averagereservoirdepthuncertainty>;  skos:member <attribute/averagesurfacetemperature-degc>;  skos:member <attribute/averagesurfacetemperaturesource>;  skos:member <attribute/averagetemperaturegeofluid>;  skos:member <attribute/averagethermalconductivity>;  skos:member <attribute/averechargerategrndwtrvol-m3yr>;  skos:member <attribute/avethicknessminedeposit-m>;  skos:member <attribute/basestationname>;  skos:member <attribute/bhintercepturi>;  skos:member <attribute/bhintervaluri>;  skos:member <attribute/bht>;  skos:member <attribute/bhtcorrectedvalue>;  skos:member <attribute/bhtcorrectiontype>;  skos:member <attribute/bitdiametercollar>;  skos:member <attribute/bitdiametertd>;  skos:member <attribute/blockvolume-m3>;  skos:member <attribute/boreholename>;  skos:member <attribute/bottomloggedinterval-ft>;  skos:member <attribute/bouguercorrection-mgal>;  skos:member <attribute/bulkmixingformula>;  skos:member <attribute/capacity>;  skos:member <attribute/capacity-mw>;  skos:member <attribute/capacityprocedure>;  skos:member <attribute/capacityunits>;  skos:member <attribute/casingbottomdepthdriller>;  skos:member <attribute/casingdepth-ft>;  skos:member <attribute/casingdiameter-in>;  skos:member <attribute/casinglogger>;  skos:member <attribute/casingpipediameter>;  skos:member <attribute/casingthickness>;  skos:member <attribute/casingtopdepth>;  skos:member <attribute/casingtype>;  skos:member <attribute/casingweight>;  skos:member <attribute/casingweightunits>;  skos:member <attribute/catalogsourcecode>;  skos:member <attribute/cementationfactor>;  skos:member <attribute/cementationmineralogy>;  skos:member <attribute/circulationduration>;  skos:member <attribute/citation>;  skos:member <attribute/classification>;  skos:member <attribute/collectionactivityname>;  skos:member <attribute/collectionactivityuri>;  skos:member <attribute/collectionmethod>;  skos:member <attribute/collectionpurpose>;  skos:member <attribute/commodityofinterest>;  skos:member <attribute/completebouguervalue-mgal>;  skos:member <attribute/conductivitymeasureduri>;  skos:member <attribute/conductivitynumsamples>;  skos:member <attribute/conductivitysampletype>;  skos:member <attribute/contact>;  skos:member <attribute/contactemailaddress>;  skos:member <attribute/contactintervalbottom>;  skos:member <attribute/contactintervaltop>;  skos:member <attribute/contactname>;  skos:member <attribute/contactphone>;  skos:member <attribute/contourtype>;  skos:member <attribute/contourtype-uri>;  skos:member <attribute/contoururi>;  skos:member <attribute/contourvalue>;  skos:member <attribute/correctedtemperature>;  skos:member <attribute/correctiondescription>;  skos:member <attribute/correctiontc>;  skos:member <attribute/correctiontype>;  skos:member <attribute/county>;  skos:member <attribute/crosssectionarea-m2>;  skos:member <attribute/crosssectionareaprocedure>;  skos:member <attribute/curatoruri>;  skos:member <attribute/currentcurationlocation>;  skos:member <attribute/dataentrysource>;  skos:member <attribute/datecollected>;  skos:member <attribute/dateinstalled>;  skos:member <attribute/datemostrecentevent>;  skos:member <attribute/datetimelogrun>;  skos:member <attribute/datumelevation>;  skos:member <attribute/datumelevation-m>;  skos:member <attribute/density>;  skos:member <attribute/depth>;  skos:member <attribute/depthbottominterval>;  skos:member <attribute/depthbottominterval-ft>;  skos:member <attribute/depthbottomopenzone>;  skos:member <attribute/depthdeterminationmethod>;  skos:member <attribute/depth-ft>;  skos:member <attribute/depthofmeasurement>;  skos:member <attribute/depthofmine-km>;  skos:member <attribute/depthreferencepoint>;  skos:member <attribute/depthtobottom-m>;  skos:member <attribute/depthtopinterval>;  skos:member <attribute/depthtopinterval-ft>;  skos:member <attribute/depthtopopenzone>;  skos:member <attribute/depthtotop-m>;  skos:member <attribute/depthtowater-ft>;  skos:member <attribute/depthuncertainty>;  skos:member <attribute/depthunits>;  skos:member <attribute/description>;  skos:member <attribute/detectionlimituri>;  skos:member <attribute/developmentarea>;  skos:member <attribute/diameterunits>;  skos:member <attribute/dipdirection>;  skos:member <attribute/discharge>;  skos:member <attribute/dischargethickness-m>;  skos:member <attribute/dischargeunits>;  skos:member <attribute/displacement>;  skos:member <attribute/displayname>;  skos:member <attribute/dominantformationname>;  skos:member <attribute/drilleddepth-ft>;  skos:member <attribute/driller>;  skos:member <attribute/drillertotaldepth>;  skos:member <attribute/drillertotaldepth-ft>;  skos:member <attribute/drillingfluid>;  skos:member <attribute/drillingmethod>;  skos:member <attribute/drillpipeinternaldiameter-in>;  skos:member <attribute/drillpipelength>;  skos:member <attribute/drive>;  skos:member <attribute/drysampleconductivity>;  skos:member <attribute/durationdays>;  skos:member <attribute/effectivecrosssectionarea-m2>;  skos:member <attribute/effectiveporosity>;  skos:member <attribute/effectivevolume-m3>;  skos:member <attribute/elevation>;  skos:member <attribute/elevationbottomopenzone-msl>;  skos:member <attribute/elevationdatum>;  skos:member <attribute/elevationdatum-m>;  skos:member <attribute/elevationdf>;  skos:member <attribute/elevation-ft-msl>;  skos:member <attribute/elevationgl>;  skos:member <attribute/elevationgl-ft>;  skos:member <attribute/elevationgl-m>;  skos:member <attribute/elevationkb>;  skos:member <attribute/elevation-m>;  skos:member <attribute/elevationtopopenzone-msl>;  skos:member <attribute/elevationtype>;  skos:member <attribute/elevationunits>;  skos:member <attribute/elevationuom>;  skos:member <attribute/emailaddress>;  skos:member <attribute/endeddrillingdate>;  skos:member <attribute/endedminingdate>;  skos:member <attribute/endreportinterval>;  skos:member <attribute/energyuse>;  skos:member <attribute/energyuseprocedure>;  skos:member <attribute/energyuseunits>;  skos:member <attribute/eqlog-measurementdate>;  skos:member <attribute/eqlogtemperaturebottom>;  skos:member <attribute/eqlogtemperaturemax>;  skos:member <attribute/eqlogtemperaturetop>;  skos:member <attribute/eqlog-totaldepth>;  skos:member <attribute/equilibriumpressure>;  skos:member <attribute/equilibriumpressuremethod>;  skos:member <attribute/estairtemp-c>;  skos:member <attribute/estimatedreservoirvolume>;  skos:member <attribute/estminewtrtemp-c>;  skos:member <attribute/eventname>;  skos:member <attribute/eventtype>;  skos:member <attribute/eventtypeterm>;  skos:member <attribute/eventuri>;  skos:member <attribute/facilityname>;  skos:member <attribute/facilityowner>;  skos:member <attribute/facilitypostaladdress>;  skos:member <attribute/facilitypostalzipcode>;  skos:member <attribute/facilitystatus>;  skos:member <attribute/facilitytype>;  skos:member <attribute/facilityuri>;  skos:member <attribute/faultcount>;  skos:member <attribute/faulted>;  skos:member <attribute/faulthydrauliccharacter>;  skos:member <attribute/faulttype>;  skos:member <attribute/featureofinteresturi>;  skos:member <attribute/featuretype>;  skos:member <attribute/featureuri>;  skos:member <attribute/field>;  skos:member <attribute/fieldname>;  skos:member <attribute/firstproductiondate>;  skos:member <attribute/flow>;  skos:member <attribute/flowcontinuity>;  skos:member <attribute/flowgpm>;  skos:member <attribute/flowhistory>;  skos:member <attribute/flowmeasurementdatetime>;  skos:member <attribute/flowmeasurementprocedure>;  skos:member <attribute/flowpressuremax>;  skos:member <attribute/flowpressuremethod>;  skos:member <attribute/flowpressuremin>;  skos:member <attribute/flowtype>;  skos:member <attribute/flowunits>;  skos:member <attribute/fluidlevel>;  skos:member <attribute/fluidloss>;  skos:member <attribute/fluidtemperaturec>;  skos:member <attribute/fluidtemperature-c>;  skos:member <attribute/fluidtype>;  skos:member <attribute/fluidvolume>;  skos:member <attribute/fluidvolumeunits>;  skos:member <attribute/formationfactor>;  skos:member <attribute/formationname>;  skos:member <attribute/formationtd>;  skos:member <attribute/formationtemperature>;  skos:member <attribute/freeaircorrection-mgal>;  skos:member <attribute/fullname>;  skos:member <attribute/function>;  skos:member <attribute/genericsymbolizer>;  skos:member <attribute/geographicposition>;  skos:member <attribute/geologicage>;  skos:member <attribute/geologicformation>;  skos:member <attribute/geologicformationname>;  skos:member <attribute/geologicformationtype>;  skos:member <attribute/geologicformationuri>;  skos:member <attribute/geologichistory>;  skos:member <attribute/geologicsetting>;  skos:member <attribute/geologicunit>;  skos:member <attribute/geologicunitname>;  skos:member <attribute/geothermalareauri>;  skos:member <attribute/geothermtempcharacterization>;  skos:member <attribute/gradientunits>;  skos:member <attribute/grossproductioncapacity>;  skos:member <attribute/grossproduction-mwhr>;  skos:member <attribute/groundwaterflowdirection>;  skos:member <attribute/gtepicenterquality>;  skos:member <attribute/gtqualitysupportdata>;  skos:member <attribute/gwdischargedistance-m>;  skos:member <attribute/headeruri>;  skos:member <attribute/heatapplication>;  skos:member <attribute/heatexchangesystem>;  skos:member <attribute/heatflowtype>;  skos:member <attribute/heatflowunits>;  skos:member <attribute/heatgeneration>;  skos:member <attribute/heatgenerationunits>;  skos:member <attribute/heatproduction-mwm3>;  skos:member <attribute/heatproductionuncertainty>;  skos:member <attribute/hf-qualitystatisticsmethod>;  skos:member <attribute/hg-numbersamples>;  skos:member <attribute/holediameter-in>;  skos:member <attribute/horizontalconductivity-ft-day>;  skos:member <attribute/hucode>;  skos:member <attribute/hvac-specs>;  skos:member <attribute/hydraulicconductivityft-day>;  skos:member <attribute/hydraulicconductivitym-sec>;  skos:member <attribute/hydronarrative>;  skos:member <attribute/hydrostaticpressure>;  skos:member <attribute/hydrostaticpressuremethod>;  skos:member <attribute/hypocenteruri>;  skos:member <attribute/informationsource>;  skos:member <attribute/injectionordisposal>;  skos:member <attribute/instrument>;  skos:member <attribute/interceptdepth>;  skos:member <attribute/interceptname>;  skos:member <attribute/intercepttype>;  skos:member <attribute/intervalbottomdepth>;  skos:member <attribute/intervalcorrectedgradient>;  skos:member <attribute/intervalcorrectedgradientmethod>;  skos:member <attribute/intervalcorrectedheatflow>;  skos:member <attribute/intervalenddatetime>;  skos:member <attribute/intervalhf-qualitycode>;  skos:member <attribute/intervalname>;  skos:member <attribute/intervals>;  skos:member <attribute/intervalsincemovement>;  skos:member <attribute/intervalstartdatetime>;  skos:member <attribute/intervalthermalconductivity>;  skos:member <attribute/intervaltopdepth>;  skos:member <attribute/intervaltype>;  skos:member <attribute/intervaluncorrectedgradient>;  skos:member <attribute/intervaluncorrectedheatflow>;  skos:member <attribute/isolinerangemax>;  skos:member <attribute/isolinerangemin>;  skos:member <attribute/isolinetypeandunits>;  skos:member <attribute/isostaticcorrection-mgal>;  skos:member <attribute/keywords>;  skos:member <attribute/label>;  skos:member <attribute/laboratorycontact>;  skos:member <attribute/laboratoryuri>;  skos:member <attribute/landleaseowner>;  skos:member <attribute/landowner>;  skos:member <attribute/lasfileurl>;  skos:member <attribute/lastproductiondate>;  skos:member <attribute/latcentroid>;  skos:member <attribute/latdegree>;  skos:member <attribute/latdegreewgs84>;  skos:member <attribute/latitudecorrection-mgal>;  skos:member <attribute/latitudedegrees>;  skos:member <attribute/leasename>;  skos:member <attribute/leaseno>;  skos:member <attribute/leaseowner>;  skos:member <attribute/length-m>;  skos:member <attribute/lengthunits>;  skos:member <attribute/lithology>;  skos:member <attribute/lithologydescription>;  skos:member <attribute/lithologyinformation>;  skos:member <attribute/lithologyterm>;  skos:member <attribute/lithologyterms>;  skos:member <attribute/loadfactor>;  skos:member <attribute/localityterms>;  skos:member <attribute/locationdescription>;  skos:member <attribute/locationkeyword>;  skos:member <attribute/locationname>;  skos:member <attribute/locationuncertaintycode>;  skos:member <attribute/locationuncertaintyradius>;  skos:member <attribute/locationuncertaintystatement>;  skos:member <attribute/logtypename>;  skos:member <attribute/logtypeterm>;  skos:member <attribute/loguri>;  skos:member <attribute/longcentroid>;  skos:member <attribute/longdegree>;  skos:member <attribute/longdegreewgs84>;  skos:member <attribute/longitudedegree>;  skos:member <attribute/magnitude>;  skos:member <attribute/magnitudetype>;  skos:member <attribute/majorfields>;  skos:member <attribute/maplabel>;  skos:member <attribute/materialclass>;  skos:member <attribute/materialcomposition>;  skos:member <attribute/maxhf-kjyr>;  skos:member <attribute/maximummonthlywaterproduction-bbl>;  skos:member <attribute/maximumrecordedtemperature>;  skos:member <attribute/maxminerechargevol2-m3yr>;  skos:member <attribute/maxminerechargevolgrndwtr1-m3yr>;  skos:member <attribute/maxminewtrvel1-myr>;  skos:member <attribute/maxminewtrvel2-myr>;  skos:member <attribute/maxrechargearea-km2>;  skos:member <attribute/maxresidencetime1-yr>;  skos:member <attribute/maxresidencetime2-yr>;  skos:member <attribute/meanannualprecip-in>;  skos:member <attribute/meancapacity-mw>;  skos:member <attribute/meanreservoirtemp>;  skos:member <attribute/measuredtemperature>;  skos:member <attribute/measurementcount>;  skos:member <attribute/measurementdatetime>;  skos:member <attribute/measurementdevice>;  skos:member <attribute/measurementdirection>;  skos:member <attribute/measurementduration>;  skos:member <attribute/measurementformation>;  skos:member <attribute/measurementmethod>;  skos:member <attribute/measurementnotes>;  skos:member <attribute/measurementpressure>;  skos:member <attribute/measurementpressureunits>;  skos:member <attribute/measurementprocedure>;  skos:member <attribute/measurementrun>;  skos:member <attribute/measurementsource>;  skos:member <attribute/measurementunits>;  skos:member <attribute/metadatauri>;  skos:member <attribute/metadata-uri>;  skos:member <attribute/methodology>;  skos:member <attribute/mine-city-distance-km>;  skos:member <attribute/minedepositarea-m2>;  skos:member <attribute/minename>;  skos:member <attribute/mineoropeningtype>;  skos:member <attribute/mineralowner>;  skos:member <attribute/minestartdate>;  skos:member <attribute/minevolume-m3>;  skos:member <attribute/minhf-kjyr>;  skos:member <attribute/minimummonthlywaterproduction-bbl>;  skos:member <attribute/minminerechargegrndwtrvol1-m3yr>;  skos:member <attribute/minminerechargevol2-m3yr>;  skos:member <attribute/minminewtrvel1-myr>;  skos:member <attribute/minminewtrvel2-myr>;  skos:member <attribute/minrechargearea-km2>;  skos:member <attribute/minresidencetime1-yr>;  skos:member <attribute/minresidencetime2-yr>;  skos:member <attribute/monthlyproduction-bbl>;  skos:member <attribute/movementsense>;  skos:member <attribute/movementtype>;  skos:member <attribute/name>;  skos:member <attribute/netproductioncapacity-mw>;  skos:member <attribute/netproductionmwhr>;  skos:member <attribute/notes>;  skos:member <attribute/numberinjectionwells>;  skos:member <attribute/numberoftrenches>;  skos:member <attribute/numberofwells>;  skos:member <attribute/numberoperatingplants>;  skos:member <attribute/numberproductionwells>;  skos:member <attribute/objectid>;  skos:member <attribute/observationdate>;  skos:member <attribute/observationlabel>;  skos:member <attribute/observationmethod>;  skos:member <attribute/observationname>;  skos:member <attribute/observationuri>;  skos:member <attribute/observedgravity-mgal>;  skos:member <attribute/observednumericvalue>;  skos:member <attribute/observednumericvaluemaximum>;  skos:member <attribute/observednumericvalueminimum>;  skos:member <attribute/observedpropertyname>;  skos:member <attribute/observer>;  skos:member <attribute/olderageuri>;  skos:member <attribute/oldestage>;  skos:member <attribute/oldestradiometricage-ma>;  skos:member <attribute/operationaldate>;  skos:member <attribute/operator>;  skos:member <attribute/origindatetime>;  skos:member <attribute/otheranalysisid>;  skos:member <attribute/otheranalyticaldata>;  skos:member <attribute/otherdistribution>;  skos:member <attribute/otherfeatureid>;  skos:member <attribute/otherformationname>;  skos:member <attribute/otherid>;  skos:member <attribute/otheridentifier>;  skos:member <attribute/otherlithologyname>;  skos:member <attribute/otherlocationinformation>;  skos:member <attribute/otherlocationname>;  skos:member <attribute/otherlogid>;  skos:member <attribute/othername>;  skos:member <attribute/othersiteid>;  skos:member <attribute/otherspecimenid>;  skos:member <attribute/overburdenthickness-m>;  skos:member <attribute/owner>;  skos:member <attribute/owners>;  skos:member <attribute/papercopylocation>;  skos:member <attribute/parcel>;  skos:member <attribute/parentfeatureuri>;  skos:member <attribute/parentsampleuri>;  skos:member <attribute/parentspecimenuri>;  skos:member <attribute/parentwelluri>;  skos:member <attribute/percenttargetrock>;  skos:member <attribute/permeabilityair-md>;  skos:member <attribute/permeabilityaverage-m2>;  skos:member <attribute/permeabilityaveragemethod>;  skos:member <attribute/permeabilityaverageuncertainty>;  skos:member <attribute/permeabilitycommonlyobserved-md>;  skos:member <attribute/permeabilitygeometricmean-md>;  skos:member <attribute/permeabilityintrinsic-md>;  skos:member <attribute/permeabilitylocal-md>;  skos:member <attribute/permeabilitymax-m2>;  skos:member <attribute/permeability-md>;  skos:member <attribute/permeabilitymeanintrinsic-md>;  skos:member <attribute/permeabilitymean-md>;  skos:member <attribute/permeabilitymedian-md>;  skos:member <attribute/permeabilitymedianporescale-md>;  skos:member <attribute/permeabilitymin-m2>;  skos:member <attribute/permeabilityporescale-md>;  skos:member <attribute/permit>;  skos:member <attribute/ph>;  skos:member <attribute/phone>;  skos:member <attribute/pipediameter-in>;  skos:member <attribute/pipematerial>;  skos:member <attribute/pipetotallength-ft>;  skos:member <attribute/plantname>;  skos:member <attribute/plantproductionstatlabel>;  skos:member <attribute/plantproductionstaturi>;  skos:member <attribute/planttype>;  skos:member <attribute/plsslocation>;  skos:member <attribute/plss-meridians>;  skos:member <attribute/plssrange>;  skos:member <attribute/plsssectionnumber>;  skos:member <attribute/plsssectionpart>;  skos:member <attribute/plsstownship>;  skos:member <attribute/porosityaveragemethod>;  skos:member <attribute/porosityaverage-pct>;  skos:member <attribute/porosityaverageuncertainty>;  skos:member <attribute/porositymax-pct>;  skos:member <attribute/porositymean-pct>;  skos:member <attribute/porositymedian-pct>;  skos:member <attribute/porositymin-pct>;  skos:member <attribute/porositypercent>;  skos:member <attribute/positionaccuracy>;  skos:member <attribute/positionaccuracymeters>;  skos:member <attribute/positionalaccuracy>;  skos:member <attribute/postaladdress>;  skos:member <attribute/powerplantfacilityuri>;  skos:member <attribute/powerpurchasers>;  skos:member <attribute/preferredpressure>;  skos:member <attribute/pressurefinalshutin>;  skos:member <attribute/pressureinitialshutin>;  skos:member <attribute/pressure-psi>;  skos:member <attribute/proceduresummary>;  skos:member <attribute/producingfeature>;  skos:member <attribute/producinginterval>;  skos:member <attribute/production>;  skos:member <attribute/productionreportdate>;  skos:member <attribute/publicationsource>;  skos:member <attribute/qualifier>;  skos:member <attribute/radioactivitymeasurementdevice>;  skos:member <attribute/range>;  skos:member <attribute/rank>;  skos:member <attribute/rechargeprocedure1>;  skos:member <attribute/rechargeprocedure2>;  skos:member <attribute/recordname>;  skos:member <attribute/recurrenceinterval>;  skos:member <attribute/registrant>;  skos:member <attribute/registranturi>;  skos:member <attribute/relatedfault>;  skos:member <attribute/relatedfaulturi>;  skos:member <attribute/relatedfeature>;  skos:member <attribute/relatedheatflowintervalsuri>;  skos:member <attribute/relatedresource>;  skos:member <attribute/relatedresources>;  skos:member <attribute/relatedsampleuri>;  skos:member <attribute/relatedwaterchemistry>;  skos:member <attribute/releasedate>;  skos:member <attribute/remarks>;  skos:member <attribute/reportingperiod>;  skos:member <attribute/reportyear>;  skos:member <attribute/representativeageuri>;  skos:member <attribute/representativelithologyuri>;  skos:member <attribute/reservoirfavorability>;  skos:member <attribute/reservoirfavorabilitymethodology>;  skos:member <attribute/reservoirfavorabilityuncertainty>;  skos:member <attribute/reservoirname>;  skos:member <attribute/reservoiruri>;  skos:member <attribute/resistivitymud>;  skos:member <attribute/resistivitywater-ohm-m>;  skos:member <attribute/resourcetype>;  skos:member <attribute/result>;  skos:member <attribute/rge>;  skos:member <attribute/rockname>;  skos:member <attribute/rocktype>;  skos:member <attribute/salinity>;  skos:member <attribute/samplecollectiondate>;  skos:member <attribute/samplecollectionmethod>;  skos:member <attribute/samplecureduration>;  skos:member <attribute/sampledensity>;  skos:member <attribute/sampledensity-g-cc>;  skos:member <attribute/sampledensityunits>;  skos:member <attribute/sampledepth>;  skos:member <attribute/sampledepth-m>;  skos:member <attribute/sampledfeatureagelabel>;  skos:member <attribute/sampledfeaturemaxage-ma>;  skos:member <attribute/sampledfeatureminage-ma>;  skos:member <attribute/sampledgeologicunit>;  skos:member <attribute/sampledgeologicunitage>;  skos:member <attribute/sampledimensionsheight>;  skos:member <attribute/sampledimensionslength>;  skos:member <attribute/sampledimensionsunits>;  skos:member <attribute/sampledimensionswidth>;  skos:member <attribute/samplemass-kg>;  skos:member <attribute/samplemeasurementdate>;  skos:member <attribute/sampleshape>;  skos:member <attribute/sampletemperature>;  skos:member <attribute/sampletemperatureunits>;  skos:member <attribute/sampletype>;  skos:member <attribute/samplingfeaturename>;  skos:member <attribute/samplingfeaturetype>;  skos:member <attribute/samplingfeatureuri>;  skos:member <attribute/saturatedsampleconductivity>;  skos:member <attribute/saturationfluid>;  skos:member <attribute/scannedfileurl>;  skos:member <attribute/se-conductivity>;  skos:member <attribute/se-correctedgradient>;  skos:member <attribute/se-correctedheatflow>;  skos:member <attribute/section->;  skos:member <attribute/sectionpart>;  skos:member <attribute/seisometernetwork>;  skos:member <attribute/se-uncorrectedgradient>;  skos:member <attribute/se-uncorrectedheatflow>;  skos:member <attribute/shape>;  skos:member <attribute/shape-area>;  skos:member <attribute/shape-length>;  skos:member <attribute/shutinpressuremethod>;  skos:member <attribute/siteheatflow>;  skos:member <attribute/sitelocationname>;  skos:member <attribute/sitelocationuri>;  skos:member <attribute/sitename>;  skos:member <attribute/sitevaluemethod>;  skos:member <attribute/slipaccumulationinterval>;  skos:member <attribute/sliprate>;  skos:member <attribute/source>;  skos:member <attribute/sourcecitation>;  skos:member <attribute/sourcecitationuri>;  skos:member <attribute/sourceuri>;  skos:member <attribute/spacingavg-ft>;  skos:member <attribute/specificationuri>;  skos:member <attribute/specification-uri>;  skos:member <attribute/specificheat>;  skos:member <attribute/specificheat-kjkgc>;  skos:member <attribute/specificheatunits>;  skos:member <attribute/specificstorage>;  skos:member <attribute/specificyield-percent>;  skos:member <attribute/specimencollectiondate>;  skos:member <attribute/specimencollectionmethod>;  skos:member <attribute/specimencollector>;  skos:member <attribute/specimencollectoruri>;  skos:member <attribute/specimencuration>;  skos:member <attribute/specimendescription>;  skos:member <attribute/specimenid>;  skos:member <attribute/specimenlabel>;  skos:member <attribute/specimenmass-kg>;  skos:member <attribute/specimentype>;  skos:member <attribute/specimenuri>;  skos:member <attribute/springname>;  skos:member <attribute/spuddate>;  skos:member <attribute/srs>;  skos:member <attribute/standarddeviation>;  skos:member <attribute/standardmagnitudeerror>;  skos:member <attribute/startreportinterval>;  skos:member <attribute/state>;  skos:member <attribute/stationidentifier>;  skos:member <attribute/stationname>;  skos:member <attribute/statisticalprocedure>;  skos:member <attribute/status>;  skos:member <attribute/statusdate>;  skos:member <attribute/stimulation>;  skos:member <attribute/surfacetemperature>;  skos:member <attribute/symbol>;  skos:member <attribute/systemtype>;  skos:member <attribute/targetfeatureuri>;  skos:member <attribute/targetformation>;  skos:member <attribute/targetrockname>;  skos:member <attribute/targetrockvolume-m3>;  skos:member <attribute/tectonicprovince>;  skos:member <attribute/temperature>;  skos:member <attribute/temperaturecorrection>;  skos:member <attribute/temperature-f>;  skos:member <attribute/temperatureflowing>;  skos:member <attribute/temperaturemax-c>;  skos:member <attribute/temperaturemeasuretype>;  skos:member <attribute/temperaturemin-c>;  skos:member <attribute/temperatureunits>;  skos:member <attribute/tempmeasurementdatetime>;  skos:member <attribute/tempmeasurementprocedure>;  skos:member <attribute/terraincorrection-mgal>;  skos:member <attribute/testdatetime>;  skos:member <attribute/testfluid>;  skos:member <attribute/testname>;  skos:member <attribute/testnumber>;  skos:member <attribute/testoperator>;  skos:member <attribute/testtype>;  skos:member <attribute/testtypedescription>;  skos:member <attribute/thermalconductivityunits>;  skos:member <attribute/thermaldiffusivity>;  skos:member <attribute/thermalspringuri>;  skos:member <attribute/timefinalshutin-min>;  skos:member <attribute/timeinitialshutin-min>;  skos:member <attribute/timesincecirculation>;  skos:member <attribute/toploggedinterval-ft>;  skos:member <attribute/totalmineheat-kj>;  skos:member <attribute/totalslip>;  skos:member <attribute/township>;  skos:member <attribute/transmissivity>;  skos:member <attribute/transmissivity-units>;  skos:member <attribute/trap>;  skos:member <attribute/trueverticaldepth>;  skos:member <attribute/twp>;  skos:member <attribute/uncertainty>;  skos:member <attribute/uncertaintydensity>;  skos:member <attribute/uncertainty-mgal>;  skos:member <attribute/uncertaintyspecificheat>;  skos:member <attribute/uncertaintytc>;  skos:member <attribute/uncertaintythermaldiffusivity>;  skos:member <attribute/units>;  skos:member <attribute/unitsofmeasure>;  skos:member <attribute/unitspermeability>;  skos:member <attribute/unitsporosity>;  skos:member <attribute/units-pressure>;  skos:member <attribute/unitsstorage>;  skos:member <attribute/unitstc>;  skos:member <attribute/units-temperature>;  skos:member <attribute/unitsthermaldiffusivity>;  skos:member <attribute/updatedate>;  skos:member <attribute/updatetimestamp>;  skos:member <attribute/useapplication>;  skos:member <attribute/utmdatumzone>;  skos:member <attribute/utm-e>;  skos:member <attribute/utm-n>;  skos:member <attribute/utmzone>;  skos:member <attribute/ventelevation>;  skos:member <attribute/verticalconductivity-ft-day>;  skos:member <attribute/verticaldatum>;  skos:member <attribute/verticalextentmax-m>;  skos:member <attribute/verticalextentmin-m>;  skos:member <attribute/verticalunits>;  skos:member <attribute/viscosity>;  skos:member <attribute/volcanicgroup>;  skos:member <attribute/volcventname>;  skos:member <attribute/waterdensity-kgm3>;  skos:member <attribute/waterdensity-mgl>;  skos:member <attribute/waterinjection-bbl>;  skos:member <attribute/watermass-kg>;  skos:member <attribute/watersaturation-pct>;  skos:member <attribute/watershedname>;  skos:member <attribute/watertabletemperature>;  skos:member <attribute/watertabletop>;  skos:member <attribute/watertds-mgl>;  skos:member <attribute/wellborename>;  skos:member <attribute/wellboreshape>;  skos:member <attribute/wellboreuri>;  skos:member <attribute/wellcount>;  skos:member <attribute/welldrilldate>;  skos:member <attribute/welldrilldatetype>;  skos:member <attribute/wellheaderuri>;  skos:member <attribute/wellname>;  skos:member <attribute/welltype>;  skos:member <attribute/width-m>;  skos:member <attribute/yearcommissioned>;  skos:member <attribute/yearsinproduction>;  skos:member <attribute/youngerageuri>;  skos:member <attribute/youngestage>;  skos:member <attribute/youngestradiometricage-ma>;  skos:member <attribute/zip>;
+ 
 <attribute/abovebelowwatertable> a owl:Class ;
 	skos:prefLabel "Above Below Water Table"@en ;
 	dct:description "Used to designate if mine above water table, below water table, or above and below water table. " ;
@@ -920,14 +209,14 @@
 	skos:prefLabel "Average Temperature Geofluid"@en ;
 	dct:description "Average temperature of the fluids in the geothermal field. Use the same units as defined in TemperatureUnits field." ;
 	rdfs:label "Average Temperature Geofluid"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/averagethermalconductivity> a owl:Class ;
 	skos:prefLabel "Average Thermal Conductivity"@en ;
 	dct:description "Determined Thermal Conductivity for sample/formation of rock material.  Units need to be specifed in another field." ;
 	rdfs:label "Average Thermal Conductivity"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/averechargerategrndwtrvol-m3yr> a owl:Class ;
@@ -968,14 +257,14 @@
 	skos:prefLabel "BHT"@en ;
 	dct:description "Bottom Hole Temperature or Maximum Temperature from drilling log header of oil/gas well or well with only the log header available. Report temperatures in either degrees Fahrenheit or Celsius. Use same units throughout this document." ;
 	rdfs:label "BHT"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/bhtcorrectedvalue> a owl:Class ;
 	skos:prefLabel "BHT Corrected Value"@en ;
 	dct:description "Bottom Hole Temperature value corrected for drilling fluid influence on measurement. Estimate of an in situ value." ;
 	rdfs:label "BHT Corrected Value"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/bhtcorrectiontype> a owl:Class ;
@@ -988,7 +277,7 @@
 	skos:prefLabel "Bit Diameter at Collar"@en ;
 	dct:description "Bit diameter at the origin of the borehole, reported in decimal format." ;
 	rdfs:label "Bit Diameter at Collar"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/positive+decimal+number> .
 
@@ -996,7 +285,7 @@
 	skos:prefLabel "Bit Diameter at TD"@en ;
 	dct:description "Bit diameter at the bottom of the borehole, reported in decimal format." ;
 	rdfs:label "Bit Diameter at TD"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/positive+decimal+number> .
 
@@ -1091,21 +380,21 @@
 	skos:prefLabel "Casing Pipe Diameter"@en ;
 	dct:description "Internal (ID) or external diameter (ED) should be noted. Units must be same as those used to report bit diameter (Diameter units column). Note that if there are different casing types over different intervals in the well bore, these should be noted in tuples delimited by the pipe character '|' as follows: {top-bottom1, diameter1, xD1 | top-bottom2, diameter2, xD2}." ;
 	rdfs:label "Casing Pipe Diameter"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/casingthickness> a owl:Class ;
 	skos:prefLabel "Casing Thickness"@en ;
 	dct:description "Thickness Casing pipe installed in the borehole. Units must be same as diameter units specified in this record. If multiple pipe thicknesses used, these should be separated by the pipe character '|'. " ;
 	rdfs:label "Casing Thickness"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/term> .
 
 <attribute/casingtopdepth> a owl:Class ;
 	skos:prefLabel "Casing Top Depth"@en ;
 	dct:description "Top of cased interval of the borehole." ;
 	rdfs:label "Casing Top Depth"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/casingtype> a owl:Class ;
@@ -1118,14 +407,14 @@
 	skos:prefLabel "Casing Weight"@en ;
 	dct:description "Casing pipe weight per length installed in the borehole." ;
 	rdfs:label "Casing Weight"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/casingweightunits> a owl:Class ;
 	skos:prefLabel "Casing Weight Units"@en ;
 	dct:description "Units for the reported Casing Weight: kg/m OR lbs/ft." ;
 	rdfs:label "Casing Weight Units"@en ;
-	dcdtr:containerObject <data-object/quantity-with-units> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/quantity-with-units> ;
 	dcdtr:dataType <data-type/term> .
 
 <attribute/catalogsourcecode> a owl:Class ;
@@ -1234,7 +523,7 @@
 	skos:prefLabel "Contact Email Address"@en ;
 	dct:description "E-mail address to contact party connected with facility." ;
 	rdfs:label "Contact Email Address"@en ;
-	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/contactintervalbottom> a owl:Class ;
@@ -1253,7 +542,7 @@
 	skos:prefLabel "Contact Name"@en ;
 	dct:description "Person, organization, or position name for information about the facility." ;
 	rdfs:label "Contact Name"@en ;
-	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> ;
 	dcdtr:valueDomain <value-domain/name-string> .
 
@@ -1261,7 +550,7 @@
 	skos:prefLabel "Contact Phone"@en ;
 	dct:description "Telephone number to contact party connected with facility." ;
 	rdfs:label "Contact Phone"@en ;
-	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/contourtype> a owl:Class ;
@@ -1406,13 +695,6 @@
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/length> .
 
-<attribute/depth-ft> a owl:Class ;
-	skos:prefLabel "Depth ft"@en ;
-	dct:description "Depth of the trench that is part of the system identified by the FacilityURI." ;
-	rdfs:label "Depth ft"@en ;
-	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/length> .
-
 <attribute/depthbottominterval> a owl:Class ;
 	skos:prefLabel "Depth Bottom Interval"@en ;
 	dct:description "Depth to the bottom of the borehole interval identified by the BHIntervalURI, from borehole origin to bottom of borehole interval." ;
@@ -1436,6 +718,13 @@
 	dct:description "Term that indicates origin of depth determination, one of {fixed, calculated, unknown}. This field is used to indicate where a fixed depth is used in hypocenter location calculation.  For events distant from any recording station the depth is commonly fixed in the hypocenter location calculation (typically 5 or 10 km).  A clear indication where depth was fixed, not calculated, would be useful." ;
 	rdfs:label "Depth Determination Method"@en ;
 	dcdtr:dataType <data-type/string> .
+
+<attribute/depth-ft> a owl:Class ;
+	skos:prefLabel "Depth ft"@en ;
+	dct:description "Depth of the trench that is part of the system identified by the FacilityURI." ;
+	rdfs:label "Depth ft"@en ;
+	dcdtr:dataType <data-type/real-number> ;
+	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/length> .
 
 <attribute/depthofmeasurement> a owl:Class ;
 	skos:prefLabel "Depth Of Measurement"@en ;
@@ -1676,20 +965,6 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Elevation"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
-<attribute/elevation-ft-msl> a owl:Class ;
-	skos:prefLabel "Elevation ft msl"@en ;
-	dct:description "Elevation at ground level for the feature. 3 decimal places is recommended by the USGS (OFR 02-463, p.6). Elevations should be reported relative to mean sea level (MSL)." ;
-	rdfs:label "Elevation ft msl"@en ;
-	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/feet> .
-
-<attribute/elevation-m> a owl:Class ;
-	skos:prefLabel "Elevation m"@en ;
-	dct:description "Elevation, in meters, at ground level for the feature. 3 decimal places is recommended by the USGS (OFR 02-463, p.6). Elevations should be reported relative to mean sea level (MSL)." ;
-	rdfs:label "Elevation m"@en ;
-	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
-
 <attribute/elevationbottomopenzone-msl> a owl:Class ;
 	skos:prefLabel "Elevation Bottom Open Zone msl"@en ;
 	dct:description "Elevation of the bottom of the interval being tested. Relative to MSL." ;
@@ -1714,6 +989,13 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Elevation DF"@en ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/decimal+number> .
+
+<attribute/elevation-ft-msl> a owl:Class ;
+	skos:prefLabel "Elevation ft msl"@en ;
+	dct:description "Elevation at ground level for the feature. 3 decimal places is recommended by the USGS (OFR 02-463, p.6). Elevations should be reported relative to mean sea level (MSL)." ;
+	rdfs:label "Elevation ft msl"@en ;
+	dcdtr:dataType <data-type/real-number> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/feet> .
 
 <attribute/elevationgl> a owl:Class ;
 	skos:prefLabel "Elevation GL"@en ;
@@ -1743,6 +1025,13 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Elevation KB"@en ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/decimal+number> .
+
+<attribute/elevation-m> a owl:Class ;
+	skos:prefLabel "Elevation m"@en ;
+	dct:description "Elevation, in meters, at ground level for the feature. 3 decimal places is recommended by the USGS (OFR 02-463, p.6). Elevations should be reported relative to mean sea level (MSL)." ;
+	rdfs:label "Elevation m"@en ;
+	dcdtr:dataType <data-type/real-number> ;
+	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
 
 <attribute/elevationtopopenzone-msl> a owl:Class ;
 	skos:prefLabel "Elevation Top Open Zone msl"@en ;
@@ -1820,12 +1109,6 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dcdtr:dataType <data-type/datetime> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/calendar+date> .
 
-<attribute/eqlog-totaldepth> a owl:Class ;
-	skos:prefLabel "Eq Log Total Depth"@en ;
-	dct:description "Temperature Log or MRT (Maximum Reading Thermometer) total depth measured." ;
-	rdfs:label "Eq Log Total Depth"@en ;
-	dcdtr:dataType <data-type/real-number> .
-
 <attribute/eqlogtemperaturebottom> a owl:Class ;
 	skos:prefLabel "Eq Log Temperature Bottom"@en ;
 	dct:description "Deepest depth measured hole temperature." ;
@@ -1842,6 +1125,12 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Eq Log Temperature Top"@en ;
 	dct:description "Shallowest depth measured hole temperature." ;
 	rdfs:label "Eq Log Temperature Top"@en ;
+	dcdtr:dataType <data-type/real-number> .
+
+<attribute/eqlog-totaldepth> a owl:Class ;
+	skos:prefLabel "Eq Log Total Depth"@en ;
+	dct:description "Temperature Log or MRT (Maximum Reading Thermometer) total depth measured." ;
+	rdfs:label "Eq Log Total Depth"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/equilibriumpressure> a owl:Class ;
@@ -1917,14 +1206,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Facility Postal Address"@en ;
 	dct:description "Postal address for facility. Street, City, State." ;
 	rdfs:label "Facility Postal Address"@en ;
-	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/facilitypostalzipcode> a owl:Class ;
 	skos:prefLabel "Facility Postal Zipcode"@en ;
 	dct:description "Zip code for facility; may be used for some geolocation information." ;
 	rdfs:label "Facility Postal Zipcode"@en ;
-	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/term> .
 
 <attribute/facilitystatus> a owl:Class ;
@@ -2092,13 +1381,6 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Fluid Loss"@en ;
 	dcdtr:dataType <data-type/string> .
 
-<attribute/fluidtemperature-c> a owl:Class ;
-	skos:prefLabel "Fluid Temperature Centigrade"@en ;
-	dct:description "mean temperature of fluid" ;
-	rdfs:label "Fluid Temperature Centigrade"@en ;
-	dcdtr:dataType <data-type/real-number> ;
-	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/decimal+number> .
-
 <attribute/fluidtemperaturec> a owl:Class ;
 	skos:prefLabel "Fluid Temperature C"@en ;
 	dct:description "Water temperature, in decimal format. Degrees Celsius is preferred and will be reported for consistency in service implementations." ;
@@ -2106,6 +1388,13 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <value-domain/geothermal-fluid-temperature-range-c> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degrees-celsius> .
+
+<attribute/fluidtemperature-c> a owl:Class ;
+	skos:prefLabel "Fluid Temperature Centigrade"@en ;
+	dct:description "mean temperature of fluid" ;
+	rdfs:label "Fluid Temperature Centigrade"@en ;
+	dcdtr:dataType <data-type/real-number> ;
+	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/decimal+number> .
 
 <attribute/fluidtype> a owl:Class ;
 	skos:prefLabel "Fluid Type"@en ;
@@ -2260,16 +1549,16 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Gradient Units"@en ;
 	dcdtr:dataType <data-type/string> .
 
-<attribute/grossproduction-mwhr> a owl:Class ;
-	skos:prefLabel "Gross Production MWhr"@en ;
-	dct:description "Reported gross production from the power plant for the reporting period in MWhr." ;
-	rdfs:label "Gross Production MWhr"@en ;
-	dcdtr:dataType <data-type/real-number> .
-
 <attribute/grossproductioncapacity> a owl:Class ;
 	skos:prefLabel "Gross Production Capacity"@en ;
 	dct:description "Total energy production possible, reported in MW units." ;
 	rdfs:label "Gross Production Capacity"@en ;
+	dcdtr:dataType <data-type/real-number> .
+
+<attribute/grossproduction-mwhr> a owl:Class ;
+	skos:prefLabel "Gross Production MWhr"@en ;
+	dct:description "Reported gross production from the power plant for the reporting period in MWhr." ;
+	rdfs:label "Gross Production MWhr"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/groundwaterflowdirection> a owl:Class ;
@@ -2650,7 +1939,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Latitude Degrees"@en ;
 	dct:description "Latitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
 	rdfs:label "Latitude Degrees"@en ;
-	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <value-domain/degrees-of-latitude> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
@@ -2672,7 +1961,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Latitude Degrees"@en ;
 	dct:description "Latitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
 	rdfs:label "Latitude Degrees"@en ;
-	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <value-domain/degrees-of-latitude> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
@@ -2822,7 +2111,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Longitude Degree"@en ;
 	dct:description "Longitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
 	rdfs:label "Longitude Degree"@en ;
-	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <value-domain/degrees-of-longitude> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
@@ -2838,7 +2127,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Longitude Degree"@en ;
 	dct:description "Longitude coordinate for the surface location of the feature (use center point for areas); values should be provided with at least 4 significant digits for sufficient precision (7 decimal places is recommended by the USGS (OFR 02-463, p. 6). Use decimal degrees." ;
 	rdfs:label "Longitude Degree"@en ;
-	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <value-domain/degrees-of-longitude> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/degree> .
@@ -3048,17 +2337,17 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Measurement Units"@en ;
 	dcdtr:dataType <data-type/term> .
 
-<attribute/metadata-uri> a owl:Class ;
-	skos:prefLabel "metadata uri"@en ;
-	dct:description "URI identifying (and ideally dereferencing to get) a full formal metadata record for the observation report. A time series of observations may all reference the same metadata record that provides contact information and details on procedure, etc." ;
-	rdfs:label "metadata uri"@en ;
-	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <value-domain/http-uri> .
-
 <attribute/metadatauri> a owl:Class ;
 	skos:prefLabel "MetadataURI"@en ;
 	dct:description "URI identifying (and ideally dereferencing to get) a full formal metadata record for the observation report. A time series of observations may all reference the same metadata record that provides contact information and details on procedure, etc." ;
 	rdfs:label "MetadataURI"@en ;
+	dcdtr:dataType <data-type/uri> ;
+	dcdtr:valueDomain <value-domain/http-uri> .
+
+<attribute/metadata-uri> a owl:Class ;
+	skos:prefLabel "metadata uri"@en ;
+	dct:description "URI identifying (and ideally dereferencing to get) a full formal metadata record for the observation report. A time series of observations may all reference the same metadata record that provides contact information and details on procedure, etc." ;
+	rdfs:label "metadata uri"@en ;
 	dcdtr:dataType <data-type/uri> ;
 	dcdtr:valueDomain <value-domain/http-uri> .
 
@@ -3290,20 +2579,20 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Observed Numeric Value"@en ;
 	dct:description "An observed numeric value. Data type is a real number." ;
 	rdfs:label "Observed Numeric Value"@en ;
-	dcdtr:containerObject <data-object/measured-value> .
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/measured-value> .
 
 <attribute/observednumericvaluemaximum> a owl:Class ;
 	skos:prefLabel "Observed Numeric Value, maximum"@en ;
 	dct:description "The maximum value for a range of observed or expected values, expressed as a real number" ;
 	rdfs:label "Observed Numeric Value, maximum"@en ;
-	dcdtr:containerObject <data-object/measured-value> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/measured-value> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/observednumericvalueminimum> a owl:Class ;
 	skos:prefLabel "Observed Numeric Value, minimum "@en ;
 	dct:description "The minimum value for a range of observed or expected values, expressed as a real number" ;
 	rdfs:label "Observed Numeric Value, minimum "@en ;
-	dcdtr:containerObject <data-object/measured-value> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/measured-value> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/observedpropertyname> a owl:Class ;
@@ -3517,11 +2806,6 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Percent Target Rock"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
-<attribute/permeability-md> a owl:Class ;
-	skos:prefLabel "Permeability md"@en ;
-	dct:description "Permeability is the property of rocks that is an indication of the ability for fluids (gas or liquid) to flow through rocks; The SI unit for permeability is m2. A practical unit for permeability is the darcy (d), or more commonly the millidarcy (md) (1 darcy \\approx10−12m2)." ;
-	rdfs:label "Permeability md"@en .
-
 <attribute/permeabilityair-md> a owl:Class ;
 	skos:prefLabel "Permeability, air mD"@en ;
 	dct:description "A permeability value measured using air as the transport fluid." ;
@@ -3572,15 +2856,20 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Permeability Max m2"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
-<attribute/permeabilitymean-md> a owl:Class ;
-	skos:prefLabel "Permeability, mean mD"@en ;
-	dct:description "A permeability value assigned based on averaging a group of measurements on the same or related material; doesn't denote whether is intrinsic/absolute or relative.  Typical assumption would be that permeability was measured using water." ;
-	rdfs:label "Permeability, mean mD"@en .
+<attribute/permeability-md> a owl:Class ;
+	skos:prefLabel "Permeability md"@en ;
+	dct:description "Permeability is the property of rocks that is an indication of the ability for fluids (gas or liquid) to flow through rocks; The SI unit for permeability is m2. A practical unit for permeability is the darcy (d), or more commonly the millidarcy (md) (1 darcy \\approx10−12m2)." ;
+	rdfs:label "Permeability md"@en .
 
 <attribute/permeabilitymeanintrinsic-md> a owl:Class ;
 	skos:prefLabel "Permeability, Mean intrinsic mD"@en ;
 	dct:description "Intrinsic permeability value assigned based on averaging a group of measurements on the same or related material. Intrinsic permeability is permeability that is an intensive property (not a spatial average of a heterogeneous block of material), i.e. a function of the material structure only (and not of the fluid) " ;
 	rdfs:label "Permeability, Mean intrinsic mD"@en .
+
+<attribute/permeabilitymean-md> a owl:Class ;
+	skos:prefLabel "Permeability, mean mD"@en ;
+	dct:description "A permeability value assigned based on averaging a group of measurements on the same or related material; doesn't denote whether is intrinsic/absolute or relative.  Typical assumption would be that permeability was measured using water." ;
+	rdfs:label "Permeability, mean mD"@en .
 
 <attribute/permeabilitymedian-md> a owl:Class ;
 	skos:prefLabel "Permeability, median mD"@en ;
@@ -3665,24 +2954,24 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Plant Type"@en ;
 	dcdtr:dataType <data-type/string> .
 
-<attribute/plss-meridians> a owl:Class ;
-	skos:prefLabel "PLSS Meridians"@en ;
-	dct:description "List north-south baseline and east-west meridian that Townships and Ranges are referenced to." ;
-	rdfs:label "PLSS Meridians"@en ;
-	dcdtr:containerObject <data-object/us-cadastral-location> ;
-	dcdtr:dataType <data-type/string> .
-
 <attribute/plsslocation> a owl:Class ;
 	skos:prefLabel "PLSS Location"@en ;
 	dct:description "Location specified using US Cadatastral grid, with township, range, meridians, section, section part as one string. Various implementations may specify specific syntax." ;
 	rdfs:label "PLSS Location"@en ;
 	dcdtr:dataType <data-type/string> .
 
+<attribute/plss-meridians> a owl:Class ;
+	skos:prefLabel "PLSS Meridians"@en ;
+	dct:description "List north-south baseline and east-west meridian that Townships and Ranges are referenced to." ;
+	rdfs:label "PLSS Meridians"@en ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> .
+
 <attribute/plssrange> a owl:Class ;
 	skos:prefLabel "PLSS Range"@en ;
 	dct:description "Range in PLSS grid, relative to reported meridian. Formatting and punctuation should be consistent for all locations referenced to the same baseline meridian. See instructions on TWP field." ;
 	rdfs:label "PLSS Range"@en ;
-	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/Integers+and+half+integers> .
 
@@ -3690,7 +2979,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "PLSS section number"@en ;
 	dct:description "PLSS section number. Must be numeric or null. Some surveys include half sections indicated by a 'nn.5' designation, where n indicates a number." ;
 	rdfs:label "PLSS section number"@en ;
-	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> ;
 	dcdtr:valueDomain <value-domain/valid-plss-section-number> .
 
@@ -3698,28 +2987,28 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "PLSS Section Part"@en ;
 	dct:description "Subdivision of a PLSS section." ;
 	rdfs:label "PLSS Section Part"@en ;
-	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/plsstownship> a owl:Class ;
 	skos:prefLabel "PLSS Township"@en ;
 	dct:description "Township in PLSS grid, relative to reported baseline. Formatting and punctuation should be consistent for all locations referenced to the same baseline and meridian. Recommend adding leading '0's so that all number strings are the same length (typically 2 or occasionally 3 digits). Examples 01N, 112S, 001 N." ;
 	rdfs:label "PLSS Township"@en ;
-	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/Integers+and+half+integers> .
-
-<attribute/porosityaverage-pct> a owl:Class ;
-	skos:prefLabel "Porosity Average pct"@en ;
-	dct:description "The Average Porosity available from public data sources.  The method for calculating an average should be stated in PorosityAverageMethod.   Where only one porosity value is obtained from public data sources, the minimum, maximum, and average will be identical." ;
-	rdfs:label "Porosity Average pct"@en ;
-	dcdtr:dataType <data-type/real-number> .
 
 <attribute/porosityaveragemethod> a owl:Class ;
 	skos:prefLabel "Porosity Average Method"@en ;
 	dct:description "The method for calculating PorosityAverage_pct is stated here.  Required if PorosityAverage_pct is provided.  Also include units and explanation for PorosityAverageUncertainty value. " ;
 	rdfs:label "Porosity Average Method"@en ;
 	dcdtr:dataType <data-type/string> .
+
+<attribute/porosityaverage-pct> a owl:Class ;
+	skos:prefLabel "Porosity Average pct"@en ;
+	dct:description "The Average Porosity available from public data sources.  The method for calculating an average should be stated in PorosityAverageMethod.   Where only one porosity value is obtained from public data sources, the minimum, maximum, and average will be identical." ;
+	rdfs:label "Porosity Average pct"@en ;
+	dcdtr:dataType <data-type/real-number> .
 
 <attribute/porosityaverageuncertainty> a owl:Class ;
 	skos:prefLabel "Porosity Average Uncertainty"@en ;
@@ -3776,7 +3065,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Postal Address"@en ;
 	dct:description "designation of a physical mail delivery end point (maibox)" ;
 	rdfs:label "Postal Address"@en ;
-	dcdtr:containerObject <data-object/contact-information-description> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/contact-information-description> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/powerplantfacilityuri> a owl:Class ;
@@ -3798,12 +3087,6 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Preferred Pressure"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
-<attribute/pressure-psi> a owl:Class ;
-	skos:prefLabel "Pressure psi"@en ;
-	dct:description "Report the pressure of fluid; measurement method should specify wellhead, formation, or other pressure measurement; aggregationType reports whether this measurement is an average, peak, spot, etc. Nillable." ;
-	rdfs:label "Pressure psi"@en ;
-	dcdtr:dataType <data-type/real-number> .
-
 <attribute/pressurefinalshutin> a owl:Class ;
 	skos:prefLabel "Pressure Final Shut In"@en ;
 	dct:description "Pressure after the well has been completely shut in for a final period of time." ;
@@ -3814,6 +3097,12 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Pressure Initial Shut In"@en ;
 	dct:description "Initial formation pressure after the comparatively short shut-in period (commonly 5 to 10 minutes) following the initial flow period of a drill stem test." ;
 	rdfs:label "Pressure Initial Shut In"@en ;
+	dcdtr:dataType <data-type/real-number> .
+
+<attribute/pressure-psi> a owl:Class ;
+	skos:prefLabel "Pressure psi"@en ;
+	dct:description "Report the pressure of fluid; measurement method should specify wellhead, formation, or other pressure measurement; aggregationType reports whether this measurement is an average, peak, spot, etc. Nillable." ;
+	rdfs:label "Pressure psi"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/proceduresummary> a owl:Class ;
@@ -3868,6 +3157,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Type of analysis/tool used on sample for the measurement: e.g. Gamma Ray Spectrometer-hand held, Gamma Ray Spectrometer - Laboratory, FUS-ICP, FUS-MS, other. If 'other', provide additional information in the MeasurementProcedure. Include device model number if available." ;
 	rdfs:label "Radioactivity Measurement Device"@en ;
 	dcdtr:dataType <data-type/string> .
+
+<attribute/range> a owl:Class ;
+	skos:prefLabel "Range"@en ;
+	dct:description "Range in PLSS grid, relative to reported meridian. Formatting and punctuation should be consistent for all locations referenced to the same baseline meridian. See instructions on TWP field." ;
+	rdfs:label "Range"@en ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/Integers+and+half+integers> .
 
 <attribute/rank> a owl:Class ;
 	skos:prefLabel "Rank"@en ;
@@ -4063,7 +3360,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "RGE"@en ;
 	dct:description "Range in PLSS grid, relative to reported meridian. Formatting and punctuation should be consistent for all locations referenced to the same baseline meridian. See instructions on TWP field." ;
 	rdfs:label "RGE"@en ;
-	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/rockname> a owl:Class ;
@@ -4284,18 +3581,6 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Standard Error Corrected HeatFlow"@en ;
 	dcdtr:dataType <data-type/string> .
 
-<attribute/se-uncorrectedgradient> a owl:Class ;
-	skos:prefLabel "Standard Error Uncorrected Gradient"@en ;
-	dct:description "Standard Error for Uncorrected Gradient Value; this can also be used for comments on gradient calculation." ;
-	rdfs:label "Standard Error Uncorrected Gradient"@en ;
-	dcdtr:dataType <data-type/string> .
-
-<attribute/se-uncorrectedheatflow> a owl:Class ;
-	skos:prefLabel "Standard Error Uncorrected HeatFlow"@en ;
-	dct:description "Standard Error for Heat Flow Value." ;
-	rdfs:label "Standard Error Uncorrected HeatFlow"@en ;
-	dcdtr:dataType <data-type/string> .
-
 <attribute/section-> a owl:Class ;
 	skos:prefLabel "Section "@en ;
 	dct:description "PLSS section number. Must be numeric or null. Some surveys include half sections indicated by a 'nn.5' designation, where n indicates a number." ;
@@ -4314,6 +3599,18 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "Seisometer Network"@en ;
 	dct:description "Network of individual seismometers used to record and transmit data from tremors." ;
 	rdfs:label "Seisometer Network"@en ;
+	dcdtr:dataType <data-type/string> .
+
+<attribute/se-uncorrectedgradient> a owl:Class ;
+	skos:prefLabel "Standard Error Uncorrected Gradient"@en ;
+	dct:description "Standard Error for Uncorrected Gradient Value; this can also be used for comments on gradient calculation." ;
+	rdfs:label "Standard Error Uncorrected Gradient"@en ;
+	dcdtr:dataType <data-type/string> .
+
+<attribute/se-uncorrectedheatflow> a owl:Class ;
+	skos:prefLabel "Standard Error Uncorrected HeatFlow"@en ;
+	dct:description "Standard Error for Heat Flow Value." ;
+	rdfs:label "Standard Error Uncorrected HeatFlow"@en ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/shape> a owl:Class ;
@@ -4418,17 +3715,17 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/def/uom/feet> .
 
-<attribute/specification-uri> a owl:Class ;
-	skos:prefLabel "specification  uri"@en ;
-	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
-	rdfs:label "specification  uri"@en ;
-	dcdtr:dataType <data-type/uri> ;
-	dcdtr:valueDomain <value-domain/http-uri> .
-
 <attribute/specificationuri> a owl:Class ;
 	skos:prefLabel "Specification URI"@en ;
 	dct:description "Ideally an http URI that dereferences to a full complex feature representation. If the FeatureURI is an http URI that can be dereferenced to one or more representations, this URI is redundant. For example, the URI could refer to a GeoSciML Contact feature that describes the instance in detail. If no value is provided then a URI for a nil reason concept  should be provided from list on the OGC_nilValues tab." ;
 	rdfs:label "Specification URI"@en ;
+	dcdtr:dataType <data-type/uri> ;
+	dcdtr:valueDomain <value-domain/http-uri> .
+
+<attribute/specification-uri> a owl:Class ;
+	skos:prefLabel "specification  uri"@en ;
+	dct:description "Unique identifier that specifies the feature represented: e.g. a geologic feature, aquifer or facility structure. Ideally, the identifier is an http URI that will dereference to a known, useful representation of the feature. This identifier will be used to cross reference the feature to other information related to this feature." ;
+	rdfs:label "specification  uri"@en ;
 	dcdtr:dataType <data-type/uri> ;
 	dcdtr:valueDomain <value-domain/http-uri> .
 
@@ -4549,14 +3846,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "SRS"@en ;
 	dct:description "The spatial reference system. It is recommended that an EPSG code be used to identify the SRS used to specify the location.  If an EPSG code is used, identify it as such with the prefix 'EPSG:' For common EPSG codes, see the Data Valid Terms tab. EPSG:4326 is the identifier for WGS84, and should be the text in this field. EPSG stands for European Petroleum Survey Group. EPSG codes can be dereferenced by putting the code in this URL (replace 4326) http://spatialreference.org/ref/epsg/4326/." ;
 	rdfs:label "SRS"@en ;
-	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/standarddeviation> a owl:Class ;
 	skos:prefLabel "Standard Deviation"@en ;
 	dct:description "a measure that is used to quantify the amount of variation or dispersion of a set of data values,  the square root of the variance of a random variable, statistical population, data set, or probability distribution" ;
 	rdfs:label "Standard Deviation"@en ;
-	dcdtr:containerObject <data-object/measured-value> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/measured-value> ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/standardmagnitudeerror> a owl:Class ;
@@ -4673,16 +3970,16 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Temperature"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
-<attribute/temperature-f> a owl:Class ;
-	skos:prefLabel "Temperature Fahrenheit"@en ;
-	dct:description "Average temperature, in decimal format, of the fluidover the course of the time interval for this record. Use Fahrenheit units." ;
-	rdfs:label "Temperature Fahrenheit"@en ;
-	dcdtr:dataType <data-type/real-number> .
-
 <attribute/temperaturecorrection> a owl:Class ;
 	skos:prefLabel "Temperature Correction"@en ;
 	dct:description "Report the corrected formation temperature in this field." ;
 	rdfs:label "Temperature Correction"@en ;
+	dcdtr:dataType <data-type/real-number> .
+
+<attribute/temperature-f> a owl:Class ;
+	skos:prefLabel "Temperature Fahrenheit"@en ;
+	dct:description "Average temperature, in decimal format, of the fluidover the course of the time interval for this record. Use Fahrenheit units." ;
+	rdfs:label "Temperature Fahrenheit"@en ;
 	dcdtr:dataType <data-type/real-number> .
 
 <attribute/temperatureflowing> a owl:Class ;
@@ -4838,6 +4135,14 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Total Slip"@en ;
 	dcdtr:dataType <data-type/string> .
 
+<attribute/township> a owl:Class ;
+	skos:prefLabel "Township"@en ;
+	dct:description "Township in PLSS grid, relative to reported baseline. Formatting and punctuation should be consistent for all locations referenced to the same baseline and meridian. Recommend adding leading '0's so that all number strings are the same length (typically 2 or occasionally 3 digits). Examples 01N, 112S, 001N." ;
+	rdfs:label "Township"@en ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/us-cadastral-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/Integers+and+half+integers> .
+
 <attribute/transmissivity> a owl:Class ;
 	skos:prefLabel "Transmissivity"@en ;
 	dct:description "The transmissivity is a measure of how much water can be transmitted horizontally, such as to a pumping well. Transmissivity is directly proportional to horizontal hydraulic conductivity and thickness of the transmitting layer." ;
@@ -4867,7 +4172,7 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "TWP"@en ;
 	dct:description "Township in PLSS grid, relative to reported baseline. Formatting and punctuation should be consistent for all locations referenced to the same baseline and meridian. Recommend adding leading '0's so that all number strings are the same length (typically 2 or occasionally 3 digits). Examples 01N, 112S, 001N." ;
 	rdfs:label "TWP"@en ;
-	dcdtr:containerObject <data-object/us-cadastral-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/us-cadastral-location> ;
 	dcdtr:dataType <data-type/string> .
 
 <attribute/uncertainty> a owl:Class ;
@@ -4875,17 +4180,17 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "uncertainty"@en ;
 	dcdtr:dataType <data-type/string> .
 
-<attribute/uncertainty-mgal> a owl:Class ;
-	skos:prefLabel "Uncertainty mgal"@en ;
-	dct:description "Data contributors should include an estimated accuracy for their data (USGS OFR 02-463, p.6).  4 decimal places is recommended by the USGS (OFR 02-463, p.6)." ;
-	rdfs:label "Uncertainty mgal"@en ;
-	dcdtr:dataType <data-type/real-number> .
-
 <attribute/uncertaintydensity> a owl:Class ;
 	skos:prefLabel "UncertaintyDensity"@en ;
 	dct:description "Free text qualitative or quantitative statement regarding the accuracy of the sample density or the method used to determine." ;
 	rdfs:label "UncertaintyDensity"@en ;
 	dcdtr:dataType <data-type/string> .
+
+<attribute/uncertainty-mgal> a owl:Class ;
+	skos:prefLabel "Uncertainty mgal"@en ;
+	dct:description "Data contributors should include an estimated accuracy for their data (USGS OFR 02-463, p.6).  4 decimal places is recommended by the USGS (OFR 02-463, p.6)." ;
+	rdfs:label "Uncertainty mgal"@en ;
+	dcdtr:dataType <data-type/real-number> .
 
 <attribute/uncertaintyspecificheat> a owl:Class ;
 	skos:prefLabel "Uncertainty Specific Heat"@en ;
@@ -4911,18 +4216,6 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Units Of Measure"@en ;
 	dcdtr:dataType <data-type/string> .
 
-<attribute/units-pressure> a owl:Class ;
-	skos:prefLabel "Pressure units"@en ;
-	dct:description "UOM for all pressure entries:  lb (pounds per square inch) used primarily in the United States or Pa (pascals) the International System of Units (SI) for pressure. Pa is equal to N/m2 or kg·m−1·s−2." ;
-	rdfs:label "Pressure units"@en ;
-	dcdtr:dataType <data-type/string> .
-
-<attribute/units-temperature> a owl:Class ;
-	skos:prefLabel "Temperature units"@en ;
-	dct:description "Temperature, in decimal format. Degrees Celsius is preferred and will be reported for consistency in service implementations." ;
-	rdfs:label "Temperature units"@en ;
-	dcdtr:dataType <data-type/string> .
-
 <attribute/unitsofmeasure> a owl:Class ;
 	skos:prefLabel "Units Of Measure"@en ;
 	dct:description "Units used to report all elevation and depth information, decimal meters or feet." ;
@@ -4941,6 +4234,12 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Porosity units"@en ;
 	dcdtr:dataType <data-type/string> .
 
+<attribute/units-pressure> a owl:Class ;
+	skos:prefLabel "Pressure units"@en ;
+	dct:description "UOM for all pressure entries:  lb (pounds per square inch) used primarily in the United States or Pa (pascals) the International System of Units (SI) for pressure. Pa is equal to N/m2 or kg·m−1·s−2." ;
+	rdfs:label "Pressure units"@en ;
+	dcdtr:dataType <data-type/string> .
+
 <attribute/unitsstorage> a owl:Class ;
 	skos:prefLabel "Storage units"@en ;
 	dct:description "Units for the reported specific storage. (1/[length])." ;
@@ -4952,6 +4251,12 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	dct:description "Reporting units for thermal conductivity measurements; SI (Système International) = watts per meter per Kelvin (W m-1 K-1), or other units." ;
 	rdfs:label "Thermal Conductivity Units"@en ;
 	dcdtr:dataType <data-type/real-number> .
+
+<attribute/units-temperature> a owl:Class ;
+	skos:prefLabel "Temperature units"@en ;
+	dct:description "Temperature, in decimal format. Degrees Celsius is preferred and will be reported for consistency in service implementations." ;
+	rdfs:label "Temperature units"@en ;
+	dcdtr:dataType <data-type/string> .
 
 <attribute/unitsthermaldiffusivity> a owl:Class ;
 	skos:prefLabel "Thermal Diffusivity units"@en ;
@@ -4978,11 +4283,19 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	rdfs:label "Use Application"@en ;
 	dcdtr:dataType <data-type/string> .
 
+<attribute/utmdatumzone> a owl:Class ;
+	skos:prefLabel "UTM Datum Zone"@en ;
+	dct:description "The datum and UTM zone for the reported coordinates. Datum for most locations should be NAD27 or NAD83." ;
+	rdfs:label "UTM Datum Zone"@en ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/coordinate-location> ;
+	dcdtr:dataType <data-type/string> ;
+	dcdtr:valueDomain <value-domain/utm-zones> .
+
 <attribute/utm-e> a owl:Class ;
 	skos:prefLabel "UTM E"@en ;
 	dct:description "UTM easting coordinate as decimal number." ;
 	rdfs:label "UTM E"@en ;
-	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
 
@@ -4990,17 +4303,9 @@ thermal expansion, etc.  (http://wiki.aapg.org/Reservoir_drive_mechanisms)""" ;
 	skos:prefLabel "UTM N"@en ;
 	dct:description "UTM northing coordinate as decimal number." ;
 	rdfs:label "UTM N"@en ;
-	dcdtr:containerObject <data-object/coordinate-location> ;
+	dcdtr:containerObject <http://resources.usgin.org/uri-gin/dtr/class/data-object/coordinate-location> ;
 	dcdtr:dataType <data-type/real-number> ;
 	dcdtr:units <http://resources.usgin.org/uri-gin/dtr/def/uom/meter> .
-
-<attribute/utmdatumzone> a owl:Class ;
-	skos:prefLabel "UTM Datum Zone"@en ;
-	dct:description "The datum and UTM zone for the reported coordinates. Datum for most locations should be NAD27 or NAD83." ;
-	rdfs:label "UTM Datum Zone"@en ;
-	dcdtr:containerObject <data-object/coordinate-location> ;
-	dcdtr:dataType <data-type/string> ;
-	dcdtr:valueDomain <value-domain/utm-zones> .
 
 <attribute/utmzone> a owl:Class ;
 	skos:prefLabel "UTM Zone"@en ;
@@ -5228,3 +4533,5 @@ If the API number indicates multiple instances of reentry, recompletion, sidetra
 	rdfs:label "Zip"@en ;
 	dcdtr:dataType <data-type/term> ;
 	dcdtr:valueDomain <http://resources.usgin.org/uri-gin/dtr/postal+area+enumeration> .
+ 
+	

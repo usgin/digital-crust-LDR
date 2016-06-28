@@ -121,7 +121,7 @@
 
 <description> a owl:Class ;
 	rdfs:label "Description" ;
-	dcdtr:representation <../../class/attribute/specificationuri> , <../../class/attribute/specification-uri> .
+	dcdtr:representation <../../class/attribute/specification-uri> , <../../class/attribute/specificationuri> .
 
 <designation> a owl:Class ;
 	rdfs:label "Designation" ;
@@ -273,7 +273,7 @@
 
 <geospatial-position> a owl:Class ;
 	rdfs:label "Geospatial Position" ;
-	dcdtr:representation <../../class/attribute/geographicposition> , <../../class/attribute/latcentroid> , <../../class/attribute/latdegreewgs84> , <../../class/attribute/longcentroid> , <../../class/attribute/longdegreewgs84> , <../../class/attribute/parcel> , <../../class/attribute/sectionpart> , <../../class/attribute/shape> , <../../class/attribute/section-> .
+	dcdtr:representation <../../class/attribute/geographicposition> , <../../class/attribute/latcentroid> , <../../class/attribute/latdegreewgs84> , <../../class/attribute/longcentroid> , <../../class/attribute/longdegreewgs84> , <../../class/attribute/parcel> , <../../class/attribute/section-> , <../../class/attribute/sectionpart> , <../../class/attribute/shape> .
 
 <geothermal-resource-type> a owl:Class ;
 	rdfs:label "Geothermal Resource Type" ;
@@ -329,7 +329,7 @@
 
 <intrinsic-permeability> a owl:Class ;
 	rdfs:label "intrinsic permeability" ;
-	dcdtr:representation <../../class/attribute/permeabilitymeanintrinsic-md> , <../../class/attribute/permeabilityintrinsic-md> .
+	dcdtr:representation <../../class/attribute/permeabilityintrinsic-md> , <../../class/attribute/permeabilitymeanintrinsic-md> .
 
 <latitude> a owl:Class ;
 	rdfs:label "Latitude" ;
@@ -433,7 +433,7 @@
 
 <permeability> a owl:Class ;
 	rdfs:label "Permeability" ;
-	dcdtr:representation <../../class/attribute/permeabilityaverage-m2> , <../../class/attribute/permeability-md> , <../../class/attribute/permeabilitymax-m2> , <../../class/attribute/permeabilitymin-m2> , <../../class/attribute/permeabilitycommonlyobserved-md> , <../../class/attribute/permeabilitygeometricmean-md> , <../../class/attribute/permeabilitymean-md> , <../../class/attribute/permeabilitymedian-md> .
+	dcdtr:representation <../../class/attribute/permeabilityaverage-m2> , <../../class/attribute/permeabilitymax-m2> , <../../class/attribute/permeability-md> , <../../class/attribute/permeabilitymin-m2> , <../../class/attribute/permeabilitycommonlyobserved-md> , <../../class/attribute/permeabilitygeometricmean-md> , <../../class/attribute/permeabilitymean-md> , <../../class/attribute/permeabilitymedian-md> .
 
 <pipe-extent-> a owl:Class ;
 	rdfs:label "Pipe Extent" ;
@@ -461,7 +461,7 @@
 
 <power-production-capacity> a owl:Class ;
 	rdfs:label "Power Production Capacity" ;
-	dcdtr:representation <../../class/attribute/capacity-mw> , <../../class/attribute/grossproduction-mwhr> , <../../class/attribute/grossproductioncapacity> , <../../class/attribute/meancapacity-mw> , <../../class/attribute/netproductioncapacity-mw> .
+	dcdtr:representation <../../class/attribute/capacity-mw> , <../../class/attribute/grossproductioncapacity> , <../../class/attribute/grossproduction-mwhr> , <../../class/attribute/meancapacity-mw> , <../../class/attribute/netproductioncapacity-mw> .
 
 <precipitation-quantity> a owl:Class ;
 	rdfs:label "Precipitation Quantity" ;
@@ -469,7 +469,7 @@
 
 <pressure> a owl:Class ;
 	rdfs:label "Pressure" ;
-	dcdtr:representation <../../class/attribute/equilibriumpressure> , <../../class/attribute/flowpressuremax> , <../../class/attribute/flowpressuremin> , <../../class/attribute/hydrostaticpressure> , <../../class/attribute/measurementpressure> , <../../class/attribute/preferredpressure> , <../../class/attribute/pressurefinalshutin> , <../../class/attribute/pressure-psi> , <../../class/attribute/pressureinitialshutin> .
+	dcdtr:representation <../../class/attribute/equilibriumpressure> , <../../class/attribute/flowpressuremax> , <../../class/attribute/flowpressuremin> , <../../class/attribute/hydrostaticpressure> , <../../class/attribute/measurementpressure> , <../../class/attribute/preferredpressure> , <../../class/attribute/pressurefinalshutin> , <../../class/attribute/pressureinitialshutin> , <../../class/attribute/pressure-psi> .
 
 <price> a owl:Class ;
 	rdfs:label "Price" ;
@@ -509,7 +509,7 @@
 
 <range-number> a owl:Class ;
 	rdfs:label "Range Number" ;
-	dcdtr:representation <../../class/attribute/plssrange> , <../../class/attribute/rge> .
+	dcdtr:representation <../../class/attribute/plssrange> , <../../class/attribute/range> , <../../class/attribute/rge> .
 
 <recharge-extent> a owl:Class ;
 	rdfs:label "Recharge Extent" ;
@@ -641,15 +641,15 @@
 
 <township-number> a owl:Class ;
 	rdfs:label "Township Number" ;
-	dcdtr:representation <../../class/attribute/plsstownship> , <../../class/attribute/twp> .
+	dcdtr:representation <../../class/attribute/plsstownship> , <../../class/attribute/township> , <../../class/attribute/twp> .
 
 <uncertainty> a owl:Class ;
 	rdfs:label "Uncertainty" ;
-	dcdtr:representation <../../class/attribute/ageuncertainty-ma> , <../../class/attribute/averagenettargetrockthicknessuncertainty> , <../../class/attribute/averagereservoirdepthuncertainty> , <../../class/attribute/depthuncertainty> , <../../class/attribute/heatproductionuncertainty> , <../../class/attribute/intervalhf-qualitycode> , <../../class/attribute/permeabilityaverageuncertainty> , <../../class/attribute/positionaccuracy> , <../../class/attribute/positionaccuracymeters> , <../../class/attribute/positionalaccuracy> , <../../class/attribute/reservoirfavorabilityuncertainty> , <../../class/attribute/se-uncorrectedgradient> , <../../class/attribute/se-uncorrectedheatflow> , <../../class/attribute/se-conductivity> , <../../class/attribute/se-correctedgradient> , <../../class/attribute/se-correctedheatflow> , <../../class/attribute/standardmagnitudeerror> , <../../class/attribute/uncertainty> , <../../class/attribute/uncertaintyspecificheat> , <../../class/attribute/uncertaintytc> , <../../class/attribute/uncertaintythermaldiffusivity> , <../../class/attribute/uncertainty-mgal> , <../../class/attribute/uncertaintydensity> .
+	dcdtr:representation <../../class/attribute/ageuncertainty-ma> , <../../class/attribute/averagenettargetrockthicknessuncertainty> , <../../class/attribute/averagereservoirdepthuncertainty> , <../../class/attribute/depthuncertainty> , <../../class/attribute/heatproductionuncertainty> , <../../class/attribute/intervalhf-qualitycode> , <../../class/attribute/permeabilityaverageuncertainty> , <../../class/attribute/positionaccuracy> , <../../class/attribute/positionaccuracymeters> , <../../class/attribute/positionalaccuracy> , <../../class/attribute/reservoirfavorabilityuncertainty> , <../../class/attribute/se-conductivity> , <../../class/attribute/se-correctedgradient> , <../../class/attribute/se-correctedheatflow> , <../../class/attribute/se-uncorrectedgradient> , <../../class/attribute/se-uncorrectedheatflow> , <../../class/attribute/standardmagnitudeerror> , <../../class/attribute/uncertainty> , <../../class/attribute/uncertainty-mgal> , <../../class/attribute/uncertaintyspecificheat> , <../../class/attribute/uncertaintytc> , <../../class/attribute/uncertaintythermaldiffusivity> , <../../class/attribute/uncertaintydensity> .
 
 <unit-of-measure> a owl:Class ;
 	rdfs:label "Unit of Measure" ;
-	dcdtr:representation <../../class/attribute/capacityunits> , <../../class/attribute/depthunits> , <../../class/attribute/diameterunits> , <../../class/attribute/dischargeunits> , <../../class/attribute/elevationunits> , <../../class/attribute/elevationuom> , <../../class/attribute/energyuseunits> , <../../class/attribute/flowunits> , <../../class/attribute/fluidvolumeunits> , <../../class/attribute/gradientunits> , <../../class/attribute/heatflowunits> , <../../class/attribute/heatgenerationunits> , <../../class/attribute/lengthunits> , <../../class/attribute/measurementpressureunits> , <../../class/attribute/measurementunits> , <../../class/attribute/unitspermeability> , <../../class/attribute/units-pressure> , <../../class/attribute/unitsporosity> , <../../class/attribute/sampledensityunits> , <../../class/attribute/sampledimensionsunits> , <../../class/attribute/sampletemperatureunits> , <../../class/attribute/specificheatunits> , <../../class/attribute/unitsstorage> , <../../class/attribute/temperatureunits> , <../../class/attribute/thermalconductivityunits> , <../../class/attribute/units-temperature> , <../../class/attribute/unitstc> , <../../class/attribute/unitsthermaldiffusivity> , <../../class/attribute/transmissivity-units> , <../../class/attribute/units> , <../../class/attribute/unitsofmeasure> , <../../class/attribute/verticalunits> .
+	dcdtr:representation <../../class/attribute/capacityunits> , <../../class/attribute/depthunits> , <../../class/attribute/diameterunits> , <../../class/attribute/dischargeunits> , <../../class/attribute/elevationunits> , <../../class/attribute/elevationuom> , <../../class/attribute/energyuseunits> , <../../class/attribute/flowunits> , <../../class/attribute/fluidvolumeunits> , <../../class/attribute/gradientunits> , <../../class/attribute/heatflowunits> , <../../class/attribute/heatgenerationunits> , <../../class/attribute/lengthunits> , <../../class/attribute/measurementpressureunits> , <../../class/attribute/measurementunits> , <../../class/attribute/unitspermeability> , <../../class/attribute/unitsporosity> , <../../class/attribute/units-pressure> , <../../class/attribute/sampledensityunits> , <../../class/attribute/sampledimensionsunits> , <../../class/attribute/sampletemperatureunits> , <../../class/attribute/specificheatunits> , <../../class/attribute/unitsstorage> , <../../class/attribute/temperatureunits> , <../../class/attribute/units-temperature> , <../../class/attribute/thermalconductivityunits> , <../../class/attribute/unitstc> , <../../class/attribute/unitsthermaldiffusivity> , <../../class/attribute/transmissivity-units> , <../../class/attribute/units> , <../../class/attribute/unitsofmeasure> , <../../class/attribute/verticalunits> .
 
 <update-time-stamp> a owl:Class ;
 	rdfs:label "Update Time Stamp" ;

@@ -416,7 +416,7 @@
 	dcdtr:meaning <../../def/property/feature-extent> .
 
 <depthbottominterval> a owl:Class ;
-	rdfs:label "Depth" ;
+	rdfs:label "Depth Bottom Interval" ;
 	dcdtr:meaning <../../def/property/vertical-position> .
 
 <depthbottominterval-ft> a owl:Class ;
@@ -427,13 +427,13 @@
 	rdfs:label "Depth Bottom Open Zone" ;
 	dcdtr:meaning <../../def/property/vertical-position> .
 
-<depth-ft> a owl:Class ;
-	rdfs:label "Depth Determination Method" ;
-	dcdtr:meaning <../../def/property/feature-extent> .
-
 <depthdeterminationmethod> a owl:Class ;
 	rdfs:label "Depth Determination Method" ;
 	dcdtr:meaning <../../def/property/observation-procedure> .
+
+<depth-ft> a owl:Class ;
+	rdfs:label "Depth ft" ;
+	dcdtr:meaning <../../def/property/feature-extent> .
 
 <depthofmeasurement> a owl:Class ;
 	rdfs:label "Depth Of Measurement" ;
@@ -584,24 +584,24 @@
 	dcdtr:meaning <../../def/property/vertical-position> .
 
 <elevationbottomopenzone-msl> a owl:Class ;
-	rdfs:label "Elevation" ;
+	rdfs:label "Elevation Bottom Open Zone msl" ;
 	dcdtr:meaning <../../def/property/vertical-position> .
 
 <elevationdatum> a owl:Class ;
-	rdfs:label "Elevation" ;
+	rdfs:label "Elevation Datum" ;
 	dcdtr:meaning <../../def/property/vertical-datum> .
 
 <elevationdatum-m> a owl:Class ;
 	rdfs:label "Elevation Datum meters" ;
 	dcdtr:meaning <../../def/property/vertical-datum> .
 
-<elevation-ft-msl> a owl:Class ;
-	rdfs:label "Elevation DF" ;
-	dcdtr:meaning <../../def/property/vertical-position> .
-
 <elevationdf> a owl:Class ;
 	rdfs:label "Elevation DF" ;
 	dcdtr:meaning <../../def/property/borehole-collar-elevation> .
+
+<elevation-ft-msl> a owl:Class ;
+	rdfs:label "Elevation ft msl" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
 
 <elevationgl> a owl:Class ;
 	rdfs:label "Elevation GL" ;
@@ -615,13 +615,13 @@
 	rdfs:label "Elevation Ground Level meters" ;
 	dcdtr:meaning <../../def/property/borehole-collar-elevation> .
 
-<elevation-m> a owl:Class ;
-	rdfs:label "Elevation KB" ;
-	dcdtr:meaning <../../def/property/vertical-position> .
-
 <elevationkb> a owl:Class ;
 	rdfs:label "Elevation KB" ;
 	dcdtr:meaning <../../def/property/borehole-collar-elevation> .
+
+<elevation-m> a owl:Class ;
+	rdfs:label "Elevation m" ;
+	dcdtr:meaning <../../def/property/vertical-position> .
 
 <elevationtopopenzone-msl> a owl:Class ;
 	rdfs:label "Elevation Top Open Zone msl" ;
@@ -672,20 +672,20 @@
 	dcdtr:meaning <../../def/property/feature-history> .
 
 <eqlogtemperaturebottom> a owl:Class ;
-	rdfs:label "Eq Log Measurement Date" ;
+	rdfs:label "Eq Log Temperature Bottom" ;
 	dcdtr:meaning <../../def/property/temperature> .
 
 <eqlogtemperaturemax> a owl:Class ;
 	rdfs:label "Eq Log Temperature Max" ;
 	dcdtr:meaning <../../def/property/temperature> .
 
-<eqlog-totaldepth> a owl:Class ;
-	rdfs:label "Eq Log Temperature Top" ;
-	dcdtr:meaning <../../def/property/vertical-extent> .
-
 <eqlogtemperaturetop> a owl:Class ;
 	rdfs:label "Eq Log Temperature Top" ;
 	dcdtr:meaning <../../def/property/temperature> .
+
+<eqlog-totaldepth> a owl:Class ;
+	rdfs:label "Eq Log Total Depth" ;
+	dcdtr:meaning <../../def/property/vertical-extent> .
 
 <equilibriumpressure> a owl:Class ;
 	rdfs:label "Equilibrium Pressure" ;
@@ -843,13 +843,13 @@
 	rdfs:label "Fluid Loss" ;
 	dcdtr:meaning <../../def/property/fluid-flux> .
 
-<fluidtemperature-c> a owl:Class ;
-	rdfs:label "Fluid Temperature C" ;
-	dcdtr:meaning <../../def/property/temperature> .
-
 <fluidtemperaturec> a owl:Class ;
 	rdfs:label "Fluid Temperature C" ;
 	dcdtr:meaning <../../def/property/fluid-temperature> .
+
+<fluidtemperature-c> a owl:Class ;
+	rdfs:label "Fluid Temperature Centigrade" ;
+	dcdtr:meaning <../../def/property/temperature> .
 
 <fluidtype> a owl:Class ;
 	rdfs:label "Fluid Type" ;
@@ -947,12 +947,12 @@
 	rdfs:label "Gradient Units" ;
 	dcdtr:meaning <../../def/property/unit-of-measure> .
 
-<grossproduction-mwhr> a owl:Class ;
+<grossproductioncapacity> a owl:Class ;
 	rdfs:label "Gross Production Capacity" ;
 	dcdtr:meaning <../../def/property/power-production-capacity> .
 
-<grossproductioncapacity> a owl:Class ;
-	rdfs:label "Gross Production Capacity" ;
+<grossproduction-mwhr> a owl:Class ;
+	rdfs:label "Gross Production MWhr" ;
 	dcdtr:meaning <../../def/property/power-production-capacity> .
 
 <groundwaterflowdirection> a owl:Class ;
@@ -1447,13 +1447,13 @@
 	rdfs:label "Measurement Units" ;
 	dcdtr:meaning <../../def/property/unit-of-measure> .
 
-<metadata-uri> a owl:Class ;
-	rdfs:label "MetadataURI" ;
-	dcdtr:meaning <../../def/property/metadata-reference> .
-
 <metadatauri> a owl:Class ;
 	rdfs:label "MetadataURI" ;
 	dcdtr:meaning <../../def/property/provenance> .
+
+<metadata-uri> a owl:Class ;
+	rdfs:label "metadata uri" ;
+	dcdtr:meaning <../../def/property/metadata-reference> .
 
 <methodology> a owl:Class ;
 	rdfs:label "Methodology" ;
@@ -1744,16 +1744,8 @@
 	dcdtr:meaning <../../def/property/composition> .
 
 <permeabilityair-md> a owl:Class ;
-	rdfs:label "Percent Target Rock" ;
+	rdfs:label "Permeability, air mD" ;
 	dcdtr:meaning <../../def/property/air-permeability> .
-
-<permeabilityaverage-m2> a owl:Class ;
-	rdfs:label "Percent Target Rock" ;
-	dcdtr:meaning <../../def/property/permeability> .
-
-<permeabilityaveragemethod> a owl:Class ;
-	rdfs:label "Percent Target Rock" ;
-	dcdtr:meaning <../../def/property/observation-procedure> .
 
 <permeabilitycommonlyobserved-md> a owl:Class ;
 	rdfs:label "Permeability, Commonly observed mD" ;
@@ -1771,6 +1763,10 @@
 	rdfs:label "Permeability, Local mD" ;
 	dcdtr:meaning <../../def/property/local-permeability> .
 
+<permeabilitymeanintrinsic-md> a owl:Class ;
+	rdfs:label "Permeability, Mean intrinsic mD" ;
+	dcdtr:meaning <../../def/property/intrinsic-permeability> .
+
 <permeabilitymean-md> a owl:Class ;
 	rdfs:label "Permeability, mean mD" ;
 	dcdtr:meaning <../../def/property/permeability> .
@@ -1787,21 +1783,25 @@
 	rdfs:label "Permeability, pore-scale mD" ;
 	dcdtr:meaning <../../def/property/pore-scale-permeability> .
 
+<permeabilityaverage-m2> a owl:Class ;
+	rdfs:label "Permeability Average m2" ;
+	dcdtr:meaning <../../def/property/permeability> .
+
+<permeabilityaveragemethod> a owl:Class ;
+	rdfs:label "Permeability Average Method" ;
+	dcdtr:meaning <../../def/property/observation-procedure> .
+
 <permeabilityaverageuncertainty> a owl:Class ;
 	rdfs:label "Permeability Average Uncertainty" ;
 	dcdtr:meaning <../../def/property/uncertainty> .
-
-<permeability-md> a owl:Class ;
-	rdfs:label "Permeability Max m2" ;
-	dcdtr:meaning <../../def/property/permeability> .
 
 <permeabilitymax-m2> a owl:Class ;
 	rdfs:label "Permeability Max m2" ;
 	dcdtr:meaning <../../def/property/permeability> .
 
-<permeabilitymeanintrinsic-md> a owl:Class ;
-	rdfs:label "Permeability Max m2" ;
-	dcdtr:meaning <../../def/property/intrinsic-permeability> .
+<permeability-md> a owl:Class ;
+	rdfs:label "Permeability md" ;
+	dcdtr:meaning <../../def/property/permeability> .
 
 <permeabilitymin-m2> a owl:Class ;
 	rdfs:label "Permeability Min m2" ;
@@ -1852,7 +1852,7 @@
 	dcdtr:meaning <../../def/property/procedure-type> .
 
 <plsslocation> a owl:Class ;
-	rdfs:label "Plant Type" ;
+	rdfs:label "PLSS Location" ;
 	dcdtr:meaning <../../def/property/location> .
 
 <plss-meridians> a owl:Class ;
@@ -1876,7 +1876,7 @@
 	dcdtr:meaning <../../def/property/township-number> .
 
 <porosityaveragemethod> a owl:Class ;
-	rdfs:label "PLSS Township" ;
+	rdfs:label "Porosity Average Method" ;
 	dcdtr:meaning <../../def/property/observation-procedure> .
 
 <porosityaverage-pct> a owl:Class ;
@@ -1906,10 +1906,6 @@
 <porositypercent> a owl:Class ;
 	rdfs:label "porosity percent" ;
 	dcdtr:meaning <../../def/property/porosity> .
-
-<units-pressure> a owl:Class ;
-	rdfs:label "Porosity units" ;
-	dcdtr:meaning <../../def/property/unit-of-measure> .
 
 <unitsporosity> a owl:Class ;
 	rdfs:label "Porosity units" ;
@@ -1947,13 +1943,17 @@
 	rdfs:label "Pressure Final Shut In" ;
 	dcdtr:meaning <../../def/property/pressure> .
 
-<pressure-psi> a owl:Class ;
-	rdfs:label "Pressure Initial Shut In" ;
-	dcdtr:meaning <../../def/property/pressure> .
-
 <pressureinitialshutin> a owl:Class ;
 	rdfs:label "Pressure Initial Shut In" ;
 	dcdtr:meaning <../../def/property/pressure> .
+
+<pressure-psi> a owl:Class ;
+	rdfs:label "Pressure psi" ;
+	dcdtr:meaning <../../def/property/pressure> .
+
+<units-pressure> a owl:Class ;
+	rdfs:label "Pressure units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
 
 <proceduresummary> a owl:Class ;
 	rdfs:label "Procedure Summary" ;
@@ -1986,6 +1986,10 @@
 <radioactivitymeasurementdevice> a owl:Class ;
 	rdfs:label "Radioactivity Measurement Device" ;
 	dcdtr:meaning <../../def/property/instrument-name> .
+
+<range> a owl:Class ;
+	rdfs:label "Range" ;
+	dcdtr:meaning <../../def/property/range-number> .
 
 <rank> a owl:Class ;
 	rdfs:label "Rank" ;
@@ -2231,17 +2235,13 @@
 	rdfs:label "ScannedFileURL" ;
 	dcdtr:meaning <../../def/property/access-link> .
 
+<section-> a owl:Class ;
+	rdfs:label "Section " ;
+	dcdtr:meaning <../../def/property/geospatial-position> .
+
 <sectionpart> a owl:Class ;
 	rdfs:label "Section Part" ;
 	dcdtr:meaning <../../def/property/geospatial-position> .
-
-<se-uncorrectedgradient> a owl:Class ;
-	rdfs:label "Seisometer Network" ;
-	dcdtr:meaning <../../def/property/uncertainty> .
-
-<se-uncorrectedheatflow> a owl:Class ;
-	rdfs:label "Seisometer Network" ;
-	dcdtr:meaning <../../def/property/uncertainty> .
 
 <seisometernetwork> a owl:Class ;
 	rdfs:label "Seisometer Network" ;
@@ -2312,7 +2312,7 @@
 	dcdtr:meaning <../../def/property/borehole-spacing> .
 
 <specificationuri> a owl:Class ;
-	rdfs:label "Spacing Avg ft" ;
+	rdfs:label "Specification URI" ;
 	dcdtr:meaning <../../def/property/description> .
 
 <specification-uri> a owl:Class ;
@@ -2411,9 +2411,13 @@
 	rdfs:label "Standard Error Corrected HeatFlow" ;
 	dcdtr:meaning <../../def/property/uncertainty> .
 
-<section-> a owl:Class ;
-	rdfs:label "Standard Error Corrected HeatFlow" ;
-	dcdtr:meaning <../../def/property/geospatial-position> .
+<se-uncorrectedgradient> a owl:Class ;
+	rdfs:label "Standard Error Uncorrected Gradient" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
+
+<se-uncorrectedheatflow> a owl:Class ;
+	rdfs:label "Standard Error Uncorrected HeatFlow" ;
+	dcdtr:meaning <../../def/property/uncertainty> .
 
 <standardmagnitudeerror> a owl:Class ;
 	rdfs:label "Standard Magnitude Error" ;
@@ -2492,7 +2496,7 @@
 	dcdtr:meaning <../../def/property/temperature> .
 
 <temperaturecorrection> a owl:Class ;
-	rdfs:label "Temperature" ;
+	rdfs:label "Temperature Correction" ;
 	dcdtr:meaning <../../def/property/correction> .
 
 <temperature-f> a owl:Class ;
@@ -2514,6 +2518,10 @@
 <temperaturemin-c> a owl:Class ;
 	rdfs:label "Temperature Min C" ;
 	dcdtr:meaning <../../def/property/temperature> .
+
+<units-temperature> a owl:Class ;
+	rdfs:label "Temperature units" ;
+	dcdtr:meaning <../../def/property/unit-of-measure> .
 
 <temperatureunits> a owl:Class ;
 	rdfs:label "Temperature Units" ;
@@ -2563,10 +2571,6 @@
 	rdfs:label "Thermal Conductivity Units" ;
 	dcdtr:meaning <../../def/property/unit-of-measure> .
 
-<units-temperature> a owl:Class ;
-	rdfs:label "Thermal Conductivity Units" ;
-	dcdtr:meaning <../../def/property/unit-of-measure> .
-
 <unitstc> a owl:Class ;
 	rdfs:label "Thermal Conductivity Units" ;
 	dcdtr:meaning <../../def/property/unit-of-measure> .
@@ -2607,6 +2611,10 @@
 	rdfs:label "Total Slip" ;
 	dcdtr:meaning <../../def/property/displacement> .
 
+<township> a owl:Class ;
+	rdfs:label "Township" ;
+	dcdtr:meaning <../../def/property/township-number> .
+
 <transmissivity> a owl:Class ;
 	rdfs:label "Transmissivity" ;
 	dcdtr:meaning <../../def/property/hydraulic-transmissivity> .
@@ -2631,12 +2639,12 @@
 	rdfs:label "uncertainty" ;
 	dcdtr:meaning <../../def/property/uncertainty> .
 
-<uncertainty-mgal> a owl:Class ;
+<uncertaintydensity> a owl:Class ;
 	rdfs:label "UncertaintyDensity" ;
 	dcdtr:meaning <../../def/property/uncertainty> .
 
-<uncertaintydensity> a owl:Class ;
-	rdfs:label "UncertaintyDensity" ;
+<uncertainty-mgal> a owl:Class ;
+	rdfs:label "Uncertainty mgal" ;
 	dcdtr:meaning <../../def/property/uncertainty> .
 
 <uncertaintyspecificheat> a owl:Class ;
@@ -2672,16 +2680,16 @@
 	dcdtr:meaning <../../def/property/use-application> .
 
 <utmdatumzone> a owl:Class ;
-	rdfs:label "Use Application" ;
-	dcdtr:meaning <../../def/property/spatial-reference-system> .
-
-<utm-n> a owl:Class ;
 	rdfs:label "UTM Datum Zone" ;
-	dcdtr:meaning <../../def/property/utm-northing> .
+	dcdtr:meaning <../../def/property/spatial-reference-system> .
 
 <utm-e> a owl:Class ;
 	rdfs:label "UTM E" ;
 	dcdtr:meaning <../../def/property/utm-easting> .
+
+<utm-n> a owl:Class ;
+	rdfs:label "UTM N" ;
+	dcdtr:meaning <../../def/property/utm-northing> .
 
 <utmzone> a owl:Class ;
 	rdfs:label "UTM Zone" ;
