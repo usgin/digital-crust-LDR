@@ -1,0 +1,269 @@
+{
+    "dt:identifier": "http:resource.usgin.org/uri-gin/usgin/dataobject/342789",
+    "dt:dataTypeName": "GenericDataObjectExample",
+    "dt:localNames": ["localName1@en", "nombre2@es", "nome3@pt"],
+    "dt:description": "free text description of the data object",
+    "dt:meaning": {
+        "dt:objectMeaningURI": "identifier for a data type (objectClass) entity concept",
+        "dt:objectMeaningLabel": "text label for people to recognize what the object represents"
+    },
+    "dt:purpose": {
+        "dt:purposeCategoryURI": "http:resource.usgin.org/uri-gin/usgin/definition/purpose/datainterchange",
+        "dt:purposePrefLabel": "text label to specify the purpose for defining this datatype"
+    },
+    "dt:logicType": {
+        "dt:logicTypeURI": "http:resource.usgin.org/uri-gin/usgin/definition/logictype/objectoriented",
+        "dt:logicTypeLabel": "object"
+    },
+    "dt:intendedUse": "example testing the data type encoding schema",
+    "dt:elements": [
+        {
+            "dt:attributeIdentifier": "http:resource.usgin.org/uri-gin/usgin/attribute/attribute1",
+            "dt:attributeName": "ExampleIdentifierAttribute",
+            "dt:attributeDescription": "Attribute value is a URI that uniquely identifies a data instance",
+            "dt:attributeSource": {
+                "dt:citationTitle": "USGIN registered data types",
+                "dt:citationIdentifiers": ["http://doi.org/10.216/blah-blah", "http:resource.usgin.org/uri-gin/usgin/registry/datatype"],
+                "dt:citationRecommendation": "USGIN standards team, 2016, registered datatypes, DOI:10.216/blah-blah "
+            },
+            "dt:attributeMeaning": {
+                "dt:meaningPropertyURI": "http:resource.usgin.org/uri-gin/usgin/property/identifier",
+                "dt:meaningPropertyPrefLabel": "unique identifier for data instance"
+            },
+            "dt:attributeDataTypeCategory": "PrimitiveType",
+            "dt:attributeDataType": {
+                "dt:attributeDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/primitivetype/uri",
+                "dt:attributeDataTypeLabel": "URI (RFC-3986)"
+            },
+            "dt:attributeDomain": {
+                "dt:domainIdentifier": "http:resource.usgin.org/uri-gin/usgin/domain/uri-string",
+                "dt:domainName": "URI string",
+                "dt:domainDescription": "strings conforming to syntax defined in IETF RFC-3986",
+                "dt:valueDataType": {
+                    "dt:valueDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/primitivetype/string",
+                    "dt:valueDataTypeLabel": "formatted string"
+                },
+                "dt:domainType": {
+                    "dt:domainTypeURI": "http:resource.usgin.org/uri-gin/usgin/domaintype/resourceidentifier",
+                    "dt:domainTypeLabel": "resource identifiers"
+                },
+                "dt:constraintStatements": ["none"],
+                "dt:valueFormat": "regular expression for URI"
+            },
+            "dt:attributePhysicalImplementation": {
+                "dt:encoding": "UTF-8",
+                "dt:stringLength": 1000,
+                "dt:cardinality": "1",
+                "dt:targetEnvironment": "not specified",
+                "dt:sequence": 1,
+                "dt:localNames": ["ObjectID", "Identifier", "ObsURI"],
+                "dt:implementationType": "varchar"
+            }
+        },
+        {
+            "dt:attributeIdentifier": "http:resource.usgin.org/uri-gin/usgin/attribute/attribute2",
+            "dt:attributeName": "ExampleMeasuredValueAttribute",
+            "dt:attributeDescription": "attribute value is numeric measurement that is an observation result",
+            "dt:attributeSource": {
+                "dt:citationTitle": "USGIN registered data types",
+                "dt:citationIdentifiers": ["http://doi.org/10.216/blah-blah", "http:resource.usgin.org/uri-gin/usgin/registry/datatype"],
+                "dt:citationRecommendation": "USGIN standards team, 2016, registered datatypes, DOI:10.216/blah-blah "
+            },
+            "dt:attributeMeaning": {
+                "dt:meaningPropertyURI": "http:resource.usgin.org/uri-gin/usgin/property/area",
+                "dt:meaningPropertyPrefLabel": "Area of delineated region"
+            },
+            "dt:attributeDataTypeCategory": "PrimitiveType",
+            "dt:attributeDataType": {
+                "dt:attributeDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/primitivetype/realnumber",
+                "dt:attributeDataTypeLabel": "real number"
+            },
+            "dt:attributeDomain": {
+                "dt:domainIdentifier": "http:resource.usgin.org/uri-gin/usgin/domain/positivenumbers",
+                "dt:domainName": "positive real number",
+
+                "dt:domainDescription": "real number greater than or equal to 0",
+
+                "dt:valueDataType": {
+                    "dt:valueDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/primitivetype/realnumber",
+                    "dt:valueDataTypeLabel": "real number"
+                },
+                "dt:domainType": {
+                    "dt:domainTypeURI": "http:resource.usgin.org/uri-gin/usgin/domaintype/ratiomeasurement",
+                    "dt:domainTypeLabel": "resource identifiers"
+                },
+                "dt:constraintStatements": ["none"],
+                "dt:numericDomainMinValue": 0
+            },
+            "dt:attributeUOM": {
+                "dt:attributeUOM-URI": "http://some.authority.org/definition/unitofmeasure/area/squaremeters",
+                "dt:attributeUOMLabel": "square meters"
+            },
+            "dt:attributePhysicalImplementation": {
+                "dt:encoding": "not specified",
+                "dt:byteLength": 16,
+                "dt:cardinality": "1",
+                "dt:targetEnvironment": "not specified",
+                "dt:sequence": 2,
+                "dt:localNames": [""],
+                "dt:implementationType": "double precision floating point number"
+            }
+
+                },
+        {
+            "dt:attributeIdentifier": "http:resource.usgin.org/uri-gin/usgin/attribute/attribute3",
+            "dt:attributeName": "ExampleTermValueAttribute",
+            "dt:attributeDescription": "Example attribute whose value is from a controlled  vocabulary",
+            "dt:attributeSource": {
+                "dt:citationTitle": "USGIN registered data types",
+                "dt:citationIdentifiers": ["http://doi.org/10.216/blah-blah", "http:resource.usgin.org/uri-gin/usgin/registry/datatype"],
+                "dt:citationRecommendation": "USGIN standards team, 2016, registered datatypes, DOI:10.216/blah-blah "
+            },
+            "dt:attributeMeaning": {
+                "dt:meaningPropertyURI": "http:resource.usgin.org/uri-gin/usgin/property/vegetationtype",
+                "dt:meaningPropertyPrefLabel": "vegetation type classification"
+            },
+            "dt:attributeDataTypeCategory": "PrimitiveType",
+            "dt:attributeDataType": {
+                "dt:attributeDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/primitivetype/term",
+                "dt:attributeDataTypeLabel": "URI (RFC-3986)"
+            },
+            "dt:attributeDomain": {
+                "dt:domainIdentifier": "http:resource.usgin.org/uri-gin/usgin/domain/vegetationtype005",
+                "dt:domainName": "vegetation type category",
+                "dt:domainDescription": "controlled list of vegetation type category labels",
+                "dt:valueDataType": {
+                    "dt:valueDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/domainvaluetype/string",
+                    "dt:valueDataTypeLabel": "string"
+                },
+                "dt:domainType": {
+                    "dt:domainTypeURI": "http:resource.usgin.org/uri-gin/usgin/domaintype/controlledvocabulary",
+                    "dt:domainTypeLabel": "controlled vocabulary"
+                },
+                "dt:codeList": {
+                    "dt:codeListURI": "http:resource.usgin.org/uri-gin/usgin/vocabulary/054387",
+                    "dt:codelistLabel": "USGIN vegetation type vocabulary"
+                }
+            },
+            "dt:encoding": "UTF-8",
+            "dt:stringLength": 255,
+            "dt:cardinality": "1",
+            "dt:targetEnvironment": "not specified",
+            "dt:sequence": 3,
+            "dt:localNames": ["land cover", "veg", "flora type"],
+            "dt:implementationType": "varchar"
+            },
+        {
+            "dt:attributeIdentifier": "http:resource.usgin.org/uri-gin/usgin/attribute/attribute4",
+            "dt:attributeName": "ExampleGeometryAttribute",
+            "dt:attributeDescription": "attribute value is a geospatial geometry that locates some observation result. The details of the shape data type object are by reference",
+            "dt:attributeSource": {
+                "dt:citationTitle": "USGIN registered data types",
+                "dt:citationIdentifiers": ["http://doi.org/10.216/blah-blah", "http:resource.usgin.org/uri-gin/usgin/registry/datatype"],
+                "dt:citationRecommendation": "USGIN standards team, 2016, registered datatypes, DOI:10.216/blah-blah "
+            },
+            "dt:attributeMeaning": {
+                "dt:meaningPropertyURI": "http:resource.usgin.org/uri-gin/usgin/property/extent",
+                "dt:meaningPropertyPrefLabel": "encoding of geospatial extent"
+            },
+            "dt:attributeDataTypeCategory": "DataObject",
+            "dt:attributeDataType": {
+                "dt:attributeDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/dataObject/shape009",
+                "dt:attributeDataTypeLabel": "binary polygon shape object"
+            },
+
+            "dt:attributePhysicalImplementation": {
+                "dt:encoding": "ESRI shape encoding scheme",
+                "dt:cardinality": "1",
+                "dt:targetEnvironment": "GIS systems that understand ESRI Shape objects",
+                "dt:sequence": 4,
+                "dt:localNames": ["shape", "geom"],
+                "dt:implementationType": "C# binary object"
+            },
+            "dt:metaAttributes": {
+                "dt:entitySpatialReferenceSystem": {
+                    "dt:SRS-Label": "WGS 84",
+                    "dt:SRS-URIs": ["EPSG:4326"],
+                    "dt:SRS-Citation": "citation for WGS84"
+                },
+                "dt:spatialTopologyTypeURI": "http:resource.usgin.org/uri-gin/usgin/definition/35736",
+                "dt:spatialTopologyTypePrefLabel": "complete polygon coverage",
+                "dt:geometryTypeURI": "http:resource.usgin.org/uri-gin/usgin/definition/468993",
+                "dt:geometryTypePrefLabel": "2D polygon",
+                "dt:entityResolution": {
+                    "dt:resolutionScaleDenominator": 24000,
+                    "dt:resolutionDistanceValue": 10,
+                    "dt:resolutionUOM": {
+                        "dt:UOM-URI": "http:resource.usgin.org/uri-gin/usgin/definition/75490",
+                        "dt:UOM-PrefLabel": "meters"
+                    }
+                }
+            }
+    },
+        {
+            "dt:attributeIdentifier": "http:resource.usgin.org/uri-gin/usgin/attribute/attribute5",
+            "dt:attributeName": "ExampleReferenceAttribute",
+            "dt:attributeDescription": "attribute value is a foreign key that links to an entity of a specific type",
+            "dt:attributeSource": {
+                "dt:citationTitle": "USGIN registered data types",
+                "dt:citationIdentifiers": ["http://doi.org/10.216/blah-blah", "http:resource.usgin.org/uri-gin/usgin/registry/datatype"],
+                "dt:citationRecommendation": "USGIN standards team, 2016, registered datatypes, DOI:10.216/blah-blah "
+            },
+            "dt:attributeMeaning": {
+                "dt:meaningPropertyURI": "http:resource.usgin.org/uri-gin/usgin/property/45738",
+                "dt:meaningPropertyPrefLabel": "Properties of the vegetation category"
+            },
+            "dt:attributeDataTypeCategory": "PrimitiveType",
+            "dt:attributeDataType": {
+                "dt:attributeDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/primitivetype/uri",
+                "dt:attributeDataTypeLabel": "URI (RFC-3986)"
+            },
+            "dt:attributeDomain": {
+                "dt:domainIdentifier": "http:resource.usgin.org/uri-gin/usgin/domain/uri-string",
+                "dt:domainName": "strings conforming to syntax defined in IETF RFC-3986",
+                "dt:domainDescription": "text description of the domain of uri string",
+                "dt:valueDataType": {
+                    "dt:valueDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/domainvaluetype/string",
+                    "dt:valueDataTypeLabel": "formatted string"
+                },
+                "dt:domainType": {
+                    "dt:domainTypeURI": "http:resource.usgin.org/uri-gin/usgin/domaintype/objectreference",
+                    "dt:domainTypeLabel": "reference to an external object"
+                },
+                "dt:constraintStatements": ["none"],
+                "dt:valueFormat": "regular expression for URI",
+                "dt:targetEntity": {
+                    "dt:targetEntityURI": "http:resource.usgin.org/uri-gin/usgin/dataobject/34278d",
+                    "dt:targetEntityLabel": "Vegetation cover description following Zasnev(1977) data model"
+                }
+            },
+            "dt:attributePhysicalImplementation": {
+                "dt:cardinality": "0..1",
+                "dt:targetEnvironment": "JSON object",
+                "dt:sequence": 5,
+                "dt:localNames": ["VegDesc"],
+                "dt:implementationType": "JSON object string serialization"
+            }
+    },
+        {
+            "dt:attributeIdentifier": "http:resource.usgin.org/uri-gin/usgin/attribute/attribute6",
+            "dt:attributeName": "ExampleObjectValueAttribute",
+            "dt:attributeDescription": "attribute value is an instance of another data object",
+            "dt:attributeSource": {
+                "dt:citationTitle": "USGIN registered data types",
+                "dt:citationIdentifiers": ["http://doi.org/10.216/blah-blah", "http:resource.usgin.org/uri-gin/usgin/registry/datatype"],
+                "dt:citationRecommendation": "USGIN standards team, 2016, registered datatypes, DOI:10.216/blah-blah "
+            },
+            "dt:attributeMeaning": {
+                "dt:meaningPropertyURI": "http:resource.usgin.org/uri-gin/usgin/property/provenance",
+                "dt:meaningPropertyPrefLabel": "information about the origin of the data instance"
+            },
+            "dt:attributeDataTypeCategory": "Data Object",
+            "dt:attributeDataType": {
+                "dt:attributeDataTypeURI": "http:resource.usgin.org/uri-gin/usgin/dataobject/57498",
+                "dt:attributeDataTypeLabel": "usgin provenance object"
+            }
+
+    }
+    ]
+}

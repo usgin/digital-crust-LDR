@@ -10,7 +10,7 @@
                "skos": "http://www.w3.org/2004/02/skos/core#"
            },
            "description": "This is a JSON scheme implementing the USGIN data type model. Conceptual model is documented at http://usgin.github.io/usginspecs/DataTypeModel2016-06-18.htm. A work in progress 2016-11-30.  Instance documents describe information objects that represent an entity of interest (ObjectClass in this model, based on ISO11179) in some domain; the representation consists of a collection of Attributes that are used to quantify properties of instances of the entity. Corresponds to 'dataType' in ISO11179, Entity in Entity-Relationship models, Object in object models, 'document' in document type noSQL databases (e.g. CouchDb, MongoDb), 'Variable' in the netCDF common data model (OGC 10-090r3).  An information object that has internal structure in which the parts can be operated on independently; a data structure.  A compound entity like a feature dataset or database may have several included dataObjects (lines and polys that have topological relationships, table with joins); these are represented here as attributes of the root entity(dataset). Includes some mappings (translation) to USGIN JSON metadata schema for entity-attribute section of metadata. ToDo--harmonize this data type model with the metadata entity-attribute section.",
-           "updateDate":"2016-11-30",
+           "updateDate": "2016-12-07",
            "version": "0.1",
            "id": "http://resources.usgin.org/uri-gin/usgin/schema/json/0.1/dataobject",
            "type": "object",
@@ -120,92 +120,9 @@
                    }
                },
                "dt:metaAttributes": {
-                   "description": "other attributes of entity instances. In this implementation, these are related to spatial dataobjects that have geographic location information.",
+                   "description": "other attributes of entity instances. In this implementation. Non defined here at this time",
                    "type": "object",
-                   "properties": {
-                       "dt:entitySpatialReferenceSystem": {
-                           "description": "SRS for feature class; only needs to be specified if have composite feature catalog for the dataset and feature classes using more that one SRS are included. If all uses one SRS, then the spatialResolution Property for the dataset is sufficient",
-                           "type": "object",
-                           "properties": {
-                               "dt:SRS-Label": {
-                                   "description": "text to identify the reference in a UI",
-                                   "type": "string"
-                               },
-                               "dt:SRS-URIs": {
-                                   "description": "identifiers for referenced resource; might include identifiers under diffrent id schemes",
-                                   "type": "array",
-                                   "items": {
-                                       "type": "string",
-                                       "format": "uri"
-                                   }
-                               },
-                               "dt:SRS-Citation": {
-                                   "description": "text citation to document defining the spatial reference system",
-                                   "type": "string"
-                               }
-                           }
-                       },
-                       "dt:spatialTopologyTypeURI": {
-                           "description": "URI identifying the topology type, i.e. the suite of relationships between feature that is enforced in the data",
-                           "type": "string",
-                           "format": "URI"
-                       },
-                       "dt:spatialTopologyTypePrefLabel": {
-                           "description": "term specifying the topology type for human users, i.e. the suite of relationships between feature that is enforced in the data",
-                           "type": "string"
-                       },
-                       "dt:geometryTypeURI": {
-                           "description": "the geometry of features in the entity: point, line, polygon, voxel",
-                           "type": "string",
-                           "format": "URI"
-                       },
-                       "dt:geometryTypePrefLabel": {
-                           "type": "string",
-                           "description": "the geometry of features in the entity: point, line, polygon, voxel"
-                       },
-                       "dt:entityResolution": {
-                           "description": "specification of resolution, either as a scale denominator, or as a distance(with unit of measure) specifying the smallest distance in the Earth between resolvable points in the data",
-                           "type": "object",
-                           "anyOf": [{
-                                   "allOf": [
-                                       {
-                                           "required": ["dt:resolutionDistanceValue"]
-                                               },
-                                       {
-                                           "required": ["dt:resolutionUOM"]
-                                               }
-                                                ]
-						                      },
-                               {
-                                   "required": ["dt:resolutionScaleDenominator"]
-                                       }],
-                           "properties": {
-                               "dt:resolutionScaleDenominator": {
-                                   "description": "resolution of spatial data specified as the design scale denominator for protrayal of the data.",
-                                   "type": "integer"
-                               },
-                               "dt:resolutionDistanceValue": {
-                                   "description": "resolution of spatial data specified as the minimum distance between resolvable locations in the location data",
-                                   "type": "number"
-                               },
-                               "dt:resolutionUOM": {
-                                   "type": "object",
-                                   "required": ["dt:UOM-PrefLabel"],
-                                   "properties": {
-                                       "dt:UOM-URI": {
-                                           "description": "URI that identifies a unit of measure used to specify the resolution distance",
-                                           "type": "string",
-                                           "format": "URI"
-                                       },
-                                       "dt:UOM-PrefLabel": {
-                                           "type": "string",
-                                           "description": "term for unit of measure that specifies the resolution distance."
-                                       }
-                                   }
-                               }
-                           }
-                       }
-                   }
+                   "properties": {}
                }
            },
            "definitions": {
@@ -256,18 +173,21 @@
                        },
                        "dt:attributeMeaning": {
                            "description": "Identifier and label for the phenomenon quantified by the attribute, e.g.length, mass, concept, velocity.The value here will be related to the valid UOM for the value.",
-                           "dt:meaningPropertyURI": {
-                               "description": "identifier for the property controlled concept represented by the attribute value",
-                               "type": "string",
-                               "format": "URI"
-                           },
-                           "dt:meaningPropertyPrefLabel": {
-                               "type": "string",
-                               "description": "human-readable label for the property represented by the attribute value"
-                           },
+                           "type": "object",
                            "translation": [{
                                "usgin/json-metadata": "jmd:attributePropertySpecified"
-                                                    }]
+                                                    }],
+                           "properties": {
+                               "dt:meaningPropertyURI": {
+                                   "description": "identifier for the property controlled concept represented by the attribute value",
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:meaningPropertyPrefLabel": {
+                                   "type": "string",
+                                   "description": "human-readable label for the property represented by the attribute value"
+                               }
+                           }
                        },
                        "dt:attributeDataTypeCategory": {
                            "description": "identifier for the category of the dataType definition for the attribute value. In this implementation of the USGIN DataType model, represents the subtype of abstract DataType, thus is an enumeration",
@@ -277,7 +197,7 @@
                                                ]
                        },
                        "dt:attributeDataType": {
-                           "description": "",
+                           "description": "specifies the dataType for attribute values. Must be consistent with the valueDataType of an attributeDomain assigned to the attribute. Datatype is assigned by reference; complex dataType definitions are represented as separate objects inlucded in a dataType dictionary.",
                            "type": "object",
                            "required": ["dt:attributeDataTypeLabel"],
                            "properties": {
@@ -291,6 +211,12 @@
                                    "type": "string"
                                }
                            }
+                       },
+                       "dt:attributeComponentContainer":{
+                           "description":"identifier for a container object for this attribute. Use when an attribute in a data object is a component in a complex object whose properties have been indcorporated into the data object. For instance  a point location object has {latitue, longitude, SRS} properties, but typically a point location is implemented by putting these fields in a data object, not putting in a point location object. This construct is useful if someone is searching for content that has a property represented by the container object, e.g. find all datasets that have geographically located observations.",
+                           "type":"string",
+                           "format":"uri"
+                           
                        },
                        "dt:attributeDomain": {
                            "description": "specification of restrictions on the range of values that may be used to quantify the specified property in this entity",
@@ -319,8 +245,95 @@
                        "dt:attributePhysicalImplementation": {
                            "description": "",
                            "$ref": "#/definitions/dt:physicalBindingObject"
+                       },
+                       "dt:metaAttributes": {
+                           "description": "other attributes of entity instances. In this implementation, these are related to spatial dataobjects that have geographic location information.",
+                           "type": "object",
+                           "properties": {
+                               "dt:entitySpatialReferenceSystem": {
+                                   "description": "SRS for feature class; only needs to be specified if have composite feature catalog for the dataset and feature classes using more that one SRS are included. If all uses one SRS, then the spatialResolution Property for the dataset is sufficient",
+                                   "type": "object",
+                                   "properties": {
+                                       "dt:SRS-Label": {
+                                           "description": "text to identify the reference in a UI",
+                                           "type": "string"
+                                       },
+                                       "dt:SRS-URIs": {
+                                           "description": "identifiers for referenced resource; might include identifiers under diffrent id schemes",
+                                           "type": "array",
+                                           "items": {
+                                               "type": "string",
+                                               "format": "uri"
+                                           }
+                                       },
+                                       "dt:SRS-Citation": {
+                                           "description": "text citation to document defining the spatial reference system",
+                                           "type": "string"
+                                       }
+                                   }
+                               },
+                               "dt:spatialTopologyTypeURI": {
+                                   "description": "URI identifying the topology type, i.e. the suite of relationships between feature that is enforced in the data",
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:spatialTopologyTypePrefLabel": {
+                                   "description": "term specifying the topology type for human users, i.e. the suite of relationships between feature that is enforced in the data",
+                                   "type": "string"
+                               },
+                               "dt:geometryTypeURI": {
+                                   "description": "the geometry of features in the entity: point, line, polygon, voxel",
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:geometryTypePrefLabel": {
+                                   "type": "string",
+                                   "description": "the geometry of features in the entity: point, line, polygon, voxel"
+                               },
+                               "dt:entityResolution": {
+                                   "description": "specification of resolution, either as a scale denominator, or as a distance(with unit of measure) specifying the smallest distance in the Earth between resolvable points in the data",
+                                   "type": "object",
+                                   "anyOf": [{
+                                           "allOf": [
+                                               {
+                                                   "required": ["dt:resolutionDistanceValue"]
+                                               },
+                                               {
+                                                   "required": ["dt:resolutionUOM"]
+                                               }
+                                                ]
+						                      },
+                                       {
+                                           "required": ["dt:resolutionScaleDenominator"]
+                                       }],
+                                   "properties": {
+                                       "dt:resolutionScaleDenominator": {
+                                           "description": "resolution of spatial data specified as the design scale denominator for protrayal of the data.",
+                                           "type": "integer"
+                                       },
+                                       "dt:resolutionDistanceValue": {
+                                           "description": "resolution of spatial data specified as the minimum distance between resolvable locations in the location data",
+                                           "type": "number"
+                                       },
+                                       "dt:resolutionUOM": {
+                                           "type": "object",
+                                           "required": ["dt:UOM-PrefLabel"],
+                                           "properties": {
+                                               "dt:UOM-URI": {
+                                                   "description": "URI that identifies a unit of measure used to specify the resolution distance",
+                                                   "type": "string",
+                                                   "format": "URI"
+                                               },
+                                               "dt:UOM-PrefLabel": {
+                                                   "type": "string",
+                                                   "description": "term for unit of measure that specifies the resolution distance."
+                                               }
+                                           }
+                                       }
+                                   }
+                               }
+                           }
                        }
-
                    }
                },
                "dt:valueDomainObject": {
@@ -337,8 +350,8 @@
                            "type": "string"
                        },
                        "dt:domainDescription": {
-                           "description": "",
-                           "type": ""
+                           "description": "text description of the domain",
+                           "type": "string"
                        },
                        "dt:valueDataType": {
                            "description": "The dataType definition that specifies representation of domain values",
@@ -423,7 +436,7 @@
                    "type": "object",
                    "properties": {
                        "dt:binding": {
-                           "description": "Optional--allows physical bindings to be implemented separately from attribute definitions by specifying the conatainign object and linked attribute; if the binding object is inline in an elements array, then these values are ignored if present",
+                           "description": "Optional--allows physical bindings to be implemented separately from attribute definitions by specifying the conataining object and linked attribute; if the binding object is inline in an elements array, then these values are ignored if present",
                            "type": "object",
                            "properties": {
                                "dt:boundAttributeURI": {
