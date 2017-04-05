@@ -9,7 +9,7 @@
                "dct": "http://purl.org/dc/terms/",
                "skos": "http://www.w3.org/2004/02/skos/core#"
            },
-           "description": "This is a JSON scheme implementing the USGIN data type model. Conceptual model is documented at http://usgin.github.io/usginspecs/DataTypeModel2016-06-18.htm. A work in progress 2016-11-30.  Instance documents describe information objects that represent an entity of interest (ObjectClass in this model, based on ISO11179) in some domain; the representation consists of a collection of Attributes that are used to quantify properties of instances of the entity. Corresponds to 'dataType' in ISO11179, Entity in Entity-Relationship models, Object in object models, 'document' in document type noSQL databases (e.g. CouchDb, MongoDb), 'Variable' in the netCDF common data model (OGC 10-090r3).  An information object that has internal structure in which the parts can be operated on independently; a data structure.  A compound entity like a feature dataset or database may have several included dataObjects (lines and polys that have topological relationships, table with joins); these are represented here as attributes of the root entity(dataset). Includes some mappings (translation) to USGIN JSON metadata schema for entity-attribute section of metadata. ToDo--harmonize this data type model with the metadata entity-attribute section.",
+           "description": "This is a JSON scheme implementing the USGIN data type model. Conceptual model is documented at http://usgin.github.io/usginspecs/DataTypeModel2016-06-18.htm. A work in progress 2016-11-30.  Instance documents describe information objects that represent an entity of interest (ObjectClass in this model, based on ISO11179) in some domain; the representation consists of a collection of Attributes that are used to quantify properties of instances of the entity. Corresponds to 'dataType' in ISO11179, Entity in Entity-Relationship models, Object in object models, 'document' in document type noSQL databases (e.g. CouchDb, MongoDb), 'Variable' in the netCDF common data model (OGC 10-090r3).  An information object that has internal structure in which the parts can be operated on independently; a data structure.  A compound entity like a feature dataset or database may have several included dataObjects (lines and polys that have topological relationships, table with joins); these are represented here as attributes of the root entity(dataset). Includes some mappings (translation) to USGIN JSON metadata schema for entity-attribute section of metadata. ToDo--harmonize this data type model with the metadata entity-attribute section. ",
            "updateDate": "2016-12-07",
            "version": "0.1",
            "id": "http://resources.usgin.org/uri-gin/usgin/schema/json/0.1/dataobject",
@@ -56,7 +56,7 @@
                    "type": "string"
                },
                "dt:meaning": {
-                   "description": "",
+                   "description": "concept label and identifier that specifies the semantics of the thing represented by instances of this dataType",
                    "type": "object",
                    "properties": {
                        "dt:objectMeaningURI": {
