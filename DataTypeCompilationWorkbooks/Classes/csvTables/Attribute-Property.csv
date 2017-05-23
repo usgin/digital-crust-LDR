@@ -1,0 +1,711 @@
+Attribute Label,dcdtr:representation,Property Label,dcdtr:meaning
+Above Below Water Table,class/attribute/abovebelowwatertable,Hydrologic Setting,def/property/hydrologic-setting
+Access Constraint,class/attribute/accessconstraint,Resource Use Restriction,def/property/resource-use-restriction
+Additional Sources,class/attribute/additionalsources,Provenance,def/property/provenance
+Age Assignment Basis,class/attribute/ageassignmentbasis,Provenance,def/property/provenance
+Age Source,class/attribute/agesource,Provenance,def/property/provenance
+Age Uncertainty Ma,class/attribute/ageuncertainty-ma,Uncertainty,def/property/uncertainty
+Aggregation Type,class/attribute/aggregationtype,Procedure Type,def/property/procedure-type
+Analysis Date,class/attribute/analysisdate,Observation History,def/property/observation-history
+Analysis Date Time,class/attribute/analysisdatetime,Observation History,def/property/observation-history
+Analysis Name,class/attribute/analysisname,Observation Name,def/property/observation-name
+Analysis Type,class/attribute/analysistype,Observation Type,def/property/observation-type
+Analysis URI,class/attribute/analysisuri,Observation Identifier,def/property/observation-identifier
+Analyte,class/attribute/analyte,Constituent Type,def/property/constituent-type
+Analytical Procedure,class/attribute/analyticalprocedure,Observation Procedure,def/property/observation-procedure
+API No,class/attribute/apino,Feature Identifier,def/property/feature-identifier
+Area m2,class/attribute/area-m2,Extent,def/property/extent
+Average Depth Reservoir,class/attribute/averagedepthreservoir,Vertical Position,def/property/vertical-position
+Average Field Wide Gradient degCm,class/attribute/averagefieldwidegradient-degcm,Temperature Gradient,def/property/temperature-gradient
+Average Field Wide Pressure Mpa,class/attribute/averagefieldwidepressure-mpa,Fluid Flux,def/property/fluid-pressure
+Average Monthly Water Production bbl,class/attribute/averagemonthlywaterproduction-bbl,Fluid Flux,def/property/fluid-flux
+Average Net Target Rock Thickness m,class/attribute/averagenettargetrockthickness-m,Extent,def/property/extent
+Average Net Target Rock Thickness Methodology,class/attribute/averagenettargetrockthicknessmethodology,Observation Procedure,def/property/observation-procedure
+Average Net Target Rock Thickness Uncertainty,class/attribute/averagenettargetrockthicknessuncertainty,Uncertainty,def/property/uncertainty
+Average Perforated Thickness m,class/attribute/averageperforatedthickness-m,Extent,def/property/extent
+Average Price cents per kilowatt-hour.,class/attribute/averageprice-c-kw-h,Price,def/property/price
+Average Reservoir Depth m,class/attribute/averagereservoirdepth-m,Vertical Position,def/property/vertical-position
+Average Reservoir Depth Methodology,class/attribute/averagereservoirdepthmethodology,Observation Procedure,def/property/observation-procedure
+Average Reservoir Depth Uncertainty,class/attribute/averagereservoirdepthuncertainty,Uncertainty,def/property/uncertainty
+Average Surface Temperature degC,class/attribute/averagesurfacetemperature-degc,Temperature,def/property/temperature
+Average SurfaceTemperature Source,class/attribute/averagesurfacetemperaturesource,Provenance,def/property/provenance
+Average Temperature Geofluid,class/attribute/averagetemperaturegeofluid,Temperature,def/property/temperature
+Average Thermal Conductivity,class/attribute/averagethermalconductivity,Thermal Conductivity,def/property/thermal-conductivity
+Average Thickness Mine Deposit m,class/attribute/avethicknessminedeposit-m,Extent,def/property/extent
+Average Volumetric Groundwater Recharge Rate  m^3/yr,class/attribute/averechargerategrndwtrvol-m3yr,Fluid Flux,def/property/fluid-flux
+Base Station Name,class/attribute/basestationname,Feature Name,def/property/feature-name
+BHT,class/attribute/bht,Temperature,def/property/temperature
+BHT Corrected Value,class/attribute/bhtcorrectedvalue,Temperature,def/property/temperature
+BHT Correction Type,class/attribute/bhtcorrectiontype,Procedure Type,def/property/procedure-type
+Bit Diameter at Collar,class/attribute/bitdiametercollar,Feature Extent,def/property/feature-extent
+Bit Diameter at TD,class/attribute/bitdiametertd,Feature Extent,def/property/feature-extent
+Block Volume m3,class/attribute/blockvolume-m3,Volume,def/property/volume
+Borehole Intercept URI,class/attribute/bhintercepturi,Feature Identifier,def/property/feature-identifier
+Borehole Interval URI,class/attribute/bhintervaluri,Feature Identifier,def/property/feature-identifier
+Borehole Name,class/attribute/boreholename,Feature Name,def/property/feature-name
+Bottom Logged Interval ft,class/attribute/bottomloggedinterval-ft,Coverage Domain Bound,def/property/coverage-domain-bound
+Bouguer Correction mgal,class/attribute/bouguercorrection-mgal,Gravity Observation Correction,def/property/gravity-observation-correction
+Bulk Mixing Formula,class/attribute/bulkmixingformula,Procedure Type,def/property/procedure-type
+Capacity MW,class/attribute/capacity-mw,Power Production Capacity,def/property/power-production-capacity
+Capacity Procedure,class/attribute/capacityprocedure,Observation Procedure,def/property/observation-procedure
+Capacity Units,class/attribute/capacityunits,Unit of Measure,def/property/unit-of-measure
+Casing Bottom Depth Driller,class/attribute/casingbottomdepthdriller,Borehole Casing Extent,def/property/borehole-casing-extent
+Casing Depth ft,class/attribute/casingdepth-ft,Borehole Casing Extent,def/property/borehole-casing-extent
+Casing Diameter in,class/attribute/casingdiameter-in,Borehole Casing Extent,def/property/borehole-casing-extent
+Casing Logger,class/attribute/casinglogger,Borehole Casing Extent,def/property/borehole-casing-extent
+Casing Pipe Diameter,class/attribute/casingpipediameter,Borehole Casing Extent,def/property/borehole-casing-extent
+Casing Thickness,class/attribute/casingthickness,Borehole Casing Thickness,def/property/borehole-casing-thickness
+Casing Top Depth,class/attribute/casingtopdepth,Borehole Casing Extent,def/property/borehole-casing-extent
+Casing Type,class/attribute/casingtype,Material Type,def/property/material-type
+Casing Weight,class/attribute/casingweight,Borehole Casing Weight,def/property/borehole-casing-weight
+Casing Weight Units,class/attribute/casingweightunits,Borehole Casing Weight UOM,def/property/borehole-casing-weight-uom
+Catalog Source Code,class/attribute/catalogsourcecode,Provenance,def/property/provenance
+Cementation factor,class/attribute/cementationfactor,Cementation factor,def/property/cementation-factor
+Cementation Mineralogy,class/attribute/cementationmineralogy,Sedimentary Rock Cement,def/property/sedimentary-rock-cement
+Circulation Duration,class/attribute/circulationduration,Duration,def/property/duration
+Citation,class/attribute/citation,Provenance,def/property/provenance
+Classification,class/attribute/classification,Fluid Flux,def/property/fluid-flux
+Collection Activity Name,class/attribute/collectionactivityname,Event Name,def/property/event-name
+Collection Activity URI,class/attribute/collectionactivityuri,Feature Identifier,def/property/feature-identifier
+Collection Method,class/attribute/collectionmethod,Procedure Name,def/property/procedure-name
+Collection Purpose,class/attribute/collectionpurpose,Purpose,def/property/purpose
+Commodity Of Interest,class/attribute/commodityofinterest,Substance of Interest,def/property/substance-of-interest
+Complete Bouguer Value mgal,class/attribute/completebouguervalue-mgal,Acceleration of gravity,def/property/acceleration-of-gravity
+Conductivity Measured URI,class/attribute/conductivitymeasureduri,Observation Identifier,def/property/observation-identifier
+Conductivity Num Samples,class/attribute/conductivitynumsamples,Measurement Count,def/property/measurement-count
+Conductivity Sample Type,class/attribute/conductivitysampletype,Sample Type,def/property/sample-type
+Contact Email Address,class/attribute/contactemailaddress,E-Mail Address,def/property/e-mail-address
+Contact Information Text,class/attribute/contact,Contact Information,def/property/contact-information
+Contact Interval Bottom,class/attribute/contactintervalbottom,Vertical Position,def/property/vertical-position
+Contact Interval Top,class/attribute/contactintervaltop,Vertical Position,def/property/vertical-position
+Contact Name,class/attribute/contactname,Contact Information,def/property/contact-information
+Contact Phone,class/attribute/contactphone,Telephone Number,def/property/telephone-number
+contour Type uri,class/attribute/contourtype-uri,Feature Type,def/property/feature-type
+contour URI,class/attribute/contoururi,Contour Identifier,def/property/contour-identifier
+contour Value,class/attribute/contourvalue,Value,def/property/value
+contourType,class/attribute/contourtype,Variable Type,def/property/variable-type
+Corrected Temperature,class/attribute/correctedtemperature,Temperature,def/property/temperature
+Correction Description,class/attribute/correctiondescription,Procedure Description,def/property/procedure-description
+Correction TC,class/attribute/correctiontc,Thermal Conductivity Correction,def/property/thermal-conductivity-correction
+Correction Type,class/attribute/correctiontype,Procedure Type,def/property/procedure-type
+County,class/attribute/county,Location Name,def/property/location-name
+Cross Section Area m2,class/attribute/crosssectionarea-m2,Recharge Extent,def/property/recharge-extent
+Cross Section Area Procedure,class/attribute/crosssectionareaprocedure,Procedure Description,def/property/procedure-description
+Curator URI,class/attribute/curatoruri,Agent Identifier,def/property/agent-identifier
+Current Curation Location,class/attribute/currentcurationlocation,Curation Location,def/property/curation-location
+Data Entry Source,class/attribute/dataentrysource,Provenance,def/property/provenance
+Date Collected,class/attribute/datecollected,Resource History,def/property/resource-history
+Date Installed,class/attribute/dateinstalled,Resource History,def/property/resource-history
+Date Most Recent Event,class/attribute/datemostrecentevent,Feature History,def/property/feature-history
+Date Time Log Run,class/attribute/datetimelogrun,Resource History,def/property/resource-history
+Datum Elevation,class/attribute/datumelevation,Vertical Datum,def/property/vertical-datum
+Datum Elevation meters,class/attribute/datumelevation-m,Vertical Datum,def/property/vertical-datum
+Density,class/attribute/density,Density,def/property/density
+Depth,class/attribute/depth,Feature Extent,def/property/feature-extent
+Depth Bottom Interval,class/attribute/depthbottominterval,Vertical Position,def/property/vertical-position
+Depth Bottom Interval ft,class/attribute/depthbottominterval-ft,Coverage Domain Bound,def/property/coverage-domain-bound
+Depth Bottom Open Zone,class/attribute/depthbottomopenzone,Vertical Position,def/property/vertical-position
+Depth Determination Method,class/attribute/depthdeterminationmethod,Observation Procedure,def/property/observation-procedure
+Depth ft,class/attribute/depth-ft,Feature Extent,def/property/feature-extent
+Depth Of Measurement,class/attribute/depthofmeasurement,Vertical Position,def/property/vertical-position
+Depth Of Mine km,class/attribute/depthofmine-km,Feature Extent,def/property/feature-extent
+Depth Reference Point,class/attribute/depthreferencepoint,Datum Type,def/property/datum-type
+Depth To Bottom m,class/attribute/depthtobottom-m,Vertical Position,def/property/vertical-position
+Depth To Top m,class/attribute/depthtotop-m,Vertical Position,def/property/vertical-position
+Depth To Water ft,class/attribute/depthtowater-ft,Vertical Position,def/property/vertical-position
+Depth Top Interval,class/attribute/depthtopinterval,Vertical Position,def/property/vertical-position
+Depth Top Interval ft,class/attribute/depthtopinterval-ft,Vertical Position,def/property/vertical-position
+Depth Top Open Zone,class/attribute/depthtopopenzone,Vertical Position,def/property/vertical-position
+Depth Uncertainty,class/attribute/depthuncertainty,Uncertainty,def/property/uncertainty
+Depth Units,class/attribute/depthunits,Unit of Measure,def/property/unit-of-measure
+Description,class/attribute/description,Feature Description,def/property/feature-description
+Detection Limit URI,class/attribute/detectionlimituri,Analytical Procedure Metadata,def/property/analytical-procedure-metadata
+Development Area,class/attribute/developmentarea,Extent,def/property/extent
+Diameter Units,class/attribute/diameterunits,Unit of Measure,def/property/unit-of-measure
+Dip Direction,class/attribute/dipdirection,Geospatial Orientation,def/property/geospatial-orientation
+Discharge,class/attribute/discharge,Fluid Flux,def/property/fluid-flux
+Discharge Thickness m,class/attribute/dischargethickness-m,Extent,def/property/extent
+Discharge Units,class/attribute/dischargeunits,Unit of Measure,def/property/unit-of-measure
+Displacement,class/attribute/displacement,Area,def/property/area
+Display Name,class/attribute/displayname,Name,def/property/name
+Dominant Formation Name,class/attribute/dominantformationname,Feature Name,def/property/feature-name
+Drill Pipe Internal Diameter in,class/attribute/drillpipeinternaldiameter-in,Extent,def/property/extent
+Drill Pipe Length,class/attribute/drillpipelength,Pipe Extent,def/property/pipe-extent-
+Drilled Depth ft,class/attribute/drilleddepth-ft,Feature Extent,def/property/feature-extent
+Driller,class/attribute/driller,Resource Responsible Party,def/property/resource-responsible-party
+Driller Total Depth,class/attribute/drillertotaldepth,Feature Extent,def/property/feature-extent
+Driller Total Depth ft,class/attribute/drillertotaldepth-ft,Extent,def/property/extent
+Drilling Fluid,class/attribute/drillingfluid,Category  Name,def/property/category--name
+Drilling Method,class/attribute/drillingmethod,Drilling Method,def/property/drilling-method
+Drive,class/attribute/drive,Process Type,def/property/process-type
+Dry Sample Conductivity,class/attribute/drysampleconductivity,Thermal Conductivity,def/property/thermal-conductivity
+Duration Days,class/attribute/durationdays,Duration,def/property/duration
+Effective Cross Section Area m2,class/attribute/effectivecrosssectionarea-m2,Extent,def/property/extent
+Effective Porosity,class/attribute/effectiveporosity,porosity,def/property/porosity
+Effective Volume m3,class/attribute/effectivevolume-m3,Volume,def/property/volume
+Elevation,class/attribute/elevation,Vertical Position,def/property/vertical-position
+Elevation  Ground Level feet,class/attribute/elevationgl-ft,Borehole Collar Elevation,def/property/borehole-collar-elevation
+Elevation Bottom Open Zone msl,class/attribute/elevationbottomopenzone-msl,Vertical Position,def/property/vertical-position
+Elevation Datum,class/attribute/elevationdatum,Vertical Datum,def/property/vertical-datum
+Elevation Datum meters,class/attribute/elevationdatum-m,Vertical Datum,def/property/vertical-datum
+Elevation DF,class/attribute/elevationdf,Borehole Collar Elevation,def/property/borehole-collar-elevation
+Elevation ft msl,class/attribute/elevation-ft-msl,Vertical Position,def/property/vertical-position
+Elevation GL,class/attribute/elevationgl,Borehole Collar Elevation,def/property/borehole-collar-elevation
+Elevation Ground Level meters,class/attribute/elevationgl-m,Borehole Collar Elevation,def/property/borehole-collar-elevation
+Elevation KB,class/attribute/elevationkb,Borehole Collar Elevation,def/property/borehole-collar-elevation
+Elevation m,class/attribute/elevation-m,Vertical Position,def/property/vertical-position
+Elevation Top Open Zone msl,class/attribute/elevationtopopenzone-msl,Vertical Position,def/property/vertical-position
+Elevation Type,class/attribute/elevationtype,Datum Type,def/property/datum-type
+Elevation Units,class/attribute/elevationunits,Unit of Measure,def/property/unit-of-measure
+Elevation Units of Measure,class/attribute/elevationuom,Unit of Measure,def/property/unit-of-measure
+Email Address,class/attribute/emailaddress,E-Mail Address,def/property/e-mail-address
+End Report Interval,class/attribute/endreportinterval,Event in History,def/property/event-in-history
+Ended Drilling Date,class/attribute/endeddrillingdate,Feature History,def/property/feature-history
+Ended Mining Date,class/attribute/endedminingdate,Feature History,def/property/feature-history
+Energy Use,class/attribute/energyuse,Energy,def/property/energy
+Energy Use Procedure,class/attribute/energyuseprocedure,Observation Procedure,def/property/observation-procedure
+Energy Use Units,class/attribute/energyuseunits,Unit of Measure,def/property/unit-of-measure
+Eq Log Measurement Date,class/attribute/eqlog-measurementdate,Feature History,def/property/feature-history
+Eq Log Temperature Bottom,class/attribute/eqlogtemperaturebottom,Temperature,def/property/temperature
+Eq Log Temperature Max,class/attribute/eqlogtemperaturemax,Temperature,def/property/temperature
+Eq Log Temperature Top,class/attribute/eqlogtemperaturetop,Temperature,def/property/temperature
+Eq Log Total Depth,class/attribute/eqlog-totaldepth,Vertical Extent,def/property/vertical-extent
+Equilibrium Pressure,class/attribute/equilibriumpressure,Pressure,def/property/pressure
+Equilibrium Pressure Method,class/attribute/equilibriumpressuremethod,Observation Procedure,def/property/observation-procedure
+Est Air Temp Centigrade,class/attribute/estairtemp-c,Temperature,def/property/temperature
+Est Mine Water Temperature Centigrade,class/attribute/estminewtrtemp-c,Temperature,def/property/temperature
+Estimated Reservoir Volume,class/attribute/estimatedreservoirvolume,Volume,def/property/volume
+Event Name,class/attribute/eventname,Event Name,def/property/event-name
+Event Type,class/attribute/eventtype,Event Type,def/property/event-type
+Event Type Term,class/attribute/eventtypeterm,Event Type,def/property/event-type
+Event URI,class/attribute/eventuri,Feature Identifier,def/property/feature-identifier
+Facility Name,class/attribute/facilityname,Facility Name,def/property/facility-name
+Facility Owner,class/attribute/facilityowner,Resource Owner,def/property/resource-owner
+Facility Postal Address,class/attribute/facilitypostaladdress,Postal Address,def/property/postal-address
+Facility Postal Zipcode,class/attribute/facilitypostalzipcode,Zip Code,def/property/zip-code
+Facility Status,class/attribute/facilitystatus,Resource State,def/property/resource-state
+Facility Type,class/attribute/facilitytype,Feature Type,def/property/feature-type
+Facility URI,class/attribute/facilityuri,Self Identifier,def/property/self-identifier
+Fault Count,class/attribute/faultcount,Fault Count,def/property/fault-count
+Fault Hydraulic Character,class/attribute/faulthydrauliccharacter,Hydraulic conductivity,def/property/hydraulic-conductivity
+Fault Type,class/attribute/faulttype,Feature Type,def/property/feature-type
+Faulted,class/attribute/faulted,Fault Boundary,def/property/fault-boundary
+Feature Of Interest URI,class/attribute/featureofinteresturi,Feature Identifier,def/property/feature-identifier
+Feature Type,class/attribute/featuretype,Feature Type,def/property/feature-type
+Feature URI,class/attribute/featureuri,Feature Identifier,def/property/feature-identifier
+Field,class/attribute/field,Fiat Geographic Area,def/property/fiat-geographic-area
+Field Name,class/attribute/fieldname,Feature Name,def/property/feature-name
+First Production Date,class/attribute/firstproductiondate,Event in History,def/property/event-in-history
+Flow,class/attribute/flow,Fluid Flux,def/property/fluid-flux
+Flow Continuity,class/attribute/flowcontinuity,Flow Continuity,def/property/flow-continuity
+Flow gpm,class/attribute/flowgpm,Fluid Flux,def/property/fluid-flux
+Flow History,class/attribute/flowhistory,History,def/property/history
+Flow Measurement Date Time,class/attribute/flowmeasurementdatetime,History,def/property/history
+Flow Measurement Procedure,class/attribute/flowmeasurementprocedure,Observation Procedure,def/property/observation-procedure
+Flow Pressure Max,class/attribute/flowpressuremax,Pressure,def/property/pressure
+Flow Pressure Method,class/attribute/flowpressuremethod,Observation Procedure,def/property/observation-procedure
+Flow Pressure Min,class/attribute/flowpressuremin,Pressure,def/property/pressure
+Flow Units,class/attribute/flowunits,Unit of Measure,def/property/unit-of-measure
+FlowType,class/attribute/flowtype,Eruptive Style Type,def/property/eruptive-style-type
+Fluid Level,class/attribute/fluidlevel,Vertical Position,def/property/vertical-position
+Fluid Loss,class/attribute/fluidloss,Fluid Flux,def/property/fluid-flux
+Fluid Temperature C,class/attribute/fluidtemperaturec,Fluid Temperature,def/property/fluid-temperature
+Fluid Temperature Centigrade,class/attribute/fluidtemperature-c,Temperature,def/property/temperature
+Fluid Type,class/attribute/fluidtype,Material Type,def/property/material-type
+Fluid Volume,class/attribute/fluidvolume,Volume,def/property/volume
+Fluid Volume Units,class/attribute/fluidvolumeunits,Unit of Measure,def/property/unit-of-measure
+Formation Factor,class/attribute/formationfactor,Pore Geometry Characteristics,def/property/pore-geometry-characteristics
+Formation Name,class/attribute/formationname,Feature Name,def/property/feature-name
+Formation TD,class/attribute/formationtd,Feature of Interest,def/property/feature-of-interest
+Formation Temperature,class/attribute/formationtemperature,Temperature,def/property/temperature
+Free Air Correction mgal,class/attribute/freeaircorrection-mgal,Correction,def/property/correction
+Full Name,class/attribute/fullname,Feature Name,def/property/feature-name
+Function,class/attribute/function,Functional Characterization,def/property/functional-characterization
+Generic Symbolizer,class/attribute/genericsymbolizer,Representation,def/property/representation
+Geographic Position,class/attribute/geographicposition,Geospatial Position,def/property/geospatial-position
+Geologic Age,class/attribute/geologicage,Category  Name,def/property/category--name
+Geologic Formation,class/attribute/geologicformation,Feature Name,def/property/feature-name
+Geologic Formation Name,class/attribute/geologicformationname,Feature Name,def/property/feature-name
+Geologic Formation Type,class/attribute/geologicformationtype,Category  Name,def/property/category--name
+Geologic Formation URI,class/attribute/geologicformationuri,Feature Identifier,def/property/feature-identifier
+Geologic History,class/attribute/geologichistory,History,def/property/history
+Geologic Setting,class/attribute/geologicsetting,Notional Location,def/property/notional-location
+Geologic Unit,class/attribute/geologicunit,Feature Name,def/property/feature-name
+Geologic Unit Name,class/attribute/geologicunitname,Feature Name,def/property/feature-name
+Geotherm Temp Characterization,class/attribute/geothermtempcharacterization,Geothermal Resource Type,def/property/geothermal-resource-type
+Geothermal Area URI,class/attribute/geothermalareauri,Feature Identifier,def/property/feature-identifier
+Gradient Units,class/attribute/gradientunits,Unit of Measure,def/property/unit-of-measure
+Gross Production Capacity,class/attribute/grossproductioncapacity,Power Production Capacity,def/property/power-production-capacity
+Gross Production MWhr,class/attribute/grossproduction-mwhr,Power Production Capacity,def/property/power-production-capacity
+Groundwater Flow Direction,class/attribute/groundwaterflowdirection,Flow Direction,def/property/flow-direction
+GT Quality Support Data,class/attribute/gtqualitysupportdata,Observation Procedure,def/property/observation-procedure
+GTE picenter Quality,class/attribute/gtepicenterquality,Location Uncertainty,def/property/location-uncertainty
+GW Discharge Distance m,class/attribute/gwdischargedistance-m,Extent,def/property/extent
+Header URI,class/attribute/headeruri,Feature Identifier,def/property/feature-identifier
+Heat Application,class/attribute/heatapplication,Usage,def/property/usage
+Heat Exchange System,class/attribute/heatexchangesystem,Material Type,def/property/material-type
+Heat Flow Type,class/attribute/heatflowtype,Feature Type,def/property/feature-type
+Heat Flow Units,class/attribute/heatflowunits,Unit of Measure,def/property/unit-of-measure
+Heat Generation,class/attribute/heatgeneration,Heat Production,def/property/heat-production
+Heat Generation Units,class/attribute/heatgenerationunits,Unit of Measure,def/property/unit-of-measure
+Heat production capacity,class/attribute/capacity,Heat Production,def/property/heat-production
+Heat Production mW/m3,class/attribute/heatproduction-mwm3,Heat Production,def/property/heat-production
+Heat Production Uncertainty,class/attribute/heatproductionuncertainty,Uncertainty,def/property/uncertainty
+HF Quality Statistics Method,class/attribute/hf-qualitystatisticsmethod,Observation Procedure,def/property/observation-procedure
+HG NumberSamples,class/attribute/hg-numbersamples,Measurement Count,def/property/measurement-count
+Hole Diameter in,class/attribute/holediameter-in,Extent,def/property/extent
+Horizontal Conductivity ft day,class/attribute/horizontalconductivity-ft-day,Hydraulic conductivity,def/property/hydraulic-conductivity
+HU Code,class/attribute/hucode,Fiat Geographic Area,def/property/fiat-geographic-area
+HVAC specifications,class/attribute/hvac-specs,Information,def/property/information
+Hydraulic conductivity ft/day,class/attribute/hydraulicconductivityft-day,Hydraulic conductivity,def/property/hydraulic-conductivity
+Hydraulic conductivity m/sec,class/attribute/hydraulicconductivitym-sec,Hydraulic conductivity,def/property/hydraulic-conductivity
+Hydro Narrative,class/attribute/hydronarrative,Information,def/property/information
+Hydrostatic Pressure,class/attribute/hydrostaticpressure,Pressure,def/property/pressure
+Hydrostatic Pressure Method,class/attribute/hydrostaticpressuremethod,Observation Procedure,def/property/observation-procedure
+Hypocenter URI,class/attribute/hypocenteruri,Feature Identifier,def/property/feature-identifier
+Information Source,class/attribute/informationsource,Provenance,def/property/provenance
+Injection Or Disposal,class/attribute/injectionordisposal,Purpose,def/property/purpose
+Instrument,class/attribute/instrument,Instrument Name,def/property/instrument-name
+Intercept Depth,class/attribute/interceptdepth,Vertical Position,def/property/vertical-position
+Intercept Name,class/attribute/interceptname,Feature Name,def/property/feature-name
+Intercept Type,class/attribute/intercepttype,Feature Type,def/property/feature-type
+Interval Bottom Depth,class/attribute/intervalbottomdepth,Coverage Domain Bound,def/property/coverage-domain-bound
+Interval Corrected Gradient,class/attribute/intervalcorrectedgradient,Temperature Gradient,def/property/temperature-gradient
+Interval Corrected Gradient Method,class/attribute/intervalcorrectedgradientmethod,Observation Procedure,def/property/observation-procedure
+Interval Corrected Heat Flow,class/attribute/intervalcorrectedheatflow,Heat Flow,def/property/heat-flow
+Interval End Date Time,class/attribute/intervalenddatetime,Feature History,def/property/feature-history
+Interval HF Quality Code,class/attribute/intervalhf-qualitycode,Uncertainty,def/property/uncertainty
+Interval Name,class/attribute/intervalname,Feature Name,def/property/feature-name
+Interval Since Movement,class/attribute/intervalsincemovement,History,def/property/history
+Interval Start Date Time,class/attribute/intervalstartdatetime,History,def/property/history
+Interval Thermal Conductivity,class/attribute/intervalthermalconductivity,Thermal Conductivity,def/property/thermal-conductivity
+Interval Top Depth,class/attribute/intervaltopdepth,Vertical Position,def/property/vertical-position
+Interval Type,class/attribute/intervaltype,Feature Type,def/property/feature-type
+Interval Uncorrected Gradient,class/attribute/intervaluncorrectedgradient,Temperature Gradient,def/property/temperature-gradient
+Interval Uncorrected Heat Flow,class/attribute/intervaluncorrectedheatflow,Heat Flow,def/property/heat-flow
+Intervals,class/attribute/intervals,Measurement Count,def/property/measurement-count
+Isoline Range Max,class/attribute/isolinerangemax,Zip Code,Table for now
+Isoline Range Min,class/attribute/isolinerangemin,Zip Code,Table for now
+Isoline Type And Units,class/attribute/isolinetypeandunits,Variable Type,def/property/variable-type
+Isostatic Correction mgal,class/attribute/isostaticcorrection-mgal,Correction,def/property/correction
+Keywords,class/attribute/keywords,Index Term,def/property/index-term
+Label,class/attribute/label,Designation,def/property/designation
+Laboratory Contact,class/attribute/laboratorycontact,Contact Information,def/property/contact-information
+Laboratory URI,class/attribute/laboratoryuri,Observation Identifier,def/property/observation-identifier
+Land Lease Owner,class/attribute/landleaseowner,Resource Owner,def/property/resource-owner
+Land Owner,class/attribute/landowner,Resource Owner,def/property/resource-owner
+LASFileURL,class/attribute/lasfileurl,Access Link,def/property/access-link
+Last Production Date,class/attribute/lastproductiondate,History,def/property/history
+Lat Centroid,class/attribute/latcentroid,Geospatial Position,def/property/geospatial-position
+Lat Degree WGS84,class/attribute/latdegreewgs84,Geospatial Position,def/property/geospatial-position
+Latitude Correction mgal,class/attribute/latitudecorrection-mgal,Correction,def/property/correction
+Latitude Degrees,class/attribute/latitudedegrees,Latitude,def/property/latitude
+Latitude Degrees,class/attribute/latdegree,Latitude,def/property/latitude
+Lease Name,class/attribute/leasename,Fiat Geographic Area,def/property/fiat-geographic-area
+Lease No,class/attribute/leaseno,Local Identifier,def/property/local-identifier
+Lease Owner,class/attribute/leaseowner,Resource Owner,def/property/resource-owner
+Length m,class/attribute/length-m,Extent,def/property/extent
+Length Units,class/attribute/lengthunits,Unit of Measure,def/property/unit-of-measure
+Lithology,class/attribute/lithology,Category  Name,def/property/category--name
+Lithology Description,class/attribute/lithologydescription,Category  Name,def/property/category--name
+Lithology Information,class/attribute/lithologyinformation,Category  Name,def/property/category--name
+Lithology Term,class/attribute/lithologyterm,Lithology Type,def/property/lithology-type
+Lithology Terms,class/attribute/lithologyterms,Lithology Type,def/property/lithology-type
+Load Factor,class/attribute/loadfactor,Energy,def/property/energy
+Locality Terms,class/attribute/localityterms,Location,def/property/location
+Location Description,class/attribute/locationdescription,Location,def/property/location
+Location Keyword,class/attribute/locationkeyword,Location Name,def/property/location-name
+Location Name,class/attribute/locationname,Location,def/property/location
+Location Uncertainty Code,class/attribute/locationuncertaintycode,Location Uncertainty,def/property/location-uncertainty
+Location Uncertainty Radius,class/attribute/locationuncertaintyradius,Location Uncertainty,def/property/location-uncertainty
+Location Uncertainty Statement,class/attribute/locationuncertaintystatement,Location Uncertainty,def/property/location-uncertainty
+Log Type Name,class/attribute/logtypename,Category  Name,def/property/category--name
+Log Type Term,class/attribute/logtypeterm,Procedure Type,def/property/procedure-type
+Log URI,class/attribute/loguri,Identifier,def/property/identifier
+Long Centroid,class/attribute/longcentroid,Geospatial Position,def/property/geospatial-position
+Long Degree WGS84,class/attribute/longdegreewgs84,Geospatial Position,def/property/geospatial-position
+Longitude Degree,class/attribute/longitudedegree,Longitude,def/property/longitude
+Longitude Degree,class/attribute/longdegree,Longitude,def/property/longitude
+Magnitude,class/attribute/magnitude,Seismic Magnitude,def/property/seismic-magnitude
+Magnitude Type,class/attribute/magnitudetype,Procedure Type,def/property/procedure-type
+Major Fields,class/attribute/majorfields,Feature Name,def/property/feature-name
+Map Label,class/attribute/maplabel,Feature Name,def/property/feature-name
+Material Class,class/attribute/materialclass,Category  Name,def/property/category--name
+Material Composition,class/attribute/materialcomposition,Lithology Type,def/property/lithology-type
+Max Mine Recharge Vol2 m3yr,class/attribute/maxminerechargevol2-m3yr,Fluid Flux,def/property/fluid-flux
+Max Mine Recharge VolGrndwtr1 m3yr,class/attribute/maxminerechargevolgrndwtr1-m3yr,Fluid Flux,def/property/fluid-flux
+Max Mine WtrVel1 myr,class/attribute/maxminewtrvel1-myr,Flow Velocity Magnitude,def/property/flow-velocity-magnitude
+Max Mine WtrVel2 myr,class/attribute/maxminewtrvel2-myr,Flow Velocity Magnitude,def/property/flow-velocity-magnitude
+Max Recharge Area km2,class/attribute/maxrechargearea-km2,Recharge Extent,def/property/recharge-extent
+Max Residence Time 1 year,class/attribute/maxresidencetime1-yr,Residence Time,def/property/residence-time
+Max Residence Time 2 year,class/attribute/maxresidencetime2-yr,Residence Time,def/property/residence-time
+Maximum Heat Flux kJ/yr,class/attribute/maxhf-kjyr,Heat Flux,def/property/heat-flux
+Maximum Monthly Water Production bbl,class/attribute/maximummonthlywaterproduction-bbl,Fluid Flux,def/property/fluid-flux
+Maximum Recorded Temperature,class/attribute/maximumrecordedtemperature,Temperature,def/property/temperature
+Mean Annual Precipitation Inchs,class/attribute/meanannualprecip-in,Precipitation Quantity,def/property/precipitation-quantity
+Mean Capacity MW,class/attribute/meancapacity-mw,Power Production Capacity,def/property/power-production-capacity
+Mean Reservoir Temperature,class/attribute/meanreservoirtemp,Temperature,def/property/temperature
+Measured Temperature,class/attribute/measuredtemperature,Temperature,def/property/temperature
+Measurement Count,class/attribute/measurementcount,Measurement Count,def/property/measurement-count
+Measurement datetime,class/attribute/measurementdatetime,Event in History,def/property/event-in-history
+Measurement Device,class/attribute/measurementdevice,Instrument Name,def/property/instrument-name
+Measurement Direction,class/attribute/measurementdirection,Orientation,def/property/orientation
+Measurement Duration,class/attribute/measurementduration,Observation History,def/property/observation-history
+Measurement Formation,class/attribute/measurementformation,Feature Name,def/property/feature-name
+Measurement Method,class/attribute/measurementmethod,Observation Procedure,def/property/observation-procedure
+Measurement Notes,class/attribute/measurementnotes,Information,def/property/information
+Measurement Pressure,class/attribute/measurementpressure,Pressure,def/property/pressure
+Measurement Pressure Units,class/attribute/measurementpressureunits,Unit of Measure,def/property/unit-of-measure
+Measurement Procedure,class/attribute/measurementprocedure,Procedure Description,def/property/procedure-description
+Measurement Run,class/attribute/measurementrun,Local Identifier,def/property/local-identifier
+Measurement Source,class/attribute/measurementsource,Provenance,def/property/provenance
+Measurement Units,class/attribute/measurementunits,Unit of Measure,def/property/unit-of-measure
+metadata uri,class/attribute/metadata-uri,Metadata Reference,def/property/metadata-reference
+MetadataURI,class/attribute/metadatauri,Provenance,def/property/provenance
+Methodology,class/attribute/methodology,Observation Procedure,def/property/observation-procedure
+Min Mine Recharge GrndwtrVol1 m3yr,class/attribute/minminerechargegrndwtrvol1-m3yr,Fluid Flux,def/property/fluid-flux
+Min Mine Recharge Vol2 m3yr,class/attribute/minminerechargevol2-m3yr,Fluid Flux,def/property/fluid-flux
+Min Mine WtrVel1 myr,class/attribute/minminewtrvel1-myr,Flow Velocity Magnitude,def/property/flow-velocity-magnitude
+Min Mine WtrVel2 myr,class/attribute/minminewtrvel2-myr,Flow Velocity Magnitude,def/property/flow-velocity-magnitude
+Min Recharge Area km2,class/attribute/minrechargearea-km2,Recharge Extent,def/property/recharge-extent
+Min Residence Time 1 year,class/attribute/minresidencetime1-yr,Residence Time,def/property/residence-time
+Min Residence Time 2 year,class/attribute/minresidencetime2-yr,Residence Time,def/property/residence-time
+Mine Deposit Area m2,class/attribute/minedepositarea-m2,Extent,def/property/extent
+Mine Name,class/attribute/minename,Feature Name,def/property/feature-name
+Mine Or Opening Type,class/attribute/mineoropeningtype,Feature Type,def/property/feature-type
+Mine Start Date,class/attribute/minestartdate,History,def/property/history
+Mine Volume m3,class/attribute/minevolume-m3,Volume,def/property/volume
+Mine-City Distance km,class/attribute/mine-city-distance-km,Market Proximity,def/property/market-proximity
+Mineral Owner,class/attribute/mineralowner,Resource Owner,def/property/resource-owner
+Minimum Heat Flux kJ/yr,class/attribute/minhf-kjyr,Heat Flux,def/property/heat-flux
+Minimum Monthly Water Production bbl,class/attribute/minimummonthlywaterproduction-bbl,Fluid Flux,def/property/fluid-flux
+Monthly Production bbl,class/attribute/monthlyproduction-bbl,Fluid Flux,def/property/fluid-flux
+Movement Sense,class/attribute/movementsense,Category  Name,def/property/category--name
+Movement Type,class/attribute/movementtype,Fault Movement Type,def/property/fault-movement-type
+Mud Resistivity,class/attribute/resistivitymud,Resistivity,def/property/resistivity
+Name,class/attribute/name,Feature Name,def/property/feature-name
+Net Production Capacity MW,class/attribute/netproductioncapacity-mw,Power Production Capacity,def/property/power-production-capacity
+Net Production MWhr,class/attribute/netproductionmwhr,Energy,def/property/energy
+Notes,class/attribute/notes,Information,def/property/information
+Number Injection Wells,class/attribute/numberinjectionwells,Count,def/property/count
+Number Of Trenches,class/attribute/numberoftrenches,Feature Count,def/property/feature-count
+Number Of Wells,class/attribute/numberofwells,Count,def/property/count
+Number Operating Plants,class/attribute/numberoperatingplants,Feature Count,def/property/feature-count
+Number Production Wells,class/attribute/numberproductionwells,Count,def/property/count
+OBJECTID,class/attribute/objectid,Auto ID,def/property/auto-id
+Observation Date,class/attribute/observationdate,Event in History,def/property/event-in-history
+Observation Label,class/attribute/observationlabel,Name,def/property/name
+Observation Method,class/attribute/observationmethod,Observation Procedure,def/property/observation-procedure
+Observation Name,class/attribute/observationname,Observation Name,def/property/observation-name
+Observation URI,class/attribute/observationuri,Observation Identifier,def/property/observation-identifier
+Observed Gravity mgal,class/attribute/observedgravity-mgal,Acceleration of gravity,def/property/acceleration-of-gravity
+Observed Numeric Value,class/attribute/observednumericvalue,Value,def/property/value
+"Observed Numeric Value, maximum",class/attribute/observednumericvaluemaximum,Value,def/property/value
+"Observed Numeric Value, minimum ",class/attribute/observednumericvalueminimum,Value,def/property/value
+Observed Property Name,class/attribute/observedpropertyname,Observed Property,def/property/observed-property
+Observer,class/attribute/observer,Agent Identifier,def/property/agent-identifier
+Older Age URI,class/attribute/olderageuri,Older Age,def/property/older-age
+Oldest Age,class/attribute/oldestage,Category  Name,def/property/category--name
+Oldest Radiometric Age Ma,class/attribute/oldestradiometricage-ma,Time Position,def/property/time-position
+Operational Date,class/attribute/operationaldate,Facility Operational Date,def/property/facility-operational-date
+Operator,class/attribute/operator,Facility Operator,def/property/facility-operator
+Origin datetime,class/attribute/origindatetime,Event in History,def/property/event-in-history
+Other Analysis ID,class/attribute/otheranalysisid,Observation Identifier,def/property/observation-identifier
+Other Analytical Data,class/attribute/otheranalyticaldata,Feature Identifier,def/property/feature-identifier
+Other Distribution,class/attribute/otherdistribution,Relation,def/property/relation
+Other Feature ID,class/attribute/otherfeatureid,Designation,def/property/designation
+Other Formation Name,class/attribute/otherformationname,Feature Name,def/property/feature-name
+Other ID,class/attribute/otherid,Feature Identifier,def/property/feature-identifier
+Other Identifier,class/attribute/otheridentifier,Feature Identifier,def/property/feature-identifier
+Other Lithology Name,class/attribute/otherlithologyname,Category  Name,def/property/category--name
+Other Location Information,class/attribute/otherlocationinformation,Location,def/property/location
+Other Location Name,class/attribute/otherlocationname,Location,def/property/location
+Other Log ID,class/attribute/otherlogid,Feature Identifier,def/property/feature-identifier
+Other Name,class/attribute/othername,Feature Name,def/property/feature-name
+Other Site ID,class/attribute/othersiteid,Feature Identifier,def/property/feature-identifier
+Other Specimen ID,class/attribute/otherspecimenid,Feature Identifier,def/property/feature-identifier
+Overburden Thickness m,class/attribute/overburdenthickness-m,Extent,def/property/extent
+Owner,class/attribute/owner,Resource Owner,def/property/resource-owner
+Owners,class/attribute/owners,Resource Owner,def/property/resource-owner
+Paper Copy Location,class/attribute/papercopylocation,Curation Location,def/property/curation-location
+Parcel,class/attribute/parcel,Geospatial Position,def/property/geospatial-position
+Parent Feature URI,class/attribute/parentfeatureuri,Parent Feature Identifier,def/property/parent-feature-identifier
+Parent Sample URI,class/attribute/parentsampleuri,Parent Feature Identifier,def/property/parent-feature-identifier
+Parent Specimen URI,class/attribute/parentspecimenuri,Parent Feature Identifier,def/property/parent-feature-identifier
+Parent Well URI,class/attribute/parentwelluri,Parent Feature Identifier,def/property/parent-feature-identifier
+Percent Target Rock,class/attribute/percenttargetrock,Composition,def/property/composition
+Permeability Average m2,class/attribute/permeabilityaverage-m2,Permeability,def/property/permeability
+Permeability Average Method,class/attribute/permeabilityaveragemethod,Observation Procedure,def/property/observation-procedure
+Permeability Average Uncertainty,class/attribute/permeabilityaverageuncertainty,Uncertainty,def/property/uncertainty
+Permeability Max m2,class/attribute/permeabilitymax-m2,Permeability,def/property/permeability
+Permeability md,class/attribute/permeability-md,Permeability,def/property/permeability
+Permeability Min m2,class/attribute/permeabilitymin-m2,Permeability,def/property/permeability
+Permeability units,class/attribute/unitspermeability,Unit of Measure,def/property/unit-of-measure
+"Permeability, air mD",class/attribute/permeabilityair-md,Air permeability,def/property/air-permeability
+"Permeability, Commonly observed mD",class/attribute/permeabilitycommonlyobserved-md,Permeability,def/property/permeability
+"Permeability, Geometric mean  mD",class/attribute/permeabilitygeometricmean-md,Permeability,def/property/permeability
+"Permeability, Intrinsic mD",class/attribute/permeabilityintrinsic-md,intrinsic permeability,def/property/intrinsic-permeability
+"Permeability, Local mD",class/attribute/permeabilitylocal-md,Local permeability,def/property/local-permeability
+"Permeability, Mean intrinsic mD",class/attribute/permeabilitymeanintrinsic-md,intrinsic permeability,def/property/intrinsic-permeability
+"Permeability, mean mD",class/attribute/permeabilitymean-md,Permeability,def/property/permeability
+"Permeability, median mD",class/attribute/permeabilitymedian-md,Permeability,def/property/permeability
+"Permeability, median pore-scale mD",class/attribute/permeabilitymedianporescale-md,Pore-scale permeability,def/property/pore-scale-permeability
+"Permeability, pore-scale mD",class/attribute/permeabilityporescale-md,Pore-scale permeability,def/property/pore-scale-permeability
+Permit,class/attribute/permit,Related Resource,def/property/related-resource
+pH,class/attribute/ph,Chemical Character,def/property/chemical-character
+Phone,class/attribute/phone,Telephone Number,def/property/telephone-number
+Pipe Diameter in,class/attribute/pipediameter-in,Extent,def/property/extent
+Pipe Material,class/attribute/pipematerial,Material Type,def/property/material-type
+Pipe Total Length ft,class/attribute/pipetotallength-ft,Pipe Extent,def/property/pipe-extent-
+Plant Name,class/attribute/plantname,Plant Name,def/property/plant-name
+Plant Production Stat Label,class/attribute/plantproductionstatlabel,Name,def/property/name
+Plant Production Stat URI,class/attribute/plantproductionstaturi,Self Identifier,def/property/self-identifier
+Plant Type,class/attribute/planttype,Procedure Type,def/property/procedure-type
+PLSS Location,class/attribute/plsslocation,Location,def/property/location
+PLSS Meridians,class/attribute/plss-meridians,Spatial Reference System,def/property/spatial-reference-system
+PLSS Range,class/attribute/plssrange,Range Number,def/property/range-number
+PLSS section number,class/attribute/plsssectionnumber,Section Number,def/property/section-number
+PLSS Section Part,class/attribute/plsssectionpart,Section Part,def/property/section-part
+PLSS Township,class/attribute/plsstownship,Township Number,def/property/township-number
+Porosity Average Method,class/attribute/porosityaveragemethod,Observation Procedure,def/property/observation-procedure
+Porosity Average pct,class/attribute/porosityaverage-pct,porosity,def/property/porosity
+Porosity Average Uncertainty,class/attribute/porosityaverageuncertainty,porosity,def/property/porosity
+Porosity Max pct,class/attribute/porositymax-pct,porosity,def/property/porosity
+porosity mean pct,class/attribute/porositymean-pct,porosity,def/property/porosity
+porosity median pct,class/attribute/porositymedian-pct,porosity,def/property/porosity
+Porosity Min pct,class/attribute/porositymin-pct,porosity,def/property/porosity
+porosity percent,class/attribute/porositypercent,porosity,def/property/porosity
+Porosity units,class/attribute/unitsporosity,Unit of Measure,def/property/unit-of-measure
+Position Accuracy,class/attribute/positionaccuracy,Uncertainty,def/property/uncertainty
+Position Accuracy Meters,class/attribute/positionaccuracymeters,Uncertainty,def/property/uncertainty
+Positional Accuracy,class/attribute/positionalaccuracy,Uncertainty,def/property/uncertainty
+Postal Address,class/attribute/postaladdress,Postal Address,def/property/postal-address
+Power Plant Facility URI,class/attribute/powerplantfacilityuri,Self Identifier,def/property/self-identifier
+Power Purchasers,class/attribute/powerpurchasers,Customer,def/property/customer
+Preferred Pressure,class/attribute/preferredpressure,Pressure,def/property/pressure
+Pressure Final Shut In,class/attribute/pressurefinalshutin,Pressure,def/property/pressure
+Pressure Initial Shut In,class/attribute/pressureinitialshutin,Pressure,def/property/pressure
+Pressure psi,class/attribute/pressure-psi,Pressure,def/property/pressure
+Pressure units,class/attribute/units-pressure,Unit of Measure,def/property/unit-of-measure
+Procedure Summary,class/attribute/proceduresummary,Procedure Description,def/property/procedure-description
+Producing Feature,class/attribute/producingfeature,Category  Name,def/property/category--name
+Producing Interval ,class/attribute/producinginterval,Feature Name,def/property/feature-name
+Producing Interval ,class/attribute/producinginterval,Feature of Interest,def/property/feature-of-interest
+Production Report Date,class/attribute/productionreportdate,History,def/property/history
+Production status,class/attribute/production,Facility Status,def/property/facility-status
+Publication Source,class/attribute/publicationsource,Provenance,def/property/provenance
+qualifier,class/attribute/qualifier,Information,def/property/information
+Radioactivity Measurement Device,class/attribute/radioactivitymeasurementdevice,Instrument Name,def/property/instrument-name
+Range,class/attribute/range,Range Number,def/property/range-number
+Rank,class/attribute/rank,Feature Type,def/property/feature-type
+Recharge Procedure 1,class/attribute/rechargeprocedure1,Observation Procedure,def/property/observation-procedure
+Recharge Procedure 2,class/attribute/rechargeprocedure2,Observation Procedure,def/property/observation-procedure
+Record Name,class/attribute/recordname,Observation Name,def/property/observation-name
+Recurrence Interval,class/attribute/recurrenceinterval,Periodicity,def/property/periodicity
+Registrant,class/attribute/registrant,Resource Responsible Party,def/property/resource-responsible-party
+Registrant URI,class/attribute/registranturi,Agent Identifier,def/property/agent-identifier
+Related Fault,class/attribute/relatedfault,Relation,def/property/relation
+Related Fault URI,class/attribute/relatedfaulturi,Relation,def/property/relation
+Related Feature,class/attribute/relatedfeature,Relation,def/property/relation
+Related Heat Flow Intervals URI,class/attribute/relatedheatflowintervalsuri,Relation,def/property/relation
+Related Resource,class/attribute/relatedresource,Related Resource,def/property/related-resource
+Related Resources,class/attribute/relatedresources,Relation,def/property/relation
+Related Sample URI,class/attribute/relatedsampleuri,Relation,def/property/relation
+Related Water Chemistry,class/attribute/relatedwaterchemistry,Relation,def/property/relation
+Release Date,class/attribute/releasedate,Publication Date,def/property/publication-date
+Remarks,class/attribute/remarks,Information,def/property/information
+Report Year,class/attribute/reportyear,Event in History,def/property/event-in-history
+Reporting Period,class/attribute/reportingperiod,Event in History,def/property/event-in-history
+Representative Age URI,class/attribute/representativeageuri,Age,def/property/age
+Representative Lithology URI,class/attribute/representativelithologyuri,Lithology Type,def/property/lithology-type
+Reservoir Favorability,class/attribute/reservoirfavorability,Resource Assessment,def/property/resource-assessment
+Reservoir Favorability Methodology,class/attribute/reservoirfavorabilitymethodology,Observation Procedure,def/property/observation-procedure
+Reservoir Favorability Uncertainty,class/attribute/reservoirfavorabilityuncertainty,Uncertainty,def/property/uncertainty
+Reservoir Name ,class/attribute/reservoirname,Feature Name,def/property/feature-name
+Reservoir URI,class/attribute/reservoiruri,Feature Identifier,def/property/feature-identifier
+Resource Type,class/attribute/resourcetype,Feature Type,def/property/feature-type
+Result,class/attribute/result,Quantifier,def/property/quantifier
+RGE,class/attribute/rge,Range Number,def/property/range-number
+Rock Name,class/attribute/rockname,Category  Name,def/property/category--name
+Rock Type,class/attribute/rocktype,Category  Name,def/property/category--name
+Salinity,class/attribute/salinity,Chemical Character,def/property/chemical-character
+Sample Collection Date,class/attribute/samplecollectiondate,History,def/property/history
+Sample Collection Method,class/attribute/samplecollectionmethod,Observation Procedure,def/property/observation-procedure
+Sample Cure Duration,class/attribute/samplecureduration,Observation History,def/property/observation-history
+Sample Density,class/attribute/sampledensity,Density,def/property/density
+Sample Density g-cc,class/attribute/sampledensity-g-cc,Density,def/property/density
+Sample Density Units,class/attribute/sampledensityunits,Unit of Measure,def/property/unit-of-measure
+Sample Depth,class/attribute/sampledepth,Vertical Extent,def/property/vertical-extent
+Sample Depth meters,class/attribute/sampledepth-m,Vertical Extent,def/property/vertical-extent
+Sample Dimensions Height,class/attribute/sampledimensionsheight,Extent,def/property/extent
+Sample Dimensions Length,class/attribute/sampledimensionslength,Extent,def/property/extent
+Sample Dimensions Units,class/attribute/sampledimensionsunits,Unit of Measure,def/property/unit-of-measure
+Sample Dimensions Width,class/attribute/sampledimensionswidth,Extent,def/property/extent
+Sample Mass kg,class/attribute/samplemass-kg,Mass,def/property/mass
+Sample Measurement Date,class/attribute/samplemeasurementdate,History,def/property/history
+Sample Shape,class/attribute/sampleshape,Shape,def/property/shape
+Sample Temperature,class/attribute/sampletemperature,Temperature,def/property/temperature
+Sample Temperature Units,class/attribute/sampletemperatureunits,Unit of Measure,def/property/unit-of-measure
+Sample Type,class/attribute/sampletype,Material Type,def/property/material-type
+Sampled Feature Age Label,class/attribute/sampledfeatureagelabel,Name,def/property/name
+Sampled Feature Max Age Ma,class/attribute/sampledfeaturemaxage-ma,Time Position,def/property/time-position
+Sampled Feature Min Age Ma,class/attribute/sampledfeatureminage-ma,Time Position,def/property/time-position
+Sampled Geologic Unit,class/attribute/sampledgeologicunit,Category  Name,def/property/category--name
+Sampled Geologic Unit Age,class/attribute/sampledgeologicunitage,Category  Name,def/property/category--name
+Sampling Feature Name,class/attribute/samplingfeaturename,Feature Name,def/property/feature-name
+Sampling Feature Type,class/attribute/samplingfeaturetype,Feature Type,def/property/feature-type
+Sampling Feature URI,class/attribute/samplingfeatureuri,Feature Identifier,def/property/feature-identifier
+Saturated Sample Conductivity,class/attribute/saturatedsampleconductivity,Thermal Conductivity,def/property/thermal-conductivity
+Saturation Fluid,class/attribute/saturationfluid,Material Type,def/property/material-type
+ScannedFileURL,class/attribute/scannedfileurl,Access Link,def/property/access-link
+Section ,class/attribute/section-,Geospatial Position,def/property/geospatial-position
+Section Part,class/attribute/sectionpart,Geospatial Position,def/property/geospatial-position
+Seisometer Network,class/attribute/seisometernetwork,Feature Name,def/property/feature-name
+Shape,class/attribute/shape,Geospatial Position,def/property/geospatial-position
+Shape Area,class/attribute/shape-area,Extent,def/property/extent
+Shape Length,class/attribute/shape-length,Extent,def/property/extent
+Shut In Pressure Method,class/attribute/shutinpressuremethod,Observation Procedure,def/property/observation-procedure
+Site Heat Flow,class/attribute/siteheatflow,Heat Flow,def/property/heat-flow
+Site Location Name,class/attribute/sitelocationname,Feature Name,def/property/feature-name
+Site Location URI,class/attribute/sitelocationuri,Observation Identifier,def/property/observation-identifier
+Site Name,class/attribute/sitename,Feature Name,def/property/feature-name
+Site Value Method,class/attribute/sitevaluemethod,Observation Procedure,def/property/observation-procedure
+Slip Accumulation Interval,class/attribute/slipaccumulationinterval,Duration,def/property/duration
+Slip Rate,class/attribute/sliprate,Velocity Magnitude,def/property/velocity-magnitude
+Source,class/attribute/source,Provenance,def/property/provenance
+Source Citation,class/attribute/sourcecitation,Provenance,def/property/provenance
+Source Citation URI,class/attribute/sourcecitationuri,Source Identifier,def/property/source-identifier
+Source URI,class/attribute/sourceuri,Source Identifier,def/property/source-identifier
+Spacing Avg ft,class/attribute/spacingavg-ft,Borehole Spacing,def/property/borehole-spacing
+Specific Heat,class/attribute/specificheat,Temperature,def/property/temperature
+Specific Heat kJkgC,class/attribute/specificheat-kjkgc,Specific Heat,def/property/specific-heat
+Specific Heat Units,class/attribute/specificheatunits,Unit of Measure,def/property/unit-of-measure
+Specific Storage,class/attribute/specificstorage,Aquifer Productivity,def/property/aquifer-productivity
+specification  uri,class/attribute/specification-uri,Description,def/property/description
+Specification URI,class/attribute/specificationuri,Description,def/property/description
+SpecificYield percent,class/attribute/specificyield-percent,Aquifer Productivity,def/property/aquifer-productivity
+Specimen Collection Date,class/attribute/specimencollectiondate,History,def/property/history
+Specimen Collection Method,class/attribute/specimencollectionmethod,Observation Procedure,def/property/observation-procedure
+Specimen Collector,class/attribute/specimencollector,Resource Responsible Party,def/property/resource-responsible-party
+Specimen Collector URI,class/attribute/specimencollectoruri,Agent Identifier,def/property/agent-identifier
+Specimen Curation,class/attribute/specimencuration,Information,def/property/information
+Specimen Description,class/attribute/specimendescription,Feature Description,def/property/feature-description
+Specimen ID,class/attribute/specimenid,Feature Identifier,def/property/feature-identifier
+Specimen Label,class/attribute/specimenlabel,Feature Name,def/property/feature-name
+Specimen Mass kg,class/attribute/specimenmass-kg,Mass,def/property/mass
+Specimen URI,class/attribute/specimenuri,Feature Identifier,def/property/feature-identifier
+SpecimenType,class/attribute/specimentype,Feature Type,def/property/feature-type
+Spring Name,class/attribute/springname,Feature Name,def/property/feature-name
+Spud Date,class/attribute/spuddate,Feature History,def/property/feature-history
+SRS,class/attribute/srs,Spatial Reference System,def/property/spatial-reference-system
+Standard Deviation,class/attribute/standarddeviation,Value,def/property/value
+Standard Error Conductivity,class/attribute/se-conductivity,Uncertainty,def/property/uncertainty
+Standard Error Corrected Gradient,class/attribute/se-correctedgradient,Uncertainty,def/property/uncertainty
+Standard Error Corrected HeatFlow,class/attribute/se-correctedheatflow,Uncertainty,def/property/uncertainty
+Standard Error Uncorrected Gradient,class/attribute/se-uncorrectedgradient,Uncertainty,def/property/uncertainty
+Standard Error Uncorrected HeatFlow,class/attribute/se-uncorrectedheatflow,Uncertainty,def/property/uncertainty
+Standard Magnitude Error,class/attribute/standardmagnitudeerror,Uncertainty,def/property/uncertainty
+Start Report Interval,class/attribute/startreportinterval,Event in History,def/property/event-in-history
+State,class/attribute/state,Location Name,def/property/location-name
+Station Identifier,class/attribute/stationidentifier,Sampling Feature Identifier,def/property/sampling-feature-identifier
+Station Name,class/attribute/stationname,Feature Name,def/property/feature-name
+Statistical procedure,class/attribute/statisticalprocedure,Observation Procedure,def/property/observation-procedure
+Status,class/attribute/status,Facility Status,def/property/facility-status
+Status Date,class/attribute/statusdate,Reporting date,def/property/reporting-date
+Stimulation,class/attribute/stimulation,Process Type,def/property/process-type
+Storage units,class/attribute/unitsstorage,Unit of Measure,def/property/unit-of-measure
+Surface Temperature,class/attribute/surfacetemperature,Temperature,def/property/temperature
+Symbol,class/attribute/symbol,Representation,def/property/representation
+System Type,class/attribute/systemtype,Procedure Type,def/property/procedure-type
+Target Feature URI,class/attribute/targetfeatureuri,Feature Identifier,def/property/feature-identifier
+Target Formation,class/attribute/targetformation,Feature Name,def/property/feature-name
+Target Rock Name,class/attribute/targetrockname,Category  Name,def/property/category--name
+Target Rock Volume m3,class/attribute/targetrockvolume-m3,Composition,def/property/composition
+Tectonic Province,class/attribute/tectonicprovince,Category  Name,def/property/category--name
+Temp Measurement Date Time,class/attribute/tempmeasurementdatetime,History,def/property/history
+Temp Measurement Procedure,class/attribute/tempmeasurementprocedure,Procedure Description,def/property/procedure-description
+Temperature,class/attribute/temperature,Temperature,def/property/temperature
+Temperature Correction,class/attribute/temperaturecorrection,Correction,def/property/correction
+Temperature Fahrenheit,class/attribute/temperature-f,Temperature,def/property/temperature
+Temperature Flowing,class/attribute/temperatureflowing,Temperature,def/property/temperature
+Temperature Max C,class/attribute/temperaturemax-c,Temperature,def/property/temperature
+Temperature Measure Type,class/attribute/temperaturemeasuretype,Procedure Type,def/property/procedure-type
+Temperature Min C,class/attribute/temperaturemin-c,Temperature,def/property/temperature
+Temperature Units,class/attribute/temperatureunits,Unit of Measure,def/property/unit-of-measure
+Temperature units,class/attribute/units-temperature,Unit of Measure,def/property/unit-of-measure
+Terrain Correction mgal,class/attribute/terraincorrection-mgal,Correction,def/property/correction
+Test date time,class/attribute/testdatetime,Event in History,def/property/event-in-history
+Test Fluid,class/attribute/testfluid,Material Type,def/property/material-type
+Test Name,class/attribute/testname,Observation Name,def/property/observation-name
+Test Number,class/attribute/testnumber,Local Identifier,def/property/local-identifier
+Test Operator,class/attribute/testoperator,Resource Responsible Party,def/property/resource-responsible-party
+Test Type,class/attribute/testtype,Procedure Type,def/property/procedure-type
+Test Type Description,class/attribute/testtypedescription,Procedure Description,def/property/procedure-description
+Thermal Conductivity Units,class/attribute/thermalconductivityunits,Unit of Measure,def/property/unit-of-measure
+Thermal Conductivity Units,class/attribute/unitstc,Unit of Measure,def/property/unit-of-measure
+Thermal Diffusivity,class/attribute/thermaldiffusivity,Thermal Diffusivity,def/property/thermal-diffusivity
+Thermal Diffusivity units,class/attribute/unitsthermaldiffusivity,Unit of Measure,def/property/unit-of-measure
+Thermal Spring URI,class/attribute/thermalspringuri,Feature Identifier,def/property/feature-identifier
+Time Final Shut In min,class/attribute/timefinalshutin-min,Duration,def/property/duration
+Time Initial Shut In min,class/attribute/timeinitialshutin-min,Duration,def/property/duration
+Time Since Circulation ,class/attribute/timesincecirculation,Duration,def/property/duration
+Time Since Circulation ,class/attribute/timesincecirculation,Duration,def/property/duration
+Top Logged Interval ft,class/attribute/toploggedinterval-ft,Coverage Domain Bound,def/property/coverage-domain-bound
+Total Mine Heat kJ,class/attribute/totalmineheat-kj,Energy,def/property/energy
+Total Slip,class/attribute/totalslip,Displacement,def/property/displacement
+Township,class/attribute/township,Township Number,def/property/township-number
+Transmissivity,class/attribute/transmissivity,Hydraulic Transmissivity,def/property/hydraulic-transmissivity
+Transmissivity units,class/attribute/transmissivity-units,Unit of Measure,def/property/unit-of-measure
+Trap,class/attribute/trap,Feature Name,def/property/feature-name
+True Vertical Depth,class/attribute/trueverticaldepth,Feature Extent,def/property/feature-extent
+TWP,class/attribute/twp,Township Number,def/property/township-number
+uncertainty,class/attribute/uncertainty,Uncertainty,def/property/uncertainty
+Uncertainty mgal,class/attribute/uncertainty-mgal,Uncertainty,def/property/uncertainty
+Uncertainty Specific Heat,class/attribute/uncertaintyspecificheat,Uncertainty,def/property/uncertainty
+Uncertainty Thermal Conductivity,class/attribute/uncertaintytc,Uncertainty,def/property/uncertainty
+Uncertainty Thermal Diffusivity,class/attribute/uncertaintythermaldiffusivity,Uncertainty,def/property/uncertainty
+UncertaintyDensity,class/attribute/uncertaintydensity,Uncertainty,def/property/uncertainty
+Units Of Measure,class/attribute/units,Unit of Measure,def/property/unit-of-measure
+Units Of Measure,class/attribute/unitsofmeasure,Unit of Measure,def/property/unit-of-measure
+Update Date,class/attribute/updatedate,History,def/property/history
+Update Time Stamp,class/attribute/updatetimestamp,Update Time Stamp,def/property/update-time-stamp
+Use Application,class/attribute/useapplication,Use Application,def/property/use-application
+UTM Datum Zone,class/attribute/utmdatumzone,Spatial Reference System,def/property/spatial-reference-system
+UTM E,class/attribute/utm-e,UTM Easting,def/property/utm-easting
+UTM N,class/attribute/utm-n,UTM Northing,def/property/utm-northing
+UTM Zone,class/attribute/utmzone,Spatial Reference System,def/property/spatial-reference-system
+Vent Elevation,class/attribute/ventelevation,Vertical Extent,def/property/vertical-extent
+Vertical Conductivity ft day,class/attribute/verticalconductivity-ft-day,Hydraulic conductivity,def/property/hydraulic-conductivity
+Vertical Datum,class/attribute/verticaldatum,Vertical Datum,def/property/vertical-datum
+Vertical Extent Max m,class/attribute/verticalextentmax-m,Vertical Extent,def/property/vertical-extent
+Vertical Extent Min m,class/attribute/verticalextentmin-m,Vertical Extent,def/property/vertical-extent
+Vertical Units,class/attribute/verticalunits,Unit of Measure,def/property/unit-of-measure
+Viscosity,class/attribute/viscosity,Viscosity,def/property/viscosity
+Volc Vent Name,class/attribute/volcventname,Feature Name,def/property/feature-name
+Volcanic Group,class/attribute/volcanicgroup,Feature Name,def/property/feature-name
+Water Density  kgm3,class/attribute/waterdensity-kgm3,Density,def/property/density
+Water Density  mgL,class/attribute/waterdensity-mgl,Density,def/property/density
+Water Injection bbl,class/attribute/waterinjection-bbl,Fluid Quantity,def/property/fluid-quantity
+Water Mass kg,class/attribute/watermass-kg,Fluid Quantity,def/property/fluid-quantity
+Water Resistivity ohm/m,class/attribute/resistivitywater-ohm-m,Resistivity,def/property/resistivity
+Water Saturation pct,class/attribute/watersaturation-pct,Composition,def/property/composition
+Water Table Temperature,class/attribute/watertabletemperature,Temperature,def/property/temperature
+Water Table Top,class/attribute/watertabletop,Vertical Position,def/property/vertical-position
+Water TDS mgl,class/attribute/watertds-mgl,Chemical Character,def/property/chemical-character
+Watershed Name,class/attribute/watershedname,Feature Name,def/property/feature-name
+Well Bore Shape,class/attribute/wellboreshape,Feature Shape,def/property/feature-shape
+Well Count,class/attribute/wellcount,Count,def/property/count
+Well Drill Date,class/attribute/welldrilldate,Resource History,def/property/resource-history
+Well Drill Date Type,class/attribute/welldrilldatetype,Event Type,def/property/event-type
+Well Header URI,class/attribute/wellheaderuri,Sampling Feature Identifier,def/property/sampling-feature-identifier
+Well Name,class/attribute/wellname,Feature Name,def/property/feature-name
+Well Type,class/attribute/welltype,Feature Type,def/property/feature-type
+WellBore Name ,class/attribute/wellborename,Feature Name,def/property/feature-name
+WellBore URI,class/attribute/wellboreuri,Sampling Feature Identifier,def/property/sampling-feature-identifier
+Width m,class/attribute/width-m,Extent,def/property/extent
+Year Commissioned,class/attribute/yearcommissioned,Event in History,def/property/event-in-history
+Years In Production,class/attribute/yearsinproduction,History,def/property/history
+Younger Age URI,class/attribute/youngerageuri,Younger Age,def/property/younger-age
+Youngest Age,class/attribute/youngestage,Younger Age,def/property/younger-age
+Youngest Radiometric Age Ma,class/attribute/youngestradiometricage-ma,Younger Age,def/property/younger-age
+Zip,class/attribute/zip,Fiat Geographic Area,def/property/fiat-geographic-area

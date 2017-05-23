@@ -1,0 +1,16 @@
+
+{
+  "identifier" : "20.5000.360/fc75c4010657638ad478",
+  "dt:domainName" : "Positive Real Number",
+  "dt:domainDescription" : "Real numbers greater than or equal to 0",
+  "dt:valueDataType" : {
+    "dt:domainDataTypeLabel" : "Real Number"
+  },
+  "dt:domainType" : {
+    "dt:domainTypeLabel" : "numeric value"
+  },
+  "creationDate" : "2017-02-26T17:41:45.246Z",
+  "modificationDate" : "2017-02-26T17:54:15.395Z",
+  "createdBy" : "20.5000.360/user/",
+  "modifiedBy" : "20.5000.360/user/"
+}

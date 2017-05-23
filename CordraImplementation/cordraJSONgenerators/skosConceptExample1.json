@@ -1,0 +1,8 @@
+{
+    "prefLabel": "detail4",
+    "definition": "a sibling to details 1,2 and 3",
+    "source": "where the definition came from",
+    "broader": ["20.5000.360/523a6a603e19f2286eb0"],
+    "narrower": [],
+    "related": ["20.5000.360/5bc02095893bee4ee08c"],
+}

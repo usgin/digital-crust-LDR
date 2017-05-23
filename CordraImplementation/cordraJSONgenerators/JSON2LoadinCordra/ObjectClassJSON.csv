@@ -1,0 +1,313 @@
+suffix|conceptJSONdef/object-class/abandoned-underground-mine-feature|{
+	"prefLabel": "Abandoned Underground Mine Feature",
+	"definition": "Entity representing an abandoned underground mine. Typically has extent associted with surface foot print of underground workings and some description of the dimensions and geometry of the workings as well as commodities produced. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/agent|{
+	"prefLabel": "Agent",
+	"definition": "An entity that bears some form of responsibility for an activity taking place for the existence of an entity or for another agents activity. Notes: ",
+	"source": "https://www.w3.org/TR/prov-o/#Agent",
+	"broader": "",
+	"inScheme": "/def/objectClass"
+}def/object-class/borehole-casing|{
+	"prefLabel": "Borehole Casing",
+	"definition": "Characterization of casing pipe used for borehole engineering.  Notes: ",
+	"source": "SMR analysis",
+	"broader": "def/object-class/information-object",
+	"inScheme": "/def/objectClass"
+}def/object-class/borehole-collar|{
+	"prefLabel": "Borehole Collar",
+	"definition": "The location at which a borehole trace originates. Might be within a well; along an existing borehole trace; or in the subsurface e.g. collared in a mine tunnel Notes: ",
+	"source": "SMR analysis",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/borehole-intercept|{
+	"prefLabel": "Borehole Intercept",
+	"definition": "A sampling feature  whose feature of interest is a site at a particular single depth in a borehole. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/sampling-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/borehole-interval|{
+	"prefLabel": "Borehole Interval",
+	"definition": "A sampling feature  whose feature of interest is the interval of material penetrated by a borehole between two specified depths. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/sampling-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/borehole-temperature-observation|{
+	"prefLabel": "Borehole Temperature Observation",
+	"definition": "subsurface temperature measurement made in a borehole Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/event|{
+	"prefLabel": "Event",
+	"definition": "A entity that has a temporal extent or position and an associated process or activity.  Notes: ",
+	"source": "SMR analysis",
+	"broader": "def/object-class/temporal-object",
+	"inScheme": "/def/objectClass"
+}def/object-class/facility|{
+	"prefLabel": "Facility",
+	"definition": "A human-constructed feature that has some functional purpose. Notes: ",
+	"source": "GEARS CD information model",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/feature|{
+	"prefLabel": "Feature",
+	"definition": "An entity of interest that has a spatial-temporal location. Notes: ",
+	"source": "SMR analysis",
+	"broader": "",
+	"inScheme": "/def/objectClass"
+}def/object-class/geologic-contact-feature|{
+	"prefLabel": "Geologic Contact Feature",
+	"definition": "A mapped feature that represents the outcrop trace of a geologic boundary between two geologic units that is not a fault  Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/mapped-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/geologic-fault-feature|{
+	"prefLabel": "Geologic Fault Feature",
+	"definition": "A mapped feature that represents the outcrop trace of a geologic fault.  Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/mapped-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/geologic-feature|{
+	"prefLabel": "Geologic Feature",
+	"definition": "A feature that represents some entity in the earth based on geologic criteria Notes: ",
+	"source": "GeoSciML",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/geologic-reservoir-feature|{
+	"prefLabel": "Geologic Reservoir Feature",
+	"definition": "a subsurface body of material that contains fluids of interest that can be extracted. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/geologic-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/geologic-unit-feature|{
+	"prefLabel": "Geologic Unit Feature",
+	"definition": "A body of material in the Earth whose complete and precise extent is inferred to exist (NADM GeologicUnit; Stratigraphic unit in sense of NACSN or International Stratigraphic Code) or a classifier used to characterize parts of the Earth (e.g. lithologic map unit like -granitic rock- or -alluvial deposit-; surficial units like -till- or -old alluvium-).  Includes both formal units (i.e. formally adopted and named in the official lexicon) and informal units (i.e. named but not promoted to the lexicon) and unnamed units (i.e. recognisable and described and delineable in the field but not otherwise formalised). Notes: ",
+	"source": "http://www.geosciml.org/geosciml/4.0/documentation/html/",
+	"broader": "def/object-class/geologic-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/geologic-unit-outcrop|{
+	"prefLabel": "Geologic Unit Outcrop",
+	"definition": "A mapped feature that represents the outcrop of a GeologicUnit on some map horizon. Notes: ",
+	"source": "",
+	"broader": "def/object-class/mapped-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/geospatial-position|{
+	"prefLabel": "Geospatial Position",
+	"definition": "A point location on the Earth Notes: ",
+	"source": "",
+	"broader": "",
+	"inScheme": "/def/objectClass"
+}def/object-class/geothermal-area-feature|{
+	"prefLabel": "Geothermal Area Feature",
+	"definition": "A region on the surface of the Earth characterized by the presence of features manifesting geothermal activity Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/mapped-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/geothermal-direct-use-facility|{
+	"prefLabel": "Geothermal Direct Use Facility",
+	"definition": "basic description of facilities that utilize geothermal energy directly without transformation to electricity Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/facility",
+	"inScheme": "/def/objectClass"
+}def/object-class/geothermal-power-plant-facility|{
+	"prefLabel": "Geothermal Power Plant Facility",
+	"definition": "A facility that generates electricity using geothermal energy. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/facility",
+	"inScheme": "/def/objectClass"
+}def/object-class/gravity-observation|{
+	"prefLabel": "Gravity Observation",
+	"definition": "A site sampling feature specifically for a gravity observation Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/heat-flow-observation|{
+	"prefLabel": "Heat Flow Observation",
+	"definition": "description of heat flow measurements Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/heat-pump-facility|{
+	"prefLabel": "Heat Pump Facility",
+	"definition": "description of heat pump facility locations Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/facility",
+	"inScheme": "/def/objectClass"
+}def/object-class/hydraulic-conductivity-observation|{
+	"prefLabel": "hydraulic conductivity observation",
+	"definition": "Object class representing measurement of hydraulic conductivity Notes: ",
+	"source": "Weigel 1987 USGS WRI 86-4170 Table 4 transcribed by SM Richard 2016-06-10",
+	"broader": "def/object-class/hydraulic-properties-observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/hydraulic-properties-observation|{
+	"prefLabel": "Hydraulic Properties Observation",
+	"definition": "A specification of the hydraulic properties of some sampling feature. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/hydrologic-feature|{
+	"prefLabel": "Hydrologic Feature",
+	"definition": "A feature defined by hydrologic criteria Notes: ",
+	"source": "SMR analysis",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/information-object|{
+	"prefLabel": "Information Object",
+	"definition": "An identifiable digital object that fulfills a requirement as it exists independently of any potential material carrier. Notes: ",
+	"source": "base on http://purl.org/biotop/biotop.owl#InformationObject;  http://earthlexicon.sdsc.edu/wiki/E-resource",
+	"broader": "",
+	"inScheme": "/def/objectClass"
+}def/object-class/isopleth-feature|{
+	"prefLabel": "Isopleth Feature",
+	"definition": "a connected sequence of points characterized by equal values for some observed property Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/mapped-feature|{
+	"prefLabel": "Mapped Feature",
+	"definition": "A feature that has an extent defined by some observation procedure Notes: ",
+	"source": "GeoSciML",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/measured-value|{
+	"prefLabel": "Measured Value",
+	"definition": "An object that represents the result of a measurement event. SWE common abstract data component. Notes: ",
+	"source": "SWE common",
+	"broader": "",
+	"inScheme": "/def/objectClass"
+}def/object-class/mineral-recovery-brine-experimental-data|{
+	"prefLabel": "Mineral Recovery Brine Experimental Data",
+	"definition": "Record of experimental parameters related to experimental recovery of products from brines.  capturing the variables to describe/evaluate REE removal and capturing the variables influencing removal and describing removal media; Essentially metadata for experimental configuration. Use to record observations of REE extraction processes and can be used to compare the efficacy of those processes. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/information-object",
+	"inScheme": "/def/objectClass"
+}def/object-class/mineral-recovery-brine-process-and-economics|{
+	"prefLabel": "Mineral Recovery Brine Process And Economics",
+	"definition": "Record of  parameters in the product removal (reactor) technique used to recover minerals from a brine; the ability of the media to be re-used; and the techno-economic and process economics. Use to record observations of REE extraction processes and can be used to compare the efficacy of those processes. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/information-object",
+	"inScheme": "/def/objectClass"
+}def/object-class/observation|{
+	"prefLabel": "Observation",
+	"definition": "An event in which the value of one or more properties of some feature of interest is determined by an observer (agent) using some procedure Notes: ",
+	"source": "SMR analysis",
+	"broader": "def/object-class/event",
+	"inScheme": "/def/objectClass"
+}def/object-class/physical-sample|{
+	"prefLabel": "Physical Sample",
+	"definition": "An object extracted from a larger feature with the intention of representing one or more characteristics of that feature. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/sampling-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/powell-and-cumming-geothermometry-observation|{
+	"prefLabel": "Powell And Cumming Geothermometry Observation",
+	"definition": "Observation results requires to run Powell and Cumming geothermometry calculations for geothermal fluids Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/power-plant-production-observation|{
+	"prefLabel": "Power Plant Production Observation",
+	"definition": "Observation with a result reporting the  electrical power production for a specific time interval from a power generating facility Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/radiogenic-heat-production-observation|{
+	"prefLabel": "Radiogenic Heat Production Observation",
+	"definition": "Observation with a  result reporting the heat energy production rate from a sampling feature;  typically based on analysis of ore or more individual rock samples Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/resource-documentation|{
+	"prefLabel": "Resource Documentation",
+	"definition": "Collection of properties to describe an existing resource; including information for discovery; evaluation; and access. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/information-object",
+	"inScheme": "/def/objectClass"
+}def/object-class/rock-chemical-composition-observation|{
+	"prefLabel": "Rock Chemical Composition Observation",
+	"definition": "observation whose result is the concentration of one or more analytes in a sampling feature whose material composition is a solid EarthMaterial. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/sampling-feature|{
+	"prefLabel": "Sampling Feature",
+	"definition": "A feature that is defined based on the intention of acquiring information about some other feature of interest Notes: ",
+	"source": "SMR analysis",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/seismic-event-hypocenter-observation|{
+	"prefLabel": "Seismic Event Hypocenter Observation",
+	"definition": "Observation with a result that is the location of the hypocenter of a seismic event Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/temporal-object|{
+	"prefLabel": "Temporal Object",
+	"definition": "An entity that has a position in time Notes: ",
+	"source": "SMR analysis",
+	"broader": "",
+	"inScheme": "/def/objectClass"
+}def/object-class/thermal-conductivity-observation|{
+	"prefLabel": "Thermal Conductivity Observation",
+	"definition": "Observation with a result that is the thermal conductivity of a sampling feature. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/thermal-spring|{
+	"prefLabel": "Thermal Spring",
+	"definition": "characterizing a hot spring feature Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/hydrologic-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/value|{
+	"prefLabel": "Value",
+	"definition": "an entity that represents a primitive value Notes: ",
+	"source": "SMR analysis",
+	"broader": "def/object-class/information-object",
+	"inScheme": "/def/objectClass"
+}def/object-class/volcanic-vent-feature|{
+	"prefLabel": "Volcanic Vent Feature",
+	"definition": "A feature in the Earths surface from which lava has been erupted. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/geologic-feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/well|{
+	"prefLabel": "Well",
+	"definition": "A facility intended to provide access to the subsurface of the Earth; might be used for extraction or injection of materials; has one or more borehole traces and a collar location Notes: ",
+	"source": "",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/well-fluid-flux-observation|{
+	"prefLabel": "Well Fluid Flux Observation",
+	"definition": "Observation whose result is the fluid flux into or out of a well. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/well-fluid-production-observation|{
+	"prefLabel": "Well Fluid Production Observation",
+	"definition": "Observation with a result that specifies the volume of fluid produced from a given well. A generic model is intended to allow for a variety of flows from a well including oil; gas; and water as well as steam production.� Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/well-header-feature|{
+	"prefLabel": "Well Header Feature",
+	"definition": "Feature that is the intersection of a well with a mapping horizon. In a simple well the well header is identical with the borehole collar for a single borehole trace that constitutes the well. Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/feature",
+	"inScheme": "/def/objectClass"
+}def/object-class/well-log-observation|{
+	"prefLabel": "Well Log Observation",
+	"definition": "An observation with a result that is a coverage of property values at intervals along the trace of a borehole Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}def/object-class/well-test-observation|{
+	"prefLabel": "Well Test Observation",
+	"definition": "Observation with a result that consists of fluid flux; pressure; and temperature data; includes information characterizing the experimental conditions Notes: ",
+	"source": "NGDS",
+	"broader": "def/object-class/observation",
+	"inScheme": "/def/objectClass"
+}

@@ -1,0 +1,504 @@
+       {
+           "$schema": "http://json-schema.org/draft-04/schema#",
+           "comment": "this section is start at making compatible with JSON-LD. see https://www.w3.org/TR/json-ld",
+           "@context": {
+               "dt": "http://resources.usgin.org/uri-gin/usgin/schema/json/0.1/datatype",
+               "@vocab": "http://json-schema.org/draft-04/schema",
+               "@base": "http://resources.usgin.org/uri-gin/usgin/schema/json/0.1/datatype",
+               "foaf": "http://xmlns.com/foaf/0.1/",
+               "dct": "http://purl.org/dc/terms/",
+               "skos": "http://www.w3.org/2004/02/skos/core#"
+           },
+           "description": "This is a JSON scheme implementing the USGIN data type model. Conceptual model is documented at http://usgin.github.io/usginspecs/DataTypeModel2016-06-18.htm. A work in progress 2016-11-30.  Instance documents describe information objects that represent an entity of interest (ObjectClass in this model, based on ISO11179) in some domain; the representation consists of a collection of Attributes that are used to quantify properties of instances of the entity. Corresponds to 'dataType' in ISO11179, Entity in Entity-Relationship models, Object in object models, 'document' in document type noSQL databases (e.g. CouchDb, MongoDb), 'Variable' in the netCDF common data model (OGC 10-090r3).  An information object that has internal structure in which the parts can be operated on independently; a data structure.  A compound entity like a feature dataset or database may have several included dataObjects (lines and polys that have topological relationships, table with joins); these are represented here as attributes of the root entity(dataset). Includes some mappings (translation) to USGIN JSON metadata schema for entity-attribute section of metadata. ToDo--harmonize this data type model with the metadata entity-attribute section. ",
+           "updateDate": "2016-12-07",
+           "version": "0.1",
+           "id": "http://resources.usgin.org/uri-gin/usgin/schema/json/0.1/dataobject",
+           "type": "object",
+           "translation": [
+               {
+                   "usgin/json-metadata": "jmd:EntityObject"
+                       }
+                   ],
+           "required": [
+		"dt:dataTypeName", "dt:elements"
+	],
+
+           "properties": {
+               "dt:identifier": {
+                   "description": "URI is used to link the data object defnition to other information. The data object defintion may be included by reference to an external resource.",
+                   "type": "string",
+                   "format": "URI",
+                   "translation": [
+                       {
+                           "usgin/json-metadata": "jmd:entityReference"
+                               }
+                            ]
+               },
+               "dt:dataTypeName": {
+                   "description": "full, formal name of feature class, table,or other entity manifestation. The data type name is unique within the scope of a particular data type registry",
+                   "type": "string",
+                   "translation": [{
+                       "usgin/json-metadata": "jmd:entityName"
+                           }]
+               },
+               "dt:localNames": {
+                   "description": "alternate names for labeling the entity in UI; name could be localized with an @ extension eg. tamanho@PT",
+                   "type": "array",
+                   "items": {
+                       "type": "string"
+                   },
+                   "translation": [{
+                       "usgin/json-metadata": "jmd:entityAliases"
+                               }]
+               },
+               "dt:description": {
+                   "description": "free text description of the data type",
+                   "type": "string"
+               },
+               "dt:meaning": {
+                   "description": "concept label and identifier that specifies the semantics of the thing represented by instances of this dataType",
+                   "type": "object",
+                   "properties": {
+                       "dt:objectMeaningURI": {
+                           "description": "identifier for a data type (objectClass) entity concept",
+                           "type": "string"
+                       },
+                       "dt:objectMeaningLabel": {
+                           "description": "text label for people to recognize what the object represents",
+                           "type": "string"
+                       }
+                   }
+               },
+               "dt:purpose": {
+                   "description": "property to specify the intention for defining the data type, e.g. interchange format, database table, data acquisition tool, data archive, object oriented software, semantic application.",
+                   "type": "object",
+                   "properties": {
+                       "dt:purposeCategoryURI": {
+                           "description": "identifier for a controlled concept that categorizes the intention of this implementation",
+                           "type": "string",
+                           "format": "URI"
+
+                       },
+                       "dt:purposePrefLabel": {
+                           "description": "text label to specify the purpose for defining this datatype",
+                           "type": "string"
+                       }
+                   }
+               },
+               "dt:logicType": {
+                   "description": "categorize the logical paradigm for the representation-- e.g. relational, object-oriented, graph, tabular text. Logic Type is only required for  DataObject subtypes of data type.",
+                   "type": "object",
+                   "properties": {
+                       "dt:logicTypeURI": {
+                           "description": "identifier for a controlled concept that categorizes logicType for the dataObject",
+                           "type": "string",
+                           "format": "URI"
+
+                       },
+                       "dt:logicTypeLabel": {
+                           "description": "text label to specify the logicType",
+                           "type": "string"
+                       }
+                   }
+               },
+               "dt:intendedUse": {
+                   "description": "an explanation of the intention for the dataObject",
+                   "type": "string"
+               },
+               "dt:elements": {
+                   "description": "basic properties to characterize attributes included in an entity content model. JSON $ref key can be used to link definition to a registered attribute definition. The propertySpecified property is used for semantic integration",
+                   "id": "http://resources.usgin.org/uri-gin/usgin/schema/json-metadata/3.0/Attribute",
+                   "translation": [
+                       {
+                           "usgin/json-metadata": "jmd:entityAttributes"
+                               }
+                   ],
+                   "type": "array",
+                   "minItems": 1,
+                   "items": {
+                       "$ref": "#/definitions/dt:attributeObject"
+                   }
+               },
+               "dt:metaAttributes": {
+                   "description": "other attributes of entity instances. In this implementation. Non defined here at this time",
+                   "type": "object",
+                   "properties": {}
+               }
+           },
+           "definitions": {
+               "dt:attributeObject": {
+                   "description": "An information object that represents a unit of data that quantifies a property in the context of a DataObject. The identity of an Attribute is based on its meaning and domain.  In this model, Attribute conflates the concepts of logical and physical implementation of a Property representation because the distinction was difficult to use in practice for representing actual data. At the physical implementation level, Attributes must have an assigned primitive type that can be serialized for machine processing. At the level of document data models, an Attribute may be assigned a primitive type or other structure (DataObject, List, ArrayVariable, Dictionary) that does not commit to a particular physical implementation. The ObjectElementBinding element provides the detailed information needed to describe a particular physical implementation or data instance.",
+                   "type": "object",
+                   "required": ["dt:attributeName", "dt:attributeDataType"],
+                   "properties": {
+                       "dt:attributeIdentifier": {
+                           "description": "URI that identifies the attribute.",
+                           "type": "string",
+                           "format": "URI"
+                       },
+                       "dt:attributeName": {
+                           "type": "string",
+                           "description": "name of attribute specific to context of this entity",
+                           "translation": [
+                               {
+                                   "usgin/json-metadata": "jmd:attributeName"
+                               }
+                            ]
+                       },
+                       "dt:attributeDescription": {
+                           "description": "description of how the attribute is meant to be used",
+                           "type": "string"
+                       },
+                       "dt:attributeSource": {
+                           "description": "citation to original definiton of attribute",
+                           "type": "object",
+                           "properties": {
+                               "dt:citationTitle": {
+                                   "description": "Title that identifies the resource for human users. Ideally the title would be unique to the described resource.",
+                                   "type": "string"
+                               },
+                               "dt:citationIdentifiers": {
+                                   "description": " Array of scoped identifiers with an optional authority associated with each identifier. Scoped Identifier(s) for the resource, e.g. ISBN, ISSN, Dewey Decimal system numbers, or other URIs determined by the publishing authority.",
+                                   "type": "array",
+                                   "items": {
+                                       "type": "string",
+                                       "format": "uri"
+                                   }
+                               },
+                               "dt:citationRecommendation": {
+                                   "description": "a suggested full text citation to use when citing the resource; include standard bibliographic content like edition, publisher, series title, series issue, page numbers, other information appropriate to the described resource. a recommended full citation text to use for citing the resource. ",
+                                   "type": "string"
+                               }
+                           }
+                       },
+                       "dt:attributeMeaning": {
+                           "description": "Identifier and label for the phenomenon quantified by the attribute, e.g.length, mass, concept, velocity.The value here will be related to the valid UOM for the value.",
+                           "type": "object",
+                           "translation": [{
+                               "usgin/json-metadata": "jmd:attributePropertySpecified"
+                                                    }],
+                           "properties": {
+                               "dt:meaningPropertyURI": {
+                                   "description": "identifier for the property controlled concept represented by the attribute value",
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:meaningPropertyPrefLabel": {
+                                   "type": "string",
+                                   "description": "human-readable label for the property represented by the attribute value"
+                               }
+                           }
+                       },
+                       "dt:attributeDataTypeCategory": {
+                           "description": "identifier for the category of the dataType definition for the attribute value. In this implementation of the USGIN DataType model, represents the subtype of abstract DataType, thus is an enumeration",
+                           "type": "string",
+                           "enum": [
+                                               "PrimitiveType", "DataObject", "ArrayVariable", "Dictionary", "List"
+                                               ]
+                       },
+                       "dt:attributeDataType": {
+                           "description": "specifies the dataType for attribute values. Must be consistent with the valueDataType of an attributeDomain assigned to the attribute. Datatype is assigned by reference; complex dataType definitions are represented as separate objects inlucded in a dataType dictionary.",
+                           "type": "object",
+                           "required": ["dt:attributeDataTypeLabel"],
+                           "properties": {
+                               "dt:attributeDataTypeURI": {
+                                   "description": "identifier for the dataType definition; primitive types might be defined in various vocabularies, but other dataType Categories should provide URIs for dataType definitions that offer representations using this dataType schema.",
+                                   "type": "string",
+                                   "format": "uri"
+                               },
+                               "dt:attributeDataTypeLabel": {
+                                   "description": "free text label for humans to understand the dataType",
+                                   "type": "string"
+                               }
+                           }
+                       },
+                       "dt:attributeComponentContainer":{
+                           "description":"identifier for a container object for this attribute. Use when an attribute in a data object is a component in a complex object whose properties have been indcorporated into the data object. For instance  a point location object has {latitue, longitude, SRS} properties, but typically a point location is implemented by putting these fields in a data object, not putting in a point location object. This construct is useful if someone is searching for content that has a property represented by the container object, e.g. find all datasets that have geographically located observations.",
+                           "type":"string",
+                           "format":"uri"
+                           
+                       },
+                       "dt:attributeDomain": {
+                           "description": "specification of restrictions on the range of values that may be used to quantify the specified property in this entity",
+                           "$ref": "#/definitions/dt:valueDomainObject"
+                       },
+                       "dt:attributeDomainURI": {
+                           "description": "if the domain is not defined inline, an identifer may be supplied to specify the domain, to allow reuse of domain definitions",
+                           "type": "string"
+                       },
+                       "dt:attributeUOM": {
+                           "description": "only necessary if attribute required to used specific units of measurement for values",
+                           "type": "object",
+                           "properties": {
+                               "dt:attributeUOM-URI": {
+                                   "description": "unique identifier from some registered scheme that specifies the UOM for the attribute values",
+                                   "type": "string",
+                                   "format": "uri"
+
+                               },
+                               "dt:attributeUOMLabel": {
+                                   "description": "human intelligble label for the units of measure required for values in this attribute",
+                                   "type": "string"
+                               }
+                           }
+                       },
+                       "dt:attributePhysicalImplementation": {
+                           "description": "",
+                           "$ref": "#/definitions/dt:physicalBindingObject"
+                       },
+                       "dt:metaAttributes": {
+                           "description": "other attributes of entity instances. In this implementation, these are related to spatial dataobjects that have geographic location information.",
+                           "type": "object",
+                           "properties": {
+                               "dt:entitySpatialReferenceSystem": {
+                                   "description": "SRS for feature class; only needs to be specified if have composite feature catalog for the dataset and feature classes using more that one SRS are included. If all uses one SRS, then the spatialResolution Property for the dataset is sufficient",
+                                   "type": "object",
+                                   "properties": {
+                                       "dt:SRS-Label": {
+                                           "description": "text to identify the reference in a UI",
+                                           "type": "string"
+                                       },
+                                       "dt:SRS-URIs": {
+                                           "description": "identifiers for referenced resource; might include identifiers under diffrent id schemes",
+                                           "type": "array",
+                                           "items": {
+                                               "type": "string",
+                                               "format": "uri"
+                                           }
+                                       },
+                                       "dt:SRS-Citation": {
+                                           "description": "text citation to document defining the spatial reference system",
+                                           "type": "string"
+                                       }
+                                   }
+                               },
+                               "dt:spatialTopologyTypeURI": {
+                                   "description": "URI identifying the topology type, i.e. the suite of relationships between feature that is enforced in the data",
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:spatialTopologyTypePrefLabel": {
+                                   "description": "term specifying the topology type for human users, i.e. the suite of relationships between feature that is enforced in the data",
+                                   "type": "string"
+                               },
+                               "dt:geometryTypeURI": {
+                                   "description": "the geometry of features in the entity: point, line, polygon, voxel",
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:geometryTypePrefLabel": {
+                                   "type": "string",
+                                   "description": "the geometry of features in the entity: point, line, polygon, voxel"
+                               },
+                               "dt:entityResolution": {
+                                   "description": "specification of resolution, either as a scale denominator, or as a distance(with unit of measure) specifying the smallest distance in the Earth between resolvable points in the data",
+                                   "type": "object",
+                                   "anyOf": [{
+                                           "allOf": [
+                                               {
+                                                   "required": ["dt:resolutionDistanceValue"]
+                                               },
+                                               {
+                                                   "required": ["dt:resolutionUOM"]
+                                               }
+                                                ]
+						                      },
+                                       {
+                                           "required": ["dt:resolutionScaleDenominator"]
+                                       }],
+                                   "properties": {
+                                       "dt:resolutionScaleDenominator": {
+                                           "description": "resolution of spatial data specified as the design scale denominator for protrayal of the data.",
+                                           "type": "integer"
+                                       },
+                                       "dt:resolutionDistanceValue": {
+                                           "description": "resolution of spatial data specified as the minimum distance between resolvable locations in the location data",
+                                           "type": "number"
+                                       },
+                                       "dt:resolutionUOM": {
+                                           "type": "object",
+                                           "required": ["dt:UOM-PrefLabel"],
+                                           "properties": {
+                                               "dt:UOM-URI": {
+                                                   "description": "URI that identifies a unit of measure used to specify the resolution distance",
+                                                   "type": "string",
+                                                   "format": "URI"
+                                               },
+                                               "dt:UOM-PrefLabel": {
+                                                   "type": "string",
+                                                   "description": "term for unit of measure that specifies the resolution distance."
+                                               }
+                                           }
+                                       }
+                                   }
+                               }
+                           }
+                       }
+                   }
+               },
+               "dt:valueDomainObject": {
+                   "description": "This class defines set of permissible values. A ValueDomain provides representation, but has no implication as to what DataType the values are associated with, nor what the values mean. A ValueDomain may be associated with multiple DataTypes. Valid values in the domain are specified by constraints. Extensions to constraints should be used to represent other specific kinds of machine-actionable constrains. Logical constraints that require more complex  validation should be explained in the constraintStatement.  The valueFormat, minValue, and maxValue properties on the domain allow simple range constraints and formatting constraints that may be expressed with a regular expression.",
+                   "type": "object",
+                   "properties": {
+                       "dt:domainIdentifier": {
+                           "description": "unique identifier for the domain definition",
+                           "type": "string",
+                           "format": "uri"
+                       },
+                       "dt:domainName": {
+                           "description": "human-intelligible name to identify the domain",
+                           "type": "string"
+                       },
+                       "dt:domainDescription": {
+                           "description": "text description of the domain",
+                           "type": "string"
+                       },
+                       "dt:valueDataType": {
+                           "description": "The dataType definition that specifies representation of domain values",
+                           "type": "object",
+                           "properties": {
+                               "dt:valueDataTypeURI": {
+                                   "description": "identifier for the data type definition.",
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:valueDataTypeLabel": {
+                                   "type": "string",
+                                   "description": "human-readable label "
+                               }
+                           }
+                       },
+                       "dt:domainType": {
+                           "description": "high level categorization of the kind of values in this domain: e.g. narrative text, count,  coordinate measurement, ratio measurement, interval measurement, concept, truth value, DateTime, Date, Time, vector, continuous field, sequence, name, rate, reference (link, foreign key...). (see 19103, maybe ISO80000?)",
+                           "type": "object",
+                           "properties": {
+                               "dt:domainTypeURI": {
+                                   "description": "identifier for the kind of values in the domain",
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:domainTypeLabel": {
+                                   "type": "string",
+                                   "description": "human-readable label that specifies the kind of values in the domain."
+                               }
+                           }
+                       },
+                       "dt:constraintStatements": {
+                           "description": "one or more text statements that constrain values in the domain",
+                           "type": "array",
+                           "items": {
+                               "type": "string"
+                           }
+
+                       },
+                       "dt:valueFormat": {
+                           "description": "template for the structure of the presentation of the value(s). EXAMPLE – YYYY-MM-DD for a date., limitations on character string length. Typically some sort of regular expressions specifying syntax for the alphanumeric string that specifies data values. If the data type allows lists, format text should specify list boundary and delimiter characters.",
+                           "type": "string"
+                       },
+                       "dt:numericDomainMinValue": {
+                           "type": "number"
+                       },
+                       "dt:numericDomainMaxValue": {
+                           "type": "number"
+                       },
+                       "dt:codeList": {
+                           "description": "attribute value is restricted to terms from a vocabulary (pick list); this element identifies the approperiate vocabulary. Should this be an array to allow multiple possible codelists (controlled vocabularies)",
+                           "type": "object",
+                           "properties": {
+                               "dt:codeListURI": {
+                                   "type": "string",
+                                   "format": "uri"
+                               },
+                               "dt:codelistLabel": {
+                                   "type": "string"
+                               }
+                           }
+                       },
+                       "dt:targetEntity": {
+                           "description": "The attribute value is a link to another entity (foreign key). The URI identifies the target entity instance, which must conform to the conceptualValueType; the domainType must be 'reference' if this element has a value. For example if related tables in a database are being described, this value would specify the table that the reference values link (join) to.",
+                           "type": "object",
+                           "properties": {
+                               "dt:targetEntityURI": {
+                                   "description": "unique identifier that can be dereferenced to locate the target entity; only required for descriptions that apply to specific physical instances of a dataset",
+                                   "type": "string",
+                                   "format": "uri"
+                               },
+                               "dt:targetEntityLabel": {
+                                   "type": "string"
+                               }
+                           }
+                       }
+                   }
+
+               },
+               "dt:physicalBindingObject": {
+                   "description": "Details specific to a physical implementation. The target environment specifies the software platform for the implementation. when the Attribute.dataType is a primitiveType, encoding must be specified, otherwise it is optional.",
+                   "type": "object",
+                   "properties": {
+                       "dt:binding": {
+                           "description": "Optional--allows physical bindings to be implemented separately from attribute definitions by specifying the conataining object and linked attribute; if the binding object is inline in an elements array, then these values are ignored if present",
+                           "type": "object",
+                           "properties": {
+                               "dt:boundAttributeURI": {
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:boundAttributeName": {
+                                   "type": "string"
+                               },
+                               "dt:containerObjectURI": {
+                                   "type": "string",
+                                   "format": "URI"
+                               },
+                               "dt:containerObjectName": {
+                                   "type": "string"
+                               }
+                           }
+                       },
+                       "dt:encoding": {
+                           "description": "encoding scheme for representing values, e.g. UTF-8, big-endian, different specs for floating point and double values.",
+                           "type": "string"
+                       },
+                       "dt:byteLength": {
+                           "description": "number of 8 bit bytes used to represent values",
+                           "type": "integer"
+                       },
+                       "dt:stringLength": {
+                           "type": "integer",
+                           "description": "if datatype is text, max length of text string. Mapping to byte length depends on encoding scheme, so allow separate string length limitation"
+                       },
+                       "dt:cardinality": {
+                           "type": "string",
+                           "enum": [
+									        "1", "0..1", "1..N", "0..N"
+								         ]
+                       },
+                       "dt:targetEnvironment": {
+                           "description": "identification of the specific software environment for which this dataType is designed. e.g. Oracle 10 relational db, XML v1.0, GML 3.2 application schema",
+                           "type": "string"
+                       },
+                       "dt:sequence": {
+                           "description": "if the order of the attributes in the implementation instance is fixed, sequence numbers SHALL be provided to define the order. ",
+                           "type": "integer"
+                       },
+                       "dt:localNames": {
+                           "description": "alternate names for labeling the entity in UI; use context property to select aliases for particular communities or target UI",
+                           "type": "array",
+                           "items": {
+                               "type": "string"
+                           },
+                           "translation": [
+                               {
+                                   "usgin/json-metadata": "jmd:attributeAliases"
+                                        }
+                                    ]
+                       },
+                       "dt:implementationType": {
+                           "description": "Environment-specific physical implementation data type; the type specified on the attribute might be a logical type like 'integer', but in specific object-element binding for implementation might be more specific 'long integer' or 'short integer'.  DataTypes here are specific to software environments.",
+                           "type": "string"
+                       }
+                   }
+               }
+           }
+
+       }

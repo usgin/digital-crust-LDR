@@ -1,0 +1,59 @@
+2017-05-19 05:11:49.481+0000 [Thread-3] INFO  org.eclipse.jetty.server.handler.ContextHandler - stopped o.e.j.w.WebAppContext{/,file:/home/ubuntu/Cordra/data/webapps-temp/jetty-0.0.0.0-8080-ROOT.war-_-any-/webapp/},/home/ubuntu/Cordra/data/webapps-priority/ROOT.war
+2017-05-19 19:25:20.051+0000 [main] INFO  net.cnri.apps.doserver.Main - DO Repository Server Software version 2.5.18.20160130183822
+2017-05-19 19:25:21.592+0000 [main] ERROR System.err - Creating service station in ./data/knowbots
+2017-05-19 19:25:21.754+0000 [main] ERROR System.err - Setting Up ssl Context
+2017-05-19 19:25:21.894+0000 [main] ERROR System.err - Initialize ssl Context
+2017-05-19 19:25:21.915+0000 [main] INFO  net.cnri.apps.doserver.Main - Initializing DOP interface on port 9900
+2017-05-19 19:25:22.206+0000 [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider - Deployment monitor /home/ubuntu/Cordra/data/webapps-priority at interval 10
+2017-05-19 19:25:22.211+0000 [main] INFO  org.eclipse.jetty.deploy.DeploymentManager - Deployable added: /home/ubuntu/Cordra/data/webapps-priority/ROOT.war
+2017-05-19 19:25:22.229+0000 [main] INFO  org.eclipse.jetty.webapp.WebInfConfiguration - Extract jar:file:/home/ubuntu/Cordra/data/webapps-priority/ROOT.war!/ to /home/ubuntu/Cordra/data/webapps-temp/jetty-0.0.0.0-8080-ROOT.war-_-any-/webapp
+2017-05-19 19:25:32.283+0000 [Thread-9] INFO  net.cnri.apps.doserver.operators.LuceneIndexer - Starting Lucene Indexer async indexing
+2017-05-19 19:25:32.760+0000 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+2017-05-19 19:25:32.795+0000 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:8080
+2017-05-19 19:25:32.798+0000 [main] INFO  org.eclipse.jetty.server.AbstractConnector - Started SslSelectChannelConnector@0.0.0.0:8443
+2017-05-19 19:25:32.799+0000 [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider - Deployment monitor /home/ubuntu/Cordra/data/webapps at interval 10
+2017-05-19 19:29:07.852+0000 [qtp1898124854-69] ERROR net.cnri.doregistrytools.registrar.jsonschema.ObjectServlet - InternalException in doPost
+net.cnri.repository.InternalException: HandleException (INTERNAL_ERROR) Unexpected response: Error(400): INVALID ADMIN
+	at net.cnri.doregistrytools.registrar.jsonschema.RegistrarService.writeJsonAndPayloadsIntoDigitalObjectIfValid(RegistrarService.java:902)
+	at net.cnri.doregistrytools.registrar.jsonschema.ObjectServlet.createOrUpdate(ObjectServlet.java:420)
+	at net.cnri.doregistrytools.registrar.jsonschema.ObjectServlet.doPost(ObjectServlet.java:359)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:688)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:770)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:684)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1496)
+	at net.cnri.doregistrytools.registrar.jsonschema.ObjectLockingFilter.doHttpFilter(ObjectLockingFilter.java:48)
+	at net.cnri.doregistrytools.registrar.jsonschema.ObjectLockingFilter.doFilter(ObjectLockingFilter.java:32)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484)
+	at net.cnri.doregistrytools.registrar.auth.RegistrarAuthorizationFilter.doHttpFilter(RegistrarAuthorizationFilter.java:54)
+	at net.cnri.doregistrytools.registrar.auth.RegistrarAuthorizationFilter.doFilter(RegistrarAuthorizationFilter.java:40)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1484)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:247)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:210)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1476)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:499)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:533)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1086)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:428)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1020)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:370)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:494)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:982)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:1043)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:865)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:667)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: HandleException (INTERNAL_ERROR) Unexpected response: Error(400): INVALID ADMIN
+	at net.cnri.doregistrytools.registrar.jsonschema.HandleClient.registerHandle(HandleClient.java:66)
+	at net.cnri.doregistrytools.registrar.jsonschema.RegistrarService.writeJsonAndPayloadsIntoDigitalObjectIfValid(RegistrarService.java:895)
+	... 38 more

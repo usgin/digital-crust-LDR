@@ -1,0 +1,55 @@
+﻿CREATE TABLE "bridgeDataObjObjClass" 
+("DataObjectLabel"text,
+ "dcdtr:representation"text,
+ "ObjectClassLabel"text,
+ "dcdtr:meaning" text);
+
+ALTER TABLE "bridgeDataObjObjClass" OWNER TO grg_dba;
+
+INSERT INTO "bridgeDataObjObjClass" ("DataObjectLabel", "dcdtr:representation", "ObjectClassLabel", "dcdtr:meaning")
+
+VALUES
+
+('Agent Description', 'class/data-object/agent-description', 'Agent', 'def/object-class/agent'),
+('Borehole Lithology Intercept Occurrence', 'class/data-object/borehole-lithology-intercept-occurrence', 'Borehole Intercept', 'def/object-class/borehole-intercept'),
+('Borehole Lithology Interval Occurrence', 'class/data-object/borehole-lithology-interval-occurrence', 'Borehole Interval', 'def/object-class/borehole-interval'),
+('Borehole Temperature Result', 'class/data-object/borehole-temperature-result', 'Borehole Temperature Observation', 'def/object-class/borehole-temperature-observation'),
+('Contour Line Instance', 'class/data-object/contour-line-instance', 'Isopleth Feature', 'def/object-class/isopleth-feature'),
+('Coordinate Location', 'class/data-object/coordinate-location', 'Isopleth Feature', 'def/object-class/location'),
+('Direct Use Facility Occurrence', 'class/data-object/direct-use-facility-occurrence', 'Geothermal Direct Use Facility', 'def/object-class/geothermal-direct-use-facility'),
+('Fluid Flux Injection and Disposal Result', 'class/data-object/fluid-flux-injection-and-disposal-result', 'Well Fluid Flux Observation', 'def/object-class/well-fluid-flux-observation'),
+('Geologic Contact Occurrence', 'class/data-object/geologic-contact-occurrence', 'Geologic Contact Feature', 'def/object-class/geologic-contact-feature'),
+('Geologic Fault Occurrence', 'class/data-object/geologic-fault-occurrence', 'Geologic Fault Feature', 'def/object-class/geologic-fault-feature'),
+('Geologic Unit Outcrop Occurrence', 'class/data-object/geologic-unit-outcrop-occurrence', 'Geologic Unit Outcrop', 'def/object-class/geologic-unit-outcrop'),
+('Geologic Unit Portrayal Description', 'class/data-object/geologic-unit-portrayal-description', 'Geologic Unit Feature', 'def/object-class/geologic-unit-feature'),
+('Geothermal Area Occurrence', 'class/data-object/geothermal-area-occurrence', 'Geothermal Area Feature', 'def/object-class/geothermal-area-feature'),
+('Geothermal Power Plant Occurrence', 'class/data-object/geothermal-power-plant-occurrence', 'Geothermal Power Plant Facility', 'def/object-class/geothermal-power-plant-facility'),
+('Geothermal Reservoir', 'class/data-object/geothermal-reservoir', 'Geologic Reservoir Feature', 'def/object-class/geologic-reservoir-feature'),
+('Gravity Result', 'class/data-object/gravity-result', 'Gravity Observation', 'def/object-class/gravity-observation'),
+('Heat Flow Result', 'class/data-object/heat-flow-result', 'Heat Flow Observation', 'def/object-class/heat-flow-observation'),
+('Heat Pump Facility Occurrence', 'class/data-object/heat-pump-facility-occurrence', 'Heat Pump Facility', 'def/object-class/heat-pump-facility'),
+('Hydraulic Properties Result', 'class/data-object/hydraulic-properties-result', 'Hydraulic Properties Observation', 'def/object-class/hydraulic-properties-observation'),
+('Metadata Instance', 'class/data-object/metadata-instance', 'Radiogenic Heat Production Observation', 'def/object-class/resource-description'),
+('Mineral Recovery Brines Experimental Data Instance', 'class/data-object/mineral-recovery-brines-experimental-data-instance', 'Mineral Recovery Brine Experimental Data', 'def/object-class/mineral-recovery-brine-experimental-data'),
+('Mineral Recovery Brines Process and Economics Instance', 'class/data-object/mineral-recovery-brines-process-and-economics-instance', 'Mineral Recovery Brine Process And Economics', 'def/object-class/mineral-recovery-brine-process-and-economics'),
+('Physical Sample Occurrence', 'class/data-object/physical-sample-occurrence', 'Physical Sample', 'def/object-class/physical-sample'),
+('Powell and Cumming Geothermometry Result', 'class/data-object/powell-and-cumming-geothermometry-result', 'Powell And Cumming Geothermometry Observation', 'def/object-class/powell-and-cumming-geothermometry-observation'),
+('Power Plant Production Result', 'class/data-object/power-plant-production-result', 'Power Plant Production Observation', 'def/object-class/power-plant-production-observation'),
+('Radiogenic Heat Production Result', 'class/data-object/radiogenic-heat-production-result', 'Radiogenic Heat Production Observation', 'def/object-class/radiogenic-heat-production-observation'),
+('reference', 'class/data-object/reference', 'Value', 'def/object-class/value'),
+('Rock Chemistry Result', 'class/data-object/rock-chemistry-result', 'Rock Chemical Composition Observation', 'def/object-class/rock-chemical-composition-observation'),
+('Seismic Event Hypocenter Result', 'class/data-object/seismic-event-hypocenter-result', 'Seismic Event Hypocenter Observation', 'def/object-class/seismic-event-hypocenter-observation'),
+('term', 'class/data-object/term', 'Value', 'def/object-class/value'),
+('Thermal Conductivity Result', 'class/data-object/thermal-conductivity-result', 'Thermal Conductivity Observation', 'def/object-class/thermal-conductivity-observation'),
+('Thermal Spring Occurrence', 'class/data-object/thermal-spring-occurrence', 'Thermal Spring', 'def/object-class/thermal-spring'),
+('US Cadastral Location', 'class/data-object/us-cadastral-location', 'Isopleth Feature', 'def/object-class/location'),
+('Volcanic Vent Occurrence', 'class/data-object/volcanic-vent-occurrence', 'Volcanic Vent Feature', 'def/object-class/volcanic-vent-feature'),
+('Quantity with units', 'class/data-object/well-fluid-production-result', 'Well Fluid Production Observation', 'def/object-class/well-fluid-production-observation'),
+('Quantity with units', 'class/data-object/well-header-occurrence', 'Well Header Feature', 'def/object-class/well-header-feature'),
+('Quantity with units', 'class/data-object/well-log-result', 'Well Log Observation', 'def/object-class/well-log-observation'),
+('Quantity with units', 'class/data-object/well-test-result', 'Well Test Observation', 'def/object-class/well-test-observation'),
+('Quantity with units', 'class/data-object/wsp2321data', 'Hydraulic Properties Observation', 'def/object-class/hydraulic-properties-observation'),
+('Coordinate Location', 'class/data-object/cphydroobservationdata', 'Hydraulic Properties Observation', 'def/object-class/hydraulic-properties-observation'),
+('WeigelObservation', 'class/data-object/weigelobservation', 'Hydraulic Properties Observation', 'def/object-class/hydraulic-properties-observation'),
+('Hydraulic Properties Result', 'class/data-object/measured-value', 'Measured Value', 'def/object-class/measured-value'),
+('Power Plant Production Result', 'class/data-object/quantity-with-units', 'Measured Value', 'def/object-class/measured-value');
