@@ -21,7 +21,22 @@
                 }
             }
         },
-        "definition": {
+        "alternateLabels": {
+            "type": "array",
+            "title": "other designations for the concept",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "altLabel": {
+                        "type": "string"
+                    },
+                    "altLabelContext": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "description": {
             "type": "string",
             "format": "textarea",
             "title": "Definition",
@@ -101,21 +116,6 @@
                             }
                         }
                     ]
-                }
-            }
-        },
-        "alternateLabels": {
-            "type": "array",
-            "title": "other designations for the concept",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "altLabel": {
-                        "type": "string"
-                    },
-                    "altLabelContext": {
-                        "type": "string"
-                    }
                 }
             }
         },

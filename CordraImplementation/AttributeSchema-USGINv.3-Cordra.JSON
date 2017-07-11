@@ -11,9 +11,10 @@
                 }
             }
         },
-        "dt:attributeName": {
+        "prefLabel": {
             "type": "string",
             "title": "Name",
+            "description": "Name for this attribute. Implements dt:attributeName",
             "net.cnri.repository": {
                 "preview": {
                     "showInPreview": true,
@@ -21,10 +22,26 @@
                 }
             }
         },
-        "dt:attributeDescription": {
+        "alternateLabels": {
+            "type": "array",
+            "title": "other designations for the attribute",
+            "description": "alternate names for labeling the entity in UI; name could be localized with an @ extension eg. tamanho@PT. Implements dt:localNames",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "altLabel": {
+                        "type": "string"
+                    },
+                    "altLabelContext": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "description": {
             "type": "string",
             "format": "textarea",
-            "title": "Description",
+            "title": "Definition",
             "net.cnri.repository": {
                 "preview": {
                     "showInPreview": true,
@@ -32,14 +49,14 @@
                 }
             }
         },
-        "dt:attributeSource": {
+        "source": {
             "type": "string",
             "format": "textarea",
-            "title": "Source of attribute definition",
+            "title": "Source of definition",
             "net.cnri.repository": {
                 "preview": {
                     "showInPreview": false,
-                    "excludeTitle": false
+                    "excludeTitle": true
                 }
             }
         },
@@ -198,7 +215,7 @@
              ]
         },
         "dt:attributeUOM": {
-            "type":"object",
+            "type": "object",
             "description": "specification of units of measure used to assign values for this property; only applies if the data type is a primitive numeric type",
             "title": "Unit of measure",
             "properties": {

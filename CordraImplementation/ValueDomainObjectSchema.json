@@ -1,6 +1,7 @@
 {
     "type": "object",
-    "title": "Value Domain Object",
+    "title": "ValueDomainObject",
+    "description": "JSON schema for representing a Value domain object in the dataType represenentation model. see http://usgin.github.io/usginspecs/DataTypeModel2016-06-18.htm",
     "properties": {
         "identifier": {
             "type": "string",
@@ -10,9 +11,10 @@
                 }
             }
         },
-        "dt:domainName": {
+        "prefLabel": {
             "type": "string",
-            "title": "Domain Name",
+            "title": "Name",
+            "description": "Name for this value domain. Implements dt:domainName",
             "net.cnri.repository": {
                 "preview": {
                     "showInPreview": true,
@@ -20,10 +22,26 @@
                 }
             }
         },
-        "dt:domainDescription": {
+        "alternateLabels": {
+            "type": "array",
+            "title": "other designations for the attribute",
+            "description": "alternate names for labeling the entity in UI; name could be localized with an @ extension eg. tamanho@PT. Implements dt:localNames",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "altLabel": {
+                        "type": "string"
+                    },
+                    "altLabelContext": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "description": {
             "type": "string",
             "format": "textarea",
-            "title": "Description of Domain",
+            "title": "Definition",
             "net.cnri.repository": {
                 "preview": {
                     "showInPreview": true,
@@ -31,14 +49,14 @@
                 }
             }
         },
-        "dt:source": {
+        "source": {
             "type": "string",
             "format": "textarea",
-            "title": "Source of domain definition",
+            "title": "Source of definition",
             "net.cnri.repository": {
                 "preview": {
                     "showInPreview": false,
-                    "excludeTitle": false
+                    "excludeTitle": true
                 }
             }
         },
@@ -81,7 +99,7 @@
         },
         "dt:domainType": {
             "description": "high level categorization of the kind of values in this domain: e.g. narrative text, count,  coordinate measurement, ratio measurement, interval measurement, concept, truth value, DateTime, Date, Time, vector, continuous field, sequence, name, rate, reference (link, foreign key...). (see 19103, maybe ISO80000?)",
-            "title":"Domain Type",
+            "title": "Domain Type",
             "type": "object",
             "properties": {
                 "dt:domainTypeLabel": {
