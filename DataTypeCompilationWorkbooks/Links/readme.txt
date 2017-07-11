@@ -1,0 +1,1 @@
+These folders contain compilation tables for linking properties, attributes, data object,  datatypes in the registry. The ttl and RDF files are form 2016-10 implementation for UK LOD.  2017 Cordra implementation is implemented with bridge...csv exported files in the ./sql directory
