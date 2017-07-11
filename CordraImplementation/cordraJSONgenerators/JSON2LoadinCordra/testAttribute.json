@@ -1,0 +1,22 @@
+{
+    "dt:attributeName": "Result",
+    "dt:attributeDescription": "",
+    "dt:attributeSource": {
+        "dt:citationTitle": "urn:usgin:ngds National Geothermal Data System content models"
+    },
+    "dt:attributeMeaning": {
+        "dt:meaningPropertyURI": "def/property/quantifier",
+        "dt:meaningPropertyPrefLabel": "Quantifier"
+    },
+    "dt:attributeDataType": {
+        "dt:baseDataType": "PrimitiveType",
+        "dt:dataTypeURI": "class/data-type/string"
+    },
+    "dt:attributeComponentContainer": {
+        "dt:componentMeaning": ""
+    },
+    "dt:attributeValueDomain": "",
+    "dt:attributeUOM": {
+        "dt:attributeUOM-URI": ""
+    }
+}
