@@ -20,13 +20,13 @@ select
 	) as "dt:attributeMeaning",
    (select row_to_json(dt) from
 			(select 'PrimitiveType'::text as "dt:baseDataType",
-				att."dcdtr:datatype" as "dt:dataTypeURI") dt) 
+				att."dcdtr:dataType" as "dt:dataTypeURI") dt) 
 	as "dt:attributeDataType",
     (select row_to_json(cm) from 
 	 (select att."dcdtr:containerObject" as "dt:componentMeaning") cm ) as "dt:attributeComponentContainer",
     att."dcdtr:valueDomain" as "dt:attributeValueDomain",
    (select row_to_json(uom) from
-			(select att."dcdtr:units" as "dt:attributeUOM-URI") uom)
+			(select att."dcdtr:unitOfMeasure" as "dt:attributeUOM-URI") uom)
 	as "dt:attributeUOM" 
    ) as aaa
 ) as "attributeJSON"
