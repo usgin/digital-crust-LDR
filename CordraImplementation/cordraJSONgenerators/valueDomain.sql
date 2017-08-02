@@ -9,10 +9,10 @@ select vd."URI" as suffix,
   vd."dct:description" as "dt:domainDescription",
   'NGDS Content Models'::text as "dt:source",
   (select row_to_json(ddt) from
-			(select vd."dcdtr:logicType" as "dt:domainTypeLabel") ddt)
+			(select vd."dcdtr:quantityKind" as "dt:domainTypeLabel") ddt)
 	as "dt:domainType",
   (select row_to_json(dot) from
-			(select vd."dcdtr:domainDataTypeIdentifier" as "dt:domainDataTypeURI") dot)
+			(select vd."dcdtr:valueDataType" as "dt:domainDataTypeURI") dot)
 	as "dt:valueDataType",
 --constraints statement array
 vd."dcdtr:valueFormat" as "dt:valueFormat",
